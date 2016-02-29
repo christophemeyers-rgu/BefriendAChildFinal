@@ -1,51 +1,40 @@
 -- phpMyAdmin SQL Dump
--- version 4.1.14
+-- version 2.8.0.1
 -- http://www.phpmyadmin.net
---
--- Host: 127.0.0.1
--- Generation Time: Feb 28, 2016 at 07:57 PM
--- Server version: 5.6.17
--- PHP Version: 5.5.12
-
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET time_zone = "+00:00";
-
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
-
---
+-- 
+-- Host: custsql-ipg70.eigbox.net
+-- Generation Time: Feb 29, 2016 at 11:26 AM
+-- Server version: 5.5.43
+-- PHP Version: 4.4.9
+-- 
 -- Database: `befriend`
---
+-- 
 
 -- --------------------------------------------------------
 
---
+-- 
 -- Table structure for table `admin`
---
+-- 
 
-CREATE TABLE IF NOT EXISTS `admin` (
+CREATE TABLE `admin` (
   `email_id` varchar(50) NOT NULL,
   `password` varchar(50) NOT NULL,
   PRIMARY KEY (`email_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
+-- 
 -- Dumping data for table `admin`
---
+-- 
 
-INSERT INTO `admin` (`email_id`, `password`) VALUES
-('test@test.com', '123');
+INSERT INTO `admin` VALUES ('test@test.com', '123');
 
 -- --------------------------------------------------------
 
---
+-- 
 -- Table structure for table `users`
---
+-- 
 
-CREATE TABLE IF NOT EXISTS `users` (
+CREATE TABLE `users` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `user_login` varchar(50) NOT NULL,
   `user_password` varchar(100) NOT NULL,
@@ -57,8 +46,10 @@ CREATE TABLE IF NOT EXISTS `users` (
   `imageurl` varchar(200) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `user_login` (`user_login`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
 
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+-- 
+-- Dumping data for table `users`
+-- 
+
+INSERT INTO `users` VALUES (5, 'test', 'password', 'shahid', 'baig', 'Male', '3/1/2007', 'test123', 'images/users/Penguin.jpg');

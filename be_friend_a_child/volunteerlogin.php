@@ -46,9 +46,9 @@
 				}
 				else{
 					//
+					header("Location: volunteerlogin.html");	
 					echo "<script>alert('User not logged in');</script>";
 					
-					header("Location: volunteerlogin.html");	
 				}
 		
 	}

@@ -38,7 +38,7 @@ I'll <?php
 				//create select statemnt to using firstname and surname as filters 
 				$query="SELECT `firstname`
 						FROM `users`
-						WHERE `firstname` ='$firstname' AND `lastname` ='$surname'
+						WHERE `firstname` ='$firstname' AND `surname` ='$surname'
 						LIMIT 1";
 					//cheeck to see that sql query executes properly, and return any errors 
 					$output=$db->query($query) or die("Selection Query Failed !!!");
@@ -53,7 +53,7 @@ I'll <?php
 				}
 				else{
 					//create user in database if they dont exists there already
-					$insert="INSERT INTO users (`firstname`,`lastname`,`address`) VALUES('$firstname','$surname','$address')";
+					$insert="INSERT INTO users (`firstname`,`surname`,`address`) VALUES('$firstname','$surname','$address')";
 					$outcome=$db->query($insert) or die("Insert statement failed!!!");
 					echo "<SCRIPT>prompt('User created!!!');</SCRIPT>";
 					show_create_user();//then return to the create user page 

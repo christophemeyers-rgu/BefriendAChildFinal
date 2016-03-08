@@ -27,7 +27,7 @@
 					
 					//select all values from database using the entered values as filter
 					$query="SELECT *
-					FROM `Admin`
+					FROM `admin`
 					WHERE `email_id` = '$user_check' LIMIT 1";
 					$output=$db->query($query) or die("Selection Query Failed !!!");
 				}
@@ -51,7 +51,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<title>Admin Home</title>
+	<title>Administrator</title>
 	<link rel="stylesheet" href="cssadminpage/screen.css" type="text/css" media="screen" title="default" />
 
 	<link rel="stylesheet" media="all" type="text/css" href="cssadminpage/pro_dropline_ie.css" />
@@ -267,7 +267,7 @@
 
 	<!--  start page-heading -->
 	<div id="page-heading">
-		<h1>Administrator Homepage</h1>
+		<h1>Administrator Home Page</h1>
 	</div>
 	<!-- end page-heading -->
 
@@ -284,10 +284,9 @@
 		<td>
 		<!--  start content-table-inner ...................................................................... START -->
 		<div id="content-table-inner">
-
+		
 			<!--  start table-content  -->
 			<div id="table-content">
-<<<<<<< HEAD:adminhome.php
 			<h2><span style="text-decoration: underline;"> Features: </span></h2>
 			<h3><a href="createlogin.html">Create User Login</a></h3>
 			<h3>Delete User Login</h3>
@@ -296,16 +295,6 @@
 			<h3>Delete Report</h3>
 
 			
-=======
-				<h2><span style="text-decoration: underline;"> Features: </span></h2>
-				<h3><a href="createlogin.html"><button type="button"> Create User Login</button></a></h3>
-				<h3><button type="button"> Delete User Login</button></h3>
-				<h3><button type="button"> Full Report</button></h3>
-				<h3><button type="button"> Survey Query</button></h3>
-				<h3><button type="button"> Delete Report</button></h3>
-
-				<img style="float:right; padding-right:10px;padding-bottom:10px;" src="imagesadminpage/shared/face-blue.png">
->>>>>>> master:adminhome.html
 			</div>
 			<!--  end table-content  -->
 	

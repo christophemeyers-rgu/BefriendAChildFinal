@@ -26,6 +26,7 @@ I'll <?php
 			else{
 				
 				//read input details from index.php
+				$userlogin=$_POST['email'];
 				$firstname=$_POST['firstname'];
 				$surname=$_POST['surname'];
 				$gender=$_POST['gender'];
@@ -53,9 +54,9 @@ I'll <?php
 				}
 				else{
 					//create user in database if they dont exists there already
-					$insert="INSERT INTO users (`firstname`,`surname`,`address`) VALUES('$firstname','$surname','$address')";
+					$insert="INSERT INTO users (`user_login`, `firstname`,`surname`, `gender`, `address`) VALUES('$userlogin','$firstname','$surname', '$gender', '$address')";
 					$outcome=$db->query($insert) or die("Insert statement failed!!!");
-					echo "<SCRIPT>prompt('User created!!!');</SCRIPT>";
+					echo "<SCRIPT>alert('User created!!!');</SCRIPT>";
 					show_create_user();//then return to the create user page 
 				}
 			}	
@@ -465,7 +466,7 @@ I'll <?php
                                         </tr>
                                         <tr>
                                             <th valign="top">E-mail:</th>
-                                            <td><input type="email" class="inp-form" /></td>
+                                            <td><input type="email" class="inp-form" name="email" /></td>
                                             <td></td>
 
                                         </tr>

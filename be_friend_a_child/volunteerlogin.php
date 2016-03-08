@@ -34,11 +34,9 @@
 		
 		//if a value was returned log user in
 		while($row = $output->fetch_assoc()) {
-					$return=$row["id"];//add the firstname value ro the return variable 
+					$return=$row["user_login"];//add the firstname value ro the return variable 
 					}
 					//if a value was returned, then it means user exists already
-					echo $row["id"];
-					/*
 				if(isset($return)){
 					echo "<script>alert('User logged in');</script>";
 					
@@ -47,7 +45,7 @@
 					//
 					echo "<script>alert('User not logged in');</script>";
 					show_volunteer_login();
-				}*/
+				}
 		
 	}
 

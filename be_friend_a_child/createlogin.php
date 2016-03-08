@@ -220,6 +220,9 @@ I'll <?php
         });
     </script> */
 
+    <!-- javascript for random password -->
+    <script type='text/javascript' src='jscreatelogin/randompassword.js'></script>
+
 </head>
 <body>
 <!-- Start: page-top-outer -->

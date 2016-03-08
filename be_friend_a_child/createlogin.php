@@ -98,7 +98,7 @@ I'll <?php
 					}
 		if(isset($login_session)){
 			//show_create_user();
-			header("Location: createuser.html");
+			header("Location: createuser.php");
 		}
 		else{
 			header("Location: index.php");
@@ -159,7 +159,7 @@ I'll <?php
 
 	}
 	
-		function show_create_user() {
+/*		function show_create_user() {
     //display the HTML form to register
     //or sign a user in
     $htmlpage = <<<HTMLPAGE
@@ -203,11 +203,11 @@ I'll <?php
                 width : 300
             });
         });
-    </script>*/
+    </script>
 
     <!--  date picker script -->
     <link rel="stylesheet" href="cssadminpage/datePicker.css" type="text/css" />
- /*   <script src="jsadminpage/jquery/date.js" type="text/javascript"></script>
+    <script src="jsadminpage/jquery/date.js" type="text/javascript"></script>
     <script src="jsadminpage/jquery/jquery.datePicker.js" type="text/javascript"></script>
     <script type="text/javascript" charset="utf-8">
         $(function()
@@ -275,7 +275,7 @@ I'll <?php
 // and update the datePicker to reflect it...
             $('#d').trigger('change');
         });
-    </script> */
+    </script> 
 
     <!-- javascript for random password -->
     <script type='text/javascript' src='jscreatelogin/randompassword.js'></script>
@@ -628,5 +628,5 @@ I'll <?php
 HTMLPAGE;
 
 print($htmlpage);
-}
+}*/
 ?>

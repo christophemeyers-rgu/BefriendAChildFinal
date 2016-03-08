@@ -54,7 +54,7 @@ I'll <?php
 				}
 				else{
 					//create user in database if they dont exists there already
-					$insert="INSERT INTO users (`user_login`, `firstname`,`surname`, `gender`, `address`) VALUES('$userlogin','$firstname','$surname', '$gender', '$address')";
+					$insert="INSERT INTO users (`user_login`, `user_password`, `firstname`,`surname`, `gender`, `address`) VALUES('$userlogin','1234','$firstname','$surname', '$gender', '$address')";
 					$outcome=$db->query($insert) or die("Insert statement failed!!!");
 					echo "<SCRIPT>alert('User created!!!');</SCRIPT>";
 					show_create_user();//then return to the create user page 

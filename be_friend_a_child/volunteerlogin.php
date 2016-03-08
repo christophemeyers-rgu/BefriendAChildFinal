@@ -42,11 +42,13 @@
 					//if a value was returned, then it means user exists already
 				if(isset($return)){
 					echo "<script>alert('User logged in');</script>";
+					
 				}
 				else{
 					//
 					echo "<script>alert('User not logged in');</script>";
 					
+					header("Location: volunteerlogin.html");	
 				}
 		
 	}

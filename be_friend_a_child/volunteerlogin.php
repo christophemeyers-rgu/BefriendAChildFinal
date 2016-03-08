@@ -37,7 +37,7 @@
 					$return=$row["id"];//add the firstname value ro the return variable 
 					}
 					//if a value was returned, then it means user exists already
-					echo $return;
+					echo $row["id"];
 					/*
 				if(isset($return)){
 					echo "<script>alert('User logged in');</script>";

@@ -474,6 +474,21 @@ I'll <?php
                                             <td></td>
 
                                         </tr>
+
+                                        <!-- added field for random password -->
+                                        <tr>
+                                            <th valign="top">Password:</th>
+                                            <td>
+                                                <label for="pass"></label>
+                                                <input type="password" class="inp-form" name="password" id="pass" />
+                                            </td>
+                                            <td>
+                                                <button type="button" onclick="output()">Create Password</button>
+                                            </td>
+
+                                        </tr>
+
+
                                         <tr>
                                             <th>Picture:</th>
                                             <td><input type="file" class="file_1" name="picture"/></td>

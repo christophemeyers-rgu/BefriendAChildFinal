@@ -51,6 +51,7 @@ I'll <?php
 					//if a value was returned, then it means user exists already
 				if(isset($return)){
 					echo "<script>alert('User already exists');</script>";
+					show_create_user();
 				}
 				else{
 					//create user in database if they dont exists there already

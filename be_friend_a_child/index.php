@@ -22,7 +22,7 @@
 				}
 				else{
 					show_index_page();
-					print ("Enter valid administrator details");
+					echo "<script>alert('Invalid administrator details');</script>";
 				}
 			}
 	else{

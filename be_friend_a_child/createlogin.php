@@ -50,7 +50,7 @@ I'll <?php
 					}
 					//if a value was returned, then it means user exists already
 				if(isset($return)){
-					echo "<script>prompt('User already exists');</script>";
+					echo "<script>alert('User already exists');</script>";
 				}
 				else{
 					//create user in database if they dont exists there already

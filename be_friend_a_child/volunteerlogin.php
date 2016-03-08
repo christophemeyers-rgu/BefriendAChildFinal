@@ -24,7 +24,6 @@
 				$email=$_POST['u'];
 				$password=$_POST['p'];
 			}
-			echo ($email." and ".$password);
 
 		//write sql select statement using the entered parameters as filter
 		$query="SELECT `user_login` FROM `users` WHERE `user_login` = '$email' AND `user_password` = '$password' LIMIT 1";
@@ -38,6 +37,8 @@
 					$return=$row["id"];//add the firstname value ro the return variable 
 					}
 					//if a value was returned, then it means user exists already
+					echo $return;
+					/*
 				if(isset($return)){
 					echo "<script>alert('User logged in');</script>";
 					
@@ -46,7 +47,7 @@
 					//
 					echo "<script>alert('User not logged in');</script>";
 					show_volunteer_login();
-				}
+				}*/
 		
 	}
 

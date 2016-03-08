@@ -37,7 +37,7 @@ I'll <?php
 				
 				//create select statemnt to using firstname and surname as filters 
 				$query="SELECT `firstname`
-						FROM `friend`
+						FROM `users`
 						WHERE `firstname` ='$firstname' AND `lastname` ='$surname'
 						LIMIT 1";
 					//cheeck to see that sql query executes properly, and return any errors 
@@ -53,7 +53,7 @@ I'll <?php
 				}
 				else{
 					//create user in database if they dont exists there already
-					$insert="INSERT INTO friend (`firstname`,`lastname`,`address`) VALUES('$firstname','$surname','$address')";
+					$insert="INSERT INTO users (`firstname`,`lastname`,`address`) VALUES('$firstname','$surname','$address')";
 					$outcome=$db->query($insert) or die("Insert statement failed!!!");
 					echo "<SCRIPT>prompt('User created!!!');</SCRIPT>";
 					show_create_user();//then return to the create user page 
@@ -84,13 +84,13 @@ I'll <?php
 					
 					//select all values from database using the entered values as filter
 					$query="SELECT *
-					FROM `Administrators`
-					WHERE `email` = '$user_check' LIMIT 1";
+					FROM `admin`
+					WHERE `email_id` = '$user_check' LIMIT 1";
 					$output=$db->query($query) or die("Selection Query Failed !!!");
 				}
 				$login_session=NULL;
 				while($row = $output->fetch_assoc()) {
-					$login_session=$row["email"];
+					$login_session=$row["email_id"];
 					}
 		if(isset($login_session)){
 			show_create_user();
@@ -383,7 +383,7 @@ I'll <?php
 
                                         <tr>
                                             <th valign="top">Date of Birth:</th>
-                                            <td class="noheight">
+                                            <td class="no height">
 
                                                 <table border="0" cellpadding="0" cellspacing="0">
                                                     <tr  valign="top">

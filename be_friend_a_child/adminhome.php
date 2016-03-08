@@ -288,7 +288,7 @@
 			<!--  start table-content  -->
 			<div id="table-content">
 			<h2><span style="text-decoration: underline;"> Features: </span></h2>
-			<h3><a href="createlogin.html">Create User Login</a></h3>
+			<h3><a href="createlogin.php">Create User Login</a></h3>
 			<h3>Delete User Login</h3>
 			<h3>Full Report</h3>
 			<h3>Survey Query</h3>

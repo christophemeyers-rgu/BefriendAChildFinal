@@ -27,7 +27,7 @@
 		
 		//write sql select statement using the entered parameters as filter
 		$query="SELECT `user_login`
-						FROM `friend`
+						FROM `users`
 						WHERE `user_login` ='$email' AND `user_password` ='$password'
 						LIMIT 1";
 		

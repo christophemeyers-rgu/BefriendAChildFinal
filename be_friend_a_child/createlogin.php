@@ -36,6 +36,7 @@ I'll <?php
 				$year=$_POST['year'];
 				$address=$_POST['address'];
 				$picture=$_POST['picture'];
+				$password=$_POST['password'];
 				
 				//create select statemnt to using firstname and surname as filters 
 				$query="SELECT `firstname`
@@ -56,7 +57,7 @@ I'll <?php
 				}
 				else{
 					//create user in database if they dont exists there already
-					$insert="INSERT INTO users (`user_login`, `user_password`, `firstname`,`surname`, `gender`, `address`) VALUES('$userlogin','1234','$firstname','$surname', '$gender', '$address')";
+					$insert="INSERT INTO users (`user_login`, `user_password`, `firstname`,`surname`, `gender`, `address`) VALUES('$userlogin','$password','$firstname','$surname', '$gender', '$address')";
 					$outcome=$db->query($insert) or die("Insert statement failed!!!");
 					echo "<SCRIPT>alert('User created!!!');</SCRIPT>";
 					show_create_user();//then return to the create user page 

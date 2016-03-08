@@ -25,9 +25,9 @@
 				$password=$_POST['p'];
 			}
 			echo ($email." and ".$password);
-/*	
+
 		//write sql select statement using the entered parameters as filter
-		$query="SELECT `user_login` FROM `users` WHERE `user_login` ='$email' AND `user_password` ='$password' LIMIT 1";
+		$query="SELECT `user_login` FROM `users` WHERE `user_login` = '$email' AND `user_password` = '$password' LIMIT 1";
 		
 		//query the database and check to see if a value was returned
 		$output=$db->query($query) or die("Selection Query Failed !!!");
@@ -47,7 +47,7 @@
 					echo "<script>alert('User not logged in');</script>";
 					show_volunteer_login();
 				}
-		*/
+		
 	}
 
 	function show_volunteer_login() {

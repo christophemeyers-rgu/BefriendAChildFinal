@@ -1,9 +1,8 @@
 <?php
+include 'functions.php';
 session_start();
-include './functions.php';
-if(!is_admin())
-{
-    header("location: login.php");
+if(!isset($_SESSION['user_login'])){
+	header("Location: index.php");
 }
 
 if(isset($_POST['update']))

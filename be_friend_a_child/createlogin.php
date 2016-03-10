@@ -6,8 +6,9 @@
 	}
 	//if the method called is a "POST"
 	else if ($_SERVER['REQUEST_METHOD']==='POST'){
-		add_to_database();//call the function "add_to_database"
-		email_volunteer_login();//call the function "email_volunteer_login()"
+        email_volunteer_login();
+        add_to_database();//call the function "add_to_database"
+		//call the function "email_volunteer_login()"
 	}
 	
 	function add_to_database(){

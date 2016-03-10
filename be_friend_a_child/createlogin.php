@@ -1,4 +1,4 @@
-I'll <?php
+<?php
 
 	//if the http method called is "GET"
 	if($_SERVER['REQUEST_METHOD']==='GET'){

@@ -127,7 +127,7 @@
                 <br>
                 If you would like to fill out a survey concerning your experience with Befriend A Child,
                 please follow
-                <a href='http://befriendachildtestsurvey.azurewebsites.net/be_friend_a_child/volunteerlogin.php'>this link</a>
+                <a href='http://befriendachildtestsurvey.azurewebsites.net/Chukwudi/volunteerlogin.php'>this link</a>
                 and login with:
                 <br><br>
                 Username: $email

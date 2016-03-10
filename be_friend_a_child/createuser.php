@@ -178,7 +178,7 @@ if(!isset($_SESSION['user_login'])){
                     <div class="select_sub">
                         <ul class="sub">
                             <li><a href="createlogin.php">Create User Login</a></li>
-                            <li><a href="#nogo">Delete User Login</a></li>
+                            <li><a href="delete-user.php">Delete User Login</a></li>
                         </ul>
                     </div>
 

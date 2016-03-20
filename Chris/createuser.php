@@ -1,6 +1,6 @@
 <?php
 session_start();
-if(!isset($_SESSION['user_login'])){
+if(!isset($_SESSION['email'])){
 	header("Location: index.php");
 }
 ?>
@@ -272,101 +272,6 @@ if(!isset($_SESSION['user_login'])){
 
                                         </tr>
                                         <tr>
-                                            <th valign="top">Gender:</th>
-                                            <td>
-                                                <select  class="styledselect_form_1" name="gender">
-                                                    <option value="Male">Male</option>
-                                                    <option value="Female">Female</option>
-
-                                                </select>
-                                            </td>
-                                            <td></td>
-                                        </tr>
-
-
-                                        <tr>
-                                            <th valign="top">Date of Birth:</th>
-                                            <td class="no height">
-
-                                                <table border="0" cellpadding="0" cellspacing="0">
-                                                    <tr  valign="top">
-                                                        <td>
-                                                                <select id="d" class="styledselect-day" name="day">
-                                                                    <option value="">dd</option>
-                                                                    <option value="1">1</option>
-                                                                    <option value="2">2</option>
-                                                                    <option value="3">3</option>
-                                                                    <option value="4">4</option>
-                                                                    <option value="5">5</option>
-                                                                    <option value="6">6</option>
-                                                                    <option value="7">7</option>
-                                                                    <option value="8">8</option>
-                                                                    <option value="9">9</option>
-                                                                    <option value="10">10</option>
-                                                                    <option value="11">11</option>
-                                                                    <option value="12">12</option>
-                                                                    <option value="13">13</option>
-                                                                    <option value="14">14</option>
-                                                                    <option value="15">15</option>
-                                                                    <option value="16">16</option>
-                                                                    <option value="17">17</option>
-                                                                    <option value="18">18</option>
-                                                                    <option value="19">19</option>
-                                                                    <option value="20">20</option>
-                                                                    <option value="21">21</option>
-                                                                    <option value="22">22</option>
-                                                                    <option value="23">23</option>
-                                                                    <option value="24">24</option>
-                                                                    <option value="25">25</option>
-                                                                    <option value="26">26</option>
-                                                                    <option value="27">27</option>
-                                                                    <option value="28">28</option>
-                                                                    <option value="29">29</option>
-                                                                    <option value="30">30</option>
-                                                                    <option value="31">31</option>
-                                                                </select>
-                                                        </td>
-                                                        <td>
-                                                            <select id="m" class="styledselect-month" name="month">
-                                                                <option value="">mmm</option>
-                                                                <option value="1">Jan</option>
-                                                                <option value="2">Feb</option>
-                                                                <option value="3">Mar</option>
-                                                                <option value="4">Apr</option>
-                                                                <option value="5">May</option>
-                                                                <option value="6">Jun</option>
-                                                                <option value="7">Jul</option>
-                                                                <option value="8">Aug</option>
-                                                                <option value="9">Sep</option>
-                                                                <option value="10">Oct</option>
-                                                                <option value="11">Nov</option>
-                                                                <option value="12">Dec</option>
-                                                            </select>
-                                                        </td>
-                                                        <td>
-                                                            <select  id="y"  class="styledselect-year" name="year">
-                                                                <option value="">yyyy</option>
-                                                                <option value="2005">2005</option>
-                                                                <option value="2006">2006</option>
-                                                                <option value="2007">2007</option>
-                                                                <option value="2008">2008</option>
-                                                                <option value="2009">2009</option>
-                                                                <option value="2010">2010</option>
-                                                            </select>
-                                                        </td>
-                                                        <td><a href=""  id="date-pick"><img src="imagesadminpage/createlogin/icon_calendar.jpg" alt="" /></a></td>
-                                                    </tr>
-                                                </table>
-
-                                            </td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <th valign="top">Address:</th>
-                                            <td><textarea rows="" cols="" class="form-textarea" name="address"></textarea></td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
                                             <th valign="top">E-mail:</th>
                                             <td><input type="email" class="inp-form" name="email" /></td>
                                             <td></td>
@@ -385,18 +290,6 @@ if(!isset($_SESSION['user_login'])){
                                             </td>
 
                                         </tr>
-
-
-                                        <tr>
-                                            <th>Picture:</th>
-                                            <td><input type="file" class="file_1" name="picture"/></td>
-                                            <td>
-                                                <div class="bubble-left"></div>
-                                                <div class="bubble-inner">JPEG, GIF 5MB max per image</div>
-                                                <div class="bubble-right"></div>
-                                            </td>
-                                        </tr>
-
                                         <tr>
                                             <th>&nbsp;</th>
                                             <td valign="top">

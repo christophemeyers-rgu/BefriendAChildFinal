@@ -9,7 +9,7 @@ var keylist = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
 function randompassword(){
     temp = "";
     //15 characters in the password
-    for(i=0; i<5; i++){
+    for(i=0; i<15; i++){
         //periodic positioning of "-"
         if(i % 4 === 3 && i !=0){
             temp += "-";

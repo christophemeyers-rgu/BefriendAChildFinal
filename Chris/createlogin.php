@@ -32,6 +32,7 @@
 				$firstname=$_POST['firstname'];
 				$surname=$_POST['surname'];
 				$password=$_POST['password'];
+				$child_matched=0;
 				
 				//create select statemnt to using firstname and surname as filters 
 				$query="SELECT `vol_email`
@@ -52,7 +53,7 @@
 				}
 				else{
 					//create user in database if they dont exists there already
-					$insert="INSERT INTO volunteers (`vol_email`, `vol_password`, `vol_firstname`,`vol_surname`) VALUES('$email','$password','$firstname','$surname')";
+					$insert="INSERT INTO volunteers (`vol_email`, `vol_password`, `vol_firstname`,`vol_surname`,`vol_child_matched`) VALUES('$email','$password','$firstname','$surname','$child_matched')";
 					$outcome=$db->query($insert) or die("Insert statement failed!!!");
 					echo "<SCRIPT>alert('User created!!!');</SCRIPT>";
 					header("Location: createuser.php");

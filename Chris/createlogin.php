@@ -89,7 +89,7 @@
 				}
 				$login_session=NULL;
 				while($row = $output->fetch_assoc()) {
-					$login_session=$row["email_id"];
+					$login_session=$row["ad_email"];
 					}
 		if(isset($login_session)){
 			//show_create_user();

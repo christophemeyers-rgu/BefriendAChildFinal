@@ -104,11 +104,7 @@
 
     <!-- SURVEY QUESTION 1 -->
     <section class="container" id="cont1">
-        <label for="question1">What activities did you do today ? :</label>
-        <br>
-        <textarea name="question1" cols="45" rows="5" placeholder="Enter your response here"></textarea>
-        <br>
-        <button id="button1">CLICK HERE FOR NEXT QUESTION </button>
+        <?php include ("volunteerhome_assets/volunteerhome_htmlscripts/question1"); ?>
     </section>
 
 

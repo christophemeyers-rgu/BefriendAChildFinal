@@ -23,12 +23,12 @@
 					session_start();// Starting Session
 					// Establishing Connection with Server by passing server_name, user_id and password as a parameter
 					// Selecting Database
-					$user_check=$_SESSION['user_login']; // Storing Session
+					$user_check=$_SESSION['ad_email']; // Storing Session
 					
 					//select all values from database using the entered values as filter
 					$query="SELECT *
-					FROM `administrator`
-					WHERE `email` = '$user_check' LIMIT 1";
+					FROM `administrators`
+					WHERE `ad_email` = '$user_check' LIMIT 1";
 					$output=$db->query($query) or die("Selection Query Failed !!!");//query the database
 				}
 				$login_session=NULL;//initiate variable to hold session state

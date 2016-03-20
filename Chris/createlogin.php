@@ -28,28 +28,22 @@
 			else{
 				
 				//read input details from index.php
-				$userlogin=$_POST['email'];
+				$email=$_POST['email'];
 				$firstname=$_POST['firstname'];
 				$surname=$_POST['surname'];
-				$gender=$_POST['gender'];
-				$day=$_POST['day'];
-				$month=$_POST['month'];
-				$year=$_POST['year'];
-				$address=$_POST['address'];
-				$picture=$_POST['picture'];
 				$password=$_POST['password'];
 				
 				//create select statemnt to using firstname and surname as filters 
-				$query="SELECT `firstname`
-						FROM `users`
-						WHERE `firstname` ='$firstname' AND `surname` ='$surname'
+				$query="SELECT `vol_email`
+						FROM `volunteers`
+						WHERE `vol_email` ='$email'
 						LIMIT 1";
 					//cheeck to see that sql query executes properly, and return any errors 
 					$output=$db->query($query) or die("Selection Query Failed !!!");
 					$return=NULL;
 					//go through the array of results returned from the query if any
 				while($row = $output->fetch_assoc()) {
-					$return=$row["firstname"];//add the firstname value ro the return variable 
+					$return=$row["vol_email"];//add the firstname value ro the return variable
 					}
 					//if a value was returned, then it means user exists already
 				if(isset($return)){
@@ -58,7 +52,7 @@
 				}
 				else{
 					//create user in database if they dont exists there already
-					$insert="INSERT INTO users (`user_login`, `user_password`, `firstname`,`surname`, `gender`, `address`) VALUES('$userlogin','$password','$firstname','$surname', '$gender', '$address')";
+					$insert="INSERT INTO volunteers (`vol_email`, `vol_password`, `vol_firstname`,`vol_surname`) VALUES('$email','$password','$firstname','$surname')";
 					$outcome=$db->query($insert) or die("Insert statement failed!!!");
 					echo "<SCRIPT>alert('User created!!!');</SCRIPT>";
 					header("Location: createuser.php");
@@ -85,12 +79,12 @@
 					session_start();// Starting Session
 					// Establishing Connection with Server by passing server_name, user_id and password as a parameter
 					// Selecting Database
-					$user_check=$_SESSION['user_login']; // Storing Session
+					$user_check=$_SESSION['ad_email']; // Storing Session
 					
 					//select all values from database using the entered values as filter
 					$query="SELECT *
-					FROM `admin`
-					WHERE `email_id` = '$user_check' LIMIT 1";
+					FROM `administrators`
+					WHERE `ad_email` = '$user_check' LIMIT 1";
 					$output=$db->query($query) or die("Selection Query Failed !!!");
 				}
 				$login_session=NULL;

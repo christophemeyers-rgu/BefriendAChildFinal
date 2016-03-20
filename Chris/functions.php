@@ -18,7 +18,7 @@ function save_user() {
     $dob = $dob_month . "/" . $dob_day . "/" . $dob_year;
     $address = $_POST['address'];
     $imageurl = saveImage();
-    $sql = "insert into users (user_login,user_password,firstname,surname,gender,dob,address,imageurl)values('$login_name','$password','$firstName','$surName','$gender','$dob','$address','$imageurl')";
+    $sql = "insert into volunteers (vol_email,vol_password,vol_firstname,vol_surname)values('$login_name','$password','$firstName','$surName')";
     $mysqli = new mysqli(host, user, password, database);
     $mysqli->query($sql);
     $mysqli->close();
@@ -69,7 +69,7 @@ function is_valid_type($type) {
 
 
 function verifyUserName($username) {
-    $sql = "select * from admin where email_id='$username'";
+    $sql = "select * from administrators where ad_email='$username'";
 	//echo $sql;
 	//	echo "";
 	//	die();
@@ -89,7 +89,7 @@ if ($mysqli->connect_error) {
 
 //end function
 function verifyPassword($username, $password) {
-    $sql = "select * from admin where email_id='$username' and password = '$password'";
+    $sql = "select * from administrators where ad_email='$username' and ad_password = '$password'";
 
     $mysqli = new mysqli(host, user, password, database);
     $result = $mysqli->query($sql);
@@ -125,7 +125,7 @@ function is_admin() {
 //end function
 
 function getAllRegisteredUsers() {
-    $sql = "select * from users";
+    $sql = "select * from volunteers";
 
     $mysqli = new mysqli(host, user, password, database);
     $result = $mysqli->query($sql);
@@ -139,7 +139,7 @@ function getAllRegisteredUsers() {
 
 function deleteUser($login_name) {
 
-    $sql = "delete from users where user_login='$login_name'";
+    $sql = "delete from volunteers where vol_email='$login_name'";
     $mysqli = new mysqli(host, user, password, database);
     $mysqli->query($sql);
     $mysqli->close();
@@ -148,7 +148,7 @@ function deleteUser($login_name) {
 //end function
 
 function getUser($login_name) {
-    $sql = "select * from users where user_login='$login_name'";
+    $sql = "select * from volunteers where vol_email='$login_name'";
 
     $mysqli = new mysqli(host, user, password, database);
     $result = $mysqli->query($sql);
@@ -165,9 +165,7 @@ function updateUser() {
     $password = $_POST['password'];
     $firstName = $_POST['firstName'];
     $surName = $_POST['surName'];
-    $gender = $_POST['gender'];
-    $dob = $_POST['dob'];
-    $address = $_POST['address'];
+
     $login_name_prev = $_POST['user_login_prev'];
     $result = getUser($login_name_prev);
     $row = mysqli_fetch_array($result);
@@ -180,7 +178,7 @@ function updateUser() {
         unlink($imageurl_old);
     }
     
-    $sql = "update users set user_login='$login_name',user_password='$password',firstname='$firstName',surname='$surName',gender='$gender',dob='$dob', address='$address', imageurl='$imageurl' where user_login='$login_name_prev'";
+    $sql = "update volunteers set vol_email='$login_name',vol_password='$password',vol_firstname='$firstName',vol_surname='$surName' where vol_email='$login_name_prev'";
 
     $mysqli = new mysqli(host, user, password, database);
     $mysqli->query($sql);

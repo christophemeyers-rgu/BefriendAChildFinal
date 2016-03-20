@@ -291,6 +291,13 @@ if(!isset($_SESSION['ad_email'])){
 
                                         </tr>
                                         <tr>
+                                            <th valign="top">Currently matched with a child?</th>
+                                            <td>
+                                                <input type="radio" name="child_matched" value="1">Yes
+                                                <input type="radio" name="child_matched" value="0">No
+                                            </td>
+                                        </tr>
+                                        <tr>
                                             <th>&nbsp;</th>
                                             <td valign="top">
                                                 <input type="submit" value="" class="form-submit" />

@@ -165,6 +165,7 @@ function updateUser() {
     $password = $_POST['password'];
     $firstName = $_POST['firstName'];
     $surName = $_POST['surName'];
+    $childMatched = $_POST['child_matched'];
 
     $login_name_prev = $_POST['user_login_prev'];
     $result = getUser($login_name_prev);
@@ -178,7 +179,7 @@ function updateUser() {
         unlink($imageurl_old);
     }
     
-    $sql = "update volunteers set vol_email='$login_name',vol_password='$password',vol_firstname='$firstName',vol_surname='$surName' where vol_email='$login_name_prev'";
+    $sql = "update volunteers set vol_email='$login_name',vol_password='$password',vol_firstname='$firstName',vol_surname='$surName',child_matched='$childMatched' where vol_email='$login_name_prev'";
 
     $mysqli = new mysqli(host, user, password, database);
     $mysqli->query($sql);

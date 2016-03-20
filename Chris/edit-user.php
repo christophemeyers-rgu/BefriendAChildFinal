@@ -190,6 +190,18 @@ if(isset($_GET['vol_email']))
                                                 <!-- start id-form -->
                                                 <table border="0" cellpadding="0" cellspacing="0"  id="id-form">
                                                     <tr>
+                                                        <th valign="top">Firstname:</th>
+                                                        <td><input name="firstName" type="text" class="inp-form" value="<?php echo $row['vol_firstname']; ?>" /></td>
+                                                        <td></td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <th valign="top">Surname:</th>
+                                                        <td><input name="surName" type="text" class="inp-form" value="<?php echo $row['vol_surname']; ?>" /></td>
+                                                        <td></td>
+
+                                                    </tr>
+                                                    <tr>
                                                         <th valign="top">Login Name:</th>
                                                         <td>
                                                             <input name="user_login_prev" type="hidden" value="<?php echo $row['vol_email'] ?>" />
@@ -203,17 +215,23 @@ if(isset($_GET['vol_email']))
                                                         <td></td>
 
                                                     </tr>
-                                                    <tr>
-                                                        <th valign="top">Firstname:</th>
-                                                        <td><input name="firstName" type="text" class="inp-form" value="<?php echo $row['vol_firstname']; ?>" /></td>
-                                                        <td></td>
 
-                                                    </tr>
                                                     <tr>
-                                                        <th valign="top">Surname:</th>
-                                                        <td><input name="surName" type="text" class="inp-form" value="<?php echo $row['vol_surname']; ?>" /></td>
-                                                        <td></td>
-
+                                                        <th valign="top">Currently matched with a child?</th>
+                                                        <td>
+                                                            <?php
+                                                                if ($row['vol_child_matched']=0){
+                                                                    $yes="checked='checked'";
+                                                                    $no="";
+                                                                }
+                                                                else if ($row['vol_child_matched']=1){
+                                                                    $no="checked='checked'";
+                                                                    $yes="";
+                                                                }
+                                                            ?>
+                                                            <input type="radio" name="child_matched" value="1" <?php $yes ?> >Yes
+                                                            <input type="radio" name="child_matched" value="0" <?php $no ?>  >No
+                                                        </td>
                                                     </tr>
 
                                                     <tr>

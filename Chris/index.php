@@ -151,9 +151,9 @@ print($htmlpage);
 				}
 			else{
 				//select all values from database using the entered values as filter
-				$query="SELECT `email`, `password`
-				FROM `administrator`
-				WHERE `email` = '$email' AND `password` = '$password' LIMIT 1";
+				$query="SELECT `ad_email`, `ad_password`
+				FROM `administrators`
+				WHERE `ad_email` = '$email' AND `ad_password` = '$password' LIMIT 1";
 				$output=$db->query($query) or die("Selection Query Failed !!!");
 				
 				

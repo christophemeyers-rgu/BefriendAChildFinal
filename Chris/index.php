@@ -2,7 +2,7 @@
 	
 	if($_SERVER['REQUEST_METHOD']==='GET'){
 			session_start();
-			if(isset($_SESSION["user_login"]))
+			if(isset($_SESSION["ad_email"]))
 			{
 				header("Location: adminhome.php");
 			}
@@ -17,7 +17,7 @@
 				$password=$_POST['p'];
 				if(user_registered($email,$password)){
 					session_start();
-					$_SESSION["user_login"]=$email;
+					$_SESSION["ad_email"]=$email;
 					header("Location: adminhome.php");
 				}
 				else{

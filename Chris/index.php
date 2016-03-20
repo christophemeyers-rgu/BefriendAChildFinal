@@ -1,5 +1,5 @@
 <?php
-	
+
 	if($_SERVER['REQUEST_METHOD']==='GET'){
 			session_start();
 			if(isset($_SESSION["ad_email"]))
@@ -11,7 +11,7 @@
 			}
 		}
 	else if($_SERVER['REQUEST_METHOD']==='POST'){
-			
+
 				//read input details from index.html
 				$email=$_POST['u'];
 				$password=$_POST['p'];
@@ -26,9 +26,9 @@
 				}
 			}
 	else{
-			echo "Impossible is nothing";	
+			echo "Impossible is nothing";
 		}
-		
+
 	function show_index_page() {
     //display the HTML form to register
     //or sign a user in
@@ -38,11 +38,11 @@
   <head>
     <meta charset="UTF-8">
     <title> Administrator Login</title>
-    
-    
+
+
     <link rel="stylesheet" href="css/normalize.css">
 
-    
+
         <style>
       /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
       @import url(http://fonts.googleapis.com/css?family=Open+Sans);
@@ -60,7 +60,7 @@
 
 html { width: 100%; height:100%; overflow:hidden; }
 
-body { 
+body {
 	width: 100%;
 	height:100%;
 	font-family: 'Open Sans', sans-serif;
@@ -72,7 +72,7 @@ body {
 	background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), linear-gradient(to bottom,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), linear-gradient(135deg,  #670d10 0%,#092756 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3E1D6D', endColorstr='#092756',GradientType=1 );
 }
-.login { 
+.login {
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -82,9 +82,9 @@ body {
 }
 .login h1 { color: #fff; text-shadow: 0 0 10px rgba(0,0,0,0.3); letter-spacing:1px; text-align:center; }
 
-input { 
-	width: 100%; 
-	margin-bottom: 10px; 
+input {
+	width: 100%;
+	margin-bottom: 10px;
 	background: rgba(0,0,0,0.3);
 	border: none;
 	outline: none;
@@ -105,9 +105,9 @@ input:focus { box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgb
 
     </style>
 
-    
 
-    
+
+
   </head>
 
   <body>
@@ -122,7 +122,7 @@ input:focus { box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgb
     </form>
     </section>
 </div>
-      
+
   </body>
 </html>
 HTMLPAGE;
@@ -131,20 +131,20 @@ print($htmlpage);
 }
 
 		function user_registered($email,$password) {
-    //test to discover if the user is already in the DB
-    //to do that, we can find out if the email address already exists in a row
-    
-    //1&2: Connect to server and choose DB
-    //***** EDIT DATABASE CREDENTIALS TO BE YOUR OWN!!!
-	
-	//connect to the database
+			//test to discover if the user is already in the DB
+			//to do that, we can find out if the email address already exists in a row
+
+			//1&2: Connect to server and choose DB
+			//***** EDIT DATABASE CREDENTIALS TO BE YOUR OWN!!!
+
+			//connect to the database
 			$db = new MySQLi(
 						'ap-cdbr-azure-east-c.cloudapp.net', //server or host address
 						'b35e94884f471c', //username for connecting to database
-						'90efdea3', //user's password 
+						'90efdea3', //user's password
 						'befriendachildtestDB' //database being connected to
 						);
-					
+
 			//check if there was a connection error and respond accordingly
 			if($db->connect_errno){
 				die('Connection failed:'.connect_error);
@@ -155,8 +155,8 @@ print($htmlpage);
 				FROM `administrators`
 				WHERE `ad_email` = '$email' AND `ad_password` = '$password' LIMIT 1";
 				$output=$db->query($query) or die("Selection Query Failed !!!");
-				
-				
+
+
 				//if the sql query returns a value
 				if(mysqli_num_rows($output)){
 					return TRUE; //indicate that a value was returned, and user exists in database
@@ -166,6 +166,6 @@ print($htmlpage);
 					}
 					$db->close(); // Closing Connection
 				}
-	
-}
+
+		}
 ?>

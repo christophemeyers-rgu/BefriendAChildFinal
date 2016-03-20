@@ -104,7 +104,7 @@
 
     <!-- SURVEY QUESTION 1 -->
     <section class="container" id="cont1">
-        <?php include ("volunteerhome_assets/volunteerhome_htmlscripts/question1"); ?>
+        <?php include ("volunteerhome_assets/volunteerhome_htmlscripts/question1.html"); ?>
     </section>
 
 

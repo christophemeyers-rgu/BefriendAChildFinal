@@ -27,15 +27,15 @@
 					
 					//select all values from database using the entered values as filter
 					$query="SELECT *
-					FROM `admin`
-					WHERE `email_id` = '$user_check' LIMIT 1";
+					FROM `administrator`
+					WHERE `email` = '$user_check' LIMIT 1";
 					$output=$db->query($query) or die("Selection Query Failed !!!");//query the database
 				}
 				$login_session=NULL;//initiate variable to hold session state
 				
-				//goo through the output from the sql query and initiate the login_session variable using returned email_id
+				//goo through the output from the sql query and initiate the login_session variable using returned email_
 				while($row = $output->fetch_assoc()) {
-					$login_session=$row["email_id"];
+					$login_session=$row["email"];
 					}
 		if(isset($login_session)){//if a valid session exists?
 			show_admin_home();

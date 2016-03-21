@@ -5,7 +5,7 @@
 		session_start();
 		if(isset($_SESSION["vol_email"]))
 		{
-			header("Location: volunteerhome.php");
+			header("Location: volunteerhub.php");
 		}
 		else{
 			show_volunteer_login();
@@ -19,7 +19,7 @@
 		$password=$_POST['p'];
 		if(volunteer_registered($email,$password)){
 			session_start();
-			$_SESSION["vol_email_email"]=$email;
+			$_SESSION["vol_email"]=$email;
 			header("Location: volunteerhub.php");
 		}
 		else{

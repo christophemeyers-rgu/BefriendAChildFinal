@@ -23,7 +23,7 @@
 <body>
 
 <!-- [START OF SURVEY] ------------------------------------------------------------------->
-<form>
+<form action="volunteerhub.php" method="post">
 
 <!-- SURVEY QUESTION 1 -->
 

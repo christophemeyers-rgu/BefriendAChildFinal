@@ -29,28 +29,58 @@
             session_start();// Starting Session
             // Establishing Connection with Server by passing server_name, user_id and password as a parameter
             // Selecting Database
-            $user_check=$_SESSION['ad_email']; // Storing Session
+            $user_check=$_SESSION['vol_email']; // Storing Session
 
             //select all values from database using the entered values as filter
             $query="SELECT *
-					FROM `administrators`
-					WHERE `ad_email` = '$user_check' LIMIT 1";
+					FROM `volunteers`
+					WHERE `vol_email` = '$user_check' LIMIT 1";
             $output=$db->query($query) or die("Selection Query Failed !!!");//query the database
         }
         $login_session=NULL;//initiate variable to hold session state
 
         //goo through the output from the sql query and initiate the login_session variable using returned email_
         while($row = $output->fetch_assoc()) {
-            $login_session=$row["ad_email"];
+            $login_session=$row["vol_email"];
         }
         if(isset($login_session)){//if a valid session exists?
-            show_admin_home();
+            show_volunteer_hub();
         }
         else{
-            header("Location: index.php");
+            header("Location: volunteerlogin.php");
         }
+    }
+
+
+    function show_volunteer_hub()
+    {
+
+        $htmlpage = <<< HTMLPAGE
+            <!doctype html>
+            <html>
+            <head>
+                <meta charset="UTF-8">
+                <title>Volunteer Hub</title>
+            </head>
+            <body>
+
+
+                <p>
+                    Welcome!
+                </p>
+
+                <a href="volunteerhome.php">Start survey</a>
+
+            </body>
+            </html>
+HTMLPAGE;
+        print $htmlpage;
     }
 
 
 
 ?>
+
+
+
+

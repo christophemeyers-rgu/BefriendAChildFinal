@@ -89,7 +89,7 @@
 
     <label for="question1">
         <?php
-                get_question_text(1);
+                echo get_question_text(1);
         ?>
     </label>
         <br>

@@ -30,6 +30,8 @@
     <!-- (START OF MAIN) ------------------------------------------------------------------->
     <main class="grid-container">
 
+        <form action="volunteerhome.php" method="post">
+
     <!-- SURVEY SUBMIT BUTTON -->
     <section class="container" id="cont7">
         <input type="submit" value="SUBMIT SURVEY">
@@ -65,6 +67,7 @@
         <?php include ("volunteerhome_assets/volunteerhome_htmlscripts/question1.html"); ?>
     </section>
 
+        </form>
 
     <!-- CALL JQUERY SCRIPT FUNCTION-->
     <script SRC="volunteerhome_assets/volunteerhome_jquery/surveybounce.js"></script>

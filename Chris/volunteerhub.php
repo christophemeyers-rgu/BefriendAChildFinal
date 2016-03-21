@@ -163,10 +163,10 @@
 
 
                 <p>
-                    Welcome
+                    Welcome:
                     <?php
 
-                        $name;
+                        echo $name;
 
                     ?>
                     !

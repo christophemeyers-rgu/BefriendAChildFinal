@@ -32,7 +32,13 @@
 				$firstname=$_POST['firstname'];
 				$surname=$_POST['surname'];
 				$password=$_POST['password'];
-				$child_matched=$_POST['child_matched'];
+				if($_POST['child_matched']="1"){
+					$child_matched=TRUE;
+				}
+				else{
+					$child_matched=FALSE;
+				}
+
 				
 				//create select statemnt to using firstname and surname as filters 
 				$query="SELECT `vol_email`

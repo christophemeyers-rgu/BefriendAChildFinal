@@ -119,13 +119,13 @@
         }
         if(isset($login_session)){//if a valid session exists?
 
-            $namequery = "SELECT vol_firstname, vol_surname FROM volunteers WHERE vol_email='$user_check'";
+            $namequery = "SELECT vol_firstname, vol_surname FROM volunteers WHERE vol_email='$login_session'";
 
             $result = $db->query($namequery);
 
             $rowie = $result->fetch_assoc();
 
-            echo "".$rowie['vol_firstname']." ".$rowie['vol_surname'];
+            echo "Welcome ".$rowie['vol_firstname']." ".$rowie['vol_surname'];
 
             //show_volunteer_hub($login_session);
         }

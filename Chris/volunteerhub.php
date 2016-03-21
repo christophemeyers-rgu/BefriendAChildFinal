@@ -121,7 +121,7 @@
 
 
 
-            echo "".$row['vol_firstname']." ".$row['vol_surname'];
+            echo "hi".$row['vol_firstname']." ".$row['vol_surname'];
 
             //show_volunteer_hub($login_session);
         }

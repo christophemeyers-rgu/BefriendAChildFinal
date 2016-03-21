@@ -23,7 +23,7 @@
 
         $row = $result->fetch_assoc();
 
-        return $row['question_text'];
+        echo $row['question_text'];
     }
 
     function get_question_type($qid){
@@ -89,7 +89,7 @@
 
     <label for="question1">
         <?php
-                echo get_question_text(1);
+            get_question_text(1);
         ?>
     </label>
         <br>

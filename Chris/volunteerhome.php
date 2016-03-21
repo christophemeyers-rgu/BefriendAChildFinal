@@ -17,11 +17,13 @@
             die('Connectfailed['.$db->connect_error.']');
         }
 
-        $query = "SELECT question_text FROM questions WHERE question_id=$qid";
+        $query = "SELECT question_text FROM questions WHERE question_id='$qid'";
 
         $result = $db->query($query);
 
-        return $result;
+        $row = $result->fetch_assoc();
+
+        echo $row['question_text'];
     }
 
     function get_question_type($qid){
@@ -41,7 +43,9 @@
 
         $result = $db->query($query);
 
-        echo $result;
+        $row = $result->fetch_assoc();
+
+        echo $row['question_type'];
     }
 
 
@@ -85,66 +89,90 @@
 
 <!-- SURVEY QUESTION 1 -->
 
-        <label for="question1"><?php get_question_text(1);?></label>
+    <label for="question1">
+        <?php
+            get_question_text(1);
+        ?>
+    </label>
         <br>
-        <textarea name="question1" cols="45" rows="5" placeholder="Enter your response here"></textarea>
+        <textarea name="question1" cols="45" rows="5" placeholder="Enter your response here" required></textarea>
     <br>
 
 <!-- SURVEY QUESTION 2 -->
 
-        <label for="question2">How much did you spend today ? :</label>
+        <label for="question2">
+            <?php
+            get_question_text(11);
+            ?>
+        </label>
         <br>
-        <input type="number" step="any" name="question2" placeholder="Enter Amount">
+        <input type="number" step="any" name="question2" placeholder="Enter Amount" required>
     <br>
 
 <!-- SURVEY QUESTION 3 -->
 
-        <label for="question3">How much fun did you have today ? :</label>
-        <input type="radio" name="question3"><img src="volunteerhome_assets/volunteerhome_images/surveyiconsad.png">
-        <input type="radio" name="question3"><img src="volunteerhome_assets/volunteerhome_images/surveyiconnomal.png">
-        <input type="radio" name="question3"><img src="volunteerhome_assets/volunteerhome_images/surveyiconsmile.png">
+        <label for="question3">
+            <?php
+            get_question_text(21);
+            ?>
+        </label>
+        <input type="radio" name="question3" required><img src="volunteerhome_assets/volunteerhome_images/surveyiconsad.png">
+        <input type="radio" name="question3" required><img src="volunteerhome_assets/volunteerhome_images/surveyiconnomal.png">
+        <input type="radio" name="question3" required><img src="volunteerhome_assets/volunteerhome_images/surveyiconsmile.png">
         <br>
         <br>
-        <label for="question3">Explain :</label>
+        <label for="question3_opt">Explain :</label>
         <br>
-        <textarea name="question3" cols="45" rows="5" placeholder="Enter your explanation here"></textarea>
+        <textarea name="question3_opt" cols="45" rows="5" placeholder="Enter your explanation here"></textarea>
     <br>
 
 <!-- SURVEY QUESTION 4 -->
 
-        <label for="question4">Did you learn something new ? :</label>
-        <input type="radio" name="question4">Nothing new
-        <input type="radio" name="question4">Done it before
-        <input type="radio" name="question4">Never done it before
+        <label for="question4">
+            <?php
+            get_question_text(31);
+            ?>
+        </label>
+        <input type="radio" name="question4" required>Nothing new
+        <input type="radio" name="question4" required>Done it before
+        <input type="radio" name="question4" required>Never done it before
         <br>
         <br>
-        <label for="question4">Explain :</label>
+        <label for="question4_opt">Explain :</label>
         <br>
-        <textarea name="question4" cols="45" rows="5" placeholder="Explain what you learned here"></textarea>
+        <textarea name="question4_opt" cols="45" rows="5" placeholder="Explain what you learned here"></textarea>
     <br>
 
 <!-- SURVEY QUESTION 5 -->
 
-        <label for="question5">Did you eat something healthy ? :</label>
-        <input type="radio" name="question5">YES
-        <input type="radio" name="question5">NO
+        <label for="question5">
+            <?php
+            get_question_text(41);
+            ?>
+        </label>
+        <input type="radio" name="question5" required>YES
+        <input type="radio" name="question5" required>NO
         <br>
         <br>
-        <label for="question5">Explain :</label>
+        <label for="question5_opt">Explain :</label>
         <br>
-        <textarea name="question5" cols="45" rows="5" placeholder="Enter items here"></textarea>
+        <textarea name="question5_opt" cols="45" rows="5" placeholder="Enter items here"></textarea>
     <br>
 
 <!-- SURVEY QUESTION 6 -->
 
-        <label for="question6">Would you want to do it again ? :</label>
-        <input type="radio" name="question6">YES
-        <input type="radio" name="question6">NO
+        <label for="question6">
+            <?php
+            get_question_text(51);
+            ?>
+        </label>
+        <input type="radio" name="question6" required>YES
+        <input type="radio" name="question6" required>NO
         <br>
         <br>
-        <label for="question6">Explain :</label>
+        <label for="question6_opt">Explain :</label>
         <br>
-        <textarea name="question6" cols="45" rows="5" placeholder="Explain why here"></textarea>
+        <textarea name="question6_opt" cols="45" rows="5" placeholder="Explain why here"></textarea>
     <br>
     <br>
 

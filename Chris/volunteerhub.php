@@ -118,16 +118,55 @@
             $login_session=$row["vol_email"];
         }
         if(isset($login_session)){//if a valid session exists?
-            show_volunteer_hub();
+
+            //$name = get_volunteer_name($login_session);
+
+            show_volunteer_hub($login_session);
+
+
         }
         else{
             header("Location: volunteerlogin.php");
         }
     }
 
+    function get_volunteer_name($email){
 
-    function show_volunteer_hub()
+        $db = new MySQLi(
+            'ap-cdbr-azure-east-c.cloudapp.net', //server or host address
+            'b35e94884f471c', //username for connecting to database
+            '90efdea3', //user's password
+            'befriendachildtestDB' //database being connected to
+        );
+
+        $namequery = "SELECT vol_firstname, vol_surname FROM volunteers WHERE vol_email='$email'";
+
+        $result = $db->query($namequery);
+
+        $rowie = $result->fetch_assoc();
+
+        return "Welcome again, ".$rowie['vol_firstname']." ".$rowie['vol_surname'];
+
+
+    }
+
+    function show_volunteer_hub($email)
     {
+        $db = new MySQLi(
+            'ap-cdbr-azure-east-c.cloudapp.net', //server or host address
+            'b35e94884f471c', //username for connecting to database
+            '90efdea3', //user's password
+            'befriendachildtestDB' //database being connected to
+        );
+
+        $namequery = "SELECT vol_firstname, vol_surname FROM volunteers WHERE vol_email='$email'";
+
+        $result = $db->query($namequery);
+
+        $rowie = $result->fetch_assoc();
+
+        $name = "Welcome again, ".$rowie['vol_firstname']." ".$rowie['vol_surname'];
+
 
         $htmlpage = <<< HTMLPAGE
             <!doctype html>
@@ -140,7 +179,9 @@
 
 
                 <p>
-                    Welcome!
+                    Welcome:
+                    <?=$name?>
+                    !
                 </p>
 
                 <a href="volunteerhome.php">Start survey</a>
@@ -150,6 +191,9 @@
 HTMLPAGE;
         print $htmlpage;
     }
+
+
+
 
 
 

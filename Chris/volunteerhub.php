@@ -113,17 +113,13 @@
         }
         $login_session=NULL;//initiate variable to hold session state
 
-        //goo through the output from the sql query and initiate the login_session variable using returned email_
+        //go through the output from the sql query and initiate the login_session variable using returned email_
         while($row = $output->fetch_assoc()) {
             $login_session=$row["vol_email"];
         }
         if(isset($login_session)){//if a valid session exists?
 
-            $namequery = "SELECT vol_firstname, vol_surname FROM volunteers WHERE vol_email=$user_check";
 
-            $result = $db->query($namequery);
-
-            $row = $result->fetch_assoc();
 
             echo "".$row['vol_firstname']." ".$row['vol_surname'];
 

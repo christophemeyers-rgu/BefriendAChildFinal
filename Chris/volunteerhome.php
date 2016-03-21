@@ -1,3 +1,61 @@
+<?php
+    session_start();
+    if(!isset($_SESSION['vol_email'])){
+        header("Location: volunteerlogin.php");
+    }
+
+    function get_question_text($qid){
+        //connect to the database
+        $db = new MySQLi(
+            'ap-cdbr-azure-east-c.cloudapp.net', //server or host address
+            'b35e94884f471c', //username for connecting to database
+            '90efdea3', //user's password
+            'befriendachildtestDB' //database being connected to
+        );
+
+        if($db->connect_errno){
+            die('Connectfailed['.$db->connect_error.']');
+        }
+
+        $query = "SELECT question_text FROM questions WHERE question_id=$qid";
+
+        $result = $db->query($query);
+
+        return $result;
+    }
+
+    function get_question_type($qid){
+        //connect to the database
+        $db = new MySQLi(
+            'ap-cdbr-azure-east-c.cloudapp.net', //server or host address
+            'b35e94884f471c', //username for connecting to database
+            '90efdea3', //user's password
+            'befriendachildtestDB' //database being connected to
+        );
+
+        if($db->connect_errno){
+            die('Connectfailed['.$db->connect_error.']');
+        }
+
+        $query = "SELECT question_type FROM questions WHERE question_id=$qid";
+
+        $result = $db->query($query);
+
+        return $result;
+    }
+
+
+
+?>
+
+
+
+
+
+
+
+
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -27,7 +85,7 @@
 
 <!-- SURVEY QUESTION 1 -->
 
-        <label for="question1">What activities did you do today ? :</label>
+        <label for="question1"><?php echo get_question_text(1)?></label>
         <br>
         <textarea name="question1" cols="45" rows="5" placeholder="Enter your response here"></textarea>
     <br>

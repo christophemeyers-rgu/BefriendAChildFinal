@@ -43,7 +43,9 @@
 
         $result = $db->query($query);
 
-        echo $result;
+        $row = $result->fetch_assoc();
+
+        echo $row['question_type'];
     }
 
 
@@ -98,14 +100,22 @@
 
 <!-- SURVEY QUESTION 2 -->
 
-        <label for="question2">How much did you spend today ? :</label>
+        <label for="question2">
+            <?php
+            get_question_text(11);
+            ?>
+        </label>
         <br>
         <input type="number" step="any" name="question2" placeholder="Enter Amount">
     <br>
 
 <!-- SURVEY QUESTION 3 -->
 
-        <label for="question3">How much fun did you have today ? :</label>
+        <label for="question3">
+            <?php
+            get_question_text(21);
+            ?>
+        </label>
         <input type="radio" name="question3"><img src="volunteerhome_assets/volunteerhome_images/surveyiconsad.png">
         <input type="radio" name="question3"><img src="volunteerhome_assets/volunteerhome_images/surveyiconnomal.png">
         <input type="radio" name="question3"><img src="volunteerhome_assets/volunteerhome_images/surveyiconsmile.png">
@@ -118,7 +128,11 @@
 
 <!-- SURVEY QUESTION 4 -->
 
-        <label for="question4">Did you learn something new ? :</label>
+        <label for="question4">
+            <?php
+            get_question_text(31);
+            ?>
+        </label>
         <input type="radio" name="question4">Nothing new
         <input type="radio" name="question4">Done it before
         <input type="radio" name="question4">Never done it before
@@ -131,7 +145,11 @@
 
 <!-- SURVEY QUESTION 5 -->
 
-        <label for="question5">Did you eat something healthy ? :</label>
+        <label for="question5">
+            <?php
+            get_question_text(41);
+            ?>
+        </label>
         <input type="radio" name="question5">YES
         <input type="radio" name="question5">NO
         <br>
@@ -143,7 +161,11 @@
 
 <!-- SURVEY QUESTION 6 -->
 
-        <label for="question6">Would you want to do it again ? :</label>
+        <label for="question6">
+            <?php
+            get_question_text(51);
+            ?>
+        </label>
         <input type="radio" name="question6">YES
         <input type="radio" name="question6">NO
         <br>

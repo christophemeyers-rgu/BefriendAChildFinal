@@ -122,7 +122,6 @@
             show_volunteer_hub(get_volunteer_name($login_session));
 
 
-            //show_volunteer_hub($login_session);
         }
         else{
             header("Location: volunteerlogin.php");
@@ -163,10 +162,10 @@
 
 
                 <p>
-                    Welcome:
+                    Welcome::
                     <?php
 
-                        echo $name;
+                        print $name;
 
                     ?>
                     !

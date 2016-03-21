@@ -95,7 +95,7 @@
         ?>
     </label>
         <br>
-        <textarea name="question1" cols="45" rows="5" placeholder="Enter your response here"></textarea>
+        <textarea name="question1" cols="45" rows="5" placeholder="Enter your response here" required></textarea>
     <br>
 
 <!-- SURVEY QUESTION 2 -->
@@ -106,7 +106,7 @@
             ?>
         </label>
         <br>
-        <input type="number" step="any" name="question2" placeholder="Enter Amount">
+        <input type="number" step="any" name="question2" placeholder="Enter Amount" required>
     <br>
 
 <!-- SURVEY QUESTION 3 -->
@@ -116,9 +116,9 @@
             get_question_text(21);
             ?>
         </label>
-        <input type="radio" name="question3"><img src="volunteerhome_assets/volunteerhome_images/surveyiconsad.png">
-        <input type="radio" name="question3"><img src="volunteerhome_assets/volunteerhome_images/surveyiconnomal.png">
-        <input type="radio" name="question3"><img src="volunteerhome_assets/volunteerhome_images/surveyiconsmile.png">
+        <input type="radio" name="question3" required><img src="volunteerhome_assets/volunteerhome_images/surveyiconsad.png">
+        <input type="radio" name="question3" required><img src="volunteerhome_assets/volunteerhome_images/surveyiconnomal.png">
+        <input type="radio" name="question3" required><img src="volunteerhome_assets/volunteerhome_images/surveyiconsmile.png">
         <br>
         <br>
         <label for="question3_opt">Explain :</label>
@@ -133,9 +133,9 @@
             get_question_text(31);
             ?>
         </label>
-        <input type="radio" name="question4">Nothing new
-        <input type="radio" name="question4">Done it before
-        <input type="radio" name="question4">Never done it before
+        <input type="radio" name="question4" required>Nothing new
+        <input type="radio" name="question4" required>Done it before
+        <input type="radio" name="question4" required>Never done it before
         <br>
         <br>
         <label for="question4_opt">Explain :</label>
@@ -150,8 +150,8 @@
             get_question_text(41);
             ?>
         </label>
-        <input type="radio" name="question5">YES
-        <input type="radio" name="question5">NO
+        <input type="radio" name="question5" required>YES
+        <input type="radio" name="question5" required>NO
         <br>
         <br>
         <label for="question5_opt">Explain :</label>
@@ -166,8 +166,8 @@
             get_question_text(51);
             ?>
         </label>
-        <input type="radio" name="question6">YES
-        <input type="radio" name="question6">NO
+        <input type="radio" name="question6" required>YES
+        <input type="radio" name="question6" required>NO
         <br>
         <br>
         <label for="question6_opt">Explain :</label>

@@ -30,7 +30,7 @@
     <!-- (START OF MAIN) ------------------------------------------------------------------->
     <main class="grid-container">
 
-        <form action="volunteerhome.php" >
+        <form action="#" >
 
     <!-- SURVEY SUBMIT BUTTON -->
     <section class="container" id="cont7">

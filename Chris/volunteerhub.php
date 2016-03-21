@@ -119,7 +119,9 @@
         }
         if(isset($login_session)){//if a valid session exists?
 
-            show_volunteer_hub(get_volunteer_name($login_session));
+            $name = get_volunteer_name($login_session);
+
+            show_volunteer_hub($name);
 
 
         }
@@ -162,7 +164,7 @@
 
 
                 <p>
-                    Welcome::
+                    Welcome:
                     <?php
 
                         print $name;

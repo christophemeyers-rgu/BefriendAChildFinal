@@ -298,7 +298,7 @@ if(!isset($_SESSION['ad_email'])){
                                             </td>
                                         </tr>
                                         <tr>
-                                            <p>If yes, please answer the following two:</p>
+                                            <td>If yes, please answer the following two:</td>
                                         </tr>
                                         <tr>
                                             <th valign="top">Child's gender:</th>

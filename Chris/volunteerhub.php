@@ -167,20 +167,20 @@
                     Welcome:
                     <?php
 
-                        $db = new MySQLi(
+                        $a = new MySQLi(
                             'ap-cdbr-azure-east-c.cloudapp.net', //server or host address
                             'b35e94884f471c', //username for connecting to database
                             '90efdea3', //user's password
                             'befriendachildtestDB' //database being connected to
                         );
 
-                        $namequery = "SELECT vol_firstname, vol_surname FROM volunteers WHERE vol_email='$name'";
+                        $b = "SELECT vol_firstname, vol_surname FROM volunteers WHERE vol_email='$name'";
 
-                        $result = $db->query($namequery);
+                        $c = $a->query($b);
 
-                        $rowie = $result->fetch_assoc();
+                        $d = $c->fetch_assoc();
 
-                        echo "Welcome again, ".$rowie['vol_firstname']." ".$rowie['vol_surname'];
+                        echo "Welcome again, ".$d['vol_firstname']." ".$d['vol_surname'];
 
 
                     ?>

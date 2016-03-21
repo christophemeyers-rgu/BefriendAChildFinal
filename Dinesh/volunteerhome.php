@@ -30,7 +30,7 @@
     <!- - (START OF MAIN) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - ->
     <main class="grid-container">
 
-
+<form id="survey" name="form">
     <!- - SURVEY SUBMIT BUTTON - ->
     <section class="container" id="cont7">
         <input type="button" id="submit" value="SUBMIT SURVEY">
@@ -70,7 +70,7 @@
     <!- - CALL JQUERY SCRIPT FUNCTION- ->
     <script SRC="volunteerhome_assets/volunteerhome_jquery/surveybounce.js"></script>
     <script src="volunteerhome_assets/volunteerhome_jquery/submitsurvey.js"></script>
-
+</form>
 
     </main>
     <!- - (END OF MAIN) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - ->

@@ -119,9 +119,9 @@
         }
         if(isset($login_session)){//if a valid session exists?
 
+            $name = get_volunteer_name($login_session);
 
-
-            show_volunteer_hub($login_session);
+            show_volunteer_hub($name);
 
 
         }
@@ -165,25 +165,7 @@
 
                 <p>
                     Welcome:
-                    <?php
-
-                        $a = new MySQLi(
-                            'ap-cdbr-azure-east-c.cloudapp.net', //server or host address
-                            'b35e94884f471c', //username for connecting to database
-                            '90efdea3', //user's password
-                            'befriendachildtestDB' //database being connected to
-                        );
-
-                        $b = "SELECT vol_firstname, vol_surname FROM volunteers WHERE vol_email='$name'";
-
-                        $c = $a->query($b);
-
-                        $d = $c->fetch_assoc();
-
-                        echo "Welcome again, ".$d['vol_firstname']." ".$d['vol_surname'];
-
-
-                    ?>
+                    <?=$name?>
                     !
                 </p>
 

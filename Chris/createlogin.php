@@ -32,12 +32,7 @@
 				$firstname=$_POST['firstname'];
 				$surname=$_POST['surname'];
 				$password=$_POST['password'];
-				if($_POST['child_matched']="1"){
-					$child_matched=TRUE;
-				}
-				else{
-					$child_matched=FALSE;
-				}
+				$child_matched=$_POST['child_matched'];
 
 				
 				//create select statemnt to using firstname and surname as filters 

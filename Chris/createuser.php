@@ -293,8 +293,8 @@ if(!isset($_SESSION['ad_email'])){
                                         <tr>
                                             <th valign="top">Currently matched with a child?</th>
                                             <td>
-                                                <input type="radio" name="child_matched" value="1">Yes
-                                                <input type="radio" name="child_matched" value="0">No
+                                                <input type="radio" name="child_matched" value="true">Yes
+                                                <input type="radio" name="child_matched" value="false">No
                                             </td>
                                         </tr>
                                         <tr>

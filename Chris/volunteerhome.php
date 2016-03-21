@@ -121,9 +121,9 @@
         <input type="radio" name="question3"><img src="volunteerhome_assets/volunteerhome_images/surveyiconsmile.png">
         <br>
         <br>
-        <label for="question3">Explain :</label>
+        <label for="question3_opt">Explain :</label>
         <br>
-        <textarea name="question3" cols="45" rows="5" placeholder="Enter your explanation here"></textarea>
+        <textarea name="question3_opt" cols="45" rows="5" placeholder="Enter your explanation here"></textarea>
     <br>
 
 <!-- SURVEY QUESTION 4 -->
@@ -138,9 +138,9 @@
         <input type="radio" name="question4">Never done it before
         <br>
         <br>
-        <label for="question4">Explain :</label>
+        <label for="question4_opt">Explain :</label>
         <br>
-        <textarea name="question4" cols="45" rows="5" placeholder="Explain what you learned here"></textarea>
+        <textarea name="question4_opt" cols="45" rows="5" placeholder="Explain what you learned here"></textarea>
     <br>
 
 <!-- SURVEY QUESTION 5 -->
@@ -154,9 +154,9 @@
         <input type="radio" name="question5">NO
         <br>
         <br>
-        <label for="question5">Explain :</label>
+        <label for="question5_opt">Explain :</label>
         <br>
-        <textarea name="question5" cols="45" rows="5" placeholder="Enter items here"></textarea>
+        <textarea name="question5_opt" cols="45" rows="5" placeholder="Enter items here"></textarea>
     <br>
 
 <!-- SURVEY QUESTION 6 -->
@@ -170,9 +170,9 @@
         <input type="radio" name="question6">NO
         <br>
         <br>
-        <label for="question6">Explain :</label>
+        <label for="question6_opt">Explain :</label>
         <br>
-        <textarea name="question6" cols="45" rows="5" placeholder="Explain why here"></textarea>
+        <textarea name="question6_opt" cols="45" rows="5" placeholder="Explain why here"></textarea>
     <br>
     <br>
 

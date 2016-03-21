@@ -118,7 +118,16 @@
             $login_session=$row["vol_email"];
         }
         if(isset($login_session)){//if a valid session exists?
-            show_volunteer_hub();
+
+            $namequery = "SELECT vol_firstname, vol_surname FROM volunteers WHERE vol_email=$user_check";
+
+            $result = $db->query($namequery);
+
+            $row = $result->fetch_assoc();
+
+            echo "".$row['vol_firstname']." ".$row['vol_surname'];
+
+            //show_volunteer_hub($login_session);
         }
         else{
             header("Location: volunteerlogin.php");
@@ -126,7 +135,7 @@
     }
 
 
-    function show_volunteer_hub()
+    function show_volunteer_hub($email)
     {
 
         $htmlpage = <<< HTMLPAGE
@@ -140,7 +149,13 @@
 
 
                 <p>
-                    Welcome!
+                    Welcome
+                    <?php
+
+
+
+                    ?>
+                    !
                 </p>
 
                 <a href="volunteerhome.php">Start survey</a>
@@ -150,6 +165,9 @@
 HTMLPAGE;
         print $htmlpage;
     }
+
+
+
 
 
 

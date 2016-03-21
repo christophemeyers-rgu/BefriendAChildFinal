@@ -17,11 +17,13 @@
             die('Connectfailed['.$db->connect_error.']');
         }
 
-        $query = "SELECT question_text FROM questions WHERE question_id=$qid";
+        $query = "SELECT question_text FROM questions WHERE question_id='$qid'";
 
         $result = $db->query($query);
 
-        return $result;
+        $row = $result->fetch_assoc();
+
+        return $row['question_text'];
     }
 
     function get_question_type($qid){
@@ -87,7 +89,7 @@
 
     <label for="question1">
         <?php
-
+                get_question_text(1);
         ?>
     </label>
         <br>

@@ -119,7 +119,8 @@
         }
         if(isset($login_session)){//if a valid session exists?
 
-            get_volunteer_name($login_session);
+            show_volunteer_hub(get_volunteer_name($login_session));
+
 
             //show_volunteer_hub($login_session);
         }
@@ -143,10 +144,12 @@
 
         $rowie = $result->fetch_assoc();
 
-        echo "Welcome again, ".$rowie['vol_firstname']." ".$rowie['vol_surname'];
+        return "Welcome again, ".$rowie['vol_firstname']." ".$rowie['vol_surname'];
+
+
     }
 
-    function show_volunteer_hub($email)
+    function show_volunteer_hub($name)
     {
 
         $htmlpage = <<< HTMLPAGE
@@ -163,7 +166,7 @@
                     Welcome
                     <?php
 
-
+                        $name;
 
                     ?>
                     !

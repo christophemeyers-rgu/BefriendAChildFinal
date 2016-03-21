@@ -85,7 +85,7 @@
 
 <!-- SURVEY QUESTION 1 -->
 
-        <label for="question1"><?php echo get_question_text(1)?></label>
+        <label for="question1"><?php echo "<p>.get_question_text(1).</p>"?></label>
         <br>
         <textarea name="question1" cols="45" rows="5" placeholder="Enter your response here"></textarea>
     <br>

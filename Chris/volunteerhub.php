@@ -119,7 +119,7 @@
         }
         if(isset($login_session)){//if a valid session exists?
 
-            $namequery = "SELECT vol_firstname, vol_surname FROM volunteers WHERE vol_email='1511363@rgu.ac.uk'";
+            $namequery = "SELECT vol_firstname, vol_surname FROM volunteers WHERE vol_email='$user_check'";
 
             $result = $db->query($namequery);
 

@@ -119,9 +119,9 @@
         }
         if(isset($login_session)){//if a valid session exists?
 
-            $name = get_volunteer_name($login_session);
+            //$name = get_volunteer_name($login_session);
 
-            show_volunteer_hub($name);
+            show_volunteer_hub($login_session);
 
 
         }
@@ -150,8 +150,23 @@
 
     }
 
-    function show_volunteer_hub($name)
+    function show_volunteer_hub($email)
     {
+        $db = new MySQLi(
+            'ap-cdbr-azure-east-c.cloudapp.net', //server or host address
+            'b35e94884f471c', //username for connecting to database
+            '90efdea3', //user's password
+            'befriendachildtestDB' //database being connected to
+        );
+
+        $namequery = "SELECT vol_firstname, vol_surname FROM volunteers WHERE vol_email='$email'";
+
+        $result = $db->query($namequery);
+
+        $rowie = $result->fetch_assoc();
+
+        $name = "Welcome again, ".$rowie['vol_firstname']." ".$rowie['vol_surname'];
+
 
         $htmlpage = <<< HTMLPAGE
             <!doctype html>

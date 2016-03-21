@@ -29,10 +29,8 @@
 				
 				//read input details from index.php
 				$email=$_POST['email'];
-				$firstname=$_POST['firstname'];
-				$surname=$_POST['surname'];
-				$password=$_POST['password'];
-				$child_matched=$_POST['child_matched'];
+
+
 
 				
 				//create select statemnt to using firstname and surname as filters 
@@ -40,12 +38,12 @@
 						FROM `volunteers`
 						WHERE `vol_email` ='$email'
 						LIMIT 1";
-					//cheeck to see that sql query executes properly, and return any errors 
-					$output=$db->query($query) or die("Selection Query Failed !!!");
+					//check to see that sql query executes properly, and return any errors
+					$output=$db->query($query) or die("Error: ".$query."<br>".$db->error);
 					$return=NULL;
 					//go through the array of results returned from the query if any
 				while($row = $output->fetch_assoc()) {
-					$return=$row["vol_email"];//add the firstname value ro the return variable
+					$return=$row["vol_email"];//add the email value to the return variable
 					}
 					//if a value was returned, then it means user exists already
 				if(isset($return)){
@@ -54,8 +52,24 @@
 				}
 				else{
 					//create user in database if they dont exists there already
-					$insert="INSERT INTO volunteers (vol_email, vol_password, vol_firstname,vol_surname,vol_child_matched) VALUES('".$email."','".$password."','".$firstname."','".$surname."','".$child_matched."')";
+					$firstname=$_POST['firstname'];
+					$surname=$_POST['surname'];
+					$password=$_POST['password'];
+					$child_matched=$_POST['child_matched'];
 
+					if($child_matched=true){
+						$child_gender=$_POST['child_gender'];
+						$day=$_POST['day'];
+						$month=$_POST['month'];
+						$year=$_POST['year'];
+						$dob="date'".$year."-".$month."-".$day."'";
+					}
+					else{
+						$child_gender="other";
+						$dob="date'0000-00-00'";
+					}
+
+					$insert="INSERT INTO volunteers (vol_email, vol_password, vol_firstname,vol_surname,vol_child_matched,vol_child_gender,vol_child_dob) VALUES('".$email."','".$password."','".$firstname."','".$surname."','".$child_matched."','".$child_gender."','".$dob."')";
 
 					$outcome=$db->query($insert) or die("Error: ".$insert."<br>".$db->error);
 					echo "<SCRIPT>alert('User created!!!');</SCRIPT>";

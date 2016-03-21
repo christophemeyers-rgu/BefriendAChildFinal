@@ -41,7 +41,7 @@
 
         $result = $db->query($query);
 
-
+        return $result;
     }
 
 

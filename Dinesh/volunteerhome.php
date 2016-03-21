@@ -33,7 +33,7 @@
 
     <!- - SURVEY SUBMIT BUTTON - ->
     <section class="container" id="cont7">
-        <input type="submit" value="SUBMIT SURVEY">
+        <input type="button" id="submit" value="SUBMIT SURVEY">
     </section>
 
     <!- - SURVEY QUESTION 6 - ->
@@ -69,6 +69,7 @@
 
     <!- - CALL JQUERY SCRIPT FUNCTION- ->
     <script SRC="volunteerhome_assets/volunteerhome_jquery/surveybounce.js"></script>
+    <script src="volunteerhome_assets/volunteerhome_jquery/submitsurvey.js"></script>
 
 
     </main>

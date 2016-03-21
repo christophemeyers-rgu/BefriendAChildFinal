@@ -30,7 +30,6 @@
     <!- - (START OF MAIN) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - ->
     <main class="grid-container">
 
-        <form action="#" >
 
     <!- - SURVEY SUBMIT BUTTON - ->
     <section class="container" id="cont7">
@@ -67,7 +66,6 @@
         <h2><?php include ("volunteerhome_assets/volunteerhome_htmlscripts/question1.html"); ?></h2>
     </section>
 
-        </form>
 
     <!- - CALL JQUERY SCRIPT FUNCTION- ->
     <script SRC="volunteerhome_assets/volunteerhome_jquery/surveybounce.js"></script>

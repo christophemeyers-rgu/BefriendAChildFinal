@@ -164,7 +164,7 @@
 
 
                 <p>
-                    Welcome:
+                    Welcome::
                     <?=$name?>
                     !
                 </p>

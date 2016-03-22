@@ -82,7 +82,7 @@
 
         $result = $db->query($namequery);
 
-        $row = $result->fetch_assoc();
+        $row = $result->fetch_array();
 
         echo " ".$row['vol_firstname']." ".$row['vol_surname']."";
 

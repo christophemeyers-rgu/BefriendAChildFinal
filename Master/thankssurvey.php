@@ -16,7 +16,7 @@ if(!isset($_SESSION['vol_email'])){
 echo "<script>alert('Thank you for completing the survey!');</script>";
 
 
-
+//header("Location: volunteerhub.php");
 
 ?>
 
@@ -28,6 +28,6 @@ echo "<script>alert('Thank you for completing the survey!');</script>";
     <title>Thank you for submitting the survey!</title>
 </head>
 <body>
-    <a href="volunteerhub.php"></a>
+    <a href="volunteerhub.php">Back to Hub</a>
 </body>
 </html>

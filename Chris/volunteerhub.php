@@ -11,7 +11,7 @@
     }
 
 
-    //if the http method called is "GET"
+    /*//if the http method called is "GET"
     if($_SERVER['REQUEST_METHOD']==='GET'){
         session_exists();//call the function "session_exists()"
     }
@@ -61,7 +61,9 @@
         else{
             header("Location: volunteerlogin.php");
         }
-    }
+    }*/
+
+
 
     function get_volunteer_name($email){
 
@@ -72,68 +74,55 @@
             'befriendachildtestDB' //database being connected to
         );
 
-        $namequery = "SELECT vol_firstname, vol_surname FROM volunteers WHERE vol_email='$email'";
-
-        $result = $db->query($namequery);
-
-        $rowie = $result->fetch_assoc();
-
-        return "Welcome again, ".$rowie['vol_firstname']." ".$rowie['vol_surname'];
-
-
-    }
-
-    function show_volunteer_hub($email)
-    {
-        $db = new MySQLi(
-            'ap-cdbr-azure-east-c.cloudapp.net', //server or host address
-            'b35e94884f471c', //username for connecting to database
-            '90efdea3', //user's password
-            'befriendachildtestDB' //database being connected to
-        );
+        if($db->connect_errno){
+            die('Connectfailed['.$db->connect_error.']');
+        }
 
         $namequery = "SELECT vol_firstname, vol_surname FROM volunteers WHERE vol_email='$email'";
 
         $result = $db->query($namequery);
 
-        $rowie = $result->fetch_assoc();
+        $row = $result->fetch_assoc();
 
-        $name = "Welcome again, ".$rowie['vol_firstname']." ".$rowie['vol_surname'];
-
-
-        $htmlpage = <<< HTMLPAGE
-            <!doctype html>
-            <html>
-            <head>
-                <meta charset="UTF-8">
-                <title>Volunteer Hub</title>
-            </head>
-            <body>
+        echo " ".$row['vol_firstname']." ".$row['vol_surname']."";
 
 
-                <p>
-                    Welcome:
-                    <?=$name?>
-                    !
-                </p>
-
-                <a href="volunteerhome.php">Start survey</a>
-
-                <a href="logoutvolunteer.php" id="logout">Logout</a>
-
-
-            </body>
-            </html>
-HTMLPAGE;
-        print $htmlpage;
     }
-
-
-
-
-
 
 ?>
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Volunteer Hub</title>
+</head>
+<body>
+
+
+    <p>
+        Welcome:
+        <?php
+        get_volunteer_name($_SESSION['vol_email']);
+        ?>
+        !
+    </p>
+
+    <a href="volunteerhome.php">Start survey</a>
+
+    <a href="logoutvolunteer.php" id="logout">Logout</a>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
 
 
 

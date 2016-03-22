@@ -85,7 +85,7 @@
 <body>
 
 <!-- [START OF SURVEY] ------------------------------------------------------------------->
-<form action="volunteerhub.php" method="post">
+<form action="submitsurveyanswers.php" method="post">
 
 <!-- SURVEY QUESTION 1 -->
 
@@ -96,6 +96,7 @@
     </label>
         <br>
         <textarea name="question1" cols="45" rows="5" placeholder="Enter your response here" required></textarea>
+        <input hidden name="qid1" value=<?php get_question_type(1)?>>
     <br>
 
 <!-- SURVEY QUESTION 2 -->
@@ -107,6 +108,8 @@
         </label>
         <br>
         <input type="number" step="any" name="question2" placeholder="Enter Amount" required>
+        <input  name="qid1" value=<?php get_question_type(2)?>>
+
     <br>
 
 <!-- SURVEY QUESTION 3 -->

@@ -27,53 +27,63 @@
 <!- - [START OF BODY] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ->
 <body>
 
-    <!- - (START OF MAIN) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - ->
+    <!- - (START OF MAIN) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ->
     <main class="grid-container">
 
-<form id="survey" name="form">
+        <!- - (START OF SURVEY) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - ->
+        <form action="#" method="post" >
+
+
     <!- - SURVEY SUBMIT BUTTON - ->
     <section class="container" id="cont7">
-        <input type="button" id="submit" value="SUBMIT SURVEY">
+        <input type="submit" id="submit" name="submit" value="SUBMIT SURVEY">
     </section>
+
 
     <!- - SURVEY QUESTION 6 - ->
     <section class="container" id="cont6">
         <h2><?php include ("volunteerhome_assets/volunteerhome_htmlscripts/question6.html"); ?></h2>
     </section>
 
+
     <!- - SURVEY QUESTION 5 - ->
     <section class="container" id="cont5">
         <h2><?php include ("volunteerhome_assets/volunteerhome_htmlscripts/question5.html"); ?></h2>
     </section>
+
 
     <!- - SURVEY QUESTION 4 - ->
     <section class="container" id="cont4">
         <h2><?php include ("volunteerhome_assets/volunteerhome_htmlscripts/question4.html"); ?></h2>
     </section>
 
+
     <!- - SURVEY QUESTION 3 - ->
     <section class="container" id="cont3">
         <h2><?php include ("volunteerhome_assets/volunteerhome_htmlscripts/question3.html"); ?></h2>
     </section>
+
 
     <!- - SURVEY QUESTION 2 - ->
     <section class="container" id="cont2">
         <h2><?php include ("volunteerhome_assets/volunteerhome_htmlscripts/question2.html"); ?></h2>
     </section>
 
+
     <!- - SURVEY QUESTION 1 - ->
     <section class="container" id="cont1">
         <h2><?php include ("volunteerhome_assets/volunteerhome_htmlscripts/question1.html"); ?></h2>
     </section>
 
-</form>
+        </form>
+        <!- - (END OF SURVEY) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - ->
+
     <!- - CALL JQUERY SCRIPT FUNCTION- ->
     <script SRC="volunteerhome_assets/volunteerhome_jquery/surveybounce.js"></script>
-    <script src="volunteerhome_assets/volunteerhome_jquery/submitsurvey.js"></script>
 
 
     </main>
-    <!- - (END OF MAIN) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - ->
+    <!- - (END OF MAIN) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ->
 
 </body>
 <!- - [END OF BODY] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ->

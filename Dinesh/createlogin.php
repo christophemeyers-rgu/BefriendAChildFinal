@@ -28,28 +28,22 @@
 			else{
 				
 				//read input details from index.php
-				$userlogin=$_POST['email'];
-				$firstname=$_POST['firstname'];
-				$surname=$_POST['surname'];
-				$gender=$_POST['gender'];
-				$day=$_POST['day'];
-				$month=$_POST['month'];
-				$year=$_POST['year'];
-				$address=$_POST['address'];
-				$picture=$_POST['picture'];
-				$password=$_POST['password'];
+				$email=$_POST['email'];
+
+
+
 				
 				//create select statemnt to using firstname and surname as filters 
-				$query="SELECT `firstname`
-						FROM `users`
-						WHERE `firstname` ='$firstname' AND `surname` ='$surname'
+				$query="SELECT `vol_email`
+						FROM `volunteers`
+						WHERE `vol_email` ='$email'
 						LIMIT 1";
-					//cheeck to see that sql query executes properly, and return any errors 
-					$output=$db->query($query) or die("Selection Query Failed !!!");
+					//check to see that sql query executes properly, and return any errors
+					$output=$db->query($query) or die("Error: ".$query."<br>".$db->error);
 					$return=NULL;
 					//go through the array of results returned from the query if any
 				while($row = $output->fetch_assoc()) {
-					$return=$row["firstname"];//add the firstname value ro the return variable 
+					$return=$row["vol_email"];//add the email value to the return variable
 					}
 					//if a value was returned, then it means user exists already
 				if(isset($return)){
@@ -58,8 +52,26 @@
 				}
 				else{
 					//create user in database if they dont exists there already
-					$insert="INSERT INTO users (`user_login`, `user_password`, `firstname`,`surname`, `gender`, `address`) VALUES('$userlogin','$password','$firstname','$surname', '$gender', '$address')";
-					$outcome=$db->query($insert) or die("Insert statement failed!!!");
+					$firstname=$_POST['firstname'];
+					$surname=$_POST['surname'];
+					$password=$_POST['password'];
+					$child_matched=$_POST['child_matched'];
+
+					if($child_matched==true){
+						$child_gender=$_POST['child_gender'];
+						$day=$_POST['day'];
+						$month=$_POST['month'];
+						$year=$_POST['year'];
+						$dob="date'".$year."-".$month."-".$day."'";
+					}
+					else{
+						$child_gender="other";
+						$dob="date'0000-00-00'";
+					}
+
+					$insert="INSERT INTO volunteers (vol_email, vol_password, vol_firstname,vol_surname,vol_child_matched,vol_child_gender,vol_child_dob) VALUES('".$email."','".$password."','".$firstname."','".$surname."',".$child_matched.",'".$child_gender."',".$dob.")";
+
+					$outcome=$db->query($insert) or die("Error: ".$insert."<br>".$db->error);
 					echo "<SCRIPT>alert('User created!!!');</SCRIPT>";
 					header("Location: createuser.php");
 				}
@@ -85,17 +97,17 @@
 					session_start();// Starting Session
 					// Establishing Connection with Server by passing server_name, user_id and password as a parameter
 					// Selecting Database
-					$user_check=$_SESSION['user_login']; // Storing Session
+					$user_check=$_SESSION['ad_email']; // Storing Session
 					
 					//select all values from database using the entered values as filter
 					$query="SELECT *
-					FROM `admin`
-					WHERE `email_id` = '$user_check' LIMIT 1";
+					FROM `administrators`
+					WHERE `ad_email` = '$user_check' LIMIT 1";
 					$output=$db->query($query) or die("Selection Query Failed !!!");
 				}
 				$login_session=NULL;
 				while($row = $output->fetch_assoc()) {
-					$login_session=$row["email_id"];
+					$login_session=$row["ad_email"];
 					}
 		if(isset($login_session)){
 			//show_create_user();
@@ -127,7 +139,7 @@
                 <br>
                 If you would like to fill out a survey concerning your experience with Befriend A Child,
                 please follow
-                <a href='http://befriendachildtestsurvey.azurewebsites.net/Dinesh/volunteerlogin.php'>this link</a>
+                <a href='http://befriendachildtestsurvey.azurewebsites.net/Master/volunteerlogin.php'>this link</a>
                 and login with:
                 <br><br>
                 Username: $email

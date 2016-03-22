@@ -104,7 +104,7 @@
 
 
     <p>
-        Welcome:
+        Welcome
 
         <?php
         get_volunteer_name($_SESSION['vol_email']);
@@ -112,7 +112,7 @@
 
     </p>
 
-    <a href="volunteerhome.php">Start survey</a>
+    <a href="volunteerhome.php">Start survey</a><br><br>
 
     <a href="logoutvolunteer.php" id="logout">Logout</a>
 

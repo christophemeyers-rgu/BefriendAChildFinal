@@ -101,12 +101,11 @@
 
 
     <p>
-        Welcome:
+        Welcome: </p>
+
         <?php
         get_volunteer_name($_SESSION['vol_email']);
         ?>
-        !
-    </p>
 
     <a href="volunteerhome.php">Start survey</a>
 

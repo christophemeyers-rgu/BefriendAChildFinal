@@ -3,9 +3,9 @@
         get_question_text(21);
     ?>
 </label>
-<input type="radio" name="question3"><img src="volunteerhome_assets/volunteerhome_images/surveyiconsad.png" alt="sad">
-<input type="radio" name="question3"><img src="volunteerhome_assets/volunteerhome_images/surveyiconnomal.png" alt="normal">
-<input type="radio" name="question3"><img src="volunteerhome_assets/volunteerhome_images/surveyiconsmile.png" alt="smile">
+<input required type="radio" name="question3" value="0"><img src="volunteerhome_assets/volunteerhome_images/surveyiconsad.png" alt="sad">
+<input required type="radio" name="question3" value="1"><img src="volunteerhome_assets/volunteerhome_images/surveyiconnomal.png" alt="normal">
+<input required type="radio" name="question3" value="2"><img src="volunteerhome_assets/volunteerhome_images/surveyiconsmile.png" alt="smile">
 <br>
 <br>
 <input hidden type="number" name="qid3" value="21">

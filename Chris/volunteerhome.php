@@ -96,7 +96,7 @@
     </label>
         <br>
         <textarea name="question1" cols="45" rows="5" placeholder="Enter your response here" required></textarea>
-        <input hidden name="qid1" value="1">
+        <input hidden type="number" name="qid1" value="1">
     <br>
 
 <!-- SURVEY QUESTION 2 -->
@@ -108,8 +108,7 @@
         </label>
         <br>
         <input type="number" step="any" name="question2" placeholder="Enter Amount" required>
-        <input type="number" name="qid1" value="11">
-
+        <input hidden type="number" name="qid2" value="11">
     <br>
 
 <!-- SURVEY QUESTION 3 -->
@@ -122,6 +121,7 @@
         <input type="radio" name="question3" required><img src="volunteerhome_assets/volunteerhome_images/surveyiconsad.png">
         <input type="radio" name="question3" required><img src="volunteerhome_assets/volunteerhome_images/surveyiconnomal.png">
         <input type="radio" name="question3" required><img src="volunteerhome_assets/volunteerhome_images/surveyiconsmile.png">
+        <input hidden type="number" name="qid3" value="21">
         <br>
         <br>
         <label for="question3_opt">Explain :</label>
@@ -139,6 +139,7 @@
         <input type="radio" name="question4" required>Nothing new
         <input type="radio" name="question4" required>Done it before
         <input type="radio" name="question4" required>Never done it before
+        <input hidden type="number" name="qid4" value="31">
         <br>
         <br>
         <label for="question4_opt">Explain :</label>
@@ -155,6 +156,7 @@
         </label>
         <input type="radio" name="question5" required>YES
         <input type="radio" name="question5" required>NO
+        <input hidden type="number" name="qid5" value="41">
         <br>
         <br>
         <label for="question5_opt">Explain :</label>
@@ -171,6 +173,7 @@
         </label>
         <input type="radio" name="question6" required>YES
         <input type="radio" name="question6" required>NO
+        <input hidden type="number" name="qid6" value="51">
         <br>
         <br>
         <label for="question6_opt">Explain :</label>

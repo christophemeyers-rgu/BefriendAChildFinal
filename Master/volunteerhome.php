@@ -76,7 +76,7 @@
     <main class="grid-container">
 
         <!- - (START OF SURVEY) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - ->
-        <form action="#" method="post" >
+        <form action="submitsurveyanswers.php" method="post" >
 
 
     <!- - SURVEY SUBMIT BUTTON - ->
@@ -117,7 +117,7 @@
 
     <!- - SURVEY QUESTION 1 - ->
     <section class="container" id="cont1">
-        <h2><?php include ("volunteerhome_assets/volunteerhome_htmlscripts/question1.html"); ?></h2>
+        <h2><?php include("volunteerhome_assets/volunteerhome_htmlscripts/question1.php"); ?></h2>
     </section>
 
         </form>

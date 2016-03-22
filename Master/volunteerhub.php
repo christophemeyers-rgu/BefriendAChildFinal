@@ -117,12 +117,13 @@
     <main class="grid-container">
 
 
-          <h1>Welcome</h1>
+          <h1>Welcome   <?php
+              get_volunteer_name($_SESSION['vol_email']);
+              ?>
+          </h1>
 
-      <p> <?php
-        get_volunteer_name($_SESSION['vol_email']);
-        ?>
-        </p>
+
+
 
         <section class="container" id="cont2">
     <a href="volunteerhome.php">Start survey</a><br><br>

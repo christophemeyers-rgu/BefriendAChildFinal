@@ -6,12 +6,7 @@
 
     function get_question_text($qid){
         //connect to the database
-        $db = new MySQLi(
-            'ap-cdbr-azure-east-c.cloudapp.net', //server or host address
-            'b35e94884f471c', //username for connecting to database
-            '90efdea3', //user's password
-            'befriendachildtestDB' //database being connected to
-        );
+        include("db_connection.php");
 
         if($db->connect_errno){
             die('Connectfailed['.$db->connect_error.']');
@@ -28,12 +23,7 @@
 
     function get_question_type($qid){
         //connect to the database
-        $db = new MySQLi(
-            'ap-cdbr-azure-east-c.cloudapp.net', //server or host address
-            'b35e94884f471c', //username for connecting to database
-            '90efdea3', //user's password
-            'befriendachildtestDB' //database being connected to
-        );
+        include("db_connection.php");
 
         if($db->connect_errno){
             die('Connectfailed['.$db->connect_error.']');
@@ -53,140 +43,94 @@
 ?>
 
 
-
-
-
-
-
-
-
 <!DOCTYPE html>
 
 <html lang="en">
 
-<!-- [START OF HEAD] --------------------------------------------------------------------------------------------->
+<!- - [START OF HEAD] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ->
 <head>
-    <!-- CHARACTER ENCODING -->
+    <!- - CHARACTER ENCODING - ->
     <meta charset="UTF-8">
 
-    <!-- WINDOW TAB TITLE -->
+    <!- - WINDOW TAB TITLE - ->
     <title>Volunteer Homepage</title>
 
-    <!-- WINDOW TAB ICON -->
+    <!- - WINDOW TAB ICON - ->
     <link rel="shortcut icon" href="volunteerhome_assets/volunteerhome_images/tabicon.png" type="image/x-icon" />
 
-    <!-- CSS Stylesheet-->
+    <!- - CSS Stylesheet- ->
     <link rel="stylesheet" href="volunteerhome_assets/volunteerhome_css/volunteerhome.css" type="text/css">
+
+    <!- - JQUERY SCRIPT- ->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 </head>
-<!-- [END OF HEAD] ----------------------------------------------------------------------------------------------->
+<!- - [END OF HEAD] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ->
 
 
-<!-- [START OF BODY] --------------------------------------------------------------------------------------------->
+<!- - [START OF BODY] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ->
 <body>
 
-<!-- [START OF SURVEY] ------------------------------------------------------------------->
-<form action="submitsurveyanswers.php" method="post">
+    <!- - (START OF MAIN) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ->
+    <main class="grid-container">
 
-<!-- SURVEY QUESTION 1 -->
+        <!- - (START OF SURVEY) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - ->
+        <form action="submitsurveyanswers.php" method="post" >
 
-    <label for="question1">
-        <?php
-            get_question_text(1);
-        ?>
-    </label>
-        <br>
-        <textarea name="question1" cols="45" rows="5" placeholder="Enter your response here" required></textarea>
-        <input hidden type="number" name="qid1" value="1">
-    <br>
 
-<!-- SURVEY QUESTION 2 -->
+    <!- - SURVEY SUBMIT BUTTON - ->
+    <section class="container" id="cont7">
+        <input type="submit" id="submit" name="submit" value="SUBMIT SURVEY">
+    </section>
 
-        <label for="question2">
-            <?php
-            get_question_text(11);
-            ?>
-        </label>
-        <br>
-        <input type="number" step="any" name="question2" placeholder="Enter Amount" required>
-        <input hidden type="number" name="qid2" value="11">
-    <br>
 
-<!-- SURVEY QUESTION 3 -->
+    <!- - SURVEY QUESTION 6 - ->
+    <section class="container" id="cont6">
+        <h2><?php include("volunteerhome_assets/volunteerhome_htmlscripts/question6.php"); ?></h2>
+    </section>
 
-        <label for="question3">
-            <?php
-            get_question_text(21);
-            ?>
-        </label>
-        <input type="radio" name="question3" required><img src="volunteerhome_assets/volunteerhome_images/surveyiconsad.png">
-        <input type="radio" name="question3" required><img src="volunteerhome_assets/volunteerhome_images/surveyiconnomal.png">
-        <input type="radio" name="question3" required><img src="volunteerhome_assets/volunteerhome_images/surveyiconsmile.png">
-        <input hidden type="number" name="qid3" value="21">
-        <br>
-        <br>
-        <label for="question3_opt">Explain :</label>
-        <br>
-        <textarea name="question3_opt" cols="45" rows="5" placeholder="Enter your explanation here"></textarea>
-    <br>
 
-<!-- SURVEY QUESTION 4 -->
+    <!- - SURVEY QUESTION 5 - ->
+    <section class="container" id="cont5">
+        <h2><?php include("volunteerhome_assets/volunteerhome_htmlscripts/question5.php"); ?></h2>
+    </section>
 
-        <label for="question4">
-            <?php
-            get_question_text(31);
-            ?>
-        </label>
-        <input type="radio" name="question4" required>Nothing new
-        <input type="radio" name="question4" required>Done it before
-        <input type="radio" name="question4" required>Never done it before
-        <input hidden type="number" name="qid4" value="31">
-        <br>
-        <br>
-        <label for="question4_opt">Explain :</label>
-        <br>
-        <textarea name="question4_opt" cols="45" rows="5" placeholder="Explain what you learned here"></textarea>
-    <br>
 
-<!-- SURVEY QUESTION 5 -->
+    <!- - SURVEY QUESTION 4 - ->
+    <section class="container" id="cont4">
+        <h2><?php include("volunteerhome_assets/volunteerhome_htmlscripts/question4.php"); ?></h2>
+    </section>
 
-        <label for="question5">
-            <?php
-            get_question_text(41);
-            ?>
-        </label>
-        <input type="radio" name="question5" required>YES
-        <input type="radio" name="question5" required>NO
-        <input hidden type="number" name="qid5" value="41">
-        <br>
-        <br>
-        <label for="question5_opt">Explain :</label>
-        <br>
-        <textarea name="question5_opt" cols="45" rows="5" placeholder="Enter items here"></textarea>
-    <br>
 
-<!-- SURVEY QUESTION 6 -->
+    <!- - SURVEY QUESTION 3 - ->
+    <section class="container" id="cont3">
+        <h2><?php include("volunteerhome_assets/volunteerhome_htmlscripts/question3.php"); ?></h2>
+    </section>
 
-        <label for="question6">
-            <?php
-            get_question_text(51);
-            ?>
-        </label>
-        <input type="radio" name="question6" required>YES
-        <input type="radio" name="question6" required>NO
-        <input hidden type="number" name="qid6" value="51">
-        <br>
-        <br>
-        <label for="question6_opt">Explain :</label>
-        <br>
-        <textarea name="question6_opt" cols="45" rows="5" placeholder="Explain why here"></textarea>
-    <br>
-    <br>
 
-    <input type="submit" value="SUBMIT SURVEY">
+    <!- - SURVEY QUESTION 2 - ->
+    <section class="container" id="cont2">
+        <h2><?php include("volunteerhome_assets/volunteerhome_htmlscripts/question2.php"); ?></h2>
+    </section>
 
-</form>
-<!-- [END OF SURVEY] ------------------------------------------------------------------->
+
+    <!- - SURVEY QUESTION 1 - ->
+    <section class="container" id="cont1">
+        <h2><?php include("volunteerhome_assets/volunteerhome_htmlscripts/question1.php"); ?></h2>
+    </section>
+
+        </form>
+        <!- - (END OF SURVEY) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - ->
+
+    <!- - CALL JQUERY SCRIPT FUNCTION- ->
+    <script SRC="volunteerhome_assets/volunteerhome_jquery/surveybounce.js"></script>
+
+
+    </main>
+    <!- - (END OF MAIN) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ->
+
 </body>
-<!-- [END OF BODY] --------------------------------------------------------------------------------------------->
+<!- - [END OF BODY] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ->
 
 </html>

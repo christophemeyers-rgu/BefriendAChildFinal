@@ -1,39 +1,39 @@
 <?php
 
-	if($_SERVER['REQUEST_METHOD']==='GET'){
+if($_SERVER['REQUEST_METHOD']==='GET'){
 
+	session_start();
+	if(isset($_SESSION["vol_email"]))
+	{
+		header("Location: volunteerhub.php");
+	}
+	else{
+		show_volunteer_login();
+	}
+}
+else if($_SERVER['REQUEST_METHOD']==='POST'){
+
+
+	//read input details from index.html
+	$email=$_POST['u'];
+	$password=$_POST['p'];
+	if(volunteer_registered($email,$password)){
 		session_start();
-		if(isset($_SESSION["vol_email"]))
-		{
-			header("Location: volunteerhub.php");
-		}
-		else{
-			show_volunteer_login();
-		}
+		$_SESSION["vol_email"]=$email;
+		header("Location: volunteerhub.php");
 	}
-	else if($_SERVER['REQUEST_METHOD']==='POST'){
-
-
-		//read input details from index.html
-		$email=$_POST['u'];
-		$password=$_POST['p'];
-		if(volunteer_registered($email,$password)){
-			session_start();
-			$_SESSION["vol_email"]=$email;
-			header("Location: volunteerhub.php");
-		}
-		else{
-			show_volunteer_login();
-			echo "<script>alert('Invalid volunteer details');</script>";
-		}
+	else{
+		show_volunteer_login();
+		echo "<script>alert('Invalid volunteer details');</script>";
 	}
+}
 
 
 
-	function show_volunteer_login() {
-		//display the HTML form to register
-		//or sign a user in
-		$htmlpage = <<<HTMLPAGE
+function show_volunteer_login() {
+	//display the HTML form to register
+	//or sign a user in
+	$htmlpage = <<<HTMLPAGE
 			<!DOCTYPE html>
 			<html lang="en">
 			<head>
@@ -130,50 +130,50 @@
 			</html>
 HTMLPAGE;
 
-			print($htmlpage);
+	print($htmlpage);
+}
+
+
+
+
+function volunteer_registered($email,$password) {
+	//test to discover if the user is already in the DB
+	//to do that, we can find out if the email address already exists in a row
+
+	//1&2: Connect to server and choose DB
+	//***** EDIT DATABASE CREDENTIALS TO BE YOUR OWN!!!
+
+	//connect to the database
+	$db = new MySQLi(
+		'ap-cdbr-azure-east-c.cloudapp.net', //server or host address
+		'b35e94884f471c', //username for connecting to database
+		'90efdea3', //user's password
+		'befriendachildtestDB' //database being connected to
+	);
+
+	//check if there was a connection error and respond accordingly
+	if($db->connect_errno){
+		die('Connection failed:'.connect_error);
 	}
-
-
-
-
-	function volunteer_registered($email,$password) {
-		//test to discover if the user is already in the DB
-		//to do that, we can find out if the email address already exists in a row
-
-		//1&2: Connect to server and choose DB
-		//***** EDIT DATABASE CREDENTIALS TO BE YOUR OWN!!!
-
-		//connect to the database
-		$db = new MySQLi(
-			'ap-cdbr-azure-east-c.cloudapp.net', //server or host address
-			'b35e94884f471c', //username for connecting to database
-			'90efdea3', //user's password
-			'befriendachildtestDB' //database being connected to
-			);
-
-		//check if there was a connection error and respond accordingly
-		if($db->connect_errno){
-			die('Connection failed:'.connect_error);
-		}
-		else{
-			//select all values from database using the entered values as filter
-			$query="SELECT `vol_email`, `vol_password`
+	else{
+		//select all values from database using the entered values as filter
+		$query="SELECT `vol_email`, `vol_password`
 					FROM `volunteers`
 					WHERE `vol_email` = '$email' AND `vol_password` = '$password' LIMIT 1";
-			$output=$db->query($query) or die("Selection Query Failed !!!");
+		$output=$db->query($query) or die("Selection Query Failed !!!");
 
 
-			//if the sql query returns a value
-			if(mysqli_num_rows($output)){
-				return TRUE; //indicate that a value was returned, and user exists in database
-			}
-			else{
-				return false; //indicate a value wasn't returned, and user doesn't exist in database
-			}
-			$db->close(); // Closing Connection
+		//if the sql query returns a value
+		if(mysqli_num_rows($output)){
+			return TRUE; //indicate that a value was returned, and user exists in database
 		}
-
+		else{
+			return false; //indicate a value wasn't returned, and user doesn't exist in database
+		}
+		$db->close(); // Closing Connection
 	}
+
+}
 
 
 ?>

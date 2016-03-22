@@ -66,11 +66,11 @@
     <section class="container" id="cont1">
         <h2><?php include ("volunteerhome_assets/volunteerhome_htmlscripts/question1.html"); ?></h2>
     </section>
-
+            <!- - CALL JQUERY SCRIPT FUNCTION- ->
+            <script SRC="volunteerhome_assets/volunteerhome_jquery/surveybounce.js"></script>
         </form>
 
-    <!- - CALL JQUERY SCRIPT FUNCTION- ->
-    <script SRC="volunteerhome_assets/volunteerhome_jquery/surveybounce.js"></script>
+
 
 
     </main>

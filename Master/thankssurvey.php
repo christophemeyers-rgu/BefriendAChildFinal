@@ -16,11 +16,11 @@ if(!isset($_SESSION['vol_email'])){
 echo "<script>alert('Thank you for completing the survey!');</script>";
 
 
-
+header("Location: volunteerhub.php");
 
 ?>
 
-
+<!--
 <!DOCTYPE html>
     <html>
 <head>
@@ -30,4 +30,4 @@ echo "<script>alert('Thank you for completing the survey!');</script>";
 <body>
     <a href="volunteerhub.php"></a>
 </body>
-</html>
+</html>-->

@@ -27,6 +27,6 @@ main {
     background-color: palevioletred;
 }
 
-#cont2{
-    margin-left: 20%;
+#startsurvey, #logout{
+    padding: auto;
 }

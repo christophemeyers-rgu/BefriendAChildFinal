@@ -119,6 +119,9 @@
 
                 <a href="volunteerhome.php">Start survey</a>
 
+                <a href="logoutvolunteer.php" id="logout">Logout</a>
+
+
             </body>
             </html>
 HTMLPAGE;

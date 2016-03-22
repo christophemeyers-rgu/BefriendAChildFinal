@@ -119,10 +119,10 @@
 
           <h1>Welcome</h1>
 
-        <?php
+      <p> <?php
         get_volunteer_name($_SESSION['vol_email']);
         ?>
-
+        </p>
 
         <section class="container" id="cont2">
     <a href="volunteerhome.php">Start survey</a><br><br>

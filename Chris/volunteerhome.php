@@ -96,7 +96,7 @@
     </label>
         <br>
         <textarea name="question1" cols="45" rows="5" placeholder="Enter your response here" required></textarea>
-        <input hidden name="qid1" value=<?php get_question_type(1)?>>
+        <input hidden name="qid1" value="1">
     <br>
 
 <!-- SURVEY QUESTION 2 -->
@@ -108,7 +108,7 @@
         </label>
         <br>
         <input type="number" step="any" name="question2" placeholder="Enter Amount" required>
-        <input type="number" name="qid1" value=<?php get_question_type(2)?>>
+        <input type="number" name="qid1" value="11">
 
     <br>
 

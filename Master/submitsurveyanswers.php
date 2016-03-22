@@ -51,7 +51,7 @@
 
 echo "<script>alert('Thank you for completing the survey!');</script>";
 
-header("Location: volunteerhub.php");
+header("Location: thankssurvey.php");
 
 
 ?>

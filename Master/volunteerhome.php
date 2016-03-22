@@ -1,3 +1,48 @@
+<?php
+    session_start();
+    if(!isset($_SESSION['vol_email'])){
+        header("Location: volunteerlogin.php");
+    }
+
+    function get_question_text($qid){
+        //connect to the database
+        include("db_connection.php");
+
+        if($db->connect_errno){
+            die('Connectfailed['.$db->connect_error.']');
+        }
+
+        $query = "SELECT question_text FROM questions WHERE question_id='$qid'";
+
+        $result = $db->query($query);
+
+        $row = $result->fetch_assoc();
+
+        echo $row['question_text'];
+    }
+
+    function get_question_type($qid){
+        //connect to the database
+        include("db_connection.php");
+
+        if($db->connect_errno){
+            die('Connectfailed['.$db->connect_error.']');
+        }
+
+        $query = "SELECT question_type FROM questions WHERE question_id='$qid''";
+
+        $result = $db->query($query);
+
+        $row = $result->fetch_assoc();
+
+        echo $row['question_type'];
+    }
+
+
+
+?>
+
+
 <!DOCTYPE html>
 
 <html lang="en">

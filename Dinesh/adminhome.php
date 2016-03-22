@@ -23,19 +23,19 @@
 					session_start();// Starting Session
 					// Establishing Connection with Server by passing server_name, user_id and password as a parameter
 					// Selecting Database
-					$user_check=$_SESSION['user_login']; // Storing Session
+					$user_check=$_SESSION['ad_email']; // Storing Session
 					
 					//select all values from database using the entered values as filter
 					$query="SELECT *
-					FROM `admin`
-					WHERE `email_id` = '$user_check' LIMIT 1";
+					FROM `administrators`
+					WHERE `ad_email` = '$user_check' LIMIT 1";
 					$output=$db->query($query) or die("Selection Query Failed !!!");//query the database
 				}
 				$login_session=NULL;//initiate variable to hold session state
 				
-				//goo through the output from the sql query and initiate the login_session variable using returned email_id
+				//goo through the output from the sql query and initiate the login_session variable using returned email_
 				while($row = $output->fetch_assoc()) {
-					$login_session=$row["email_id"];
+					$login_session=$row["ad_email"];
 					}
 		if(isset($login_session)){//if a valid session exists?
 			show_admin_home();

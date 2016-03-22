@@ -1,9 +1,18 @@
 <?php
 
-	if($_SERVER['REQUEST_METHOD']==='GET'){
+
+
+
+	session_start();
+	if(!isset($_SESSION['ad_email'])){
+		header("Location: index.php");
+	}
+
+?>
+	/*if($_SERVER['REQUEST_METHOD']==='GET'){
 			session_exists();
 		}
-	
+
 	function session_exists(){
 		
 		$db = new MySQLi(
@@ -43,11 +52,11 @@
 		else{
 			header("Location: index.php");
 		}
-	}
+	}*/
 	
-	function show_admin_home(){
+	/*function show_admin_home(){
 		
-		$htmlpage = <<< HTMLPAGE
+		$htmlpage = <<< HTMLPAGE*/
 		<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -336,8 +345,7 @@
  
 </body>
 </html>
-HTMLPAGE;
+/*HTMLPAGE;
 		print $htmlpage;
-	}
+	}*/
 	
-?>

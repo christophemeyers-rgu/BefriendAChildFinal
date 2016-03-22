@@ -126,7 +126,7 @@
 
 
         <section class="container" id="cont2">
-    <a href="volunteerhome.php">Start survey</a><br><br>
+    <button type="button"> <a href="volunteerhome.php">Start survey</a><br><br></button>
 
     <a href="logoutvolunteer.php" id="logout">Logout</a>
         </section>

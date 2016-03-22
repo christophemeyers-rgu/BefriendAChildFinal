@@ -39,7 +39,7 @@
             die('Connectfailed['.$db->connect_error.']');
         }
 
-        $query = "SELECT question_type FROM questions WHERE question_id=$qid";
+        $query = "SELECT question_type FROM questions WHERE question_id='$qid''";
 
         $result = $db->query($query);
 

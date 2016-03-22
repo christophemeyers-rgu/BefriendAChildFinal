@@ -34,7 +34,7 @@
 
     <!- - SURVEY SUBMIT BUTTON - ->
     <section class="container" id="cont7">
-        <input type="submit" name="submit" value="SUBMIT SURVEY">
+        <input type="submit" id="submit" name="submit" value="SUBMIT SURVEY">
     </section>
 
     <!- - SURVEY QUESTION 6 - ->

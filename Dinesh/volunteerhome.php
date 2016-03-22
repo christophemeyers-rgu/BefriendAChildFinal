@@ -30,7 +30,7 @@
     <!- - (START OF MAIN) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - ->
     <main class="grid-container">
 
-        <form action="#" >
+        <form action="#" method="post" >
 
             <fieldset>
     <!- - SURVEY SUBMIT BUTTON - ->

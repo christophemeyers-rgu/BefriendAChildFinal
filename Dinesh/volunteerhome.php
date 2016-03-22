@@ -39,12 +39,10 @@
     </section>
 
 
-
     <!- - SURVEY QUESTION 6 - ->
     <section class="container" id="cont6">
         <h2><?php include ("volunteerhome_assets/volunteerhome_htmlscripts/question6.html"); ?></h2>
     </section>
-
 
 
     <!- - SURVEY QUESTION 5 - ->
@@ -53,12 +51,10 @@
     </section>
 
 
-
     <!- - SURVEY QUESTION 4 - ->
     <section class="container" id="cont4">
         <h2><?php include ("volunteerhome_assets/volunteerhome_htmlscripts/question4.html"); ?></h2>
     </section>
-
 
 
     <!- - SURVEY QUESTION 3 - ->
@@ -67,19 +63,16 @@
     </section>
 
 
-
     <!- - SURVEY QUESTION 2 - ->
     <section class="container" id="cont2">
         <h2><?php include ("volunteerhome_assets/volunteerhome_htmlscripts/question2.html"); ?></h2>
     </section>
 
 
-
     <!- - SURVEY QUESTION 1 - ->
     <section class="container" id="cont1">
         <h2><?php include ("volunteerhome_assets/volunteerhome_htmlscripts/question1.html"); ?></h2>
     </section>
-
 
         </form>
 

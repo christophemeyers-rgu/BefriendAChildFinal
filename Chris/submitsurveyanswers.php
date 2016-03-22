@@ -42,7 +42,7 @@
 
     for ($i = 0; $i <6; $i++){
         $insert = "INSERT INTO answers (question_id, vol_id, answer_text_req, answer_text_opt, answer_date)
-                VALUES('$answers[$i][0]', '$vid', '$answers[$i][1]', '$answers[$i][2]', '$date')";
+                VALUES('$answers[$i][0]', '$vid', '$answers[$i][1]', '$answers[$i][2]', ".$date.")";
 
         $outcome=$db->query($insert) or die("Error: ".$insert."<br>".$db->error);
 

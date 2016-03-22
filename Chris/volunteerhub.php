@@ -84,7 +84,10 @@
 
         $row = $result->fetch_array();
 
-        echo " ".$row['vol_firstname']." ".$row['vol_surname']."";
+        $firstname = $row['vol_firstname'];
+        $surname = $row['vol_surname'];
+
+        echo " {$firstname} {$surname}!";
 
 
     }
@@ -101,11 +104,13 @@
 
 
     <p>
-        Welcome: </p>
+        Welcome:
 
         <?php
         get_volunteer_name($_SESSION['vol_email']);
         ?>
+
+    </p>
 
     <a href="volunteerhome.php">Start survey</a>
 

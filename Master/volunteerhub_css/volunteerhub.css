@@ -26,3 +26,7 @@ main {
 #cont2 {
     background-color: palevioletred;
 }
+
+#cont2{
+    align-items: center;
+}

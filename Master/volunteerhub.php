@@ -116,13 +116,13 @@
 <!- - (START OF MAIN) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ->
     <main class="grid-container">
 
-        <section class="container" id="cont1">
-            Welcome
+
+          <h1>Welcome</h1>
 
         <?php
-        get_volunteer_name($_SESSION['vol_email']);
+        get_volunteer_name($_SESSION['<h2>vol_email</h2>']);
         ?>
-        </section>
+
 
         <section class="container" id="cont2">
     <a href="volunteerhome.php">Start survey</a><br><br>

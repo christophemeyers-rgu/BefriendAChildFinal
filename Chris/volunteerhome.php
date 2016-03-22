@@ -108,7 +108,7 @@
         </label>
         <br>
         <input type="number" step="any" name="question2" placeholder="Enter Amount" required>
-        <input  name="qid1" value=<?php get_question_type(2)?>>
+        <input type="number" name="qid1" value=<?php get_question_type(2)?>>
 
     <br>
 

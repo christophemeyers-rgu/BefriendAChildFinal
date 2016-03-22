@@ -120,7 +120,7 @@
           <h1>Welcome</h1>
 
         <?php
-        get_volunteer_name($_SESSION['<h2>vol_email</h2>']);
+        get_volunteer_name($_SESSION['vol_email']);
         ?>
 
 

@@ -89,30 +89,54 @@
 
 ?>
 
-<!doctype html>
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
+
+<!- - [START OF HEAD] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ->
 <head>
+    <!- - CHARACTER ENCODING - ->
     <meta charset="UTF-8">
-    <title>Volunteer Hub</title>
+
+    <!- - WINDOW TAB TITLE - ->
+    <title>Volunteer Hub page</title>
+
+    <!- - WINDOW TAB ICON - ->
+    <link rel="shortcut icon" href="volunteerhome_assets/volunteerhome_images/tabicon.png" type="image/x-icon" />
+
+    <!- - CSS Stylesheet- ->
+    <link rel="stylesheet" href="volunteerhub_css/volunteerhub.css" type="text/css">
 </head>
+<!- - [END OF HEAD] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ->
+
+<!- - [START OF BODY] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ->
 <body>
 
 
-    <p>
-        Welcome
+<!- - (START OF MAIN) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ->
+    <main class="grid-container">
 
-        <?php
-        get_volunteer_name($_SESSION['vol_email']);
-        ?>
 
-    </p>
+          <h1>Welcome   <?php
+              get_volunteer_name($_SESSION['vol_email']);
+              ?>
+          </h1>
 
-    <a href="volunteerhome.php">Start survey</a><br><br>
 
-    <a href="logoutvolunteer.php" id="logout">Logout</a>
 
+
+        <section class="container" id="cont2">
+            <a href="volunteerhome.php"> <input type="button" value="Start survey"></a><br><br>
+
+    <a href="logoutvolunteer.php" id="logout"><input type="button" value="Logout"></a>
+        </section>
+
+    </main>
+<!- - (END OF MAIN) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ->
 
 </body>
+<!- - [END OF BODY] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ->
+
 </html>
 
 

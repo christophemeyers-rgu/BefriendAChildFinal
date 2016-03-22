@@ -27,9 +27,10 @@
 <!- - [START OF BODY] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ->
 <body>
 
-    <!- - (START OF MAIN) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - ->
+    <!- - (START OF MAIN) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ->
     <main class="grid-container">
 
+        <!- - (START OF SURVEY) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - ->
         <form action="#" method="post" >
 
 
@@ -75,13 +76,14 @@
     </section>
 
         </form>
+        <!- - (END OF SURVEY) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - ->
 
     <!- - CALL JQUERY SCRIPT FUNCTION- ->
     <script SRC="volunteerhome_assets/volunteerhome_jquery/surveybounce.js"></script>
 
 
     </main>
-    <!- - (END OF MAIN) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - ->
+    <!- - (END OF MAIN) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ->
 
 </body>
 <!- - [END OF BODY] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ->

@@ -29,4 +29,5 @@ main {
 
 #startsurvey, #logout{
     padding: 20px;
+    alignment: center;
 }

@@ -1,5 +1,9 @@
 <?php
 
+    //THIS PAGE IS DESTINATION WHEN ADMIN WANTS TO CREATE A NEW USER AND WHEN A NEW USER HAS BEEN ADDED TO THE DATABASE
+
+
+
     //sends user back to index.php if not logged in
     session_start();
     if(!isset($_SESSION['ad_email'])){

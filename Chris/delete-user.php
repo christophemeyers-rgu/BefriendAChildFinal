@@ -1,25 +1,33 @@
 <?php
-include 'functions.php';
-session_start();
-if(!isset($_SESSION['ad_email'])){
-	header("Location: index.php");
-}
-if(isset($_GET['vol_email']))
-{
-    $login_name=$_GET['vol_email'];
-    
-   $result = getUser($login_name);
-   $row = mysqli_fetch_array($result);
-   $imageurl = $row['imageurl'];
-   if(file_exists($imageurl))
-   {
 
-       unlink($imageurl);
-       
-   }
-   deleteUser($login_name);  
-  // header("location: delete-user.php");
-}
+    //THIS IS THE PAGE THAT SHOWS THE TABLE OF USERS WITH LINK TO EDIT-USER AND OPTION TO DELETE USERS
+
+
+    include 'functions.php';    //Some functions from here are used
+
+
+    session_start();
+    if(!isset($_SESSION['ad_email'])){
+        header("Location: index.php");
+    }
+
+    //I DON'T UNDERSTAND WHAT THIS DOES...
+    if(isset($_GET['vol_email']))
+    {
+        $login_name=$_GET['vol_email'];
+
+       $result = getUser($login_name);
+       $row = mysqli_fetch_array($result);
+       $imageurl = $row['imageurl'];
+       if(file_exists($imageurl))
+       {
+
+           unlink($imageurl);
+
+       }
+       deleteUser($login_name);
+      // header("location: delete-user.php");
+    }
 ?>
 
 

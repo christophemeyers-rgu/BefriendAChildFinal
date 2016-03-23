@@ -2,5 +2,5 @@
 
 $surveysummary = $_POST['survey'];
 
-echo $surveysummary;
+echo $_POST['survey'];
 ?>

@@ -2,5 +2,5 @@
 
 $surveysummary = $_POST['cont6'];
 
-echo $surveysummary;
+print $surveysummary;
 ?>

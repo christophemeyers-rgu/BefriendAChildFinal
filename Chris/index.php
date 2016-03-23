@@ -26,14 +26,14 @@
 				}
 			}
 ?>
-	/*else{
+	<!--else{
 			echo "Impossible is nothing";
 		}
 
 	function show_index_page() {
     //display the HTML form to register
     //or sign a user in
-    $htmlpage = <<<HTMLPAGE*/
+    $htmlpage = <<<HTMLPAGE-->
 <!DOCTYPE html>
 <html >
   <head>

@@ -5,6 +5,10 @@
  * Date: 21/03/2016
  * Time: 10:53
  */
+
+    //CURRENTLY THE CENTER OF THE VOLUNTEER NAVIGATION
+
+    //If there is no session, you'll be sent back to the volunteerlogin.php page
     session_start();
     if(!isset($_SESSION['vol_email'])){
         header("Location: volunteerlogin.php");
@@ -64,16 +68,16 @@
     }*/
 
 
-
+    //function gets volunteer's name from email
     function get_volunteer_name($email){
 
-        include("db_connection.php");
+        include("db_connection.php");   //connect to database
 
         if($db->connect_errno){
-            die('Connectfailed['.$db->connect_error.']');
+            die('Connectfailed['.$db->connect_error.']');   //if connection fails, return error
         }
 
-        $namequery = "SELECT vol_firstname, vol_surname FROM volunteers WHERE vol_email='$email'";
+        $namequery = "SELECT vol_firstname, vol_surname FROM volunteers WHERE vol_email='$email'";  //query for getting name
 
         $result = $db->query($namequery);
 
@@ -82,7 +86,7 @@
         $firstname = $row['vol_firstname'];
         $surname = $row['vol_surname'];
 
-        echo " {$firstname} {$surname}!";
+        echo " {$firstname} {$surname}!";   //the function prints the name with a space before and an exclamation mark after it
 
 
     }
@@ -116,9 +120,9 @@
 <!- - (START OF MAIN) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ->
     <main class="grid-container">
 
-
+        <!-- Volunteer name is printed in the head -->
           <h1>Welcome   <?php
-              get_volunteer_name($_SESSION['vol_email']);
+              get_volunteer_name($_SESSION['vol_email']);   //function from above using the email pulled from the session
               ?>
           </h1>
 

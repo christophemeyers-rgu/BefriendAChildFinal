@@ -18,7 +18,7 @@
 				//read input details from index.php
 				$email=$_POST['u'];
 				$password=$_POST['p'];
-				if(user_registered($email,$password)){	//See function at bottom
+				if(user_registered($email,$password)){	//See function below
 					session_start();	//start the session
 					$_SESSION["ad_email"]=$email;	//assign the admin email address to the session
 					header("Location: adminhome.php");	//send admin to adminhome.php

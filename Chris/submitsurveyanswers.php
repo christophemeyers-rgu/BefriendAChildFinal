@@ -63,7 +63,6 @@
 
         }
 
-        echo "<script>alert('Thank you for completing the survey!');</script>"; //thank you notification
 
         header("Location: thankssurvey.php");   //link to thankssurvey page
     }

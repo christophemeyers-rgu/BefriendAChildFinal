@@ -1,5 +1,9 @@
 <?php
 
+
+	//THIS PAGE IS CALLED WHEN THE ADMIN SUBMITS THE FORM FOR VOLUNTEER-CREATION FROM CREATEUSER.PHP
+
+
 	//if the http method called is "GET"
 	if($_SERVER['REQUEST_METHOD']==='GET'){
 		header("Location: createuser.php");	//I'm sending the admin straight to createuser.php if the access is "GET"

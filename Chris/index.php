@@ -6,9 +6,9 @@
 			{
 				header("Location: adminhome.php");
 			}
-			else{
+			/*else{
 				show_index_page();
-			}
+			}*/
 		}
 	else if($_SERVER['REQUEST_METHOD']==='POST'){
 
@@ -25,14 +25,15 @@
 					echo "<script>alert('Invalid administrator details');</script>";
 				}
 			}
-	else{
+?>
+	/*else{
 			echo "Impossible is nothing";
 		}
 
 	function show_index_page() {
     //display the HTML form to register
     //or sign a user in
-    $htmlpage = <<<HTMLPAGE
+    $htmlpage = <<<HTMLPAGE*/
 <!DOCTYPE html>
 <html >
   <head>
@@ -125,10 +126,11 @@ input:focus { box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgb
 
   </body>
 </html>
-HTMLPAGE;
+<!--HTMLPAGE;
 
 print($htmlpage);
-}
+}-->
+<?php
 
 		function user_registered($email,$password) {
 			//test to discover if the user is already in the DB
@@ -137,13 +139,7 @@ print($htmlpage);
 			//1&2: Connect to server and choose DB
 			//***** EDIT DATABASE CREDENTIALS TO BE YOUR OWN!!!
 
-			//connect to the database
-			$db = new MySQLi(
-						'ap-cdbr-azure-east-c.cloudapp.net', //server or host address
-						'b35e94884f471c', //username for connecting to database
-						'90efdea3', //user's password
-						'befriendachildtestDB' //database being connected to
-						);
+			include("db_connection.php");
 
 			//check if there was a connection error and respond accordingly
 			if($db->connect_errno){

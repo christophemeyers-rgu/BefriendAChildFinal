@@ -1,6 +1,6 @@
 <?php
 
-$surveysummary = $_POST['survey'];
+$surveysummary = $_POST['cont6'];
 
-echo $_POST['survey'];
+echo $surveysummary;
 ?>

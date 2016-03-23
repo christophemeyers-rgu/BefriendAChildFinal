@@ -70,19 +70,19 @@ function is_valid_type($type) {
 
 function verifyUserName($username) {
     $sql = "select * from administrators where ad_email='$username'";
-	//echo $sql;
-	//	echo "";
-	//	die();
+    //echo $sql;
+    //	echo "";
+    //	die();
     $mysqli = new mysqli(host, user, password, database);
 // Check connection
-if ($mysqli->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-} 
-	
+    if ($mysqli->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+
     $result = $mysqli->query($sql);
-	
-    if (mysqli_num_rows($result) > 0) {		
-        return TRUE;		
+
+    if (mysqli_num_rows($result) > 0) {
+        return TRUE;
     }
     return FALSE;
 }
@@ -94,7 +94,7 @@ function verifyPassword($username, $password) {
     $mysqli = new mysqli(host, user, password, database);
     $result = $mysqli->query($sql);
 
-    if (mysqli_num_rows($result) > 0) {		
+    if (mysqli_num_rows($result) > 0) {
         return TRUE;
     }
     return FALSE;
@@ -173,18 +173,18 @@ function updateUser() {
     $imageurl_old = $row['imageurl'];
     $imageurl = saveImage();
     if (strlen($imageurl) == 0) {
-        
+
         $imageurl = $imageurl_old;
     } else {
         unlink($imageurl_old);
     }
-    
+
     $sql = "update volunteers set vol_email='$login_name',vol_password='$password',vol_firstname='$firstName',vol_surname='$surName',child_matched='$childMatched' where vol_email='$login_name_prev'";
 
     $mysqli = new mysqli(host, user, password, database);
     $mysqli->query($sql);
     $mysqli->close();
-    
-    }
+
+}
 
 //end function

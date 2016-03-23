@@ -11,7 +11,7 @@
     }
 
 
-    //if the http method called is "GET"
+    /*//if the http method called is "GET"
     if($_SERVER['REQUEST_METHOD']==='GET'){
         session_exists();//call the function "session_exists()"
     }
@@ -61,76 +61,91 @@
         else{
             header("Location: volunteerlogin.php");
         }
-    }
+    }*/
+
+
 
     function get_volunteer_name($email){
 
-        $db = new MySQLi(
-            'ap-cdbr-azure-east-c.cloudapp.net', //server or host address
-            'b35e94884f471c', //username for connecting to database
-            '90efdea3', //user's password
-            'befriendachildtestDB' //database being connected to
-        );
+        include("db_connection.php");
+
+        if($db->connect_errno){
+            die('Connectfailed['.$db->connect_error.']');
+        }
 
         $namequery = "SELECT vol_firstname, vol_surname FROM volunteers WHERE vol_email='$email'";
 
         $result = $db->query($namequery);
 
-        $rowie = $result->fetch_assoc();
+        $row = $result->fetch_array();
 
-        return "Welcome again, ".$rowie['vol_firstname']." ".$rowie['vol_surname'];
+        $firstname = $row['vol_firstname'];
+        $surname = $row['vol_surname'];
+
+        echo " {$firstname} {$surname}!";
 
 
     }
-
-    function show_volunteer_hub($email)
-    {
-        $db = new MySQLi(
-            'ap-cdbr-azure-east-c.cloudapp.net', //server or host address
-            'b35e94884f471c', //username for connecting to database
-            '90efdea3', //user's password
-            'befriendachildtestDB' //database being connected to
-        );
-
-        $namequery = "SELECT vol_firstname, vol_surname FROM volunteers WHERE vol_email='$email'";
-
-        $result = $db->query($namequery);
-
-        $rowie = $result->fetch_assoc();
-
-        $name = "Welcome again, ".$rowie['vol_firstname']." ".$rowie['vol_surname'];
-
-
-        $htmlpage = <<< HTMLPAGE
-            <!doctype html>
-            <html>
-            <head>
-                <meta charset="UTF-8">
-                <title>Volunteer Hub</title>
-            </head>
-            <body>
-
-
-                <p>
-                    Welcome:
-                    <?=$name?>
-                    !
-                </p>
-
-                <a href="volunteerhome.php">Start survey</a>
-
-            </body>
-            </html>
-HTMLPAGE;
-        print $htmlpage;
-    }
-
-
-
-
-
 
 ?>
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<!- - [START OF HEAD] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ->
+<head>
+    <!- - CHARACTER ENCODING - ->
+    <meta charset="UTF-8">
+
+    <!- - WINDOW TAB TITLE - ->
+    <title>Volunteer Hub page</title>
+
+    <!- - WINDOW TAB ICON - ->
+    <link rel="shortcut icon" href="volunteerhome_assets/volunteerhome_images/tabicon.png" type="image/x-icon" />
+
+    <!- - CSS Stylesheet- ->
+    <link rel="stylesheet" href="volunteerhub_css/volunteerhub.css" type="text/css">
+</head>
+<!- - [END OF HEAD] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ->
+
+<!- - [START OF BODY] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ->
+<body>
+
+
+<!- - (START OF MAIN) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ->
+    <main class="grid-container">
+
+
+          <h1>Welcome   <?php
+              get_volunteer_name($_SESSION['vol_email']);
+              ?>
+          </h1>
+
+
+
+
+        <section class="container" id="cont2">
+            <a href="volunteerhome.php"> <input id="startsurvey" type="button" value="Start survey"></a><br><br>
+
+    <a href="logoutvolunteer.php" id="logout"><input id="logout" type="button" value="Logout"></a>
+        </section>
+
+    </main>
+<!- - (END OF MAIN) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ->
+
+</body>
+<!- - [END OF BODY] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ->
+
+</html>
+
+
+
+
+
+
+
+
 
 
 

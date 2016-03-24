@@ -23,5 +23,5 @@ $( "#submit6" ).click(function() {
     $( "#cont6" ).toggle( "scale", 1000 );
 });
 $( "#submit7" ).click(function() {
-    $( "#cont7" ).toggle( "fade", 1000 );
+    $( "#cont7" ).toggle( "slide", 1000 );
 });

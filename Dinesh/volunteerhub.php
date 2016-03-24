@@ -122,8 +122,13 @@
               ?>
           </h1>
 
-
-
+        <section class="container" id="cont1">
+            <input type="button" id="backtohub" name="backtohub" value="Back to Hub"><
+            <script>
+                $( "backtohub" ).click(function() {
+                    $( "con1" ).toggle( "fade", 1000 );
+            </script>
+        </section>
 
         <section class="container" id="cont2">
             <a href="volunteerhome.php"> <input id="startsurvey" type="button" value="Start survey"></a><br><br>

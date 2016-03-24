@@ -137,8 +137,8 @@
         <section class="container" id="cont1">
             <input type="button" id="backtohub" name="backtohub" value="Back to Hub">
             <script>
-                $( "backtohub" ).click(function() {
-                    $( "con1" ).toggle( "fade", 1000 );
+                $( "#backtohub" ).click(function() {
+                    $( "#con1" ).toggle( "fade", 1000 );
             </script>
         </section>
 

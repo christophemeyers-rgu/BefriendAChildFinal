@@ -21,10 +21,7 @@ $( "#submit5" ).click(function() {
 
 $( "#submit6" ).click(function() {
     $( "#cont6" ).toggle( "scale", 1000 );
-    $("#cont7").html($("input").serialize());
 });
-
-
 
 $( "#submit7" ).click(function() {
     $( "#cont7" ).toggle( "slide", 1000 );

@@ -22,12 +22,9 @@ $( "#submit5" ).click(function() {
 $( "#submit6" ).click(function() {
     $( "#cont6" ).toggle( "scale", 1000 );
 });
+
 $( "#submit7" ).click(function() {
     $( "#cont7" ).toggle( "slide", 1000 );
 });
 
-$( "#showr" ).click(function() {
-    $( "input" ).first().show( "fast", function showNext() {
-        $( this ).next( "input" ).show( "fast", showNext );
-    });
-});
+

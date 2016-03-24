@@ -23,6 +23,17 @@ $( "#submit6" ).click(function() {
     $( "#cont6" ).toggle( "scale", 1000 );
 
     $("#summary").html($("Form").serialize());
+
+    var formData = $(this).serialize().split("&");
+    console.log("You entered:");
+
+    $.each(formData, function(index, value){
+        value = value.split("=");
+
+        // Append to div instead of logging to console
+        console.log(value[0] + ": " + value[1]);
+    })
+    event.preventDefault();
 });
 
 $( "#submit7" ).click(function() {

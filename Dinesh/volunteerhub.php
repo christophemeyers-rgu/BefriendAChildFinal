@@ -86,6 +86,7 @@
 
 
     }
+echo "<script>alert('Thank you for completing the survey!');</script>";
 
 ?>
 
@@ -122,6 +123,13 @@
               ?>
           </h1>
 
+        <section class="container" id="cont2">
+            <a href="volunteerhome.php"> <input id="startsurvey" type="button" value="Start survey"></a><br><br>
+
+            <a href="logoutvolunteer.php" id="logout"><input id="logout" type="button" value="Logout"></a>
+        </section>
+
+
         <section class="container" id="cont1">
             <input type="button" id="backtohub" name="backtohub" value="Back to Hub"><
             <script>
@@ -130,11 +138,7 @@
             </script>
         </section>
 
-        <section class="container" id="cont2">
-            <a href="volunteerhome.php"> <input id="startsurvey" type="button" value="Start survey"></a><br><br>
 
-    <a href="logoutvolunteer.php" id="logout"><input id="logout" type="button" value="Logout"></a>
-        </section>
 
     </main>
 <!- - (END OF MAIN) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ->

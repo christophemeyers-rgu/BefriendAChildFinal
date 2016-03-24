@@ -23,7 +23,9 @@ $( "#submit6" ).click(function() {
     $( "#cont6" ).toggle( "scale", 1000 );
 
 
-        $("#summary").html($("Form").serialize());
+        //$("#summary").html($("Form").serialize());
+
+    $( "form" ).clone().prependTo( "div" );
 
 });
 

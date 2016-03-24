@@ -1,6 +1,6 @@
 <?php
 
+$form = $_POST["#survey"];
 
-
-echo "yoooooo";
+echo $form;
 ?>

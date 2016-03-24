@@ -25,11 +25,14 @@
 
     //function that adds answers to database and then links volunteer to the thankssurvey.php page
     function add_answers_to_database(){
+
         include("db_connection.php");   //database connection
 
         if($db->connect_errno){
             die('Connectfailed['.$db->connect_error.']');   //display possible error
         }
+
+        session_start();
 
         $email = $_SESSION['vol_email'];    //get volunteer email from session
 

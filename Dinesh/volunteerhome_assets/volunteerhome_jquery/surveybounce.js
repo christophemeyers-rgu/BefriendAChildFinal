@@ -21,10 +21,9 @@ $( "#submit5" ).click(function() {
 
 $( "#submit6" ).click(function() {
     $( "#cont6" ).toggle( "scale", 1000 );
-});
-$("#submit6").click(function(){
     $("#cont7").html($("input").serialize());
 });
+
 
 
 $( "#submit7" ).click(function() {

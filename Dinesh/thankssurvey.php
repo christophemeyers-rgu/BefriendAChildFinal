@@ -29,5 +29,9 @@ echo "<script>alert('Thank you for completing the survey!');</script>";
 </head>
 <body>
     <a href="volunteerhub.php">Back to Hub</a>
+    <script>
+        $( "a" ).click(function() {
+            $( "thankssurvey" ).toggle( "fade", 1000 );
+    </script>
 </body>
 </html>

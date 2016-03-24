@@ -1,4 +1,14 @@
- <!-- Start: page-top-outer -->
+
+
+<!-- CAN THIS BE DELETED? I DON'T THINK IT'S USED ANYWHERE? --!>
+
+
+<!-- OR WE COULD GO AND ACTUALLY USE IT, TO CLEAN UP THE HTML ON ALL THE ADMIN PAGES TO EXCLUDE THIS CRAPSHOW :P --!>
+
+
+<!-- ok, found that it's used on delete-user... :P --!>
+
+<!-- Start: page-top-outer -->
         <div id="page-top-outer">
 
             <!-- Start: page-top -->

@@ -1,24 +1,33 @@
 <?php
-include 'functions.php';
-session_start();
-if(!isset($_SESSION['ad_email'])){
-	header("Location: index.php");
-}
 
-if(isset($_POST['update']))
-{
-   
-    updateUser();
-    header("location: delete-user.php");
-}
-if(isset($_GET['vol_email']))
-{
-    $user_login=$_GET['vol_email'];
-    $result = getUser($user_login);
-    $row = mysqli_fetch_array($result);
-}else{
-    header("location: adminhome.php");
-}
+
+    //THIS PAGE PRESENTS ADMIN WITH A FORM TO CHANGE DATA ABOUT VOLUNTEERS, IT IS LINKED TO/FROM DELETE-USER
+
+    //important functions are here
+    include 'functions.php';
+
+    //without login session, the admin is sent back to index.php
+    session_start();
+    if(!isset($_SESSION['ad_email'])){
+        header("Location: index.php");
+    }
+
+
+    //I DON'T WANNA TOUCH THIS NEXT BIT...
+    if(isset($_POST['update']))
+    {
+
+        updateUser();
+        header("location: delete-user.php");
+    }
+    if(isset($_GET['vol_email']))
+    {
+        $user_login=$_GET['vol_email'];
+        $result = getUser($user_login);
+        $row = mysqli_fetch_array($result);
+    }else{
+        header("location: adminhome.php");
+    }
 ?>
 
 
@@ -219,6 +228,8 @@ if(isset($_GET['vol_email']))
                                                     <tr>
                                                         <th valign="top">Currently matched with a child?</th>
                                                         <td>
+
+                                                            <!--This if-clause should maybe be javascript... I think-->
                                                             <?php
                                                                 if ($row['vol_child_matched']=0){
                                                                     $yes="checked='checked'";

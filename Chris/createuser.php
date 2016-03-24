@@ -1,9 +1,17 @@
 <?php
-session_start();
-if(!isset($_SESSION['ad_email'])){
-	header("Location: index.php");
-}
+
+    //THIS PAGE IS DESTINATION WHEN ADMIN WANTS TO CREATE A NEW USER AND WHEN A NEW USER HAS BEEN ADDED TO THE DATABASE
+
+
+
+    //sends user back to index.php if not logged in
+    session_start();
+    if(!isset($_SESSION['ad_email'])){
+        header("Location: index.php");
+    }
 ?>
+
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -277,7 +285,6 @@ if(!isset($_SESSION['ad_email'])){
                                             <td></td>
 
                                         </tr>
-
                                         <!-- added field for random password -->
                                         <tr>
                                             <th valign="top">Password:</th>
@@ -297,6 +304,8 @@ if(!isset($_SESSION['ad_email'])){
                                                 <input type="radio" name="child_matched" value=false>No
                                             </td>
                                         </tr>
+                                        <!-- In the future there should be a function that only shows the next questions
+                                        if the volunteer checks the fact that he has a child associated!-->
                                         <tr>
                                             <td>If yes, please answer the following two:</td>
                                         </tr>
@@ -309,7 +318,7 @@ if(!isset($_SESSION['ad_email'])){
                                             </td>
                                         </tr>
                                         <tr>
-                                            <th valign="top">Date of Birth:</th>
+                                            <th valign="top">Child's date of birth:</th>
                                             <td class="no height">
 
                                                 <table border="0" cellpadding="0" cellspacing="0">

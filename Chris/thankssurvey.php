@@ -6,17 +6,20 @@
  * Time: 15:32
  */
 
-
-session_start();
-if(!isset($_SESSION['vol_email'])){
-    header("Location: volunteerlogin.php");
-}
+    //THIS PAGE JUST EXISTS AS A TEMPORARY SOLUTION TO WANTING TO DISPLAY A THANK YOU MESSAGE AFTER SUBMITTING THE SURVEY
 
 
-echo "<script>alert('Thank you for completing the survey!');</script>";
+
+    //Without a session, the volunteer is sent back to the volunteerlogin.php page
+    session_start();
+    if(!isset($_SESSION['vol_email'])){
+        header("Location: volunteerlogin.php");
+    }
 
 
-//header("Location: volunteerhub.php");
+echo "<script>alert('Thank you for completing the survey!');</script>"; //thank you notification
+
+
 
 ?>
 

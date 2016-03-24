@@ -1,15 +1,16 @@
 <?php
 
+	//THIS PAGE IS DESTINATION FOR ADMIN WHEN LOGGED IN AND TRYING TO ACCESS INDEX.PHP, AND WHEN CLICKING LINKS LEADING HERE
 
-
-
+	//If no session exists, admin is sent to index.php
 	session_start();
 	if(!isset($_SESSION['ad_email'])){
 		header("Location: index.php");
 	}
 
 ?>
-	/*if($_SERVER['REQUEST_METHOD']==='GET'){
+<!--Below actually not needed-->
+	<!--if($_SERVER['REQUEST_METHOD']==='GET'){
 			session_exists();
 		}
 
@@ -52,11 +53,11 @@
 		else{
 			header("Location: index.php");
 		}
-	}*/
+	}
 	
-	/*function show_admin_home(){
+	function show_admin_home(){
 		
-		$htmlpage = <<< HTMLPAGE*/
+		$htmlpage = <<< HTMLPAGE-->
 		<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -345,7 +346,7 @@
  
 </body>
 </html>
-/*HTMLPAGE;
+<!--HTMLPAGE;
 		print $htmlpage;
-	}*/
+	}-->
 	

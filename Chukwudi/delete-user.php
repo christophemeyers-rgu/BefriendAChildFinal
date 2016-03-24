@@ -1,25 +1,33 @@
 <?php
-include 'functions.php';
-session_start();
-if(!isset($_SESSION['user_login'])){
-	header("Location: index.php");
-}
-if(isset($_GET['user_login']))
-{
-    $login_name=$_GET['user_login'];
-    
-   $result = getUser($login_name);
-   $row = mysqli_fetch_array($result);
-   $imageurl = $row['imageurl'];
-   if(file_exists($imageurl))
-   {
 
-       unlink($imageurl);
-       
-   }
-   deleteUser($login_name);  
-  // header("location: delete-user.php");
-}
+    //THIS IS THE PAGE THAT SHOWS THE TABLE OF USERS WITH LINK TO EDIT-USER AND OPTION TO DELETE USERS
+
+
+    include 'functions.php';    //Some functions from here are used
+
+
+    session_start();
+    if(!isset($_SESSION['ad_email'])){
+        header("Location: index.php");
+    }
+
+    //I DON'T UNDERSTAND WHAT THIS DOES...
+    if(isset($_GET['vol_email']))
+    {
+        $login_name=$_GET['vol_email'];
+
+       $result = getUser($login_name);
+       $row = mysqli_fetch_array($result);
+       $imageurl = $row['imageurl'];
+       if(file_exists($imageurl))
+       {
+
+           unlink($imageurl);
+
+       }
+       deleteUser($login_name);
+      // header("location: delete-user.php");
+    }
 ?>
 
 
@@ -165,8 +173,7 @@ if(isset($_GET['user_login']))
                                     <div style="display: block;">
                                         <table style="margin-left: auto; margin-right: auto;">
                                             <tr>
-                                                <th class="table-style">Sr. #</th><th class="table-style">Login Name</th><th class="table-style">First Name</th><th class="table-style">Surname</th><th class="table-style">Gender</th><th class="table-style">DOB</th><th class="table-style">Address</th><th class="table-style">Image</th><th class="table-style">Action</th>
-                                            </tr>
+                                                <th class="table-style">Sr. #</th><th class="table-style">Login Name</th><th class="table-style">First Name</th><th class="table-style">Surname</th>
                                             <?php
                                                 
                                                 $result = getAllRegisteredUsers();
@@ -180,16 +187,12 @@ if(isset($_GET['user_login']))
                                             ?>
                                             <tr>
                                                 <td class="table-style"><?php echo $counter; ?></td>
-                                                <td class="table-style"><?php echo $row['user_login']; ?></td>
-                                                <td class="table-style"><?php echo $row['firstname']; ?></td>
-                                                <td class="table-style"><?php echo $row['surname']; ?></td>
-                                                <td class="table-style"><?php echo $row['gender']; ?></td>
-                                                <td class="table-style"><?php echo $row['dob']; ?></td>
-                                                <td class="table-style"><?php echo $row['address']; ?></td>
-                                                <td class="table-style"><img src="<?php echo $row['imageurl']; ?>" style="width: 50px; height: 50px;" /></td>
+                                                <td class="table-style"><?php echo $row['vol_email']; ?></td>
+                                                <td class="table-style"><?php echo $row['vol_firstname']; ?></td>
+                                                <td class="table-style"><?php echo $row['vol_surname']; ?></td>
                                                 <td class="table-style">
-                                                    <a href="edit-user.php?user_login=<?php echo $row['user_login']; ?>" style="color:green;">Edit</a>
-                                                    &nbsp;&nbsp;&nbsp;<a href="?user_login=<?php echo $row['user_login']; ?>" style="color:red;">Delete</a></td>
+                                                    <a href="edit-user.php?vol_email=<?php echo $row['vol_email']; ?>" style="color:green;">Edit</a>
+                                                    &nbsp;&nbsp;&nbsp;<a href="?vol_email=<?php echo $row['vol_email']; ?>" style="color:red;">Delete</a></td>
                                                 
                                             </tr>
                                                 <?php

@@ -1,6 +1,6 @@
 <?php
 
-if($form->hasErrors()){
-    echo CHtml::errorSummary($form);
+if($survey->hasErrors()){
+    echo CHtml::errorSummary($survey);
 }
 ?>

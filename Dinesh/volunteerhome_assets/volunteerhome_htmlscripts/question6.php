@@ -6,8 +6,8 @@
     ?>
 </label>
 <input hidden type="number" name="qid6" value="51">
-<input required type="radio" name="question6" value=true>YES
-<input required type="radio" name="question6" value=false>NO
+<input type="radio" name="question6" value=true required>YES
+<input type="radio" name="question6" value=false required>NO
 <br>
 <br>
 <label for="question6">Explain :</label>

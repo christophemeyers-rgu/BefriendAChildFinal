@@ -5,9 +5,9 @@
 
     ?>
 </label>
-<input required type="radio" name="question4" value="0">Nothing new
-<input required type="radio" name="question4" value="1">Done it before
-<input required type="radio" name="question4" value="2">Never done it before
+<input type="radio" name="question4" value="0" required>Nothing new
+<input type="radio" name="question4" value="1" required>Done it before
+<input type="radio" name="question4" value="2" required>Never done it before
 <br>
 <br>
 <input hidden type="number" name="qid4" value="31">

@@ -28,10 +28,6 @@ echo "<script>alert('Thank you for completing the survey!');</script>";
     <title>Thank you for submitting the survey!</title>
 </head>
 <body>
-<input type="button" id="backtohub" name="backtohub" value="Back to Hub"><
-    <script>
-        $( "backtohub" ).click(function() {
-            $( "thankssurvey.php" ).toggle( "fade", 1000 );
-    </script>
+    <a href="volunteerhub.php">Back to Hub</a>
 </body>
 </html>

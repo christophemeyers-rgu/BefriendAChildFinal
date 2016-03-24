@@ -106,11 +106,6 @@
 
     <!- - CSS Stylesheet- ->
     <link rel="stylesheet" href="volunteerhub_css/volunteerhub.css" type="text/css">
-
-    <!- - JQUERY SCRIPT- ->
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 </head>
 <!- - [END OF HEAD] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ->
 
@@ -127,22 +122,14 @@
               ?>
           </h1>
 
+
+
+
         <section class="container" id="cont2">
             <a href="volunteerhome.php"> <input id="startsurvey" type="button" value="Start survey"></a><br><br>
 
-            <a href="logoutvolunteer.php" id="logout"><input id="logout" type="button" value="Logout"></a>
+    <a href="logoutvolunteer.php" id="logout"><input id="logout" type="button" value="Logout"></a>
         </section>
-
-
-        <section class="container" id="cont1">
-            <input type="button" id="backtohub" name="backtohub" value="Back to Hub">
-
-        </section>
-        <script>
-            $( "#backtohub" ).click(function() {
-                $( "#con1" ).toggle( "fade", 1000 );
-        </script>
-
 
     </main>
 <!- - (END OF MAIN) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ->

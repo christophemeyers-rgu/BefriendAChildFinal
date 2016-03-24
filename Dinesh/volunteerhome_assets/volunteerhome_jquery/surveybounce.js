@@ -27,7 +27,7 @@ $( "#submit7" ).click(function() {
 });
 
 $( "#showr" ).click(function() {
-    $( "div" ).first().show( "fast", function showNext() {
-        $( this ).next( "div" ).show( "fast", showNext );
+    $( "input" ).first().show( "fast", function showNext() {
+        $( this ).next( "input" ).show( "fast", showNext );
     });
 });

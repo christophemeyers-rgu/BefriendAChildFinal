@@ -158,7 +158,7 @@
         <script>
             $(document).ready(function(){
                 $("#submitsurvey").click(function(){
-                    $("#cont7").html($("Form").serialize());
+                    $("#cont7").html($("input").serialize());
                 });
             });
         </script>

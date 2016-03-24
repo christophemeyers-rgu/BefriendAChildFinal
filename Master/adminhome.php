@@ -68,7 +68,7 @@
 	<link rel="stylesheet" media="all" type="text/css" href="cssadminpage/pro_dropline_ie.css" />
 
 	<!--  jquery core -->
-/*	<script src="jsadminpage/jquery/jquery-1.4.1.min.js" type="text/javascript"></script>
+	<script src="jsadminpage/jquery/jquery-1.4.1.min.js" type="text/javascript"></script>
 
 	<!--  styled select box script version 2 -->
 	<script src="jsadminpage/jquery/jquery.selectbox-0.5_style_2.js" type="text/javascript"></script>
@@ -171,7 +171,7 @@
 // and update the datePicker to reflect it...
 			$('#d').trigger('change');
 		});
-	</script>*/
+	</script>
 
 
 

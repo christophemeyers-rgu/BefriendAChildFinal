@@ -86,6 +86,7 @@
 
     <!- - SURVEY QUESTIONS SUMMARY - ->
     <section class="container" id="cont7">
+        <button id="showr">Show</button>
         <h2><?php include("volunteerhome_assets/volunteerhome_phpscripts/survey_summary.php"); ?></h2>
         <input type="button" id="submit7" name="submit" value="GO TO SUBMIT SURVEY">
     </section>

@@ -38,28 +38,6 @@
         echo $row['question_type'];
     }
 
-    function get_volunteer_name($email){
-
-        include("db_connection.php");
-
-    if($db->connect_errno){
-        die('Connectfailed['.$db->connect_error.']');
-    }
-
-        $namequery = "SELECT vol_firstname, vol_surname FROM volunteers WHERE vol_email='$email'";
-
-        $result = $db->query($namequery);
-
-        $row = $result->fetch_array();
-
-        $firstname = $row['vol_firstname'];
-        $surname = $row['vol_surname'];
-
-        echo " {$firstname} {$surname}!";
-
-
-}
-
 
 
 ?>
@@ -97,18 +75,6 @@
     <!- - (START OF MAIN) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ->
     <main class="grid-container">
 
-        <h1>Welcome   <?php
-            get_volunteer_name($_SESSION['vol_email']);
-            ?>
-        </h1>
-
-        <section class="container" id="cont9">
-            <input id="startsurvey" type="button" value="Start survey"><br><br>
-
-            <a href="logoutvolunteer.php" id="logout"><input id="logout" type="button" value="Logout"></a>
-        </section>
-
-
         <!- - (START OF SURVEY) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - ->
         <form id="survey" action="submitsurveyanswers.php" method="post" >
 
@@ -121,7 +87,7 @@
     <!- - SURVEY QUESTIONS SUMMARY - ->
     <section class="container" id="cont7">
         <h2><?php include("volunteerhome_assets/volunteerhome_phpscripts/survey_summary.php"); ?></h2>
-        <input type="button" id="surveysummary" name="submit" value="GO TO SUBMIT SURVEY">
+        <input type="button" id="submit7" name="submit" value="GO TO SUBMIT SURVEY">
     </section>
 
     <!- - SURVEY QUESTION 6 - ->

@@ -22,10 +22,6 @@ $( "#submit5" ).click(function() {
 $( "#submit6" ).click(function() {
     $( "#cont6" ).toggle( "scale", 1000 );
 });
-$( "#surveysummary" ).click(function() {
+$( "#submit7" ).click(function() {
     $( "#cont7" ).toggle( "slide", 1000 );
-});
-
-$( "#startsurvey" ).click(function() {
-    $( "#cont9" ).toggle( "fade", 1000 );
 });

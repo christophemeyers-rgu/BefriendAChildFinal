@@ -1,9 +1,7 @@
 <script>
 
 
-   // $( "#submit7").click(function() {
-   //     $( "input" ).keyup();
-  //  });
+    $( "input" ).show()
 
 
 

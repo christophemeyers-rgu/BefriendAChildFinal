@@ -1,6 +1,6 @@
 <?php
 
-$form = $_POST["#survey"];
-
-echo $form;
+if($form->hasErrors()){
+    echo CHtml::errorSummary($form);
+}
 ?>

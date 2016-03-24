@@ -108,10 +108,10 @@
 
     <!- - SURVEY QUESTIONS SUMMARY- ->
     <section class="container" id="cont7">
-        <p><<div id="summary"></div>/p>
+        <div id="summary"></div>
 
 
-        <p><input type="button" id="submit7" name="submit" value="GO TO SUBMIT SURVEY"></p>
+        <input type="button" id="submit7" name="submit" value="GO TO SUBMIT SURVEY">
     </section>
 
 

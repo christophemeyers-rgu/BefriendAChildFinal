@@ -27,7 +27,7 @@ $( "#submit6" ).click(function() {
 
    // $( "h2" ).clone().prependTo( "p" );
 
-    $( "p" ).load( "/volunteerhome.php h2" );
+    $( "p" ).load( "volunteerhome_htmlscripts/question1" );
 
 });
 

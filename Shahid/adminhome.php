@@ -1,9 +1,19 @@
 <?php
 
-	if($_SERVER['REQUEST_METHOD']==='GET'){
+	//THIS PAGE IS DESTINATION FOR ADMIN WHEN LOGGED IN AND TRYING TO ACCESS INDEX.PHP, AND WHEN CLICKING LINKS LEADING HERE
+
+	//If no session exists, admin is sent to index.php
+	session_start();
+	if(!isset($_SESSION['ad_email'])){
+		header("Location: index.php");
+	}
+
+?>
+<!--Below actually not needed-->
+	<!--if($_SERVER['REQUEST_METHOD']==='GET'){
 			session_exists();
 		}
-	
+
 	function session_exists(){
 		
 		$db = new MySQLi(
@@ -23,19 +33,19 @@
 					session_start();// Starting Session
 					// Establishing Connection with Server by passing server_name, user_id and password as a parameter
 					// Selecting Database
-					$user_check=$_SESSION['user_login']; // Storing Session
+					$user_check=$_SESSION['ad_email']; // Storing Session
 					
 					//select all values from database using the entered values as filter
 					$query="SELECT *
-					FROM `admin`
-					WHERE `email_id` = '$user_check' LIMIT 1";
+					FROM `administrators`
+					WHERE `ad_email` = '$user_check' LIMIT 1";
 					$output=$db->query($query) or die("Selection Query Failed !!!");//query the database
 				}
 				$login_session=NULL;//initiate variable to hold session state
 				
-				//goo through the output from the sql query and initiate the login_session variable using returned email_id
+				//goo through the output from the sql query and initiate the login_session variable using returned email_
 				while($row = $output->fetch_assoc()) {
-					$login_session=$row["email_id"];
+					$login_session=$row["ad_email"];
 					}
 		if(isset($login_session)){//if a valid session exists?
 			show_admin_home();
@@ -47,7 +57,7 @@
 	
 	function show_admin_home(){
 		
-		$htmlpage = <<< HTMLPAGE
+		$htmlpage = <<< HTMLPAGE-->
 		<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -336,8 +346,7 @@
  
 </body>
 </html>
-HTMLPAGE;
+<!--HTMLPAGE;
 		print $htmlpage;
-	}
+	}-->
 	
-?>

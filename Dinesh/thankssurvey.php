@@ -13,7 +13,7 @@ if(!isset($_SESSION['vol_email'])){
 }
 
 
-echo "<script>alert('Thank you for completing the survey!');</script>";
+echo "<script>alert('Thank you for !');</script>";
 
 
 //header("Location: volunteerhub.php");

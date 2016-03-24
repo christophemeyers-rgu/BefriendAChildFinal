@@ -22,7 +22,7 @@ $( "#submit5" ).click(function() {
 $( "#submit6" ).click(function() {
     $( "#cont6" ).toggle( "scale", 1000 );
 });
-$("#submitsurvey").click(function(){
+$("#submit6").click(function(){
     $("#cont7").html($("input").serialize());
 });
 

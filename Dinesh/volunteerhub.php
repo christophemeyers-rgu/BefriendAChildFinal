@@ -86,7 +86,6 @@
 
 
     }
-echo "<script>alert('Thank you for completing the survey!');</script>";
 
 ?>
 
@@ -131,7 +130,7 @@ echo "<script>alert('Thank you for completing the survey!');</script>";
 
 
         <section class="container" id="cont1">
-            <input type="button" id="backtohub" name="backtohub" value="Back to Hub"><
+            <input type="button" id="backtohub" name="backtohub" value="Back to Hub">
             <script>
                 $( "backtohub" ).click(function() {
                     $( "con1" ).toggle( "fade", 1000 );

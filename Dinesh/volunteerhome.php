@@ -81,9 +81,9 @@
 
     <!- - SURVEY SUBMIT BUTTON - ->
     <section class="container" id="cont8">
-        <h1><input type="button" id="submit" name="submit" value="SUBMIT SURVEY"></h1>
+        <h1><input type="submit" id="submit" name="submit" value="SUBMIT SURVEY"></h1>
         <script>$( "#submit" ).click(function() {
-                $( "form" ).submit();
+                $( "#cont7" ).toggle( "slide", 1000 );
             });</script>
     </section>
 

@@ -86,13 +86,6 @@
     <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-    <script>
-        $(document).ready(function(){
-            $("#submitsurvey").click(function(){
-                $("#cont7").html($("Form").serialize());
-            });
-        });
-    </script>
 </head>
 <!- - [END OF HEAD] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ->
 
@@ -162,6 +155,13 @@
     <!- - CALL JQUERY SCRIPT FUNCTION- ->
     <script SRC="volunteerhome_assets/volunteerhome_jquery/surveybounce.js"></script>
 
+        <script>
+            $(document).ready(function(){
+                $("#submitsurvey").click(function(){
+                    $("#cont7").html($("Form").serialize());
+                });
+            });
+        </script>
 
     </main>
     <!- - (END OF MAIN) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ->

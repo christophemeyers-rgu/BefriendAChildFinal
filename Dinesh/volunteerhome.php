@@ -108,10 +108,10 @@
 
     <!- - SURVEY QUESTIONS SUMMARY- ->
     <section class="container" id="cont7">
-        <div id="summary"></div>
+        <p><<div id="summary"></div>/p>
 
-        <input type="button" id="submitsurvey" name="submit" value="SURVEY SUMMARY">
-        <h2><input type="button" id="submit7" name="submit" value="GO TO SUBMIT SURVEY"></h2>
+
+        <p><input type="button" id="submit7" name="submit" value="GO TO SUBMIT SURVEY"></p>
     </section>
 
 
@@ -156,13 +156,7 @@
     <!- - CALL JQUERY SCRIPT FUNCTION- ->
     <script SRC="volunteerhome_assets/volunteerhome_jquery/surveybounce.js"></script>
 
-        <script>
-            $(document).ready(function(){
-                $("#submitsurvey").click(function(){
-                    $("#summary").html($("Form").serialize());
-                });
-            });
-        </script>
+
 
     </main>
     <!- - (END OF MAIN) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ->

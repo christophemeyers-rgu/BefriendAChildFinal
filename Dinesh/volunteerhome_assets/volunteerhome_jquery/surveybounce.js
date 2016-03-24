@@ -27,5 +27,5 @@ $( "#surveysummary" ).click(function() {
 });
 
 $( "#startsurvey" ).click(function() {
-    $( "#cont7" ).toggle( "fade", 1000 );
+    $( "#cont9" ).toggle( "fade", 1000 );
 });

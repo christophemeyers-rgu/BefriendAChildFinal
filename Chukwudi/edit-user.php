@@ -1,24 +1,33 @@
 <?php
-include 'functions.php';
-session_start();
-if(!isset($_SESSION['user_login'])){
-	header("Location: index.php");
-}
 
-if(isset($_POST['update']))
-{
-   
-    updateUser();
-    header("location: delete-user.php");
-}
-if(isset($_GET['user_login']))
-{
-    $user_login=$_GET['user_login'];
-    $result = getUser($user_login);
-    $row = mysqli_fetch_array($result);
-}else{
-    header("location: adminhome.php");
-}
+
+    //THIS PAGE PRESENTS ADMIN WITH A FORM TO CHANGE DATA ABOUT VOLUNTEERS, IT IS LINKED TO/FROM DELETE-USER
+
+    //important functions are here
+    include 'functions.php';
+
+    //without login session, the admin is sent back to index.php
+    session_start();
+    if(!isset($_SESSION['ad_email'])){
+        header("Location: index.php");
+    }
+
+
+    //I DON'T WANNA TOUCH THIS NEXT BIT...
+    if(isset($_POST['update']))
+    {
+
+        updateUser();
+        header("location: delete-user.php");
+    }
+    if(isset($_GET['vol_email']))
+    {
+        $user_login=$_GET['vol_email'];
+        $result = getUser($user_login);
+        $row = mysqli_fetch_array($result);
+    }else{
+        header("location: adminhome.php");
+    }
 ?>
 
 
@@ -190,69 +199,49 @@ if(isset($_GET['user_login']))
                                                 <!-- start id-form -->
                                                 <table border="0" cellpadding="0" cellspacing="0"  id="id-form">
                                                     <tr>
-                                                        <th valign="top">Login Name:</th>
-                                                        <td>
-                                                            <input name="user_login_prev" type="hidden" value="<?php echo $row['user_login'] ?>" />
-                                                            <input name="loginName" type="text" class="inp-form" value="<?php echo $row['user_login']; ?>" /></td>
-                                                        <td></td>
-
-                                                    </tr>
-                                                    <tr>
-                                                        <th valign="top">Password:</th>
-                                                        <td><input name="password" type="text" class="inp-form" value="<?php echo $row['user_password']; ?>" /></td>
-                                                        <td></td>
-
-                                                    </tr>
-                                                    <tr>
                                                         <th valign="top">Firstname:</th>
-                                                        <td><input name="firstName" type="text" class="inp-form" value="<?php echo $row['firstname']; ?>" /></td>
+                                                        <td><input name="firstName" type="text" class="inp-form" value="<?php echo $row['vol_firstname']; ?>" /></td>
                                                         <td></td>
 
                                                     </tr>
                                                     <tr>
                                                         <th valign="top">Surname:</th>
-                                                        <td><input name="surName" type="text" class="inp-form" value="<?php echo $row['surname']; ?>" /></td>
+                                                        <td><input name="surName" type="text" class="inp-form" value="<?php echo $row['vol_surname']; ?>" /></td>
                                                         <td></td>
 
                                                     </tr>
                                                     <tr>
-                                                        <th valign="top">Gender:</th>
+                                                        <th valign="top">Login Name:</th>
                                                         <td>
-                                                            <select name="gender"  class="styledselect_form_1">
-                                                                <option selected value="<?php echo $row['gender']; ?>" ><?php echo $row['gender']; ?></option>
-                                                                <option value="Male" >Male</option>
-                                                                <option value="Female">Female</option>
-
-                                                            </select>
-                                                        </td>
+                                                            <input name="user_login_prev" type="hidden" value="<?php echo $row['vol_email'] ?>" />
+                                                            <input name="loginName" type="text" class="inp-form" value="<?php echo $row['vol_email']; ?>" /></td>
                                                         <td></td>
-                                                    </tr>
 
-
-                                                    <tr>
-                                                        <th valign="top">Date of Birth:</th>
-                                                        <td class="noheight">
-
-                                                            <input name="dob" type="text" value="<?php echo $row['dob']; ?>" />
-
-                                                        </td>
-                                                        <td></td>
                                                     </tr>
                                                     <tr>
-                                                        <th valign="top">Address:</th>
-                                                        <td><textarea name="address" rows="" cols="" class="form-textarea">
-                                                            <?php echo $row['address']; ?>
-                                                            </textarea></td>
+                                                        <th valign="top">Password:</th>
+                                                        <td><input name="password" type="text" class="inp-form" value="<?php echo $row['vol_password']; ?>" /></td>
                                                         <td></td>
+
                                                     </tr>
+
                                                     <tr>
-                                                        <th>Picture:</th>
-                                                        <td><input type="file" name="file" class="file_1"  /></td>
+                                                        <th valign="top">Currently matched with a child?</th>
                                                         <td>
-                                                            <div class="bubble-left"></div>
-                                                            <div class="bubble-inner">JPEG, GIF 5MB max per image</div>
-                                                            <div class="bubble-right"></div>
-                                                            <img style="width:50px; height: 50px;" src="<?php echo $row['imageurl']; ?>" />
+
+                                                            <!--This if-clause should maybe be javascript... I think-->
+                                                            <?php
+                                                                if ($row['vol_child_matched']=0){
+                                                                    $yes="checked='checked'";
+                                                                    $no="";
+                                                                }
+                                                                else if ($row['vol_child_matched']=1){
+                                                                    $no="checked='checked'";
+                                                                    $yes="";
+                                                                }
+                                                            ?>
+                                                            <input type="radio" name="child_matched" value="1" <?php $yes ?> >Yes
+                                                            <input type="radio" name="child_matched" value="0" <?php $no ?>  >No
                                                         </td>
                                                     </tr>
 

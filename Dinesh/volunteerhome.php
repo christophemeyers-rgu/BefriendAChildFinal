@@ -1,26 +1,38 @@
 <?php
+
+    //THIS PAGE HAS THE SURVEY WITH LINKS TO ALL QUESTIONS ON IT
+    //IT IS ACCESSED FROM THE VOLUNTEERHUB AND LEADS TO SUBMITSURVEYANSWERS WHEN THE SURVEY IS SUBMITTED
+
+
+    //If session is missing, volunteer is sent to volunteerlogin.php
     session_start();
     if(!isset($_SESSION['vol_email'])){
         header("Location: volunteerlogin.php");
     }
 
+
+
+    //FUNCTIONS:
+
+    //pulls question text from question id
     function get_question_text($qid){
         //connect to the database
         include("db_connection.php");
 
         if($db->connect_errno){
-            die('Connectfailed['.$db->connect_error.']');
+            die('Connectfailed['.$db->connect_error.']');   //error displayed if connection failed
         }
 
-        $query = "SELECT question_text FROM questions WHERE question_id='$qid'";
+        $query = "SELECT question_text FROM questions WHERE question_id='$qid'";    //query
 
         $result = $db->query($query);
 
         $row = $result->fetch_assoc();
 
-        echo $row['question_text'];
+        echo $row['question_text']; //print question
     }
 
+    //same as above with question type as a result
     function get_question_type($qid){
         //connect to the database
         include("db_connection.php");
@@ -38,6 +50,15 @@
         echo $row['question_type'];
     }
 
+
+/*
+ * question type key:
+ *
+ * 0 - text answer
+ * 1 - numerical answer
+ * 2 - multiple choice
+ * 3 - yes/no
+ */
 
 
 ?>
@@ -76,13 +97,19 @@
     <main class="grid-container">
 
         <!- - (START OF SURVEY) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - ->
-        <form id="survey" action="submitsurveyanswers.php" method="post" >
+        <form action="submitsurveyanswers.php" method="post" >
 
 
     <!- - SURVEY SUBMIT BUTTON - ->
-    <section class="container" id="cont7">
-        <?php include("volunteerhome_assets/volunteerhome_htmlscripts/question5.php"); ?>
+    <section class="container" id="cont8">
         <input type="submit" id="submit" name="submit" value="SUBMIT SURVEY">
+    </section>
+
+
+    <!- - SURVEY QUESTIONS SUMMARY- ->
+    <section class="container" id="cont7">
+        <p><div id="summary"></div></p>
+        <input type="button" id="submit7" name="submit" value="GO TO SUBMIT SURVEY">
     </section>
 
 
@@ -126,6 +153,7 @@
 
     <!- - CALL JQUERY SCRIPT FUNCTION- ->
     <script SRC="volunteerhome_assets/volunteerhome_jquery/surveybounce.js"></script>
+
 
 
     </main>

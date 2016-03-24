@@ -80,11 +80,18 @@
 
 
     <!- - SURVEY SUBMIT BUTTON - ->
-    <section class="container" id="cont7">
-        <h2><?php include("volunteerhome_assets/volunteerhome_phpscripts/survey_summary.php"); ?></h2>
-        <input type="submit" id="submit" name="submit" value="SUBMIT SURVEY">
+    <section class="container" id="cont8">
+        <h1><input type="submit" id="submit" name="submit" value="SUBMIT SURVEY"></h1>
+        <script>$( "#submit" ).click(function() {
+                $( "form" ).submit();
+            });</script>
     </section>
 
+    <!- - SURVEY QUESTIONS SUMMARY - ->
+    <section class="container" id="cont7">
+        <h2><?php include("volunteerhome_assets/volunteerhome_phpscripts/survey_summary.php"); ?></h2>
+        <input type="button" id="submit7" name="submit" value="GO TO SUBMIT SURVEY">
+    </section>
 
     <!- - SURVEY QUESTION 6 - ->
     <section class="container" id="cont6">

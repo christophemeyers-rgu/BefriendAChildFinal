@@ -1,6 +1,11 @@
-<?php
+<script>
 
-if($survey->hasErrors()){
-    echo CHtml::errorSummary($survey);
-}
-?>
+
+   // $( "#submit7").click(function() {
+   //     $( "input" ).keyup();
+  //  });
+
+
+
+
+</script>

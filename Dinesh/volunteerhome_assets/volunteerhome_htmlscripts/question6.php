@@ -14,4 +14,4 @@
 <br>
 <textarea name="question6_opt" cols="45" rows="5" placeholder="Explain why here"></textarea>
 <br>
-<input type="button" id="submit6" name="submit" value="GO TO SUBMIT SURVEY">
+<input type="button" id="submit6" name="submit" value="GO TO SURVEY SUMMARY">

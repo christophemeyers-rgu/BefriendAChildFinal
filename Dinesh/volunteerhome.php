@@ -108,6 +108,7 @@
 
     <!- - SURVEY QUESTIONS SUMMARY- ->
     <section class="container" id="cont7">
+        <div id="summary"></div>
 
         <input type="button" id="submitsurvey" name="submit" value="SURVEY SUMMARY">
         <h2><input type="button" id="submit7" name="submit" value="GO TO SUBMIT SURVEY"></h2>
@@ -158,7 +159,7 @@
         <script>
             $(document).ready(function(){
                 $("#submitsurvey").click(function(){
-                    $("#cont7").html($("Form").serialize());
+                    $("#summary").html($("Form").serialize());
                 });
             });
         </script>

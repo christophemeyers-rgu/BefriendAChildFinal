@@ -25,9 +25,7 @@ $( "#submit6" ).click(function() {
 
         //$("#summary").html($("Form").serialize());
 
-   // $( "h2" ).clone().prependTo( "p" );
-
-    $( "p" ).load( "volunteerhome_htmlscripts/question1" );
+    $( "h2" ).clone().prependTo( "p" );
 
 });
 

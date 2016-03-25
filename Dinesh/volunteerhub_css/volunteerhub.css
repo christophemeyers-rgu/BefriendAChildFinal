@@ -13,11 +13,14 @@ main {
 }
 
 .container{
-    margin-right: auto;
+    max-width: 650px;
+    height: 650px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 10%;
     margin-left: auto;
-    background-color: gold;
-    height: 100px;
-    width: 150px;
+    margin-right: auto;
 }
 
 #cont1 {

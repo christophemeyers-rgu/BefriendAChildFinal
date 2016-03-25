@@ -4,12 +4,13 @@ body{
 
 main {
     max-width: 960px;
+    height: auto;
     margin-right: auto;
     margin-left: auto;
-    height: 400px;
     background-color: aliceblue;
+    flex-direction: row;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
 }
 
 .container{

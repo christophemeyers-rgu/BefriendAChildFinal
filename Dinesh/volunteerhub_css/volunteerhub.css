@@ -22,12 +22,11 @@ main {
 
 #cont1 {
     background: yellowgreen;
-}
-#cont2 {
-    background-color: palevioletred;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
 }
 
-#startsurvey, #logout{
-    padding: 20px;
-    alignment: center;
-}
+
+
+

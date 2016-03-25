@@ -122,13 +122,15 @@
 
         <!-- Volunteer name is printed in the head -->
         <section class="container" id="cont1">
-          <h1>Welcome<br><?php get_volunteer_name($_SESSION['vol_email']);?> </h1> <!--function from above using the email pulled from the session-->
+          <h1>
+            Welcome<br><?php get_volunteer_name($_SESSION['vol_email']);?>  <!--function from above using the email pulled from the session-->
 
 
             <a href="volunteerhome.php"> <input id="startsurvey" type="button" value="Start survey"></a>
 
 
              <a href="logoutvolunteer.php" id="logout"><input id="logout" type="button" value="Logout"></a>
+          </h1>
         </section>
 
 

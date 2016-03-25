@@ -25,7 +25,7 @@ $( "#submit6" ).click(function() {
 
         //$("#summary").html($("Form").serialize());
 
-    $( "input[type=text], input[type=number], input[type=radio]" ).clone().prependTo( "p" );
+    $( "input[type=text], input[type=number], input[type=radio], textarea" ).clone().prependTo( "p" );
 
 });
 

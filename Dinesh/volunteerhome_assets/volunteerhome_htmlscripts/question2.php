@@ -5,7 +5,7 @@
     get_question_text(11);
     ?>
 </label>
-<div>
+
 <br>
 <input hidden type="number" name="qid2" value="11"><!-- Hidden input that carries value of question id (currently manual)-->
 <input required type="number" step="any" name="question2" placeholder="Enter Amount in £">

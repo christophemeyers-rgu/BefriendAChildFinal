@@ -97,35 +97,33 @@
 
 <html lang="en">
 
-<!- - [START OF HEAD] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ->
+<!-- - [START OF HEAD] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 <head>
-    <!- - CHARACTER ENCODING - ->
+    <!-- - CHARACTER ENCODING - -->
     <meta charset="UTF-8">
 
-    <!- - WINDOW TAB TITLE - ->
+    <!-- - WINDOW TAB TITLE - -->
     <title>Volunteer Hub page</title>
 
-    <!- - WINDOW TAB ICON - ->
+    <!-- - WINDOW TAB ICON - -->
     <link rel="shortcut icon" href="volunteerhome_assets/volunteerhome_images/tabicon.png" type="image/x-icon" />
 
-    <!- - CSS Stylesheet- ->
+    <!-- - CSS Stylesheet- -->
     <link rel="stylesheet" href="volunteerhub_css/volunteerhub.css" type="text/css">
 </head>
-<!- - [END OF HEAD] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ->
+<!-- - [END OF HEAD] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ->
 
 <!- - [START OF BODY] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ->
 <body>
 
 
-<!- - (START OF MAIN) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ->
+<!-- - (START OF MAIN) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ->
     <main class="grid-container">
 
         <!-- Volunteer name is printed in the head -->
         <section class="container" id="cont1">
-          <h1>Welcome<?php get_volunteer_name($_SESSION['vol_email']);?> </h1>  //function from above using the email pulled from the session
+          <h1>Welcome<?php get_volunteer_name($_SESSION['vol_email']);?> </h1> <!--function from above using the email pulled from the session-->
         </section>
-
-
 
         <section class="container" id="cont2">
             <a href="volunteerhome.php"> <input id="startsurvey" type="button" value="Start survey"></a>
@@ -133,14 +131,14 @@
 
         <section class="container" id="cont3">
             <a href="logoutvolunteer.php" id="logout"><input id="logout" type="button" value="Logout"></a>
-        <section class="container" id="cont2">
+        </section>
 
 
     </main>
-<!- - (END OF MAIN) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ->
+<!-- - (END OF MAIN) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
 </body>
-<!- - [END OF BODY] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ->
+<!-- - [END OF BODY] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
 </html>
 

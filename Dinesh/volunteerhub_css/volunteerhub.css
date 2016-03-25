@@ -10,6 +10,7 @@ main {
     background-color: aliceblue;
     display: flex;
     flex-direction: column;
+    top: 10%;
 }
 .container{
     margin-right: auto;

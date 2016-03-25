@@ -4,6 +4,7 @@
     get_question_text(21);
     ?>
 </label>
+<div>
 <input required type="radio" name="question3" value="0"><img src="volunteerhome_assets/volunteerhome_images/surveyiconsad.png" alt="sad">
 <input required type="radio" name="question3" value="1"><img src="volunteerhome_assets/volunteerhome_images/surveyiconnomal.png" alt="normal">
 <input required type="radio" name="question3" value="2"><img src="volunteerhome_assets/volunteerhome_images/surveyiconsmile.png" alt="smile">
@@ -14,4 +15,5 @@
 <br>
 <textarea name="question3_opt" cols="45" rows="5" placeholder="Enter your explanation here"></textarea>
 <br>
+</div>
 <input type="button" id="submit3" name="submit" value="GO TO QUESTION 4">

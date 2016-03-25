@@ -5,6 +5,7 @@
 
     ?>
 </label>
+<div>
 <input hidden type="number" name="qid5" value="41"><!-- Hidden input that carries value of question id (currently manual)-->
 <input required type="radio" name="question5" value=true>YES
 <input required type="radio" name="question5" value=false>NO
@@ -14,4 +15,5 @@
 <br>
 <textarea name="question5_opt" cols="45" rows="5" placeholder="Enter items here"></textarea>
 <br>
+</div>
 <input type="button" id="submit5" name="submit" value="GO TO QUESTION 6">

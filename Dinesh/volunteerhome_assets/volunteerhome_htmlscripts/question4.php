@@ -5,6 +5,7 @@
 
     ?>
 </label>
+<div>
 <input required type="radio" name="question4" value="0">Nothing new
 <input required type="radio" name="question4" value="1">Done it before
 <input required type="radio" name="question4" value="2">Never done it before
@@ -15,4 +16,5 @@
 <br>
 <textarea name="question4_opt" cols="45" rows="5" placeholder="Explain what you learned here"></textarea>
 <br>
+</div>
 <input type="button" id="submit4" name="submit" value="GO TO QUESTION 5">

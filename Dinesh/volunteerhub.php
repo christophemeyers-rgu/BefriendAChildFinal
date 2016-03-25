@@ -125,12 +125,10 @@
           <h1>Welcome<br><?php get_volunteer_name($_SESSION['vol_email']);?> </h1> <!--function from above using the email pulled from the session-->
 
 
-
-            <h2><a href="volunteerhome.php"> <input id="startsurvey" type="button" value="Start survey"></a></h2>
-
+            <a href="volunteerhome.php"> <input id="startsurvey" type="button" value="Start survey"></a>
 
 
-            <h2> <a href="logoutvolunteer.php" id="logout"><input id="logout" type="button" value="Logout"></a></h2>
+             <a href="logoutvolunteer.php" id="logout"><input id="logout" type="button" value="Logout"></a>
         </section>
 
 

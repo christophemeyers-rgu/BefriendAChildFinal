@@ -121,20 +121,18 @@
     <main class="grid-container">
 
         <!-- Volunteer name is printed in the head -->
-          <h1>Welcome   <?php
-              get_volunteer_name($_SESSION['vol_email']);   //function from above using the email pulled from the session
-              ?>
-          </h1>
-
-
-
-
         <section class="container" id="cont1">
-            <a href="volunteerhome.php"> <input id="startsurvey" type="button" value="Start survey"></a><br><br>
+          <h1>Welcome<?php get_volunteer_name($_SESSION['vol_email']);?> </h1>  //function from above using the email pulled from the session
         </section>
 
+
+
         <section class="container" id="cont2">
-    <a href="logoutvolunteer.php" id="logout"><input id="logout" type="button" value="Logout"></a>
+            <a href="volunteerhome.php"> <input id="startsurvey" type="button" value="Start survey"></a>
+        </section>
+
+        <section class="container" id="cont3">
+            <a href="logoutvolunteer.php" id="logout"><input id="logout" type="button" value="Logout"></a>
         <section class="container" id="cont2">
 
 

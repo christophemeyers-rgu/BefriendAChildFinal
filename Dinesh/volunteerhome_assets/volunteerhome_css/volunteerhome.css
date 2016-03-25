@@ -45,6 +45,7 @@ main {
 
 #cont7 {
     height: auto;
+    display: flex;
     background-color: lightgoldenrodyellow;
 }
 

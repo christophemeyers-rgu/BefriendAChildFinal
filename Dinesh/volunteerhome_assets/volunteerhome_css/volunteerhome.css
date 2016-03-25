@@ -44,9 +44,14 @@ main {
 }
 
 #cont7 {
+
     height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: aliceblue;
+    flex-direction: column-reverse;
     display: flex;
-    background-color: lightgoldenrodyellow;
+    justify-content: center;
 }
 
 #cont8 {

@@ -10,7 +10,6 @@ main {
     background-color: aliceblue;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     justify-content: space-around;
 }
 .container{

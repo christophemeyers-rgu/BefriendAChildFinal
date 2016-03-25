@@ -44,10 +44,10 @@ main {
 }
 
 #cont7 {
+    height: auto;
     background-color: lightgoldenrodyellow;
 }
 
 #cont8 {
-    height: 1000px;
-    background-color: lightsteelblue;
+    background-color: lavenderblush;
 }

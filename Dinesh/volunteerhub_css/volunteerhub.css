@@ -18,18 +18,17 @@ main {
     background-color: gold;
     height: 100px;
     width: 150px;
-    flex-grow: 1;
 }
 
 #cont1 {
-    justify-content: space-around;
+
 }
 
 #cont2 {
-    justify-content: space-around;
+
 }
 
 #cont3 {
-    justify-content: space-around;
+
 }
 

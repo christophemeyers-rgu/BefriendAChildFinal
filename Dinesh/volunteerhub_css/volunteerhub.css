@@ -12,6 +12,7 @@ main {
     flex-direction: column;
     justify-content: center;
     justify-content: space-between;
+    justify-content: space-around;
 }
 .container{
 

@@ -127,8 +127,7 @@
 
 
             <a href="volunteerhome.php"> <input id="startsurvey" type="button" value="Start survey"></a>
-
-
+              <br>
              <a href="logoutvolunteer.php" id="logout"><input id="logout" type="button" value="Logout"></a>
           </h1>
         </section>

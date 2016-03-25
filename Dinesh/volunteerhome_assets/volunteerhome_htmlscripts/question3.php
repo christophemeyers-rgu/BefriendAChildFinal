@@ -1,10 +1,11 @@
+<div>
 <label for="question3">
     <?php
     //function for getting the text
     get_question_text(21);
     ?>
 </label>
-<div>
+
 <input hidden type="number" name="qid3" value="21"><!-- Hidden input that carries value of question id (currently manual)-->
 <br>
 <input required type="radio" name="question3" value="0"><img src="volunteerhome_assets/volunteerhome_images/surveyiconsad.png" alt="sad">

@@ -27,7 +27,7 @@ $( "#submit6" ).click(function() {
 
     //$( "input[type=text], input[type=number], input[type=radio], textarea" ).clone().prependTo( "p" );
 
-    $( "h2" ).clone().prependTo( "p" );
+    $( "div" ).clone().prependTo( "p" );
 });
 
 $( "#submit7" ).click(function() {

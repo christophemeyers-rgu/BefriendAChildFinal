@@ -1,3 +1,4 @@
+<div>
 <label for="question4">
     <?php
         //function for getting the text
@@ -5,7 +6,7 @@
 
     ?>
 </label>
-<div>
+
 <input hidden type="number" name="qid4" value="31"><!-- Hidden input that carries value of question id (currently manual)-->
 <br>
 <input required type="radio" name="question4" value="0">Nothing new

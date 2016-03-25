@@ -1,3 +1,4 @@
+<div>
 <label for="question2">
     <?php
     //function for getting the text

@@ -18,7 +18,7 @@ main {
     background-color: gold;
     height: 100px;
     width: 150px;
-
+    flex-grow: 1;
 }
 
 #cont1 {

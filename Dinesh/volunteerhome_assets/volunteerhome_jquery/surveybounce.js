@@ -33,5 +33,3 @@ $( "#submit6" ).click(function() {
 $( "#submit7" ).click(function() {
     $( "#cont7" ).toggle( "slide", 1000 );
 });
-
-

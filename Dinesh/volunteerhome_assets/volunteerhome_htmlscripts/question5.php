@@ -7,6 +7,7 @@
 </label>
 <div>
 <input hidden type="number" name="qid5" value="41"><!-- Hidden input that carries value of question id (currently manual)-->
+<br>
 <input required type="radio" name="question5" value=true>YES
 <input required type="radio" name="question5" value=false>NO
 <br>

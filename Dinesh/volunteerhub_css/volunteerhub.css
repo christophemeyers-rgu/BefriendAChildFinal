@@ -9,7 +9,7 @@ main {
     height: 400px;
     background-color: aliceblue;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between ;
 }
 .container{

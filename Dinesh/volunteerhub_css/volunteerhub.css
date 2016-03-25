@@ -18,11 +18,10 @@ main {
     background-color: gold;
     height: 100px;
     width: 150px;
-    top: 10%;
 }
 
 #cont1 {
-
+    top: 10%;
 }
 
 #cont2 {

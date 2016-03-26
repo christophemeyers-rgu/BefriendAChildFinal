@@ -84,7 +84,7 @@
         $date_printed=date("Y-m-d");    //This will NEED TO BE UPDATED together with the way how we retrieve the event_date
 
         //Our website will require the event_date to be unique for each entry into the database, so we find the submission_id
-        //by looking for the same event_date
+        //by looking for the same event_date and volunteer id
         $get_submission_sql = "SELECT submission_id FROM submissions WHERE event_date='$date_printed' AND vol_id='$vol_id'";
 
         $submission_id_result = $db->query($get_submission_sql) or die("Error: ".$get_submission_sql."<br>".$db->error);

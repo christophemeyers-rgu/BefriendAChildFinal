@@ -12,4 +12,4 @@
 <br>
 </h3>
 <input type="button" id="next2" name="next" value="GO TO QUESTION 3">
-<input type="button" name="previous" value="GO TO QUESTION 1">
+<input type="button" id="previous" name="previous" value="GO TO QUESTION 1">

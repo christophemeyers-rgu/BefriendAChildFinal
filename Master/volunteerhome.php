@@ -68,7 +68,7 @@
 
 <html lang="en">
 
-<!-- - [START OF HEAD] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - [START OF HEAD] ============================================================================================= -->
 <head>
     <!-- - CHARACTER ENCODING - -->
     <meta charset="UTF-8">
@@ -87,21 +87,22 @@
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 </head>
-<!-- - [END OF HEAD] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - [END OF HEAD] =============================================================================================== -->
 
 
-<!-- - [START OF BODY] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - [START OF BODY] ============================================================================================= -->
 <body>
 
     <!-- - (START OF MAIN) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <main class="grid-container">
 
-        <!-- - (START OF SURVEY) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - -->
+        <!-- - (START OF SURVEY) ---------------------------------------------------------------------- -->
         <form action="submitsurveyanswers.php" method="post" >
 
 
     <!-- - SURVEY SUBMIT BUTTON - -->
     <section class="container" id="cont8">
+        <input type="button" id="previoussurveysummary" name="previous" value="GO TO SURVEY SUMMARY">
         <input type="submit" id="submit" name="submit" value="SUBMIT SURVEY">
     </section>
 
@@ -110,47 +111,47 @@
     <section class="container" id="cont7">
         <h1>Survey Questions Summary:</h1>
         <p id="summary"></p>
-        <input type="button" id="submit7" name="submit" value="GO TO SUBMIT SURVEY">
+        <input type="button" id="nextsubmitsurvey" name="submit" value="GO TO SUBMIT SURVEY">
     </section>
 
 
     <!-- - SURVEY QUESTION 6 - -->
     <section class="container" id="cont6">
-        <h2><?php include("volunteerhome_assets/volunteerhome_htmlscripts/question6.php"); ?></h2>
+        <?php include("volunteerhome_assets/volunteerhome_htmlscripts/question6.php"); ?>
     </section>
 
 
     <!-- - SURVEY QUESTION 5 - -->
     <section class="container" id="cont5">
-        <h2><?php include("volunteerhome_assets/volunteerhome_htmlscripts/question5.php"); ?></h2>
+        <?php include("volunteerhome_assets/volunteerhome_htmlscripts/question5.php"); ?>
     </section>
 
 
     <!-- - SURVEY QUESTION 4 - -->
     <section class="container" id="cont4">
-        <h2><?php include("volunteerhome_assets/volunteerhome_htmlscripts/question4.php"); ?></h2>
+        <?php include("volunteerhome_assets/volunteerhome_htmlscripts/question4.php"); ?>
     </section>
 
 
     <!-- - SURVEY QUESTION 3 - -->
     <section class="container" id="cont3">
-        <h2><?php include("volunteerhome_assets/volunteerhome_htmlscripts/question3.php"); ?></h2>
+        <?php include("volunteerhome_assets/volunteerhome_htmlscripts/question3.php"); ?>
     </section>
 
 
     <!-- - SURVEY QUESTION 2 - -->
     <section class="container" id="cont2">
-        <h2><?php include("volunteerhome_assets/volunteerhome_htmlscripts/question2.php"); ?></h2>
+        <?php include("volunteerhome_assets/volunteerhome_htmlscripts/question2.php"); ?>
     </section>
 
 
     <!-- - SURVEY QUESTION 1 - -->
     <section class="container" id="cont1">
-        <h2><?php include("volunteerhome_assets/volunteerhome_htmlscripts/question1.php"); ?></h2>
+        <?php include("volunteerhome_assets/volunteerhome_htmlscripts/question1.php"); ?>
     </section>
 
         </form>
-        <!-- - (END OF SURVEY) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - -->
+        <!-- - (END OF SURVEY) ---------------------------------------------------------------------- -->
 
     <!-- - CALL JQUERY SCRIPT FUNCTION- -->
     <script SRC="volunteerhome_assets/volunteerhome_jquery/surveybounce.js"></script>
@@ -161,6 +162,6 @@
     <!-- - (END OF MAIN) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
 </body>
-<!-- - [END OF BODY] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - [END OF BODY] =============================================================================================== -->
 
 </html>

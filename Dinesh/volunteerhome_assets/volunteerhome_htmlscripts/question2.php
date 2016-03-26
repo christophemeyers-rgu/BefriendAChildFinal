@@ -2,6 +2,7 @@
     <h2>==========[Question 2]:==============</h2>
     <br>
     <br>
+<fieldset>
 <label for="question2">
     <?php
     //function for getting the text
@@ -15,6 +16,7 @@
 <br>
 <br>
 <br>
+</fieldset>
 </div>
 <input type="button" id="previous1" name="previous" value="GO TO QUESTION 1">
 <input type="button" id="next3" name="next" value="GO TO QUESTION 3">

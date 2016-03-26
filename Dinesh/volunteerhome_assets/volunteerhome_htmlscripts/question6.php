@@ -2,7 +2,8 @@
     <h2>==========[Question 6]:==============</h2>
     <br>
     <br>
-<label for="question6">
+<fieldset>
+    <label for="question6">
     <?php
         //function for getting the text
         get_question_text(51);
@@ -21,6 +22,7 @@
 <textarea name="question6_opt" cols="45" rows="5" placeholder="Explain why here"></textarea>
 <br>
 <br>
+</fieldset>
 </div>
 <input type="button" id="previous5" name="previous" value="GO TO QUESTION 5">
 <input type="button" id="nextsurveysummary" name="next" value="GO TO SURVEY SUMMARY">

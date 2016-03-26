@@ -1,4 +1,4 @@
-<h3>Question 6:
+<h3>==========[Question 6]:==============
     <br>
     <br>
 <label for="question6">
@@ -18,6 +18,7 @@
 <label for="question6">Explain :</label>
 <br>
 <textarea name="question6_opt" cols="45" rows="5" placeholder="Explain why here"></textarea>
+<br>
 <br>
 </h3>
 <input type="button" id="previous5" name="previous" value="GO TO QUESTION 5">

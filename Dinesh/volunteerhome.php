@@ -93,9 +93,7 @@
 <!-- - [START OF BODY] ============================================================================================= -->
 <body>
 
-<div class="progress-wrap progress" data-progress-percent="25">
-    <div class="progress-bar progress"></div>
-</div>
+
 
     <!-- - (START OF MAIN) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <main class="grid-container">
@@ -150,6 +148,9 @@
 
 
     <!-- - SURVEY QUESTION 1 - -->
+            <div class="progress-wrap progress" data-progress-percent="25">
+                <div class="progress-bar progress"></div>
+            </div>
     <section class="container" id="cont1">
         <?php include("volunteerhome_assets/volunteerhome_htmlscripts/question1.php"); ?>
     </section>

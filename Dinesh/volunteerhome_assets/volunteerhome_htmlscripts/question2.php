@@ -1,4 +1,4 @@
-<h2>
+<div>
     <h3>==========[Question 6]:==============</h3>
     <br>
     <br>
@@ -14,6 +14,6 @@
 <input required type="number" step="any" name="question2" placeholder="Enter Amount in £">
 <br>
     <br>
-</h2>
+</div>
 <input type="button" id="previous1" name="previous" value="GO TO QUESTION 1">
 <input type="button" id="next3" name="next" value="GO TO QUESTION 3">

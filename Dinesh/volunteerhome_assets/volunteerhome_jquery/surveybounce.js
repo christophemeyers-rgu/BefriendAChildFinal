@@ -26,7 +26,7 @@ $( "#next6" ).click(function() {
 $( "#nextsurveysummary" ).click(function() {
     $( "#cont6" ).toggle( "scale", 1000 );
 
-    $( "h2" ).show().prependTo( "p" ); // sends all the questions summary to the summary page
+    $( "div" ).show().prependTo( "p" ); // sends all the questions summary to the summary page
 });
 
 $( "#nextsubmitsurvey" ).click(function() {

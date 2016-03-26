@@ -1,4 +1,4 @@
-<h2>
+<div>
     <h3>==========[Question 6]:==============</h3>
     <br>
     <br>
@@ -22,6 +22,6 @@
 <textarea name="question4_opt" cols="45" rows="5" placeholder="Explain what you learned here"></textarea>
 <br>
 <br>
-</h2>
+</div>
 <input type="button" id="previous3" name="previous" value="GO TO QUESTION 3">
 <input type="button" id="next5" name="next" value="GO TO QUESTION 5">

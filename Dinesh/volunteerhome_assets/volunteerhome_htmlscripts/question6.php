@@ -1,4 +1,4 @@
-<h3>Question 6
+<h3>Question 6:
     <br>
     <br>
 <label for="question6">

@@ -1,6 +1,6 @@
 
 $( "#submit1" ).click(function() {
-    $( "#cont1" ).toggle( "bounce", 1000 );
+    $( "#cont1" ).toggle( "fade", 1000 );
 });
 
 $( "#submit2" ).click(function() {
@@ -27,7 +27,7 @@ $( "#submit6" ).click(function() {
 
     //$( "input[type=text], input[type=number], input[type=radio], textarea" ).clone().prependTo( "p" );
 
-    $( "h2" ).show( "p" );
+    $( "#cont1" ).show( "p" );
 });
 
 $( "#submit7" ).click(function() {

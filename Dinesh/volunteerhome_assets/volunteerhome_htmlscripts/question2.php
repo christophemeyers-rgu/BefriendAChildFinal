@@ -1,4 +1,5 @@
 <h3>Question 2
+    <br>
 <label for="question2">
     <?php
     //function for getting the text

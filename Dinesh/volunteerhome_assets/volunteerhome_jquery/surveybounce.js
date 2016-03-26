@@ -29,6 +29,6 @@ $( "#submit7" ).click(function() {
     $( "#cont7" ).toggle( "fade", 1000 );
 });
 
-$( "#previous" ).click(function() {
-    $(this).toggle( "slide", 1000 );
+$( "#previous1" ).click(function() {
+    $("#cont2").toggle( "slide", 1000 );
 });

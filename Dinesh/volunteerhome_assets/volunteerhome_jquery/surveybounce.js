@@ -22,12 +22,7 @@ $( "#submit5" ).click(function() {
 $( "#submit6" ).click(function() {
     $( "#cont6" ).toggle( "scale", 1000 );
 
-
-        //$("#summary").html($("Form").serialize());
-
-    //$( "input[type=text], input[type=number], input[type=radio], textarea" ).clone().prependTo( "p" );
-
-    $( "h3" ).show().prependTo( "p" );
+    $( "h3" ).show().prependTo( "p" ); // sends all the questions summary to the summary page
 });
 
 $( "#submit7" ).click(function() {

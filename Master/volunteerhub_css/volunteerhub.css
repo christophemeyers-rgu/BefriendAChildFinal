@@ -1,33 +1,33 @@
+body{
+    background-color: cornflowerblue;
+}
+
 main {
     max-width: 960px;
-    height: 900px;
     margin-right: auto;
     margin-left: auto;
+    height: 400px;
     background-color: aliceblue;
-    flex-direction: row;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
 }
-.container{
 
-    max-width: 650px;
-    height: 650px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 10%;
-    margin-left: auto;
+.container{
     margin-right: auto;
+    margin-left: auto;
+    background-color: gold;
+    height: 100px;
+    width: 150px;
 }
 
 #cont1 {
-    background: yellowgreen;
-}
-#cont2 {
-    background-color: palevioletred;
+
 }
 
-#startsurvey, #logout{
-    padding: 20px;
-    alignment: center;
+#cont2 {
+
+}
+
+#cont3 {
+
 }

@@ -1,6 +1,6 @@
 
 $( "#submit1" ).click(function() {
-    $( "#cont1" ).toggle( "bounce", 1000 );
+    $( "#cont1" ).toggle( "explode", 1000 );
 });
 
 $( "#submit2" ).click(function() {
@@ -21,5 +21,15 @@ $( "#submit5" ).click(function() {
 
 $( "#submit6" ).click(function() {
     $( "#cont6" ).toggle( "scale", 1000 );
+
+
+        //$("#summary").html($("Form").serialize());
+
+    //$( "input[type=text], input[type=number], input[type=radio], textarea" ).clone().prependTo( "p" );
+
+    $( "h3" ).show().prependTo( "p" );
 });
 
+$( "#submit7" ).click(function() {
+    $( "#cont7" ).toggle( "slide", 1000 );
+});

@@ -29,6 +29,30 @@ $( "#submit7" ).click(function() {
     $( "#cont7" ).toggle( "fade", 1000 );
 });
 
-$( "#previous" ).click(function() {
+$( "#previous1" ).click(function() {
     $("#cont1").toggle("slide", 1000);
+});
+
+$( "#previous2" ).click(function() {
+    $("#cont2").toggle("slide", 1000);
+});
+
+$( "#previous3" ).click(function() {
+    $("#cont3").toggle("slide", 1000);
+});
+
+$( "#previous4" ).click(function() {
+    $("#cont4").toggle("slide", 1000);
+});
+
+$( "#previous5" ).click(function() {
+    $("#cont5").toggle("slide", 1000);
+});
+
+$( "#previous6" ).click(function() {
+    $("#cont6").toggle("slide", 1000);
+});
+
+$( "#previoustosurveysummary" ).click(function() {
+    $("#cont7").toggle("slide", 1000);
 });

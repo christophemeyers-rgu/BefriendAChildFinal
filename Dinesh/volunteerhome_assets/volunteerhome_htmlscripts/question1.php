@@ -1,5 +1,5 @@
-<h3>
-    <h2>==========[Question 1]:==============</h2>
+<h2>
+    <h3>==========[Question 6]:==============</h3>
     <br>
     <br>
 <label for="question1">
@@ -14,5 +14,5 @@
 <textarea required name="question1" cols="45" rows="5" placeholder="Enter your response here"></textarea>
 <br>
 <br>
-</h3>
+</h2>
 <input type="button" id="next2" name="next" value="GO TO QUESTION 2">

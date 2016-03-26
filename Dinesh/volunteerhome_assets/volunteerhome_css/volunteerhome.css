@@ -61,4 +61,23 @@ h2{
 
 #cont8 {
     background-color: lavenderblush;
+
+}
+/*============================================================================= PROGRESS BAR*/
+
+.progress {
+    width: 100%;
+    height: 50px;
+}
+.progress-wrap {
+    background: #f80;
+    margin: 20px 0;
+    overflow: hidden;
+    position: relative;
+}
+.progress-bar {
+    background: #ddd;
+    left: 0;
+    position: absolute;
+    top: 0;
 }

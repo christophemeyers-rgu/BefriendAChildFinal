@@ -30,5 +30,5 @@ $( "#submit7" ).click(function() {
 });
 
 $( "#previous1" ).click(function() {
-    $("#cont1").show();
+    $("#cont1").toggle("slide", 1000);
 });

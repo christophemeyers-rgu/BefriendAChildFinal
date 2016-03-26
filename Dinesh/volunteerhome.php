@@ -68,7 +68,7 @@
 
 <html lang="en">
 
-<!-- - [START OF HEAD] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - [START OF HEAD] ============================================================================================= -->
 <head>
     <!-- - CHARACTER ENCODING - -->
     <meta charset="UTF-8">
@@ -87,16 +87,16 @@
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 </head>
-<!-- - [END OF HEAD] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - [END OF HEAD] =============================================================================================== -->
 
 
-<!-- - [START OF BODY] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - [START OF BODY] ============================================================================================= -->
 <body>
 
     <!-- - (START OF MAIN) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <main class="grid-container">
 
-        <!-- - (START OF SURVEY) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - -->
+        <!-- - (START OF SURVEY) ---------------------------------------------------------------------- -->
         <form action="submitsurveyanswers.php" method="post" >
 
 
@@ -111,7 +111,6 @@
     <section class="container" id="cont7">
         <h1>Survey Questions Summary:</h1>
         <p id="summary"></p>
-        <input type="button" id="previous6" name="previous" value="GO TO QUESTION 6">
         <input type="button" id="nextsubmitsurvey" name="submit" value="GO TO SUBMIT SURVEY">
     </section>
 
@@ -152,7 +151,7 @@
     </section>
 
         </form>
-        <!-- - (END OF SURVEY) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - -->
+        <!-- - (END OF SURVEY) ---------------------------------------------------------------------- -->
 
     <!-- - CALL JQUERY SCRIPT FUNCTION- -->
     <script SRC="volunteerhome_assets/volunteerhome_jquery/surveybounce.js"></script>
@@ -163,6 +162,6 @@
     <!-- - (END OF MAIN) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
 </body>
-<!-- - [END OF BODY] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - [END OF BODY] =============================================================================================== -->
 
 </html>

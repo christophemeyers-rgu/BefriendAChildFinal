@@ -1,4 +1,8 @@
 
+
+//================================================== Next buttons
+
+
 $( "#next2" ).click(function() {
     $( "#cont1" ).toggle( "explode", 1000 );
 });
@@ -30,8 +34,7 @@ $( "#nextsubmitsurvey" ).click(function() {
 });
 
 
-
-
+//================================================== Previous buttons
 
 
 $( "#previous1" ).click(function() {
@@ -54,12 +57,6 @@ $( "#previous5" ).click(function() {
     $("#cont5").toggle("slide", 1000);
 });
 
-$( "#previous6" ).click(function() {
-    $( "#cont7" ).toggle( "slide", 1000 );
-
-    $( "#cont6" ).show().prependTo( "h2" );
-
-});
 
 $( "#previoussurveysummary" ).click(function() {
     $("#cont7").toggle("slide", 1000);

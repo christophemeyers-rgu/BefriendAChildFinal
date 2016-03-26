@@ -1,4 +1,4 @@
-
+<h3>
 <label for="question5">
     <?php
         //function for getting the text
@@ -17,5 +17,5 @@
 <br>
 <textarea name="question5_opt" cols="45" rows="5" placeholder="Enter items here"></textarea>
 <br>
-
+</h3>
 <input type="button" id="submit5" name="submit" value="GO TO QUESTION 6">

@@ -18,5 +18,5 @@
 <textarea name="question6_opt" cols="45" rows="5" placeholder="Explain why here"></textarea>
 <br>
 </h3>
-<input type="button" id="next6" name="next" value="GO TO SURVEY SUMMARY">
 <input type="button" name="previous5" value="GO TO QUESTION 5">
+<input type="button" id="next6" name="next" value="GO TO SURVEY SUMMARY">

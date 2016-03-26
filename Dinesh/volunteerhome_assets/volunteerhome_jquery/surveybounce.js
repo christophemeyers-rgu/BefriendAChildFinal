@@ -29,6 +29,11 @@ $( "#submit7" ).click(function() {
     $( "#cont7" ).toggle( "fade", 1000 );
 });
 
+
+
+
+
+
 $( "#previous1" ).click(function() {
     $("#cont1").toggle("slide", 1000);
 });

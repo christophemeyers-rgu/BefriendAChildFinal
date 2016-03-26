@@ -160,11 +160,12 @@
 
     <!-- - CALL JQUERY SCRIPT FUNCTION- -->
     <script SRC="volunteerhome_assets/volunteerhome_jquery/surveybounce.js"></script>
-    <script SRC="volunteerhome_assets/volunteerhome_jquery/surveyprogressbar.js"></script>
 
 
     </main>
     <!-- - (END OF MAIN) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+    <script SRC="volunteerhome_assets/volunteerhome_jquery/surveyprogressbar.js"></script>
 
 </body>
 <!-- - [END OF BODY] =============================================================================================== -->

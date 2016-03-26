@@ -55,8 +55,9 @@ $( "#previous5" ).click(function() {
 });
 
 $( "#previous6" ).click(function() {
-    $( "#cont7" ).hide()
-    $( "#cont6" ).show()
+    $( "#cont7" ).toggle( "scale", 1000 );
+
+    $( "#cont6" ).show().prependTo( "#cont6" );
 
 });
 

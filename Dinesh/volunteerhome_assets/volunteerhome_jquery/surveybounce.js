@@ -54,7 +54,11 @@ $( "#previous5" ).click(function() {
     $("#cont5").toggle("slide", 1000);
 });
 
-
+$( "#previous6" ).click(function() {
+    $( "#cont7" ).hide()
+    $( "#cont6" ).show()
+    $("#cont6").toggle("slide", 1000);
+});
 
 $( "#previoussurveysummary" ).click(function() {
     $("#cont7").toggle("slide", 1000);

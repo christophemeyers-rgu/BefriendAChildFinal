@@ -154,7 +154,7 @@
     <section class="container" id="cont1">
         <?php include("volunteerhome_assets/volunteerhome_htmlscripts/question1.php"); ?>
     </section>
-
+            <script SRC="volunteerhome_assets/volunteerhome_jquery/surveyprogressbar.js"></script>
         </form>
         <!-- - (END OF SURVEY) ---------------------------------------------------------------------- -->
 
@@ -165,7 +165,6 @@
     </main>
     <!-- - (END OF MAIN) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
-    <script SRC="volunteerhome_assets/volunteerhome_jquery/surveyprogressbar.js"></script>
 
 </body>
 <!-- - [END OF BODY] =============================================================================================== -->

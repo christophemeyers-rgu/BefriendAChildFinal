@@ -1,6 +1,6 @@
 
 $( "#submit1" ).click(function() {
-    $( "#cont1" ).toggle( "bounce", 1000 );
+    $( "#cont1" ).toggle( "fade", 1000 );
 });
 
 $( "#submit2" ).click(function() {

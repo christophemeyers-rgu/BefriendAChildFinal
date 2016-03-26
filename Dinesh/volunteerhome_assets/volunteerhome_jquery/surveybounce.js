@@ -55,8 +55,8 @@ $( "#previous5" ).click(function() {
 });
 
 $( "#previous6" ).click(function() {
-    $("#cont6").toggle("slide", 1000);
     $( "#cont7" ).hide()
+    $("#cont6").toggle("slide", 1000);
 });
 
 $( "#previoussurveysummary" ).click(function() {

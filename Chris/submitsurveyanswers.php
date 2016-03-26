@@ -85,7 +85,7 @@
 
         //Our website will require the event_date to be unique for each entry into the database, so we find the submission_id
         //by looking for the same event_date
-        $get_submission_sql = "SELECT submission_id FROM submissions WHERE event_date='$date_printed'";
+        $get_submission_sql = "SELECT submission_id FROM submissions WHERE event_date='$date_printed' AND vol_id='$vol_id'";
 
         $submission_id_result = $db->query($get_submission_sql) or die("Error: ".$get_submission_sql."<br>".$db->error);
 

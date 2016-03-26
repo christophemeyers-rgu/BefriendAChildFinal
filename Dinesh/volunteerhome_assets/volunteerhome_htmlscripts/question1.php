@@ -1,4 +1,5 @@
 <div>
+    <br>
     <h2>==========[Question 1]:==============</h2>
     <br>
     <br>
@@ -12,7 +13,6 @@
 <br>
 <input hidden type="number" name="qid1" value="1"><!-- Hidden input that carries value of question id (currently manual)-->
 <textarea required name="question1" cols="45" rows="5" placeholder="Enter your response here"></textarea>
-<br>
 <br>
 <br>
 </div>

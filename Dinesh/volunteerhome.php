@@ -93,7 +93,9 @@
 <!-- - [START OF BODY] ============================================================================================= -->
 <body>
 
-
+<div class="progress-wrap progress" data-progress-percent="25">
+    <div class="progress-bar progress"></div>
+</div>
 
     <!-- - (START OF MAIN) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <main class="grid-container">
@@ -148,23 +150,20 @@
 
 
     <!-- - SURVEY QUESTION 1 - -->
-            <section class="progress-wrap progress" data-progress-percent="12.5">
-                <section class="progress-bar progress"></section>
-            </section>
     <section class="container" id="cont1">
         <?php include("volunteerhome_assets/volunteerhome_htmlscripts/question1.php"); ?>
     </section>
-            <script SRC="volunteerhome_assets/volunteerhome_jquery/surveyprogressbar.js"></script>
+
         </form>
         <!-- - (END OF SURVEY) ---------------------------------------------------------------------- -->
 
     <!-- - CALL JQUERY SCRIPT FUNCTION- -->
     <script SRC="volunteerhome_assets/volunteerhome_jquery/surveybounce.js"></script>
+    <script SRC="volunteerhome_assets/volunteerhome_jquery/surveyprogressbar.js"></script>
 
 
     </main>
     <!-- - (END OF MAIN) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
 
 </body>
 <!-- - [END OF BODY] =============================================================================================== -->

@@ -11,4 +11,4 @@
 <textarea required name="question1" cols="45" rows="5" placeholder="Enter your response here"></textarea>
 <br>
 </h3>
-<input type="button" id="submit1" name="submit" value="GO TO QUESTION 2">
+<input type="button" id="next1" name="next" value="GO TO QUESTION 2">

@@ -11,4 +11,4 @@
 <input required type="number" step="any" name="question2" placeholder="Enter Amount in £">
 <br>
 </h3>
-<input type="button" id="submit2" name="submit" value="GO TO QUESTION 3">
+<input type="button" id="next2" name="next" value="GO TO QUESTION 3">

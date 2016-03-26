@@ -18,4 +18,4 @@
 <textarea name="question3_opt" cols="45" rows="5" placeholder="Enter your explanation here"></textarea>
 <br>
 </h3>
-<input type="button" id="submit3" name="submit" value="GO TO QUESTION 4">
+<input type="button" id="next3" name="next" value="GO TO QUESTION 4">

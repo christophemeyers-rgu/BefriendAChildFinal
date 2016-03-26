@@ -20,3 +20,4 @@
 <br>
 </h3>
 <input type="button" id="next4" name="next" value="GO TO QUESTION 5">
+<input type="button" name="previous" value="GO TO QUESTION 3">

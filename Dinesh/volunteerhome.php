@@ -103,6 +103,7 @@
     <!-- - SURVEY SUBMIT BUTTON - -->
     <section class="container" id="cont8">
         <input type="submit" id="submit" name="submit" value="SUBMIT SURVEY">
+        <input type="button" name="previous" value="GO TO SURVEY SUMMARY">
     </section>
 
 
@@ -111,6 +112,7 @@
         <h1>Survey Questions Summary:</h1>
         <p id="summary"></p>
         <input type="button" id="submit7" name="submit" value="GO TO SUBMIT SURVEY">
+        <input type="button" name="previous" value="GO TO QUESTION 6">
     </section>
 
 

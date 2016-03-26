@@ -8,6 +8,11 @@ main {
     display: flex;
     justify-content: center;
 }
+
+h2{
+    color: darkred;
+}
+
 .container{
 
     max-width: 650px;

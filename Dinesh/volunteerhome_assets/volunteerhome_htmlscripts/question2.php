@@ -3,6 +3,7 @@
     <br>
     <br>
 <fieldset>
+    <h3>
     <label for="question2">
         <?php
             //function for getting the text
@@ -14,6 +15,7 @@
     <input required type="number" step="any" name="question2" placeholder="Enter Amount in £">
 <br>
 <br>
+    </h3>
 </fieldset>
 </div>
     <input type="button" id="previous1" name="previous" value="GO TO QUESTION 1">

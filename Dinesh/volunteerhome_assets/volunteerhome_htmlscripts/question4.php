@@ -3,8 +3,9 @@
     <br>
     <br>
 <fieldset>
+    <h3>
     <label for="question4">
-         <?php
+        <?php
             //function for getting the text
            get_question_text(31);
         ?>
@@ -22,6 +23,7 @@
     <textarea name="question4_opt" cols="45" rows="5" placeholder="Explain what you learned here"></textarea>
 <br>
 <br>
+    </h3>
 </fieldset>
 </div>
     <input type="button" id="previous3" name="previous" value="GO TO QUESTION 3">

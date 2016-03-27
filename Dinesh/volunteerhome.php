@@ -107,7 +107,7 @@ $(function() {
                 progressLabel.text( progressbar.progressbar( "value" ) + "%" );
             },
             complete: function() {
-                progressLabel.text( "Check Your Answers and Click Submit to Complete Survey!" );
+                progressLabel.text( "Click Submit to Complete Survey!" );
             }
         });
 

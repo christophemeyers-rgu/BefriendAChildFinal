@@ -93,7 +93,7 @@
 <!-- - [START OF BODY] ============================================================================================= -->
 <body>
 
-<div class="progress-wrap progress" data-progress-percent="25">
+<div class="progress-wrap progress" data-progress-percent="progress">
     <div class="progress-bar progress"></div>
 </div>
 

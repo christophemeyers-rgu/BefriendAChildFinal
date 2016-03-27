@@ -53,7 +53,7 @@
                             <tbody>
                               <tr>
                                 <td><?php echo $counter; ?></td>
-                                <td><a href=""><?php echo $row['vol_email']; ?></a></td>
+                                <td><?php echo $row['vol_email']; ?></td>
                                 <td><?php echo $row['vol_firstname']; ?></td>
                                 <td><?php echo $row['vol_surname']; ?></td>
                               </tr>

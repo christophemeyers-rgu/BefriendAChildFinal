@@ -93,7 +93,7 @@
 <!-- - [START OF BODY] ============================================================================================= -->
 <body>
 
-<section class="progress-wrap progress" id="progress" data-progress="0">
+<section class="progress-wrap progress" id="progress" data-progress="5">
     <section class="progress-bar progress"></section>
 </section>
 

@@ -93,7 +93,9 @@
 <!-- - [START OF BODY] ============================================================================================= -->
 <body>
 
-<div id="progressbar"></div>
+
+<!-- - SURVEY PROGRESSION BAR- -->
+<section id="progressbar"></section>
 <script>
     $( "#progressbar" ).progressbar({
         value: 0

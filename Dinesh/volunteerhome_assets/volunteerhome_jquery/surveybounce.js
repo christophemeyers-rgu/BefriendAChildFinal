@@ -9,9 +9,6 @@ $( "#next2" ).click(function() {
     $( "#progressbar" ).progressbar({
         value: 17
     });
-
-    $("#progressbarprogress").progressLabel.text({ Question: 2, out: 6 });
-
 });
 
 $( "#next3" ).click(function() {

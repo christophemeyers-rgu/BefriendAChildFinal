@@ -1,6 +1,6 @@
 
 
-//================================================== Next buttons
+//============================================================ Next buttons
 
 
 $( "#next2" ).click(function() {
@@ -54,7 +54,7 @@ $( "#nextsurveysummary" ).click(function() {
 });
 
 
-//================================================== Previous buttons
+//============================================================ Previous buttons
 
 
 $( "#previous1" ).click(function() {
@@ -94,5 +94,28 @@ $( "#previous5" ).click(function() {
 
     $( "#progressbar" ).progressbar({
         value: 68
+    });
+});
+
+
+//============================================================ Progress BAR
+
+
+$(function() {
+    var progressbar = $( "#progressbar" ),
+        progressLabel = $( ".progress-label" );
+
+    progressbar.progressbar({
+        value: false,
+        change: function() {
+            progressLabel.text( progressbar.progressbar( "value" ) + "%" );
+        },
+        complete: function() {
+            progressLabel.text( "Check Answers and Click Submit to Complete Survey!" );
+        }
+    });
+
+    $( "#progressbar" ).progressbar({
+        value: 0
     });
 });

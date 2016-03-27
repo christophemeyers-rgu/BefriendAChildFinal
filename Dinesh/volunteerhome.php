@@ -94,32 +94,13 @@
 <body>
 
 
-<!-- - SURVEY PROGRESSION BAR- -->
-<section id="progressbar"><section class="progress-label"></section></section>
-<script>
-$(function() {
-        var progressbar = $( "#progressbar" ),
-            progressLabel = $( ".progress-label" );
-
-        progressbar.progressbar({
-            value: false,
-            change: function() {
-                progressLabel.text( progressbar.progressbar( "value" ) + "%" );
-            },
-            complete: function() {
-                progressLabel.text( "Check Answers and Click Submit to Complete Survey!" );
-            }
-        });
-
-    $( "#progressbar" ).progressbar({
-        value: 0
-    });
-});
-</script>
+    <!-- - SURVEY PROGRESSION BAR- -->
+    <section id="progressbar"><section class="progress-label"></section></section>
 
 
     <!-- - (START OF MAIN) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <main class="grid-container">
+
 
     <!-- - (START OF SURVEY) ---------------------------------------------------------------------- -->
     <form action="submitsurveyanswers.php" method="post" >
@@ -172,12 +153,12 @@ $(function() {
         <!-- - (END OF SURVEY) ---------------------------------------------------------------------- -->
 
 
-
     </main>
     <!-- - (END OF MAIN) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
-<!-- - CALL JQUERY SCRIPT FUNCTION- -->
-<script SRC="volunteerhome_assets/volunteerhome_jquery/surveybounce.js"></script>
+
+    <!-- - CALL JQUERY SCRIPT FUNCTION- -->
+    <script SRC="volunteerhome_assets/volunteerhome_jquery/surveybounce.js"></script>
 
 
 </body>

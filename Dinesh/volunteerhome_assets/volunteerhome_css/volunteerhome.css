@@ -62,6 +62,7 @@ h2{
 
 .ui-progressbar {
     position: relative;
+    background-color: gold;
 }
 .progress-label {
     position: absolute;

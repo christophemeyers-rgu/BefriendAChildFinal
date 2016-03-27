@@ -43,6 +43,10 @@ $( "#nextsubmitsurvey" ).click(function() {
 
 $( "#previous1" ).click(function() {
     $("#cont1").toggle("slide", 1000);
+
+    $( "#progressbar" ).progressbar({
+        value: 0
+    });
 });
 
 $( "#previous2" ).click(function() {

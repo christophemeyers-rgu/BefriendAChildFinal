@@ -5,7 +5,6 @@
 
 $( "#next2" ).click(function() {
     $( "#cont1" ).toggle( "explode", 1000 );
-    $("#progress").val("12.5");
 });
 
 $( "#next3" ).click(function() {

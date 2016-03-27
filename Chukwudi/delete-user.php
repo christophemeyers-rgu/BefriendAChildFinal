@@ -198,7 +198,8 @@
                                                 <?php
                                                 
                                                     }//end of for loop
-                                                }//end if statement ?>
+                                                }//end if statement 
+												?>
                                             
                                         </table>
                                         

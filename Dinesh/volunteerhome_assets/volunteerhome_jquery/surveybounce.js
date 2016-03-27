@@ -49,7 +49,7 @@ $( "#nextsurveysummary" ).click(function() {
         value: 100
     });
 
-    $( "div" ).show().prependTo( "p" ); // sends all the questions summary to the summary page
+    $( "div" ).show().prependTo( "p" ); // Sends all the questions summary to the summary page
 });
 
 

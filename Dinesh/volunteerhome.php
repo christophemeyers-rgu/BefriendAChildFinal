@@ -95,8 +95,7 @@
 
 
 <!-- - SURVEY PROGRESSION BAR- -->
-<section id="progressbar"><section class="progress-label"></section></section>
-<script>
+<section id="progressbar"></section>
 <script>
     $( "#progressbar" ).progressbar({
         value: 0

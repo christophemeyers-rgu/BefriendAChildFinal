@@ -6,27 +6,9 @@
 $( "#next2" ).click(function() {
     $( "#cont1" ).toggle( "explode", 1000 );
 
-
-    $(function() {
-        var progressbar = $( "#progressbar" ),
-            progressLabel = $( ".progress-label" );
-
-        progressbar.progressbar({
-            value: false,
-            change: function() {
-                progressLabel.text( progressbar.progressbar( "value" ) + "%" );
-            },
-            complete: function() {
-                progressLabel.text( "Complete!" );
-            }
-        });
-
-        $( "#progressbar" ).progressbar({
-            value: 17
-        });
-
+    $( "#progressbar" ).progressbar({
+        value: 17
     });
-
 });
 
 $( "#next3" ).click(function() {

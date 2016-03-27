@@ -97,9 +97,24 @@
 <!-- - SURVEY PROGRESSION BAR- -->
 <section id="progressbar"><section class="progress-label"></section></section>
 <script>
+$(function() {
+        var progressbar = $( "#progressbar" ),
+            progressLabel = $( ".progress-label" );
+
+        progressbar.progressbar({
+            value: false,
+            change: function() {
+                progressLabel.text( progressbar.progressbar( "value" ) + "%" );
+            },
+            complete: function() {
+                progressLabel.text( "Check Your Answers and Click Submit to Complete Survey!" );
+            }
+        });
+
     $( "#progressbar" ).progressbar({
         value: 0
     });
+});
 </script>
 
 

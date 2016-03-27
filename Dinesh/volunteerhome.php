@@ -95,11 +95,6 @@
 
 <div id="progressbar"></div>
 
-<script>
-    $( "#progressbar" ).progressbar({
-        value: 12.5
-    });
-</script>
 
     <!-- - (START OF MAIN) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <main class="grid-container">

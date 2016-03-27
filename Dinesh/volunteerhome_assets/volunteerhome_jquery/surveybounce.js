@@ -5,6 +5,7 @@
 
 $( "#next2" ).click(function() {
     $( "#cont1" ).toggle( "explode", 1000 );
+
     $( "#progressbar" ).progressbar({
         value: 12.5
     });

@@ -65,8 +65,8 @@ h2{
 }
 .progress-label {
     position: absolute;
-    left: 30%;
-
+    left: auto;
+    right: auto;
     top: 4px;
     font-weight: bold;
     text-shadow: 1px 1px 0 #fff;

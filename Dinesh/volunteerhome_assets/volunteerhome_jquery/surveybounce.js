@@ -6,9 +6,6 @@
 $( "#next2" ).click(function() {
     $( "#cont1" ).toggle( "explode", 1000 );
 
-    $( "#progressbar" ).progressbar({
-        value: 17
-    });
 
     $(function() {
         var progressbar = $( "#progressbar" ),
@@ -23,7 +20,12 @@ $( "#next2" ).click(function() {
                 progressLabel.text( "Complete!" );
             }
         });
-});
+
+        $( "#progressbar" ).progressbar({
+            value: 17
+        });
+
+    });
 
 });
 

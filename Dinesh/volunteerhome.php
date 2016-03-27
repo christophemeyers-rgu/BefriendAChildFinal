@@ -171,12 +171,14 @@ $(function() {
         </form>
         <!-- - (END OF SURVEY) ---------------------------------------------------------------------- -->
 
-    <!-- - CALL JQUERY SCRIPT FUNCTION- -->
-    <script SRC="volunteerhome_assets/volunteerhome_jquery/surveybounce.js"></script>
 
 
     </main>
     <!-- - (END OF MAIN) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<!-- - CALL JQUERY SCRIPT FUNCTION- -->
+<script SRC="volunteerhome_assets/volunteerhome_jquery/surveybounce.js"></script>
+
 
 </body>
 <!-- - [END OF BODY] =============================================================================================== -->

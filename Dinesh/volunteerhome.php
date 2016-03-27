@@ -93,9 +93,9 @@
 <!-- - [START OF BODY] ============================================================================================= -->
 <body>
 
-<div class="progress-wrap progress" data-progress-percent="25">
-    <div class="progress-bar progress"></div>
-</div>
+<section class="progress-wrap progress" data-progress-percent="25">
+    <section class="progress-bar progress"></section>
+</section>
 
     <!-- - (START OF MAIN) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <main class="grid-container">

@@ -58,7 +58,6 @@
                                     <td><?php echo $row['vol_surname']; ?></td>
                                   </tr>
                                 </tbody>
-                                </tr>
                             	<?php
 								
 				}

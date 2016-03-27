@@ -104,22 +104,15 @@
     <!-- - (START OF MAIN) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <main class="grid-container">
 
-        <!-- - (START OF SURVEY) ---------------------------------------------------------------------- -->
-        <form action="submitsurveyanswers.php" method="post" >
+    <!-- - (START OF SURVEY) ---------------------------------------------------------------------- -->
+    <form action="submitsurveyanswers.php" method="post" >
 
 
-    <!-- - SURVEY SUBMIT BUTTON - -->
-    <section class="container" id="cont8">
-        <input type="button" id="previoussurveysummary" name="previous" value="GO TO SURVEY SUMMARY">
-        <input type="submit" id="submit" name="submit" value="SUBMIT SURVEY">
-    </section>
-
-
-    <!-- - SURVEY QUESTIONS SUMMARY- -->
+    <!-- - SURVEY QUESTIONS SUMMARY AND SUBMISSION- -->
     <section class="container" id="cont7">
         <h1>Survey Questions Summary:</h1>
         <p id="summary"></p>
-        <input type="button" id="nextsubmitsurvey" name="submit" value="GO TO SUBMIT SURVEY">
+        <input type="submit" id="submit" name="submit" value="SUBMIT SURVEY">
     </section>
 
 

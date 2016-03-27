@@ -94,6 +94,11 @@
 <body>
 
 <div id="progressbar"></div>
+<script>
+    $( "#progressbar" ).progressbar({
+        value: 0
+    });
+</script>
 
 
     <!-- - (START OF MAIN) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->

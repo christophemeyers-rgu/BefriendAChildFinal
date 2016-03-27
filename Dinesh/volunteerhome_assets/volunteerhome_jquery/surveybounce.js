@@ -50,7 +50,7 @@ $( "#nextsurveysummary" ).click(function() {
     $( "div" ).show().prependTo( "p" ); // Sends all the questions summary to the summary page
 
     $( "#progressbar" ).progressbar({
-        value: 100
+        value: 50
     });
 });
 

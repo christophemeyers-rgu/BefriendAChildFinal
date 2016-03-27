@@ -62,12 +62,11 @@ h2{
 
 .ui-progressbar {
     position: relative;
+    max-width: 650px;
 }
 .progress-label {
     position: absolute;
-    margin-right: auto;
-    margin-left: auto;
-    display: flex;
+    left: 50%;
     top: 4px;
     font-weight: bold;
     text-shadow: 1px 1px 0 #fff;

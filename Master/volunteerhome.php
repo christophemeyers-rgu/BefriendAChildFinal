@@ -94,17 +94,13 @@
 <body>
 
 
-<!-- - SURVEY PROGRESSION BAR- -->
-<section id="progressbar"></section>
-<script>
-    $( "#progressbar" ).progressbar({
-        value: 0
-    });
-</script>
+    <!-- - SURVEY PROGRESSION BAR- -->
+    <section id="progressbar"><section class="progress-label"></section></section>
 
 
     <!-- - (START OF MAIN) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <main class="grid-container">
+
 
     <!-- - (START OF SURVEY) ---------------------------------------------------------------------- -->
     <form action="submitsurveyanswers.php" method="post" >
@@ -156,12 +152,14 @@
         </form>
         <!-- - (END OF SURVEY) ---------------------------------------------------------------------- -->
 
-    <!-- - CALL JQUERY SCRIPT FUNCTION- -->
-    <script SRC="volunteerhome_assets/volunteerhome_jquery/surveybounce.js"></script>
-
 
     </main>
     <!-- - (END OF MAIN) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+
+    <!-- - CALL JQUERY SCRIPT FUNCTION- -->
+    <script SRC="volunteerhome_assets/volunteerhome_jquery/surveybounce.js"></script>
+
 
 </body>
 <!-- - [END OF BODY] =============================================================================================== -->

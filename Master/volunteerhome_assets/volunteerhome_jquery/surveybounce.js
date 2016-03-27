@@ -1,6 +1,6 @@
 
 
-//================================================== Next buttons
+//============================================================ Next buttons
 
 
 $( "#next2" ).click(function() {
@@ -45,15 +45,16 @@ $( "#next6" ).click(function() {
 
 $( "#nextsurveysummary" ).click(function() {
     $( "#cont6" ).toggle( "scale", 1000 );
+
+    $( "div" ).show().prependTo( "p" ); // Sends all the questions summary to the summary page
+
     $( "#progressbar" ).progressbar({
         value: 100
     });
-
-    $( "div" ).show().prependTo( "p" ); // Sends all the questions summary to the summary page
 });
 
 
-//================================================== Previous buttons
+//============================================================ Previous buttons
 
 
 $( "#previous1" ).click(function() {
@@ -93,5 +94,28 @@ $( "#previous5" ).click(function() {
 
     $( "#progressbar" ).progressbar({
         value: 68
+    });
+});
+
+
+//============================================================ Progress BAR
+
+
+$(function() {
+    var progressbar = $( "#progressbar" ),
+        progressLabel = $( ".progress-label" );
+
+    progressbar.progressbar({
+        value: false,
+        change: function() {
+            progressLabel.text( progressbar.progressbar( "value" ) + "%" );
+        },
+        complete: function() {
+            progressLabel.text( "Check Answers and Click Submit to Complete Survey!" );
+        }
+    });
+
+    $( "#progressbar" ).progressbar({
+        value: 0
     });
 });

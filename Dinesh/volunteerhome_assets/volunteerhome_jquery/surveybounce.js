@@ -23,6 +23,7 @@ $( "#next2" ).click(function() {
                 progressLabel.text( "Complete!" );
             }
         });
+});
 
 });
 

@@ -10,7 +10,7 @@ $( "#next2" ).click(function() {
         value: 17
     });
 
-    $("#progressbarprogress").progressLabel.text( "Question 2 out of 6" );
+    $("#progressbarprogress").progressLabel.text({ Question: 2, out: 6 });
 
 });
 

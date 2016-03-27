@@ -9,6 +9,21 @@ $( "#next2" ).click(function() {
     $( "#progressbar" ).progressbar({
         value: 17
     });
+
+    $(function() {
+        var progressbar = $( "#progressbar" ),
+            progressLabel = $( ".progress-label" );
+
+        progressbar.progressbar({
+            value: false,
+            change: function() {
+                progressLabel.text( progressbar.progressbar( "value" ) + "%" );
+            },
+            complete: function() {
+                progressLabel.text( "Complete!" );
+            }
+        });
+
 });
 
 $( "#next3" ).click(function() {

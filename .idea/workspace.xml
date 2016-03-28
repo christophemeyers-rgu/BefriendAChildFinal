@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="03ada858-a974-4529-89ae-934025c2ff8a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chukwudi/View.php" afterPath="$PROJECT_DIR$/Chukwudi/View.php" />
-    </list>
+    <list default="true" id="03ada858-a974-4529-89ae-934025c2ff8a" name="Default" comment="" />
     <ignored path="BefriendAChildTestSurvey.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />

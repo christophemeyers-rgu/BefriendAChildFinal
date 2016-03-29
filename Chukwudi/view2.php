@@ -46,10 +46,10 @@
 		if(mysqli_num_rows($submissions)>0){
 			                                                    
 				$counter = 0;
-				while ($row= mysqli_fetch_array($submissions))
-				{
-				$counter++;
-    echo $row['event_description'];
+				while ($row= mysqli_fetch_array($submissions)) {
+                    $counter++;
+                    echo $row['event_description'];
+                }
 				/*
 				?>
                             <tbody>

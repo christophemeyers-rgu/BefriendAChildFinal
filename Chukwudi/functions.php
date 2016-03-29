@@ -139,7 +139,7 @@ function getAllRegisteredUsers() {
 
 function getUserSubmissions($vol_email){
 
-    $sql = "select * from submissions, volunteers where vol_email='$vol_email'";
+    $sql = "select * from submissions where vol_id= (select vol_id from volunteers where vol_email='$vol_email')";
     $mysqli = new mysqli(host, user, password, database);
     $result = $mysqli->query($sql);
     $mysqli->close();

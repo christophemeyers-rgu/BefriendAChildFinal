@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="03ada858-a974-4529-89ae-934025c2ff8a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chukwudi/test.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chukwudi/test.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chukwudi/adminhome.php" afterPath="$PROJECT_DIR$/Chukwudi/adminhome.php" />
-    </list>
+    <list default="true" id="03ada858-a974-4529-89ae-934025c2ff8a" name="Default" comment="" />
     <ignored path="BefriendAChildTestSurvey.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -101,8 +97,8 @@
       <file leaf-file-name="test.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Chukwudi/test.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.88496935">
-              <caret line="287" column="22" selection-start-line="287" selection-start-column="22" selection-end-line="287" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.9309816">
+              <caret line="289" column="18" selection-start-line="289" selection-start-column="18" selection-end-line="289" selection-end-column="18" />
               <folding>
                 <element signature="e#7#101#0#PHP" expanded="true" />
               </folding>
@@ -513,8 +509,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Chukwudi/test.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.88496935">
-          <caret line="287" column="22" selection-start-line="287" selection-start-column="22" selection-end-line="287" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.9309816">
+          <caret line="289" column="18" selection-start-line="289" selection-start-column="18" selection-end-line="289" selection-end-column="18" />
           <folding>
             <element signature="e#7#101#0#PHP" expanded="true" />
           </folding>

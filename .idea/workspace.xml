@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="03ada858-a974-4529-89ae-934025c2ff8a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chukwudi/delete-user.php" afterPath="$PROJECT_DIR$/Chukwudi/delete-user.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Dinesh/volunteerhome_assets/volunteerhome_css/volunteerhome.css" afterPath="$PROJECT_DIR$/Dinesh/volunteerhome_assets/volunteerhome_css/volunteerhome.css" />
     </list>
     <ignored path="BefriendAChildTestSurvey.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,135 +25,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="userLogin.php" pinned="false" current-in-tab="false">
-        <entry file="file:///Applications/MAMP/htdocs/userLogin.php">
+      <file leaf-file-name="volunteerhome.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Dinesh/volunteerhome.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="-10.0">
+              <caret line="132" column="42" selection-start-line="132" selection-start-column="42" selection-end-line="132" selection-end-column="42" />
               <folding>
-                <marker date="1458748447000" expanded="true" signature="1386:1430" placeholder="select * fro... users" />
+                <marker date="1459281706900" expanded="true" signature="669:743" placeholder="SELECT vol_f... volunteers" />
+                <marker date="1459281706900" expanded="true" signature="1367:1427" placeholder="SELECT quest... questions" />
+                <marker date="1459281706900" expanded="true" signature="1862:1923" placeholder="SELECT quest... questions" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="userRegistration.php" pinned="false" current-in-tab="false">
-        <entry file="file:///Applications/MAMP/htdocs/userRegistration.php">
+      <file leaf-file-name="volunteerhub.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Dinesh/volunteerhub.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-19.375">
-              <caret line="31" column="34" selection-start-line="31" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+            <state vertical-scroll-proportion="-7.8461537">
+              <caret line="128" column="4" selection-start-line="127" selection-start-column="0" selection-end-line="133" selection-end-column="18" />
               <folding>
-                <marker date="1457340738000" expanded="true" signature="1725:1769" placeholder="select * fro... users" />
-                <marker date="1457340738000" expanded="true" signature="2324:2484" placeholder="INSERT INTO users... " />
+                <marker date="1459279276400" expanded="true" signature="2485:2559" placeholder="SELECT vol_f... volunteers" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="View.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chukwudi/View.php">
+      <file leaf-file-name="volunteerhome.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Dinesh/volunteerhome_assets/volunteerhome_css/volunteerhome.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="10.0">
-              <caret line="210" column="53" selection-start-line="210" selection-start-column="53" selection-end-line="210" selection-end-column="53" />
-              <folding>
-                <element signature="e#7#101#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="view2.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chukwudi/view2.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="24.375">
-              <caret line="210" column="53" selection-start-line="210" selection-start-column="53" selection-end-line="210" selection-end-column="53" />
-              <folding>
-                <element signature="e#7#101#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="adminhome.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chukwudi/adminhome.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-25.291666">
-              <caret line="286" column="4" selection-start-line="286" selection-start-column="4" selection-end-line="286" selection-end-column="4" />
+            <state vertical-scroll-proportion="0.2881356">
+              <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="delete-user.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Chukwudi/delete-user.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.6564417">
-              <caret line="218" column="21" selection-start-line="218" selection-start-column="21" selection-end-line="218" selection-end-column="21" />
-              <folding>
-                <element signature="e#7#101#0#PHP" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#1;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chukwudi/header.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-26.25">
-              <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chukwudi/test.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.541667">
-              <caret line="257" column="10" selection-start-line="0" selection-start-column="0" selection-end-line="298" selection-end-column="0" />
-              <folding>
-                <element signature="e#7#101#0#PHP" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#1;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="view3.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chukwudi/view3.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-25.291666">
-              <caret line="304" column="7" selection-start-line="304" selection-start-column="7" selection-end-line="304" selection-end-column="7" />
-              <folding>
-                <element signature="e#7#101#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="functions.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chukwudi/functions.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-84.666664">
-              <caret line="156" column="19" selection-start-line="156" selection-start-column="19" selection-end-line="156" selection-end-column="19" />
-              <folding>
-                <marker date="1459253103000" expanded="true" signature="614:744" placeholder="insert into volunteers... " />
-                <marker date="1459253103000" expanded="true" signature="1854:1909" placeholder="select * fro... administrators" />
-                <marker date="1459253103000" expanded="true" signature="2323:2408" placeholder="select * fro... administrators" />
-                <marker date="1459253103000" expanded="true" signature="3044:3068" placeholder="select * fro... volunteers" />
-                <marker date="1459253103000" expanded="true" signature="3283:3290" placeholder="select from submis... " />
-                <marker date="1459253103000" expanded="true" signature="3283:3383" placeholder="select from submissions... " />
-                <marker date="1459253103000" expanded="true" signature="3324:3382" placeholder="select vol_i... volunteers" />
-                <marker date="1459253103000" expanded="true" signature="3590:3911" placeholder="select quest... answers" />
-                <marker date="1459253103000" expanded="true" signature="3691:3833" placeholder="select submi... submissions" />
-                <marker date="1459253103000" expanded="true" signature="3774:3832" placeholder="select vol_i... volunteers" />
-                <marker date="1459253103000" expanded="true" signature="4102:4154" placeholder="delete from " />
-                <marker date="1459253103000" expanded="true" signature="4326:4380" placeholder="select * fro... volunteers" />
-                <marker date="1459253103000" expanded="true" signature="5103:5288" placeholder="update volun... " />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -181,6 +85,8 @@
         <option value="$PROJECT_DIR$/Chukwudi/header.php" />
         <option value="$PROJECT_DIR$/Chukwudi/test.php" />
         <option value="$PROJECT_DIR$/Chukwudi/delete-user.php" />
+        <option value="$PROJECT_DIR$/Dinesh/volunteerhome.php" />
+        <option value="$PROJECT_DIR$/Dinesh/volunteerhome_assets/volunteerhome_css/volunteerhome.css" />
       </list>
     </option>
   </component>
@@ -191,9 +97,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="1280" />
-    <option name="height" value="773" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1040" />
+    <option name="height" value="576" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -206,7 +113,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -219,7 +126,84 @@
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BefriendAChildTestSurvey" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BefriendAChildTestSurvey" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BefriendAChildTestSurvey" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BefriendAChildTestSurvey" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BefriendAChildTestSurvey" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Dinesh" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BefriendAChildTestSurvey" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BefriendAChildTestSurvey" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Dinesh" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="volunteerhome_assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BefriendAChildTestSurvey" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BefriendAChildTestSurvey" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Dinesh" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="volunteerhome_assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="volunteerhome_css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -281,16 +265,22 @@
       <option name="project" value="LOCAL" />
       <updated>1459202686330</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Dinesh 29/03/16 Volunteer page styling">
+      <created>1459281750818</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1459281750818</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="773" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1040" height="576" extended-state="6" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -313,50 +303,85 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Updates" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updates" />
+    <MESSAGE value="Dinesh 29/03/16 Volunteer page styling" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dinesh 29/03/16 Volunteer page styling" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:///Applications/MAMP/htdocs/Conn.php">
+    <entry file="file://$PROJECT_DIR$/Chukwudi/View.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="210" column="53" selection-start-line="210" selection-start-column="53" selection-end-line="210" selection-end-column="53" />
+          <folding>
+            <element signature="e#7#101#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chukwudi/view2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="210" column="53" selection-start-line="210" selection-start-column="53" selection-end-line="210" selection-end-column="53" />
+          <folding>
+            <element signature="e#7#101#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chukwudi/adminhome.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="286" column="4" selection-start-line="286" selection-start-column="4" selection-end-line="286" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file:///Applications/MAMP/htdocs/MySQLDao.php">
+    <entry file="file://$PROJECT_DIR$/Chukwudi/delete-user.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1457019124000" expanded="true" signature="1048:1088" placeholder="select * fro... users" />
-            <marker date="1457019124000" expanded="true" signature="1694:1775" placeholder="insert into users... " />
+            <element signature="e#7#101#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file:///Applications/MAMP/htdocs/userLogin.php">
+    <entry file="file://$PROJECT_DIR$/Chukwudi/header.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chukwudi/test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="257" column="10" selection-start-line="0" selection-start-column="0" selection-end-line="298" selection-end-column="0" />
           <folding>
-            <marker date="1458748447000" expanded="true" signature="1386:1430" placeholder="select * fro... users" />
+            <element signature="e#7#101#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file:///Applications/MAMP/htdocs/userRegistration.php">
+    <entry file="file://$PROJECT_DIR$/Chukwudi/view3.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="304" column="7" selection-start-line="304" selection-start-column="7" selection-end-line="304" selection-end-column="7" />
           <folding>
-            <marker date="1457340738000" expanded="true" signature="1725:1769" placeholder="select * fro... users" />
-            <marker date="1457340738000" expanded="true" signature="2324:2484" placeholder="INSERT INTO users... " />
+            <element signature="e#7#101#0#PHP" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chukwudi/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="156" column="19" selection-start-line="156" selection-start-column="19" selection-end-line="156" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -365,7 +390,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="40" column="9" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
           <folding>
-            <element signature="e#7#101#0#PHP" expanded="true" />
+            <element signature="e#7#101#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -375,7 +400,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding>
-            <element signature="e#7#101#0#PHP" expanded="true" />
+            <element signature="e#7#101#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -385,78 +410,14 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
           <folding>
-            <element signature="e#7#101#0#PHP" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#1;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Applications/MAMP/htdocs/Conn.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Applications/MAMP/htdocs/MySQLDao.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1457019124000" expanded="true" signature="1048:1088" placeholder="select * fro... users" />
-            <marker date="1457019124000" expanded="true" signature="1694:1775" placeholder="insert into users... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Applications/MAMP/htdocs/userLogin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1458748447000" expanded="true" signature="1386:1430" placeholder="select * fro... users" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Applications/MAMP/htdocs/userRegistration.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.375">
-          <caret line="31" column="34" selection-start-line="31" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding>
-            <marker date="1457340738000" expanded="true" signature="1725:1769" placeholder="select * fro... users" />
-            <marker date="1457340738000" expanded="true" signature="2324:2484" placeholder="INSERT INTO users... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chukwudi/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-84.666664">
-          <caret line="156" column="19" selection-start-line="156" selection-start-column="19" selection-end-line="156" selection-end-column="19" />
-          <folding>
-            <marker date="1459253103000" expanded="true" signature="614:744" placeholder="insert into volunteers... " />
-            <marker date="1459253103000" expanded="true" signature="1854:1909" placeholder="select * fro... administrators" />
-            <marker date="1459253103000" expanded="true" signature="2323:2408" placeholder="select * fro... administrators" />
-            <marker date="1459253103000" expanded="true" signature="3044:3068" placeholder="select * fro... volunteers" />
-            <marker date="1459253103000" expanded="true" signature="3283:3290" placeholder="select from submis... " />
-            <marker date="1459253103000" expanded="true" signature="3283:3383" placeholder="select from submissions... " />
-            <marker date="1459253103000" expanded="true" signature="3324:3382" placeholder="select vol_i... volunteers" />
-            <marker date="1459253103000" expanded="true" signature="3590:3911" placeholder="select quest... answers" />
-            <marker date="1459253103000" expanded="true" signature="3691:3833" placeholder="select submi... submissions" />
-            <marker date="1459253103000" expanded="true" signature="3774:3832" placeholder="select vol_i... volunteers" />
-            <marker date="1459253103000" expanded="true" signature="4102:4154" placeholder="delete from " />
-            <marker date="1459253103000" expanded="true" signature="4326:4380" placeholder="select * fro... volunteers" />
-            <marker date="1459253103000" expanded="true" signature="5103:5288" placeholder="update volun... " />
+            <element signature="e#7#101#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Chukwudi/adminhome.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-25.291666">
+        <state vertical-scroll-proportion="0.0">
           <caret line="286" column="4" selection-start-line="286" selection-start-column="4" selection-end-line="286" selection-end-column="4" />
           <folding />
         </state>
@@ -466,69 +427,102 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chukwudi/view3.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-25.291666">
-          <caret line="304" column="7" selection-start-line="304" selection-start-column="7" selection-end-line="304" selection-end-column="7" />
-          <folding>
-            <element signature="e#7#101#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Chukwudi/view2.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="24.375">
+        <state vertical-scroll-proportion="0.0">
           <caret line="210" column="53" selection-start-line="210" selection-start-column="53" selection-end-line="210" selection-end-column="53" />
           <folding>
-            <element signature="e#7#101#0#PHP" expanded="true" />
+            <element signature="e#7#101#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Chukwudi/View.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="10.0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="210" column="53" selection-start-line="210" selection-start-column="53" selection-end-line="210" selection-end-column="53" />
           <folding>
-            <element signature="e#7#101#0#PHP" expanded="true" />
+            <element signature="e#7#101#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chukwudi/test.php">
+    <entry file="file://$PROJECT_DIR$/Chukwudi/delete-user.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.541667">
-          <caret line="257" column="10" selection-start-line="0" selection-start-column="0" selection-end-line="298" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.91767555">
+          <caret line="218" column="21" selection-start-line="218" selection-start-column="21" selection-end-line="218" selection-end-column="21" />
           <folding>
-            <element signature="e#7#101#0#PHP" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#1;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#7#101#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Chukwudi/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-26.25">
+        <state vertical-scroll-proportion="1.7288135">
           <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chukwudi/delete-user.php">
+    <entry file="file://$PROJECT_DIR$/Chukwudi/test.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.6564417">
-          <caret line="218" column="21" selection-start-line="218" selection-start-column="21" selection-end-line="218" selection-end-column="21" />
+        <state vertical-scroll-proportion="0.041162226">
+          <caret line="257" column="10" selection-start-line="0" selection-start-column="0" selection-end-line="298" selection-end-column="0" />
           <folding>
-            <element signature="e#7#101#0#PHP" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#1;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#7#101#0#PHP" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chukwudi/view3.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7118644">
+          <caret line="304" column="7" selection-start-line="304" selection-start-column="7" selection-end-line="304" selection-end-column="7" />
+          <folding>
+            <element signature="e#7#101#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chukwudi/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.041162226">
+          <caret line="156" column="19" selection-start-line="156" selection-start-column="19" selection-end-line="156" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dinesh/volunteerhub.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.8461537">
+          <caret line="128" column="4" selection-start-line="127" selection-start-column="0" selection-end-line="133" selection-end-column="18" />
+          <folding>
+            <marker date="1459279276400" expanded="true" signature="2485:2559" placeholder="SELECT vol_f... volunteers" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dinesh/volunteerhome.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.0">
+          <caret line="132" column="42" selection-start-line="132" selection-start-column="42" selection-end-line="132" selection-end-column="42" />
+          <folding>
+            <marker date="1459281706900" expanded="true" signature="669:743" placeholder="SELECT vol_f... volunteers" />
+            <marker date="1459281706900" expanded="true" signature="1367:1427" placeholder="SELECT quest... questions" />
+            <marker date="1459281706900" expanded="true" signature="1862:1923" placeholder="SELECT quest... questions" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dinesh/volunteerhome_assets/volunteerhome_css/volunteerhome.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2881356">
+          <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>

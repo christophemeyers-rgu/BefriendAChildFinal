@@ -5,6 +5,7 @@ header{
     margin-right: auto;
     margin-left: auto;
     display: flex;
+    position: absolute;
     flex-direction: row;
     justify-content: center;
 }

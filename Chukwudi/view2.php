@@ -18,7 +18,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>View Volunteers</title>
+  <title>View Submissions</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -29,7 +29,7 @@
 
 <div class="container">
   <h2>Submissions</h2>
-  <p>List of submissions by <a href="view.php"><?php echo $_GET['vol_email'];?></a></p>
+  <p>List of submissions by <a href="view2.php"><?php echo $_GET['vol_email'];?></a></p>
   <table class="table table-striped">
     <thead>
       <tr>
@@ -61,7 +61,7 @@
                             <tbody>
                               <tr>
                                 <td><?php echo $counter; ?></td>
-                                <td><a href="view3.php?event_date=<?php echo $row['event_date']; ?>"><?php echo $row['event_description']; ?></a></td>
+                                <td><a href="view3.php?event_date=<?php echo $row['event_date']; ?>, vol_email=<?php echo $vol_email; ?>"><?php echo $row['event_description']; ?></a></td>
                                 <td><?php echo $row['event_date']; ?></td>
                                 <td><?php echo $row['submission_date']; ?></td>
                               </tr>

@@ -61,7 +61,7 @@
                             <tbody>
                               <tr>
                                 <td><?php echo $counter; ?></td>
-                                <td><a href="view3.php?event_date="<?php echo $row['event_date'];?><?php echo $row['event_description']; ?></a></td>
+                                <td><a href="view3.php?event_date="<?php echo $row['event_date'];?>><?php echo $row['event_description']; ?></a></td>
                                 <td><?php echo $row['event_date']; ?></td>
                                 <td><?php echo $row['submission_date']; ?></td>
                               </tr>

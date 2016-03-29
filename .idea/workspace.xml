@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="03ada858-a974-4529-89ae-934025c2ff8a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chukwudi/view3.php" afterPath="$PROJECT_DIR$/Chukwudi/view3.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chukwudi/functions.php" afterPath="$PROJECT_DIR$/Chukwudi/functions.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chukwudi/view2.php" afterPath="$PROJECT_DIR$/Chukwudi/view2.php" />
     </list>
     <ignored path="BefriendAChildTestSurvey.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -84,11 +85,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="view2.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="view2.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Chukwudi/view2.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.416666">
-              <caret line="63" column="135" selection-start-line="63" selection-start-column="110" selection-end-line="63" selection-end-column="135" />
+            <state vertical-scroll-proportion="0.7131902">
+              <caret line="31" column="41" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
               <folding>
                 <element signature="e#6#100#0#PHP" expanded="true" />
               </folding>
@@ -96,10 +97,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="view3.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="view3.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Chukwudi/view3.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.41411042">
+            <state vertical-scroll-proportion="-11.25">
               <caret line="32" column="40" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
               <folding>
                 <element signature="e#6#100#0#PHP" expanded="true" />
@@ -126,19 +127,22 @@
       <file leaf-file-name="functions.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Chukwudi/functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.7916665">
-              <caret line="156" column="0" selection-start-line="156" selection-start-column="0" selection-end-line="156" selection-end-column="0" />
+            <state vertical-scroll-proportion="-84.666664">
+              <caret line="156" column="19" selection-start-line="156" selection-start-column="19" selection-end-line="156" selection-end-column="19" />
               <folding>
-                <marker date="1459251479000" expanded="true" signature="614:744" placeholder="insert into volunteers... " />
-                <marker date="1459251479000" expanded="true" signature="1854:1909" placeholder="select * fro... administrators" />
-                <marker date="1459251479000" expanded="true" signature="2323:2408" placeholder="select * fro... administrators" />
-                <marker date="1459251479000" expanded="true" signature="3044:3068" placeholder="select * fro... volunteers" />
-                <marker date="1459251479000" expanded="true" signature="3283:3290" placeholder="select from submis... " />
-                <marker date="1459251479000" expanded="true" signature="3283:3383" placeholder="select from submissions... " />
-                <marker date="1459251479000" expanded="true" signature="3324:3382" placeholder="select vol_i... volunteers" />
-                <marker date="1459251479000" expanded="true" signature="4103:4155" placeholder="delete from " />
-                <marker date="1459251479000" expanded="true" signature="4327:4381" placeholder="select * fro... volunteers" />
-                <marker date="1459251479000" expanded="true" signature="5104:5289" placeholder="update volun... " />
+                <marker date="1459253103000" expanded="true" signature="614:744" placeholder="insert into volunteers... " />
+                <marker date="1459253103000" expanded="true" signature="1854:1909" placeholder="select * fro... administrators" />
+                <marker date="1459253103000" expanded="true" signature="2323:2408" placeholder="select * fro... administrators" />
+                <marker date="1459253103000" expanded="true" signature="3044:3068" placeholder="select * fro... volunteers" />
+                <marker date="1459253103000" expanded="true" signature="3283:3290" placeholder="select from submis... " />
+                <marker date="1459253103000" expanded="true" signature="3283:3383" placeholder="select from submissions... " />
+                <marker date="1459253103000" expanded="true" signature="3324:3382" placeholder="select vol_i... volunteers" />
+                <marker date="1459253103000" expanded="true" signature="3590:3911" placeholder="select quest... answers" />
+                <marker date="1459253103000" expanded="true" signature="3691:3833" placeholder="select submi... submissions" />
+                <marker date="1459253103000" expanded="true" signature="3774:3832" placeholder="select vol_i... volunteers" />
+                <marker date="1459253103000" expanded="true" signature="4102:4154" placeholder="delete from " />
+                <marker date="1459253103000" expanded="true" signature="4326:4380" placeholder="select * fro... volunteers" />
+                <marker date="1459253103000" expanded="true" signature="5103:5288" placeholder="update volun... " />
               </folding>
             </state>
           </provider>
@@ -153,9 +157,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Chukwudi/View.php" />
+        <option value="$PROJECT_DIR$/Chukwudi/view3.php" />
         <option value="$PROJECT_DIR$/Chukwudi/functions.php" />
         <option value="$PROJECT_DIR$/Chukwudi/view2.php" />
-        <option value="$PROJECT_DIR$/Chukwudi/view3.php" />
       </list>
     </option>
   </component>
@@ -422,36 +426,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Chukwudi/functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.7916665">
-          <caret line="156" column="0" selection-start-line="156" selection-start-column="0" selection-end-line="156" selection-end-column="0" />
+        <state vertical-scroll-proportion="-84.666664">
+          <caret line="156" column="19" selection-start-line="156" selection-start-column="19" selection-end-line="156" selection-end-column="19" />
           <folding>
-            <marker date="1459251479000" expanded="true" signature="614:744" placeholder="insert into volunteers... " />
-            <marker date="1459251479000" expanded="true" signature="1854:1909" placeholder="select * fro... administrators" />
-            <marker date="1459251479000" expanded="true" signature="2323:2408" placeholder="select * fro... administrators" />
-            <marker date="1459251479000" expanded="true" signature="3044:3068" placeholder="select * fro... volunteers" />
-            <marker date="1459251479000" expanded="true" signature="3283:3290" placeholder="select from submis... " />
-            <marker date="1459251479000" expanded="true" signature="3283:3383" placeholder="select from submissions... " />
-            <marker date="1459251479000" expanded="true" signature="3324:3382" placeholder="select vol_i... volunteers" />
-            <marker date="1459251479000" expanded="true" signature="4103:4155" placeholder="delete from " />
-            <marker date="1459251479000" expanded="true" signature="4327:4381" placeholder="select * fro... volunteers" />
-            <marker date="1459251479000" expanded="true" signature="5104:5289" placeholder="update volun... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chukwudi/view2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.416666">
-          <caret line="63" column="135" selection-start-line="63" selection-start-column="110" selection-end-line="63" selection-end-column="135" />
-          <folding>
-            <element signature="e#6#100#0#PHP" expanded="true" />
+            <marker date="1459253103000" expanded="true" signature="614:744" placeholder="insert into volunteers... " />
+            <marker date="1459253103000" expanded="true" signature="1854:1909" placeholder="select * fro... administrators" />
+            <marker date="1459253103000" expanded="true" signature="2323:2408" placeholder="select * fro... administrators" />
+            <marker date="1459253103000" expanded="true" signature="3044:3068" placeholder="select * fro... volunteers" />
+            <marker date="1459253103000" expanded="true" signature="3283:3290" placeholder="select from submis... " />
+            <marker date="1459253103000" expanded="true" signature="3283:3383" placeholder="select from submissions... " />
+            <marker date="1459253103000" expanded="true" signature="3324:3382" placeholder="select vol_i... volunteers" />
+            <marker date="1459253103000" expanded="true" signature="3590:3911" placeholder="select quest... answers" />
+            <marker date="1459253103000" expanded="true" signature="3691:3833" placeholder="select submi... submissions" />
+            <marker date="1459253103000" expanded="true" signature="3774:3832" placeholder="select vol_i... volunteers" />
+            <marker date="1459253103000" expanded="true" signature="4102:4154" placeholder="delete from " />
+            <marker date="1459253103000" expanded="true" signature="4326:4380" placeholder="select * fro... volunteers" />
+            <marker date="1459253103000" expanded="true" signature="5103:5288" placeholder="update volun... " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Chukwudi/view3.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41411042">
+        <state vertical-scroll-proportion="-11.25">
           <caret line="32" column="40" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
           <folding>
             <element signature="e#6#100#0#PHP" expanded="true" />
@@ -460,6 +457,16 @@
             <marker date="1459252730000" expanded="true" signature="976:1118" placeholder="..." />
             <marker date="1459252730000" expanded="true" signature="1642:1768" placeholder="..." />
             <marker date="1459252730000" expanded="true" signature="1663:1768" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chukwudi/view2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7131902">
+          <caret line="31" column="41" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
+          <folding>
+            <element signature="e#6#100#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

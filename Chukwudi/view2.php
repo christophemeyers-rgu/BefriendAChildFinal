@@ -49,7 +49,8 @@
 				while ($row= mysqli_fetch_array($submissions))
 				{
 				$counter++;
-				
+    echo $row['event_description'];
+				/*
 				?>
                             <tbody>
                               <tr>
@@ -63,7 +64,7 @@
 								
 				}
 		}
-		
+		*/
 		?>
 </table>
 </div>

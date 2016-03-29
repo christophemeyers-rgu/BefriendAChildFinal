@@ -22,8 +22,8 @@
 <body>
 
 <div class="container">
-  <h2>List of Volunteers</h2>
-  <p>This is a list of all volunteers in the database</p>            
+  <h2>Volunteers</h2>
+  <p>List of all volunteers</p>
   <table class="table table-striped">
     <thead>
       <tr>

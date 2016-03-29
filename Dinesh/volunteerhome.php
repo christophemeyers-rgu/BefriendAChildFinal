@@ -11,8 +11,29 @@
     }
 
 
-
     //FUNCTIONS:
+
+//function gets volunteer's name from email
+function get_volunteer_name($email){
+
+    include("db_connection.php");   //connect to database
+
+    if($db->connect_errno){
+        die('Connectfailed['.$db->connect_error.']');   //if connection fails, return error
+    }
+
+    $namequery = "SELECT vol_firstname, vol_surname FROM volunteers WHERE vol_email='$email'";  //query for getting name
+
+    $result = $db->query($namequery);
+
+    $row = $result->fetch_array();
+
+    $firstname = $row['vol_firstname'];
+    $surname = $row['vol_surname'];
+
+    echo " {$firstname} {$surname}!";   //the function prints the name with a space before and an exclamation mark after it
+}
+
 
     //pulls question text from question id
     function get_question_text($qid){
@@ -90,78 +111,98 @@
 <!-- - [END OF HEAD] =============================================================================================== -->
 
 
+
 <!-- - [START OF BODY] ============================================================================================= -->
 <body>
 
 
-    <!-- - SURVEY PROGRESSION BAR- -->
-    <section id="progressbar"><section class="progress-label"></section></section>
+    <!-- (START OF HEADER) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <header class="header">
+
+        <!-- Volunteer name is printed in the head -->
+        <section class="header" id="name">
+            <!--function from above using the email pulled from the session-->
+            <h1>Welcome<br><?php get_volunteer_name($_SESSION['vol_email']);?> </h1>
+
+        <!-- Start Survey Button -->
+        <section class="header" id="start">
+            <h2><a href="volunteerhome.php"> <input id="startsurvey" type="button" value="Start survey"></a></h2>
+        </section>
+
+        <!-- Logout Button -->
+        <section class="header" id="logout">
+            <h2> <a href="logoutvolunteer.php" id="logout"><input id="logout" type="button" value="Logout"></a></h2>
+        </section>
+
+        <!-- Survey Progression Bar -->
+        <section id="progressbar"><section class="progress-label"></section></section>
+
+    </header>
+    <!-- (END OF HEADER) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
 
-    <!-- - (START OF MAIN) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- (START OF MAIN) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <main class="grid-container">
 
-
-    <!-- - (START OF SURVEY) ---------------------------------------------------------------------- -->
-    <form action="submitsurveyanswers.php" method="post" >
-
-
-    <!-- - SURVEY QUESTIONS SUMMARY AND SUBMISSION- -->
-    <section class="container" id="cont7">
-        <h1>Survey Questions Summary:</h1>
-        <p id="summary"></p>
-        <input type="submit" id="submit" name="submit" value="SUBMIT SURVEY">
-    </section>
+        <!-- (START OF SURVEY) ---------------------------------------------------------------------- -->
+        <form action="submitsurveyanswers.php" method="post" >
 
 
-    <!-- - SURVEY QUESTION 6 - -->
-    <section class="container" id="cont6">
-        <?php include("volunteerhome_assets/volunteerhome_htmlscripts/question6.php"); ?>
-    </section>
+        <!-- SURVEY QUESTIONS SUMMARY AND SUBMISSION -->
+        <section class="container" id="cont7">
+            <h1>Survey Questions Summary:</h1>
+            <p id="summary"></p>
+            <input type="submit" id="submit" name="submit" value="SUBMIT SURVEY">
+        </section>
 
 
-    <!-- - SURVEY QUESTION 5 - -->
-    <section class="container" id="cont5">
-        <?php include("volunteerhome_assets/volunteerhome_htmlscripts/question5.php"); ?>
-    </section>
+        <!-- SURVEY QUESTION 6 -->
+        <section class="container" id="cont6">
+            <?php include("volunteerhome_assets/volunteerhome_htmlscripts/question6.php"); ?>
+        </section>
 
 
-    <!-- - SURVEY QUESTION 4 - -->
-    <section class="container" id="cont4">
-        <?php include("volunteerhome_assets/volunteerhome_htmlscripts/question4.php"); ?>
-    </section>
+        <!-- SURVEY QUESTION 5 -->
+        <section class="container" id="cont5">
+            <?php include("volunteerhome_assets/volunteerhome_htmlscripts/question5.php"); ?>
+        </section>
 
 
-    <!-- - SURVEY QUESTION 3 - -->
-    <section class="container" id="cont3">
-        <?php include("volunteerhome_assets/volunteerhome_htmlscripts/question3.php"); ?>
-    </section>
+        <!-- SURVEY QUESTION 4 -->
+        <section class="container" id="cont4">
+            <?php include("volunteerhome_assets/volunteerhome_htmlscripts/question4.php"); ?>
+        </section>
 
 
-    <!-- - SURVEY QUESTION 2 - -->
-    <section class="container" id="cont2">
-        <?php include("volunteerhome_assets/volunteerhome_htmlscripts/question2.php"); ?>
-    </section>
+        <!-- SURVEY QUESTION 3 -->
+        <section class="container" id="cont3">
+            <?php include("volunteerhome_assets/volunteerhome_htmlscripts/question3.php"); ?>
+        </section>
 
 
-    <!-- - SURVEY QUESTION 1 - -->
-    <section class="container" id="cont1">
-        <?php include("volunteerhome_assets/volunteerhome_htmlscripts/question1.php"); ?>
-    </section>
+        <!-- SURVEY QUESTION 2 -->
+        <section class="container" id="cont2">
+            <?php include("volunteerhome_assets/volunteerhome_htmlscripts/question2.php"); ?>
+        </section>
+
+
+        <!-- SURVEY QUESTION 1 -->
+        <section class="container" id="cont1">
+            <?php include("volunteerhome_assets/volunteerhome_htmlscripts/question1.php"); ?>
+        </section>
 
         </form>
-        <!-- - (END OF SURVEY) ---------------------------------------------------------------------- -->
-
+        <!-- (END OF SURVEY) ---------------------------------------------------------------------- -->
 
     </main>
-    <!-- - (END OF MAIN) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- (END OF MAIN) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
 
-    <!-- - CALL JQUERY SCRIPT FUNCTION- -->
+    <!-- CALL JQUERY SCRIPT FUNCTION -->
     <script SRC="volunteerhome_assets/volunteerhome_jquery/surveybounce.js"></script>
 
 
 </body>
-<!-- - [END OF BODY] =============================================================================================== -->
+<!-- [END OF BODY] ================================================================================================= -->
 
 </html>

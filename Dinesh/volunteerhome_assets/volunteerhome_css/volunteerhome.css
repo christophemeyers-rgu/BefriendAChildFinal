@@ -1,13 +1,6 @@
 
 main {
-    max-width: 960px;
-    height: auto;
-    margin-right: auto;
-    margin-left: auto;
-    background-color: aliceblue;
-    flex-direction: row;
-    display: flex;
-    justify-content: center;
+
 }
 
 h2{
@@ -58,7 +51,6 @@ h2{
     display: flex;
     justify-content: center;
 }
-
 
 .ui-progressbar {
     position: relative;

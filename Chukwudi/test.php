@@ -31,7 +31,7 @@ include 'functions.php';
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
     <!--  jquery core -->
-    /*	<script src="jsadminpage/jquery/jquery-1.4.1.min.js" type="text/javascript"></script>
+    <script src="jsadminpage/jquery/jquery-1.4.1.min.js" type="text/javascript"></script>
 
     <!--  styled select box script version 2 -->
     <script src="jsadminpage/jquery/jquery.selectbox-0.5_style_2.js" type="text/javascript"></script>
@@ -134,7 +134,7 @@ include 'functions.php';
 // and update the datePicker to reflect it...
             $('#d').trigger('change');
         });
-    </script>*/
+    </script>
 
 
 

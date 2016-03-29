@@ -70,6 +70,9 @@
 								
 				}
 		}
+        else{
+            echo "No submissions for this user";
+        }
 
 		?>
 </table>

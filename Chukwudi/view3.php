@@ -72,6 +72,9 @@
 
             }
         }
+        else{
+            echo "No events for this user";
+        }
 
         ?>
     </table>

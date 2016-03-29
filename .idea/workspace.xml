@@ -28,12 +28,12 @@
       <file leaf-file-name="volunteerhome.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Dinesh/volunteerhome.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5883777">
-              <caret line="159" column="18" selection-start-line="159" selection-start-column="18" selection-end-line="159" selection-end-column="18" />
+            <state vertical-scroll-proportion="0.67070216">
+              <caret line="161" column="0" selection-start-line="161" selection-start-column="0" selection-end-line="161" selection-end-column="0" />
               <folding>
-                <marker date="1459290976337" expanded="true" signature="669:743" placeholder="SELECT vol_f... volunteers" />
-                <marker date="1459290976337" expanded="true" signature="1367:1427" placeholder="SELECT quest... questions" />
-                <marker date="1459290976337" expanded="true" signature="1862:1923" placeholder="SELECT quest... questions" />
+                <marker date="1459291204687" expanded="true" signature="669:743" placeholder="SELECT vol_f... volunteers" />
+                <marker date="1459291204687" expanded="true" signature="1367:1427" placeholder="SELECT quest... questions" />
+                <marker date="1459291204687" expanded="true" signature="1862:1923" placeholder="SELECT quest... questions" />
               </folding>
             </state>
           </provider>
@@ -438,7 +438,13 @@
       <option name="project" value="LOCAL" />
       <updated>1459290766161</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Dinesh 29/03/16 Volunteer page styling">
+      <created>1459290988687</created>
+      <option name="number" value="00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1459290988687</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -726,12 +732,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Dinesh/volunteerhome.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5883777">
-          <caret line="159" column="18" selection-start-line="159" selection-start-column="18" selection-end-line="159" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.67070216">
+          <caret line="161" column="0" selection-start-line="161" selection-start-column="0" selection-end-line="161" selection-end-column="0" />
           <folding>
-            <marker date="1459290976337" expanded="true" signature="669:743" placeholder="SELECT vol_f... volunteers" />
-            <marker date="1459290976337" expanded="true" signature="1367:1427" placeholder="SELECT quest... questions" />
-            <marker date="1459290976337" expanded="true" signature="1862:1923" placeholder="SELECT quest... questions" />
+            <marker date="1459291204687" expanded="true" signature="669:743" placeholder="SELECT vol_f... volunteers" />
+            <marker date="1459291204687" expanded="true" signature="1367:1427" placeholder="SELECT quest... questions" />
+            <marker date="1459291204687" expanded="true" signature="1862:1923" placeholder="SELECT quest... questions" />
           </folding>
         </state>
       </provider>

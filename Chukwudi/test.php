@@ -237,14 +237,15 @@ include 'functions.php';
 
 <!-- start content-outer ........................................................................................................................START -->
 <div class="container">
-    <p>List of submissions by <a href="view.php"><?php echo $_GET['vol_email'];?></a></p>
+    <h2>Survey</h2>
+    <p>Survey details for <a href="view2.php?vol_email=<?php echo $_GET['vol_email']; ?>"><?php echo $_GET['event_date'];?></a></p>
     <table class="table table-striped">
         <thead>
         <tr>
             <th>ID</th>
-            <th>Event description</th>
-            <th>Event date</th>
-            <th>Submission date</th>
+            <th>Question</th>
+            <th>Required answer</th>
+            <th>Optional answer</th>
         </tr>
         </thead>
         <?php
@@ -254,14 +255,15 @@ include 'functions.php';
             die('Connectfailed['.$db->connect_error.']');
         }
 
+        $event_date = $_GET['event_date'];
         $vol_email = $_GET['vol_email'];
 
-        $submissions = getUserSubmissions($vol_email);
+        $events = getEventDetails($event_date, $vol_email);
 
-        if(mysqli_num_rows($submissions)>0){
+        if(mysqli_num_rows($events)>0){
 
             $counter = 0;
-            while ($row= mysqli_fetch_array($submissions))
+            while ($row= mysqli_fetch_array($events))
             {
                 $counter++;
 
@@ -269,9 +271,9 @@ include 'functions.php';
                 <tbody>
                 <tr>
                     <td><?php echo $counter; ?></td>
-                    <td><a href="view3.php?event_date=<?php echo $row['event_date']; ?>&vol_email=<?php echo $vol_email; ?>"><?php echo $row['event_description']; ?></a></td>
-                    <td><?php echo $row['event_date']; ?></td>
-                    <td><?php echo $row['submission_date']; ?></td>
+                    <td><a href=""><?php echo $row['question_text']; ?></a></td>
+                    <td><?php echo $row['answer_text_req']; ?></td>
+                    <td><?php echo $row['answer_text_opt']; ?></td>
                 </tr>
                 </tbody>
                 <?php
@@ -279,7 +281,7 @@ include 'functions.php';
             }
         }
         else{
-            echo "No submissions for this user";
+            echo "No events for this user";
         }
 
         ?>

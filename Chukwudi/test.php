@@ -238,10 +238,6 @@ include 'functions.php';
 <!-- start content-outer ........................................................................................................................START -->
 <div class="container">
     <table class="table table-striped">
-        <div class="clear">&nbsp;</div>
-
-        <div style="display: block;">
-            <table style="margin-left: auto; margin-right: auto;">
                 <thead>
                 <tr>
                     <th>Sr. #</th>
@@ -280,9 +276,7 @@ include 'functions.php';
                 }//end if statement
                 ?>
 
-            </table>
-
-        </div>
+    </table>
 
 </div>
 <!--  end content-outer........................................................END -->

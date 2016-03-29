@@ -28,7 +28,7 @@
     <thead>
       <tr>
       	<th>ID</th>
-        <th>E-mail</th>
+        <th>User name</th>
         <th>First name</th>
         <th>Surname</th>
       </tr>

@@ -270,7 +270,7 @@ if(!isset($_SESSION['ad_email'])){
                 <tbody>
                 <tr>
                     <td><?php echo $counter; ?></td>
-                    <td><a href=""><?php echo $row['question_text']; ?></a></td>
+                    <td><?php echo $row['question_text']; ?></td>
                     <td><?php echo $row['answer_text_req']; ?></td>
                     <td><?php echo $row['answer_text_opt']; ?></td>
                 </tr>

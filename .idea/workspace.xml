@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="03ada858-a974-4529-89ae-934025c2ff8a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chukwudi/View.php" afterPath="$PROJECT_DIR$/Chukwudi/View.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chukwudi/adminhome.php" afterPath="$PROJECT_DIR$/Chukwudi/adminhome.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chukwudi/view2.php" afterPath="$PROJECT_DIR$/Chukwudi/view2.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chukwudi/view3.php" afterPath="$PROJECT_DIR$/Chukwudi/view3.php" />
     </list>
     <ignored path="BefriendAChildTestSurvey.iws" />
@@ -89,11 +86,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="adminhome.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="adminhome.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Chukwudi/adminhome.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.30981594">
-              <caret line="259" column="0" selection-start-line="259" selection-start-column="0" selection-end-line="259" selection-end-column="0" />
+            <state vertical-scroll-proportion="-25.291666">
+              <caret line="286" column="4" selection-start-line="286" selection-start-column="4" selection-end-line="286" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -111,11 +108,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="view3.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="view3.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Chukwudi/view3.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.166667">
-              <caret line="216" column="0" selection-start-line="216" selection-start-column="0" selection-end-line="216" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.19478528">
+              <caret line="272" column="60" selection-start-line="272" selection-start-column="60" selection-end-line="272" selection-end-column="60" />
               <folding>
                 <element signature="e#7#101#0#PHP" expanded="true" />
               </folding>
@@ -177,8 +174,8 @@
         <option value="$PROJECT_DIR$/Chukwudi/test.php" />
         <option value="$PROJECT_DIR$/Chukwudi/View.php" />
         <option value="$PROJECT_DIR$/Chukwudi/view2.php" />
-        <option value="$PROJECT_DIR$/Chukwudi/view3.php" />
         <option value="$PROJECT_DIR$/Chukwudi/adminhome.php" />
+        <option value="$PROJECT_DIR$/Chukwudi/view3.php" />
       </list>
     </option>
   </component>
@@ -486,21 +483,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chukwudi/view3.php">
+    <entry file="file://$PROJECT_DIR$/Chukwudi/adminhome.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.166667">
-          <caret line="216" column="0" selection-start-line="216" selection-start-column="0" selection-end-line="216" selection-end-column="0" />
-          <folding>
-            <element signature="e#7#101#0#PHP" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="-25.291666">
+          <caret line="286" column="4" selection-start-line="286" selection-start-column="4" selection-end-line="286" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chukwudi/adminhome.php">
+    <entry file="file://$PROJECT_DIR$/Chukwudi/view3.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30981594">
-          <caret line="259" column="0" selection-start-line="259" selection-start-column="0" selection-end-line="259" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.19478528">
+          <caret line="272" column="60" selection-start-line="272" selection-start-column="60" selection-end-line="272" selection-end-column="60" />
+          <folding>
+            <element signature="e#7#101#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

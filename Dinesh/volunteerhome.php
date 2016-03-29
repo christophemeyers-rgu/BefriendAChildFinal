@@ -113,11 +113,11 @@ function get_volunteer_name($email){
 
 
 <!-- - [START OF BODY] ============================================================================================= -->
-<body>
+<body class="top">
 
 
     <!-- (START OF HEADER) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-    <header class="header">
+    <header class="top">
 
         <!-- Volunteer name is printed in the head -->
         <section class="header" id="name">
@@ -142,7 +142,7 @@ function get_volunteer_name($email){
 
 
     <!-- (START OF MAIN) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-    <main class="grid-container">
+    <main class="top">
 
         <!-- (START OF SURVEY) ---------------------------------------------------------------------- -->
         <form action="submitsurveyanswers.php" method="post" >

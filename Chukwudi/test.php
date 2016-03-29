@@ -241,10 +241,8 @@ include 'functions.php';
 
         <!--  start page-heading -->
         <div id="page-heading">
-            <h1>Administrator Home Page</h1>
             <div class="container">
                 <h2>Volunteers</h2>
-                <p>List of all volunteers</p>
                 <table class="table table-striped">
                     <thead>
                     <tr>

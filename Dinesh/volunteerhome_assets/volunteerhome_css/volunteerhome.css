@@ -1,10 +1,7 @@
 body{
-    max-width: 960px;
-    height: 200px;
-    margin-right: 100px;
-    margin-left: 100px;
+
     display: flex;
-    position: absolute;
+
     flex-direction: row;
     justify-content: center;
 }

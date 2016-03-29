@@ -44,7 +44,7 @@ include 'functions.php';
 
     <!--  styled select box script version 3 -->
     <script src="jsadminpage/jquery/jquery.selectbox-0.5_style_2.js" type="text/javascript"></script>
-    </script>
+    <script>
     $(document).ready(function() {
         $('.styledselect_pages').selectbox({ inputClass: "styledselect_pages" });
     });

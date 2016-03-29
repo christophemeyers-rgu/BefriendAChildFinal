@@ -134,8 +134,7 @@ function get_volunteer_name($email){
             <h2> <a href="logoutvolunteer.php" id="logout"><input type="button" value="Logout"></a></h2>
         </section>
 
-        <!-- Survey Progression Bar -->
-        <section class="header" id="progressbar"><section class="progress-label"></section></section>
+
 
     </header>
     <!-- (END OF HEADER) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
@@ -143,6 +142,9 @@ function get_volunteer_name($email){
 
     <!-- (START OF MAIN) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <main class="top">
+
+        <!-- Survey Progression Bar -->
+        <section id="progressbar"><section class="progress-label"></section></section>
 
         <!-- (START OF SURVEY) ---------------------------------------------------------------------- -->
         <form action="submitsurveyanswers.php" method="post" >

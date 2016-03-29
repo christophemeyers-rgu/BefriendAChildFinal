@@ -75,7 +75,7 @@
       <file leaf-file-name="View.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Chukwudi/View.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.75">
+            <state vertical-scroll-proportion="16.25">
               <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
               <folding>
                 <element signature="e#6#100#0#PHP" expanded="true" />
@@ -87,8 +87,8 @@
       <file leaf-file-name="view2.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Chukwudi/view2.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8619632">
-              <caret line="74" column="8" selection-start-line="74" selection-start-column="8" selection-end-line="74" selection-end-column="8" />
+            <state vertical-scroll-proportion="0.6779141">
+              <caret line="66" column="35" selection-start-line="66" selection-start-column="35" selection-end-line="66" selection-end-column="35" />
               <folding>
                 <element signature="e#6#100#0#PHP" expanded="true" />
               </folding>
@@ -426,7 +426,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Chukwudi/View.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.75">
+        <state vertical-scroll-proportion="16.25">
           <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
           <folding>
             <element signature="e#6#100#0#PHP" expanded="true" />
@@ -446,8 +446,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Chukwudi/view2.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8619632">
-          <caret line="74" column="8" selection-start-line="74" selection-start-column="8" selection-end-line="74" selection-end-column="8" />
+        <state vertical-scroll-proportion="0.6779141">
+          <caret line="66" column="35" selection-start-line="66" selection-start-column="35" selection-end-line="66" selection-end-column="35" />
           <folding>
             <element signature="e#6#100#0#PHP" expanded="true" />
           </folding>

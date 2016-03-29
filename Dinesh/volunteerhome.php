@@ -126,12 +126,12 @@ function get_volunteer_name($email){
 
         <!-- Start Survey Button -->
         <section class="header" id="start">
-            <h2><a href="volunteerhome.php"> <input id="startsurvey" type="button" value="Start survey"></a></h2>
+            <h2><a href="volunteerhome.php"> <input type="button" value="Start survey"></a></h2>
         </section>
 
         <!-- Logout Button -->
         <section class="header" id="logout">
-            <h2> <a href="logoutvolunteer.php" id="logout"><input id="logout" type="button" value="Logout"></a></h2>
+            <h2> <a href="logoutvolunteer.php" id="logout"><input type="button" value="Logout"></a></h2>
         </section>
 
         <!-- Survey Progression Bar -->

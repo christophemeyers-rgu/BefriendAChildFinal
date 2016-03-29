@@ -6,7 +6,6 @@
 		if(!isset($_SESSION['vol_email'])){
 			header("Location: volunteerlogin.php");
 		}
-		
 
 ?>
 
@@ -28,10 +27,9 @@
   <table class="table table-striped">
     <thead>
       <tr>
-      	<th>ID</th>
-        <th>E-mail</th>
-        <th>First name</th>
-        <th>Surname</th>
+      	<th>Event description</th>
+        <th>Event date</th>
+        <th>Submission date</th>
       </tr>
     </thead>
     <?php
@@ -40,13 +38,15 @@
         if($db->connect_errno){
             die('Connectfailed['.$db->connect_error.']');
         }
+
+        $vol_email = $_GET['vol_email'];
+
+        $submissions = getUserSubmissions($vol_email);
 		
-		$users = getAllRegisteredUsers();
-		
-		if(mysqli_num_rows($users)>0){
+		if(mysqli_num_rows($submissions)>0){
 			                                                    
 				$counter = 0;
-				while ($row= mysqli_fetch_array($users))
+				while ($row= mysqli_fetch_array($submissions))
 				{
 				$counter++;
 				
@@ -54,9 +54,9 @@
                             <tbody>
                               <tr>
                                 <td><?php echo $counter; ?></td>
-                                <td><a href=""><?php echo $row['vol_email']; ?></a></td>
-                                <td><?php echo $row['vol_firstname']; ?></td>
-                                <td><?php echo $row['vol_surname']; ?></td>
+                                <td><a href=""><?php echo $row['event_description']; ?></a></td>
+                                <td><?php echo $row['event_date']; ?></td>
+                                <td><?php echo $row['submission_date']; ?></td>
                               </tr>
                             </tbody>
                             <?php

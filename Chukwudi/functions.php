@@ -137,6 +137,15 @@ function getAllRegisteredUsers() {
 
 //end function
 
+function getUserSubmissions($vol_email){
+
+    $sql = "select * from submissions, volunteers where vol_email='$vol_email'";
+    $mysqli = new mysqli(host, user, password, database);
+    $mysqli->query($sql);
+    $mysqli->close();
+
+}
+
 function deleteUser($login_name) {
 
     $sql = "delete from volunteers where vol_email='$login_name'";

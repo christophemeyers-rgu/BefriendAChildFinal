@@ -23,7 +23,7 @@
 
 <div class="container">
   <h2>Submissionss</h2>
-  <p>List of submissions by <?php $_GET['vol_email']?></p>
+  <p>List of submissions by <?php $_GET['vol_email'];?></p>
   <table class="table table-striped">
     <thead>
       <tr>

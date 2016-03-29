@@ -148,12 +148,12 @@ function get_volunteer_name($email){
         <!-- (START OF SURVEY) ---------------------------------------------------------------------- -->
         <form action="submitsurveyanswers.php" method="post" >
             <!-- Survey Progression Bar -->
-            <section  id="surveybar">
+            <section class="form" id="surveybar">
                 <section id="progressbar"><section class="progress-label"></section>
                 </section>
 
         <!-- SURVEY QUESTIONS SUMMARY AND SUBMISSION -->
-        <section  id="cont7">
+        <section class="form" id="cont7">
             <h1>Survey Questions Summary:</h1>
             <p id="summary"></p>
             <input type="submit" id="submit" name="submit" value="SUBMIT SURVEY">
@@ -161,37 +161,37 @@ function get_volunteer_name($email){
 
 
         <!-- SURVEY QUESTION 6 -->
-        <section  id="cont6">
+        <section class="form" id="cont6">
             <?php include("volunteerhome_assets/volunteerhome_htmlscripts/question6.php"); ?>
         </section>
 
 
         <!-- SURVEY QUESTION 5 -->
-        <section  id="cont5">
+        <section class="form" id="cont5">
             <?php include("volunteerhome_assets/volunteerhome_htmlscripts/question5.php"); ?>
         </section>
 
 
         <!-- SURVEY QUESTION 4 -->
-        <section  id="cont4">
+        <section class="form" id="cont4">
             <?php include("volunteerhome_assets/volunteerhome_htmlscripts/question4.php"); ?>
         </section>
 
 
         <!-- SURVEY QUESTION 3 -->
-        <section  id="cont3">
+        <section class="form" id="cont3">
             <?php include("volunteerhome_assets/volunteerhome_htmlscripts/question3.php"); ?>
         </section>
 
 
         <!-- SURVEY QUESTION 2 -->
-        <section  id="cont2">
+        <section class="form" id="cont2">
             <?php include("volunteerhome_assets/volunteerhome_htmlscripts/question2.php"); ?>
         </section>
 
 
         <!-- SURVEY QUESTION 1 -->
-        <section  id="cont1">
+        <section class="form" id="cont1">
             <?php include("volunteerhome_assets/volunteerhome_htmlscripts/question1.php"); ?>
         </section>
 

@@ -41,7 +41,7 @@
         }
 
         $vol_email = $_GET['vol_email'];
-
+    echo $vol_email;
         $submissions = getUserSubmissions($vol_email);
 		
 		if(mysqli_num_rows($submissions)>0){
@@ -60,7 +60,7 @@
                                 <td><?php echo $row['submission_date']; ?></td>
                               </tr>
                             </tbody>
-                            <?php
+                <?php
 								
 				}
 		}

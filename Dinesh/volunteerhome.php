@@ -143,14 +143,14 @@ function get_volunteer_name($email){
     <!-- (START OF MAIN) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <main>
 
-        <!-- Survey Progression Bar -->
-        <section class="container" id="surveybar">
-        <section id="progressbar"><section class="progress-label"></section>
-        </section>
+
 
         <!-- (START OF SURVEY) ---------------------------------------------------------------------- -->
         <form action="submitsurveyanswers.php" method="post" >
-
+            <!-- Survey Progression Bar -->
+            <section  id="surveybar">
+                <section id="progressbar"><section class="progress-label"></section>
+                </section>
 
         <!-- SURVEY QUESTIONS SUMMARY AND SUBMISSION -->
         <section class="container" id="cont7">

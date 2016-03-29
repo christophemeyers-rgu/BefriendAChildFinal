@@ -1,6 +1,13 @@
+.firstpage{
+    position: absolute;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
 
 .header{
     display: flex;
+    justify-content: center;
 }
 
 h2{
@@ -47,8 +54,8 @@ h2{
     margin-right: auto;
     margin-left: auto;
     background-color: aliceblue;
-    flex-direction: column;
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 

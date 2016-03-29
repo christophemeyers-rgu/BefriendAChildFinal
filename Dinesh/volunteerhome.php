@@ -115,6 +115,28 @@ function get_volunteer_name($email){
 <!-- - [START OF BODY] ============================================================================================= -->
 <body>
 
+        <!-- Volunteer name is printed in the head -->
+        <section class="firstpage" id="name">
+        <!--function from above using the email pulled from the session-->
+        <h1>Welcome<br><?php get_volunteer_name($_SESSION['vol_email']);?> </h1>
+
+        <!-- Survey Instructions -->
+        <p> There are 7 questions in total.
+            A summary page at the end allows you to check your answers and change them if needed.
+            All questions indicated as "required" must be answered to be able submit the survey.
+            Thank you.
+        </p>
+
+        <!-- Start Survey Button -->
+        <section class="firstpage" id="start">
+            <h2><a href="volunteerhome.php"> <input type="button" value="Start survey"></a></h2>
+        </section>
+
+        <!-- Logout Button -->
+        <section class="firstpage" id="logout">
+            <h2> <a href="logoutvolunteer.php" id="logout"><input type="button" value="Logout"></a></h2>
+        </section>
+
 
     <!-- (START OF HEADER) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <header>
@@ -123,11 +145,6 @@ function get_volunteer_name($email){
         <section class="header" id="name">
             <!--function from above using the email pulled from the session-->
             <h1>Welcome<br><?php get_volunteer_name($_SESSION['vol_email']);?> </h1>
-
-        <!-- Start Survey Button -->
-        <section class="header" id="start">
-            <h2><a href="volunteerhome.php"> <input type="button" value="Start survey"></a></h2>
-        </section>
 
         <!-- Logout Button -->
         <section class="header" id="logout">

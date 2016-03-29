@@ -266,7 +266,8 @@ if(!isset($_SESSION['ad_email'])){
                     <td><?php echo $row['vol_surname']; ?></td>
                     <td>
                         <a href="edit-user.php?vol_email=<?php echo $row['vol_email']; ?>" style="color:green;">Edit</a>
-                        &nbsp;&nbsp;&nbsp;<a href="?vol_email=<?php echo $row['vol_email']; ?>" style="color:red;">Delete</a></td>
+                        &nbsp;&nbsp;&nbsp;<a href="?vol_email=<?php echo $row['vol_email']; ?>" style="color:red;">Delete</a>
+                    </td>
 
                 </tr>
                 </tbody>

@@ -238,8 +238,6 @@ include 'functions.php';
 <!-- start content-outer ........................................................................................................................START -->
 <div id="content-outer">
     <!-- start content -->
-
-        <!--  start page-heading -->
             <div class="container">
                 <table class="table table-striped">
                     <thead>
@@ -303,8 +301,3 @@ include 'functions.php';
 
 </body>
 </html>
-
-
-
-
-?>

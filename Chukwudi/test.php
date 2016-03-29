@@ -244,10 +244,11 @@ include 'functions.php';
             <table style="margin-left: auto; margin-right: auto;">
                 <thead>
                 <tr>
-                    <th class="table-style">Sr. #</th>
-                    <th class="table-style">Login Name</th>
-                    <th class="table-style">First Name</th>
-                    <th class="table-style">Surname</th>
+                    <th>Sr. #</th>
+                    <th>Login Name</th>
+                    <th>First Name</th>
+                    <th>Surname</th>
+                    <th>Options</th>
                 </tr>
                 </thead>
                     <?php

@@ -122,8 +122,11 @@ function get_volunteer_name($email){
 
         <!-- Survey Instructions -->
         <p> There are 7 questions in total.
+            <br>
             A summary page at the end allows you to check your answers and change them if needed.
+            <br>
             All questions indicated as "required" must be answered to be able submit the survey.
+            <br>
             Thank you.
         </p>
 

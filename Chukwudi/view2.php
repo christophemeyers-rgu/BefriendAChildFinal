@@ -22,8 +22,8 @@
 <body>
 
 <div class="container">
-  <h2>Submissionss</h2>
-  <p>List of submissions by <?php echo $row['vol_firstname'] . $row['vol_surname'];?></p>
+  <h2>Submissions</h2>
+  <p>List of submissions by <?php echo $_GET['vol_email'];?></p>
   <table class="table table-striped">
     <thead>
       <tr>

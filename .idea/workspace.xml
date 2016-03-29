@@ -42,8 +42,8 @@
       <file leaf-file-name="volunteerhome.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Dinesh/volunteerhome_assets/volunteerhome_css/volunteerhome.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.08232445">
-              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.4527845">
+              <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -423,11 +423,17 @@
       <option name="project" value="LOCAL" />
       <updated>1459289002987</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Dinesh 29/03/16 Volunteer page styling">
+      <created>1459289619879</created>
+      <option name="number" value="00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1459289619879</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1040" height="576" extended-state="6" />
+    <frame x="-8" y="-8" width="1040" height="576" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -707,8 +713,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Dinesh/volunteerhome_assets/volunteerhome_css/volunteerhome.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.08232445">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.4527845">
+          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
           <folding />
         </state>
       </provider>

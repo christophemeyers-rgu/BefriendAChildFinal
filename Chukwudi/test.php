@@ -7,7 +7,7 @@
  * Time: 13:42
  */
 	//THIS PAGE IS DESTINATION FOR ADMIN WHEN LOGGED IN AND TRYING TO ACCESS INDEX.PHP, AND WHEN CLICKING LINKS LEADING HERE
-
+include 'functions.php';
 	//If no session exists, admin is sent to index.php
 	session_start();
 	if(!isset($_SESSION['ad_email'])){
@@ -238,7 +238,6 @@
 <!-- start content-outer ........................................................................................................................START -->
 <div id="content-outer">
     <!-- start content -->
-    <div id="content">
 
         <!--  start page-heading -->
         <div id="page-heading">

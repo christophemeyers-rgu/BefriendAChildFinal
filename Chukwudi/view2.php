@@ -22,8 +22,8 @@
 <body>
 
 <div class="container">
-  <h2>List of Volunteers</h2>
-  <p>This is a list of all volunteers in the database</p>            
+  <h2>Submissionss</h2>
+  <p>List of submissions by <?php $_GET['vol_email']?></p>
   <table class="table table-striped">
     <thead>
       <tr>
@@ -41,7 +41,7 @@
         }
 
         $vol_email = $_GET['vol_email'];
-    echo $vol_email;
+
         $submissions = getUserSubmissions($vol_email);
 		
 		if(mysqli_num_rows($submissions)>0){

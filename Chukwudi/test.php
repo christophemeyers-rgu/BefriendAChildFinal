@@ -237,7 +237,6 @@ include 'functions.php';
 
 <!-- start content-outer ........................................................................................................................START -->
 <div class="container">
-    <h2>Survey</h2>
     <p>Survey details for <a href="view2.php?vol_email=<?php echo $_GET['vol_email']; ?>"><?php echo $_GET['event_date'];?></a></p>
     <table class="table table-striped">
         <thead>

@@ -63,11 +63,11 @@ h2{
 .container{
 
     max-width: 650px;
-    height: 650px;
+    height: 550px;
     position: absolute;
     left: 0;
     right: 0;
-    height: 50%;
+    top: 30%;
     margin-left: auto;
     margin-right: auto;
 }

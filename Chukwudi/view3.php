@@ -30,7 +30,7 @@
 
 <div class="container">
     <h2>Survey</h2>
-    <p>Survey details  <a href="view.php"><?php echo $_GET['event_description'];?></a></p>
+    <p>Survey details for <a href="view.php"><?php echo $_GET['event_date'];?></a></p>
     <table class="table table-striped">
         <thead>
         <tr>

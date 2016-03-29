@@ -240,9 +240,7 @@ include 'functions.php';
     <!-- start content -->
 
         <!--  start page-heading -->
-        <div id="page-heading">
             <div class="container">
-                <h2>Volunteers</h2>
                 <table class="table table-striped">
                     <thead>
                     <tr>
@@ -285,8 +283,6 @@ include 'functions.php';
                     ?>
                 </table>
             </div>
-
-    </div>
     <!--  end content -->
     <div class="clear">&nbsp;</div>
 </div>

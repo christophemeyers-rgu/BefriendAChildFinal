@@ -55,7 +55,7 @@ h2{
 .container{
 
     max-width: 650px;
-    height: 650px;
+    height: auto;
     position: absolute;
     left: 0;
     right: 0;

@@ -237,54 +237,52 @@ include 'functions.php';
 
 <!-- start content-outer ........................................................................................................................START -->
 <div class="container">
-    <p>Survey details for <a href="view2.php?vol_email=<?php echo $_GET['vol_email']; ?>"><?php echo $_GET['event_date'];?></a></p>
     <table class="table table-striped">
-        <thead>
-        <tr>
-            <th>ID</th>
-            <th>Question</th>
-            <th>Required answer</th>
-            <th>Optional answer</th>
-        </tr>
-        </thead>
-        <?php
-        include("db_connection.php");
+        <div class="clear">&nbsp;</div>
 
-        if($db->connect_errno){
-            die('Connectfailed['.$db->connect_error.']');
-        }
+        <div style="display: block;">
+            <table style="margin-left: auto; margin-right: auto;">
+                <thead>
+                <tr>
+                    <th class="table-style">Sr. #</th>
+                    <th class="table-style">Login Name</th>
+                    <th class="table-style">First Name</th>
+                    <th class="table-style">Surname</th>
+                </tr>
+                </thead>
+                    <?php
 
-        $event_date = $_GET['event_date'];
-        $vol_email = $_GET['vol_email'];
+                    $result = getAllRegisteredUsers();
 
-        $events = getEventDetails($event_date, $vol_email);
+                    if(mysqli_num_rows($result)>0)                                                {
 
-        if(mysqli_num_rows($events)>0){
-
-            $counter = 0;
-            while ($row= mysqli_fetch_array($events))
-            {
-                $counter++;
-
-                ?>
+                    $counter = 0;
+                    while ($row=  mysqli_fetch_array($result))
+                    {
+                    $counter++;
+                    ?>
                 <tbody>
                 <tr>
                     <td><?php echo $counter; ?></td>
-                    <td><a href=""><?php echo $row['question_text']; ?></a></td>
-                    <td><?php echo $row['answer_text_req']; ?></td>
-                    <td><?php echo $row['answer_text_opt']; ?></td>
+                    <td><?php echo $row['vol_email']; ?></td>
+                    <td><?php echo $row['vol_firstname']; ?></td>
+                    <td><?php echo $row['vol_surname']; ?></td>
+                    <td>
+                        <a href="edit-user.php?vol_email=<?php echo $row['vol_email']; ?>" style="color:green;">Edit</a>
+                        &nbsp;&nbsp;&nbsp;<a href="?vol_email=<?php echo $row['vol_email']; ?>" style="color:red;">Delete</a></td>
+
                 </tr>
                 </tbody>
                 <?php
 
-            }
-        }
-        else{
-            echo "No events for this user";
-        }
+                }//end of for loop
+                }//end if statement
+                ?>
 
-        ?>
-    </table>
+            </table>
+
+        </div>
+
 </div>
 <!--  end content-outer........................................................END -->
 

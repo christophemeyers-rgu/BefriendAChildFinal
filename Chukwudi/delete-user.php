@@ -186,11 +186,11 @@
                                                         $counter++;
                                             ?>
                                             <tr>
-                                                <td class="table-style"><?php echo $counter; ?></td>
-                                                <td class="table-style"><?php echo $row['vol_email']; ?></td>
-                                                <td class="table-style"><?php echo $row['vol_firstname']; ?></td>
-                                                <td class="table-style"><?php echo $row['vol_surname']; ?></td>
-                                                <td class="table-style">
+                                                <td><?php echo $counter; ?></td>
+                                                <td><?php echo $row['vol_email']; ?></td>
+                                                <td><?php echo $row['vol_firstname']; ?></td>
+                                                <td><?php echo $row['vol_surname']; ?></td>
+                                                <td>
                                                     <a href="edit-user.php?vol_email=<?php echo $row['vol_email']; ?>" style="color:green;">Edit</a>
                                                     &nbsp;&nbsp;&nbsp;<a href="?vol_email=<?php echo $row['vol_email']; ?>" style="color:red;">Delete</a></td>
                                                 

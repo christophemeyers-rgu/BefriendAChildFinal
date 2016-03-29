@@ -141,9 +141,10 @@ function getUserSubmissions($vol_email){
 
     $sql = "select * from submissions, volunteers where vol_email='$vol_email'";
     $mysqli = new mysqli(host, user, password, database);
-    $mysqli->query($sql);
+    $result = $mysqli->query($sql);
     $mysqli->close();
 
+    return $result;
 }
 
 function deleteUser($login_name) {

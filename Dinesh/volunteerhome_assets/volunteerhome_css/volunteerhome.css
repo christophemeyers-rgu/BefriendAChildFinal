@@ -6,7 +6,7 @@ header{
     margin-left: 100px;
     display: flex;
     position: absolute;
-    flex-direction: row;
+    flex-direction: column-reverse;
     justify-content: center;
 }
 

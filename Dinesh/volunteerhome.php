@@ -134,8 +134,6 @@ function get_volunteer_name($email){
             <h2> <a href="logoutvolunteer.php" id="logout"><input type="button" value="Logout"></a></h2>
         </section>
 
-
-
     </header>
     <!-- (END OF HEADER) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 

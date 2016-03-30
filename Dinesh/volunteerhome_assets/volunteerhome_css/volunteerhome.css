@@ -1,11 +1,8 @@
-
-
-.header{
-    max-width: 600px;
+header{
     display: flex;
-    flex-direction: row;
     justify-content: center;
 }
+
 
 h2{
     color: darkred;

@@ -23,7 +23,7 @@ header{
     /*Step 3: Text Styles*/
     color: rgba(0, 0, 0, 0.55);
     text-align: center;
-    font: bold 1em/25px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+    font: bold 1em/15px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 
     /*Step 4: Fancy CSS3 Styles*/
     background: -webkit-linear-gradient(top, #34696f, #2f5f63);

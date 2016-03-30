@@ -30,6 +30,8 @@ h2{
 
 .form{
     position: absolute;
+    max-width: inherit;
+    height: inherit;
 }
 
 #cont1 {

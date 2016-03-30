@@ -16,6 +16,8 @@ main{
 
 .main{
     position: absolute;
+    display: flex;
+    flex-direction: column;
 }
 
 .firstpage{

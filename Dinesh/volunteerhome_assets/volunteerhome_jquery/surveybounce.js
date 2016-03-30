@@ -121,6 +121,6 @@ $(function() {
     });
 
     $( "#progressbar" ).progressbar({
-        value: "Befriend A child Survey!"
+        value: 0
     });
 });

@@ -194,7 +194,7 @@ function get_volunteer_name($email){
 
 
             <!-- (START OF WELCOME PAGE) ---------------------------------------------------------------------- -->
-            <section class="main" id="welcomepage">
+            <section class="form" id="welcomepage">
 
                 <!-- Volunteer name is printed in the head -->
                 <!--function from above using the email pulled from the session-->

@@ -116,8 +116,6 @@ function get_volunteer_name($email){
 <body>
 
 
-
-
     <!-- (START OF HEADER) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <header>
 

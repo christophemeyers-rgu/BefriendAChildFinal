@@ -140,7 +140,7 @@ function get_volunteer_name($email){
     <main>
 
         <!-- (START OF WELCOME PAGE) ---------------------------------------------------------------------- -->
-        <section class="main">
+        <section class="main" id="main1">
 
             <!-- Volunteer name is printed in the head -->
             <section class="firstpage" id="firstpage_name">
@@ -174,7 +174,7 @@ function get_volunteer_name($email){
 
 
         <!-- (START OF SURVEY) ---------------------------------------------------------------------- -->
-        <form class="main" action="submitsurveyanswers.php" method="post" >
+        <form class="main" id="main2" action="submitsurveyanswers.php" method="post" >
 
 
             <!-- Survey Progression Bar -->

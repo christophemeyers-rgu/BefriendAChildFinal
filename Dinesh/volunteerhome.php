@@ -210,7 +210,7 @@ function get_volunteer_name($email){
                     <br><br>
                     Thank you.
                 </h4>
-                    <h2>====[To begin Survey enter the date of the outing]:====</h2>
+                    <h4>====[To begin Survey enter the date of the outing]:====</h4>
                     <br>
                 <fieldset>
                     <h3>

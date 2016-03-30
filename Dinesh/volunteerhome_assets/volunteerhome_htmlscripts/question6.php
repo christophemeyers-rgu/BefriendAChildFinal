@@ -17,7 +17,7 @@
     <input required type="radio" name="question6" value=false>NO
 <br>
 <br>
-    <label for="question6">Explain :(Optional</label>
+    <label for="question6">Explain :(Optional)</label>
 <br>
 <textarea name="question6_opt" cols="45" rows="5" placeholder="Explain why here"></textarea>
 <br>

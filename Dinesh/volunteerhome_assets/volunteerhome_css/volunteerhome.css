@@ -1,12 +1,4 @@
-#welcomepage{
-    height: auto;
-    margin-right: auto;
-    margin-left: auto;
-    background-color: aliceblue;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
+
 
 .header{
     display: flex;
@@ -27,6 +19,12 @@ h2{
     margin-left: auto;
     margin-right: auto;
 }
+
+#welcomepage{
+    background-color: aliceblue;
+}
+
+
 
 #cont1 {
     background: yellowgreen;

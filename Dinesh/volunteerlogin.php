@@ -25,7 +25,7 @@
 		if(volunteer_registered($email,$password)){		//see function below
 			session_start();
 			$_SESSION["vol_email"]=$email;		//session linked to volunteer's email
-			header("Location: volunteerhub.php");
+			header("Location: volunteerhome.php");
 		}
 		else{
 /*			show_volunteer_login();*/ //This is no longer necessary

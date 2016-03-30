@@ -201,7 +201,7 @@ function get_volunteer_name($email){
                 <h1>Welcome<br><?php get_volunteer_name($_SESSION['vol_email']);?> </h1>
 
                 <!-- Survey Instructions -->
-                <p>
+                <h4>
                     -There are 6 questions in total.
                     <br><br>
                     -A summary page at the end allows you to check your answers and change them if needed.
@@ -209,9 +209,11 @@ function get_volunteer_name($email){
                    - All questions indicated as "required" must be answered to be able submit the survey.
                     <br><br>
                     Thank you.
-                </p>
-                    <h2>====[To begin Survey enter the date of the outing]:=====</h2>
+                </h4>
+                <div>
+                    <h2>====[To begin Survey enter the date of the outing]:====</h2>
                     <br>
+                <fieldset>
                     <h3>
                     <br>
                     <label for="eventdate">Event Date</label>
@@ -220,6 +222,8 @@ function get_volunteer_name($email){
                 <br>
                 <br>
                     </h3>
+                </fieldset>
+                </div>
                 <br>
                 <!-- Start Survey Button -->
                 <input type="button" id="start" name="next" value="Start Survey">

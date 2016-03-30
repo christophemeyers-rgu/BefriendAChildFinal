@@ -9,7 +9,7 @@
 		session_start();
 		if(isset($_SESSION["vol_email"]))
 		{
-			header("Location: volunteerhub.php");	//sending to volunteerhub.php
+			header("Location: volunteerhome.php");	//sending to volunteerhub.php
 		}
 		/*else{
 			show_volunteer_login();

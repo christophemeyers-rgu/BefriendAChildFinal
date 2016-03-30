@@ -55,7 +55,7 @@
         date_default_timezone_set('Europe/London'); //sets the timezone to the local one
         $date="date'".date("Y-m-d")."'";    //fills the current date and time in a format that works with our database
 
-        $event_date_sql = "select * from submissions where event_date = date('Y-m-d')";
+        $event_date_sql = "select * from submissions where event_date = CURRENT_DATE )";
 
         $event_result = $db->query($event_date_sql) or die ("Error: ".$event_date_sql."<br>".$db->error);
 

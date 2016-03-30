@@ -139,37 +139,8 @@ function get_volunteer_name($email){
     <!-- (START OF MAIN) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <main>
 
-
-
-
         <!-- (START OF SURVEY) ---------------------------------------------------------------------- -->
         <form action="submitsurveyanswers.php" method="post" >
-
-
-            <!-- (START OF WELCOME PAGE) ---------------------------------------------------------------------- -->
-            <section class="form" id="welcomepage">
-
-                <!-- Volunteer name is printed in the head -->
-                    <!--function from above using the email pulled from the session-->
-                    <h1>Welcome<br><?php get_volunteer_name($_SESSION['vol_email']);?> </h1>
-
-                <!-- Survey Instructions -->
-                    <p>
-                    There are 7 questions in total.
-                    <br>
-                    A summary page at the end allows you to check your answers and change them if needed.
-                    <br>
-                    All questions indicated as "required" must be answered to be able submit the survey.
-                    <br>
-                    Thank you.
-                    </p>
-
-                <!-- Start Survey Button -->
-                <input type="button" id="start" name="next" value="Start Survey">
-
-            </section>
-            <!-- (END OF WELCOME PAGE) ---------------------------------------------------------------------- -->
-
 
 
             <!-- Survey Progression Bar -->
@@ -220,6 +191,31 @@ function get_volunteer_name($email){
             <section class="form" id="cont1">
                 <?php include("volunteerhome_assets/volunteerhome_htmlscripts/question1.php"); ?>
             </section>
+
+
+                <!-- (START OF WELCOME PAGE) ---------------------------------------------------------------------- -->
+                <section class="form" id="welcomepage">
+
+                    <!-- Volunteer name is printed in the head -->
+                    <!--function from above using the email pulled from the session-->
+                    <h1>Welcome<br><?php get_volunteer_name($_SESSION['vol_email']);?> </h1>
+
+                    <!-- Survey Instructions -->
+                    <p>
+                        There are 7 questions in total.
+                        <br>
+                        A summary page at the end allows you to check your answers and change them if needed.
+                        <br>
+                        All questions indicated as "required" must be answered to be able submit the survey.
+                        <br>
+                        Thank you.
+                    </p>
+
+                    <!-- Start Survey Button -->
+                    <input type="button" id="start" name="next" value="Start Survey">
+
+                </section>
+                <!-- (END OF WELCOME PAGE) ---------------------------------------------------------------------- -->
 
         </form>
         <!-- (END OF SURVEY) ---------------------------------------------------------------------- -->

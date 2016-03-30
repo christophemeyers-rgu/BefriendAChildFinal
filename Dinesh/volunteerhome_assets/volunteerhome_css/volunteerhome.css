@@ -1,7 +1,13 @@
+
+.header{
+    display: flex;
+    justify-content: center;
+}
+
+
 main{
     max-width: 600px;
     height: 500px;
-
     left: 0;
     right: 0;
     margin-left: auto;
@@ -11,23 +17,19 @@ main{
 .main{
     position: absolute;
 }
+
 .firstpage{
     display: flex;
     flex-direction: column;
 }
 
-.header{
-    display: flex;
-    justify-content: center;
-}
 
 h2{
     color: darkred;
 }
 
 .form{
-
-
+    position: absolute;
 }
 
 #cont1 {

@@ -27,4 +27,4 @@
 </fieldset>
 </div>
     <input type="button" id="previous2" name="previous" value="GO TO QUESTION 2">
-    <input type="button" id="next4" name="next" value="GO TO QUESTION 4">
+    <input class="next" type="button" id="next4" name="next" value="GO TO QUESTION 4">

@@ -63,6 +63,21 @@ h2{
     justify-content: center;
 }
 
+.next{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+
+
+
+
+
+
+
+
 .ui-progressbar {
     position: relative;
     max-width: 650px;

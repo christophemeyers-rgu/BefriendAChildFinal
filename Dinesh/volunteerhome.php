@@ -202,7 +202,7 @@ function get_volunteer_name($email){
 
                 <!-- Survey Instructions -->
                 <p>
-                    -There are 7 questions in total.
+                    -There are 6 questions in total.
                     <br><br>
                     -A summary page at the end allows you to check your answers and change them if needed.
                     <br><br>
@@ -211,8 +211,7 @@ function get_volunteer_name($email){
                     Thank you.
                 </p>
                 <div>
-                    <h2>==========[To begin Survey enter the date of the outing]:==============</h2>
-                    <br>
+                    <h2>====[To begin Survey enter the date of the outing]:====</h2>
                     <br>
                 <fieldset>
                     <h3>
@@ -225,16 +224,15 @@ function get_volunteer_name($email){
                     </h3>
                 </fieldset>
                 </div>
+                <br>
                 <!-- Start Survey Button -->
                 <input type="button" id="start" name="next" value="Start Survey">
 
             </section>
             <!-- (END OF WELCOME PAGE) ---------------------------------------------------------------------- -->
 
-
         </form>
         <!-- (END OF SURVEY) ---------------------------------------------------------------------- -->
-
 
 
     </main>

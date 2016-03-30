@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="03ada858-a974-4529-89ae-934025c2ff8a" name="Default" comment="">
+    <list default="true" id="03ada858-a974-4529-89ae-934025c2ff8a" name="Default" comment="Dinesh 29/03/16 Volunteer page styling">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Dinesh/volunteerhome.php" afterPath="$PROJECT_DIR$/Dinesh/volunteerhome.php" />
     </list>
@@ -28,12 +28,12 @@
       <file leaf-file-name="volunteerhome.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Dinesh/volunteerhome.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.37046">
-              <caret line="226" column="16" selection-start-line="226" selection-start-column="16" selection-end-line="226" selection-end-column="16" />
+            <state vertical-scroll-proportion="0.21791768">
+              <caret line="214" column="24" selection-start-line="214" selection-start-column="24" selection-end-line="214" selection-end-column="24" />
               <folding>
-                <marker date="1459343407311" expanded="true" signature="669:743" placeholder="SELECT vol_f... volunteers" />
-                <marker date="1459343407311" expanded="true" signature="1367:1427" placeholder="SELECT quest... questions" />
-                <marker date="1459343407311" expanded="true" signature="1862:1923" placeholder="SELECT quest... questions" />
+                <marker date="1459343633438" expanded="true" signature="669:743" placeholder="SELECT vol_f... volunteers" />
+                <marker date="1459343633438" expanded="true" signature="1367:1427" placeholder="SELECT quest... questions" />
+                <marker date="1459343633438" expanded="true" signature="1862:1923" placeholder="SELECT quest... questions" />
               </folding>
             </state>
           </provider>
@@ -300,12 +300,6 @@
       <created>1459137174417</created>
       <option name="number" value="Default" />
       <updated>1459137174417</updated>
-    </task>
-    <task id="LOCAL-00042" summary="Dinesh 29/03/16 Volunteer page styling">
-      <created>1459294968670</created>
-      <option name="number" value="00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1459294968670</updated>
     </task>
     <task id="LOCAL-00043" summary="Dinesh 29/03/16 Volunteer page styling">
       <created>1459295118512</created>
@@ -595,7 +589,13 @@
       <option name="project" value="LOCAL" />
       <updated>1459342552712</updated>
     </task>
-    <option name="localTasksCounter" value="91" />
+    <task id="LOCAL-00091" summary="Dinesh 29/03/16 Volunteer page styling">
+      <created>1459343425161</created>
+      <option name="number" value="00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1459343425161</updated>
+    </task>
+    <option name="localTasksCounter" value="92" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -921,12 +921,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Dinesh/volunteerhome.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.37046">
-          <caret line="226" column="16" selection-start-line="226" selection-start-column="16" selection-end-line="226" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.21791768">
+          <caret line="214" column="24" selection-start-line="214" selection-start-column="24" selection-end-line="214" selection-end-column="24" />
           <folding>
-            <marker date="1459343407311" expanded="true" signature="669:743" placeholder="SELECT vol_f... volunteers" />
-            <marker date="1459343407311" expanded="true" signature="1367:1427" placeholder="SELECT quest... questions" />
-            <marker date="1459343407311" expanded="true" signature="1862:1923" placeholder="SELECT quest... questions" />
+            <marker date="1459343633438" expanded="true" signature="669:743" placeholder="SELECT vol_f... volunteers" />
+            <marker date="1459343633438" expanded="true" signature="1367:1427" placeholder="SELECT quest... questions" />
+            <marker date="1459343633438" expanded="true" signature="1862:1923" placeholder="SELECT quest... questions" />
           </folding>
         </state>
       </provider>

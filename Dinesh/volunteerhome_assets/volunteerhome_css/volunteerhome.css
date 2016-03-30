@@ -10,6 +10,7 @@ header{
 }
 
 #home{
+    display: block;
     width: 67px;
     height: 40px;
     background-color: #33FF00;

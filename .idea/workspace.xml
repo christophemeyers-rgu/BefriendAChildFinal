@@ -43,7 +43,7 @@
         <entry file="file://$PROJECT_DIR$/Dinesh/volunteerhome_assets/volunteerhome_css/volunteerhome.css">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.5762712">
-              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+              <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -234,12 +234,6 @@
       <created>1459137174417</created>
       <option name="number" value="Default" />
       <updated>1459137174417</updated>
-    </task>
-    <task id="LOCAL-00102" summary="Dinesh 29/03/16 Volunteer page styling">
-      <created>1459345877438</created>
-      <option name="number" value="00102" />
-      <option name="project" value="LOCAL" />
-      <updated>1459345877438</updated>
     </task>
     <task id="LOCAL-00103" summary="Dinesh 29/03/16 Volunteer page styling">
       <created>1459346113351</created>
@@ -529,7 +523,13 @@
       <option name="project" value="LOCAL" />
       <updated>1459362690617</updated>
     </task>
-    <option name="localTasksCounter" value="151" />
+    <task id="LOCAL-00151" summary="Dinesh 30/03/16 Volunteer page complete functionalities and structure">
+      <created>1459362787204</created>
+      <option name="number" value="00151" />
+      <option name="project" value="LOCAL" />
+      <updated>1459362787204</updated>
+    </task>
+    <option name="localTasksCounter" value="152" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1081,7 +1081,7 @@
     <entry file="file://$PROJECT_DIR$/Dinesh/volunteerhome_assets/volunteerhome_css/volunteerhome.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5762712">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
           <folding />
         </state>
       </provider>

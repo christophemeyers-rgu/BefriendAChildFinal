@@ -125,7 +125,7 @@ function get_volunteer_name($email){
             <h1><?php get_volunteer_name($_SESSION['vol_email']);?> </h1>
         </section>
 
-
+        <br><br><br>
 
         <!-- Logout Button -->
         <section class="header" id="logout">

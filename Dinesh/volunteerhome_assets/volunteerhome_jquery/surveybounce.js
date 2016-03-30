@@ -124,3 +124,9 @@ $(function() {
         value: 0
     });
 });
+
+//============================================================ Date picker
+
+$(function() {
+    $( "#datepicker" ).datepicker();
+});

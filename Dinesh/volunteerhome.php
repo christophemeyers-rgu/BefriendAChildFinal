@@ -218,7 +218,7 @@ function get_volunteer_name($email){
                     <br>
                     <label for="eventdate">Event Date</label>
                 <br>
-                    <input type="date" name="eventdate">
+                    <input type="text" id="datepicker" name="eventdate">
                 <br>
                 <br>
                     </h3>

@@ -121,6 +121,6 @@ $(function() {
     });
 
     $( "#progressbar" ).progressbar({
-        value: 5
+        value: 0
     });
 });

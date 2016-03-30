@@ -52,8 +52,8 @@
       <file leaf-file-name="surveybounce.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Dinesh/volunteerhome_assets/volunteerhome_jquery/surveybounce.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7289294">
-              <caret line="123" column="16" selection-start-line="123" selection-start-column="16" selection-end-line="123" selection-end-column="16" />
+            <state vertical-scroll-proportion="-1.2072893">
+              <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -289,12 +289,6 @@
       <created>1459137174417</created>
       <option name="number" value="Default" />
       <updated>1459137174417</updated>
-    </task>
-    <task id="LOCAL-00038" summary="Dinesh 29/03/16 Volunteer page styling">
-      <created>1459292430997</created>
-      <option name="number" value="00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1459292430997</updated>
     </task>
     <task id="LOCAL-00039" summary="Dinesh 29/03/16 Volunteer page styling">
       <created>1459292540885</created>
@@ -584,7 +578,13 @@
       <option name="project" value="LOCAL" />
       <updated>1459340882638</updated>
     </task>
-    <option name="localTasksCounter" value="87" />
+    <task id="LOCAL-00087" summary="Dinesh 29/03/16 Volunteer page styling">
+      <created>1459340996726</created>
+      <option name="number" value="00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1459340996726</updated>
+    </task>
+    <option name="localTasksCounter" value="88" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -876,8 +876,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Dinesh/volunteerhome_assets/volunteerhome_jquery/surveybounce.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7289294">
-          <caret line="123" column="16" selection-start-line="123" selection-start-column="16" selection-end-line="123" selection-end-column="16" />
+        <state vertical-scroll-proportion="-1.2072893">
+          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
           <folding />
         </state>
       </provider>

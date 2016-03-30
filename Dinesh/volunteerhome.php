@@ -154,6 +154,7 @@ function get_volunteer_name($email){
                     <h1>Welcome<br><?php get_volunteer_name($_SESSION['vol_email']);?> </h1>
 
                 <!-- Survey Instructions -->
+                    <p>
                     There are 7 questions in total.
                     <br>
                     A summary page at the end allows you to check your answers and change them if needed.
@@ -161,6 +162,7 @@ function get_volunteer_name($email){
                     All questions indicated as "required" must be answered to be able submit the survey.
                     <br>
                     Thank you.
+                    </p>
 
                 <!-- Start Survey Button -->
                 <input type="button" id="start" name="next" value="Start Survey">

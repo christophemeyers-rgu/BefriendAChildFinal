@@ -63,7 +63,7 @@ h2{
     justify-content: center;
 }
 
-.nav{
+.h5{
     max-width: 600px;
     height: auto;
     left: 0;
@@ -72,7 +72,6 @@ h2{
     margin-right: auto;
     display: flex;
     justify-content: space-between;
-
 }
 
 .ui-progressbar {

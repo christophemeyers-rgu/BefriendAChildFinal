@@ -9,7 +9,7 @@ main{
 }
 
 .main{
-
+    position: absolute;
 }
 .firstpage{
     display: flex;

@@ -18,4 +18,4 @@
     </h3>
 </fieldset>
 </div>
-    <input class="next" type="button" id="next2" name="next" value="GO TO QUESTION 2">
+    <input type="button" id="next2" name="next" value="GO TO QUESTION 2">

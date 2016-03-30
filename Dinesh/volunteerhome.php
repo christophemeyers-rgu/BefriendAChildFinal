@@ -140,7 +140,7 @@ function get_volunteer_name($email){
     <main>
 
         <!-- (START OF SURVEY) ---------------------------------------------------------------------- -->
-        <form action="submitsurveyanswers.php" method="post" >
+        <form class="main" id="surveyform" action="submitsurveyanswers.php" method="post" >
 
 
             <!-- Survey Progression Bar -->
@@ -192,9 +192,11 @@ function get_volunteer_name($email){
                 <?php include("volunteerhome_assets/volunteerhome_htmlscripts/question1.php"); ?>
             </section>
 
+        </form>
+        <!-- (END OF SURVEY) ---------------------------------------------------------------------- -->
 
                 <!-- (START OF WELCOME PAGE) ---------------------------------------------------------------------- -->
-                <section class="form" id="welcomepage">
+                <section class="main" id="welcomepage">
 
                     <!-- Volunteer name is printed in the head -->
                     <!--function from above using the email pulled from the session-->
@@ -217,8 +219,7 @@ function get_volunteer_name($email){
                 </section>
                 <!-- (END OF WELCOME PAGE) ---------------------------------------------------------------------- -->
 
-        </form>
-        <!-- (END OF SURVEY) ---------------------------------------------------------------------- -->
+
 
     </main>
     <!-- (END OF MAIN) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->

@@ -1,14 +1,16 @@
 main{
     max-width: 600px;
     height: 500px;
-    position: absolute;
+
     left: 0;
     right: 0;
     margin-left: auto;
     margin-right: auto;
 }
 
+.main{
 
+}
 .firstpage{
     display: flex;
     flex-direction: column;

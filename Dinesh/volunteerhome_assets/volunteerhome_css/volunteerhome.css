@@ -3,6 +3,9 @@ header{
     justify-content: center;
 }
 
+.header{
+    flex-grow: 1;
+}
 
 h2{
     color: darkred;

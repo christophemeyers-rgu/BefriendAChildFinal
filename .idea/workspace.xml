@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="03ada858-a974-4529-89ae-934025c2ff8a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Dinesh/volunteerhome.php" afterPath="$PROJECT_DIR$/Dinesh/volunteerhome.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Dinesh/volunteerhome_assets/volunteerhome_css/volunteerhome.css" afterPath="$PROJECT_DIR$/Dinesh/volunteerhome_assets/volunteerhome_css/volunteerhome.css" />
     </list>
     <ignored path="BefriendAChildTestSurvey.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,25 +25,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="volunteerhome.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="volunteerhome.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Dinesh/volunteerhome.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.535109">
-              <caret line="128" column="8" selection-start-line="128" selection-start-column="8" selection-end-line="128" selection-end-column="8" />
+            <state vertical-scroll-proportion="-8.5">
+              <caret line="128" column="0" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
               <folding>
-                <marker date="1459349477947" expanded="true" signature="669:743" placeholder="SELECT vol_f... volunteers" />
-                <marker date="1459349477947" expanded="true" signature="1367:1427" placeholder="SELECT quest... questions" />
-                <marker date="1459349477947" expanded="true" signature="1862:1923" placeholder="SELECT quest... questions" />
+                <marker date="1459349484347" expanded="true" signature="669:743" placeholder="SELECT vol_f... volunteers" />
+                <marker date="1459349484347" expanded="true" signature="1367:1427" placeholder="SELECT quest... questions" />
+                <marker date="1459349484347" expanded="true" signature="1862:1923" placeholder="SELECT quest... questions" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="volunteerhome.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="volunteerhome.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Dinesh/volunteerhome_assets/volunteerhome_css/volunteerhome.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.1923075">
-              <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+            <state vertical-scroll-proportion="0.1646489">
+              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -80,8 +80,8 @@
         <option value="$PROJECT_DIR$/Dinesh/volunteerhome_assets/volunteerhome_htmlscripts/question4.php" />
         <option value="$PROJECT_DIR$/Dinesh/volunteerhome_assets/volunteerhome_htmlscripts/question5.php" />
         <option value="$PROJECT_DIR$/Dinesh/volunteerhome_assets/volunteerhome_htmlscripts/question6.php" />
-        <option value="$PROJECT_DIR$/Dinesh/volunteerhome_assets/volunteerhome_css/volunteerhome.css" />
         <option value="$PROJECT_DIR$/Dinesh/volunteerhome.php" />
+        <option value="$PROJECT_DIR$/Dinesh/volunteerhome_assets/volunteerhome_css/volunteerhome.css" />
       </list>
     </option>
   </component>
@@ -264,12 +264,6 @@
       <created>1459137174417</created>
       <option name="number" value="Default" />
       <updated>1459137174417</updated>
-    </task>
-    <task id="LOCAL-00072" summary="Dinesh 29/03/16 Volunteer page styling">
-      <created>1459338146950</created>
-      <option name="number" value="00072" />
-      <option name="project" value="LOCAL" />
-      <updated>1459338146950</updated>
     </task>
     <task id="LOCAL-00073" summary="Dinesh 29/03/16 Volunteer page styling">
       <created>1459338290273</created>
@@ -559,7 +553,13 @@
       <option name="project" value="LOCAL" />
       <updated>1459349387748</updated>
     </task>
-    <option name="localTasksCounter" value="121" />
+    <task id="LOCAL-00121" summary="Dinesh 29/03/16 Volunteer page styling">
+      <created>1459349494444</created>
+      <option name="number" value="00121" />
+      <option name="project" value="LOCAL" />
+      <updated>1459349494444</updated>
+    </task>
+    <option name="localTasksCounter" value="122" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -875,23 +875,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Dinesh/volunteerhome_assets/volunteerhome_css/volunteerhome.css">
+    <entry file="file://$PROJECT_DIR$/Dinesh/volunteerhome.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.1923075">
-          <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
-          <folding />
+        <state vertical-scroll-proportion="-8.5">
+          <caret line="128" column="0" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
+          <folding>
+            <marker date="1459349484347" expanded="true" signature="669:743" placeholder="SELECT vol_f... volunteers" />
+            <marker date="1459349484347" expanded="true" signature="1367:1427" placeholder="SELECT quest... questions" />
+            <marker date="1459349484347" expanded="true" signature="1862:1923" placeholder="SELECT quest... questions" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Dinesh/volunteerhome.php">
+    <entry file="file://$PROJECT_DIR$/Dinesh/volunteerhome_assets/volunteerhome_css/volunteerhome.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.535109">
-          <caret line="128" column="8" selection-start-line="128" selection-start-column="8" selection-end-line="128" selection-end-column="8" />
-          <folding>
-            <marker date="1459349477947" expanded="true" signature="669:743" placeholder="SELECT vol_f... volunteers" />
-            <marker date="1459349477947" expanded="true" signature="1367:1427" placeholder="SELECT quest... questions" />
-            <marker date="1459349477947" expanded="true" signature="1862:1923" placeholder="SELECT quest... questions" />
-          </folding>
+        <state vertical-scroll-proportion="0.1646489">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

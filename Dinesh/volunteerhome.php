@@ -115,10 +115,34 @@ function get_volunteer_name($email){
 <!-- - [START OF BODY] ============================================================================================= -->
 <body>
 
+
+
+
+    <!-- (START OF HEADER) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <header>
+
+        <!-- Volunteer name is printed in the head -->
+        <section class="header" id="name">
+            <!--function from above using the email pulled from the session-->
+            <h1>Welcome<br><?php get_volunteer_name($_SESSION['vol_email']);?> </h1>
+        </section>
+
+        <!-- Logout Button -->
+        <section class="header" id="logout">
+            <h2> <a href="logoutvolunteer.php" id="logout"><input type="button" value="Logout"></a></h2>
+        </section>
+
+    </header>
+    <!-- (END OF HEADER) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+
+    <!-- (START OF MAIN) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <main>
+
         <!-- Volunteer name is printed in the head -->
         <section class="firstpage" id="firstpage_name">
-        <!--function from above using the email pulled from the session-->
-        <h1>Welcome<br><?php get_volunteer_name($_SESSION['vol_email']);?> </h1>
+            <!--function from above using the email pulled from the session-->
+            <h1>Welcome<br><?php get_volunteer_name($_SESSION['vol_email']);?> </h1>
         </section>
 
         <!-- Survey Instructions -->
@@ -142,27 +166,6 @@ function get_volunteer_name($email){
             <h2> <a href="logoutvolunteer.php" id="logout"><input type="button" value="Logout"></a></h2>
         </section>
 
-
-    <!-- (START OF HEADER) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-    <header>
-
-        <!-- Volunteer name is printed in the head -->
-        <section class="header" id="name">
-            <!--function from above using the email pulled from the session-->
-            <h1>Welcome<br><?php get_volunteer_name($_SESSION['vol_email']);?> </h1>
-        </section>
-
-        <!-- Logout Button -->
-        <section class="header" id="logout">
-            <h2> <a href="logoutvolunteer.php" id="logout"><input type="button" value="Logout"></a></h2>
-        </section>
-
-    </header>
-    <!-- (END OF HEADER) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-
-    <!-- (START OF MAIN) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-    <main>
 
         <!-- (START OF SURVEY) ---------------------------------------------------------------------- -->
         <form action="submitsurveyanswers.php" method="post" >

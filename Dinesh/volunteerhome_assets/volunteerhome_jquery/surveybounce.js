@@ -3,6 +3,11 @@
 //============================================================ Next buttons
 
 
+$( "#start" ).click(function() {
+    $( "#welcomepage" ).toggle( "fade", 1000 );
+
+});
+
 $( "#next2" ).click(function() {
     $( "#cont1" ).toggle( "explode", 1000 );
 

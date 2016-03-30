@@ -153,7 +153,6 @@ function get_volunteer_name($email){
                     <!--function from above using the email pulled from the session-->
                     <h1>Welcome<br><?php get_volunteer_name($_SESSION['vol_email']);?> </h1>
 
-
                 <!-- Survey Instructions -->
                     There are 7 questions in total.
                     <br>
@@ -163,16 +162,8 @@ function get_volunteer_name($email){
                     <br>
                     Thank you.
 
-            </section>
-
-            <!-- Start Survey Button -->
-            <section class="firstpage" id="firstpage_start">
-                <h2><a href="volunteerhome.php"> <input type="button" value="Start survey"></a></h2>
-            </section>
-
-            <!-- Logout Button -->
-            <section class="firstpage" id="firstpage_logout">
-                <h2> <a href="logoutvolunteer.php" id="logout"><input type="button" value="Logout"></a></h2>
+                <!-- Start Survey Button -->
+                <input type="button" id="start" name="next" value="Start Survey">
 
             </section>
             <!-- (END OF WELCOME PAGE) ---------------------------------------------------------------------- -->

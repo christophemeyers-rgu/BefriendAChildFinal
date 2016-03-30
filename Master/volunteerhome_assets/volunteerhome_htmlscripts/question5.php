@@ -25,5 +25,7 @@
     </h3>
 </fieldset>
 </div>
-    <input type="button" id="previous4" name="previous" value="GO TO QUESTION 4">
-    <input type="button" id="next6" name="next" value="GO TO QUESTION 6">
+<h5>
+    <input class="navbuttons" type="button" id="previous4" name="previous" value="GO TO QUESTION 4">
+    <input class="navbuttons" type="button" id="next6" name="next" value="GO TO QUESTION 6">
+</h5>

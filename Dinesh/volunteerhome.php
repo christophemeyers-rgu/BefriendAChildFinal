@@ -145,7 +145,7 @@ function get_volunteer_name($email){
 
             <!-- Survey Progression Bar -->
             <section class="form" id="surveybar">
-            <section id="progressbar"><section class="progress-label">Befriend</section>
+            <section id="progressbar"><section class="progress-label"></section>
             </section>
 
 

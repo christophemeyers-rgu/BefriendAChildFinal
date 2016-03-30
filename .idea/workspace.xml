@@ -26,15 +26,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="volunteerhome.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="volunteerhome.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Dinesh/volunteerhome.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5883777">
-              <caret line="147" column="72" selection-start-line="147" selection-start-column="72" selection-end-line="147" selection-end-column="72" />
+            <state vertical-scroll-proportion="-7.3846154">
+              <caret line="147" column="70" selection-start-line="147" selection-start-column="70" selection-end-line="147" selection-end-column="70" />
               <folding>
-                <marker date="1459340670937" expanded="true" signature="669:743" placeholder="SELECT vol_f... volunteers" />
-                <marker date="1459340670937" expanded="true" signature="1367:1427" placeholder="SELECT quest... questions" />
-                <marker date="1459340670937" expanded="true" signature="1862:1923" placeholder="SELECT quest... questions" />
+                <marker date="1459340864373" expanded="true" signature="669:743" placeholder="SELECT vol_f... volunteers" />
+                <marker date="1459340864373" expanded="true" signature="1367:1427" placeholder="SELECT quest... questions" />
+                <marker date="1459340864373" expanded="true" signature="1862:1923" placeholder="SELECT quest... questions" />
               </folding>
             </state>
           </provider>
@@ -50,11 +50,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="surveybounce.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="surveybounce.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Dinesh/volunteerhome_assets/volunteerhome_jquery/surveybounce.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+            <state vertical-scroll-proportion="0.3029613">
+              <caret line="113" column="16" selection-start-line="113" selection-start-column="16" selection-end-line="113" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -85,8 +85,8 @@
         <option value="$PROJECT_DIR$/Chukwudi/test.php" />
         <option value="$PROJECT_DIR$/Chukwudi/delete-user.php" />
         <option value="$PROJECT_DIR$/Dinesh/volunteerhome_assets/volunteerhome_css/volunteerhome.css" />
-        <option value="$PROJECT_DIR$/Dinesh/volunteerhome_assets/volunteerhome_jquery/surveybounce.js" />
         <option value="$PROJECT_DIR$/Dinesh/volunteerhome.php" />
+        <option value="$PROJECT_DIR$/Dinesh/volunteerhome_assets/volunteerhome_jquery/surveybounce.js" />
       </list>
     </option>
   </component>
@@ -290,12 +290,6 @@
       <created>1459137174417</created>
       <option name="number" value="Default" />
       <updated>1459137174417</updated>
-    </task>
-    <task id="LOCAL-00036" summary="Dinesh 29/03/16 Volunteer page styling">
-      <created>1459292246962</created>
-      <option name="number" value="00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1459292246962</updated>
     </task>
     <task id="LOCAL-00037" summary="Dinesh 29/03/16 Volunteer page styling">
       <created>1459292406487</created>
@@ -585,7 +579,13 @@
       <option name="project" value="LOCAL" />
       <updated>1459340545583</updated>
     </task>
-    <option name="localTasksCounter" value="85" />
+    <task id="LOCAL-00085" summary="Dinesh 29/03/16 Volunteer page styling">
+      <created>1459340690175</created>
+      <option name="number" value="00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1459340690175</updated>
+    </task>
+    <option name="localTasksCounter" value="86" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -855,14 +855,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Dinesh/volunteerhome_assets/volunteerhome_jquery/surveybounce.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Dinesh/volunteerhome_assets/volunteerhome_css/volunteerhome.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-40.53846">
@@ -873,13 +865,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Dinesh/volunteerhome.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5883777">
-          <caret line="147" column="72" selection-start-line="147" selection-start-column="72" selection-end-line="147" selection-end-column="72" />
+        <state vertical-scroll-proportion="-7.3846154">
+          <caret line="147" column="70" selection-start-line="147" selection-start-column="70" selection-end-line="147" selection-end-column="70" />
           <folding>
-            <marker date="1459340670937" expanded="true" signature="669:743" placeholder="SELECT vol_f... volunteers" />
-            <marker date="1459340670937" expanded="true" signature="1367:1427" placeholder="SELECT quest... questions" />
-            <marker date="1459340670937" expanded="true" signature="1862:1923" placeholder="SELECT quest... questions" />
+            <marker date="1459340864373" expanded="true" signature="669:743" placeholder="SELECT vol_f... volunteers" />
+            <marker date="1459340864373" expanded="true" signature="1367:1427" placeholder="SELECT quest... questions" />
+            <marker date="1459340864373" expanded="true" signature="1862:1923" placeholder="SELECT quest... questions" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dinesh/volunteerhome_assets/volunteerhome_jquery/surveybounce.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3029613">
+          <caret line="113" column="16" selection-start-line="113" selection-start-column="16" selection-end-line="113" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>

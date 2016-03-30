@@ -192,32 +192,39 @@ function get_volunteer_name($email){
                 <?php include("volunteerhome_assets/volunteerhome_htmlscripts/question1.php"); ?>
             </section>
 
+
+            <!-- (START OF WELCOME PAGE) ---------------------------------------------------------------------- -->
+            <section class="form" id="welcomepage">
+
+                <!-- Volunteer name is printed in the head -->
+                <!--function from above using the email pulled from the session-->
+                <h1>Welcome<br><?php get_volunteer_name($_SESSION['vol_email']);?> </h1>
+
+                <!-- Survey Instructions -->
+                <p>
+                    -There are 7 questions in total.
+                    <br><br>
+                    -A summary page at the end allows you to check your answers and change them if needed.
+                    <br><br>
+                   - All questions indicated as "required" must be answered to be able submit the survey.
+                    <br><br>
+                    Thank you.
+                </p>
+
+                <label for="eventdate" To begin Survey enter the date of the outing></label>
+                <input type="date" name="eventdate">
+
+                <!-- Start Survey Button -->
+                <input type="button" id="start" name="next" value="Start Survey">
+
+            </section>
+            <!-- (END OF WELCOME PAGE) ---------------------------------------------------------------------- -->
+
+
         </form>
         <!-- (END OF SURVEY) ---------------------------------------------------------------------- -->
 
-                <!-- (START OF WELCOME PAGE) ---------------------------------------------------------------------- -->
-                <section class="main" id="welcomepage">
 
-                    <!-- Volunteer name is printed in the head -->
-                    <!--function from above using the email pulled from the session-->
-                    <h1>Welcome<br><?php get_volunteer_name($_SESSION['vol_email']);?> </h1>
-
-                    <!-- Survey Instructions -->
-                    <p>
-                        There are 7 questions in total.
-                        <br>
-                        A summary page at the end allows you to check your answers and change them if needed.
-                        <br>
-                        All questions indicated as "required" must be answered to be able submit the survey.
-                        <br>
-                        Thank you.
-                    </p>
-
-                    <!-- Start Survey Button -->
-                    <input type="button" id="start" name="next" value="Start Survey">
-
-                </section>
-                <!-- (END OF WELCOME PAGE) ---------------------------------------------------------------------- -->
 
     </main>
     <!-- (END OF MAIN) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->

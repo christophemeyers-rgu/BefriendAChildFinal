@@ -1,40 +1,34 @@
-
-.header{
-    display: flex;
-    justify-content: center;
-}
-
-
-main{
+.firstpage{
+    position: absolute;
+    background-color: white;
     max-width: 600px;
     height: 500px;
     left: 0;
     right: 0;
     margin-left: auto;
     margin-right: auto;
-}
-
-.main{
-    position: absolute;
     display: flex;
     flex-direction: column;
+}
+
+.header{
+    display: flex;
     justify-content: center;
 }
-
-.firstpage{
-    display: flex;
-    flex-direction: column;
-}
-
 
 h2{
     color: darkred;
 }
 
 .form{
-    position: absolute;
+
     max-width: 600px;
     height: 500px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #cont1 {

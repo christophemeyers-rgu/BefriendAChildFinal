@@ -210,10 +210,21 @@ function get_volunteer_name($email){
                     <br><br>
                     Thank you.
                 </p>
-
-                <label for="eventdate" To begin Survey enter the date of the outing></label>
-                <input type="date" name="eventdate">
-
+                <div>
+                    <h2>==========[To begin Survey enter the date of the outing]:==============</h2>
+                    <br>
+                    <br>
+                <fieldset>
+                    <h3>
+                    <br>
+                    <label for="eventdate">Event Date</label>
+                <br>
+                    <input type="date" name="eventdate">
+                <br>
+                <br>
+                    </h3>
+                </fieldset>
+                </div>
                 <!-- Start Survey Button -->
                 <input type="button" id="start" name="next" value="Start Survey">
 

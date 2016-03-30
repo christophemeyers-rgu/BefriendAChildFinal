@@ -128,5 +128,5 @@ $(function() {
 //============================================================ Date picker
 
 $(function() {
-    $( "#datepicker" ).datepicker();
+    $( ".eventdate" ).datepicker();
 });

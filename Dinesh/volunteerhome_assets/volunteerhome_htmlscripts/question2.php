@@ -18,5 +18,7 @@
     </h3>
 </fieldset>
 </div>
+<section class="navbuttons">
     <input type="button" id="previous1" name="previous" value="GO TO QUESTION 1">
     <input class="next" type="button" id="next3" name="next" value="GO TO QUESTION 3">
+</section>

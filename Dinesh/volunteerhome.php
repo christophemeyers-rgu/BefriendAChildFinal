@@ -217,7 +217,7 @@ function get_volunteer_name($email){
                 <h2>======[To begin survey enter the date of outing]:======</h2>
                 <fieldset>
                 <label for="eventdate">Enter date (mm/dd/yy)</label>
-                <input type="date" name="eventdate">
+                <input required type="date" name="eventdate">
                 </fieldset>
                 </div>
                 <br>

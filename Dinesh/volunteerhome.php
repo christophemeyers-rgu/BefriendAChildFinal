@@ -206,7 +206,7 @@ function get_volunteer_name($email){
                     <br><br>
                     -A summary page at the end allows you to check your answers and change them if needed.
                     <br><br>
-                   - All questions indicated as "required" must be answered to be able submit the survey.
+                   - All questions indicated as "required" must be answered to be able to submit the survey.
                     <br><br>
                     Thank you.
                 </h4>

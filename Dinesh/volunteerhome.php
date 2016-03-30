@@ -202,7 +202,7 @@ function get_volunteer_name($email){
 
                 <!-- Survey Instructions -->
                 <h4>
-                    -There are 7 questions in total.
+                    -There are 6 questions in total.
                     <br><br>
                     -A summary page at the end allows you to check your answers and change them if needed.
                     <br><br>

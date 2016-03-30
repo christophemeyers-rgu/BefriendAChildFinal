@@ -1,6 +1,6 @@
 <!-- Volunteer name is printed in the head -->
 <!--function from above using the email pulled from the session-->
-<h1>Welcome<br><?php get_volunteer_name($_SESSION['vol_email']);?> </h1>
+<h1>Welcome <?php get_volunteer_name($_SESSION['vol_email']);?> </h1>
 
 <!-- Survey Instructions -->
 <h4>

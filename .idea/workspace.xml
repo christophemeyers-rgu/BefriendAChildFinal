@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="03ada858-a974-4529-89ae-934025c2ff8a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Dinesh/volunteerhome_assets/volunteerhome_htmlscripts/question1.php" afterPath="$PROJECT_DIR$/Dinesh/volunteerhome_assets/volunteerhome_htmlscripts/question1.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Dinesh/volunteerhome_assets/volunteerhome_css/volunteerhome.css" afterPath="$PROJECT_DIR$/Dinesh/volunteerhome_assets/volunteerhome_css/volunteerhome.css" />
     </list>
     <ignored path="BefriendAChildTestSurvey.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,21 +39,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="question1.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="question1.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Dinesh/volunteerhome_assets/volunteerhome_htmlscripts/question1.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7409201">
+            <state vertical-scroll-proportion="-11.769231">
               <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="volunteerhome.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="question2.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Dinesh/volunteerhome_assets/volunteerhome_htmlscripts/question2.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-13.115385">
+              <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="volunteerhome.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Dinesh/volunteerhome_assets/volunteerhome_css/volunteerhome.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.0">
-              <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.46489105">
+              <caret line="65" column="1" selection-start-line="65" selection-start-column="1" selection-end-line="65" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -95,8 +105,8 @@
         <option value="$PROJECT_DIR$/Dinesh/volunteerhome_assets/volunteerhome_htmlscripts/question4.php" />
         <option value="$PROJECT_DIR$/Dinesh/volunteerhome_assets/volunteerhome_htmlscripts/question5.php" />
         <option value="$PROJECT_DIR$/Dinesh/volunteerhome_assets/volunteerhome_htmlscripts/question6.php" />
-        <option value="$PROJECT_DIR$/Dinesh/volunteerhome_assets/volunteerhome_css/volunteerhome.css" />
         <option value="$PROJECT_DIR$/Dinesh/volunteerhome_assets/volunteerhome_htmlscripts/question1.php" />
+        <option value="$PROJECT_DIR$/Dinesh/volunteerhome_assets/volunteerhome_css/volunteerhome.css" />
       </list>
     </option>
   </component>
@@ -287,12 +297,6 @@
       <created>1459137174417</created>
       <option name="number" value="Default" />
       <updated>1459137174417</updated>
-    </task>
-    <task id="LOCAL-00113" summary="Dinesh 29/03/16 Volunteer page styling">
-      <created>1459347944493</created>
-      <option name="number" value="00113" />
-      <option name="project" value="LOCAL" />
-      <updated>1459347944493</updated>
     </task>
     <task id="LOCAL-00114" summary="Dinesh 29/03/16 Volunteer page styling">
       <created>1459348097730</created>
@@ -582,7 +586,13 @@
       <option name="project" value="LOCAL" />
       <updated>1459366750007</updated>
     </task>
-    <option name="localTasksCounter" value="162" />
+    <task id="LOCAL-00162" summary="Dinesh 30/03/16 Volunteer page complete functionalities and structure">
+      <created>1459366985353</created>
+      <option name="number" value="00162" />
+      <option name="project" value="LOCAL" />
+      <updated>1459366985353</updated>
+    </task>
+    <option name="localTasksCounter" value="163" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1080,14 +1090,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Dinesh/volunteerhome_assets/volunteerhome_htmlscripts/question2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7748184">
-          <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Dinesh/volunteerhome_assets/volunteerhome_htmlscripts/question3.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7118644">
@@ -1120,14 +1122,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Dinesh/volunteerhome_assets/volunteerhome_css/volunteerhome.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.0">
-          <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Dinesh/volunteerhome.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.730769">
@@ -1142,8 +1136,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Dinesh/volunteerhome_assets/volunteerhome_htmlscripts/question1.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7409201">
+        <state vertical-scroll-proportion="-11.769231">
           <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dinesh/volunteerhome_assets/volunteerhome_htmlscripts/question2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.115385">
+          <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dinesh/volunteerhome_assets/volunteerhome_css/volunteerhome.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46489105">
+          <caret line="65" column="1" selection-start-line="65" selection-start-column="1" selection-end-line="65" selection-end-column="1" />
           <folding />
         </state>
       </provider>

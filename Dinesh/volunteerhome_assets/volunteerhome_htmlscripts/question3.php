@@ -8,7 +8,7 @@
         <?php
              //function for getting the text
             get_question_text(21);
-        ?>
+        ?> (Required)
 </label>
 <br>
 <br>

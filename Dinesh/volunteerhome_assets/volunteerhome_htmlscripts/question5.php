@@ -8,7 +8,7 @@
         <?php
             //function for getting the text
            get_question_text(41);
-        ?>
+        ?> (Required)
 </label>
 
     <input hidden type="number" name="qid5" value="41"><!-- Hidden input that carries value of question id (currently manual)-->

@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="03ada858-a974-4529-89ae-934025c2ff8a" name="Default" comment="">
+<<<<<<< HEAD
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chukwudi/submitsurveyanswers.php" afterPath="$PROJECT_DIR$/Chukwudi/submitsurveyanswers.php" />
+=======
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Dinesh/volunteerhome_assets/volunteerhome_css/volunteerhome.css" afterPath="$PROJECT_DIR$/Dinesh/volunteerhome_assets/volunteerhome_css/volunteerhome.css" />
+>>>>>>> origin/master
     </list>
     <ignored path="BefriendAChildTestSurvey.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,6 +29,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+<<<<<<< HEAD
       <file leaf-file-name="adminhome.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Chukwudi/adminhome.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -43,21 +49,41 @@
                 <element signature="e#7#101#0#PHP" expanded="true" />
                 <element signature="n#style#0;n#a#0;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#1;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+=======
+      <file leaf-file-name="volunteerhome.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Dinesh/volunteerhome.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-17.846153">
+              <caret line="144" column="0" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
+              <folding>
+                <marker date="1459360859022" expanded="true" signature="669:743" placeholder="SELECT vol_f... volunteers" />
+                <marker date="1459360859022" expanded="true" signature="1367:1427" placeholder="SELECT quest... questions" />
+                <marker date="1459360859022" expanded="true" signature="1862:1923" placeholder="SELECT quest... questions" />
+>>>>>>> origin/master
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="edit-user.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Chukwudi/edit-user.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+      <file leaf-file-name="volunteerhome.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Dinesh/volunteerhome_assets/volunteerhome_css/volunteerhome.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.3292978">
+              <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+>>>>>>> origin/master
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="submitsurveyanswers.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Chukwudi/submitsurveyanswers.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -122,6 +148,8 @@
           </provider>
         </entry>
       </file>
+=======
+>>>>>>> origin/master
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -145,8 +173,25 @@
         <option value="$PROJECT_DIR$/Chukwudi/header.php" />
         <option value="$PROJECT_DIR$/Chukwudi/test.php" />
         <option value="$PROJECT_DIR$/Chukwudi/delete-user.php" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/Chukwudi/view3.php" />
         <option value="$PROJECT_DIR$/Chukwudi/submitsurveyanswers.php" />
+=======
+        <option value="$PROJECT_DIR$/Dinesh/volunteerhome_assets/volunteerhome_jquery/surveybounce.js" />
+        <option value="$PROJECT_DIR$/Dinesh/volunteerhome_assets/volunteerhome_htmlscripts/question1.php" />
+        <option value="$PROJECT_DIR$/Dinesh/volunteerhome_assets/volunteerhome_htmlscripts/question2.php" />
+        <option value="$PROJECT_DIR$/Dinesh/volunteerhome_assets/volunteerhome_htmlscripts/question3.php" />
+        <option value="$PROJECT_DIR$/Dinesh/volunteerhome_assets/volunteerhome_htmlscripts/question4.php" />
+        <option value="$PROJECT_DIR$/Dinesh/volunteerhome_assets/volunteerhome_htmlscripts/question5.php" />
+        <option value="$PROJECT_DIR$/Dinesh/volunteerhome_assets/volunteerhome_htmlscripts/question6.php" />
+        <option value="$PROJECT_DIR$/Dinesh/thankssurvey.php" />
+        <option value="$PROJECT_DIR$/Dinesh/volunteerlogin.php" />
+        <option value="$PROJECT_DIR$/Master/volunteerhome_assets/volunteerhome_htmlscripts/welcomepage.php" />
+        <option value="$PROJECT_DIR$/Dinesh/volunteerhome_assets/volunteerhome_htmlscripts/welcomepage.php" />
+        <option value="$PROJECT_DIR$/Master/volunteerhome.php" />
+        <option value="$PROJECT_DIR$/Dinesh/volunteerhome.php" />
+        <option value="$PROJECT_DIR$/Dinesh/volunteerhome_assets/volunteerhome_css/volunteerhome.css" />
+>>>>>>> origin/master
       </list>
     </option>
   </component>
@@ -160,9 +205,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="1280" />
-    <option name="height" value="773" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1040" />
+    <option name="height" value="576" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -175,7 +221,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -188,7 +234,44 @@
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BefriendAChildTestSurvey" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BefriendAChildTestSurvey" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BefriendAChildTestSurvey" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BefriendAChildTestSurvey" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BefriendAChildTestSurvey" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Dinesh" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -196,6 +279,28 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.project" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="77" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="76" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="77" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="751" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="77" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="76" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="77" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="751" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/D/PhpstormProjects/BefriendAChildTestSurvey/Chukwudi/view3.php" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\D\PhpstormProjects\BefriendAChildTestSurvey\Master" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
@@ -238,31 +343,314 @@
       <option name="number" value="Default" />
       <updated>1459137174417</updated>
     </task>
-    <task id="LOCAL-00001" summary="Updates">
-      <created>1459202357452</created>
-      <option name="number" value="00001" />
+    <task id="LOCAL-00100" summary="Dinesh 29/03/16 Volunteer page styling">
+      <created>1459345530548</created>
+      <option name="number" value="00100" />
       <option name="project" value="LOCAL" />
-      <updated>1459202357452</updated>
+      <updated>1459345530548</updated>
     </task>
-    <task id="LOCAL-00002" summary="Updates">
-      <created>1459202686330</created>
-      <option name="number" value="00002" />
+    <task id="LOCAL-00101" summary="Dinesh 29/03/16 Volunteer page styling">
+      <created>1459345608847</created>
+      <option name="number" value="00101" />
       <option name="project" value="LOCAL" />
-      <updated>1459202686330</updated>
+      <updated>1459345608847</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00102" summary="Dinesh 29/03/16 Volunteer page styling">
+      <created>1459345877438</created>
+      <option name="number" value="00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1459345877438</updated>
+    </task>
+    <task id="LOCAL-00103" summary="Dinesh 29/03/16 Volunteer page styling">
+      <created>1459346113351</created>
+      <option name="number" value="00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1459346113351</updated>
+    </task>
+    <task id="LOCAL-00104" summary="Dinesh 29/03/16 Volunteer page styling">
+      <created>1459346341668</created>
+      <option name="number" value="00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1459346341668</updated>
+    </task>
+    <task id="LOCAL-00105" summary="Dinesh 29/03/16 Volunteer page styling">
+      <created>1459346569279</created>
+      <option name="number" value="00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1459346569279</updated>
+    </task>
+    <task id="LOCAL-00106" summary="Dinesh 29/03/16 Volunteer page styling">
+      <created>1459346699036</created>
+      <option name="number" value="00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1459346699036</updated>
+    </task>
+    <task id="LOCAL-00107" summary="Dinesh 29/03/16 Volunteer page styling">
+      <created>1459346896849</created>
+      <option name="number" value="00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1459346896849</updated>
+    </task>
+    <task id="LOCAL-00108" summary="Dinesh 29/03/16 Volunteer page styling">
+      <created>1459346971227</created>
+      <option name="number" value="00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1459346971227</updated>
+    </task>
+    <task id="LOCAL-00109" summary="Dinesh 29/03/16 Volunteer page styling">
+      <created>1459347071653</created>
+      <option name="number" value="00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1459347071653</updated>
+    </task>
+    <task id="LOCAL-00110" summary="Dinesh 29/03/16 Volunteer page styling">
+      <created>1459347195428</created>
+      <option name="number" value="00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1459347195428</updated>
+    </task>
+    <task id="LOCAL-00111" summary="Dinesh 29/03/16 Volunteer page styling">
+      <created>1459347368677</created>
+      <option name="number" value="00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1459347368677</updated>
+    </task>
+    <task id="LOCAL-00112" summary="Dinesh 29/03/16 Volunteer page styling">
+      <created>1459347618309</created>
+      <option name="number" value="00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1459347618309</updated>
+    </task>
+    <task id="LOCAL-00113" summary="Dinesh 29/03/16 Volunteer page styling">
+      <created>1459347944493</created>
+      <option name="number" value="00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1459347944493</updated>
+    </task>
+    <task id="LOCAL-00114" summary="Dinesh 29/03/16 Volunteer page styling">
+      <created>1459348097730</created>
+      <option name="number" value="00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1459348097730</updated>
+    </task>
+    <task id="LOCAL-00115" summary="Dinesh 29/03/16 Volunteer page styling">
+      <created>1459348684800</created>
+      <option name="number" value="00115" />
+      <option name="project" value="LOCAL" />
+      <updated>1459348684800</updated>
+    </task>
+    <task id="LOCAL-00116" summary="Dinesh 29/03/16 Volunteer page styling">
+      <created>1459348819231</created>
+      <option name="number" value="00116" />
+      <option name="project" value="LOCAL" />
+      <updated>1459348819231</updated>
+    </task>
+    <task id="LOCAL-00117" summary="Dinesh 29/03/16 Volunteer page styling">
+      <created>1459349036046</created>
+      <option name="number" value="00117" />
+      <option name="project" value="LOCAL" />
+      <updated>1459349036046</updated>
+    </task>
+    <task id="LOCAL-00118" summary="Dinesh 29/03/16 Volunteer page styling">
+      <created>1459349139180</created>
+      <option name="number" value="00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1459349139180</updated>
+    </task>
+    <task id="LOCAL-00119" summary="Dinesh 29/03/16 Volunteer page styling">
+      <created>1459349257196</created>
+      <option name="number" value="00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1459349257196</updated>
+    </task>
+    <task id="LOCAL-00120" summary="Dinesh 29/03/16 Volunteer page styling">
+      <created>1459349387732</created>
+      <option name="number" value="00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1459349387748</updated>
+    </task>
+    <task id="LOCAL-00121" summary="Dinesh 29/03/16 Volunteer page styling">
+      <created>1459349494444</created>
+      <option name="number" value="00121" />
+      <option name="project" value="LOCAL" />
+      <updated>1459349494444</updated>
+    </task>
+    <task id="LOCAL-00122" summary="Dinesh 29/03/16 Volunteer page styling">
+      <created>1459349736171</created>
+      <option name="number" value="00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1459349736171</updated>
+    </task>
+    <task id="LOCAL-00123" summary="Dinesh 29/03/16 Volunteer page styling">
+      <created>1459349882427</created>
+      <option name="number" value="00123" />
+      <option name="project" value="LOCAL" />
+      <updated>1459349882427</updated>
+    </task>
+    <task id="LOCAL-00124" summary="Dinesh 29/03/16 Volunteer page styling">
+      <created>1459350614779</created>
+      <option name="number" value="00124" />
+      <option name="project" value="LOCAL" />
+      <updated>1459350614779</updated>
+    </task>
+    <task id="LOCAL-00125" summary="Dinesh 29/03/16 Volunteer page styling">
+      <created>1459350919270</created>
+      <option name="number" value="00125" />
+      <option name="project" value="LOCAL" />
+      <updated>1459350919270</updated>
+    </task>
+    <task id="LOCAL-00126" summary="Dinesh 29/03/16 Volunteer page styling">
+      <created>1459351389667</created>
+      <option name="number" value="00126" />
+      <option name="project" value="LOCAL" />
+      <updated>1459351389667</updated>
+    </task>
+    <task id="LOCAL-00127" summary="Dinesh 29/03/16 Volunteer page styling">
+      <created>1459351585834</created>
+      <option name="number" value="00127" />
+      <option name="project" value="LOCAL" />
+      <updated>1459351585834</updated>
+    </task>
+    <task id="LOCAL-00128" summary="Dinesh 29/03/16 Volunteer page styling">
+      <created>1459351740195</created>
+      <option name="number" value="00128" />
+      <option name="project" value="LOCAL" />
+      <updated>1459351740195</updated>
+    </task>
+    <task id="LOCAL-00129" summary="Dinesh 29/03/16 Volunteer page styling">
+      <created>1459351909306</created>
+      <option name="number" value="00129" />
+      <option name="project" value="LOCAL" />
+      <updated>1459351909306</updated>
+    </task>
+    <task id="LOCAL-00130" summary="Dinesh 29/03/16 Volunteer page styling">
+      <created>1459351979404</created>
+      <option name="number" value="00130" />
+      <option name="project" value="LOCAL" />
+      <updated>1459351979404</updated>
+    </task>
+    <task id="LOCAL-00131" summary="Dinesh 29/03/16 Volunteer page styling">
+      <created>1459352080721</created>
+      <option name="number" value="00131" />
+      <option name="project" value="LOCAL" />
+      <updated>1459352080721</updated>
+    </task>
+    <task id="LOCAL-00132" summary="Dinesh 30/03/16 Volunteer page complete functionalities and structure">
+      <created>1459352363321</created>
+      <option name="number" value="00132" />
+      <option name="project" value="LOCAL" />
+      <updated>1459352363321</updated>
+    </task>
+    <task id="LOCAL-00133" summary="Dinesh 30/03/16 Volunteer page complete functionalities and structure">
+      <created>1459352613025</created>
+      <option name="number" value="00133" />
+      <option name="project" value="LOCAL" />
+      <updated>1459352613025</updated>
+    </task>
+    <task id="LOCAL-00134" summary="Dinesh 30/03/16 Volunteer page complete functionalities and structure">
+      <created>1459353954484</created>
+      <option name="number" value="00134" />
+      <option name="project" value="LOCAL" />
+      <updated>1459353954484</updated>
+    </task>
+    <task id="LOCAL-00135" summary="Dinesh 30/03/16 Volunteer page complete functionalities and structure">
+      <created>1459357494345</created>
+      <option name="number" value="00135" />
+      <option name="project" value="LOCAL" />
+      <updated>1459357494345</updated>
+    </task>
+    <task id="LOCAL-00136" summary="Dinesh 30/03/16 Volunteer page complete functionalities and structure">
+      <created>1459357603511</created>
+      <option name="number" value="00136" />
+      <option name="project" value="LOCAL" />
+      <updated>1459357603511</updated>
+    </task>
+    <task id="LOCAL-00137" summary="Dinesh 30/03/16 Volunteer page complete functionalities and structure">
+      <created>1459357697931</created>
+      <option name="number" value="00137" />
+      <option name="project" value="LOCAL" />
+      <updated>1459357697946</updated>
+    </task>
+    <task id="LOCAL-00138" summary="Dinesh 30/03/16 Volunteer page complete functionalities and structure">
+      <created>1459357781270</created>
+      <option name="number" value="00138" />
+      <option name="project" value="LOCAL" />
+      <updated>1459357781270</updated>
+    </task>
+    <task id="LOCAL-00139" summary="Dinesh 30/03/16 Volunteer page complete functionalities and structure">
+      <created>1459357947228</created>
+      <option name="number" value="00139" />
+      <option name="project" value="LOCAL" />
+      <updated>1459357947228</updated>
+    </task>
+    <task id="LOCAL-00140" summary="Dinesh 30/03/16 Volunteer page complete functionalities and structure">
+      <created>1459358030185</created>
+      <option name="number" value="00140" />
+      <option name="project" value="LOCAL" />
+      <updated>1459358030185</updated>
+    </task>
+    <task id="LOCAL-00141" summary="Dinesh 30/03/16 Volunteer page complete functionalities and structure">
+      <created>1459358156781</created>
+      <option name="number" value="00141" />
+      <option name="project" value="LOCAL" />
+      <updated>1459358156781</updated>
+    </task>
+    <task id="LOCAL-00142" summary="Dinesh 30/03/16 Volunteer page complete functionalities and structure">
+      <created>1459358309311</created>
+      <option name="number" value="00142" />
+      <option name="project" value="LOCAL" />
+      <updated>1459358309327</updated>
+    </task>
+    <task id="LOCAL-00143" summary="Dinesh 30/03/16 Volunteer page complete functionalities and structure">
+      <created>1459358394703</created>
+      <option name="number" value="00143" />
+      <option name="project" value="LOCAL" />
+      <updated>1459358394703</updated>
+    </task>
+    <task id="LOCAL-00144" summary="Dinesh 30/03/16 Volunteer page complete functionalities and structure">
+      <created>1459360508294</created>
+      <option name="number" value="00144" />
+      <option name="project" value="LOCAL" />
+      <updated>1459360508294</updated>
+    </task>
+    <task id="LOCAL-00145" summary="Dinesh 30/03/16 Volunteer page complete functionalities and structure">
+      <created>1459360877183</created>
+      <option name="number" value="00145" />
+      <option name="project" value="LOCAL" />
+      <updated>1459360877183</updated>
+    </task>
+    <task id="LOCAL-00146" summary="Dinesh 30/03/16 Volunteer page complete functionalities and structure">
+      <created>1459360986536</created>
+      <option name="number" value="00146" />
+      <option name="project" value="LOCAL" />
+      <updated>1459360986536</updated>
+    </task>
+    <task id="LOCAL-00147" summary="Dinesh 30/03/16 Volunteer page complete functionalities and structure">
+      <created>1459361125156</created>
+      <option name="number" value="00147" />
+      <option name="project" value="LOCAL" />
+      <updated>1459361125156</updated>
+    </task>
+    <task id="LOCAL-00148" summary="Dinesh 30/03/16 Volunteer page complete functionalities and structure">
+      <created>1459361199643</created>
+      <option name="number" value="00148" />
+      <option name="project" value="LOCAL" />
+      <updated>1459361199643</updated>
+    </task>
+    <option name="localTasksCounter" value="149" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="773" extended-state="6" />
+    <frame x="-8" y="-8" width="1040" height="576" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19433594" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32976446" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32976446" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -272,7 +660,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -290,50 +677,86 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Updates" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updates" />
+    <MESSAGE value="Dinesh 29/03/16 Volunteer page styling" />
+    <MESSAGE value="Dinesh 30/03/16 Volunteer page complete functionalities and structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dinesh 30/03/16 Volunteer page complete functionalities and structure" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:///Applications/MAMP/htdocs/Conn.php">
+    <entry file="file://$PROJECT_DIR$/Chukwudi/View.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="210" column="53" selection-start-line="210" selection-start-column="53" selection-end-line="210" selection-end-column="53" />
+          <folding>
+            <element signature="e#7#101#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chukwudi/view2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="210" column="53" selection-start-line="210" selection-start-column="53" selection-end-line="210" selection-end-column="53" />
+          <folding>
+            <element signature="e#7#101#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chukwudi/adminhome.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="286" column="4" selection-start-line="286" selection-start-column="4" selection-end-line="286" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file:///Applications/MAMP/htdocs/MySQLDao.php">
+    <entry file="file://$PROJECT_DIR$/Chukwudi/delete-user.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1457019124000" expanded="true" signature="1048:1088" placeholder="select * fro... users" />
-            <marker date="1457019124000" expanded="true" signature="1694:1775" placeholder="insert into users... " />
+            <element signature="e#7#101#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file:///Applications/MAMP/htdocs/userLogin.php">
+    <entry file="file://$PROJECT_DIR$/Chukwudi/header.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chukwudi/test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="257" column="10" selection-start-line="0" selection-start-column="0" selection-end-line="298" selection-end-column="0" />
           <folding>
-            <marker date="1458748447000" expanded="true" signature="1386:1430" placeholder="select * fro... users" />
+            <element signature="e#7#101#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file:///Applications/MAMP/htdocs/userRegistration.php">
+    <entry file="file://$PROJECT_DIR$/Chukwudi/view3.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="304" column="7" selection-start-line="304" selection-start-column="7" selection-end-line="304" selection-end-column="7" />
           <folding>
-            <marker date="1457340738000" expanded="true" signature="1725:1769" placeholder="select * fro... users" />
-            <marker date="1457340738000" expanded="true" signature="2324:2484" placeholder="INSERT INTO users... " />
+            <element signature="e#7#101#0#PHP" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chukwudi/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="156" column="19" selection-start-line="156" selection-start-column="19" selection-end-line="156" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -342,7 +765,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="40" column="9" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
           <folding>
-            <element signature="e#7#101#0#PHP" expanded="true" />
+            <element signature="e#7#101#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -352,7 +775,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding>
-            <element signature="e#7#101#0#PHP" expanded="true" />
+            <element signature="e#7#101#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -362,113 +785,454 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
           <folding>
-            <element signature="e#7#101#0#PHP" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#1;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Applications/MAMP/htdocs/Conn.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Applications/MAMP/htdocs/MySQLDao.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1457019124000" expanded="true" signature="1048:1088" placeholder="select * fro... users" />
-            <marker date="1457019124000" expanded="true" signature="1694:1775" placeholder="insert into users... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Applications/MAMP/htdocs/userLogin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1458748447000" expanded="true" signature="1386:1430" placeholder="select * fro... users" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Applications/MAMP/htdocs/userRegistration.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.375">
-          <caret line="31" column="34" selection-start-line="31" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding>
-            <marker date="1457340738000" expanded="true" signature="1725:1769" placeholder="select * fro... users" />
-            <marker date="1457340738000" expanded="true" signature="2324:2484" placeholder="INSERT INTO users... " />
+            <element signature="e#7#101#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Chukwudi/adminhome.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-25.291666">
+        <state vertical-scroll-proportion="0.0">
           <caret line="286" column="4" selection-start-line="286" selection-start-column="4" selection-end-line="286" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Chukwudi/edit-user.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Chukwudi/view2.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="24.375">
+        <state vertical-scroll-proportion="0.0">
           <caret line="210" column="53" selection-start-line="210" selection-start-column="53" selection-end-line="210" selection-end-column="53" />
           <folding>
-            <element signature="e#7#101#0#PHP" expanded="true" />
+            <element signature="e#7#101#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Chukwudi/View.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="10.0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="210" column="53" selection-start-line="210" selection-start-column="53" selection-end-line="210" selection-end-column="53" />
           <folding>
-            <element signature="e#7#101#0#PHP" expanded="true" />
+            <element signature="e#7#101#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chukwudi/test.php">
+    <entry file="file://$PROJECT_DIR$/Chukwudi/delete-user.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.541667">
-          <caret line="257" column="10" selection-start-line="0" selection-start-column="0" selection-end-line="298" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.91767555">
+          <caret line="218" column="21" selection-start-line="218" selection-start-column="21" selection-end-line="218" selection-end-column="21" />
           <folding>
-            <element signature="e#7#101#0#PHP" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#1;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#7#101#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Chukwudi/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-26.25">
+        <state vertical-scroll-proportion="1.7288135">
           <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chukwudi/delete-user.php">
+    <entry file="file://$PROJECT_DIR$/Chukwudi/test.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-25.0">
-          <caret line="186" column="21" selection-start-line="186" selection-start-column="21" selection-end-line="186" selection-end-column="21" />
+        <state vertical-scroll-proportion="0.041162226">
+          <caret line="257" column="10" selection-start-line="0" selection-start-column="0" selection-end-line="298" selection-end-column="0" />
           <folding>
-            <element signature="e#7#101#0#PHP" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#1;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#7#101#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/Chukwudi/adminhome.php">
+=======
+    <entry file="file://$PROJECT_DIR$/Chukwudi/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.041162226">
+          <caret line="156" column="19" selection-start-line="156" selection-start-column="19" selection-end-line="156" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chukwudi/view3.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7748184">
+          <caret line="304" column="7" selection-start-line="304" selection-start-column="7" selection-end-line="304" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dinesh/volunteerhome_assets/volunteerhome_jquery/surveybounce.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="126" column="0" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dinesh/volunteerhome_assets/volunteerhome_htmlscripts/question2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4116223">
+          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dinesh/volunteerhome_assets/volunteerhome_htmlscripts/question5.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.423077">
+          <caret line="19" column="46" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dinesh/volunteerhome_assets/volunteerhome_htmlscripts/question3.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.86440676">
+          <caret line="21" column="45" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dinesh/volunteerhome_assets/volunteerhome_htmlscripts/question4.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8232446">
+          <caret line="20" column="46" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dinesh/thankssurvey.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7530266">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dinesh/volunteerhome_assets/volunteerhome_htmlscripts/question6.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34140435">
+          <caret line="19" column="46" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dinesh/volunteerhome_assets/volunteerhome_htmlscripts/question1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4116223">
+          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dinesh/volunteerlogin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.8401937">
+          <caret line="21" column="52" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
+          <folding>
+            <marker date="1459351724542" expanded="true" signature="1513:1647" placeholder="SELECT `vol_... volunteers" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Master/logout.php">
+>>>>>>> origin/master
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/Chukwudi/view2.php">
+=======
+    <entry file="file://$PROJECT_DIR$/Master/volunteerhome_assets/volunteerhome_css/volunteerhome.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Master/volunteerlogin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1459351724542" expanded="true" signature="1513:1647" placeholder="SELECT `vol_... volunteers" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Master/volunteerhome_assets/volunteerhome_htmlscripts/welcomepage.php">
+>>>>>>> origin/master
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4116223">
+          <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dinesh/adminer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.7927461">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1459279273732" expanded="true" signature="68649:68659" placeholder="{...}" />
+            <marker date="1459279273732" expanded="true" signature="75369:75381" placeholder="INSERT INTO ${table($Q)}... " />
+            <marker date="1459279273732" expanded="true" signature="80072:80182" placeholder="SELECT name,... sqlite_master" />
+            <marker date="1459279273732" expanded="true" signature="80297:80384" placeholder="SELECT name sqlite_master" />
+            <marker date="1459279273732" expanded="true" signature="80496:80517" placeholder="SELECT COUNT... ${idf_escape($K[&quot;Name&quot;])}" />
+            <marker date="1459279273732" expanded="true" signature="80580:80609" placeholder="SELECT * FRO... sqlite_sequence" />
+            <marker date="1459279273732" expanded="true" signature="81577:81639" placeholder="SELECT sql F... " />
+            <marker date="1459279273732" expanded="true" signature="81975:82037" placeholder="SELECT sql F... " />
+            <marker date="1459279273732" expanded="true" signature="82583:82655" placeholder="SELECT name,... " />
+            <marker date="1459279273732" expanded="true" signature="83637:83680" placeholder="SELECT sql F... " />
+            <marker date="1459279273732" expanded="true" signature="84375:84399" placeholder="CREATE TABLE... adminer" />
+            <marker date="1459279273732" expanded="true" signature="84413:84431" placeholder="DROP TABLE a... " />
+            <marker date="1459279273732" expanded="true" signature="85139:85165" placeholder="ALTER TABLE ${table($Q)}... " />
+            <marker date="1459279273732" expanded="true" signature="85205:85241" placeholder="ALTER TABLE ${table($Q)}... " />
+            <marker date="1459279273732" expanded="true" signature="85338:85388" placeholder="UPDATE sqlit... " />
+            <marker date="1459279273732" expanded="true" signature="86308:86382" placeholder="CREATE TABLE... ${table($Q!=&quot;&quot;?&quot;adminer_$C&quot;:$C)}" />
+            <marker date="1459279273732" expanded="true" signature="86427:86557" placeholder="INSERT INTO ${table(&quot;adminer_$C&quot;)}... " />
+            <marker date="1459279273732" expanded="true" signature="86487:86557" placeholder="SELECT ${imp... ${table($Q)}" />
+            <marker date="1459279273732" expanded="true" signature="86755:86766" placeholder="DROP TABLE $... " />
+            <marker date="1459279273732" expanded="true" signature="86801:86847" placeholder="ALTER TABLE ${table(&quot;adminer_$C&quot;)}... " />
+            <marker date="1459279273732" expanded="true" signature="87969:88033" placeholder="SELECT sql F... " />
+            <marker date="1459279273732" expanded="true" signature="88303:88369" placeholder="SELECT * FRO... sqlite_master" />
+            <marker date="1459279273732" expanded="true" signature="89218:89291" placeholder="SELECT sql F... " />
+            <marker date="1459279273732" expanded="true" signature="89492:89504" placeholder="DELETE FROM " />
+            <marker date="1459279273732" expanded="true" signature="89593:89671" placeholder="SELECT sql |... " />
+            <marker date="1459279273732" expanded="true" signature="94307:94397" placeholder="INSERT INTO ${table($Q)}... " />
+            <marker date="1459279273732" expanded="true" signature="94770:94818" placeholder="SELECT datna... pg_database" />
+            <marker date="1459279273732" expanded="true" signature="95167:95265" placeholder="SELECT table... tables" />
+            <marker date="1459279273732" expanded="true" signature="95551:96057" placeholder="SELECT relna... pg_class" />
+            <marker date="1459279273732" expanded="true" signature="95994:96055" placeholder="SELECT oid F... pg_namespace" />
+            <marker date="1459279273732" expanded="true" signature="96428:96878" placeholder="SELECT a.att... " />
+            <marker date="1459279273732" expanded="true" signature="97551:97675" placeholder="SELECT oid F... pg_class" />
+            <marker date="1459279273732" expanded="true" signature="97598:97659" placeholder="SELECT oid F... pg_namespace" />
+            <marker date="1459279273732" expanded="true" signature="97701:97777" placeholder="SELECT attnu... pg_attribute" />
+            <marker date="1459279273732" expanded="true" signature="97801:97949" placeholder="SELECT relna... pg_index" />
+            <marker date="1459279273732" expanded="true" signature="98363:98662" placeholder="SELECT conna... pg_constraint" />
+            <marker date="1459279273732" expanded="true" signature="98456:98612" placeholder="SELECT pc.oi... pg_class" />
+            <marker date="1459279273732" expanded="true" signature="100396:100435" placeholder="ALTER TABLE ${table($Q)}... " />
+            <marker date="1459279273732" expanded="true" signature="100744:100798" placeholder="CREATE TABLE... ${table($C)}" />
+            <marker date="1459279273732" expanded="true" signature="100830:100857" placeholder="ALTER TABLE ${table($Q)}... " />
+            <marker date="1459279273732" expanded="true" signature="100903:100939" placeholder="ALTER TABLE ${table($Q)}... " />
+            <marker date="1459279273732" expanded="true" signature="101563:101575" placeholder="ALTER TABLE ${table($Q)}... " />
+            <marker date="1459279273732" expanded="true" signature="102331:102608" placeholder="SELECT trigg... triggers" />
+            <marker date="1459279273732" expanded="true" signature="102686:102755" placeholder="SELECT * FRO... triggers" />
+            <marker date="1459279273732" expanded="true" signature="103064:103332" placeholder="SELECT p.pro... pg_namespace" />
+            <marker date="1459279273732" expanded="true" signature="103382:103425" placeholder="SELECT langn... pg_language" />
+            <marker date="1459279273732" expanded="true" signature="103746:103903" placeholder="SELECT typna... pg_type" />
+            <marker date="1459279273732" expanded="true" signature="103796:103857" placeholder="SELECT oid F... pg_namespace" />
+            <marker date="1459279273732" expanded="true" signature="103943:103992" placeholder="SELECT nspna... pg_namespace" />
+            <marker date="1459279273732" expanded="true" signature="104416:104456" placeholder="SELECT * FRO... pg_stat_activity" />
+            <marker date="1459279273732" expanded="true" signature="108413:108457" placeholder="SELECT table... user_tablespaces" />
+            <marker date="1459279273732" expanded="true" signature="108779:108857" placeholder="SELECT value... nls_database_parameters" />
+            <marker date="1459279273732" expanded="true" signature="108946:108967" placeholder="SELECT USER DUAL" />
+            <marker date="1459279273732" expanded="true" signature="109015:109082" placeholder="SELECT table... all_tables" />
+            <marker date="1459279273732" expanded="true" signature="109015:109149" placeholder="SELECT table... " />
+            <marker date="1459279273732" expanded="true" signature="109098:109138" placeholder="SELECT view_... user_views" />
+            <marker date="1459279273732" expanded="true" signature="109263:109403" placeholder="SELECT table... all_tables" />
+            <marker date="1459279273732" expanded="true" signature="109263:109552" placeholder="SELECT table... " />
+            <marker date="1459279273732" expanded="true" signature="109455:109501" placeholder="SELECT view_... user_views" />
+            <marker date="1459279273732" expanded="true" signature="109743:109820" placeholder="SELECT * FRO... all_tab_columns" />
+            <marker date="1459279273732" expanded="true" signature="110228:110472" placeholder="SELECT uic.*... user_ind_columns" />
+            <marker date="1459279273732" expanded="true" signature="110834:110889" placeholder="SELECT text user_views" />
+            <marker date="1459279273732" expanded="true" signature="111121:111145" placeholder="SELECT * FRO... plan_table" />
+            <marker date="1459279273732" expanded="true" signature="111324:111389" placeholder="ALTER TABLE ${table($Q)}... " />
+            <marker date="1459279273732" expanded="true" signature="111536:111590" placeholder="CREATE TABLE... ${table($C)}" />
+            <marker date="1459279273732" expanded="true" signature="111614:111641" placeholder="ALTER TABLE ${table($Q)}... " />
+            <marker date="1459279273732" expanded="true" signature="111679:111733" placeholder="ALTER TABLE ${table($Q)}... " />
+            <marker date="1459279273732" expanded="true" signature="111756:111792" placeholder="ALTER TABLE ${table($Q)}... " />
+            <marker date="1459279273732" expanded="true" signature="111848:112285" placeholder="SELECT c_lis... ALL_CONSTRAINTS" />
+            <marker date="1459279273732" expanded="true" signature="112778:112917" placeholder="SELECT DISTI... dba_segments" />
+            <marker date="1459279273732" expanded="true" signature="112834:112916" placeholder="SELECT usern... dba_users" />
+            <marker date="1459279273732" expanded="true" signature="112970:113025" placeholder="SELECT sys_c... dual" />
+            <marker date="1459279273732" expanded="true" signature="113182:113225" placeholder="SELECT name,... v$parameter" />
+            <marker date="1459279273732" expanded="true" signature="113270:113651" placeholder="SELECT sess.... v$session" />
+            <marker date="1459279273732" expanded="true" signature="113692:113716" placeholder="SELECT * FRO... v$instance" />
+            <marker date="1459279273732" expanded="true" signature="119850:119905" placeholder="SELECT colla... databases" />
+            <marker date="1459279273732" expanded="true" signature="120067:120201" placeholder="SELECT name,... all_objects" />
+            <marker date="1459279273732" expanded="true" signature="120305:120351" placeholder="SELECT COUNT... TABLES" />
+            <marker date="1459279273732" expanded="true" signature="120423:120562" placeholder="SELECT name all_objects" />
+            <marker date="1459279273732" expanded="true" signature="120798:121147" placeholder="SELECT c.*, all_columns" />
+            <marker date="1459279273732" expanded="true" signature="121647:121972" placeholder="SELECT i.nam... indexes" />
+            <marker date="1459279273732" expanded="true" signature="122364:122469" placeholder="SELECT VIEW_... VIEWS" />
+            <marker date="1459279273732" expanded="true" signature="122532:122568" placeholder="SELECT name fn_helpcollations" />
+            <marker date="1459279273732" expanded="true" signature="123836:123900" placeholder="CREATE TABLE... ${table($C)}" />
+            <marker date="1459279273732" expanded="true" signature="124016:124047" placeholder="ALTER TABLE ${idf_escape($C)}... " />
+            <marker date="1459279273732" expanded="true" signature="124412:124453" placeholder="ALTER TABLE ${table($Q)}... " />
+            <marker date="1459279273732" expanded="true" signature="124570:124601" placeholder="ALTER TABLE ${table($Q)}... " />
+            <marker date="1459279273732" expanded="true" signature="125281:125292" placeholder="DROP TABLE $... " />
+            <marker date="1459279273732" expanded="true" signature="125511:125846" placeholder="SELECT s.nam... " />
+            <marker date="1459279273732" expanded="true" signature="126108:126448" placeholder="SELECT sys1.... " />
+            <marker date="1459279273732" expanded="true" signature="126823:126851" placeholder="SELECT name schemas" />
+            <marker date="1459279273732" expanded="true" signature="130521:130590" placeholder="SELECT RDB$R... rdb$relations" />
+            <marker date="1459279273732" expanded="true" signature="131109:132229" placeholder="SELECT r.RDB... RDB$RELATION_FIELDS" />
+            <marker date="1459279273732" expanded="true" signature="135589:135612" placeholder="SELECT itemN... ${table($Q)}" />
+            <marker date="1459279273732" expanded="true" signature="154582:154621" placeholder="INSERT INTO ${table($Q)}... " />
+            <marker date="1459279273732" expanded="true" signature="154689:154744" placeholder="INSERT INTO ${table($Q)}... " />
+            <marker date="1459279273732" expanded="true" signature="155639:155690" placeholder="SELECT SCHEM... SCHEMATA" />
+            <marker date="1459279273732" expanded="true" signature="156478:156590" placeholder="SELECT TABLE... TABLES" />
+            <marker date="1459279273732" expanded="true" signature="156829:156952" placeholder="SELECT TABLE... TABLES" />
+            <marker date="1459279273732" expanded="true" signature="161144:161198" placeholder="CREATE TABLE... ${table($C)}" />
+            <marker date="1459279273732" expanded="true" signature="161292:161319" placeholder="ALTER TABLE ${table($Q)}... " />
+            <marker date="1459279273732" expanded="true" signature="161583:161595" placeholder="ALTER TABLE ${table($Q)}... " />
+            <marker date="1459279273732" expanded="true" signature="161830:161841" placeholder="DROP TABLE $... " />
+            <marker date="1459279273732" expanded="true" signature="162274:162295" placeholder="CREATE TABLE... ${$C}" />
+            <marker date="1459279273732" expanded="true" signature="162319:162348" placeholder="INSERT INTO ${$C}... " />
+            <marker date="1459279273732" expanded="true" signature="162334:162348" placeholder="SELECT * FRO... ${table($Q)}" />
+            <marker date="1459279273732" expanded="true" signature="164286:164392" placeholder="SELECT ROUTI... ROUTINES" />
+            <marker date="1459279273732" expanded="true" signature="168644:168663" placeholder="..." />
+            <marker date="1459279273732" expanded="true" signature="178807:178856" placeholder="CREATE TABLE... ${table($Q)}" />
+            <marker date="1459279273732" expanded="true" signature="179684:179764" placeholder="INSERT INTO ${table($Q)}... " />
+            <marker date="1459279273732" expanded="true" signature="183125:183139" placeholder="..." />
+            <marker date="1459279273732" expanded="true" signature="185011:185249" placeholder="..." />
+            <marker date="1459279273732" expanded="true" signature="187968:188092" placeholder="..." />
+            <marker date="1459279273732" expanded="true" signature="187987:188092" placeholder="..." />
+            <marker date="1459279273732" expanded="true" signature="199499:199513" placeholder="..." />
+            <marker date="1459279273732" expanded="true" signature="214345:214362" placeholder="..." />
+            <marker date="1459279273732" expanded="true" signature="219168:219193" placeholder="..." />
+            <marker date="1459279273732" expanded="true" signature="220347:220425" placeholder="..." />
+            <marker date="1459279273732" expanded="true" signature="220542:220559" placeholder="..." />
+            <marker date="1459279273732" expanded="true" signature="220701:220719" placeholder="..." />
+            <marker date="1459279273732" expanded="true" signature="221488:221505" placeholder="..." />
+            <marker date="1459279273732" expanded="true" signature="222224:222321" placeholder="SELECT User,... ${(DB==&quot;&quot;?&quot;user&quot;:&quot;db WHERE &quot;.q(DB).&quot; LIKE Db&quot;)}" />
+            <marker date="1459279273732" expanded="true" signature="235304:235309" placeholder="..." />
+            <marker date="1459279273732" expanded="true" signature="236183:236259" placeholder="..." />
+            <marker date="1459279273732" expanded="true" signature="236871:236907" placeholder="..." />
+            <marker date="1459279273732" expanded="true" signature="241398:241475" placeholder="..." />
+            <marker date="1459279273732" expanded="true" signature="242811:242816" placeholder="..." />
+            <marker date="1459279273732" expanded="true" signature="244286:244326" placeholder="..." />
+            <marker date="1459279273732" expanded="true" signature="246206:246283" placeholder="..." />
+            <marker date="1459279273732" expanded="true" signature="246912:246924" placeholder="ALTER TABLE ${table($a)}... " />
+            <marker date="1459279273732" expanded="true" signature="247769:247774" placeholder="..." />
+            <marker date="1459279273732" expanded="true" signature="248070:248111" placeholder="..." />
+            <marker date="1459279273732" expanded="true" signature="248360:248372" placeholder="..." />
+            <marker date="1459279273732" expanded="true" signature="248722:248768" placeholder="..." />
+            <marker date="1459279273732" expanded="true" signature="249888:249924" placeholder="..." />
+            <marker date="1459279273732" expanded="true" signature="250025:250061" placeholder="..." />
+            <marker date="1459279273732" expanded="true" signature="251467:251555" placeholder="SELECT * FRO... EVENTS" />
+            <marker date="1459279273732" expanded="true" signature="251614:251687" placeholder="..." />
+            <marker date="1459279273732" expanded="true" signature="251638:251687" placeholder="..." />
+            <marker date="1459279273732" expanded="true" signature="252440:252476" placeholder="..." />
+            <marker date="1459279273732" expanded="true" signature="253478:253514" placeholder="..." />
+            <marker date="1459279273732" expanded="true" signature="253916:253952" placeholder="..." />
+            <marker date="1459279273732" expanded="true" signature="254689:254719" placeholder="..." />
+            <marker date="1459279273732" expanded="true" signature="255356:255361" placeholder="..." />
+            <marker date="1459279273732" expanded="true" signature="256498:256539" placeholder="..." />
+            <marker date="1459279273732" expanded="true" signature="256522:256539" placeholder="..." />
+            <marker date="1459279273732" expanded="true" signature="257196:257232" placeholder="..." />
+            <marker date="1459279273732" expanded="true" signature="260390:260474" placeholder="..." />
+            <marker date="1459279273732" expanded="true" signature="260414:260474" placeholder="..." />
+            <marker date="1459279273732" expanded="true" signature="262180:262216" placeholder="..." />
+            <marker date="1459279273732" expanded="true" signature="262729:262846" placeholder="..." />
+            <marker date="1459279273732" expanded="true" signature="269227:269241" placeholder="..." />
+            <marker date="1459279273732" expanded="true" signature="275838:275872" placeholder="..." />
+            <marker date="1459279273732" expanded="true" signature="275979:276183" placeholder="..." />
+            <marker date="1459279273732" expanded="true" signature="276037:276183" placeholder="..." />
+            <marker date="1459279273732" expanded="true" signature="285321:285439" placeholder="SELECT seque... sequences" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dinesh/db_connection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3292978">
+          <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Master/volunteerhome.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0">
+          <caret line="117" column="0" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
+          <folding>
+            <marker date="1459353940530" expanded="true" signature="669:743" placeholder="SELECT vol_f... volunteers" />
+            <marker date="1459353940530" expanded="true" signature="1367:1427" placeholder="SELECT quest... questions" />
+            <marker date="1459353940530" expanded="true" signature="1862:1923" placeholder="SELECT quest... questions" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/phrase.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="4.0592256">
+          <caret line="369" column="16" selection-start-line="369" selection-start-column="16" selection-end-line="369" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dinesh/volunteerhome_assets/volunteerhome_htmlscripts/welcomepage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4116223">
+          <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dinesh/submitsurveyanswers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="60.615383">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1459279274153" expanded="true" signature="1086:1140" placeholder="SELECT vol_i... volunteers" />
+            <marker date="1459279274153" expanded="true" signature="2596:2769" placeholder="INSERT INTO submissions... " />
+            <marker date="1459279274153" expanded="true" signature="3526:3617" placeholder="SELECT submi... submissions" />
+            <marker date="1459279274153" expanded="true" signature="4184:4380" placeholder="INSERT INTO answers... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dinesh/adminhome.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.174334">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dinesh/cssadminpage/screen.css">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="-25.0">
+          <caret line="186" column="21" selection-start-line="186" selection-start-column="21" selection-end-line="186" selection-end-column="21" />
+=======
+        <state vertical-scroll-proportion="0.5989583">
+          <caret line="813" column="4" selection-start-line="813" selection-start-column="4" selection-end-line="813" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dinesh/volunteerhome.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.846153">
+          <caret line="144" column="0" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
+>>>>>>> origin/master
+          <folding>
+            <marker date="1459360859022" expanded="true" signature="669:743" placeholder="SELECT vol_f... volunteers" />
+            <marker date="1459360859022" expanded="true" signature="1367:1427" placeholder="SELECT quest... questions" />
+            <marker date="1459360859022" expanded="true" signature="1862:1923" placeholder="SELECT quest... questions" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/Chukwudi/view3.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-112.791664">
@@ -505,10 +1269,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+    <entry file="file://$PROJECT_DIR$/Dinesh/volunteerhome_assets/volunteerhome_css/volunteerhome.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3292978">
+          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+>>>>>>> origin/master
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/Chukwudi/submitsurveyanswers.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.9202454">
@@ -523,5 +1294,7 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> origin/master
   </component>
 </project>

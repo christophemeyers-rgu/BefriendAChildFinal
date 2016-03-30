@@ -3,6 +3,11 @@
 //============================================================ Next buttons
 
 
+$( "#start" ).click(function() {
+    $( "#welcomepage" ).toggle( "fade", 1000 );
+
+});
+
 $( "#next2" ).click(function() {
     $( "#cont1" ).toggle( "explode", 1000 );
 
@@ -111,7 +116,7 @@ $(function() {
             progressLabel.text( progressbar.progressbar( "value" ) + "%" );
         },
         complete: function() {
-            progressLabel.text( "Check Answers and Click Submit to Complete Survey!" );
+            progressLabel.text( "Check Answers and Click Submit to Complete!" );
         }
     });
 

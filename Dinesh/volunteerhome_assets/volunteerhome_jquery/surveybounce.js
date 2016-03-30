@@ -124,9 +124,3 @@ $(function() {
         value: 0
     });
 });
-
-//============================================================ Date picker
-
-$(function() {
-    $( ".eventdate" ).datepicker();
-});

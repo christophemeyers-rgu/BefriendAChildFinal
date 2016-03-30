@@ -280,7 +280,9 @@ if(!isset($_SESSION['ad_email'])){
             }
         }
         else{
-            echo "No events for this user";
+            ?>
+                <p>User has no submission</p>
+        <?php
         }
 
         ?>

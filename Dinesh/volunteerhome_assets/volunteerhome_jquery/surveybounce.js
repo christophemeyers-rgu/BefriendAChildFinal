@@ -111,7 +111,7 @@ $(function() {
         progressLabel = $( ".progress-label" );
 
     progressbar.progressbar({
-        BERETRTT
+        value: false,
         change: function() {
             progressLabel.text( progressbar.progressbar( "value" ) + "%" );
         },
@@ -121,6 +121,6 @@ $(function() {
     });
 
     $( "#progressbar" ).progressbar({
-        value: 0
+        value: 5
     });
 });

@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="03ada858-a974-4529-89ae-934025c2ff8a" name="Default" comment="">
+<<<<<<< HEAD
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chukwudi/submitsurveyanswers.php" afterPath="$PROJECT_DIR$/Chukwudi/submitsurveyanswers.php" />
+=======
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Dinesh/volunteerhome.php" afterPath="$PROJECT_DIR$/Dinesh/volunteerhome.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Dinesh/volunteerhome_assets/volunteerhome_css/volunteerhome.css" afterPath="$PROJECT_DIR$/Dinesh/volunteerhome_assets/volunteerhome_css/volunteerhome.css" />
+>>>>>>> origin/master
     </list>
     <ignored path="BefriendAChildTestSurvey.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,30 +30,145 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="volunteerhome.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Dinesh/volunteerhome.php">
+<<<<<<< HEAD
+<<<<<<< HEAD
+      <file leaf-file-name="adminhome.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Chukwudi/adminhome.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2590799">
-              <caret line="123" column="73" selection-start-line="123" selection-start-column="73" selection-end-line="123" selection-end-column="73" />
-              <folding>
-                <marker date="1459362109653" expanded="true" signature="669:743" placeholder="SELECT vol_f... volunteers" />
-                <marker date="1459362109653" expanded="true" signature="1367:1427" placeholder="SELECT quest... questions" />
-                <marker date="1459362109653" expanded="true" signature="1862:1923" placeholder="SELECT quest... questions" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="volunteerhome.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Dinesh/volunteerhome_assets/volunteerhome_css/volunteerhome.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.461538">
-              <caret line="16" column="45" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
+            <state vertical-scroll-proportion="-25.291666">
+              <caret line="286" column="4" selection-start-line="286" selection-start-column="4" selection-end-line="286" selection-end-column="4" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="delete-user.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Chukwudi/delete-user.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-25.0">
+              <caret line="186" column="21" selection-start-line="186" selection-start-column="21" selection-end-line="186" selection-end-column="21" />
+              <folding>
+                <element signature="e#7#101#0#PHP" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#1;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+=======
+      <file leaf-file-name="volunteerhome.php" pinned="false" current-in-tab="false">
+=======
+      <file leaf-file-name="volunteerhome.php" pinned="false" current-in-tab="true">
+>>>>>>> origin/master
+        <entry file="file://$PROJECT_DIR$/Dinesh/volunteerhome.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.2590799">
+              <caret line="123" column="73" selection-start-line="123" selection-start-column="73" selection-end-line="123" selection-end-column="73" />
+              <folding>
+<<<<<<< HEAD
+                <marker date="1459360859022" expanded="true" signature="669:743" placeholder="SELECT vol_f... volunteers" />
+                <marker date="1459360859022" expanded="true" signature="1367:1427" placeholder="SELECT quest... questions" />
+                <marker date="1459360859022" expanded="true" signature="1862:1923" placeholder="SELECT quest... questions" />
+>>>>>>> origin/master
+=======
+                <marker date="1459362109653" expanded="true" signature="669:743" placeholder="SELECT vol_f... volunteers" />
+                <marker date="1459362109653" expanded="true" signature="1367:1427" placeholder="SELECT quest... questions" />
+                <marker date="1459362109653" expanded="true" signature="1862:1923" placeholder="SELECT quest... questions" />
+>>>>>>> origin/master
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
+<<<<<<< HEAD
+      <file leaf-file-name="edit-user.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Chukwudi/edit-user.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+      <file leaf-file-name="volunteerhome.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Dinesh/volunteerhome_assets/volunteerhome_css/volunteerhome.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.3292978">
+              <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+>>>>>>> origin/master
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
+      <file leaf-file-name="submitsurveyanswers.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Chukwudi/submitsurveyanswers.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.9202454">
+              <caret line="119" column="66" selection-start-line="119" selection-start-column="66" selection-end-line="119" selection-end-column="66" />
+              <folding>
+                <marker date="1459361722000" expanded="true" signature="1086:1140" placeholder="SELECT vol_i... volunteers" />
+                <marker date="1459361722000" expanded="true" signature="1757:1809" placeholder="select * fro... submissions" />
+                <marker date="1459361722000" expanded="true" signature="2884:3057" placeholder="INSERT INTO submissions... " />
+                <marker date="1459361722000" expanded="true" signature="3883:3974" placeholder="SELECT submi... submissions" />
+                <marker date="1459361722000" expanded="true" signature="4576:4788" placeholder="INSERT INTO answers... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Chukwudi/header.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-26.25">
+              <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+=======
+      <file leaf-file-name="volunteerhome.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Dinesh/volunteerhome_assets/volunteerhome_css/volunteerhome.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-10.461538">
+              <caret line="16" column="45" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
+>>>>>>> origin/master
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Chukwudi/test.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-11.541667">
+              <caret line="257" column="10" selection-start-line="0" selection-start-column="0" selection-end-line="298" selection-end-column="0" />
+              <folding>
+                <element signature="e#7#101#0#PHP" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#1;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="functions.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Chukwudi/functions.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-12.5">
+              <caret line="149" column="9" selection-start-line="149" selection-start-column="9" selection-end-line="149" selection-end-column="9" />
+              <folding>
+                <marker date="1459253103000" expanded="true" signature="614:744" placeholder="insert into volunteers... " />
+                <marker date="1459253103000" expanded="true" signature="1854:1909" placeholder="select * fro... administrators" />
+                <marker date="1459253103000" expanded="true" signature="2323:2408" placeholder="select * fro... administrators" />
+                <marker date="1459253103000" expanded="true" signature="3044:3068" placeholder="select * fro... volunteers" />
+                <marker date="1459253103000" expanded="true" signature="3283:3290" placeholder="select from submis... " />
+                <marker date="1459253103000" expanded="true" signature="3283:3383" placeholder="select from submissions... " />
+                <marker date="1459253103000" expanded="true" signature="3324:3382" placeholder="select vol_i... volunteers" />
+                <marker date="1459253103000" expanded="true" signature="3590:3911" placeholder="select quest... answers" />
+                <marker date="1459253103000" expanded="true" signature="3691:3833" placeholder="select submi... submissions" />
+                <marker date="1459253103000" expanded="true" signature="3774:3832" placeholder="select vol_i... volunteers" />
+                <marker date="1459253103000" expanded="true" signature="4102:4154" placeholder="delete from " />
+                <marker date="1459253103000" expanded="true" signature="4326:4380" placeholder="select * fro... volunteers" />
+                <marker date="1459253103000" expanded="true" signature="5103:5288" placeholder="update volun... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+=======
+>>>>>>> origin/master
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -70,10 +189,13 @@
         <option value="$PROJECT_DIR$/Chukwudi/View.php" />
         <option value="$PROJECT_DIR$/Chukwudi/view2.php" />
         <option value="$PROJECT_DIR$/Chukwudi/adminhome.php" />
-        <option value="$PROJECT_DIR$/Chukwudi/view3.php" />
         <option value="$PROJECT_DIR$/Chukwudi/header.php" />
         <option value="$PROJECT_DIR$/Chukwudi/test.php" />
         <option value="$PROJECT_DIR$/Chukwudi/delete-user.php" />
+<<<<<<< HEAD
+        <option value="$PROJECT_DIR$/Chukwudi/view3.php" />
+        <option value="$PROJECT_DIR$/Chukwudi/submitsurveyanswers.php" />
+=======
         <option value="$PROJECT_DIR$/Dinesh/volunteerhome_assets/volunteerhome_jquery/surveybounce.js" />
         <option value="$PROJECT_DIR$/Dinesh/volunteerhome_assets/volunteerhome_htmlscripts/question1.php" />
         <option value="$PROJECT_DIR$/Dinesh/volunteerhome_assets/volunteerhome_htmlscripts/question2.php" />
@@ -88,6 +210,7 @@
         <option value="$PROJECT_DIR$/Master/volunteerhome.php" />
         <option value="$PROJECT_DIR$/Dinesh/volunteerhome.php" />
         <option value="$PROJECT_DIR$/Dinesh/volunteerhome_assets/volunteerhome_css/volunteerhome.css" />
+>>>>>>> origin/master
       </list>
     </option>
   </component>
@@ -95,6 +218,9 @@
   <component name="JsBuildToolPackageJson" detection-done="true" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
+  </component>
+  <component name="PhpServers">
+    <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
@@ -168,7 +294,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Chukwudi/header.php" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Chukwudi/submitsurveyanswers.php" />
     <property name="settings.editor.selected.configurable" value="configurable.group.project" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
@@ -557,6 +683,14 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
@@ -738,6 +872,9 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/Chukwudi/adminhome.php">
+=======
     <entry file="file://$PROJECT_DIR$/Chukwudi/functions.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.041162226">
@@ -829,6 +966,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Master/logout.php">
+>>>>>>> origin/master
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -836,6 +974,9 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/Chukwudi/view2.php">
+=======
     <entry file="file://$PROJECT_DIR$/Master/volunteerhome_assets/volunteerhome_css/volunteerhome.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -855,6 +996,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Master/volunteerhome_assets/volunteerhome_htmlscripts/welcomepage.php">
+>>>>>>> origin/master
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4116223">
           <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
@@ -1086,6 +1228,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Dinesh/cssadminpage/screen.css">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="-25.0">
+          <caret line="186" column="21" selection-start-line="186" selection-start-column="21" selection-end-line="186" selection-end-column="21" />
+=======
         <state vertical-scroll-proportion="0.5989583">
           <caret line="813" column="4" selection-start-line="813" selection-start-column="4" selection-end-line="813" selection-end-column="16" />
           <folding />
@@ -1094,6 +1240,63 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Dinesh/volunteerhome_assets/volunteerhome_css/volunteerhome.css">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="-17.846153">
+          <caret line="144" column="0" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
+>>>>>>> origin/master
+          <folding>
+            <marker date="1459360859022" expanded="true" signature="669:743" placeholder="SELECT vol_f... volunteers" />
+            <marker date="1459360859022" expanded="true" signature="1367:1427" placeholder="SELECT quest... questions" />
+            <marker date="1459360859022" expanded="true" signature="1862:1923" placeholder="SELECT quest... questions" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/Chukwudi/view3.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-112.791664">
+          <caret line="283" column="41" selection-start-line="283" selection-start-column="41" selection-end-line="283" selection-end-column="41" />
+          <folding>
+            <element signature="e#7#101#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chukwudi/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.5">
+          <caret line="149" column="9" selection-start-line="149" selection-start-column="9" selection-end-line="149" selection-end-column="9" />
+          <folding>
+            <marker date="1459253103000" expanded="true" signature="614:744" placeholder="insert into volunteers... " />
+            <marker date="1459253103000" expanded="true" signature="1854:1909" placeholder="select * fro... administrators" />
+            <marker date="1459253103000" expanded="true" signature="2323:2408" placeholder="select * fro... administrators" />
+            <marker date="1459253103000" expanded="true" signature="3044:3068" placeholder="select * fro... volunteers" />
+            <marker date="1459253103000" expanded="true" signature="3283:3290" placeholder="select from submis... " />
+            <marker date="1459253103000" expanded="true" signature="3283:3383" placeholder="select from submissions... " />
+            <marker date="1459253103000" expanded="true" signature="3324:3382" placeholder="select vol_i... volunteers" />
+            <marker date="1459253103000" expanded="true" signature="3590:3911" placeholder="select quest... answers" />
+            <marker date="1459253103000" expanded="true" signature="3691:3833" placeholder="select submi... submissions" />
+            <marker date="1459253103000" expanded="true" signature="3774:3832" placeholder="select vol_i... volunteers" />
+            <marker date="1459253103000" expanded="true" signature="4102:4154" placeholder="delete from " />
+            <marker date="1459253103000" expanded="true" signature="4326:4380" placeholder="select * fro... volunteers" />
+            <marker date="1459253103000" expanded="true" signature="5103:5288" placeholder="update volun... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chukwudi/edit-user.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+    <entry file="file://$PROJECT_DIR$/Dinesh/volunteerhome_assets/volunteerhome_css/volunteerhome.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3292978">
+          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+>>>>>>> origin/master
+          <folding />
+=======
         <state vertical-scroll-proportion="-10.461538">
           <caret line="16" column="45" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
           <folding />
@@ -1109,8 +1312,26 @@
             <marker date="1459362109653" expanded="true" signature="1367:1427" placeholder="SELECT quest... questions" />
             <marker date="1459362109653" expanded="true" signature="1862:1923" placeholder="SELECT quest... questions" />
           </folding>
+>>>>>>> origin/master
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/Chukwudi/submitsurveyanswers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9202454">
+          <caret line="119" column="66" selection-start-line="119" selection-start-column="66" selection-end-line="119" selection-end-column="66" />
+          <folding>
+            <marker date="1459361722000" expanded="true" signature="1086:1140" placeholder="SELECT vol_i... volunteers" />
+            <marker date="1459361722000" expanded="true" signature="1757:1809" placeholder="select * fro... submissions" />
+            <marker date="1459361722000" expanded="true" signature="2884:3057" placeholder="INSERT INTO submissions... " />
+            <marker date="1459361722000" expanded="true" signature="3883:3974" placeholder="SELECT submi... submissions" />
+            <marker date="1459361722000" expanded="true" signature="4576:4788" placeholder="INSERT INTO answers... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+=======
+>>>>>>> origin/master
   </component>
 </project>

@@ -9,9 +9,11 @@ header{
     justify-content: flex-end;
 }
 
-.header{
-
+#homebutton{
+    display: flex;
 }
+
+
 
 h2{
     color: darkred;

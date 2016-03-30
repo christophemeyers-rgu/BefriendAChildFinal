@@ -147,16 +147,14 @@ function get_volunteer_name($email){
 
 
             <!-- (START OF WELCOME PAGE) ---------------------------------------------------------------------- -->
-            <section>
+            <section class="form" id="welcomepage">
 
                 <!-- Volunteer name is printed in the head -->
-                <section class="firstpage" id="firstpage_name">
                     <!--function from above using the email pulled from the session-->
                     <h1>Welcome<br><?php get_volunteer_name($_SESSION['vol_email']);?> </h1>
-                </section>
+
 
                 <!-- Survey Instructions -->
-                <section class="firstpage" id="firstpage_instructions">
                     There are 7 questions in total.
                     <br>
                     A summary page at the end allows you to check your answers and change them if needed.
@@ -164,9 +162,9 @@ function get_volunteer_name($email){
                     All questions indicated as "required" must be answered to be able submit the survey.
                     <br>
                     Thank you.
-                </section>
 
             </section>
+
             <!-- Start Survey Button -->
             <section class="firstpage" id="firstpage_start">
                 <h2><a href="volunteerhome.php"> <input type="button" value="Start survey"></a></h2>

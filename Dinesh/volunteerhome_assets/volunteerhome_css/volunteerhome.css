@@ -1,14 +1,11 @@
-.firstpage{
-    position: absolute;
-    background-color: white;
-    max-width: 600px;
-    height: 500px;
-    left: 0;
-    right: 0;
-    margin-left: auto;
+#welcomepage{
+    height: auto;
     margin-right: auto;
+    margin-left: auto;
+    background-color: aliceblue;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .header{

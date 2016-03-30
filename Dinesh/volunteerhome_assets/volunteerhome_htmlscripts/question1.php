@@ -7,7 +7,7 @@
     <label for="question1">
         <?php
             //function for getting the text
-             get_question_text(1) + "(Required)";
+             get_question_text(1);
         ?>
 </label>
 <br>

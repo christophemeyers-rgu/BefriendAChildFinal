@@ -68,7 +68,7 @@ function get_volunteer_name($email){
 
         $row = $result->fetch_assoc();
 
-        echo $row['question_type'];
+        echo $row['question_type' + "(Required)"];
     }
 
 

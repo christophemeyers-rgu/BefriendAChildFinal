@@ -8,7 +8,7 @@
         <?php
              //function for getting the text
             get_question_text(21);
-        ?>
+        ?> (Required)
 </label>
 <br>
 <br>
@@ -19,7 +19,7 @@
     <input required type="radio" name="question3" value="2"><img src="volunteerhome_assets/volunteerhome_images/surveyiconsmile.png" alt="smile">
 <br>
 <br>
-    <label for="question3">Explain :</label>
+    <label for="question3">Explain :(Optional)</label>
 <br>
     <textarea name="question3_opt" cols="45" rows="5" placeholder="Enter your explanation here"></textarea>
 <br>

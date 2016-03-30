@@ -1,26 +1,28 @@
-main {
-    max-width: 960px;
-    height: auto;
-    margin-right: auto;
-    margin-left: auto;
-    background-color: aliceblue;
-    flex-direction: row;
+header{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+}
+
+.header{
+
 }
 
 h2{
     color: darkred;
 }
 
-.container{
+#welcomepage{
+    background-color: aliceblue;
+    position: absolute;
+}
 
-    max-width: 650px;
-    height: 650px;
+.form{
+
+    max-width: 600px;
+    height: 500px;
     position: absolute;
     left: 0;
     right: 0;
-    top: 10%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -54,11 +56,10 @@ h2{
     margin-right: auto;
     margin-left: auto;
     background-color: aliceblue;
-    flex-direction: column;
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
-
 
 .ui-progressbar {
     position: relative;

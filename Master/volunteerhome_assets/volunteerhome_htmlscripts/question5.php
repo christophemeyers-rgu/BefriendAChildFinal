@@ -8,7 +8,7 @@
         <?php
             //function for getting the text
            get_question_text(41);
-        ?>
+        ?> (Required)
 </label>
 
     <input hidden type="number" name="qid5" value="41"><!-- Hidden input that carries value of question id (currently manual)-->
@@ -17,7 +17,7 @@
     <input required type="radio" name="question5" value=false>NO
 <br>
 <br>
-    <label for="question5">Explain :</label>
+    <label for="question5">Explain :(Optional)</label>
 <br>
     <textarea name="question5_opt" cols="45" rows="5" placeholder="Enter items here"></textarea>
 <br>

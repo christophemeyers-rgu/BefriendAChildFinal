@@ -212,7 +212,6 @@ function get_volunteer_name($email){
                 </p>
                     <h2>====[To begin Survey enter the date of the outing]:=====</h2>
                     <br>
-                <fieldset>
                     <h3>
                     <br>
                     <label for="eventdate">Event Date</label>
@@ -221,7 +220,6 @@ function get_volunteer_name($email){
                 <br>
                 <br>
                     </h3>
-                </fieldset>
                 <br>
                 <!-- Start Survey Button -->
                 <input type="button" id="start" name="next" value="Start Survey">

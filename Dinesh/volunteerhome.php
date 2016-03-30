@@ -194,7 +194,7 @@ function get_volunteer_name($email){
 
 
             <!-- (START OF WELCOME PAGE) ---------------------------------------------------------------------- -->
-            <section class="form" id="welcomepage">
+            <section class="main" id="welcomepage">
 
                 <!-- Volunteer name is printed in the head -->
                 <!--function from above using the email pulled from the session-->
@@ -202,7 +202,7 @@ function get_volunteer_name($email){
 
                 <!-- Survey Instructions -->
                 <h4>
-                    -There are 6 questions in total.
+                    -There are 7 questions in total.
                     <br><br>
                     -A summary page at the end allows you to check your answers and change them if needed.
                     <br><br>
@@ -210,27 +210,17 @@ function get_volunteer_name($email){
                     <br><br>
                     Thank you.
                 </h4>
-                    <h4>====[To begin Survey enter the date of the outing]:====</h4>
-                    <br>
-                <fieldset>
-                    <h3>
-                    <br>
-                    <label for="eventdate">Event Date</label>
-                <br>
-                    <input type="text" id="datepicker" name="eventdate">
-                <br>
-                <br>
-                    </h3>
-                </fieldset>
-                <br>
+
                 <!-- Start Survey Button -->
                 <input type="button" id="start" name="next" value="Start Survey">
 
             </section>
             <!-- (END OF WELCOME PAGE) ---------------------------------------------------------------------- -->
 
+
         </form>
         <!-- (END OF SURVEY) ---------------------------------------------------------------------- -->
+
 
 
     </main>

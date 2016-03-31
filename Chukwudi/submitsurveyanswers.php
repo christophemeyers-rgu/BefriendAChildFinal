@@ -53,7 +53,7 @@
 
         //like the current date for submission_date
         date_default_timezone_set('Europe/London'); //sets the timezone to the local one
-        $date="date'".date("Y-m-d")."'";//"date'".date("Y-m-d")."'";    //fills the current date and time in a format that works with our database
+        $date="date'".date("Y-m-d")."'"; //"date'".date("Y-m-d")."'";    //fills the current date and time in a format that works with our database
 
         echo $date;
 

@@ -121,7 +121,7 @@
         else{
             echo "You already submitted an event for the said date";
         }
- */
+*/
     }
 
 

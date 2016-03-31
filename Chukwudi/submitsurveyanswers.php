@@ -40,7 +40,7 @@
 
         $email = $_SESSION['vol_email'];    //get volunteer email from session
 
-        $vol_sql = "SELECT vol_id FROM volunteers WHERE vol_email='$email'";    //get volunteer id for FK link to submission
+        $vol_sql = "SELECT vol_id FROM volunteers WHERE vol_email='$email'";   //get volunteer id for FK link to submission
 
         $vol_result = $db->query($vol_sql) or die("Error: ".$vol_sql."<br>".$db->error);
 

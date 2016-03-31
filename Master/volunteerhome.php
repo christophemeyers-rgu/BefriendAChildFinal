@@ -119,16 +119,19 @@ function get_volunteer_name($email){
     <!-- (START OF HEADER) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <header>
 
+        <!-- Home Button -->
+        <section class="header" id="homebutton">
+            <h2><a href="volunteerhome.php"><input type="button" id="home" value="Home"></a></h2>
+        </section>
+
         <!-- Volunteer name is printed in the head -->
         <section class="header" id="name">
             <!--function from above using the email pulled from the session-->
             <h1><?php get_volunteer_name($_SESSION['vol_email']);?> </h1>
         </section>
 
-        <br>
-
         <!-- Logout Button -->
-        <section class="header" id="logout">
+        <section class="header" id="logoutbutton">
             <h2> <a href="logoutvolunteer.php" id="logout"><input type="button" value="Logout"></a></h2>
         </section>
 
@@ -140,7 +143,7 @@ function get_volunteer_name($email){
     <main>
 
 
-        <!-- (START OF SURVEY) ---------------------------------------------------------------------- -->
+        <!-- (START OF SURVEY) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
         <form class="main" id="surveyform" action="submitsurveyanswers.php" method="post" >
 
 
@@ -194,16 +197,16 @@ function get_volunteer_name($email){
             </section>
 
 
-            <!-- (START OF WELCOME PAGE) ---------------------------------------------------------------------- -->
+            <!-- (START OF WELCOME PAGE) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
             <section class="form" id="welcomepage">
                 <?php include ("volunteerhome_assets/volunteerhome_htmlscripts/welcomepage.php")
                 ?>
             </section>
-            <!-- (END OF WELCOME PAGE) ---------------------------------------------------------------------- -->
+            <!-- (END OF WELCOME PAGE) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
 
 
         </form>
-        <!-- (END OF SURVEY) ---------------------------------------------------------------------- -->
+        <!-- (END OF SURVEY) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
 
 
     </main>

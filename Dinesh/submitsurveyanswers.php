@@ -56,7 +56,7 @@
         date_default_timezone_set('Europe/London'); //sets the timezone to the local one
         $date="date'".date("Y-m-d")."'";    //fills the current date and time in a format that works with our database
 
-
+/*
         //Then we put all the survey answers into one array with the question_id, to get the event_description
         $answers= array(
             array($_POST['qid1'], $_POST['question1'], $_POST['question1_opt']),
@@ -108,7 +108,7 @@
 
         }
 
-
+*/
         header("Location: thankssurvey.php");   //link to thankssurvey page
     }
 

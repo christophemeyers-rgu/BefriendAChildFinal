@@ -55,13 +55,15 @@
         date_default_timezone_set('Europe/London'); //sets the timezone to the local one
         $date="date'".date("Y-m-d")."'"; //"date'".date("Y-m-d")."'";    //fills the current date and time in a format that works with our database
 
+        echo $date;
+
         /*$event_date_sql = "SELECT * FROM submissions WHERE event_date = '".$date."' )";
 
         $event_result = $db->query($event_date_sql) or die ("Error: ".$event_date_sql."<br>".$db->error);
 
         $results = mysqli_fetch_array($event_result);
 
-        $event = $results['submission_id'];*/
+        $event = $results['submission_id'];
 
         //Then we put all the survey answers into one array with the question_id, to get the event_description
         $answers= array(
@@ -119,7 +121,7 @@
         else{
             echo "You already submitted an event for the said date";
         }
-
+*/
     }
 
 

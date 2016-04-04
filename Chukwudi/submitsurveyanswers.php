@@ -57,7 +57,7 @@
 
         echo $date;
 
-        /*$event_date_sql = "SELECT * FROM submissions WHERE event_date = '".$date."' )";
+        $event_date_sql = "SELECT * FROM submissions WHERE event_date = '".$date."' )";
 
         $event_result = $db->query($event_date_sql) or die ("Error: ".$event_date_sql."<br>".$db->error);
 
@@ -121,7 +121,7 @@
         else{
             echo "You already submitted an event for the said date";
         }
-*/
+
     }
 
 

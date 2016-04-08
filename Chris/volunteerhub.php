@@ -92,7 +92,6 @@
     }
 
 
-    //Holla die Waldfee
 ?>
 
 <!DOCTYPE html>

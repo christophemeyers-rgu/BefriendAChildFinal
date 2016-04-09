@@ -9,55 +9,7 @@
 	}
 
 ?>
-<!--Below actually not needed-->
-	<!--if($_SERVER['REQUEST_METHOD']==='GET'){
-			session_exists();
-		}
 
-	function session_exists(){
-		
-		$db = new MySQLi(
-						'ap-cdbr-azure-east-c.cloudapp.net', //server or host address
-						'b35e94884f471c', //username for connecting to database
-						'90efdea3', //user's password 
-						'befriendachildtestDB' //database being connected to
-						);
-		
-		
-		// SQL Query To Fetch Complete Information Of User
-		//check if there was a connection error and respond accordingly
-				if($db->connect_errno){
-					die('Connection failed:'.connect_error);
-				}
-				else{
-					session_start();// Starting Session
-					// Establishing Connection with Server by passing server_name, user_id and password as a parameter
-					// Selecting Database
-					$user_check=$_SESSION['ad_email']; // Storing Session
-					
-					//select all values from database using the entered values as filter
-					$query="SELECT *
-					FROM `administrators`
-					WHERE `ad_email` = '$user_check' LIMIT 1";
-					$output=$db->query($query) or die("Selection Query Failed !!!");//query the database
-				}
-				$login_session=NULL;//initiate variable to hold session state
-				
-				//goo through the output from the sql query and initiate the login_session variable using returned email_
-				while($row = $output->fetch_assoc()) {
-					$login_session=$row["ad_email"];
-					}
-		if(isset($login_session)){//if a valid session exists?
-			show_admin_home();
-		}
-		else{
-			header("Location: index.php");
-		}
-	}
-	
-	function show_admin_home(){
-		
-		$htmlpage = <<< HTMLPAGE-->
 		<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -68,7 +20,7 @@
 	<link rel="stylesheet" media="all" type="text/css" href="cssadminpage/pro_dropline_ie.css" />
 
 	<!--  jquery core -->
-	<script src="jsadminpage/jquery/jquery-1.4.1.min.js" type="text/javascript"></script>
+/*	<script src="jsadminpage/jquery/jquery-1.4.1.min.js" type="text/javascript"></script>
 
 	<!--  styled select box script version 2 -->
 	<script src="jsadminpage/jquery/jquery.selectbox-0.5_style_2.js" type="text/javascript"></script>
@@ -171,7 +123,7 @@
 // and update the datePicker to reflect it...
 			$('#d').trigger('change');
 		});
-	</script>
+	</script>*/
 
 
 
@@ -245,7 +197,7 @@
 
 		<div class="select_sub">
 			<ul class="sub">
-				<li><a href="#nogo">Full Report</a></li>
+				<li><a href="view.php">Full Report</a></li>
 				<li><a href="#nogo">Survey Query</a></li>
 				<li><a href="#nogo">Delete Report</a></li>
 			 
@@ -302,7 +254,7 @@
 			<h2><span style="text-decoration: underline;"> Features: </span></h2>
 			<h3><a href="createlogin.php">Create User Login</a></h3>
 			<h3><a href="delete-user.php">Delete User Login</h3>
-			<h3>Full Report</h3>
+			<h3><a href="view.php">Full Report</a></h3>
 			<h3>Survey Query</h3>
 			<h3>Delete Report</h3>
 
@@ -346,7 +298,4 @@
  
 </body>
 </html>
-<!--HTMLPAGE;
-		print $htmlpage;
-	}-->
 	

@@ -55,9 +55,8 @@
         date_default_timezone_set('Europe/London'); //sets the timezone to the local one
         $date="date'".date("Y-m-d")."'"; //"date'".date("Y-m-d")."'";    //fills the current date and time in a format that works with our database
         $new_date = date("Y-m-d");
-        echo $new_date;
-/*
-        $event_date_sql = "SELECT * FROM submissions WHERE event_date = '".$date."' )";
+
+        $event_date_sql = "SELECT * FROM submissions WHERE event_date = '".$new_date."' )";
 
         $event_result = $db->query($event_date_sql) or die ("Error: ".$event_date_sql."<br>".$db->error);
 
@@ -121,7 +120,7 @@
         else{
             echo "You already submitted an event for the said date";
         }
-*/
+
     }
 
 

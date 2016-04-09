@@ -121,6 +121,7 @@
         header("Location: thankssurvey.php");   //link to thankssurvey page
         }
         else{
+            header("Location: volunteerhome.php");
             echo "You already submitted an event for the said date";
         }
 

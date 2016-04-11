@@ -3,6 +3,7 @@
 
 	//THIS PAGE IS CALLED WHEN THE ADMIN SUBMITS THE FORM FOR VOLUNTEER-CREATION FROM CREATEUSER.PHP
 
+include("maildetails.php");
 
 	//if the http method called is "GET"
 	if($_SERVER['REQUEST_METHOD']==='GET'){
@@ -89,7 +90,7 @@
 	}
 
 
-	//email to volunteer function
+	/*//email to volunteer function
 	function email_volunteer_login(){
 
 		//setting some variables with form values
@@ -146,7 +147,7 @@
 		$result = $mailer->send($message);
 
 
-	}
+	}*/
 
 	//Abundant function
 	/*function session_exists(){

@@ -142,6 +142,13 @@ function get_volunteer_name($email){
     <!-- (START OF MAIN) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <main>
 
+        <!-- (START OF WELCOME PAGE) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+        <section class="welcomepage" id="welcomepage">
+            <?php include ("volunteerhome_assets/volunteerhome_htmlscripts/welcomepage.php")
+            ?>
+        </section>
+        <!-- (END OF WELCOME PAGE) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+
 
         <!-- (START OF SURVEY) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
         <form class="main" id="surveyform" action="submitsurveyanswers.php" method="post" >
@@ -153,35 +160,9 @@ function get_volunteer_name($email){
             </section>
 
 
-            <!-- SURVEY QUESTIONS SUMMARY AND SUBMISSION -->
-            <section class="form" id="cont7">
-                <h1>Survey Questions Summary:</h1>
-                <p id="summary"></p>
-                <input type="submit" id="submit" name="submit" value="SUBMIT SURVEY">
-            </section>
-
-
-            <!-- SURVEY QUESTION 6 -->
-            <section class="form" id="cont6">
-                <?php include("volunteerhome_assets/volunteerhome_htmlscripts/question6.php"); ?>
-            </section>
-
-
-            <!-- SURVEY QUESTION 5 -->
-            <section class="form" id="cont5">
-                <?php include("volunteerhome_assets/volunteerhome_htmlscripts/question5.php"); ?>
-            </section>
-
-
-            <!-- SURVEY QUESTION 4 -->
-            <section class="form" id="cont4">
-                <?php include("volunteerhome_assets/volunteerhome_htmlscripts/question4.php"); ?>
-            </section>
-
-
-            <!-- SURVEY QUESTION 3 -->
-            <section class="form" id="cont3">
-                <?php include("volunteerhome_assets/volunteerhome_htmlscripts/question3.php"); ?>
+            <!-- SURVEY QUESTION 1 -->
+            <section class="form" id="cont1">
+                <?php include("volunteerhome_assets/volunteerhome_htmlscripts/question1.php"); ?>
             </section>
 
 
@@ -191,18 +172,36 @@ function get_volunteer_name($email){
             </section>
 
 
-            <!-- SURVEY QUESTION 1 -->
-            <section class="form" id="cont1">
-                <?php include("volunteerhome_assets/volunteerhome_htmlscripts/question1.php"); ?>
+            <!-- SURVEY QUESTION 3 -->
+            <section class="form" id="cont3">
+                <?php include("volunteerhome_assets/volunteerhome_htmlscripts/question3.php"); ?>
             </section>
 
 
-            <!-- (START OF WELCOME PAGE) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-            <section class="form" id="welcomepage">
-                <?php include ("volunteerhome_assets/volunteerhome_htmlscripts/welcomepage.php")
-                ?>
+            <!-- SURVEY QUESTION 4 -->
+            <section class="form" id="cont4">
+                <?php include("volunteerhome_assets/volunteerhome_htmlscripts/question4.php"); ?>
             </section>
-            <!-- (END OF WELCOME PAGE) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+
+
+            <!-- SURVEY QUESTION 5 -->
+            <section class="form" id="cont5">
+                <?php include("volunteerhome_assets/volunteerhome_htmlscripts/question5.php"); ?>
+            </section>
+
+
+            <!-- SURVEY QUESTION 6 -->
+            <section class="form" id="cont6">
+                <?php include("volunteerhome_assets/volunteerhome_htmlscripts/question6.php"); ?>
+            </section>
+
+
+            <!-- SURVEY QUESTIONS SUMMARY AND SUBMISSION -->
+            <section class="form" id="cont7">
+                <h1>Survey Questions Summary:</h1>
+                <p id="summary"></p>
+                <input type="submit" id="submit" name="submit" value="SUBMIT SURVEY">
+            </section>
 
 
         </form>

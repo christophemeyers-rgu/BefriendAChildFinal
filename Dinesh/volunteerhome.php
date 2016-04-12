@@ -150,7 +150,7 @@ function get_volunteer_name($email){
         <!-- (END OF WELCOME PAGE) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
 
         <!-- Survey Progression Bar -->
-        <section class="surveybar" id="surveybar" style="display: none;">
+        <section class="surveybar" id="surveybar" >
             <section id="progressbar"><section class="progress-label"></section>
         </section>
 

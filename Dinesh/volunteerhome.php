@@ -157,7 +157,7 @@ function get_volunteer_name($email){
 
 
         <!-- (START OF SURVEY) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-        <form class="main" id="surveyform" action="submitsurveyanswers.php" method="post" >
+        <form class="main" id="surveyform" action="submitsurveyanswers.php" method="post" style="display: none;">
 
 
 

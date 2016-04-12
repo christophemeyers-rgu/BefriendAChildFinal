@@ -199,9 +199,10 @@ function get_volunteer_name($email){
 
             <!-- SURVEY QUESTIONS SUMMARY AND SUBMISSION -->
             <section class="form" id="cont7">
-                <?php include("volunteerhome_assets/volunteerhome_htmlscripts/surveysummary.php"); ?>
+                <h1>Survey Questions Summary:</h1>
+                <p id="summary"></p>
+                <input type="submit" id="submit" name="submit" value="SUBMIT SURVEY">
             </section>
-
 
         </form>
         <!-- (END OF SURVEY) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->

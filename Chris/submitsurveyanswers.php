@@ -130,7 +130,7 @@
             header("Location: thankssurvey.php");   //link to thankssurvey page
         }
         else{
-            header("same_date.php");
+            header("Location: same_date.php");
         }
 
     }

@@ -42,8 +42,8 @@ $( "#next5" ).click(function() {
 });
 
 $( "#next6" ).click(function() {
-    $( "#cont5" ).toggle( "clip", 1000 );
-    $( "#cont6" ).toggle( "scale", 1000 );
+    $( "#cont5" ).toggle( "fold", 1000 );
+    $( "#cont6" ).toggle( "puff", 1000 );
     $( "#progressbar" ).progressbar({
         value: 85
     });

@@ -56,7 +56,11 @@
         date_default_timezone_set('Europe/London'); //sets the timezone to the local one
         $date="date'".date("Y-m-d")."'";    //fills the current date and time in a format that works with our database
 
-        $event_date_sql = "SELECT * FROM submissions WHERE event_date = $date AND vol_id = $vol_id";
+
+        $event_date = $_POST["eventdate"]; //this is the date the volunteer calls "event date"
+
+
+        $event_date_sql = "SELECT * FROM submissions WHERE event_date = $event_date AND vol_id = $vol_id";
 
         $event_result = $db->query($event_date_sql) or die ("Error: ".$event_date_sql."<br>".$db->error);
 

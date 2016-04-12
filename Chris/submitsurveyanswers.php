@@ -54,6 +54,8 @@
 
         //Now we check if an event of the entered event_date already exists in the db
 
+        $event = array();
+
         $event_date = $_POST["eventdate"]; //this is the date the volunteer calls "event date"
 
         $event_date_sql = "date'".$event_date."'";
@@ -62,8 +64,12 @@
 
         $event_result = $db->query($event_date_query) or die ("Error: ".$event_date_query."<br>".$db->error);
 
+        while($new_row = $event_result->fetch_assoc()){
+            $event = $new_row['submission_id'];
+        }
 
-
+        echo $event;
+/*
         //if we find a submission_id in $event, THIS volunteer has already submitted something for THIS event
 
         if(!isset($event)) {
@@ -128,7 +134,7 @@
             echo "You already submitted an event for the said date";
             header("Location: volunteerhome.php");
         }
-
+*/
     }
 
 

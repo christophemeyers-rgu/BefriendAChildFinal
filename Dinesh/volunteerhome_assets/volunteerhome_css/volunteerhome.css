@@ -15,19 +15,18 @@ h2{
 
 #welcomepage{
     background-color: aliceblue;
-
+    position: absolute;
 }
 
 .form{
 
     max-width: 600px;
     height: 500px;
+    position: absolute;
     left: 0;
     right: 0;
     margin-left: auto;
     margin-right: auto;
-    display: flex;
-    flex-direction: row;
 }
 
 #cont1 {

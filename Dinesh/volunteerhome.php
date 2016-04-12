@@ -199,10 +199,9 @@ function get_volunteer_name($email){
 
             <!-- SURVEY QUESTIONS SUMMARY AND SUBMISSION -->
             <section class="form" id="cont7">
-                <p id="summary"><h1>Survey Questions Summary:</h1>
+                <h1>Survey Questions Summary:</h1>
+                <p id="summary"></p>
                 <input type="submit" id="submit" name="submit" value="SUBMIT SURVEY">
-                </p>
-
             </section>
 
         </form>

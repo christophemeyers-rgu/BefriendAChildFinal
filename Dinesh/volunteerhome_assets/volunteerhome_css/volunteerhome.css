@@ -19,6 +19,7 @@ h2{
 }
 
 .form{
+
     max-width: 600px;
     height: 500px;
     position: absolute;
@@ -58,7 +59,7 @@ h2{
     margin-left: auto;
     background-color: aliceblue;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center;
 }
 

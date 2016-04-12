@@ -13,16 +13,20 @@ h2{
     color: darkred;
 }
 
+main{
+    display: flex;
+}
+
 #welcomepage{
     background-color: aliceblue;
-    position: absolute;
+
 }
 
 .form{
 
     max-width: 600px;
     height: 500px;
-
+    position: absolute;
     left: 0;
     right: 0;
     margin-left: auto;

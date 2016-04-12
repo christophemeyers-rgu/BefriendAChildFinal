@@ -69,10 +69,6 @@
             $event = $row["submission_id"];
         }
 
-        echo $event;
-
-        /*
-
 
 
 
@@ -140,7 +136,7 @@
             echo "You already submitted an event for the said date";
             header("Location: volunteerhome.php");
         }
-        */
+
     }
 
 

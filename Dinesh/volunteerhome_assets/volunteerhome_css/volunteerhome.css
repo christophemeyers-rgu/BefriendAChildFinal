@@ -29,8 +29,7 @@ main{
 }
 
 .form{
-
-
+    display: none;
 }
 
 #cont1 {

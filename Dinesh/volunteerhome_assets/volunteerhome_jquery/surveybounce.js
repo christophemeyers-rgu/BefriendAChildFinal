@@ -11,7 +11,7 @@ $( "#start" ).click(function() {
 
 $( "#next2" ).click(function() {
     $( "#cont1" ).toggle( "explode", 1000 );
-
+    $( "#cont2" ).toggle( "size", 1000 );
     $( "#progressbar" ).progressbar({
         value: 17
     });
@@ -19,7 +19,7 @@ $( "#next2" ).click(function() {
 
 $( "#next3" ).click(function() {
     $( "#cont2" ).toggle( "size", 1000 );
-
+    $( "#cont3" ).toggle( "fold", 1000 );
     $( "#progressbar" ).progressbar({
         value: 34
     });
@@ -27,7 +27,7 @@ $( "#next3" ).click(function() {
 
 $( "#next4" ).click(function() {
     $( "#cont3" ).toggle( "fold", 1000 );
-
+    $( "#cont4" ).toggle( "puff", 1000 );
     $( "#progressbar" ).progressbar({
         value: 51
     });
@@ -35,7 +35,7 @@ $( "#next4" ).click(function() {
 
 $( "#next5" ).click(function() {
     $( "#cont4" ).toggle( "puff", 1000 );
-
+    $( "#cont5" ).toggle( "clip", 1000 );
     $( "#progressbar" ).progressbar({
         value: 68
     });
@@ -43,7 +43,7 @@ $( "#next5" ).click(function() {
 
 $( "#next6" ).click(function() {
     $( "#cont5" ).toggle( "clip", 1000 );
-
+    $( "#cont6" ).toggle( "scale", 1000 );
     $( "#progressbar" ).progressbar({
         value: 85
     });

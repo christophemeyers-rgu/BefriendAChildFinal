@@ -5,12 +5,13 @@
 
 $( "#start" ).click(function() {
     $( "#welcomepage" ).toggle( "fade", 1000 );
-
+    $( "#surveybar" ).toggle( "fade", 1000 );
+    $( "#cont1" ).toggle( "explode", 1000 );
 });
 
 $( "#next2" ).click(function() {
     $( "#cont1" ).toggle( "explode", 1000 );
-
+    $( "#cont2" ).toggle( "size", 1000 );
     $( "#progressbar" ).progressbar({
         value: 17
     });
@@ -18,7 +19,7 @@ $( "#next2" ).click(function() {
 
 $( "#next3" ).click(function() {
     $( "#cont2" ).toggle( "size", 1000 );
-
+    $( "#cont3" ).toggle( "fold", 1000 );
     $( "#progressbar" ).progressbar({
         value: 34
     });
@@ -26,7 +27,7 @@ $( "#next3" ).click(function() {
 
 $( "#next4" ).click(function() {
     $( "#cont3" ).toggle( "fold", 1000 );
-
+    $( "#cont4" ).toggle( "puff", 1000 );
     $( "#progressbar" ).progressbar({
         value: 51
     });
@@ -34,7 +35,7 @@ $( "#next4" ).click(function() {
 
 $( "#next5" ).click(function() {
     $( "#cont4" ).toggle( "puff", 1000 );
-
+    $( "#cont5" ).toggle( "clip", 1000 );
     $( "#progressbar" ).progressbar({
         value: 68
     });
@@ -42,15 +43,15 @@ $( "#next5" ).click(function() {
 
 $( "#next6" ).click(function() {
     $( "#cont5" ).toggle( "clip", 1000 );
-
+    $( "#cont6" ).toggle( "puff", 1000 );
     $( "#progressbar" ).progressbar({
         value: 85
     });
 });
 
 $( "#nextsurveysummary" ).click(function() {
-    $( "#cont6" ).toggle( "scale", 1000 );
-
+    $( "#cont6" ).toggle( "fade", 1000 );
+    $( "#cont7" ).toggle( "fade", 1000 );
     $( "div" ).show().prependTo( "p" ); // Sends all the questions summary to the summary page
 
     $( "#progressbar" ).progressbar({
@@ -63,6 +64,7 @@ $( "#nextsurveysummary" ).click(function() {
 
 
 $( "#previous1" ).click(function() {
+    $("#cont2").toggle("slide", 1000);
     $("#cont1").toggle("slide", 1000);
 
     $( "#progressbar" ).progressbar({
@@ -71,6 +73,7 @@ $( "#previous1" ).click(function() {
 });
 
 $( "#previous2" ).click(function() {
+    $("#cont3").toggle("slide", 1000);
     $("#cont2").toggle("slide", 1000);
 
     $( "#progressbar" ).progressbar({
@@ -79,6 +82,7 @@ $( "#previous2" ).click(function() {
 });
 
 $( "#previous3" ).click(function() {
+    $("#cont4").toggle("slide", 1000);
     $("#cont3").toggle("slide", 1000);
 
     $( "#progressbar" ).progressbar({
@@ -87,6 +91,7 @@ $( "#previous3" ).click(function() {
 });
 
 $( "#previous4" ).click(function() {
+    $("#cont5").toggle("slide", 1000);
     $("#cont4").toggle("slide", 1000);
 
     $( "#progressbar" ).progressbar({
@@ -95,6 +100,7 @@ $( "#previous4" ).click(function() {
 });
 
 $( "#previous5" ).click(function() {
+    $("#cont6").toggle( "slide", 1000 );
     $("#cont5").toggle("slide", 1000);
 
     $( "#progressbar" ).progressbar({

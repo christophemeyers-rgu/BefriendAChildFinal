@@ -130,8 +130,8 @@
             header("Location: thankssurvey.php");   //link to thankssurvey page
         }
         else{
-            echo "You already submitted an event for the said date";
             header("Location: volunteerhome.php");
+            echo "<script>alert('You already submitted an event for the said date')</script>";
         }
 
     }

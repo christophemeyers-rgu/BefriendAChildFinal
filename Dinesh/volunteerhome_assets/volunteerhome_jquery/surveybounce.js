@@ -5,7 +5,9 @@
 
 $( "#start" ).click(function() {
     $( "#welcomepage" ).toggle( "fade", 1000 );
-
+    $( "#cont1" ).toggle( "explode", 1000 );
+    $( "#cont2" ).toggle( "size", 1000 );
+    $( "#cont3" ).toggle( "fold", 1000 );
 });
 
 $( "#next2" ).click(function() {

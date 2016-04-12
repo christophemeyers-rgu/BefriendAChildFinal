@@ -125,7 +125,7 @@ function is_admin() {
 //end function
 
 function getAllRegisteredUsers() {
-    $sql = "select * from volunteers";
+    $sql = "select * from volunteers ORDER BY vol_email";
 
     $mysqli = new mysqli(host, user, password, database);
     $result = $mysqli->query($sql);

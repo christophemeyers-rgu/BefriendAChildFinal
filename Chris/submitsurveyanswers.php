@@ -60,9 +60,23 @@
 
         $event_result = $db->query($event_date_query) or die ("Error: ".$event_date_query."<br>".$db->error);
 
-        $results = mysqli_fetch_array($event_result);
 
-        $event = $results['submission_id'];
+        $event = NULL; //initiate variable to be empty, opposite of isset
+
+
+        $event_row = $event_result->fetch_assoc();
+
+        $event = $event_row["submission_id"];
+
+
+
+        /*$login_session=NULL;//initiate variable to hold session state
+
+        //goo through the output from the sql query and initiate the login_session variable using returned email_
+        while($row = $output->fetch_assoc()) {
+            $login_session=$row["vol_email"];
+        }*/
+
 
 
 

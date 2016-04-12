@@ -157,25 +157,25 @@ function get_volunteer_name($email){
 
 
         <!-- (START OF SURVEY) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-        <form class="main" id="surveyform" action="submitsurveyanswers.php" method="post" style="display: none;">
+        <form class="main" id="surveyform" action="submitsurveyanswers.php" method="post" >
 
 
 
 
             <!-- SURVEY QUESTION 1 -->
-            <section class="form" id="cont1">
+            <section class="form" id="cont1" style="display: none;">
                 <?php include("volunteerhome_assets/volunteerhome_htmlscripts/question1.php"); ?>
             </section>
 
 
             <!-- SURVEY QUESTION 2 -->
-            <section class="form" id="cont2">
+            <section class="form" id="cont2" style="display: none;">
                 <?php include("volunteerhome_assets/volunteerhome_htmlscripts/question2.php"); ?>
             </section>
 
 
             <!-- SURVEY QUESTION 3 -->
-            <section class="form" id="cont3">
+            <section class="form" id="cont3" style="display: none;">
                 <?php include("volunteerhome_assets/volunteerhome_htmlscripts/question3.php"); ?>
             </section>
 

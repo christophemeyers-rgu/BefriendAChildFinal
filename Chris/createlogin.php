@@ -3,7 +3,6 @@
 
 	//THIS PAGE IS CALLED WHEN THE ADMIN SUBMITS THE FORM FOR VOLUNTEER-CREATION FROM CREATEUSER.PHP
 
-include("maildetails.php");
 
 	//if the http method called is "GET"
 	if($_SERVER['REQUEST_METHOD']==='GET'){
@@ -90,7 +89,7 @@ include("maildetails.php");
 	}
 
 
-	/*//email to volunteer function
+	//email to volunteer function
 	function email_volunteer_login(){
 
 		//setting some variables with form values
@@ -112,7 +111,7 @@ include("maildetails.php");
 					<br>
 					If you would like to fill out a survey concerning your experience with Befriend A Child,
 					please follow
-					<a href='http://befriendachildtestsurvey.azurewebsites.net/Chris/volunteerlogin.php'>this link</a>
+					<a href='http://befriendachildtestsurvey.azurewebsites.net/Master/volunteerlogin.php'>this link</a>
 					and login with:
 					<br><br>
 					Username: $email
@@ -147,7 +146,7 @@ include("maildetails.php");
 		$result = $mailer->send($message);
 
 
-	}*/
+	}
 
 	//Abundant function
 	/*function session_exists(){

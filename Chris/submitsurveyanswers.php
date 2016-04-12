@@ -56,6 +56,14 @@
         date_default_timezone_set('Europe/London'); //sets the timezone to the local one
         $date="date'".date("Y-m-d")."'";    //fills the current date and time in a format that works with our database
 
+        $event_date_sql = "SELECT * FROM submissions WHERE event_date = $date AND vol_id = $vol_id";
+
+        $event_result = $db->query($event_date_sql) or die ("Error: ".$event_date_sql."<br>".$db->error);
+
+        $results = mysqli_fetch_array($event_result);
+
+        $event = $results['submission_id'];
+
 
         //Then we put all the survey answers into one array with the question_id, to get the event_description
         $answers= array(
@@ -73,6 +81,7 @@
         $submission_sql = "INSERT INTO submissions (vol_id, event_description, event_date, submission_date)
                             VALUES ('".$vol_id."','".$answers[0][1]."',".$date.", ".$date.")";
 
+        if(!isset($event)) {
         //Finally, send the query to the database, to create the submission instance
         $submission_result= $db->query($submission_sql) or die("Error: ".$submission_sql."<br>".$db->error);
 
@@ -110,6 +119,12 @@
 
 
         header("Location: thankssurvey.php");   //link to thankssurvey page
+        }
+        else{
+            echo "You already submitted an event for the said date";
+            header("Location: volunteerhome.php");
+        }
+
     }
 
 

@@ -31,6 +31,6 @@ echo "<script>alert('Thank you for completing the survey!');</script>"; //thank 
     <title>Thank you for submitting the survey!</title>
 </head>
 <body>
-    <a href="volunteerhub.php">Back to Hub</a>
+    <a href="volunteerhome.php">Back to Volunteer Homepage</a>
 </body>
 </html>

@@ -1,4 +1,3 @@
-
 <?php
 /**
  * Created by PhpStorm.
@@ -237,48 +236,53 @@ if(!isset($_SESSION['ad_email'])){
 
 <!-- start content-outer ........................................................................................................................START -->
 <div class="container">
+    <p>List of submissions by <a href="view.php"><?php echo $_GET['vol_email'];?></a></p>
     <table class="table table-striped">
         <thead>
         <tr>
-            <th>Sr. #</th>
-            <th>Login Name</th>
-            <th>First Name</th>
-            <th>Surname</th>
-            <th>Options</th>
+            <th>ID</th>
+            <th>Event description</th>
+            <th>Event date</th>
+            <th>Submission date</th>
         </tr>
         </thead>
         <?php
+        include("db_connection.php");
 
-        $result = getAllRegisteredUsers();
+        if($db->connect_errno){
+            die('Connectfailed['.$db->connect_error.']');
+        }
 
-        if(mysqli_num_rows($result)>0)                                                {
+        $vol_email = $_GET['vol_email'];
+
+        $submissions = getUserSubmissions($vol_email);
+
+        if(mysqli_num_rows($submissions)>0){
 
             $counter = 0;
-            while ($row=  mysqli_fetch_array($result))
+            while ($row= mysqli_fetch_array($submissions))
             {
                 $counter++;
+
                 ?>
                 <tbody>
                 <tr>
                     <td><?php echo $counter; ?></td>
-                    <td><?php echo $row['vol_email']; ?></td>
-                    <td><?php echo $row['vol_firstname']; ?></td>
-                    <td><?php echo $row['vol_surname']; ?></td>
-                    <td>
-                        <a href="edit-user.php?vol_email=<?php echo $row['vol_email']; ?>" style="color:green;">Edit</a>
-                        &nbsp;&nbsp;&nbsp;<a href="?vol_email=<?php echo $row['vol_email']; ?>" style="color:red;">Delete</a>
-                    </td>
-
+                    <td><a href="view3.php?event_date=<?php echo $row['event_date']; ?>&vol_email=<?php echo $vol_email; ?>"><?php echo $row['event_description']; ?></a></td>
+                    <td><?php echo $row['event_date']; ?></td>
+                    <td><?php echo $row['submission_date']; ?></td>
                 </tr>
                 </tbody>
                 <?php
 
-            }//end of for loop
-        }//end if statement
+            }
+        }
+        else{
+            echo "No submissions for this user";
+        }
+
         ?>
-
     </table>
-
 </div>
 <!--  end content-outer........................................................END -->
 

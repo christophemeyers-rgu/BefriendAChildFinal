@@ -58,11 +58,11 @@
 
 
         $event_date = $_POST["eventdate"]; //this is the date the volunteer calls "event date"
+        $event_date_sql = "date'".$event_date."'"; //this variable will be useful for inserting into db via sql
 
+        $event_date_query = "SELECT * FROM submissions WHERE event_date = $event_date AND vol_id = $vol_id";
 
-        $event_date_sql = "SELECT * FROM submissions WHERE event_date = $event_date AND vol_id = $vol_id";
-
-        $event_result = $db->query($event_date_sql) or die ("Error: ".$event_date_sql."<br>".$db->error);
+        $event_result = $db->query($event_date_query) or die ("Error: ".$event_date_query."<br>".$db->error);
 
         $results = mysqli_fetch_array($event_result);
 
@@ -81,9 +81,8 @@
 
 
         //Then throw it all together to create an instance of submission
-        //PS for now, the event_date is just the submission_date, but event_will need to be input by volunteer in a future update
         $submission_sql = "INSERT INTO submissions (vol_id, event_description, event_date, submission_date)
-                            VALUES ('".$vol_id."','".$answers[0][1]."',".$date.", ".$date.")";
+                            VALUES ('".$vol_id."','".$answers[0][1]."',".$event_date_sql.", ".$date.")";
 
         if(!isset($event)) {
         //Finally, send the query to the database, to create the submission instance

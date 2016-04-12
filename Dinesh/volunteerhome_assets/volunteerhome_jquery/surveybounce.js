@@ -100,7 +100,7 @@ $( "#previous4" ).click(function() {
 });
 
 $( "#previous5" ).click(function() {
-    $("#cont6").toggle( "scale", 1000 );
+    $("#cont6").toggle( "slide", 1000 );
     $("#cont5").toggle("slide", 1000);
 
     $( "#progressbar" ).progressbar({

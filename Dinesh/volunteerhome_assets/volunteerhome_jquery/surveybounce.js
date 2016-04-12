@@ -50,8 +50,8 @@ $( "#next6" ).click(function() {
 });
 
 $( "#nextsurveysummary" ).click(function() {
-    $( "#cont6" ).toggle( "scale", 1000 );
-    $( "#cont7" ).toggle( "explode", 1000 );
+    $( "#cont6" ).toggle( "fade", 1000 );
+    $( "#cont7" ).toggle( "fade", 1000 );
     $( "div" ).show().prependTo( "p" ); // Sends all the questions summary to the summary page
 
     $( "#progressbar" ).progressbar({

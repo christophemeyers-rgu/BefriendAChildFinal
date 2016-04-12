@@ -130,8 +130,3 @@ $(function() {
         value: 0
     });
 });
-
-
-$( ".navbuttons" ).button({
-    icons: { primary: "ui-icon-gear"}
-});

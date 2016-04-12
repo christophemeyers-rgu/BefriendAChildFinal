@@ -64,18 +64,14 @@
         $event = NULL; //initiate variable to be empty, opposite of isset
 
 
-        $event_row = $event_result->fetch_assoc();
+        while($row = $event_result->fetch_assoc()){
 
-        $event = $event_row["submission_id"];
+            $event = $row["submission_id"];
+        }
 
+        echo $event;
 
-
-        /*$login_session=NULL;//initiate variable to hold session state
-
-        //goo through the output from the sql query and initiate the login_session variable using returned email_
-        while($row = $output->fetch_assoc()) {
-            $login_session=$row["vol_email"];
-        }*/
+        /*
 
 
 
@@ -144,7 +140,7 @@
             echo "You already submitted an event for the said date";
             header("Location: volunteerhome.php");
         }
-
+        */
     }
 
 

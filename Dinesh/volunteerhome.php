@@ -142,59 +142,14 @@ function get_volunteer_name($email){
     <!-- (START OF MAIN) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <main>
 
-        <!-- (START OF WELCOME PAGE) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-        <section class="welcomepage" id="welcomepage">
-            <?php include ("volunteerhome_assets/volunteerhome_htmlscripts/welcomepage.php")
-            ?>
-        </section>
-        <!-- (END OF WELCOME PAGE) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-
-        <!-- Survey Progression Bar -->
-        <section class="surveybar" id="surveybar" style="display: none;">
-            <section id="progressbar"><section class="progress-label"></section>
-        </section>
-
-
 
         <!-- (START OF SURVEY) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
         <form class="main" id="surveyform" action="submitsurveyanswers.php" method="post" >
 
 
-
-
-            <!-- SURVEY QUESTION 1 -->
-            <section class="form" id="cont1">
-                <?php include("volunteerhome_assets/volunteerhome_htmlscripts/question1.php"); ?>
-            </section>
-
-
-            <!-- SURVEY QUESTION 2 -->
-            <section class="form" id="cont2">
-                <?php include("volunteerhome_assets/volunteerhome_htmlscripts/question2.php"); ?>
-            </section>
-
-
-            <!-- SURVEY QUESTION 3 -->
-            <section class="form" id="cont3">
-                <?php include("volunteerhome_assets/volunteerhome_htmlscripts/question3.php"); ?>
-            </section>
-
-
-            <!-- SURVEY QUESTION 4 -->
-            <section class="form" id="cont4">
-                <?php include("volunteerhome_assets/volunteerhome_htmlscripts/question4.php"); ?>
-            </section>
-
-
-            <!-- SURVEY QUESTION 5 -->
-            <section class="form" id="cont5">
-                <?php include("volunteerhome_assets/volunteerhome_htmlscripts/question5.php"); ?>
-            </section>
-
-
-            <!-- SURVEY QUESTION 6 -->
-            <section class="form" id="cont6">
-                <?php include("volunteerhome_assets/volunteerhome_htmlscripts/question6.php"); ?>
+            <!-- Survey Progression Bar -->
+            <section class="form" id="surveybar">
+            <section id="progressbar"><section class="progress-label"></section>
             </section>
 
 
@@ -204,6 +159,50 @@ function get_volunteer_name($email){
                 <p id="summary"></p>
                 <input type="submit" id="submit" name="submit" value="SUBMIT SURVEY">
             </section>
+
+
+            <!-- SURVEY QUESTION 6 -->
+            <section class="form" id="cont6">
+                <?php include("volunteerhome_assets/volunteerhome_htmlscripts/question6.php"); ?>
+            </section>
+
+
+            <!-- SURVEY QUESTION 5 -->
+            <section class="form" id="cont5">
+                <?php include("volunteerhome_assets/volunteerhome_htmlscripts/question5.php"); ?>
+            </section>
+
+
+            <!-- SURVEY QUESTION 4 -->
+            <section class="form" id="cont4">
+                <?php include("volunteerhome_assets/volunteerhome_htmlscripts/question4.php"); ?>
+            </section>
+
+
+            <!-- SURVEY QUESTION 3 -->
+            <section class="form" id="cont3">
+                <?php include("volunteerhome_assets/volunteerhome_htmlscripts/question3.php"); ?>
+            </section>
+
+
+            <!-- SURVEY QUESTION 2 -->
+            <section class="form" id="cont2">
+                <?php include("volunteerhome_assets/volunteerhome_htmlscripts/question2.php"); ?>
+            </section>
+
+
+            <!-- SURVEY QUESTION 1 -->
+            <section class="form" id="cont1">
+                <?php include("volunteerhome_assets/volunteerhome_htmlscripts/question1.php"); ?>
+            </section>
+
+
+            <!-- (START OF WELCOME PAGE) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+            <section class="form" id="welcomepage">
+                <?php include ("volunteerhome_assets/volunteerhome_htmlscripts/welcomepage.php")
+                ?>
+            </section>
+            <!-- (END OF WELCOME PAGE) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
 
 
         </form>

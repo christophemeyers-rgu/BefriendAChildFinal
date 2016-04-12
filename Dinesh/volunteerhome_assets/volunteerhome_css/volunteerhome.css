@@ -13,13 +13,7 @@ h2{
     color: darkred;
 }
 
-#welcomepage{
-    background-color: aliceblue;
-    position: absolute;
-}
-
-.form{
-
+main{
     max-width: 600px;
     height: 500px;
     position: absolute;
@@ -27,6 +21,16 @@ h2{
     right: 0;
     margin-left: auto;
     margin-right: auto;
+}
+
+#welcomepage{
+    background-color: aliceblue;
+    position: absolute;
+}
+
+.form{
+
+
 }
 
 #cont1 {

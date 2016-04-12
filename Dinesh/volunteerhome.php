@@ -142,6 +142,7 @@ function get_volunteer_name($email){
     <!-- (START OF MAIN) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <main>
 
+
         <!-- (START OF WELCOME PAGE) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
         <section class="welcomepage" id="welcomepage">
             <?php include ("volunteerhome_assets/volunteerhome_htmlscripts/welcomepage.php")

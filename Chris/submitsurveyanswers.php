@@ -56,19 +56,11 @@
 
         $event_date = $_POST["eventdate"]; //this is the date the volunteer calls "event date"
 
+        echo $event_date;
+        /*
         $event_date_query = "SELECT * FROM submissions WHERE event_date = $event_date AND vol_id = $vol_id";
 
         $event_result = $db->query($event_date_query) or die ("Error: ".$event_date_query."<br>".$db->error);
-
-
-        $event = NULL; //initiate variable to be empty, opposite of isset
-
-
-        while($row = $event_result->fetch_assoc()){
-
-            $event = $row["submission_id"];
-        }
-
 
 
 
@@ -136,7 +128,7 @@
             echo "You already submitted an event for the said date";
             header("Location: volunteerhome.php");
         }
-
+        */
     }
 
 

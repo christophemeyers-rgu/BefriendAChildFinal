@@ -132,6 +132,6 @@ $(function() {
 });
 
 
-$( ".selector" ).button({
+$( ".navbuttons" ).button({
     icons: { primary: "ui-icon-gear", secondary: "ui-icon-triangle-1-s" }
 });

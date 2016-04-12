@@ -23,6 +23,7 @@ main{
     margin-right: auto;
     display: flex;
     justify-content: space-around;
+    flex-direction: row;
 }
 
 #welcomepage{

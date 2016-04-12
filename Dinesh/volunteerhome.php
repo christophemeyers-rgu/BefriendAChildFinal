@@ -186,13 +186,13 @@ function get_volunteer_name($email){
 
 
             <!-- SURVEY QUESTION 2 -->
-            <section class="form" id="cont2" style="display: none;">
+            <section class="form" id="cont2" style="visibility: hidden;">
                 <?php include("volunteerhome_assets/volunteerhome_htmlscripts/question2.php"); ?>
             </section>
 
 
             <!-- SURVEY QUESTION 1 -->
-            <section class="form" id="cont1" style="display: none;">
+            <section class="form" id="cont1" style="visibility: hidden;">
                 <?php include("volunteerhome_assets/volunteerhome_htmlscripts/question1.php"); ?>
             </section>
 

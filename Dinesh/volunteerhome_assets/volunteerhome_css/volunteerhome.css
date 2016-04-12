@@ -15,6 +15,7 @@ h2{
 
 main{
     display: flex;
+    position: absolute;
 }
 
 #welcomepage{

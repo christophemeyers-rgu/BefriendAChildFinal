@@ -68,8 +68,7 @@
             $event = $new_row['submission_id'];
         }
 
-        echo $event;
-/*
+
         //if we find a submission_id in $event, THIS volunteer has already submitted something for THIS event
 
         if(!isset($event)) {
@@ -134,7 +133,7 @@
             echo "You already submitted an event for the said date";
             header("Location: volunteerhome.php");
         }
-*/
+
     }
 
 

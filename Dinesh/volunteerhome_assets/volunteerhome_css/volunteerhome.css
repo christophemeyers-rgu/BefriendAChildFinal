@@ -32,10 +32,10 @@ main{
 }
 
 .form{
-
+    display: flex;
     max-width: 600px;
     height: 500px;
-
+    flex-direction: row;
     left: 0;
     right: 0;
     margin-left: auto;

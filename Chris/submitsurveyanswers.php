@@ -60,7 +60,7 @@
 
         $event_date_sql = "date'".$event_date."'";
 
-        $event_date_query = "SELECT * FROM submissions WHERE event_date = '$event_date_sql' AND vol_id = '$vol_id'";
+        $event_date_query = "SELECT * FROM submissions WHERE event_date = $event_date_sql AND vol_id = $vol_id";
 
         $event_result = $db->query($event_date_query) or die ("Error: ".$event_date_query."<br>".$db->error);
 

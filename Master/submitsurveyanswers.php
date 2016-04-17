@@ -54,7 +54,7 @@ function add_answers_to_database(){
 
     //Now we check if an event of the entered event_date already exists in the db
 
-    $event = array();
+    $event = NULL;
 
     $event_date = $_POST["eventdate"]; //this is the date the volunteer calls "event date"
 

@@ -4,18 +4,26 @@
 
 
 $( "#start" ).click(function() {
+
+        if (!attributeSupported("required") || ($.browser.safari)) {
+            //If required attribute is not supported or browser is Safari (Safari thinks that it has this attribute, but it does not work), then check all fields that has required attribute
+            $("#formTemplate [required]").each(function(index) {
+                if (!$(this).val()) {
+                    //If at least one required value is empty, then ask to fill all required fields.
+                    alert("Please fill all required fields.");
+                    return false;
+                }
+            });
+        }else{
+
     if($('#eventdate')[0].checkValidity()){
         $( "#welcomepage" ).toggle( "fade", 1000 );
         $( "#surveybar" ).toggle( "fade", 1000 );
         $( "#cont1" ).toggle( "explode", 1000 );
     }else {
-
-        if (!attributeSupported("required") || ($.browser.safari)) {
-
-            $("#surveyform").find(':submit').click()
-
-        }
+        $( "#surveyform" ).find(':submit').click()
     }
+}
 });
 
 $( "#next2" ).click(function() {
@@ -26,19 +34,7 @@ $( "#next2" ).click(function() {
             value: 17
         });
     }else {
-        if (!attributeSupported("required") || ($.browser.safari)) {
-            //If required attribute is not supported or browser is Safari (Safari thinks that it has this attribute, but it does not work), then check all fields that has required attribute
-            $("#eventdate [required]").each(function(index) {
-                if (!$(this).val()) {
-                    //If at least one required value is empty, then ask to fill all required fields.
-                    alert("Please fill all required fields.");
-                    return false;
-                }
-            });
-        }else {
-
-            $("#surveyform").find(':submit').click()
-        }
+        $( "#surveyform" ).find(':submit').click()
     }
 });
 

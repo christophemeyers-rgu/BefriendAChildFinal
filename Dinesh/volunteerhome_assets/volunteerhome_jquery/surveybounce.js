@@ -4,6 +4,7 @@
 
 
 $( "#start" ).click(function() {
+    $('#eventdate')[0].checkValidity();
     $( "#welcomepage" ).toggle( "fade", 1000 );
     $( "#surveybar" ).toggle( "fade", 1000 );
     $( "#cont1" ).toggle( "explode", 1000 );

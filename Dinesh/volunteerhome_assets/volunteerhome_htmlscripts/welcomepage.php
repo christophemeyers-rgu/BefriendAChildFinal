@@ -17,7 +17,7 @@
     <h2>======[To begin survey enter the date of outing]:======</h2>
     <fieldset>
         <label for="eventdate">Enter date (mm/dd/yy)</label>
-        <input required type="date" name="eventdate">
+        <input required type="date" name="eventdate" id="eventdate">
     </fieldset>
 </div>
 <br>

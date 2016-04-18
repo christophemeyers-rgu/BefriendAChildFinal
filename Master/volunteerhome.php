@@ -143,16 +143,16 @@ function get_volunteer_name($email){
     <main>
 
 
-        <!-- (START OF WELCOME PAGE) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-        <section class="welcomepage" id="welcomepage">
-            <?php include ("volunteerhome_assets/volunteerhome_htmlscripts/welcomepage.php")
-            ?>
-        </section>
-        <!-- (END OF WELCOME PAGE) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-
-
         <!-- (START OF SURVEY) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
         <form class="main" id="surveyform" action="submitsurveyanswers.php" method="post" >
+
+
+            <!-- (START OF WELCOME PAGE) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+            <section class="welcomepage" id="welcomepage">
+                <?php include ("volunteerhome_assets/volunteerhome_htmlscripts/welcomepage.php")
+                ?>
+            </section>
+            <!-- (END OF WELCOME PAGE) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
 
 
             <!-- Survey Progression Bar -->

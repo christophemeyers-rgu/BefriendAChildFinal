@@ -4,59 +4,87 @@
 
 
 $( "#start" ).click(function() {
-    $( "#welcomepage" ).toggle( "fade", 1000 );
-    $( "#surveybar" ).toggle( "fade", 1000 );
-    $( "#cont1" ).toggle( "explode", 1000 );
+    if($('#eventdate')[0].checkValidity()){
+        $( "#welcomepage" ).toggle( "fade", 1000 );
+        $( "#surveybar" ).toggle( "fade", 1000 );
+        $( "#cont1" ).toggle( "explode", 1000 );
+    }else {
+        $( "#surveyform" ).find(':submit').click()
+    }
 });
 
 $( "#next2" ).click(function() {
-    $( "#cont1" ).toggle( "explode", 1000 );
-    $( "#cont2" ).toggle( "size", 1000 );
-    $( "#progressbar" ).progressbar({
-        value: 17
-    });
+    if($('#question1')[0].checkValidity()) {
+        $("#cont1").toggle("explode", 1000);
+        $("#cont2").toggle("size", 1000);
+        $("#progressbar").progressbar({
+            value: 17
+        });
+    }else {
+        $( "#surveyform" ).find(':submit').click()
+    }
 });
 
 $( "#next3" ).click(function() {
+    if($('#question2')[0].checkValidity()) {
     $( "#cont2" ).toggle( "size", 1000 );
     $( "#cont3" ).toggle( "fold", 1000 );
     $( "#progressbar" ).progressbar({
-        value: 34
-    });
+            value: 34
+        });
+    }else {
+        $( "#surveyform" ).find(':submit').click()
+    }
 });
 
 $( "#next4" ).click(function() {
+    if($('#question3')[0].checkValidity()) {
     $( "#cont3" ).toggle( "fold", 1000 );
     $( "#cont4" ).toggle( "puff", 1000 );
     $( "#progressbar" ).progressbar({
-        value: 51
-    });
+            value: 51
+        });
+    }else {
+        $( "#surveyform" ).find(':submit').click()
+    }
 });
 
 $( "#next5" ).click(function() {
+    if($('#question4')[0].checkValidity()) {
     $( "#cont4" ).toggle( "puff", 1000 );
     $( "#cont5" ).toggle( "clip", 1000 );
     $( "#progressbar" ).progressbar({
-        value: 68
-    });
+            value: 68
+        });
+    }else {
+        $( "#surveyform" ).find(':submit').click()
+    }
 });
 
 $( "#next6" ).click(function() {
+    if($('#question5')[0].checkValidity()) {
     $( "#cont5" ).toggle( "clip", 1000 );
     $( "#cont6" ).toggle( "puff", 1000 );
     $( "#progressbar" ).progressbar({
-        value: 85
-    });
+            value: 85
+        });
+    }else {
+        $( "#surveyform" ).find(':submit').click()
+    }
 });
 
 $( "#nextsurveysummary" ).click(function() {
+    if($('#question6')[0].checkValidity()) {
     $( "#cont6" ).toggle( "fade", 1000 );
     $( "#cont7" ).toggle( "fade", 1000 );
     $( "div" ).show().prependTo( "p" ); // Sends all the questions summary to the summary page
 
     $( "#progressbar" ).progressbar({
-        value: 100
-    });
+            value: 100
+        });
+    }else {
+        $( "#surveyform" ).find(':submit').click()
+    }
 });
 
 

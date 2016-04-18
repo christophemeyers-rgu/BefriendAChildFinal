@@ -9,10 +9,10 @@ $( "#start" ).click(function() {
         $( "#surveybar" ).toggle( "fade", 1000 );
         $( "#cont1" ).toggle( "explode", 1000 );
     }else {
-        $('#formTemplate').submit(function() {
+        $('#surveyform').submit(function() {
             if (!attributeSupported("required") || ($.browser.safari)) {
                 //If required attribute is not supported or browser is Safari (Safari thinks that it has this attribute, but it does not work), then check all fields that has required attribute
-                $("#formTemplate [required]").each(function(index) {
+                $("#surveyform [required]").each(function(index) {
                     if (!$(this).val()) {
                         //If at least one required value is empty, then ask to fill all required fields.
                         alert("Please fill all required fields.");

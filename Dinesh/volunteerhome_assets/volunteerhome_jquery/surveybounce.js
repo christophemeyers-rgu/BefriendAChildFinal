@@ -5,20 +5,24 @@
 
 $( "#start" ).click(function() {
     if($('#eventdate')[0].checkValidity()){
-    $( "#welcomepage" ).toggle( "fade", 1000 );
-    $( "#surveybar" ).toggle( "fade", 1000 );
-    $( "#cont1" ).toggle( "explode", 1000 );
+        $( "#welcomepage" ).toggle( "fade", 1000 );
+        $( "#surveybar" ).toggle( "fade", 1000 );
+        $( "#cont1" ).toggle( "explode", 1000 );
     }else {
         $( "#surveyform" ).find(':submit').click()
     }
 });
 
 $( "#next2" ).click(function() {
-    $( "#cont1" ).toggle( "explode", 1000 );
-    $( "#cont2" ).toggle( "size", 1000 );
-    $( "#progressbar" ).progressbar({
-        value: 17
-    });
+    if($('#question1')[0].checkValidity()) {
+        $("#cont1").toggle("explode", 1000);
+        $("#cont2").toggle("size", 1000);
+        $("#progressbar").progressbar({
+            value: 17
+        });
+    }else {
+        $( "#surveyform" ).find(':submit').click()
+    }
 });
 
 $( "#next3" ).click(function() {

@@ -21,7 +21,7 @@ $( "#start" ).click(function() {
         $( "#welcomepage" ).toggle( "fade", 1000 );
         $( "#surveybar" ).toggle( "fade", 1000 );
         $( "#cont1" ).toggle( "explode", 1000 );
-    }else if (!$('#eventdate')[0].checkValidity()||(!$.browser.safari)){
+    }else if (!$.browser.safari){
         $( "#surveyform" ).find(':submit').click()
     }else {if (!attributeSupported("required") || ($.browser.safari)) {
         //If required attribute is not supported or browser is Safari (Safari thinks that it has this attribute, but it does not work), then check all fields that has required attribute

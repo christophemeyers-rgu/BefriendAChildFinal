@@ -14,7 +14,7 @@
 <br>
     <input hidden type="number" name="qid3" value="21"><!-- Hidden input that carries value of question id (currently manual)-->
 <br>
-    <input required type="radio" name="question3" value="Sad" id="question3"><img src="volunteerhome_assets/volunteerhome_images/surveyiconsad.png" alt="sad">
+    <input required type="radio" name="question3" value=volunteerhome_assets/volunteerhome_images/surveyiconsad.png id="question3"><img src="volunteerhome_assets/volunteerhome_images/surveyiconsad.png" alt="sad">
     <input required type="radio" name="question3" value="Normal" id="question3"><img src="volunteerhome_assets/volunteerhome_images/surveyiconnomal.png" alt="normal">
     <input required type="radio" name="question3" value="Happy" id="question3"><img src="volunteerhome_assets/volunteerhome_images/surveyiconsmile.png" alt="smile">
 <br>

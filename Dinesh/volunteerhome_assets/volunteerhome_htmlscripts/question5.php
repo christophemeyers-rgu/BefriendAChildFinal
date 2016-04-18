@@ -13,8 +13,8 @@
 
     <input hidden type="number" name="qid5" value="41"><!-- Hidden input that carries value of question id (currently manual)-->
 <br>
-    <input required type="radio" name="question5" value=YES id="question5">YES
-    <input required type="radio" name="question5" value=NO id="question5">NO
+    <input required type="radio" name="question5" value="YES" id="question5">YES
+    <input required type="radio" name="question5" value="NO" id="question5">NO
 <br>
 <br>
     <label for="question5">Explain :(Optional)</label>

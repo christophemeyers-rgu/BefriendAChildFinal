@@ -13,9 +13,9 @@
 
     <input hidden type="number" name="qid4" value="31"><!-- Hidden input that carries value of question id (currently manual)-->
 <br>
-    <input required type="radio" name="question4" value="Nothing new" id="question4" autofocus>Nothing new
-    <input required type="radio" name="question4" value="Done it before" id="question4" autofocus>Done it before
-    <input required type="radio" name="question4" value="Never done it before" id="question4" autofocus>Never done it before
+    <input required type="radio" name="question4" value="Nothing new" id="question4">Nothing new
+    <input required type="radio" name="question4" value="Done it before" id="question4">Done it before
+    <input required type="radio" name="question4" value="Never done it before" id="question4">Never done it before
 <br>
 <br>
     <label for="question4">Explain :(Optional)</label>

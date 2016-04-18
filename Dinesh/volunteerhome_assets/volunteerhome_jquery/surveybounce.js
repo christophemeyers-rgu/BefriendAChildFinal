@@ -8,7 +8,7 @@ $( "#start" ).click(function() {
     if(!$surveyform[0].checkValidity()){
         $surveyform.find(':submit').click()
     }
-    else if($surveyform[0].checkValidity()){
+    else if($('#eventdate')[0].checkValidity()){
         $( "#welcomepage" ).toggle( "fade", 1000 );
         $( "#surveybar" ).toggle( "fade", 1000 );
         $( "#cont1" ).toggle( "explode", 1000 );

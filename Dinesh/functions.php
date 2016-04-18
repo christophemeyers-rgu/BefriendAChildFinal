@@ -125,7 +125,7 @@ function is_admin() {
 //end function
 
 function getAllRegisteredUsers() {
-    $sql = "select * from volunteers";
+    $sql = "select * from volunteers ORDER BY vol_firstname";
 
     $mysqli = new mysqli(host, user, password, database);
     $result = $mysqli->query($sql);
@@ -136,6 +136,26 @@ function getAllRegisteredUsers() {
 }
 
 //end function
+
+function getUserSubmissions($vol_email){
+
+    $sql = "select * from submissions where vol_id= (select vol_id from volunteers where vol_email='$vol_email')";
+    $mysqli = new mysqli(host, user, password, database);
+    $result = $mysqli->query($sql);
+    $mysqli->close();
+
+    return $result;
+}
+
+function getEventDetails($event_date, $vol_email){
+
+    $sql = "select question_text, answer_text_req, answer_text_opt from answers, questions where submission_id =(select submission_id from submissions where event_date ='$event_date' and vol_id =(select vol_id from volunteers where vol_email='$vol_email')) and questions.question_id = answers.question_id group by answers.question_id";
+    $mysqli = new mysqli(host, user, password, database);
+    $result = $mysqli->query($sql);
+    $mysqli->close();
+
+    return $result;
+}
 
 function deleteUser($login_name) {
 

@@ -236,49 +236,53 @@ if(!isset($_SESSION['ad_email'])){
 <div class="clear"></div>
 
 <!-- start content-outer ........................................................................................................................START -->
-<div class="container">
-    <table class="table table-striped">
-        <thead>
-        <tr>
-            <th>Sr. #</th>
-            <th>Login Name</th>
-            <th>First Name</th>
-            <th>Surname</th>
-            <th>Options</th>
-        </tr>
-        </thead>
-        <?php
+<div id="content-outer">
+    <!-- start content -->
+    <div class="container">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>User name</th>
+                <th>First name</th>
+                <th>Surname</th>
+            </tr>
+            </thead>
+            <?php
+            include("db_connection.php");
 
-        $result = getAllRegisteredUsers();
+            if($db->connect_errno){
+                die('Connectfailed['.$db->connect_error.']');
+            }
 
-        if(mysqli_num_rows($result)>0)                                                {
+            $users = getAllRegisteredUsers();
 
-            $counter = 0;
-            while ($row=  mysqli_fetch_array($result))
-            {
-                $counter++;
-                ?>
-                <tbody>
-                <tr>
-                    <td><?php echo $counter; ?></td>
-                    <td><?php echo $row['vol_email']; ?></td>
-                    <td><?php echo $row['vol_firstname']; ?></td>
-                    <td><?php echo $row['vol_surname']; ?></td>
-                    <td>
-                        <a href="edit-user.php?vol_email=<?php echo $row['vol_email']; ?>" style="color:green;">Edit</a>
-                        &nbsp;&nbsp;&nbsp;<a href="?vol_email=<?php echo $row['vol_email']; ?>" style="color:red;">Delete</a>
-                    </td>
+            if(mysqli_num_rows($users)>0){
 
-                </tr>
-                </tbody>
-                <?php
+                $counter = 0;
+                while ($row= mysqli_fetch_array($users))
+                {
+                    $counter++;
 
-            }//end of for loop
-        }//end if statement
-        ?>
+                    ?>
+                    <tbody>
+                    <tr>
+                        <td><?php echo $counter; ?></td>
+                        <td><a href="View2.php?vol_email=<?php echo $row['vol_email']; ?>"><?php echo $row['vol_email']; ?></a></td>
+                        <td><?php echo $row['vol_firstname']; ?></td>
+                        <td><?php echo $row['vol_surname']; ?></td>
+                    </tr>
+                    </tbody>
+                    <?php
 
-    </table>
+                }
+            }
 
+            ?>
+        </table>
+    </div>
+    <!--  end content -->
+    <div class="clear">&nbsp;</div>
 </div>
 <!--  end content-outer........................................................END -->
 

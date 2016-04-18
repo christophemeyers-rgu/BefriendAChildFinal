@@ -237,48 +237,56 @@ if(!isset($_SESSION['ad_email'])){
 
 <!-- start content-outer ........................................................................................................................START -->
 <div class="container">
+    <p>Survey details for <a href="view2.php?vol_email=<?php echo $_GET['vol_email']; ?>"><?php echo $_GET['event_date'];?></a></p>
     <table class="table table-striped">
         <thead>
         <tr>
-            <th>Sr. #</th>
-            <th>Login Name</th>
-            <th>First Name</th>
-            <th>Surname</th>
-            <th>Options</th>
+            <th>ID</th>
+            <th>Question</th>
+            <th>Required answer</th>
+            <th>Optional answer</th>
         </tr>
         </thead>
         <?php
+        include("db_connection.php");
 
-        $result = getAllRegisteredUsers();
+        if($db->connect_errno){
+            die('Connectfailed['.$db->connect_error.']');
+        }
 
-        if(mysqli_num_rows($result)>0)                                                {
+        $event_date = $_GET['event_date'];
+        $vol_email = $_GET['vol_email'];
+
+        $events = getEventDetails($event_date, $vol_email);
+
+        if(mysqli_num_rows($events)>0){
 
             $counter = 0;
-            while ($row=  mysqli_fetch_array($result))
+            while ($row= mysqli_fetch_array($events))
             {
                 $counter++;
+
                 ?>
                 <tbody>
                 <tr>
                     <td><?php echo $counter; ?></td>
-                    <td><?php echo $row['vol_email']; ?></td>
-                    <td><?php echo $row['vol_firstname']; ?></td>
-                    <td><?php echo $row['vol_surname']; ?></td>
-                    <td>
-                        <a href="edit-user.php?vol_email=<?php echo $row['vol_email']; ?>" style="color:green;">Edit</a>
-                        &nbsp;&nbsp;&nbsp;<a href="?vol_email=<?php echo $row['vol_email']; ?>" style="color:red;">Delete</a>
-                    </td>
-
+                    <td><?php echo $row['question_text']; ?></td>
+                    <td><?php echo $row['answer_text_req']; ?></td>
+                    <td><?php echo $row['answer_text_opt']; ?></td>
                 </tr>
                 </tbody>
                 <?php
 
-            }//end of for loop
-        }//end if statement
+            }
+        }
+        else{
+            ?>
+                <p>User has no submission</p>
+        <?php
+        }
+
         ?>
-
     </table>
-
 </div>
 <!--  end content-outer........................................................END -->
 

@@ -1,29 +1,19 @@
-//Required attribute fallback
 
-$('#formTemplate').submit(function() {
-    if (!attributeSupported("required") || ($.browser.safari)) {
-        //If required attribute is not supported or browser is Safari (Safari thinks that it has this attribute, but it does not work), then check all fields that has required attribute
-        $("#formTemplate [required]").each(function(index) {
-            if (!$(this).val()) {
-                //If at least one required value is empty, then ask to fill all required fields.
-                alert("Please fill all required fields.");
-                return false;
-            }
-        });
-    }
-    return false; //This is a test form and I'm not going to submit it
-});
 //============================================================ Next buttons
 
 
 $( "#start" ).click(function() {
-    if($('#eventdate')[0].checkValidity()){
-        $( "#welcomepage" ).toggle( "fade", 1000 );
-        $( "#surveybar" ).toggle( "fade", 1000 );
-        $( "#cont1" ).toggle( "explode", 1000 );
-    }else if (!$.browser.safari){
-        $( "#surveyform" ).find(':submit').click()
-    }else {if (!attributeSupported("required") || ($.browser.safari)) {
+    if (Modernizr.formvalidation) {
+
+        if ($('#eventdate')[0].checkValidity()) {
+            $("#welcomepage").toggle("fade", 1000);
+            $("#surveybar").toggle("fade", 1000);
+            $("#cont1").toggle("explode", 1000);
+        }else {
+        $("#surveyform").find(':submit').click()
+    }
+}else {
+
         //If required attribute is not supported or browser is Safari (Safari thinks that it has this attribute, but it does not work), then check all fields that has required attribute
         $("#surveyform [required]").each(function(index) {
             if (!$(this).val()) {
@@ -32,8 +22,6 @@ $( "#start" ).click(function() {
                 return false;
             }
         });
-    }
-
     }
 });
 

@@ -127,7 +127,7 @@ $( "#next5" ).click(function() {
         }
     }else {
         //If required attribute is not supported by browser then manually check if field is filled
-        if (!$('#question4').val()){
+        if (!$('input:checked').val()){
             alert("Please fill in required field.");
         }else{
             $("#cont4").toggle("puff", 1000);
@@ -155,7 +155,7 @@ $( "#next6" ).click(function() {
         }
     }else {
         //If required attribute is not supported by browser then manually check if field is filled
-        if (!$('#question5').val()){
+        if (!$('input:checked').val()){
             alert("Please fill in required field.");
         }else{
             $("#cont5").toggle("clip", 1000);
@@ -185,7 +185,7 @@ $( "#nextsurveysummary" ).click(function() {
         }
     }else {
         //If required attribute is not supported by browser then manually check if field is filled
-        if (!$('#question6').val()){
+        if (!$('input:checked').val()){
             alert("Please fill in required field.");
         }else{
             $("#cont6").toggle("fade", 1000);

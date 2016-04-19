@@ -3,7 +3,7 @@
 
 
 $( "#start" ).click(function() {
-    if (!attributeSupported("required")) {
+    if (Modernizr.formvalidation) {
 
         if ($('#eventdate')[0].checkValidity()) {
             $("#welcomepage").toggle("fade", 1000);

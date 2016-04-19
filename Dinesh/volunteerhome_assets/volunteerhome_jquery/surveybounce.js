@@ -18,7 +18,7 @@ $( "#start" ).click(function() {
     }else {
         //If required attribute is not supported then manually check if field is filled
         if (!$('#eventdate').val()){
-            alert("Please fill required field.");
+            alert("Please Enter the Date of Event.");
         }else{
             $("#welcomepage").toggle("fade", 1000);
             $("#surveybar").toggle("fade", 1000);
@@ -42,7 +42,7 @@ $( "#next2" ).click(function() {
         }
     }else {
         //If required attribute is not supported then manually check if field is filled
-        if (!$('#eventdate').val()){
+        if (!$('#question1').val()){
             alert("Please fill required field.");
         }else{
             $("#cont1").toggle("explode", 1000);

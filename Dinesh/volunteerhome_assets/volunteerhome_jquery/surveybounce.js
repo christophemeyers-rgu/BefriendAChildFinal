@@ -4,8 +4,10 @@
 
 
 $( "#start" ).click(function() {
-    if (Modernizr.formvalidation) {
 
+    //Checks if browser supports required attribute using Modernizr's feature detection JavaScript code
+    if (Modernizr.formvalidation) {
+        //check if field is filled using html5 form validation
         if ($('#eventdate')[0].checkValidity()) {
             $("#welcomepage").toggle("fade", 1000);
             $("#surveybar").toggle("fade", 1000);
@@ -14,10 +16,9 @@ $( "#start" ).click(function() {
             $("#surveyform").find(':submit').click()
         }
     }else {
-
-        //If required attribute is not supported or browser is Safari (Safari thinks that it has this attribute, but it does not work), then check all fields that has required attribute
+        //If required attribute is not supported then manually check if field is filled
         if (!$('#eventdate').val()){
-            alert("Please fill all required fields.");
+            alert("Please fill required field.");
         }else{
             $("#welcomepage").toggle("fade", 1000);
             $("#surveybar").toggle("fade", 1000);

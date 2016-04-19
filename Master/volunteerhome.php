@@ -212,9 +212,9 @@ function get_volunteer_name($email){
     <!-- (END OF MAIN) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
 
-    <!-- CALL JQUERY SCRIPT FUNCTION -->
+    <!-- CALL JQUERY SCRIPT FUNCTIONS -->
     <script SRC="volunteerhome_assets/volunteerhome_jquery/surveybounce.js"></script>
-
+    <script SRC="volunteerhome_assets/volunteerhome_jquery/modernizr-custom.js"></script>
 
 </body>
 <!-- [END OF BODY] ================================================================================================= -->

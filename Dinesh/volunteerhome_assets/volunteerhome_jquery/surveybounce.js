@@ -15,7 +15,7 @@ $( "#start" ).click(function() {
 }else {
 
         //If required attribute is not supported or browser is Safari (Safari thinks that it has this attribute, but it does not work), then check all fields that has required attribute
-        if ($('#eventdate').val()){
+        if (!$('#eventdate').val()){
             alert("Please fill all required fields.");
         }
     }

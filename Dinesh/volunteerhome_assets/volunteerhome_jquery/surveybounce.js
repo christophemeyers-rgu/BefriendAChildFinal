@@ -99,7 +99,7 @@ $( "#next4" ).click(function() {
         }
     }else {
         //If required attribute is not supported by browser then manually check if field is filled
-        if (!$('#question3').val()){
+        if (!$('input:checked').val()){
             alert("Please fill in required field.");
         }else{
             $("#cont3").toggle("fold", 1000);

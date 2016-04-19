@@ -28,14 +28,29 @@ $( "#start" ).click(function() {
 });
 
 $( "#next2" ).click(function() {
-    if($('#question1')[0].checkValidity()) {
-        $("#cont1").toggle("explode", 1000);
-        $("#cont2").toggle("size", 1000);
-        $("#progressbar").progressbar({
-            value: 17
-        });
+
+    //Checks if browser supports required attribute using Modernizr's feature detection JavaScript code
+    if (Modernizr.formvalidation) {
+        if ($('#question1')[0].checkValidity()) {
+            $("#cont1").toggle("explode", 1000);
+            $("#cont2").toggle("size", 1000);
+            $("#progressbar").progressbar({
+                value: 17
+            });
+        } else {
+            $("#surveyform").find(':submit').click()
+        }
     }else {
-        $( "#surveyform" ).find(':submit').click()
+        //If required attribute is not supported then manually check if field is filled
+        if (!$('#eventdate').val()){
+            alert("Please fill required field.");
+        }else{
+            $("#cont1").toggle("explode", 1000);
+            $("#cont2").toggle("size", 1000);
+            $("#progressbar").progressbar({
+                value: 17
+            });
+        }
     }
 });
 

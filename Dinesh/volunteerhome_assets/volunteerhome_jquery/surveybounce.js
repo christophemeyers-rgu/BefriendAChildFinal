@@ -207,23 +207,22 @@ $( "#submit" ).click(function() {
         if ($('#surveyform')[0].checkValidity()) {
 
             $("#surveyform").find(':submit').click();
+
         }
-    }else if(!Modernizr.formvalidation){
-                //If required attribute is not supported or browser is Safari (Safari thinks that it has this attribute, but it does not work), then check all fields that has required attribute
-                $("#surveyform:input").each(function() {
-                    var input = $(this);
-                    if (!input) {
-                    //If at least one required value is empty, then ask to fill all required fields.
-                    alert("Please fill all required fields.");
-
-                    }
-                    return false;
-                });
-
-
     }else{
+        $('#surveyform *').filter(':input').each(function(){
+            if (!$(this).val()) {
+                //If at least one required value is empty, then ask to fill all required fields.
+                alert("Please fill all required fields.");
+                return false;
+            }
+        });
+    }
+    return false;
+    if ($(this).val()) {
         $("#surveyform").find(':submit').click();
     }
+
 });
 
 

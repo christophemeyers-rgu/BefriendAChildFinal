@@ -214,7 +214,7 @@ $( "#submit" ).click(function() {
             alert("Please fill in required field.");
             return false;
         }else{
-            $("#surveyform").find(':submit').click()
+            $("#surveyform").submit();
         }
     }
 });

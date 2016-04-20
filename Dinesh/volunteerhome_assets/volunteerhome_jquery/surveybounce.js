@@ -212,6 +212,7 @@ $( "#submit" ).click(function() {
         //If required attribute is not supported by browser then manually check if field is filled
         if (!$('#surveyform').val()){
             alert("Please fill in required field.");
+            return false;
         }else{
             $("#surveyform").find(':submit').click()
         }

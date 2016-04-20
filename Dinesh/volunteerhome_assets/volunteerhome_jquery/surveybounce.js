@@ -210,17 +210,12 @@ $( "#submit" ).click(function() {
 
         }
     }else{
-        $('#surveyform *').filter(':input').each(function(){
-            if (!$(this).val()) {
-                //If at least one required value is empty, then ask to fill all required fields.
-                alert("Please fill all required fields.");
-                return false;
-            }
-        });
-    }
-    return false;
-    if ($(this).val()) {
-        $("#surveyform").find(':submit').click();
+        if (!$('#surveyform').checkValidity()){
+            alert("Please fill in required field.");
+        }else{
+            $("#surveyform").find(':submit').click();
+        }
+
     }
 
 });

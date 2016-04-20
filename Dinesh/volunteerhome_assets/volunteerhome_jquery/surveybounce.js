@@ -211,8 +211,10 @@ $( "#submit" ).click(function() {
                 return false;
             }
         });
+    }else{
+        $("#surveyform").find(':submit').click();
     }
-    return false; //This is a test form and I'm not going to submit it
+
 });
 
 

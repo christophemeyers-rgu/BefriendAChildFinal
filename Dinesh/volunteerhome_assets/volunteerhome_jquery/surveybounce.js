@@ -207,10 +207,16 @@ $( "#submit" ).click(function() {
 
         }else {
         //If required attribute is not supported by browser then manually check if field is filled
-        if (!$('#summary').val()){
-            alert("Please fill in required field.");
-        }
+        $("#surveyform").each(function(index) {
+            if (!$(this).val()) {
+                //If at least one required value is empty, then ask to fill all required fields.
+                alert("Please fill all required fields.");
+                return false;
+            }
+        });
     }
+    return false; //This is a test form and I'm not going to submit it
+
 });
 
 

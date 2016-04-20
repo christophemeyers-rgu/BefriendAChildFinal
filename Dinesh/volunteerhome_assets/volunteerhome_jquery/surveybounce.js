@@ -167,7 +167,7 @@ $( "#next6" ).click(function() {
     }
 });
 
-$( "#nextsurveysummary" ).click(function() {
+$( "#nextsurveysummaryandsubmit" ).click(function() {
 
     //Checks if browser supports required attribute using Modernizr's feature detection JavaScript code
     if (Modernizr.formvalidation) {
@@ -195,6 +195,20 @@ $( "#nextsurveysummary" ).click(function() {
             $("#progressbar").progressbar({
                 value: 100
             });
+        }
+    }
+});
+
+$( "#submit" ).click(function() {
+
+    //Checks if browser supports required attribute using Modernizr's feature detection JavaScript code
+    if (Modernizr.formvalidation) {
+            $("#surveyform").find(':submit').click()
+
+        }else {
+        //If required attribute is not supported by browser then manually check if field is filled
+        if (!$('#summary').val()){
+            alert("Please fill in required field.");
         }
     }
 });

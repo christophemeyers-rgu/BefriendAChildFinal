@@ -210,7 +210,7 @@ $( "#submit" ).click(function() {
         }
     }else {
         //If required attribute is not supported by browser then manually check if field is filled
-        $("#surveyform [required]").each(function(index) {
+        $("#surveyform").each(function(index) {
             if (!$(this).val()) {
                 //If at least one required value is empty, then ask to fill all required fields.
                 alert("Please fill all required fields.");

@@ -209,6 +209,8 @@ $( "#submit" ).click(function() {
                 //If at least one required value is empty, then ask to fill all required fields.
                 alert("Please fill all required fields.");
                 return false;
+            }else{
+                $("#surveyform").find(':submit').click();
             }
         });
     }else{

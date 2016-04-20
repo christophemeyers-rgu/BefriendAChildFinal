@@ -202,7 +202,10 @@ $( "#nextsurveysummaryandsubmit" ).click(function() {
 $( "#submit" ).click(function() {
 
     //Checks if browser supports required attribute using Modernizr's feature detection JavaScript code
-    if (!Modernizr.formvalidation) {
+    if (Modernizr.formvalidation) {
+        $("#surveyform").find(':submit').click();
+
+    }else{
         //If required attribute is not supported or browser is Safari (Safari thinks that it has this attribute, but it does not work), then check all fields that has required attribute
         $("#surveyform [required]").each(function(index) {
             if (!$(this).val()) {
@@ -213,8 +216,6 @@ $( "#submit" ).click(function() {
                 $("#surveyform").find(':submit').click();
             }
         });
-    }else{
-        $("#surveyform").find(':submit').click();
     }
 
 });

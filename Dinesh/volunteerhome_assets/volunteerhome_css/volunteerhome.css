@@ -60,11 +60,11 @@ h2{
 }
 
 #cont7 {
-
+    max-width: 960px;
 }
 
 p{
-    max-width: 960px;
+
     height: auto;
     margin-right: auto;
     margin-left: auto;

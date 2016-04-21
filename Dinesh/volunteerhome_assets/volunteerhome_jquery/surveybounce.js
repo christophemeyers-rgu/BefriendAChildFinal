@@ -13,7 +13,7 @@ $( "#start" ).click(function() {
             $("#surveybar").toggle("fade", 1000);
             $("#cont1").toggle("explode", 1000);
         }else {
-            $("#surveyform").find(':submit').click();
+            $("#surveyform").find(':submit').click()
         }
     }else {
         //If required attribute is not supported by browser then manually check if field is filled
@@ -39,7 +39,7 @@ $( "#next2" ).click(function() {
                 value: 17
             });
         } else {
-            $("#surveyform").find(':submit').click();
+            $("#surveyform").find(':submit').click()
         }
     }else {
         //If required attribute is not supported by browser then manually check if field is filled
@@ -67,7 +67,7 @@ $( "#next3" ).click(function() {
                 value: 34
             });
         } else {
-            $("#surveyform").find(':submit').click();
+            $("#surveyform").find(':submit').click()
         }
     }else {
         //If required attribute is not supported by browser then manually check if field is filled
@@ -95,7 +95,7 @@ $( "#next4" ).click(function() {
                 value: 51
             });
         } else {
-            $("#surveyform").find(':submit').click();
+            $("#surveyform").find(':submit').click()
         }
     }else {
         //If required attribute is not supported by browser then manually check if field is filled
@@ -123,7 +123,7 @@ $( "#next5" ).click(function() {
                 value: 68
             });
         } else {
-            $("#surveyform").find(':submit').click();
+            $("#surveyform").find(':submit').click()
         }
     }else {
         //If required attribute is not supported by browser then manually check if field is filled
@@ -151,7 +151,7 @@ $( "#next6" ).click(function() {
                 value: 85
             });
         } else {
-            $("#surveyform").find(':submit').click();
+            $("#surveyform").find(':submit').click()
         }
     }else {
         //If required attribute is not supported by browser then manually check if field is filled
@@ -167,7 +167,7 @@ $( "#next6" ).click(function() {
     }
 });
 
-$( "#nextsurveysummaryandsubmit" ).click(function() {
+$( "#nextsurveysummary" ).click(function() {
 
     //Checks if browser supports required attribute using Modernizr's feature detection JavaScript code
     if (Modernizr.formvalidation) {
@@ -181,7 +181,7 @@ $( "#nextsurveysummaryandsubmit" ).click(function() {
                 value: 100
             });
         } else {
-            $("#surveyform").find(':submit').click();
+            $("#surveyform").find(':submit').click()
         }
     }else {
         //If required attribute is not supported by browser then manually check if field is filled
@@ -197,27 +197,6 @@ $( "#nextsurveysummaryandsubmit" ).click(function() {
             });
         }
     }
-});
-
-$( "#submit" ).click(function() {
-
-    //Checks if browser supports required attribute using Modernizr's feature detection JavaScript code
-    if (Modernizr.formvalidation) {
-        $("#surveyform").find(':submit').click();
-
-    }else{
-        //If required attribute is not supported or browser is Safari (Safari thinks that it has this attribute, but it does not work), then check all fields that has required attribute
-        $("#surveyform [required]").each(function(index) {
-            if (!$(this).val()) {
-                //If at least one required value is empty, then ask to fill all required fields.
-                alert("Please fill all required fields.");
-                return false;
-            }else{
-                $("#surveyform").find(':submit').click();
-            }
-        });
-    }
-
 });
 
 

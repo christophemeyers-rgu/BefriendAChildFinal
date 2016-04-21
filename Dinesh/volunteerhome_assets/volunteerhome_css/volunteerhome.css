@@ -69,10 +69,8 @@ p{
     margin-left: auto;
     background-color: aliceblue;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    flex-direction: column;
+
 
 }
 

@@ -149,15 +149,14 @@ function get_volunteer_name($email){
 
             <!-- (START OF WELCOME PAGE) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
             <section class="welcomepage" id="welcomepage">
-                <?php include ("volunteerhome_assets/volunteerhome_htmlscripts/welcomepage.php")
-                ?>
+                <?php include ("volunteerhome_assets/volunteerhome_htmlscripts/welcomepage.php"); ?>
             </section>
             <!-- (END OF WELCOME PAGE) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
 
 
             <!-- Survey Progression Bar -->
             <section class="form" id="surveybar">
-            <section id="progressbar"><section class="progress-label"></section>
+                <section id="progressbar"><section class="progress-label"></section>
             </section>
 
 
@@ -198,10 +197,8 @@ function get_volunteer_name($email){
 
 
             <!-- SURVEY QUESTIONS SUMMARY AND SUBMISSION -->
-            <section class="summaryandsubmit" id="cont7">
-                <h1>Survey Questions Summary:</h1>
-                <p id="summary"></p>
-                <input type="submit" id="submit" name="submit" value="SUBMIT SURVEY">
+            <section class="surveysummaryandsubmission" id="surveysummaryandsubmission">
+                <?php include("volunteerhome_assets/volunteerhome_htmlscripts/surveysummaryandsubmission.php"); ?>
             </section>
 
         </form>

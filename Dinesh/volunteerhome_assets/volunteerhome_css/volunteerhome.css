@@ -34,10 +34,12 @@ h2{
 }
 
 #cont1 {
+    max-width: 600px;
     background: yellowgreen;
 }
 
 #cont2 {
+    max-width: 600px;
     background-color: palevioletred;
 }
 
@@ -140,7 +142,7 @@ h5{
 }
 
 .indicatorbar{
-    display: flex;
+
     justify-content:center;
 }
 

@@ -13,7 +13,7 @@ $( "#start" ).click(function() {
             $("#welcomepage").toggle("fade", 1000);
             $("#surveybar").toggle("fade", 1000);
             $("#cont1").toggle("explode", 1000);
-            }, 250);
+            }, 50);
         }else {
             $("#surveyform").find(':submit').click()
         }

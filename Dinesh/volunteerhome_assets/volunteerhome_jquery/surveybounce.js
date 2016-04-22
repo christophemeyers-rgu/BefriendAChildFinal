@@ -9,11 +9,9 @@ $( "#start" ).click(function() {
     if (Modernizr.formvalidation) {
         //Checks if field is filled using html5 form validation
         if ($('#eventdate')[0].checkValidity()) {
-            debounce(function() {
             $("#welcomepage").toggle("fade", 1000);
             $("#surveybar").toggle("fade", 1000);
             $("#cont1").toggle("explode", 1000);
-            }, 50);
         }else {
             $("#surveyform").find(':submit').click()
         }
@@ -35,13 +33,11 @@ $( "#next2" ).click(function() {
     if (Modernizr.formvalidation) {
         //Checks if field is filled using html5 form validation
         if ($('#question1')[0].checkValidity()) {
-            debounce(function() {
             $("#cont1").toggle("explode", 1000);
             $("#cont2").toggle("size", 1000);
             $("#progressbar").progressbar({
                 value: 17
             });
-            }, 250);
         } else {
             $("#surveyform").find(':submit').click()
         }
@@ -65,13 +61,11 @@ $( "#next3" ).click(function() {
     if (Modernizr.formvalidation) {
         //Checks if field is filled using html5 form validation
         if ($('#question2')[0].checkValidity()) {
-            debounce(function() {
             $("#cont2").toggle("size", 1000);
             $("#cont3").toggle("fold", 1000);
             $("#progressbar").progressbar({
                 value: 34
             });
-            }, 250);
         } else {
             $("#surveyform").find(':submit').click()
         }
@@ -276,18 +270,3 @@ $(function() {
         value: 0
     });
 });
-
-function debounce(func, wait, immediate) {
-    var timeout;
-    return function() {
-        var context = this, args = arguments;
-        var later = function() {
-            timeout = null;
-            if (!immediate) func.apply(context, args);
-        };
-        var callNow = immediate && !timeout;
-        clearTimeout(timeout);
-        timeout = setTimeout(later, wait);
-        if (callNow) func.apply(context, args);
-    };
-};

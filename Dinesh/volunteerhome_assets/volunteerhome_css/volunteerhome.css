@@ -26,7 +26,6 @@ h2{
 
 .form{
     display: none;
-
     height: 500px;
     position: absolute;
     left: 0;
@@ -60,7 +59,6 @@ h2{
 }
 
 #surveysummaryandsubmission {
-
     max-width: 1850px;
     height: auto;
     left: 0;
@@ -68,17 +66,13 @@ h2{
     margin-left: auto;
     margin-right: auto;
     background-color: aliceblue;
-
 }
 
 p{
-
-
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-
 }
 
 h5{

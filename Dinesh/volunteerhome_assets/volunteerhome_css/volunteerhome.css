@@ -99,3 +99,52 @@ h5{
     font-weight: bold;
     text-shadow: 1px 1px 0 #fff;
 }
+
+/* Survey Indicator Bar */
+#bar1{
+    width: 100px;
+    height: 50px;
+    background: red;
+
+    /* Standard syntax */
+    transition-property: width, background,font-size;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    transition-delay: 1s;
+}
+
+#bar1:target {
+    width: 300px;
+    background:blue;
+    font-size:40px;
+
+}
+
+#bar2{
+    width: 100px;
+    height: 50px;
+    background: red;
+
+    /* Standard syntax */
+    transition-property: width, background,font-size;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    transition-delay: 1s;
+}
+
+#bar2:target {
+    width: 300px;
+    background:blue;
+    font-size:40px;
+
+}
+
+.indicatorbar{
+    display: flex;
+    justify-content:center;
+}
+
+.indicators{
+    display: flex;
+    justify-content:center;
+}

@@ -160,6 +160,22 @@ function get_volunteer_name($email){
             </section>
 
 
+            <!-- Survey Indicator Bar -->
+            <section class=indicatorbar>
+                <div id="bar1">
+                    <section class="indicators">
+                        <h1>Q1</h1>
+                    </section>
+                </div>
+
+                <div id="bar2">
+                    <section class="indicators">
+                        <h1>Q2</h1>
+                    </section>
+                </div>
+            </section>
+
+
             <!-- SURVEY QUESTION 1 -->
             <section class="form" id="cont1">
                 <?php include("volunteerhome_assets/volunteerhome_htmlscripts/question1.php"); ?>

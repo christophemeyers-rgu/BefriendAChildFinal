@@ -60,9 +60,7 @@ h2{
 }
 
 #surveysummaryandsubmission {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+
 }
 
 p{

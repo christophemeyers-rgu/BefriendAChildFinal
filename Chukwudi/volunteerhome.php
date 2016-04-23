@@ -149,7 +149,7 @@ function get_volunteer_name($email){
 
             <!-- (START OF WELCOME PAGE) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
             <section class="welcomepage" id="welcomepage">
-                <?php include ("/volunteerhome_assets/volunteerhome_htmlscripts/welcomepage.php"); ?>
+                <?php include ("volunteerhome_assets/volunteerhome_htmlscripts/welcomepage.php"); ?>
             </section>
             <!-- (END OF WELCOME PAGE) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
 
@@ -178,43 +178,43 @@ function get_volunteer_name($email){
 
             <!-- SURVEY QUESTION 1 -->
             <section class="form" id="cont1">
-                <?php include("/volunteerhome_assets/volunteerhome_htmlscripts/question1.php"); ?>
+                <?php include("volunteerhome_assets/volunteerhome_htmlscripts/question1.php"); ?>
             </section>
 
 
             <!-- SURVEY QUESTION 2 -->
             <section class="form" id="cont2">
-                <?php include("/volunteerhome_assets/volunteerhome_htmlscripts/question2.php"); ?>
+                <?php include("volunteerhome_assets/volunteerhome_htmlscripts/question2.php"); ?>
             </section>
 
 
             <!-- SURVEY QUESTION 3 -->
             <section class="form" id="cont3">
-                <?php include("/volunteerhome_assets/volunteerhome_htmlscripts/question3.php"); ?>
+                <?php include("volunteerhome_assets/volunteerhome_htmlscripts/question3.php"); ?>
             </section>
 
 
             <!-- SURVEY QUESTION 4 -->
             <section class="form" id="cont4">
-                <?php include("/volunteerhome_assets/volunteerhome_htmlscripts/question4.php"); ?>
+                <?php include("volunteerhome_assets/volunteerhome_htmlscripts/question4.php"); ?>
             </section>
 
 
             <!-- SURVEY QUESTION 5 -->
             <section class="form" id="cont5">
-                <?php include("/volunteerhome_assets/volunteerhome_htmlscripts/question5.php"); ?>
+                <?php include("volunteerhome_assets/volunteerhome_htmlscripts/question5.php"); ?>
             </section>
 
 
             <!-- SURVEY QUESTION 6 -->
             <section class="form" id="cont6">
-                <?php include("/volunteerhome_assets/volunteerhome_htmlscripts/question6.php"); ?>
+                <?php include("volunteerhome_assets/volunteerhome_htmlscripts/question6.php"); ?>
             </section>
 
 
             <!-- SURVEY QUESTIONS SUMMARY AND SUBMISSION -->
             <section class="form" id="surveysummaryandsubmission">
-                <?php include("/volunteerhome_assets/volunteerhome_htmlscripts/surveysummaryandsubmission.php"); ?>
+                <?php include("volunteerhome_assets/volunteerhome_htmlscripts/surveysummaryandsubmission.php"); ?>
             </section>
 
         </form>
@@ -226,8 +226,8 @@ function get_volunteer_name($email){
 
 
     <!-- CALL JQUERY SCRIPT FUNCTIONS -->
-    <script SRC="/volunteerhome_assets/volunteerhome_jquery/surveybounce.js"></script>
-    <script SRC="/volunteerhome_assets/volunteerhome_jquery/modernizr-custom.js"></script>
+    <script SRC="volunteerhome_assets/volunteerhome_jquery/surveybounce.js"></script>
+    <script SRC="volunteerhome_assets/volunteerhome_jquery/modernizr-custom.js"></script>
 
 </body>
 <!-- [END OF BODY] ================================================================================================= -->

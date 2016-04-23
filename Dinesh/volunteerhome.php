@@ -174,34 +174,30 @@ function get_volunteer_name($email){
                         <h1>Question 2</h1>
                     </section>
                 </section>
-            </section>
 
                 <section class = "bar" id="bar3">
                     <section class="indicators">
                         <h1>Question 3</h1>
                     </section>
                 </section>
-            </section>
 
-            <section class = "bar" id="bar4">
-                <section class="indicators">
-                    <h1>Question 4</h1>
+                <section class = "bar" id="bar4">
+                    <section class="indicators">
+                        <h1>Question 4</h1>
+                    </section>
                 </section>
-            </section>
-            </section>
 
-            <section class = "bar" id="bar5">
-                <section class="indicators">
-                    <h1>Question 5</h1>
+                <section class = "bar" id="bar5">
+                    <section class="indicators">
+                        <h1>Question 5</h1>
+                    </section>
                 </section>
-            </section>
-            </section>
 
-            <section class = "bar" id="bar6">
-                <section class="indicators">
-                    <h1>Question 6</h1>
+                <section class = "bar" id="bar6">
+                    <section class="indicators">
+                        <h1>Question 6</h1>
+                    </section>
                 </section>
-            </section>
 
             </section>
 

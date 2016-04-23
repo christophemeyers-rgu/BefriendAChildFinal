@@ -15,7 +15,7 @@ a{
 .general{
 	float:left;
 	background-color:#1284C1;
-	padding:20%;
+	padding:20% 20% 20% 20%;
 	margin:10px 10px 10px 10px;
 	align-content:center;
 	color: #ffffff;
@@ -23,7 +23,7 @@ a{
 
 .specific{
 	background-color:#F9F7EB;
-	padding:20%;
+	padding:20% 20% 20% 20%;
 	margin:10px 10px 10px 10px;
 	align-content:center;
 

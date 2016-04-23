@@ -151,7 +151,7 @@ h5{
     justify-content:center;
 }
 
-.button {
+.topbuttons {
     display: inline-block;
     padding: 15px 25px;
     font-size: 24px;
@@ -168,12 +168,12 @@ h5{
     transition-duration: 0.2s;
 }
 
-.button:hover {
+.topbuttons:hover {
     background-color: yellowgreen;
     color: white;
 }
 
-.button:active {
+.topbuttons:active {
     background-color: #3e8e41;
     box-shadow: 0 5px #666;
     transform: translateY(4px);

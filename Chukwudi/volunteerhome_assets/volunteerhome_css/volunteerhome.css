@@ -1,21 +1,36 @@
-main {
-    max-width: 960px;
-    height: 900px;
-    margin-right: auto;
+header{
+    max-width: 600px;
+    height: auto;
+    left: 0;
+    right: 0;
     margin-left: auto;
-    background-color: aliceblue;
-    flex-direction: row;
+    margin-right: auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
-.container{
 
-    max-width: 650px;
-    height: 650px;
+h2{
+    color: darkred;
+}
+
+#welcomepage{
+    max-width: 600px;
+    height: auto;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: aliceblue;
+    position: absolute;
+}
+
+.form{
+    display: none;
+    max-width: 600px;
+    height: 500px;
     position: absolute;
     left: 0;
     right: 0;
-    top: 10%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -44,5 +59,40 @@ main {
 }
 
 #cont7 {
-    background-color: blueviolet;
+    display: none;
+}
+
+p{
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h5{
+    max-width: 600px;
+    height: auto;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ui-progressbar {
+    position: relative;
+    max-width: 650px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.progress-label {
+    position: absolute;
+    left: 10%;
+    top: 4px;
+    font-weight: bold;
+    text-shadow: 1px 1px 0 #fff;
 }

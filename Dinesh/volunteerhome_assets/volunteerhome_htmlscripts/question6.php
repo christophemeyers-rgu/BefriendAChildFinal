@@ -1,5 +1,4 @@
 <div>
-    <h2>==========[Question 6]:==============</h2>
     <br>
     <br>
 <fieldset>
@@ -26,6 +25,6 @@
 </fieldset>
 </div>
 <h5>
-    <input class="navbuttons" type="button" id="previous5" name="previous">
-    <input class="navbuttons" type="button" id="nextsurveysummary" name="next" value="GO TO SURVEY SUMMARY">
+    <a href="#bar5"><input class="navbuttonprevious" type="button" id="previous5" name="previous"><a/>
+    <a href="#bar6"><input class="navbuttonnext" type="button" id="nextsurveysummary" name="next"><a/>
 </h5>

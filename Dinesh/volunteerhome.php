@@ -162,17 +162,47 @@ function get_volunteer_name($email){
 
             <!-- Survey Indicator Bar -->
             <section class=indicatorbar id="indicatorbar">
+
                 <section class="bar" id="bar1">
                     <section class="indicators">
-                        <h1>Q1</h1>
+                        <h1>Question 1</h1>
                     </section>
                 </section>
 
                 <section class = "bar" id="bar2">
                     <section class="indicators">
-                        <h1>Q2</h1>
+                        <h1>Question 2</h1>
                     </section>
                 </section>
+            </section>
+
+                <section class = "bar" id="bar3">
+                    <section class="indicators">
+                        <h1>Question 3</h1>
+                    </section>
+                </section>
+            </section>
+
+            <section class = "bar" id="bar4">
+                <section class="indicators">
+                    <h1>Question 4</h1>
+                </section>
+            </section>
+            </section>
+
+            <section class = "bar" id="bar5">
+                <section class="indicators">
+                    <h1>Question 5</h1>
+                </section>
+            </section>
+            </section>
+
+            <section class = "bar" id="bar6">
+                <section class="indicators">
+                    <h1>Question 6</h1>
+                </section>
+            </section>
+
             </section>
 
 

@@ -195,7 +195,7 @@ input[type=button] {
 
 #logout:hover {
     background-color: yellowgreen;
-    color: white;
+
 }
 
 #logout:active {
@@ -213,7 +213,7 @@ input[type=button] {
 
 .navbuttons:hover {
     background-color: yellowgreen;
-    color: white;
+
 }
 
 .navbuttons:active {

@@ -1,6 +1,5 @@
 <div>
-    <br>
-    <br>
+
 <fieldset>
     <h3>
     <label for="question4">

@@ -126,7 +126,7 @@ h5{
     transition-property: width, background,font-size;
     transition-duration: 1s;
     transition-timing-function: linear;
-    transition-delay: 0s;
+    transition-delay: 2s;
 }
 
 #bar1:target {

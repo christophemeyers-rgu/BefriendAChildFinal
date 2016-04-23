@@ -170,10 +170,6 @@ input[type=button] {
     transition-duration: 0.2s;
 }
 
-input[type=button]:hover {
-    background-color: yellowgreen;
-    color: white;
-}
 
 input[type=button]:active {
     background-color: #3e8e41;
@@ -186,4 +182,8 @@ input[type=button]:active {
 #home{
     background: url(../volunteerhome_images/homeorange.png);
     background-size: 100% 100%;
+}
+
+#home:hover {
+    background-color: yellowgreen;
 }

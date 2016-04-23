@@ -114,9 +114,9 @@ h5{
 
     /* Standard syntax */
     transition-property: width, background,font-size;
-    transition-duration: 2s;
+    transition-duration: 1s;
     transition-timing-function: linear;
-    transition-delay: 1s;
+    transition-delay: 0s;
 }
 
 #bar1:target {
@@ -133,9 +133,9 @@ h5{
 
     /* Standard syntax */
     transition-property: width, background,font-size;
-    transition-duration: 2s;
+    transition-duration: 1s;
     transition-timing-function: linear;
-    transition-delay: 1s;
+    transition-delay: 0s;
 }
 
 #bar2:target {

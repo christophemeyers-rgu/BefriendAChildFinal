@@ -26,8 +26,6 @@ h2{
 
 .form{
     display: none;
-    max-width: 600px;
-    height: 500px;
     position: absolute;
     left: 0;
     right: 0;
@@ -36,13 +34,17 @@ h2{
 }
 
 #cont1 {
+    max-width: 600px;
     background: yellowgreen;
 }
+
 #cont2 {
+    max-width: 600px;
     background-color: palevioletred;
 }
 
 #cont3 {
+    max-width: 600px;
     background-color: lightsalmon;
 }
 
@@ -58,18 +60,21 @@ h2{
     background-color: palevioletred;
 }
 
-#cont7 {
-    display: none;
+#surveysummaryandsubmission {
+    max-width: 1450px;
+    height: auto;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: aliceblue;
 }
 
 p{
-    height: auto;
-    margin-right: auto;
-    margin-left: auto;
-    background-color: aliceblue;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 h5{
@@ -95,4 +100,90 @@ h5{
     top: 4px;
     font-weight: bold;
     text-shadow: 1px 1px 0 #fff;
+}
+
+/* Survey Indicator Bar */
+#bar1{
+    width: 100px;
+    height: 50px;
+    background: red;
+
+    /* Standard syntax */
+    transition-property: width, background,font-size;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    transition-delay: 1s;
+}
+
+#bar1:target {
+    width: 300px;
+    background:blue;
+    font-size:40px;
+
+}
+
+#bar2{
+    width: 100px;
+    height: 50px;
+    background: red;
+
+    /* Standard syntax */
+    transition-property: width, background,font-size;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    transition-delay: 1s;
+}
+
+#bar2:target {
+    width: 300px;
+    background:blue;
+    font-size:40px;
+
+}
+
+.indicatorbar{
+
+    justify-content:center;
+}
+
+.indicators{
+    display: flex;
+    justify-content:center;
+}
+
+button {
+
+
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: black;
+    background-color: white;
+    border: 2px solid yellowgreen;
+    border-radius: 30px;
+    box-shadow: 0 9px #999;
+    -webkit-transition-duration: 0.2s; /* Safari */
+    transition-duration: 0.2s;
+}
+
+#home{
+    background: url(../volunteerhome_images/homeorange.png);
+    background-size: 100% 100%;
+}
+
+#home:hover {
+    background-color: yellowgreen;
+    color: white;
+}
+
+#home:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+    -webkit-transition-duration: 0.2s; /* Safari */
+    transition-duration: 0.2s;
 }

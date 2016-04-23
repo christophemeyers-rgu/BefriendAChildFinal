@@ -19,5 +19,5 @@
 </fieldset>
 </div>
 <h5>
-    <input class="navbuttons" type="button" id="next2" name="next" value="GO TO QUESTION 2">
+    <a href="#bar1"><input class="navbuttons" type="button" id="next2" name="next" value="GO TO QUESTION 2"></a>
 </h5>

@@ -222,7 +222,7 @@ if(!isset($_SESSION['ad_email'])){
                         <div class="select_sub">
                             <ul class="sub">
                                 <li><a href="view.php">Full Report</a></li>
-                                <li><a href="#nogo">Survey Query</a></li>
+                                <li><a href="view%20report.php">Survey Query</a></li>
                                 <li><a href="#nogo">Delete Report</a></li>
 
                             </ul>

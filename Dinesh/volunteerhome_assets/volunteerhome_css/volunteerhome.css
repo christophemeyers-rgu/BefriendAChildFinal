@@ -20,7 +20,7 @@ h2{
     right: 0;
     margin-left: auto;
     margin-right: auto;
-    background-color: white;
+    background-color: aliceblue;
     position: absolute;
 }
 
@@ -162,7 +162,7 @@ h5{
     text-decoration: none;
     outline: none;
     color: black;
-    background-color: aliceblue;
+    background-color: white;
     border: 2px solid yellowgreen;
     border-radius: 30px;
     box-shadow: 0 9px #999;

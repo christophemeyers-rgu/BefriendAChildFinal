@@ -198,7 +198,7 @@
 		<div class="select_sub">
 			<ul class="sub">
 				<li><a href="view.php">Full Report</a></li>
-				<li><a href="#nogo">Survey Query</a></li>
+				<li><a href="view%20report.php">Survey Query</a></li>
 				<li><a href="#nogo">Delete Report</a></li>
 			 
 			</ul>
@@ -255,7 +255,7 @@
 			<h3><a href="createlogin.php">Create User Login</a></h3>
 			<h3><a href="delete-user.php">Delete User Login</h3>
 			<h3><a href="view.php">Full Report</a></h3>
-			<h3>Survey Query</h3>
+			<h3><a href="view%20report.php"></a> Survey Query</h3>
 			<h3>Delete Report</h3>
 
 			

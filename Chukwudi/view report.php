@@ -253,8 +253,8 @@ if(!isset($_SESSION['ad_email'])){
     <table width="200" border="0">
         <tbody>
         <tr>
-            <td><a href=""><div class="general" id="general"> General</div></a></td>
-            <td><a href=""><div class="specific" id="specific">Specific</div></a></td>
+            <td><a href="report.php"><div class="general" id="general"> General</div></a></td>
+            <td><a href="allvolunteers.php"><div class="specific" id="specific">Specific</div></a></td>
         </tr>
         </tbody>
     </table>

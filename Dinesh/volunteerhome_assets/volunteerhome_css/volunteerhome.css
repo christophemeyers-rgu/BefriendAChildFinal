@@ -191,6 +191,7 @@ input[type=button] {
 #logout{
     background: url(../volunteerhome_images/logout.png);
     background-size: 100% 100%;
+    border-radius: 10px;
 }
 
 #logout:hover {

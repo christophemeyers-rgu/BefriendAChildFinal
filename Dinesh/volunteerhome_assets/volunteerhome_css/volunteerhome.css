@@ -207,17 +207,35 @@ input[type=button] {
     transition-duration: 0.2s;
 }
 
-.navbuttons{
-    background: url(../volunteerhome_images/arrow.png);
+.navbuttonnext{
+    background: url(../volunteerhome_images/arrownext.png);
     background-size: 100% 100%;
 }
 
-.navbuttons:hover {
+.navbuttonnext:hover {
     background-color: yellowgreen;
 
 }
 
-.navbuttons:active {
+.navbuttonnext:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+    -webkit-transition-duration: 0.2s; /* Safari */
+    transition-duration: 0.2s;
+}
+
+.navbuttonprevious{
+    background: url(../volunteerhome_images/arrowprevious.png);
+    background-size: 100% 100%;
+}
+
+.navbuttonprevious:hover {
+    background-color: yellowgreen;
+
+}
+
+.navbuttonprevious:active {
     background-color: #3e8e41;
     box-shadow: 0 5px #666;
     transform: translateY(4px);

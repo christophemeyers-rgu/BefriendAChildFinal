@@ -30,3 +30,8 @@ a{
     border-radius:10px;
 
 }
+
+table{
+    border-collapse:collapse;
+    border-color:transparent;
+}

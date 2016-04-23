@@ -2,30 +2,31 @@
 /* CSS Document */
 
 .container{
-	margin-left:20%;
-	margin-right:20%;
-	padding:10% 20% 30% 20%;
+    margin-left:20%;
+    margin-right:20%;
+    padding:10% 20% 30% 20%;
 }
 
 a{
-	text-decoration:none;
-	color:#000000;
+    text-decoration:none;
+    color:#000000;
 }
 
 .general{
-	float:left;
-	background-color:#1284C1;
-	padding:20% 20% 20% 20%;
-	margin:10px 10px 10px 10px;
-	align-content:center;
-	color: #ffffff;
+    float:left;
+    background-color:#1284C1;
+    padding:40px 50px 40px 50px;
+    margin:10px 10px 10px 10px;
+    align-content:center;
+    color: #ffffff;
+    border-radius:10px;
 }
 
 .specific{
-	background-color:#F9F7EB;
-	padding:20% 20% 20% 20%;
-	margin:10px 10px 10px 10px;
-	align-content:center;
+    background-color:#F9F7EB;
+    padding:40px 50px 40px 50px;
+    margin:10px 10px 10px 10px;
+    align-content:center;
+    border-radius:10px;
 
-	
 }

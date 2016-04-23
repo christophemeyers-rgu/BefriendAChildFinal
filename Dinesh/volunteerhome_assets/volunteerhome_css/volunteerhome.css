@@ -152,6 +152,7 @@ h5{
 }
 
 .topbuttons {
+    background-image: url(../volunteerhome_images/home.png);
     display: inline-block;
     padding: 5px 15px;
     font-size: 15px;

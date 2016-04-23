@@ -49,14 +49,17 @@ h2{
 }
 
 #cont4 {
+    max-width: 600px;
     background-color: yellow;
 }
 
 #cont5 {
+    max-width: 600px;
     background-color: lightskyblue;
 }
 
 #cont6 {
+    max-width: 600px;
     background-color: palevioletred;
 }
 

@@ -170,15 +170,6 @@ input[type=button] {
     transition-duration: 0.2s;
 }
 
-
-input[type=button]:active {
-    background-color: #3e8e41;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
-    -webkit-transition-duration: 0.2s; /* Safari */
-    transition-duration: 0.2s;
-}
-
 #home{
     background: url(../volunteerhome_images/homeorange.png);
     background-size: 100% 100%;
@@ -186,4 +177,13 @@ input[type=button]:active {
 
 #home:hover {
     background-color: yellowgreen;
+    color: white;
+}
+
+#home:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+    -webkit-transition-duration: 0.2s; /* Safari */
+    transition-duration: 0.2s;
 }

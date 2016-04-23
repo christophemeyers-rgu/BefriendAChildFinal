@@ -1,5 +1,7 @@
 <div>
-
+    <h2>==========[Question 3]:==============</h2>
+    <br>
+    <br>
 <fieldset>
     <h3>
     <label for="question3">
@@ -25,6 +27,6 @@
 </fieldset>
 </div>
 <h5>
-    <a href="#bar2"><input class="navbuttonprevious"" type="button" id="previous2" name="previous"></a>
-    <a href="#bar4"><input class="navbuttonnext" type="button" id="next4" name="next"></a>
+    <input class="navbuttonprevious"" type="button" id="previous2" name="previous">
+    <input class="navbuttonnext" type="button" id="next4" name="next">
 </h5>

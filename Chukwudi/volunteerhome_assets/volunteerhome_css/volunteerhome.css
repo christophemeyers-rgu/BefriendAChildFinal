@@ -187,3 +187,39 @@ input[type=button] {
     -webkit-transition-duration: 0.2s; /* Safari */
     transition-duration: 0.2s;
 }
+
+#logout{
+    background: url(../volunteerhome_images/logout.png);
+    background-size: 100% 100%;
+}
+
+#logout:hover {
+    background-color: yellowgreen;
+    color: white;
+}
+
+#logout:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+    -webkit-transition-duration: 0.2s; /* Safari */
+    transition-duration: 0.2s;
+}
+
+.navbuttons{
+    background: url(../volunteerhome_images/arrow.png);
+    background-size: 100% 100%;
+}
+
+.navbuttons:hover {
+    background-color: yellowgreen;
+    color: white;
+}
+
+.navbuttons:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+    -webkit-transition-duration: 0.2s; /* Safari */
+    transition-duration: 0.2s;
+}

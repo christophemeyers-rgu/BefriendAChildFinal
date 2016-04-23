@@ -161,7 +161,7 @@ function get_volunteer_name($email){
 
 
             <!-- Survey Indicator Bar -->
-            <section class=indicatorbar>
+            <section class=indicatorbar id="indicatorbar">
                 <section class="bar" id="bar1">
                     <section class="indicators">
                         <h1>Q1</h1>

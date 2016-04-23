@@ -242,3 +242,31 @@ input[type=button] {
     -webkit-transition-duration: 0.2s; /* Safari */
     transition-duration: 0.2s;
 }
+
+
+
+#start:hover {
+    background-color: yellowgreen;
+
+}
+
+#start:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+    -webkit-transition-duration: 0.2s; /* Safari */
+    transition-duration: 0.2s;
+}
+
+#submit:hover {
+    background-color: yellowgreen;
+
+}
+
+#submit:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+    -webkit-transition-duration: 0.2s; /* Safari */
+    transition-duration: 0.2s;
+}

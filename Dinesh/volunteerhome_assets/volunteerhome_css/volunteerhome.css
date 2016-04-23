@@ -170,17 +170,17 @@ h5{
     transition-duration: 0.2s;
 }
 
-.home{
+#home{
     background: url(../volunteerhome_images/homeorange.png);
     background-size: 100% 100%;
 }
 
-.home:hover {
+#home:hover {
     background-color: yellowgreen;
     color: white;
 }
 
-.home:active {
+#home:active {
     background-color: #3e8e41;
     box-shadow: 0 5px #666;
     transform: translateY(4px);

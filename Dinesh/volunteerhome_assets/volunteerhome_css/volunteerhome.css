@@ -88,6 +88,7 @@ h5{
     justify-content: space-between;
 }
 
+/* ==========================================================Survey progress Bar */
 .ui-progressbar {
     position: relative;
     max-width: 650px;
@@ -102,7 +103,7 @@ h5{
     text-shadow: 1px 1px 0 #fff;
 }
 
-/* Survey Indicator Bar */
+/* ==========================================================Survey Indicator Bar */
 #bar1{
     width: 100px;
     height: 50px;
@@ -151,6 +152,7 @@ h5{
     justify-content:center;
 }
 
+/* ==========================================================Survey Buttons */
 input[type=button] {
 
 
@@ -166,6 +168,19 @@ input[type=button] {
     border: 2px solid yellowgreen;
     border-radius: 30px;
     box-shadow: 0 9px #999;
+    -webkit-transition-duration: 0.2s; /* Safari */
+    transition-duration: 0.2s;
+}
+
+#start:hover {
+    background-color: yellowgreen;
+
+}
+
+#start:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
     -webkit-transition-duration: 0.2s; /* Safari */
     transition-duration: 0.2s;
 }
@@ -243,24 +258,25 @@ input[type=button] {
     transition-duration: 0.2s;
 }
 
-
-
-#start:hover {
-    background-color: yellowgreen;
-
-}
-
-#start:active {
-    background-color: #3e8e41;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
+#submit{
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: black;
+    background-color: white;
+    border: 2px solid yellowgreen;
+    border-radius: 30px;
+    box-shadow: 0 9px #999;
     -webkit-transition-duration: 0.2s; /* Safari */
     transition-duration: 0.2s;
 }
 
 #submit:hover {
     background-color: yellowgreen;
-
 }
 
 #submit:active {
@@ -270,3 +286,4 @@ input[type=button] {
     -webkit-transition-duration: 0.2s; /* Safari */
     transition-duration: 0.2s;
 }
+

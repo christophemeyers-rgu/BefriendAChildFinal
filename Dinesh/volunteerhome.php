@@ -121,7 +121,7 @@ function get_volunteer_name($email){
 
         <!-- Home Button -->
         <section class="header" id="homebutton">
-            <h2><a href="volunteerhome.php"><input type="button" class="topbuttons" id="home" value="Home"></a></h2>
+            <a href="volunteerhome.php"><input type="button" class="topbuttons" id="home" ></a>
         </section>
 
         <!-- Volunteer name is printed in the head -->
@@ -132,7 +132,7 @@ function get_volunteer_name($email){
 
         <!-- Logout Button -->
         <section class="header" id="logoutbutton">
-            <h2><a href="logoutvolunteer.php" id="logout"><input type="button" class="topbuttons" id="logout" value="Logout"></a></h2>
+            <a href="logoutvolunteer.php" id="logout"><input type="button" class="topbuttons" id="logout" value="Logout"></a>
         </section>
 
     </header>

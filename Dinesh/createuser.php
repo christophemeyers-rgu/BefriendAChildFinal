@@ -321,7 +321,6 @@
                                             <label for="childdateofbirth">Child's date of birth: (dd/mm/yy)</label>
                                             <input  type="date" name="childdateofbirth" id="childdateofbirth" class="disabledelements" disabled>
                                         </tr>
-
                                         <tr>
                                             <th>&nbsp;</th>
                                             <td valign="top">

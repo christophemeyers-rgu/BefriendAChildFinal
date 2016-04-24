@@ -72,7 +72,7 @@
 				}
 				else{
 					$child_gender="other";
-					$dob="date'0000-00-00'";
+					$dob="date'1991-03-12'";
 				}
 
 				$insert="INSERT INTO volunteers (vol_email, vol_password, vol_firstname,vol_surname,vol_child_matched,vol_child_gender,vol_child_dob) VALUES('".$email."','".$password."','".$firstname."','".$surname."',".$child_matched.",'".$child_gender."',".$dob.")";

@@ -73,7 +73,7 @@
 
 
 
-			if(mysql_num_rows($stmt)){	//if the sql query returns a value
+			if(mysqli_stmt_fetch($stmt)){	//if the sql query returns a value
 				return TRUE; 	//indicate that a value was returned, and user exists in database
 			}
 			else{

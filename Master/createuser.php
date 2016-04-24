@@ -11,6 +11,7 @@
     }
 
 
+    //This check shows the right message if the user was created or existed already
     if($_SERVER['REQUEST_METHOD']==='GET'){
         $success = $_GET["Success"];
 

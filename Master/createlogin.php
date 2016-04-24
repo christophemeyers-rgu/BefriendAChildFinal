@@ -13,7 +13,7 @@
 	//if the method called is a "POST"
 	else if ($_SERVER['REQUEST_METHOD']==='POST'){
 
-        add_to_database();//call the function "add_to_database"
+        add_to_database();//call the function "add_to_database" which also sends email and sends you back to createuser.php
 	}
 
 

@@ -23,7 +23,7 @@
 
     <!--  jquery core -->
     <script src="jsadminpage/jquery/jquery-1.4.1.min.js" type="text/javascript"></script>
-
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <!--  styled select box script version 2 -->
     <script src="jsadminpage/jquery/jquery.selectbox-0.5_style_2.js" type="text/javascript"></script>
     <script type="text/javascript">

@@ -12,7 +12,7 @@
 </label>
 <br>
     <input hidden type="number" name="qid2" value="11"><!-- Hidden input that carries value of question id (currently manual)-->
-    <input required type="number" step="any" name="question2" placeholder="Enter Amount in £">
+    <input required type="number" step="any" name="question2" placeholder="Enter Amount in £" id="question2">
 <br>
 <br>
     </h3>
@@ -20,5 +20,5 @@
 </div>
 <h5>
     <input class="navbuttons" type="button" id="previous1" name="previous" value="GO TO QUESTION 1">
-    <input class="navbuttons" type="button" id="next3" name="next" value="GO TO QUESTION 3">
+    <a href="#bar2"><input class="navbuttons" type="button" id="next3" name="next" value="GO TO QUESTION 3"></a>
 </h5>

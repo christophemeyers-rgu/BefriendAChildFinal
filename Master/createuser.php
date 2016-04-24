@@ -331,7 +331,7 @@
                                         <tr>
                                             <th valign="top">Child's date of birth: (dd/mm/yy)</th>
                                             <td>
-                                                <input  type="date" class="disabledelements" disabled>
+                                                <input  type="date" class="disabledelements" disabled name="date_of_birth">
                                             </td>
                                         </tr>
 

@@ -67,10 +67,8 @@
 
 				if($child_matched==true){
 					$child_gender=$_POST['child_gender'];
-					$day=$_POST['day'];
-					$month=$_POST['month'];
-					$year=$_POST['year'];
-					$dob="date'".$year."-".$month."-".$day."'";
+					$child_date_of_birth = $_POST['date_of_birth'];
+					$dob="date'".$child_date_of_birth."'";
 				}
 				else{
 					$child_gender="other";

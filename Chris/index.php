@@ -61,10 +61,10 @@
 
 			$params = array($email, $password);
 			//select all values from database using the entered values as filter
-			$query="SELECT `ad_email`, `ad_password`
-					FROM `administrators`
-					WHERE `ad_email` = ? AND `ad_password` = ? LIMIT 1";
-			$output=sqlsrv_query($conn,$query,$params)/* or die("Selection Query Failed !!!")*/;	//send query or give error message
+			$query="SELECT ad_email, ad_password
+					FROM administrators
+					WHERE ad_email = ? AND ad_password = ?";
+			$output=sqlsrv_query($conn,$query,$params) or die(("Error: ".$query."<br>".$conn->error));	//send query or give error message
 
 
 

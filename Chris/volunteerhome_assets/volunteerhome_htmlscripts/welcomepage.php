@@ -23,4 +23,4 @@
 <br>
 
 <!-- Start Survey Button -->
-<input type="button" id="start" name="next" value="Start Survey">
+<input type="button" id="start" name="next" value="START SURVEY">

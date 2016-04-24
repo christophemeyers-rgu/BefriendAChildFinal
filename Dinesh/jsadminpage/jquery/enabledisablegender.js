@@ -10,6 +10,6 @@ $('#no').click(function () {
     //check if checkbox is checked
     if ($(this).is(':checked')) {
 
-        $('.disabledelements').attr('disabled', true); //disable input
+        $('.disabledelements').prop('disabled', true); //disable input
     }
 });

@@ -40,29 +40,41 @@
 		//test to discover if the user is already in the DB
 		//to do that, we can find out if the email address already exists in any row
 
-		include("db_connection.php");
+		/*include("db_connection.php");
+		$db = new MySQLi(
+			'ap-cdbr-azure-east-c.cloudapp.net', //server or host address
+			'b35e94884f471c', //username for connecting to database
+			'90efdea3', //user's password
+			'befriendachildtestDB' //database being connected to
+		);*/
 
+		$server = "ap-cdbr-azure-east-c.cloudapp.net";
+		$options = array("Database"=>"befriendachildtestDB", "UID"=>"b35e94884f471c", "PWD"=>"90efdea3");
+		$conn = sqlsrv_connect($server, $options);
 
-		if($db->connect_errno){		//check if there was a connection error and respond accordingly
+		if($conn->connect_errno){		//check if there was a connection error and respond accordingly
 			die('Connection failed:'.connect_error);
 		}
 		else{
+
+
+
 			$params = array($email, $password);
 			//select all values from database using the entered values as filter
 			$query="SELECT `ad_email`, `ad_password`
 					FROM `administrators`
 					WHERE `ad_email` = ? AND `ad_password` = ? LIMIT 1";
-			$output=sqlsrv_query($db,$query,$params) or die("Selection Query Failed !!!");	//send query or give error message
+			$output=sqlsrv_query($conn,$query,$params) or die("Selection Query Failed !!!");	//send query or give error message
 
 
 
-			if(mysqli_num_rows($output)){	//if the sql query returns a value
+			if(sqlsrv_has_rows($output)){	//if the sql query returns a value
 				return TRUE; 	//indicate that a value was returned, and user exists in database
 			}
 			else{
 				return false; //indicate a value wasn't returned, and user doesn't exist in database
 			}
-			$db->close(); // Closing Connection
+			$conn->close(); // Closing Connection
 		}
 
 	}

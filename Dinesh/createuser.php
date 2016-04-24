@@ -318,10 +318,11 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>
+
                                             <th valign="top">Child's date of birth: (dd/mm/yy)</th>
-                                                <input  type="date" class="disabledelements" disabled>
                                             <td>
+                                                <input  type="date" class="disabledelements" disabled>
+                                            </td>
                                         </tr>
 
                                         <script src="jsadminpage/jquery/enabledisablegender.js" type="text/javascript"></script>

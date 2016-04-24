@@ -298,7 +298,7 @@
 
                                         </tr>
 
-                                        <script src="jsadminpage/jquery/enabledisablegender.js" type="text/javascript"></script>
+
                                         <tr>
                                             <th valign="top">Currently matched with a child?</th>
                                             <td>
@@ -321,6 +321,8 @@
                                             <label for="childdateofbirth">Child's date of birth: (dd/mm/yy)</label>
                                             <input  type="date" name="childdateofbirth" id="childdateofbirth" class="disabledelements" disabled>
                                         </tr>
+
+                                        <script src="jsadminpage/jquery/enabledisablegender.js" type="text/javascript"></script>
                                         <tr>
                                             <th>&nbsp;</th>
                                             <td valign="top">

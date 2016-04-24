@@ -318,8 +318,10 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <label for="childdateofbirth">Child's date of birth: (dd/mm/yy)</label>
-                                            <input  type="date" name="childdateofbirth" id="childdateofbirth" class="disabledelements" disabled>
+                                            <td>
+                                                <label for="childdateofbirth">Child's date of birth: (dd/mm/yy)</label>
+                                                <input  type="date" name="childdateofbirth" id="childdateofbirth" class="disabledelements" disabled>
+                                            <td>
                                         </tr>
 
                                         <script src="jsadminpage/jquery/enabledisablegender.js" type="text/javascript"></script>

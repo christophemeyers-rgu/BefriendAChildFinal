@@ -64,7 +64,7 @@
 			$query="SELECT `ad_email`, `ad_password`
 					FROM `administrators`
 					WHERE `ad_email` = ? AND `ad_password` = ? LIMIT 1";
-			$output=sqlsrv_query($conn,$query,$params) or die("Selection Query Failed !!!");	//send query or give error message
+			$output=sqlsrv_query($conn,$query,$params)/* or die("Selection Query Failed !!!")*/;	//send query or give error message
 
 
 

@@ -9,9 +9,9 @@ $( "#start" ).click(function() {
     if (Modernizr.formvalidation) {
         //Checks if field is filled using html5 form validation
         if ($('#eventdate')[0].checkValidity()) {
-            $("#welcomepage").toggle("fade", 1000);
-            $("#surveybar").toggle("fade", 1000);
-            $("#cont1").toggle("explode", 1000);
+            $("#welcomepage").toggle("fade", 2000);
+            $("#surveybar").toggle("fade", 2000);
+            $("#cont1").toggle("explode", 2000);
         }else {
             $("#surveyform").find(':submit').click()
         }
@@ -20,9 +20,9 @@ $( "#start" ).click(function() {
         if (!$('#eventdate').val()){
             alert("Please Enter the Date of Event.");
         }else{
-            $("#welcomepage").toggle("fade", 1000);
-            $("#surveybar").toggle("fade", 1000);
-            $("#cont1").toggle("explode", 1000);
+            $("#welcomepage").toggle("fade", 2000);
+            $("#surveybar").toggle("fade", 2000);
+            $("#cont1").toggle("explode", 2000);
         }
     }
 });
@@ -33,8 +33,8 @@ $( "#next2" ).click(function() {
     if (Modernizr.formvalidation) {
         //Checks if field is filled using html5 form validation
         if ($('#question1')[0].checkValidity()) {
-            $("#cont1").toggle("explode", 1000);
-            $("#cont2").toggle("size", 1000);
+            $("#cont1").toggle("explode", 2000);
+            $("#cont2").toggle("size", 2000);
             $("#progressbar").progressbar({
                 value: 17
             });
@@ -46,8 +46,8 @@ $( "#next2" ).click(function() {
         if (!$('#question1').val()){
             alert("Please fill in required field.");
         }else{
-            $("#cont1").toggle("explode", 1000);
-            $("#cont2").toggle("size", 1000);
+            $("#cont1").toggle("explode", 2000);
+            $("#cont2").toggle("size", 2000);
             $("#progressbar").progressbar({
                 value: 17
             });
@@ -61,8 +61,8 @@ $( "#next3" ).click(function() {
     if (Modernizr.formvalidation) {
         //Checks if field is filled using html5 form validation
         if ($('#question2')[0].checkValidity()) {
-            $("#cont2").toggle("size", 1000);
-            $("#cont3").toggle("fold", 1000);
+            $("#cont2").toggle("size", 2000);
+            $("#cont3").toggle("fold", 2000);
             $("#progressbar").progressbar({
                 value: 34
             });
@@ -74,8 +74,8 @@ $( "#next3" ).click(function() {
         if (!$('#question2').val()){
             alert("Please fill in required field.");
         }else{
-            $("#cont2").toggle("size", 1000);
-            $("#cont3").toggle("fold", 1000);
+            $("#cont2").toggle("size", 2000);
+            $("#cont3").toggle("fold", 2000);
             $("#progressbar").progressbar({
                 value: 34
             });
@@ -89,8 +89,8 @@ $( "#next4" ).click(function() {
     if (Modernizr.formvalidation) {
         //Checks if field is filled using html5 form validation
         if ($('#question3')[0].checkValidity()) {
-            $("#cont3").toggle("fold", 1000);
-            $("#cont4").toggle("puff", 1000);
+            $("#cont3").toggle("fold", 2000);
+            $("#cont4").toggle("puff", 2000);
             $("#progressbar").progressbar({
                 value: 51
             });
@@ -102,8 +102,8 @@ $( "#next4" ).click(function() {
         if (!$('#question3:checked').val()){
             alert("Please fill in required field.");
         }else{
-            $("#cont3").toggle("fold", 1000);
-            $("#cont4").toggle("puff", 1000);
+            $("#cont3").toggle("fold", 2000);
+            $("#cont4").toggle("puff", 2000);
             $("#progressbar").progressbar({
                 value: 51
             });
@@ -117,8 +117,8 @@ $( "#next5" ).click(function() {
     if (Modernizr.formvalidation) {
         //Checks if field is filled using html5 form validation
         if ($('#question4')[0].checkValidity()) {
-            $("#cont4").toggle("puff", 1000);
-            $("#cont5").toggle("clip", 1000);
+            $("#cont4").toggle("puff", 2000);
+            $("#cont5").toggle("clip", 2000);
             $("#progressbar").progressbar({
                 value: 68
             });
@@ -130,8 +130,8 @@ $( "#next5" ).click(function() {
         if (!$('#question4:checked').val()){
             alert("Please fill in required field.");
         }else{
-            $("#cont4").toggle("puff", 1000);
-            $("#cont5").toggle("clip", 1000);
+            $("#cont4").toggle("puff", 2000);
+            $("#cont5").toggle("clip", 2000);
             $("#progressbar").progressbar({
                 value: 68
             });
@@ -145,8 +145,8 @@ $( "#next6" ).click(function() {
     if (Modernizr.formvalidation) {
         //Checks if field is filled using html5 form validation
         if ($('#question5')[0].checkValidity()) {
-            $("#cont5").toggle("clip", 1000);
-            $("#cont6").toggle("puff", 1000);
+            $("#cont5").toggle("clip", 2000);
+            $("#cont6").toggle("puff", 2000);
             $("#progressbar").progressbar({
                 value: 85
             });
@@ -158,8 +158,8 @@ $( "#next6" ).click(function() {
         if (!$('#question5:checked').val()){
             alert("Please fill in required field.");
         }else{
-            $("#cont5").toggle("clip", 1000);
-            $("#cont6").toggle("puff", 1000);
+            $("#cont5").toggle("clip", 2000);
+            $("#cont6").toggle("puff", 2000);
             $("#progressbar").progressbar({
                 value: 85
             });
@@ -173,8 +173,8 @@ $( "#nextsurveysummary" ).click(function() {
     if (Modernizr.formvalidation) {
         //Checks if field is filled using html5 form validation
         if ($('#question6')[0].checkValidity()) {
-            $("#cont6").toggle("fade", 1000);
-            $("#surveysummaryandsubmission").toggle("fade", 1000);
+            $("#cont6").toggle("slide", 0);
+            $("#surveysummaryandsubmission").toggle("fade", 2000);
             $("div").show().prependTo("p"); // Sends all the questions summary to the summary page
 
             $("#progressbar").progressbar({
@@ -188,8 +188,8 @@ $( "#nextsurveysummary" ).click(function() {
         if (!$('#question6:checked').val()){
             alert("Please fill in required field.");
         }else{
-            $("#cont6").toggle("fade", 1000);
-            $("#surveysummaryandsubmission").toggle("fade", 1000);
+            $("#cont6").toggle("slide", 0);
+            $("#surveysummaryandsubmission").toggle("fade", 2000);
             $("div").show().prependTo("p"); // Sends all the questions summary to the summary page
 
             $("#progressbar").progressbar({

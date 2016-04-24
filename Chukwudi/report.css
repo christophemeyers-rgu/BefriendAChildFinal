@@ -25,11 +25,12 @@ a{
 }
 
 .specific{
-    background-color:#F9F7EB;
+    background-color:blanchedalmond;
     padding:40px 50px 40px 50px;
     margin:10px 10px 10px 10px;
     align-content:center;
     border-radius:10px;
+    color: navy;
 
 }
 

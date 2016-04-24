@@ -13,8 +13,7 @@
 	//if the method called is a "POST"
 	else if ($_SERVER['REQUEST_METHOD']==='POST'){
 
-        add_to_database();//call the function "add_to_database"
-		email_volunteer_login();//call the function "email_volunteer_login()"
+        add_to_database();//call the function "add_to_database" which also sends email and sends you back to createuser.php
 	}
 
 
@@ -57,8 +56,7 @@
 
 			//if $return is no longer NULL, then it means user exists already
 			if(isset($return)){
-				echo "<script>alert('User already exists');</script>";
-				header("Location: createuser.php");
+				header("Location: createuser.php?Success=No");
 			}
 			else{
 				//create user in database if they dont exists there already
@@ -82,8 +80,10 @@
 				$insert="INSERT INTO volunteers (vol_email, vol_password, vol_firstname,vol_surname,vol_child_matched,vol_child_gender,vol_child_dob) VALUES('".$email."','".$password."','".$firstname."','".$surname."',".$child_matched.",'".$child_gender."',".$dob.")";
 
 				$outcome=$db->query($insert) or die("Error: ".$insert."<br>".$db->error);
-				echo "<SCRIPT>alert('User created!!!');</SCRIPT>";
-				header("Location: createuser.php");
+
+				header("Location: createuser.php?Success=Yes");
+
+				email_volunteer_login();//call the function "email_volunteer_login()"
 			}
 		}
 	}

@@ -200,7 +200,7 @@
                     <div class="select_sub">
                         <ul class="sub">
                             <li><a href="#nogo">Full Report</a></li>
-                            <li><a href="#nogo">Survey Query</a></li>
+                            <li><a href="view%20report.php">Survey Query</a></li>
                             <li><a href="#nogo">Delete Report</a></li>
 
                         </ul>

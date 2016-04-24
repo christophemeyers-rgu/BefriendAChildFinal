@@ -2,29 +2,38 @@
 /* CSS Document */
 
 .container{
-	align-self:center;
-	margin-left:20%;
-	margin-right:20%;
-	padding:10%;
+    /*margin-left:20%;
+    margin-right:20%;*/
+    padding:10% 20% 5% 40%;
+    width: 800px;
+    margin: 0 auto;
 }
 
 a{
-	text-decoration:none;
-	color:#000000;
+   text-decoration-line: none;
 }
 
 .general{
-	float:left;
-	background-color:#1284C1;
-	padding:20%;
-	margin:10px, 10px, 10px, 10px;
-	align-content:center;
+    float:left;
+    background-color:#1284C1;
+    padding:40px 50px 40px 50px;
+    margin:10px 50px 10px 300px;
+    align-content:center;
+    color: #ffffff;
+    border-radius:10px;
 }
 
 .specific{
-	background-color:#F9F7EB;
-	padding:20%;
-	margin:10px, 10px, 10px, 10px;
-	align-content:center;
-	
+    background-color:blanchedalmond;
+    padding:40px 50px 40px 50px;
+    margin:10px 10px 10px 10px;
+    align-content:center;
+    color:darkred;
+    border-radius:10px;
+
+}
+
+table{
+    border-collapse:collapse;
+    border-color:transparent;
 }

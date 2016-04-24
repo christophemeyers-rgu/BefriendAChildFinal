@@ -10,6 +10,18 @@
         header("Location: volunteerlogin.php");
     }
 
+    //This check shows the right message if the user was created or existed already
+    if($_SERVER['REQUEST_METHOD']==='GET'){
+        $success = $_GET["Success"];
+
+        if($success=="Yes"){
+            echo "<SCRIPT>alert('Thanks for submitting!');</SCRIPT>";
+        }
+        elseif($success=="No"){
+            echo "<script>alert('You have already submitted a survey for this event date.');</script>";
+        }
+    }
+
 
     //FUNCTIONS:
 
@@ -121,7 +133,7 @@ function get_volunteer_name($email){
 
         <!-- Home Button -->
         <section class="header" id="homebutton">
-            <h2><a href="volunteerhome.php"><input type="button" id="home" value="Home"></a></h2>
+            <a href="volunteerhome.php"><input type="button" id="home" ></a>
         </section>
 
         <!-- Volunteer name is printed in the head -->
@@ -132,7 +144,7 @@ function get_volunteer_name($email){
 
         <!-- Logout Button -->
         <section class="header" id="logoutbutton">
-            <h2> <a href="logoutvolunteer.php" id="logout"><input type="button" value="Logout"></a></h2>
+            <a href="logoutvolunteer.php" id="logout"><input type="button" id="logout"></a>
         </section>
 
     </header>
@@ -143,21 +155,36 @@ function get_volunteer_name($email){
     <main>
 
 
-        <!-- (START OF WELCOME PAGE) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-        <section class="welcomepage" id="welcomepage">
-            <?php include ("volunteerhome_assets/volunteerhome_htmlscripts/welcomepage.php")
-            ?>
-        </section>
-        <!-- (END OF WELCOME PAGE) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-
-
         <!-- (START OF SURVEY) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
         <form class="main" id="surveyform" action="submitsurveyanswers.php" method="post" >
 
 
+            <!-- (START OF WELCOME PAGE) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+            <section class="welcomepage" id="welcomepage">
+                <?php include ("volunteerhome_assets/volunteerhome_htmlscripts/welcomepage.php"); ?>
+            </section>
+            <!-- (END OF WELCOME PAGE) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+
+
             <!-- Survey Progression Bar -->
             <section class="form" id="surveybar">
-            <section id="progressbar"><section class="progress-label"></section>
+                <section id="progressbar"><section class="progress-label"></section>
+            </section>
+
+
+            <!-- Survey Indicator Bar -->
+            <section class=indicatorbar>
+                <section class="bar" id="bar1">
+                    <section class="indicators">
+                        <h1>Q1</h1>
+                    </section>
+                </section>
+
+                <section class = "bar" id="bar2">
+                    <section class="indicators">
+                        <h1>Q2</h1>
+                    </section>
+                </section>
             </section>
 
 
@@ -198,10 +225,8 @@ function get_volunteer_name($email){
 
 
             <!-- SURVEY QUESTIONS SUMMARY AND SUBMISSION -->
-            <section class="form" id="cont7">
-                <h1>Survey Questions Summary:</h1>
-                <p id="summary"></p>
-                <input type="submit" id="submit" name="submit" value="SUBMIT SURVEY">
+            <section class="form" id="surveysummaryandsubmission">
+                <?php include("volunteerhome_assets/volunteerhome_htmlscripts/surveysummaryandsubmission.php"); ?>
             </section>
 
         </form>
@@ -212,9 +237,9 @@ function get_volunteer_name($email){
     <!-- (END OF MAIN) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
 
-    <!-- CALL JQUERY SCRIPT FUNCTION -->
+    <!-- CALL JQUERY SCRIPT FUNCTIONS -->
     <script SRC="volunteerhome_assets/volunteerhome_jquery/surveybounce.js"></script>
-
+    <script SRC="volunteerhome_assets/volunteerhome_jquery/modernizr-custom.js"></script>
 
 </body>
 <!-- [END OF BODY] ================================================================================================= -->

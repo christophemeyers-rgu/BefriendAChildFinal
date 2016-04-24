@@ -127,10 +127,10 @@ function add_answers_to_database(){
         }
 
 
-        header("Location: thankssurvey.php");   //link to thankssurvey page
+        header("Location: volunteerhome.php?Success=Yes");   //link to thankssurvey page
     }
     else{
-        header("Location: same_date.php");
+        header("Location: volunteerhome.php?Success=No");
     }
 
 }

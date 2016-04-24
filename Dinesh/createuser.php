@@ -319,8 +319,8 @@
                                         </tr>
                                         <tr>
                                             <td>
-                                                <label for="childdateofbirth">Child's date of birth: (dd/mm/yy)</label>
-                                                <input  type="date" name="childdateofbirth" id="childdateofbirth" class="disabledelements" disabled>
+                                            <th valign="top">Child's date of birth: (dd/mm/yy)</th>
+                                                <input  type="date" class="disabledelements" disabled>
                                             <td>
                                         </tr>
 

@@ -10,8 +10,7 @@
 }
 
 a{
-    text-decoration:none;
-    text-underline: none;
+   text-decoration-line: none;
 }
 
 .general{

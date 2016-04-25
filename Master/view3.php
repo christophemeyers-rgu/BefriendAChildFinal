@@ -278,13 +278,13 @@ if(!isset($_SESSION['ad_email'])){
                         }
                         elseif($counter==2){
                             if($row['answer_text_req']==0){
-                                echo '<img src="volunteerhome_assets/volunteerhome_images/surveyiconsad.png" alt="Sad">';
+                                echo '<img height="30px" width="30px" src="volunteerhome_assets/volunteerhome_images/surveyiconsad.png" alt="Sad">';
                             }
                             elseif($row['answer_text_req']==1){
-                                echo '<img src="volunteerhome_assets/volunteerhome_images/surveyiconnomal.png" alt="Indifferent">';
+                                echo '<img height="30px" width="30px" src="volunteerhome_assets/volunteerhome_images/surveyiconnomal.png" alt="Indifferent">';
                             }
                             elseif($row['answer_text_req']==2){
-                                echo '<img src="volunteerhome_assets/volunteerhome_images/surveyiconsmile.png" alt="Happy">';
+                                echo '<img height="30px" width="30px" src="volunteerhome_assets/volunteerhome_images/surveyiconsmile.png" alt="Happy">';
                             }
                         }
                         elseif($counter==3){

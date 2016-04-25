@@ -204,7 +204,7 @@ function updateUser() {
     $mysqli = new mysqli(host, user, password, database);
 
 
-    $mysqli->query($sql) or die("Error: ".$query."<br>".$db->error);
+    $mysqli->query($sql) or die("Error: ".$sql."<br>".$mysqli->error);
 
     $mysqli->close();
     

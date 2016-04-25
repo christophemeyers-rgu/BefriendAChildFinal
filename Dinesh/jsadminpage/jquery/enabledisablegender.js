@@ -17,13 +17,17 @@ $('#no').click(function () {
 
 
 $( "#submit" ).click(function() {
-    $('#idform *').filter(':input').each(function () {
+   if(!Modernizr.formvalidation){
+       ($('#idform *').filter(':input').each(function () {
 
-        if (!$('input').val()) {
-            alert("Please Enter the Date of Event.");
+           if (!$('input').val()) {
+               alert("Please Enter the Date of Event.");
 
-        }
-        return false;
-    });
+           }
 
+       })
+     return false;
+   }else{
+
+   }
 });

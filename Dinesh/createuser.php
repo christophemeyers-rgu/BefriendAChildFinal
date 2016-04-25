@@ -211,7 +211,7 @@
                                     <table border="0" cellpadding="0" cellspacing="0"  id="id-form">
                                         <tr>
                                             <th valign="top">Firstname:</th>
-                                            <td><input type="text" class="inp-form" name="firstname" required/></td>
+                                            <td><input type="text" id="firstname" class="inp-form" name="firstname"/></td>
                                             <td></td>
 
                                         </tr>

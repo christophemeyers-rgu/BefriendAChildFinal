@@ -18,15 +18,10 @@ $('#no').click(function () {
 
 $( "#submit" ).click(function() {
 
-
-        $('#idform *').filter(':input').each(function(){
-
-            if (!$('input').val()) {
+            if (!$('#firstname').val()){
                 alert("Please Enter the Date of Event.");
-            } else {
-                $('#idform').find(':submit').click()
+            }else{
+                $("#idform").find(':submit').click()
             }
 
-        });
     });
-

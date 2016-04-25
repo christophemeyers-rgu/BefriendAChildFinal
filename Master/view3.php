@@ -271,7 +271,50 @@ if(!isset($_SESSION['ad_email'])){
                 <tr>
                     <td><?php echo $counter; ?></td>
                     <td><?php echo $row['question_text']; ?></td>
-                    <td><?php echo $row['answer_text_req']; ?></td>
+                    <td><?php
+                        if($counter==1){
+                            echo "£".$row['answer_text_req'];
+                        }
+                        elseif($counter==2){
+                            if($row['answer_text_req']==0){
+                                echo "Sad";
+                            }
+                            elseif($row['answer_text_req']==1){
+                                echo "Indifferent";
+                            }
+                            elseif($row['answer_text_req']==2){
+                                echo "Happy";
+                            }
+                        }
+                        elseif($counter==3){
+                            if($row['answer_text_req']==0){
+                                echo "Nothing new";
+                            }
+                            elseif($row['answer_text_req']==1){
+                                echo "Done it before";
+                            }
+                            elseif($row['answer_text_req']==2){
+                                echo "Never done it before";
+                            }
+                        }
+                        elseif($counter==4){
+                            if($row['answer_text_req']==0){
+                                echo "No";
+                            }
+                            elseif($row['answer_text_req']==1){
+                                echo "Yes";
+                            }
+                        }
+                        elseif($counter==5){
+                            if($row['answer_text_req']==0){
+                                echo "No";
+                            }
+                            elseif($row['answer_text_req']==1){
+                                echo "Yes";
+                            }
+                        }
+
+                        ?></td>
                     <td><?php echo $row['answer_text_opt']; ?></td>
                 </tr>
                 </tbody>

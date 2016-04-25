@@ -268,7 +268,7 @@ if(!isset($_SESSION['ad_email'])){
                     <tbody>
                     <tr>
                         <td><?php echo $counter; ?></td>
-                        <td><a href="View2.php?vol_email=<?php echo $row['vol_email']; ?>"><?php echo $row['vol_email']; ?></a></td>
+                        <td><a href="specific.php?vol_email=<?php echo $row['vol_email']; ?>"><?php echo $row['vol_email']; ?></a></td>
                         <td><?php echo $row['vol_firstname']; ?></td>
                         <td><?php echo $row['vol_surname']; ?></td>
                     </tr>

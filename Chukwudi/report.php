@@ -262,6 +262,7 @@ if(!isset($_SESSION['ad_email'])){
         //$result3 = $db->query($sql_sad) or die($db->connect_error);
         //$result4 = $db->query($sql_total) or die($db->connect_error);
 
+        echo $result1;
         ?>
         <tbody>
         <tr>

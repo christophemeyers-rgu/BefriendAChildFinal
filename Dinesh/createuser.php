@@ -189,7 +189,7 @@
                 <td id="tbl-border-left"></td>
                 <td>
                     <!--  start content-table-inner -->
-                    <div id="content-table-inner">
+                    <tr id="content-table-inner">
 
                         <table border="0" width="100%" cellpadding="0" cellspacing="0">
                             <tr valign="top">
@@ -257,14 +257,15 @@
                                                 <input type="radio" name="child_gender" value="female" class="disabledelements" id="gender" required disabled>Female
                                                 <input type="radio" name="child_gender" value="other" class="disabledelements" id="gender" required disabled>Other
                                             </td>
-                                        </tr>
-                                        <tr>
+
+
                                             <th valign="top">Child's date of birth: (dd/mm/yy)</th>
                                             <td>
                                                 <input  type="date" class="disabledelements" disabled name="date_of_birth" id="dateofbirth" required >
                                             </td>
-                                        </tr>
 
+
+                                        </tr>
 
                                         <tr>
                                             <th>&nbsp;</th>

@@ -26,7 +26,7 @@ $( "#submit" ).click(function() {
     }else {
         //If required attribute is not supported by browser then manually check if field is filled
 
-            if(!$(":input").val()){
+            if(!$("form:input").val()){
                 alert("Please Enter the Date of Event.");
             }else{
                 $("form").find(':submit').click()

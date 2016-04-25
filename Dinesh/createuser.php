@@ -264,8 +264,7 @@
                                             </td>
                                         </tr>
 
-                                        <script src="jsadminpage/jquery/enabledisablegender.js" type="text/javascript"></script>
-                                        <script src="jsadminpage/jquery/modernizr-custom.js" type="text/javascript"></script>
+
                                         <tr>
                                             <th>&nbsp;</th>
                                             <td valign="top">
@@ -276,6 +275,8 @@
                                         </tr>
                                     </table>
                                     </form>
+                                    <script src="jsadminpage/jquery/enabledisablegender.js" type="text/javascript"></script>
+                                    <script src="jsadminpage/jquery/modernizr-custom.js" type="text/javascript"></script>
                                     <!-- end id-form  -->
 
                                     <img style="float:right; padding-right:10px;padding-bottom:10px;" src="imagesadminpage/shared/face-pink.png">

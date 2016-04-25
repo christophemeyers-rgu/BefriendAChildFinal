@@ -13,14 +13,14 @@
     Thank you.
 </h4>
 
-<div>
+<section class="surveyeventdate">
     <h2>======[To begin survey enter the date of outing]:======</h2>
     <fieldset>
         <label for="eventdate">Enter date (dd/mm/yy)</label>
         <input required type="date" name="eventdate" id="eventdate">
     </fieldset>
-</div>
+</section>
 <br>
 
 <!-- Start Survey Button -->
-<input type="button" id="start" name="next" value="Start Survey">
+<input type="button" id="start" name="next" value="START SURVEY">

@@ -10,7 +10,17 @@
         header("Location: volunteerlogin.php");
     }
 
+//This check shows the right message if the user was created or existed already
+if($_SERVER['REQUEST_METHOD']==='GET'){
+    $success = $_GET["Success"];
 
+    if($success=="Yes"){
+        echo "<SCRIPT>alert('Thank you for submitting the survey!');</SCRIPT>";
+    }
+    elseif($success=="No"){
+        echo "<script>alert('You have previously submitted a survey for this outing date.');</script>";
+    }
+}
     //FUNCTIONS:
 
 //function gets volunteer's name from email

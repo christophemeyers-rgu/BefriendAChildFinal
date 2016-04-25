@@ -49,14 +49,17 @@ h2{
 }
 
 #cont4 {
+    max-width: 600px;
     background-color: yellow;
 }
 
 #cont5 {
+    max-width: 600px;
     background-color: lightskyblue;
 }
 
 #cont6 {
+    max-width: 600px;
     background-color: palevioletred;
 }
 
@@ -72,12 +75,25 @@ h2{
 
 p{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#surveyeventdatesummary{
+    display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-h5{
+#surveyquestionssummary{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.surveynavbuttons{
     max-width: 600px;
     height: auto;
     left: 0;
@@ -88,6 +104,7 @@ h5{
     justify-content: space-between;
 }
 
+/* ==========================================================Survey progress Bar */
 .ui-progressbar {
     position: relative;
     max-width: 650px;
@@ -102,55 +119,7 @@ h5{
     text-shadow: 1px 1px 0 #fff;
 }
 
-/* Survey Indicator Bar */
-#bar1{
-    width: 100px;
-    height: 50px;
-    background: red;
-
-    /* Standard syntax */
-    transition-property: width, background,font-size;
-    transition-duration: 2s;
-    transition-timing-function: linear;
-    transition-delay: 1s;
-}
-
-#bar1:target {
-    width: 300px;
-    background:blue;
-    font-size:40px;
-
-}
-
-#bar2{
-    width: 100px;
-    height: 50px;
-    background: red;
-
-    /* Standard syntax */
-    transition-property: width, background,font-size;
-    transition-duration: 2s;
-    transition-timing-function: linear;
-    transition-delay: 1s;
-}
-
-#bar2:target {
-    width: 300px;
-    background:blue;
-    font-size:40px;
-
-}
-
-.indicatorbar{
-
-    justify-content:center;
-}
-
-.indicators{
-    display: flex;
-    justify-content:center;
-}
-
+/* ==========================================================Survey Buttons */
 input[type=button] {
 
 
@@ -166,6 +135,19 @@ input[type=button] {
     border: 2px solid yellowgreen;
     border-radius: 30px;
     box-shadow: 0 9px #999;
+    -webkit-transition-duration: 0.2s; /* Safari */
+    transition-duration: 0.2s;
+}
+
+#start:hover {
+    background-color: yellowgreen;
+
+}
+
+#start:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
     -webkit-transition-duration: 0.2s; /* Safari */
     transition-duration: 0.2s;
 }
@@ -191,11 +173,12 @@ input[type=button] {
 #logout{
     background: url(../volunteerhome_images/logout.png);
     background-size: 100% 100%;
+    border-radius: 10px;
 }
 
 #logout:hover {
     background-color: yellowgreen;
-    color: white;
+
 }
 
 #logout:active {
@@ -206,20 +189,68 @@ input[type=button] {
     transition-duration: 0.2s;
 }
 
-.navbuttons{
-    background: url(../volunteerhome_images/arrow.png);
+.navbuttonnext{
+    background: url(../volunteerhome_images/arrownext.png);
     background-size: 100% 100%;
 }
 
-.navbuttons:hover {
+.navbuttonnext:hover {
     background-color: yellowgreen;
-    color: white;
+
 }
 
-.navbuttons:active {
+.navbuttonnext:active {
     background-color: #3e8e41;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
     -webkit-transition-duration: 0.2s; /* Safari */
     transition-duration: 0.2s;
 }
+
+.navbuttonprevious{
+    background: url(../volunteerhome_images/arrowprevious.png);
+    background-size: 100% 100%;
+}
+
+.navbuttonprevious:hover {
+    background-color: yellowgreen;
+
+}
+
+.navbuttonprevious:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+    -webkit-transition-duration: 0.2s; /* Safari */
+    transition-duration: 0.2s;
+}
+
+#submit{
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: black;
+    background-color: white;
+    border: 2px solid yellowgreen;
+    border-radius: 30px;
+    box-shadow: 0 9px #999;
+    -webkit-transition-duration: 0.2s; /* Safari */
+    transition-duration: 0.2s;
+}
+
+#submit:hover {
+    background-color: yellowgreen;
+}
+
+#submit:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+    -webkit-transition-duration: 0.2s; /* Safari */
+    transition-duration: 0.2s;
+}
+

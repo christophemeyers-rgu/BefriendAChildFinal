@@ -74,10 +74,10 @@ function verifyUserName($username) {
 	//	echo "";
 	//	die();
     $mysqli = new mysqli(host, user, password, database);
-    // Check connection
-    if ($mysqli->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
-    }
+// Check connection
+if ($mysqli->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} 
 	
     $result = $mysqli->query($sql);
 	
@@ -125,7 +125,7 @@ function is_admin() {
 //end function
 
 function getAllRegisteredUsers() {
-    $sql = "select * from volunteers";
+    $sql = "select * from volunteers ORDER BY vol_firstname";
 
     $mysqli = new mysqli(host, user, password, database);
     $result = $mysqli->query($sql);

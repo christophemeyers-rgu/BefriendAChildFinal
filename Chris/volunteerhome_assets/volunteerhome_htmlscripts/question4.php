@@ -13,9 +13,9 @@
 
     <input hidden type="number" name="qid4" value="31"><!-- Hidden input that carries value of question id (currently manual)-->
 <br>
-    <input required type="radio" name="question4" value="0">Nothing new
-    <input required type="radio" name="question4" value="1">Done it before
-    <input required type="radio" name="question4" value="2">Never done it before
+    <input required type="radio" name="question4" value="Nothing new" id="question4">Nothing new
+    <input required type="radio" name="question4" value="Done it before" id="question4">Done it before
+    <input required type="radio" name="question4" value="Never done it before" id="question4">Never done it before
 <br>
 <br>
     <label for="question4">Explain :(Optional)</label>
@@ -27,6 +27,6 @@
 </fieldset>
 </div>
 <h5>
-    <input class="navbuttons" type="button" id="previous3" name="previous" value="GO TO QUESTION 3">
-    <input class="navbuttons" type="button" id="next5" name="next" value="GO TO QUESTION 5">
+    <input class="navbuttonprevious"" type="button" id="previous3" name="previous">
+    <input class="navbuttonnext" type="button" id="next5" name="next">
 </h5>

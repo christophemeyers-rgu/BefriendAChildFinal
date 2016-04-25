@@ -102,11 +102,13 @@ function add_answers_to_database(){
 
         //Then throw it all together to create an instance of submission
         $submission_sql = "INSERT INTO submissions (vol_id, event_description, event_date, submission_date)
-                           VALUES (?,?,?,?)";
+                           VALUES (?,?,FROM_UNIXTIME(?),FROM_UNIXTIME(?))";
         /*$submission_sql = "INSERT INTO submissions (vol_id, event_description, event_date, submission_date)
                            VALUES (:id,:eventdescription,:eventdate,:submissiondate)";*/
         $stmt = $db->prepare($submission_sql);
-        $stmt->bind_param("isss",$vol_id,$answers[0][1],"date'".$event_date."'","date'".date("Y-m-d")."'");
+        $int_event_date = strtotime($event_date);
+        $int_submission_date = strtotime(date("Y-m-d"));
+        $stmt->bind_param("isii",$vol_id,$answers[0][1],$int_event_date,$int_submission_date);
         /*$stmt->bindParam(':id',$vol_id);
         $stmt->bindParam(':eventdescription',$answers[0][1]);
         $stmt->bindParam(':eventdate',$event_date_sql);

@@ -211,19 +211,19 @@
                                     <table border="0" cellpadding="0" cellspacing="0"  id="id-form">
                                         <tr>
                                             <th valign="top">Firstname:</th>
-                                            <td><input type="text" class="inp-form" name="firstname" required/></td>
+                                            <td><input type="text"  class="inp-form" name="firstname"/></td>
                                             <td></td>
 
                                         </tr>
                                         <tr>
                                             <th valign="top">Surname:</th>
-                                            <td><input type="text" class="inp-form" name="surname" required/></td>
+                                            <td><input type="text" class="inp-form" name="surname" /></td>
                                             <td></td>
 
                                         </tr>
                                         <tr>
                                             <th valign="top">E-mail:</th>
-                                            <td><input type="email" class="inp-form" name="email" required/></td>
+                                            <td><input type="email" class="inp-form" name="email" /></td>
                                             <td></td>
 
                                         </tr>
@@ -232,7 +232,7 @@
                                             <th valign="top">Password:</th>
                                             <td>
                                                 <label for="pass"></label>
-                                                <input type="password" class="inp-form" name="password" id="pass" required/>
+                                                <input type="password" class="inp-form" name="password" id="pass" />
                                             </td>
                                             <td>
                                                 <button type="button" onclick="output()">Create Password</button>
@@ -242,8 +242,8 @@
                                         <tr>
                                             <th valign="top">Currently matched with a child?</th>
                                             <td>
-                                                <input type="radio" name="child_matched" value=true id="yes" required>Yes
-                                                <input type="radio" name="child_matched" value=false id="no" required>No
+                                                <input type="radio" name="child_matched" value=true id="yes" >Yes
+                                                <input type="radio" name="child_matched" value=false id="no" >No
                                             </td>
                                         </tr>
                                         <tr>
@@ -260,12 +260,11 @@
                                         <tr>
                                             <th valign="top">Child's date of birth: (dd/mm/yy)</th>
                                             <td>
-                                                <input  type="date" class="disabledelements" disabled name="date_of_birth" required>
+                                                <input  type="date" class="disabledelements" disabled name="date_of_birth" >
                                             </td>
                                         </tr>
 
-                                        <script src="jsadminpage/jquery/enabledisablegender.js" type="text/javascript"></script>
-                                        <script src="jsadminpage/jquery/modernizr-custom.js" type="text/javascript"></script>
+
                                         <tr>
                                             <th>&nbsp;</th>
                                             <td valign="top">
@@ -276,6 +275,8 @@
                                         </tr>
                                     </table>
                                     </form>
+                                    <script src="jsadminpage/jquery/enabledisablegender.js" type="text/javascript"></script>
+                                    <script src="jsadminpage/jquery/modernizr-custom.js" type="text/javascript"></script>
                                     <!-- end id-form  -->
 
                                     <img style="float:right; padding-right:10px;padding-bottom:10px;" src="imagesadminpage/shared/face-pink.png">

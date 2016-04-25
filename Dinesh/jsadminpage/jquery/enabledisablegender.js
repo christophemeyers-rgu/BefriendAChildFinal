@@ -17,23 +17,17 @@ $('#no').click(function () {
 
 
 $( "#submit" ).click(function() {
+   if(!Modernizr.formvalidation){
+       ($('#idform *').filter(':input').each(function () {
 
-    //Checks if browser supports required attribute using Modernizr's feature detection JavaScript code
-    if (Modernizr.formvalidation) {
-        //Checks if field is filled using html5 form validation
-            $('#idform').find(':submit').click()
+           if (!$('input').val()) {
+               alert("Please Enter the Date of Event.");
 
-    }else {
-        //If required attribute is not supported by browser then manually check if field is filled
+           }
 
-        $('#idform *').filter(':input').each(function(){
+       })
+     return false;
+   }else{
 
-            if (!$('input').val()) {
-                alert("Please Enter the Date of Event.");
-            } else {
-                $('#idform').find(':submit').click()
-            }
-
-        });
-    }
+   }
 });

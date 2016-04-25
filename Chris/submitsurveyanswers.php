@@ -139,7 +139,7 @@ function add_answers_to_database(){
 
 
         //for-loop that adds answer details for each of the 6 questions
-        for ($i = 0; $i <6; $i++){
+        for ($i = 1; $i <6; $i++){
             $stmt->bindParam(':questionid',$answers[$i][0]);
             $stmt->bindParam(':submissionid',$submission_id);
             $stmt->bindParam(':requiredtext',$answers[$i][1]);

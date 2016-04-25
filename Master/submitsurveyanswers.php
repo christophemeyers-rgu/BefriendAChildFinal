@@ -116,7 +116,7 @@ function add_answers_to_database(){
         //Eventually, we are ready to link the submission_id and all the answers to the answer instance for each question
 
         //for-loop that adds answer details for each of the 6 questions
-        for ($i = 0; $i <6; $i++){
+        for ($i = 1; $i <6; $i++){
             $answer_sql = "INSERT INTO answers (question_id, submission_id, answer_text_req, answer_text_opt)
                     VALUES('".$answers[$i][0]."', '".$submission_id."', '".$answers[$i][1]."', '".$answers[$i][2]."')"; //query
 

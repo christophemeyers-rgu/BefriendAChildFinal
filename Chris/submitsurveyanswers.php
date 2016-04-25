@@ -54,7 +54,6 @@ function add_answers_to_database(){
 
     //Now we check if an event of the entered event_date already exists in the db
 
-    $event = NULL;
 
     $event_date = $_POST["eventdate"]; //this is the date the volunteer calls "event date"
 
@@ -66,15 +65,15 @@ function add_answers_to_database(){
     $stmt->bind_param("ss",$event_date_sql,$vol_id);
     $stmt->execute() or die("Error: ".$event_date_query."<br>".$db->error);
 
-
-    while($new_row = $event_result->fetch_assoc()){
-        $event = $new_row['submission_id'];
-    }
+    $event_result = $stmt->get_result();
 
 
     //if we find a submission_id in $event, THIS volunteer has already submitted something for THIS event
+    if(mysqli_num_rows($event_result)>0) {
+        header("Location: volunteerhome.php?Success=No");
 
-    if(!isset($event)) {
+    }
+    else{
 
         date_default_timezone_set('Europe/London'); //sets the timezone to the local one
         $submission_date_sql="date'".date("Y-m-d")."'";    //fills the current date and time in a format that works with our database
@@ -132,9 +131,7 @@ function add_answers_to_database(){
 
         header("Location: volunteerhome.php?Success=Yes");   //link to thankssurvey page
     }
-    else{
-        header("Location: volunteerhome.php?Success=No");
-    }
+
 
 }
 

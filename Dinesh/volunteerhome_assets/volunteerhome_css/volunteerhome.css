@@ -79,7 +79,7 @@ p{
     justify-content: center;
 }
 
-h5{
+#surveyeventdatesummary{
     display: flex;
     flex-direction: row;
     justify-content: center;

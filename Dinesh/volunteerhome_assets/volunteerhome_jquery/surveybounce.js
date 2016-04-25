@@ -177,8 +177,8 @@ $( "#nextsurveysummary" ).click(function() {
             $("#surveysummaryandsubmission").toggle("fade", 2000);
 
             // Sends all the questions summary to the summary page
-            $(".s").show().prependTo("#surveyquestionssummary");
-            $(".st").show().prependTo("h5");
+            $(".surveyquestions").show().prependTo("#surveyquestionssummary");
+            $(".surveyeventdate").show().prependTo("#surveyeventdatesummary");
 
 
             $("#progressbar").progressbar({
@@ -197,7 +197,7 @@ $( "#nextsurveysummary" ).click(function() {
 
             // Sends all the questions summary to the summary page
             $(".s").show().prependTo("#surveyquestionssummary");
-            $(".st").show().prependTo("h5");
+            $(".surveyeventdate").show().prependTo("#surveyeventdatesummary");
 
             $("#progressbar").progressbar({
                 value: 100

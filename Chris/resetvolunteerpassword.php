@@ -1,14 +1,13 @@
 <?php
 session_start();
 
-include "db_connection.php";
 
-$status = "";
-if (isset($_POST['sendMail'])) {
+if ($_SERVER['REQUEST_METHOD']==='POST') {
     $E_Mail = $_POST['E_Mail'];
     verifyResetUserName($E_Mail);
 }//end if statement
 function verifyResetUserName($E_Mail) {
+    include "db_connection.php";
 
     if($db->connect_errno){		//check if there was a connection error and respond accordingly
         die('Connection failed:'.connect_error);
@@ -82,7 +81,7 @@ function verifyResetUserName($E_Mail) {
 
             echo "<SCRIPT>alert('Email sent!');</SCRIPT>";
 
-
+            $db->close();
 
         }
     }
@@ -174,7 +173,7 @@ function verifyResetUserName($E_Mail) {
 <div class="login">
     <h1>Reset Password</h1>
     <section>
-        <form action='' method='post'>
+        <form action='resetvolunteerpassword.php' method='post'>
             <input type="text" name="E_Mail" placeholder="Enter email here" required="required" />
             <input type="submit" name="sendMail" value="SendMail" class="btn btn-primary btn-block btn-large">
 

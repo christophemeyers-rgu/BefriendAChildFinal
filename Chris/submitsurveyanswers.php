@@ -52,6 +52,7 @@ function add_answers_to_database(){
 
 
 
+    echo "<SCRIPT>alert('Works 1!');</SCRIPT>";
 
 
     //Now we check if an event of the entered event_date already exists in the db
@@ -70,6 +71,8 @@ function add_answers_to_database(){
     $stmt->execute() or die("Error: ".$event_date_query."<br>".$db->error);
 
     $event_result = $stmt->get_result();
+
+    echo "<SCRIPT>alert('Works 2!!!');</SCRIPT>";
 
 
     //if we find a submission_id in $event, THIS volunteer has already submitted something for THIS event

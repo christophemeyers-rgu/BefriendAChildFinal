@@ -18,7 +18,7 @@
     {
 
         updateUser();
-        header("location: delete-user.php");
+        //header("location: delete-user.php");
     }
     if(isset($_GET['vol_email']))
     {

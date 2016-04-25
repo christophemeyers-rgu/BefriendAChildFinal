@@ -64,10 +64,11 @@ function add_answers_to_database(){
 
     $event_date_query = "SELECT *
                          FROM submissions
-                         WHERE event_date = ? AND vol_id = ?";
+                         WHERE event_date = FROM_UNIXTIME(?) AND vol_id = ?";
 
     $stmt = $db->prepare($event_date_query);
-    $stmt->bind_param("ss",$event_date_sql,$vol_id);
+    $int_event_date = strtotime($event_date);
+    $stmt->bind_param("ii",$int_event_date,$vol_id);
     $stmt->execute() or die("Error: ".$event_date_query."<br>".$db->error);
 
     $event_result = $stmt->get_result();
@@ -106,7 +107,6 @@ function add_answers_to_database(){
         /*$submission_sql = "INSERT INTO submissions (vol_id, event_description, event_date, submission_date)
                            VALUES (:id,:eventdescription,:eventdate,:submissiondate)";*/
         $stmt = $db->prepare($submission_sql);
-        $int_event_date = strtotime($event_date);
         $int_submission_date = strtotime(date("Y-m-d"));
         $stmt->bind_param("isii",$vol_id,$answers[0][1],$int_event_date,$int_submission_date);
         /*$stmt->bindParam(':id',$vol_id);
@@ -126,10 +126,10 @@ function add_answers_to_database(){
         //by looking for the same event_date and volunteer id
         $get_submission_sql = "SELECT submission_id
                                FROM submissions
-                               WHERE event_date=? AND vol_id=?";
+                               WHERE event_date=FROM_UNIXTIME(?) AND vol_id=?";
 
         $stmt = $db->prepare($get_submission_sql);
-        $stmt->bind_param("si",$event_date,$vol_id);
+        $stmt->bind_param("ii",$int_event_date,$vol_id);
         $stmt->execute() or die("Error: ".$get_submission_sql."<br>".$db->error);
 
         echo "<SCRIPT>alert('Works 5!!!');</SCRIPT>";
@@ -142,7 +142,7 @@ function add_answers_to_database(){
 
         $submission_id = $submission_id_row['submission_id'];  //There we have it
 
-        echo "<SCRIPT>alert('Works 6!!!');</SCRIPT>";
+        echo "<SCRIPT>alert('$submission_id!!!');</SCRIPT>";
 
 
         //Eventually, we are ready to link the submission_id and all the answers to the answer instance for each question

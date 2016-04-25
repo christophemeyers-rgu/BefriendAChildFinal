@@ -135,13 +135,14 @@ function add_answers_to_database(){
         echo "<SCRIPT>alert('Works 5!!!');</SCRIPT>";
 
 
-        $submission_id_result = $stmt->get_result();
+        //$submission_id_result =
+            $stmt->bind_result($id);
 
 
-        $submission_id_row = $submission_id_result->fetch_assoc(); //get the row out of the table
+        //$submission_id_row = $submission_id_result->fetch_assoc(); //get the row out of the table
 
-        $submission_id = $submission_id_row['submission_id'];  //There we have it
-
+        //$submission_id = $submission_id_row['submission_id'];  //There we have it
+        $submission_id = $id;
         echo "<SCRIPT>alert('$submission_id!!!');</SCRIPT>";
 
 

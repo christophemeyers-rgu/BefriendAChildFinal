@@ -249,11 +249,10 @@
                                         <tr>
                                             <td>If yes, please answer the following two:</td>
                                         </tr>
-                                        <tr id="childinfo" style="display: none;">
-                                        <tr>
 
+                                        <tr>
                                             <th valign="top">Child's gender:</th>
-                                            <td>
+                                            <td class="childinfo">
                                                 <input type="radio" name="child_gender" value="male" class="disabledelements" id="gender" required disabled >Male
                                                 <input type="radio" name="child_gender" value="female" class="disabledelements" id="gender" required disabled>Female
                                                 <input type="radio" name="child_gender" value="other" class="disabledelements" id="gender" required disabled>Other
@@ -261,11 +260,11 @@
                                         </tr>
                                         <tr>
                                             <th valign="top">Child's date of birth:(dd/mm/yy)</th>
-                                            <td>
+                                            <td class="childinfo">
                                                 <input  type="date" class="disabledelements" disabled name="date_of_birth" id="dateofbirth" required >
                                             </td>
                                         </tr>
-                                        </tr>
+
                                         <tr>
                                             <th>&nbsp;</th>
                                             <td valign="top">

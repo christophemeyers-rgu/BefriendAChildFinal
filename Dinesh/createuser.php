@@ -9,6 +9,19 @@
     if(!isset($_SESSION['ad_email'])){
         header("Location: index.php");
     }
+
+
+    //This check shows the right message if the user was created or existed already
+    if($_SERVER['REQUEST_METHOD']==='GET'){
+        $success = $_GET["Success"];
+
+        if($success=="Yes"){
+            echo "<SCRIPT>alert('User created!!!');</SCRIPT>";
+        }
+        elseif($success=="No"){
+            echo "<script>alert('User already exists');</script>";
+        }
+    }
 ?>
 
 
@@ -297,8 +310,6 @@
                                             </td>
 
                                         </tr>
-
-
                                         <tr>
                                             <th valign="top">Currently matched with a child?</th>
                                             <td>
@@ -312,15 +323,15 @@
                                         <tr>
                                             <th valign="top">Child's gender:</th>
                                             <td>
-                                                <input type="radio" name="child_gender" value="male" class="disabledelements" disabled >Male
-                                                <input type="radio" name="child_gender" value="female" class="disabledelements" disabled>Female
-                                                <input type="radio" name="child_gender" value="other" class="disabledelements" disabled>Other
+                                                <input type="radio" name="child_gender" value="male" class="disabledelements"  disabled >Male
+                                                <input type="radio" name="child_gender" value="female" class="disabledelements"  disabled>Female
+                                                <input type="radio" name="child_gender" value="other" class="disabledelements"  disabled>Other
                                             </td>
                                         </tr>
                                         <tr>
                                             <th valign="top">Child's date of birth: (dd/mm/yy)</th>
                                             <td>
-                                                <input  type="date" class="disabledelements" disabled>
+                                                <input  type="date" class="disabledelements" disabled name="date_of_birth">
                                             </td>
                                         </tr>
 

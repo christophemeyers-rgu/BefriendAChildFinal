@@ -21,8 +21,8 @@ $( "#submit" ).click(function() {
 
         if (!$('input').val()) {
             alert("Please Enter the Date of Event.");
-            return false;
-        }
 
+        }
     });
+    return false;
 });

@@ -18,7 +18,7 @@ $('#no').click(function () {
 
 $( "#submit" ).click(function() {
 
-            if (!$('#firstname').val()){
+            if (!$('input').val()){
                 alert("Please Enter the Date of Event.");
             }else{
                 $("#idform").find(':submit').click()

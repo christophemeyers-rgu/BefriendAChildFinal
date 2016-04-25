@@ -61,6 +61,7 @@
 
 
 
+
 			$params = array($_POST['u'], $_POST['p']);
 			//select all values from database using the entered values as filter
 			$query="SELECT ad_email, ad_password

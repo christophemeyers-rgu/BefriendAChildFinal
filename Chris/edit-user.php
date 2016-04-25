@@ -18,15 +18,13 @@
     {
 
         updateUser();
-        //header("location: delete-user.php");
+        header("location: delete-user.php");
     }
-    if(isset($_GET['vol_email']))
+    elseif(isset($_GET['vol_email']))
     {
         $user_login=$_GET['vol_email'];
         $result = getUser($user_login);
         $row = mysqli_fetch_array($result);
-    }else{
-        //header("location: adminhome.php");
     }
 ?>
 
@@ -231,13 +229,13 @@
 
                                                             <!--This if-clause should maybe be javascript... I think-->
                                                             <?php
-                                                                if ($row['vol_child_matched']=0){
+                                                                if ($row['vol_child_matched']==true){
                                                                     ?>
                                                                     <input type="radio" name="child_matched" value=true checked >Yes
                                                                     <input type="radio" name="child_matched" value=false>No
                                                                     <?php
                                                                 }
-                                                                else if ($row['vol_child_matched']=1){
+                                                                else if ($row['vol_child_matched']==false){
                                                                     ?>
 
                                                                     <input type="radio" name="child_matched" value=true>Yes

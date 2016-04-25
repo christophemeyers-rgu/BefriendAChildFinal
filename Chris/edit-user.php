@@ -233,15 +233,15 @@
                                                             <?php
                                                                 if ($row['vol_child_matched']=0){
                                                                     ?>
-                                                                    <input type="radio" name="child_matched" value="1" checked >Yes
-                                                                    <input type="radio" name="child_matched" value="0"  >No
+                                                                    <input type="radio" name="child_matched" value=true checked >Yes
+                                                                    <input type="radio" name="child_matched" value=false>No
                                                                     <?php
                                                                 }
                                                                 else if ($row['vol_child_matched']=1){
                                                                     ?>
 
-                                                                    <input type="radio" name="child_matched" value="1">Yes
-                                                                    <input type="radio" name="child_matched" value="0" checked >No
+                                                                    <input type="radio" name="child_matched" value=true>Yes
+                                                                    <input type="radio" name="child_matched" value=false checked >No
                                                             <?php
                                                                 }
                                                             ?>

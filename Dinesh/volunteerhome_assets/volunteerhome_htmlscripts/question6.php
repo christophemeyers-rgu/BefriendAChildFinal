@@ -1,4 +1,4 @@
-<section class="s">
+<h6>
     <h2>==========[Question 6]:==============</h2>
     <br>
     <br>
@@ -24,7 +24,7 @@
 <br>
     </h3>
 </fieldset>
-</section>
+</h6>
 <h5>
     <input class="navbuttonprevious" type="button" id="previous5" name="previous">
     <input class="navbuttonnext" type="button" id="nextsurveysummary" name="next">

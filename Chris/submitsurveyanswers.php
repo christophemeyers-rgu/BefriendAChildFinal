@@ -86,8 +86,8 @@ function add_answers_to_database(){
 
 
         date_default_timezone_set('Europe/London'); //sets the timezone to the local one
-        $submission_date_sql="date'".date("Y-m-d")."'";    //fills the current date and time in a format that works with our database
-        $event_date_sql = "date'".$event_date."'"; //this variable will be useful for inserting into db via sql
+        $submission_date_sql="'date'".date("Y-m-d")."''";    //fills the current date and time in a format that works with our database
+        $event_date_sql = "'date'".$event_date."''"; //this variable will be useful for inserting into db via sql
 
         //Then we put all the survey answers into one array with the question_id, to get the event_description
         $answers= array(

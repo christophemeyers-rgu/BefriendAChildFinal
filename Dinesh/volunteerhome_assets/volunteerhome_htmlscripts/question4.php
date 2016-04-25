@@ -1,4 +1,4 @@
-<section class="s">
+<section class="surveyquestions">
     <h2>==========[Question 4]:==============</h2>
     <br>
     <br>

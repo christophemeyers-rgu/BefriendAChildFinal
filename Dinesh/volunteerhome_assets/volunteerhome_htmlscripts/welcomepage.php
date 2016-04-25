@@ -13,7 +13,7 @@
     Thank you.
 </h4>
 
-<section class="st">
+<section class="surveyeventdate">
     <h2>======[To begin survey enter the date of outing]:======</h2>
     <fieldset>
         <label for="eventdate">Enter date (dd/mm/yy)</label>

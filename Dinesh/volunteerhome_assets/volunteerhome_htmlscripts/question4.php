@@ -1,5 +1,5 @@
-<div class="summaryquestions">
-    <div class="questiontitle">==========[Question 4]:==============</div>
+<div>
+    <h2>==========[Question 4]:==============</h2>
     <br>
     <br>
 <fieldset>
@@ -26,7 +26,7 @@
     </h3>
 </fieldset>
 </div>
-<div class="surveynavbuttons">
+<h5>
     <input class="navbuttonprevious"" type="button" id="previous3" name="previous">
     <input class="navbuttonnext" type="button" id="next5" name="next">
-</div>
+</h5>

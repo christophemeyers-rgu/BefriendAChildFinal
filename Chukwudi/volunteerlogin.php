@@ -1,78 +1,78 @@
 <?php
 
 
-	//If accessed through URL
-	if($_SERVER['REQUEST_METHOD']==='GET'){
+//If accessed through URL
+if($_SERVER['REQUEST_METHOD']==='GET'){
 
 
-		//If session exists, volunteer is sent back to the hub page
+	//If session exists, volunteer is sent back to the hub page
+	session_start();
+	if(isset($_SESSION["vol_email"]))
+	{
+		header("Location: volunteerhome.php");	//sending to volunteerhub.php
+	}
+	/*else{
+        show_volunteer_login();
+    }*/
+}
+//POST is method if form from volunteerlogin is submitted
+else if($_SERVER['REQUEST_METHOD']==='POST'){
+
+
+	//read input details from volunteerlogin.php
+	$email=$_POST['u'];
+	$password=$_POST['p'];
+	if(volunteer_registered($email,$password)){		//see function below
 		session_start();
-		if(isset($_SESSION["vol_email"]))
-		{
-			header("Location: volunteerhome.php");	//sending to volunteerhub.php
-		}
-		/*else{
-			show_volunteer_login();
-		}*/
+		$_SESSION["vol_email"]=$email;		//session linked to volunteer's email
+		header("Location: volunteerhome.php");
 	}
-	//POST is method if form from volunteerlogin is submitted
-	else if($_SERVER['REQUEST_METHOD']==='POST'){
-
-
-		//read input details from volunteerlogin.php
-		$email=$_POST['u'];
-		$password=$_POST['p'];
-		if(volunteer_registered($email,$password)){		//see function below
-			session_start();
-			$_SESSION["vol_email"]=$email;		//session linked to volunteer's email
-			header("Location: volunteerhome.php");
-		}
-		else{
-/*			show_volunteer_login();*/ //This is no longer necessary
-			echo "<script>alert('Invalid volunteer details');</script>";	//Notification for invalid details
-		}
+	else{
+		/*			show_volunteer_login();*/ //This is no longer necessary
+		echo "<script>alert('Invalid volunteer details');</script>";	//Notification for invalid details
 	}
+}
 
 
 
 
-	//FUNCTIONS:
+//FUNCTIONS:
 
 
-	//This function
-	function volunteer_registered($email,$password) {
-		//test to discover if the user is already in the DB
-		//to do that, we can find out if the email address already exists in a row
+//This function
+function volunteer_registered($email,$password) {
+	//test to discover if the user is already in the DB
+	//to do that, we can find out if the email address already exists in a row
 
-		//1&2: Connect to server and choose DB
-		//***** EDIT DATABASE CREDENTIALS TO BE YOUR OWN!!!
+	//1&2: Connect to server and choose DB
+	//***** EDIT DATABASE CREDENTIALS TO BE YOUR OWN!!!
 
-		//connect to the database
-		include("db_connection.php");
+	//connect to the database
+	include("db_connection.php");
 
-		//check if there was a connection error and respond accordingly
-		if($db->connect_errno){
-			die('Connection failed:'.connect_error);
-		}
-		else{
-			//select all values from database using the entered values as filter
-			$query="SELECT `vol_email`, `vol_password`
+	//check if there was a connection error and respond accordingly
+	if($db->connect_errno){
+		die('Connection failed:'.connect_error);
+	}
+	else{
+		//select all values from database using the entered values as filter
+		$query="SELECT `vol_email`, `vol_password`
 						FROM `volunteers`
 						WHERE `vol_email` = '$email' AND `vol_password` = '$password' LIMIT 1";
-			$output=$db->query($query) or die("Selection Query Failed !!!");
+		$output=$db->query($query) or die("Selection Query Failed !!!");
 
 
-			//if the sql query returns a value
-			if(mysqli_num_rows($output)){
-				return TRUE; //indicate that a value was returned, and user exists in database
-			}
-			else{
-				return false; //indicate a value wasn't returned, and user doesn't exist in database
-			}
-			$db->close(); // Closing Connection
+		//if the sql query returns a value
+		if(mysqli_num_rows($output)){
+			return TRUE; //indicate that a value was returned, and user exists in database
 		}
-
+		else{
+			return false; //indicate a value wasn't returned, and user doesn't exist in database
+		}
+		$db->close(); // Closing Connection
 	}
+
+}
 
 
 ?>
@@ -157,21 +157,20 @@
 	</style>
 
 
-	/**<script src=""></script>*/
 
 
 
 </head>
 <body>
 
-	<div class="login">
-		<h1>Volunteer Login</h1>
-		<form action="volunteerlogin.php" method="post">
-			<input type="text" name="u" placeholder="Username" required="required" />
-			<input type="password" name="p" placeholder="Password" required="required" />
-			<button type="submit" class="btn btn-primary btn-block btn-large">Login</button>
-		</form>
-	</div>
+<div class="login">
+	<h1>Volunteer Login</h1>
+	<form action="volunteerlogin.php" method="post">
+		<input type="text" name="u" placeholder="Username" required="required" />
+		<input type="password" name="p" placeholder="Password" required="required" />
+		<button type="submit" class="btn btn-primary btn-block btn-large">Login</button>
+	</form>
+</div>
 
 
 </body>

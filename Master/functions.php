@@ -199,10 +199,13 @@ function updateUser() {
         unlink($imageurl_old);
     }
     
-    $sql = "update volunteers set vol_email='$login_name',vol_password='$password',vol_firstname='$firstName',vol_surname='$surName',child_matched='$childMatched' where vol_email='$login_name_prev'";
+    $sql = "update volunteers set vol_email='$login_name',vol_password='$password',vol_firstname='$firstName',vol_surname='$surName',vol_child_matched=".$childMatched." where vol_email='$login_name_prev'";
 
     $mysqli = new mysqli(host, user, password, database);
-    $mysqli->query($sql);
+
+
+    $mysqli->query($sql) or die("Error: ".$sql."<br>".$mysqli->error);
+
     $mysqli->close();
     
     }

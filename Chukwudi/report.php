@@ -251,35 +251,53 @@ if(!isset($_SESSION['ad_email'])){
             die('Connectfailed['.$db->connect_error.']');
         }
 
+        $sql_avg = "select avg(answer_text_req) from answers, questions where `answers`.question_id=11 and `answers`.question_id=`questions`.question_id";
+        $sql_sum = "select sum(answer_text_req) from answers, questions where `answers`.question_id=11 and `answers`.question_id=`questions`.question_id";
+        $sql_max = "select max(answer_text_req) from answers, questions where `answers`.question_id=11 and `answers`.question_id=`questions`.question_id";
+        $sql_min = "select min(answer_text_req) from answers, questions where `answers`.question_id=11 and `answers`.question_id=`questions`.question_id";
+
+        $result_avg = $db->query($sql_avg) or die($db->connect_error);
+        $result_sum = $db->query($sql_sum) or die($db->connect_error);
+        $result_max = $db->query($sql_max) or die($db->connect_error);
+        $result_min = $db->query($sql_min) or die($db->connect_error);
+
+        $avg = mysqli_fetch_array($result_avg);
+        $sum = mysqli_fetch_array($result_sum);
+        $max = mysqli_fetch_array($result_max);
+        $min = mysqli_fetch_array($result_min);
+
         $sql_happy = "select COUNT(answer_text_req) from answers, questions where `answers`.question_id=21 and answer_text_req = 2 and `answers`.question_id=`questions`.question_id";
         $sql_sad = "select COUNT(answer_text_req) from answers, questions where `answers`.question_id=21 and answer_text_req = 0 and `answers`.question_id=`questions`.question_id";
         $sql_normal = "select COUNT(answer_text_req) from answers, questions where `answers`.question_id=21 and answer_text_req = 1 and `answers`.question_id=`questions`.question_id";
         $sql_total = "select COUNT(answer_text_req) from answers, questions where `answers`.question_id=21 and `answers`.question_id=`questions`.question_id";
-        $sql_text = "select question_text, COUNT(answer_text_req) from answers, questions where `answers`.question_id=21 and `answers`.question_id=`questions`.question_id";
+        $sql_text1 = "select question_text, COUNT(answer_text_req) from answers, questions where `answers`.question_id=21 and `answers`.question_id=`questions`.question_id";
+        $sql_text2 = "select question_text, COUNT(answer_text_req) from answers, questions where `answers`.question_id=11 and `answers`.question_id=`questions`.question_id";
 
         $result1 = $db->query($sql_happy) or die($db->connect_error);
         $result2 = $db->query($sql_normal) or die($db->connect_error);
         $result3 = $db->query($sql_sad) or die($db->connect_error);
         $result4 = $db->query($sql_total) or die($db->connect_error);
-        $result5 = $db->query($sql_text) or die($db->connect_error);
+        $result5 = $db->query($sql_text1) or die($db->connect_error);
+        $result6 = $db->query($sql_text2) or die($db->connect_error);
 
         $happy = mysqli_fetch_array($result1);
         $normal = mysqli_fetch_array($result2);
         $sad = mysqli_fetch_array($result3);
         $total = mysqli_fetch_array($result4);
-        $question = mysqli_fetch_array($result5);
+        $question1 = mysqli_fetch_array($result5);
+        $question2 = mysqli_fetch_array($result6);
         ?>
         <tbody>
         <tr>
-            <td><?php  echo $question[0]; ?></td>
+            <td><?php  echo $question1[0]; ?></td>
             <td><?php echo $total[0]; ?></td>
             <td>Happy <?php echo $happy[0]; ?> <br/> Indifferent <?php echo $normal[0]; ?> <br/> Sad <?php echo $sad[0]; ?> </td>
         </tr>
 
         <tr>
-            <td><?php  echo $question[0]; ?></td>
-            <td><?php echo $total[0]; ?></td>
-            <td>Happy <?php echo $happy[0]; ?> <br/> Indifferent <?php echo $normal[0]; ?> <br/> Sad <?php echo $sad[0]; ?> </td>
+            <td><?php  echo $question2[0]; ?></td>
+            <td><?php echo $sum[0]; ?></td>
+            <td>Average spending was <?php echo $avg[0]; ?> <br/> Maximum spending was <?php echo $max[0]; ?> <br/> Minimum spending was <?php echo $min[0]; ?> </td>
         </tr>
         </tbody>
         <?php

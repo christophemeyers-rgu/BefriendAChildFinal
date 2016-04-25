@@ -231,13 +231,13 @@
 
                                                             <!--This if-clause should maybe be javascript... I think-->
                                                             <?php
-                                                                if ($row['vol_child_matched']=0){
+                                                                if ($row['vol_child_matched']=true){
                                                                     ?>
                                                                     <input type="radio" name="child_matched" value=true checked >Yes
                                                                     <input type="radio" name="child_matched" value=false>No
                                                                     <?php
                                                                 }
-                                                                else if ($row['vol_child_matched']=1){
+                                                                else if ($row['vol_child_matched']=false){
                                                                     ?>
 
                                                                     <input type="radio" name="child_matched" value=true>Yes

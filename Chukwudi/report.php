@@ -262,12 +262,12 @@ if(!isset($_SESSION['ad_email'])){
         //$result3 = $db->query($sql_sad) or die($db->connect_error);
         //$result4 = $db->query($sql_total) or die($db->connect_error);
 
-        echo $result1;
+        $happy = mysqli_fetch_array($result1);
         ?>
         <tbody>
         <tr>
             <td><?php  ?></td>
-            <td><?php echo $result4; ?></td>
+            <td><?php echo $happy[0]; ?></td>
             <td>Happy <?php echo $result1; ?> Indifferent<?php echo $result2; ?> Sad <?php echo $result3; ?> </td>
         </tr>
         </tbody>

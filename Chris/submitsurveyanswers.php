@@ -58,7 +58,7 @@ function add_answers_to_database(){
     //Now we check if an event of the entered event_date already exists in the db
 
 
-    $event_date = $_POST["eventdate"]; //this is the date the volunteer calls "event date"
+    /*$event_date = $_POST["eventdate"]; //this is the date the volunteer calls "event date"
 
     $event_date_sql = "date'".$event_date."'";
 
@@ -71,13 +71,34 @@ function add_answers_to_database(){
     $stmt->bind_param("ii",$int_event_date,$vol_id);
     $stmt->execute() or die("Error: ".$event_date_query."<br>".$db->error);
 
-    $event_result = $stmt->get_result();
+    $event_result = $stmt->get_result();*/
+
+
+    //Now we check if an event of the entered event_date already exists in the db
+
+    $event = NULL;
+
+    $event_date = $_POST["eventdate"]; //this is the date the volunteer calls "event date"
+
+    $event_date_sql = "date'".$event_date."'";
+
+    $event_date_query = "SELECT *
+                         FROM submissions
+                         WHERE event_date = $event_date_sql AND vol_id = $vol_id";
+
+    $event_result = $db->query($event_date_query) or die ("Error: ".$event_date_query."<br>".$db->error);
+
+    while($new_row = $event_result->fetch_assoc()){
+        $event = $new_row['submission_id'];
+    }
 
     echo "<SCRIPT>alert('Works 2!!!');</SCRIPT>";
 
 
     //if we find a submission_id in $event, THIS volunteer has already submitted something for THIS event
-    if(mysqli_num_rows($event_result)>0) {
+
+    if(isset($event)) {
+
         header("Location: volunteerhome.php?Success=No");
 
     }
@@ -103,12 +124,11 @@ function add_answers_to_database(){
 
         //Then throw it all together to create an instance of submission
         $submission_sql = "INSERT INTO submissions (vol_id, event_description, event_date, submission_date)
-                           VALUES (?,?,FROM_UNIXTIME(?),FROM_UNIXTIME(?))";
+                           VALUES ('".$vol_id."',?,".$event_date_sql.", ".$submission_date_sql.")";
         /*$submission_sql = "INSERT INTO submissions (vol_id, event_description, event_date, submission_date)
                            VALUES (:id,:eventdescription,:eventdate,:submissiondate)";*/
         $stmt = $db->prepare($submission_sql);
-        $int_submission_date = strtotime(date("Y-m-d"));
-        $stmt->bind_param("isii",$vol_id,$answers[0][1],$int_event_date,$int_submission_date);
+        $stmt->bind_param("s",$answers[0][1]);
         /*$stmt->bindParam(':id',$vol_id);
         $stmt->bindParam(':eventdescription',$answers[0][1]);
         $stmt->bindParam(':eventdate',$event_date_sql);
@@ -126,9 +146,9 @@ function add_answers_to_database(){
         //by looking for the same event_date and volunteer id
         $get_submission_sql = "SELECT submission_id
                                FROM submissions
-                               WHERE event_date=FROM_UNIXTIME(?) AND vol_id=?";
+                               WHERE event_date='$event_date' AND vol_id='$vol_id'";
 
-        $stmt = $db->prepare($get_submission_sql);
+        /*$stmt = $db->prepare($get_submission_sql);
         $stmt->bind_param("ii",$int_event_date,$vol_id);
         $stmt->execute() or die("Error: ".$get_submission_sql."<br>".$db->error);
 
@@ -142,13 +162,19 @@ function add_answers_to_database(){
         //$submission_id_row = $submission_id_result->fetch_assoc(); //get the row out of the table
 
         //$submission_id = $submission_id_row['submission_id'];  //There we have it
-        $submission_id = $id;
+        $submission_id = $id;*/
+
+        $submission_id_result = $db->query($get_submission_sql) or die("Error: ".$get_submission_sql."<br>".$db->error);
+
+        $submission_id_row = $submission_id_result->fetch_assoc(); //get the row out of the table
+
+        $submission_id = $submission_id_row['submission_id'];  //There we have it
+
         echo "<SCRIPT>alert('$submission_id!!!');</SCRIPT>";
 
 
         //Eventually, we are ready to link the submission_id and all the answers to the answer instance for each question
-        $answer_sql = "INSERT INTO answers (question_id, submission_id, answer_text_req, answer_text_opt)
-                       VALUES(?, ?, ?, ?)"; //query
+
         /*$answer_sql = "INSERT INTO answers (question_id, submission_id, answer_text_req, answer_text_opt)
                        VALUES(:questionid, :submissionid, :requiredtext, :optionaltext)"; //query*/
         $stmt = $db->prepare($answer_sql);
@@ -156,7 +182,10 @@ function add_answers_to_database(){
 
         //for-loop that adds answer details for each of the 6 questions
         for ($i = 1; $i <6; $i++){
-            $stmt->bind_param("iiis",$answers[$i][0],$submission_id,$answers[$i][1],$answers[$i][2]);
+            $answer_sql = "INSERT INTO answers (question_id, submission_id, answer_text_req, answer_text_opt)
+                       VALUES('".$answers[$i][0]."', '".$submission_id."', '".$answers[$i][1]."',?)"; //query
+
+            $stmt->bind_param("s",$answers[$i][2]);
             /*$stmt->bindParam(':questionid',$answers[$i][0]);
             $stmt->bindParam(':submissionid',$submission_id);
             $stmt->bindParam(':requiredtext',$answers[$i][1]);

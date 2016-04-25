@@ -66,7 +66,7 @@
 			//select all values from database using the entered values as filter
 			$query="SELECT ad_email, ad_password
 					FROM administrators
-					WHERE ad_email = ? AND BINARY ad_password = BINARY ?";
+					WHERE ad_email = ? AND ad_password = ?";
 			$stmt = $db->prepare($query);
 			$stmt->bind_param("ss",$_POST['u'],$_POST['p']);
 			$stmt->execute() or die("Error: ".$query."<br>".$db->error);

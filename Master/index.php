@@ -59,10 +59,9 @@
 		}
 		else{
 
+			//Prevent sql injection by preparing the statement
 
 
-
-			$params = array($_POST['u'], $_POST['p']);
 			//select all values from database using the entered values as filter
 			$query="SELECT ad_email, ad_password
 					FROM administrators
@@ -70,7 +69,6 @@
 			$stmt = $db->prepare($query);
 			$stmt->bind_param("ss",$_POST['u'],$_POST['p']);
 			$stmt->execute() or die("Error: ".$query."<br>".$db->error);
-			//$output=sqlsrv_query($conn,$query,$params) or die("Error: ".$query."<br>".$conn->error);	//send query or give error message
 
 
 

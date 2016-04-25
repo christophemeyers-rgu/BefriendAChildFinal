@@ -25,8 +25,8 @@
 ?>
 
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>Create Login</title>
@@ -36,6 +36,9 @@
 
     <!--  jquery core -->
     <script src="jsadminpage/jquery/jquery-1.4.1.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 
     <!--  styled select box script version 2 -->
     <script src="jsadminpage/jquery/jquery.selectbox-0.5_style_2.js" type="text/javascript"></script>
@@ -56,7 +59,7 @@
 
     <!--  styled file upload script -->
     <script src="jsadminpage/jquery/jquery.filestyle.js" type="text/javascript"></script>
-    <script type="text/javascript" charset="utf-8">
+    < type="text/javascript" charset="utf-8">
         $(function() {
             $("input.file_1").filestyle({
                 image: "images/forms/upload_file.gif",
@@ -65,80 +68,6 @@
                 width : 300
             });
         });
-    </script>
-
-    <!--  date picker script -->
-    <link rel="stylesheet" href="cssadminpage/datePicker.css" type="text/css" />
-    <script src="jsadminpage/jquery/date.js" type="text/javascript"></script>
-    <script src="jsadminpage/jquery/jquery.datePicker.js" type="text/javascript"></script>
-    <script type="text/javascript" charset="utf-8">
-        $(function()
-        {
-
-// initialise the "Select date" link
-            $('#date-pick')
-                    .datePicker(
-                            // associate the link with a date picker
-                            {
-                                createButton:false,
-                                startDate:'01/01/2005',
-                                endDate:'31/12/2020'
-                            }
-                    ).bind(
-                    // when the link is clicked display the date picker
-                    'click',
-                    function()
-                    {
-                        updateSelects($(this).dpGetSelected()[0]);
-                        $(this).dpDisplay();
-                        return false;
-                    }
-            ).bind(
-                    // when a date is selected update the SELECTs
-                    'dateSelected',
-                    function(e, selectedDate, $td, state)
-                    {
-                        updateSelects(selectedDate);
-                    }
-            ).bind(
-                    'dpClosed',
-                    function(e, selected)
-                    {
-                        updateSelects(selected[0]);
-                    }
-            );
-
-            var updateSelects = function (selectedDate)
-            {
-                var selectedDate = new Date(selectedDate);
-                $('#d option[value=' + selectedDate.getDate() + ']').attr('selected', 'selected');
-                $('#m option[value=' + (selectedDate.getMonth()+1) + ']').attr('selected', 'selected');
-                $('#y option[value=' + (selectedDate.getFullYear()) + ']').attr('selected', 'selected');
-            }
-// listen for when the selects are changed and update the picker
-            $('#d, #m, #y')
-                    .bind(
-                            'change',
-                            function()
-                            {
-                                var d = new Date(
-                                        $('#y').val(),
-                                        $('#m').val()-1,
-                                        $('#d').val()
-                                );
-                                $('#date-pick').dpSetSelected(d.asString());
-                            }
-                    );
-
-// default the position of the selects to today
-            var today = new Date();
-            updateSelects(today.getTime());
-
-// and update the datePicker to reflect it...
-            $('#d').trigger('change');
-        });
-    </script> 
-
     <!-- javascript for random password -->
     <script type='text/javascript' src='jscreatelogin/randompassword.js'></script>
 
@@ -278,23 +207,23 @@
                                     <!--  end step-holder -->
 
                                     <!-- start id-form -->
-                                    <form action='createlogin.php' method='post'>
+                                    <form id="idform" action='createlogin.php' method='post'>
                                     <table border="0" cellpadding="0" cellspacing="0"  id="id-form">
                                         <tr>
                                             <th valign="top">Firstname:</th>
-                                            <td><input type="text" class="inp-form" name="firstname"/></td>
+                                            <td><input type="text" class="inp-form" name="firstname" required/></td>
                                             <td></td>
 
                                         </tr>
                                         <tr>
                                             <th valign="top">Surname:</th>
-                                            <td><input type="text" class="inp-form" name="surname"/></td>
+                                            <td><input type="text" class="inp-form" name="surname" required/></td>
                                             <td></td>
 
                                         </tr>
                                         <tr>
                                             <th valign="top">E-mail:</th>
-                                            <td><input type="email" class="inp-form" name="email" /></td>
+                                            <td><input type="email" class="inp-form" name="email" required/></td>
                                             <td></td>
 
                                         </tr>
@@ -303,7 +232,7 @@
                                             <th valign="top">Password:</th>
                                             <td>
                                                 <label for="pass"></label>
-                                                <input type="password" class="inp-form" name="password" id="pass" />
+                                                <input type="password" class="inp-form" name="password" id="pass"/>
                                             </td>
                                             <td>
                                                 <button type="button" onclick="output()">Create Password</button>
@@ -313,8 +242,8 @@
                                         <tr>
                                             <th valign="top">Currently matched with a child?</th>
                                             <td>
-                                                <input type="radio" name="child_matched" value=true id="yes">Yes
-                                                <input type="radio" name="child_matched" value=false id="no">No
+                                                <input type="radio" name="child_matched" value=true id="yes" required>Yes
+                                                <input type="radio" name="child_matched" value=false id="no" required>No
                                             </td>
                                         </tr>
                                         <tr>
@@ -323,23 +252,24 @@
                                         <tr>
                                             <th valign="top">Child's gender:</th>
                                             <td>
-                                                <input type="radio" name="child_gender" value="male" class="disabledelements"  disabled >Male
-                                                <input type="radio" name="child_gender" value="female" class="disabledelements"  disabled>Female
-                                                <input type="radio" name="child_gender" value="other" class="disabledelements"  disabled>Other
+                                                <input type="radio" name="child_gender" value="male" class="disabledelements"  required disabled >Male
+                                                <input type="radio" name="child_gender" value="female" class="disabledelements"  required disabled>Female
+                                                <input type="radio" name="child_gender" value="other" class="disabledelements"  required disabled>Other
                                             </td>
                                         </tr>
                                         <tr>
                                             <th valign="top">Child's date of birth: (dd/mm/yy)</th>
                                             <td>
-                                                <input  type="date" class="disabledelements" disabled name="date_of_birth">
+                                                <input  type="date" class="disabledelements" disabled name="date_of_birth" required>
                                             </td>
                                         </tr>
 
                                         <script src="jsadminpage/jquery/enabledisablegender.js" type="text/javascript"></script>
+                                        <script src="jsadminpage/jquery/modernizr-custom.js" type="text/javascript"></script>
                                         <tr>
                                             <th>&nbsp;</th>
                                             <td valign="top">
-                                                <input type="submit" value="" class="form-submit" />
+                                                <input id="submit" type="submit" value="" class="form-submit" />
                                                 <input type="reset" value="" class="form-reset"  />
                                             </td>
                                             <td></td>

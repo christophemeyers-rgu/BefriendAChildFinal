@@ -23,6 +23,7 @@ $( "#submit" ).click(function() {
             alert("Please Enter the Date of Event.");
 
         }
+        return false;
     });
-    return false;
+
 });

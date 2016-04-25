@@ -20,13 +20,11 @@
         updateUser();
         header("location: delete-user.php");
     }
-    if(isset($_GET['vol_email']))
+    elseif(isset($_GET['vol_email']))
     {
         $user_login=$_GET['vol_email'];
         $result = getUser($user_login);
         $row = mysqli_fetch_array($result);
-    }else{
-        header("location: adminhome.php");
     }
 ?>
 
@@ -166,7 +164,7 @@
 
                 <div id="page-heading"><h1>Edit User</h1></div>
 
-                <form method="post" enctype="multipart/form-data">
+                <form method="post" action="edit-user.php" enctype="multipart/form-data">
                     <table border="0" width="100%" cellpadding="0" cellspacing="0" id="content-table">
                         <tr>
                             <th rowspan="3" class="sized"><img src="imagesadminpage/shared/side_shadowleft.jpg" width="20" height="300" alt="" /></th>
@@ -231,19 +229,25 @@
 
                                                             <!--This if-clause should maybe be javascript... I think-->
                                                             <?php
-                                                                if ($row['vol_child_matched']=0){
-                                                                    $yes="checked='checked'";
-                                                                    $no="";
+                                                                if ($row['vol_child_matched']==true){
+                                                                    ?>
+                                                                    <input type="radio" name="child_matched" value=true checked >Yes
+                                                                    <input type="radio" name="child_matched" value=false>No
+                                                                    <?php
                                                                 }
-                                                                else if ($row['vol_child_matched']=1){
-                                                                    $no="checked='checked'";
-                                                                    $yes="";
+                                                                else if ($row['vol_child_matched']==false){
+                                                                    ?>
+
+                                                                    <input type="radio" name="child_matched" value=true>Yes
+                                                                    <input type="radio" name="child_matched" value=false checked >No
+                                                            <?php
                                                                 }
                                                             ?>
-                                                            <input type="radio" name="child_matched" value="1" <?php $yes ?> >Yes
-                                                            <input type="radio" name="child_matched" value="0" <?php $no ?>  >No
+
                                                         </td>
                                                     </tr>
+
+
 
                                                     <tr>
                                                         <th>&nbsp;</th>

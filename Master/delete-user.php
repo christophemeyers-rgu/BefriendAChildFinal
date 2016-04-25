@@ -14,6 +14,7 @@ if(!isset($_SESSION['ad_email'])){
     header("Location: index.php");
 }
 
+
 //I DO NOW UNDERSTAND WHAT THIS DOES...
 if(isset($_GET['vol_email']))
 {
@@ -31,6 +32,8 @@ if(isset($_GET['vol_email']))
     deleteUser($login_name);
     // header("location: delete-user.php");
 }
+
+
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
@@ -261,6 +264,11 @@ if(isset($_GET['vol_email']))
             <th>Login Name</th>
             <th>First Name</th>
             <th>Surname</th>
+
+            <th>Child Matched?</th>
+            <th>Child Gender</th>
+            <th>Child Date of Birth</th>
+
             <th>Options</th>
         </tr>
         </thead>
@@ -281,6 +289,16 @@ if(isset($_GET['vol_email']))
                     <td><?php echo $row['vol_email']; ?></td>
                     <td><?php echo $row['vol_firstname']; ?></td>
                     <td><?php echo $row['vol_surname']; ?></td>
+                    <td><?php
+                        if($row['vol_child_matched']==true){
+                            echo "Yes";
+                        }
+                        else{
+                            echo "No";
+                        }
+                        ?></td>
+                    <td><?php echo $row['vol_child_gender']; ?></td>
+                    <td><?php echo $row['vol_child_dob']?></td>
                     <td>
                         <a href="edit-user.php?vol_email=<?php echo $row['vol_email']; ?>" style="color:green;">Edit</a>
                         &nbsp;&nbsp;&nbsp;<a href="?vol_email=<?php echo $row['vol_email']; ?>" style="color:red;">Delete</a>

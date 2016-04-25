@@ -271,7 +271,7 @@ if(!isset($_SESSION['ad_email'])){
         <tr>
             <td><?php  ?></td>
             <td><?php echo $total[0]; ?></td>
-            <td>Happy <?php echo $happy[0]; ?> Indifferent<?php echo $normal[0]; ?> Sad <?php echo $sad[0]; ?> </td>
+            <td><?php echo $happy[0]; ?> Indifferent<?php echo $normal[0]; ?> Sad <?php echo $sad[0]; ?> </td>
         </tr>
         </tbody>
         <?php

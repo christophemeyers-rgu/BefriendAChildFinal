@@ -255,20 +255,23 @@ if(!isset($_SESSION['ad_email'])){
         $sql_sad = "select COUNT(answer_text_req) from answers, questions where `answers`.question_id=21 and answer_text_req like \"%sad%\" and `answers`.question_id=`questions`.question_id";
         $sql_normal = "select COUNT(answer_text_req) from answers, questions where `answers`.question_id=21 and answer_text_req like \"%normal%\" and `answers`.question_id=`questions`.question_id";
         $sql_total = "select COUNT(answer_text_req) from answers, questions where `answers`.question_id=21 and `answers`.question_id=`questions`.question_id";
+        $sql_text = "select question_text, COUNT(answer_text_req) from answers, questions where `answers`.question_id=21 and `answers`.question_id=`questions`.question_id";
 
         $result1 = $db->query($sql_happy) or die($db->connect_error);
         $result2 = $db->query($sql_normal) or die($db->connect_error);
         $result3 = $db->query($sql_sad) or die($db->connect_error);
         $result4 = $db->query($sql_total) or die($db->connect_error);
+        $result5 = $db->query($sql_text) or die($db->connect_error);
 
         $happy = mysqli_fetch_array($result1);
         $normal = mysqli_fetch_array($result2);
         $sad = mysqli_fetch_array($result3);
         $total = mysqli_fetch_array($result4);
+        $question = mysqli_fetch_array($result5);
         ?>
         <tbody>
         <tr>
-            <td><?php  ?></td>
+            <td><?php  echo $question[0]; ?></td>
             <td><?php echo $total[0]; ?></td>
             <td>Happy <?php echo $happy[0]; ?> <br/> Indifferent <?php echo $normal[0]; ?> <br/> Sad <?php echo $sad[0]; ?> </td>
         </tr>

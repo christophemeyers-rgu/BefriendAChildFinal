@@ -257,14 +257,11 @@
                                                 <input type="radio" name="child_gender" value="female" class="disabledelements" id="gender" required disabled>Female
                                                 <input type="radio" name="child_gender" value="other" class="disabledelements" id="gender" required disabled>Other
                                             </td>
-
-
+                                            <br>
                                             <th valign="top">Child's date of birth: (dd/mm/yy)</th>
                                             <td>
                                                 <input  type="date" class="disabledelements" disabled name="date_of_birth" id="dateofbirth" required >
                                             </td>
-
-
                                         </tr>
 
                                         <tr>

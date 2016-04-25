@@ -1,6 +1,4 @@
 <?php
-session_start();
-
 
 if ($_SERVER['REQUEST_METHOD']==='POST') {
     $E_Mail = $_POST['E_Mail'];
@@ -42,7 +40,7 @@ function verifyResetUserName($E_Mail) {
             //ATTENTION, THE LINK MAY POINT TO THE MASTER DOMAIN, RATHER THAN YOUR OWN VOLUNTEERLOGIN.PHP
             $txt = "Dear $name,
 					<br><br>
-					It seems you forgot your password for the Befriend A Child Survey pages.
+					It seems you forgot your password for the Befriend A Child survey pages.
 					<br>
 					To log in again, please follow
 					<a href='http://befriendachildtestsurvey.azurewebsites.net/Chris/volunteerlogin.php'>this link</a>
@@ -54,7 +52,7 @@ function verifyResetUserName($E_Mail) {
 					<br><br>
                     If you did not initiate this email to be sent, please ignore the message.
 					<br><br>
-					King Regards,
+					Kind Regards,
 					<br><br>
 					The Befriend A Child Team";
 
@@ -171,7 +169,7 @@ function verifyResetUserName($E_Mail) {
 <body>
 
 <div class="login">
-    <h1>Reset Password</h1>
+    <h1>Retrieve Password</h1>
     <section>
         <form action='resetvolunteerpassword.php' method='post'>
             <input type="text" name="E_Mail" placeholder="Enter email here" required="required" />

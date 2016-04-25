@@ -1,39 +1,87 @@
 <?php
-session_start();
-define("host", "localhost");
-define("user", "root");
-define("password", "");
-define("database", "befriend");
 
-$status = "";
-if (isset($_POST['sendMail'])) {
+if ($_SERVER['REQUEST_METHOD']==='POST') {
     $E_Mail = $_POST['E_Mail'];
-    $status = verifyResetUserName($E_Mail);
+    verifyResetUserName($E_Mail);
 }//end if statement
 function verifyResetUserName($E_Mail) {
-    $status = "";
-    $sql = "select * from admin where email_id=?";
-    $mysqli = new mysqli(host, user, password, database);
+    include "db_connection.php";
 
-    $stmt = $mysqli->prepare($sql);
-    $stmt->bind_param("s", $E_Mail);
-    $stmt->execute();
-    $result = $stmt->get_result();
+    if($db->connect_errno){		//check if there was a connection error and respond accordingly
+        die('Connection failed:'.connect_error);
+    }
+    else{
+        $sql = "select * from administrators where ad_email=?";
 
-    if (mysqli_num_rows($result) > 0) {
-        $row = mysqli_fetch_array($result);
-        $email = $row['email_id'];
-        $password = $row['email_id'];
+        $stmt = $db->prepare($sql);
+        $stmt->bind_param("s", $E_Mail);
+        $stmt->execute();
+        $result = $stmt->get_result();
 
-        $message = "user name: $email , password: $password";
-        if (mail($email, "Password Rest", $message)) {
-            $status = "email sent please check you mail";
-        }else
-        {
-            $status = "Please try again";
+        if (mysqli_num_rows($result) > 0) {
+            $row = mysqli_fetch_array($result);
+
+
+
+
+
+            //setting some variables with form values
+            $password = $row["ad_password"];
+            $email = $row["ad_email"];
+
+            //email subject
+            $subject = "Befriend A Child - Password Reset";
+
+
+            //email body in html
+            //ATTENTION, THE LINK MAY POINT TO THE MASTER DOMAIN, RATHER THAN YOUR OWN VOLUNTEERLOGIN.PHP
+            $txt = "Dear administrator,
+					<br><br>
+					It seems you forgot your password for the Befriend A Child survey pages.
+					<br>
+					To log in again, please follow
+					<a href='http://befriendachildtestsurvey.azurewebsites.net/Chris/index.php'>this link</a>
+					and use the following details:
+					<br><br>
+					Username: $email
+					<br>
+					Password: $password
+					<br><br>
+                    If you did not initiate this email to be sent, please ignore the message.
+					<br><br>
+					Kind Regards,
+					<br><br>
+					The Befriend A Child Team";
+
+
+            //take in the necessary swiftmailer code
+            require_once 'swiftmailer/lib/swift_required.php';
+
+            //this is all swiftmailer magic, using the gmail smtp server of my account...
+            $transporter = Swift_SmtpTransport::newInstance('smtp.gmail.com', 465, "ssl")
+                ->setUsername('christophe.meyers.312@gmail.com')
+                ->setPassword('AnnachengAddress');
+
+            //Creates an instance of the mailer
+            $mailer = Swift_Mailer::newInstance($transporter);
+
+            //the message supplies some more detailed info
+            $message = Swift_Message::newInstance('Befriend A Child Mail')
+                ->setFrom(array('christophe.meyers.312@gmail.com' => 'Befriend A Child Aberdeen'))	//shows my name when email arrives
+                ->setTo(array($email => 'Administrator'))	//shows volunteer name as linked to their email address
+                ->setBody($txt, "text/html");	//tells swiftmailer that we're using html text
+
+            //Finally the mail is sent
+            $mailer->send($message);
+
+            echo "<SCRIPT>alert('Email sent!');</SCRIPT>";
+
+            $db->close();
+
         }
     }
-    return $status;
+
+
 }
 //end function
 ?>
@@ -118,15 +166,13 @@ function verifyResetUserName($E_Mail) {
 <body>
 
 <div class="login">
-    <h1>Reset Password</h1>
+    <h1>Retrieve Password</h1>
     <section>
-        <form action='' method='post'>
+        <form action='resetadminpassword.php' method='post'>
             <input type="text" name="E_Mail" placeholder="Enter email here" required="required" />
             <input type="submit" name="sendMail" value="SendMail" class="btn btn-primary btn-block btn-large">
-
         </form>
 
-        <h3><?php echo $status; ?></h3>
 
     </section>
 </div>
@@ -136,5 +182,4 @@ function verifyResetUserName($E_Mail) {
 
 </body>
 </html>
-
 

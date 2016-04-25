@@ -251,41 +251,79 @@ if(!isset($_SESSION['ad_email'])){
             die('Connectfailed['.$db->connect_error.']');
         }
 
+//How much did you spend?
         $sql_avg = "select avg(answer_text_req) from answers, questions where `answers`.question_id=11 and `answers`.question_id=`questions`.question_id";
         $sql_sum = "select sum(answer_text_req) from answers, questions where `answers`.question_id=11 and `answers`.question_id=`questions`.question_id";
         $sql_max = "select max(answer_text_req) from answers, questions where `answers`.question_id=11 and `answers`.question_id=`questions`.question_id";
         $sql_min = "select min(answer_text_req) from answers, questions where `answers`.question_id=11 and `answers`.question_id=`questions`.question_id";
+        $sql_text2 = "select question_text, COUNT(answer_text_req) from answers, questions where `answers`.question_id=11 and `answers`.question_id=`questions`.question_id";
 
         $result_avg = $db->query($sql_avg) or die($db->connect_error);
         $result_sum = $db->query($sql_sum) or die($db->connect_error);
         $result_max = $db->query($sql_max) or die($db->connect_error);
         $result_min = $db->query($sql_min) or die($db->connect_error);
+        $result6 = $db->query($sql_text2) or die($db->connect_error);
 
         $avg = mysqli_fetch_array($result_avg);
         $sum = mysqli_fetch_array($result_sum);
         $max = mysqli_fetch_array($result_max);
         $min = mysqli_fetch_array($result_min);
+        $question2 = mysqli_fetch_array($result6);
 
+
+///How much fun did you have?
         $sql_happy = "select COUNT(answer_text_req) from answers, questions where `answers`.question_id=21 and answer_text_req = 2 and `answers`.question_id=`questions`.question_id";
         $sql_sad = "select COUNT(answer_text_req) from answers, questions where `answers`.question_id=21 and answer_text_req = 0 and `answers`.question_id=`questions`.question_id";
         $sql_normal = "select COUNT(answer_text_req) from answers, questions where `answers`.question_id=21 and answer_text_req = 1 and `answers`.question_id=`questions`.question_id";
         $sql_total = "select COUNT(answer_text_req) from answers, questions where `answers`.question_id=21 and `answers`.question_id=`questions`.question_id";
         $sql_text1 = "select question_text, COUNT(answer_text_req) from answers, questions where `answers`.question_id=21 and `answers`.question_id=`questions`.question_id";
-        $sql_text2 = "select question_text, COUNT(answer_text_req) from answers, questions where `answers`.question_id=11 and `answers`.question_id=`questions`.question_id";
 
         $result1 = $db->query($sql_happy) or die($db->connect_error);
         $result2 = $db->query($sql_normal) or die($db->connect_error);
         $result3 = $db->query($sql_sad) or die($db->connect_error);
         $result4 = $db->query($sql_total) or die($db->connect_error);
         $result5 = $db->query($sql_text1) or die($db->connect_error);
-        $result6 = $db->query($sql_text2) or die($db->connect_error);
 
         $happy = mysqli_fetch_array($result1);
         $normal = mysqli_fetch_array($result2);
         $sad = mysqli_fetch_array($result3);
         $total = mysqli_fetch_array($result4);
         $question1 = mysqli_fetch_array($result5);
-        $question2 = mysqli_fetch_array($result6);
+
+///Did you learn something new?
+        $sql_new = "select COUNT(answer_text_req) from answers, questions where `answers`.question_id=31 and answer_text_req = 2 and `answers`.question_id=`questions`.question_id";
+        $sql_notnew = "select COUNT(answer_text_req) from answers, questions where `answers`.question_id=31 and answer_text_req = 0 and `answers`.question_id=`questions`.question_id";
+        $sql_abitnew = "select COUNT(answer_text_req) from answers, questions where `answers`.question_id=31 and answer_text_req = 1 and `answers`.question_id=`questions`.question_id";
+        $sql_total2 = "select COUNT(answer_text_req) from answers, questions where `answers`.question_id=31 and `answers`.question_id=`questions`.question_id";
+
+
+//Did you eat something healthy?
+        $sql_healthy = "select COUNT(answer_text_req) from answers, questions where `answers`.question_id=41 and answer_text_req = 1 and `answers`.question_id=`questions`.question_id";
+        $sql_unhealthy = "select COUNT(answer_text_req) from answers, questions where `answers`.question_id=41 and answer_text_req = 0 and `answers`.question_id=`questions`.question_id";
+        $sql_total3 = "select COUNT(answer_text_req) from answers, questions where `answers`.question_id=41 and `answers`.question_id=`questions`.question_id";
+
+        $result_healthy = $db->query($sql_healthy) or die($db->connect_error);
+        $result_unhealthy = $db->query($sql_unhealthy) or die($db->connect_error);
+        $result_total3 = $db->query($sql_total3) or die($db->connect_error);
+
+        $again = mysqli_fetch_array($result_healthy);
+        $notagain = mysqli_fetch_array($result_unhealthy);
+        $total3 = mysqli_fetch_array($result_total3);
+
+//Would you do this again?
+        $sql_again = "select COUNT(answer_text_req) from answers, questions where `answers`.question_id=51 and answer_text_req = 1 and `answers`.question_id=`questions`.question_id";
+        $sql_notagain = "select COUNT(answer_text_req) from answers, questions where `answers`.question_id=51 and answer_text_req = 0 and `answers`.question_id=`questions`.question_id";
+        $sql_total4 = "select COUNT(answer_text_req) from answers, questions where `answers`.question_id=51 and `answers`.question_id=`questions`.question_id";
+
+        $result_again = $db->query($sql_again) or die($db->connect_error);
+        $result_notagain = $db->query($sql_notagain) or die($db->connect_error);
+        $result_total = $db->query($sql_total4) or die($db->connect_error);
+
+        $again = mysqli_fetch_array($result_again);
+        $notagain = mysqli_fetch_array($result_notagain);
+        $total2 = mysqli_fetch_array($result_total);
+
+
         ?>
         <tbody>
         <tr>
@@ -298,6 +336,24 @@ if(!isset($_SESSION['ad_email'])){
             <td> When asked <?php  echo $question2[0]; ?></td>
             <td>Total amount spent during outings was <?php echo $sum[0]; ?></td>
             <td>Average spending was <?php echo $avg[0]; ?> <br/> Maximum spending was <?php echo $max[0]; ?> <br/> Minimum spending was <?php echo $min[0]; ?> </td>
+        </tr>
+
+        <tr>
+            <td> When asked <?php  echo $question3[0]; ?></td>
+            <td> <?php echo $total2[0]; ?></td>
+            <td> <?php echo $again[0]; ?> <br/> <?php echo $notagain[0]; ?> </td>
+        </tr>
+
+        <tr>
+            <td> When asked <?php  echo $question3[0]; ?></td>
+            <td> <?php echo $total2[0]; ?></td>
+            <td> <?php echo $again[0]; ?> <br/> <?php echo $notagain[0]; ?> <br/><?php echo $probably[0]; ?> </td>
+        </tr>
+
+        <tr>
+            <td> When asked <?php  echo $question3[0]; ?></td>
+            <td> <?php echo $total2[0]; ?></td>
+            <td> <?php echo $again[0]; ?> <br/> <?php echo $notagain[0]; ?> <br/><?php echo $probably[0]; ?> </td>
         </tr>
         </tbody>
         <?php

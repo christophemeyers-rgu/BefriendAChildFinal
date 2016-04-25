@@ -258,16 +258,16 @@ if(!isset($_SESSION['ad_email'])){
         $sql_total = "select COUNT(answer_text_req) from answers, questions where `answers`.question_id=21 and `answers`.question_id=`questions`.question_id";
 
         $result1 = $db->query($sql_happy) or die($db->connect_error);
-        $result2 = $db->query($sql_normal) or die($db->connect_error);
-        $result3 = $db->query($sql_sad) or die($db->connect_error);
-        $result4 = $db->query($sql_total) or die($db->connect_error);
+        //$result2 = $db->query($sql_normal) or die($db->connect_error);
+        //$result3 = $db->query($sql_sad) or die($db->connect_error);
+        //$result4 = $db->query($sql_total) or die($db->connect_error);
 
         ?>
         <tbody>
         <tr>
             <td><?php  ?></td>
             <td><?php echo $result4; ?></td>
-            <td>Happy<?php echo $result1; ?><br>Indifferent<?php echo $result2; ?><br>Sad<?php echo $result3; ?></td>
+            <td>Happy <?php echo $result1; ?> Indifferent<?php echo $result2; ?> Sad <?php echo $result3; ?> </td>
         </tr>
         </tbody>
         <?php

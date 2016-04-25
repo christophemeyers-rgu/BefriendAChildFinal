@@ -267,7 +267,7 @@ if(!isset($_SESSION['ad_email'])){
         <tr>
             <td><?php  ?></td>
             <td><?php echo $result4; ?></td>
-            <td>Happy <?php echo $result1; ?> <br> Indifferent<?php echo $result2; ?> <br> Sad <?php echo $result3; ?> </td>
+            <td>Happy <?php echo $result1; ?> Indifferent<?php echo $result2; ?> Sad <?php echo $result3; ?> </td>
         </tr>
         </tbody>
         <?php

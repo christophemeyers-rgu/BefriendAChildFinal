@@ -249,7 +249,7 @@
                                         <tr>
                                             <td>If yes, please answer the following two:</td>
                                         </tr>
-                                        <tr id="childinfo" style="display: none;">
+                                        <tr id="childinfo" style="display: none">
                                         <tr>
                                             <th valign="top">Child's gender:</th>
                                             <td>

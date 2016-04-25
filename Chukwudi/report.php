@@ -251,9 +251,9 @@ if(!isset($_SESSION['ad_email'])){
             die('Connectfailed['.$db->connect_error.']');
         }
 
-        $sql_happy = "select COUNT(answer_text_req) from answers, questions where `answers`.question_id=21 and answer_text_req like \"%happy%\" and `answers`.question_id=`questions`.question_id";
-        $sql_sad = "select COUNT(answer_text_req) from answers, questions where `answers`.question_id=21 and answer_text_req like \"%sad%\" and `answers`.question_id=`questions`.question_id";
-        $sql_normal = "select COUNT(answer_text_req) from answers, questions where `answers`.question_id=21 and answer_text_req like \"%normal%\" and `answers`.question_id=`questions`.question_id";
+        $sql_happy = "select COUNT(answer_text_req) from answers, questions where `answers`.question_id=21 and answer_text_req = 0 and `answers`.question_id=`questions`.question_id";
+        $sql_sad = "select COUNT(answer_text_req) from answers, questions where `answers`.question_id=21 and answer_text_req = 1 and `answers`.question_id=`questions`.question_id";
+        $sql_normal = "select COUNT(answer_text_req) from answers, questions where `answers`.question_id=21 and answer_text_req = 2 and `answers`.question_id=`questions`.question_id";
         $sql_total = "select COUNT(answer_text_req) from answers, questions where `answers`.question_id=21 and `answers`.question_id=`questions`.question_id";
         $sql_text = "select question_text, COUNT(answer_text_req) from answers, questions where `answers`.question_id=21 and `answers`.question_id=`questions`.question_id";
 
@@ -270,6 +270,12 @@ if(!isset($_SESSION['ad_email'])){
         $question = mysqli_fetch_array($result5);
         ?>
         <tbody>
+        <tr>
+            <td><?php  echo $question[0]; ?></td>
+            <td><?php echo $total[0]; ?></td>
+            <td>Happy <?php echo $happy[0]; ?> <br/> Indifferent <?php echo $normal[0]; ?> <br/> Sad <?php echo $sad[0]; ?> </td>
+        </tr>
+
         <tr>
             <td><?php  echo $question[0]; ?></td>
             <td><?php echo $total[0]; ?></td>

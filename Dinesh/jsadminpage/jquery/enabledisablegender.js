@@ -27,6 +27,10 @@ $( "#submit" ).click(function() {
             alert("Please Enter FirstName.");
         }else  if (!$('#firstname').val()){
             alert("Please Enter FirstName.");
+        }else if (!$('#surname').val()){
+            alert("Please Enter FirstName.");
+        }else  if (!$('#surname').val()){
+            alert("Please Enter FirstName.");
         }
 
 

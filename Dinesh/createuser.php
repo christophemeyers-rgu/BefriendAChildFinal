@@ -232,7 +232,7 @@
                                             <th valign="top">Password:</th>
                                             <td>
                                                 <label for="pass"></label>
-                                                <input type="password" class="inp-form" name="password" id="pass"/>
+                                                <input type="password" class="inp-form" name="password" id="pass" required/>
                                             </td>
                                             <td>
                                                 <button type="button" onclick="output()">Create Password</button>

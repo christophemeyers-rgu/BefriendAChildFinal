@@ -3,7 +3,7 @@ $('#yes').click(function () {
     if ($(this).is(':checked')) {
 
         $('.disabledelements').removeAttr('disabled'); //enable input
-        $("#childinfo").toggle("fade", 2000);
+        $("#childinfo").showPopup();
     }
 });
 

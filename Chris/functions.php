@@ -204,12 +204,8 @@ function updateUser() {
     $mysqli = new mysqli(host, user, password, database);
 
 
-    if($mysqli->query($sql)=== TRUE){
-        echo "<SCRIPT>alert('Update successful!');</SCRIPT>";
-    }
-    else{
-        echo "<SCRIPT>alert('Update failed!');</SCRIPT>";
-    }
+    $mysqli->query($sql) or die("Error: ".$query."<br>".$db->error);
+
     $mysqli->close();
     
     }

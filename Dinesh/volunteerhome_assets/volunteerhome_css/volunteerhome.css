@@ -73,7 +73,7 @@ h2{
     background-color: aliceblue;
 }
 
-p{
+#summary{
     display: flex;
     flex-direction: row;
     justify-content: center;

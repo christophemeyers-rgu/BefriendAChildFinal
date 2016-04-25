@@ -250,8 +250,6 @@
                                             <td>If yes, please answer the following two:</td>
                                         </tr>
                                         <tr>
-                                        <td id="childinfo" style="display: none;">
-                                        <tr>
                                             <th valign="top">Child's gender:</th>
                                             <td>
                                                 <input type="radio" name="child_gender" value="male" class="disabledelements" id="gender" required disabled >Male
@@ -264,8 +262,6 @@
                                             <td>
                                                 <input  type="date" class="disabledelements" disabled name="date_of_birth" id="dateofbirth" required >
                                             </td>
-                                        </tr>
-                                        </td>
                                         </tr>
                                         <tr>
                                             <th>&nbsp;</th>

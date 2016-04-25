@@ -250,7 +250,7 @@
                                             <td>If yes, please answer the following two:</td>
                                         </tr>
 
-                                        <tr id="childinfo">
+                                        <tr id="childinfo" style="display: none;">
                                             <th valign="top">Child's gender:</th>
                                             <td>
                                                 <input type="radio" name="child_gender" value="male" class="disabledelements" id="gender" required disabled >Male

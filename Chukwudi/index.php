@@ -50,7 +50,7 @@
 			//select all values from database using the entered values as filter
 			$query="SELECT `ad_email`, `ad_password`
 					FROM `administrators`
-					WHERE `ad_email` = '$email' AND `ad_password` = '$password' LIMIT 1";
+					WHERE `ad_email` = '$email' AND BINARY `ad_password` = BINARY '$password' LIMIT 1";
 			$output=$db->query($query) or die("Selection Query Failed !!!");	//send query or give error message
 
 

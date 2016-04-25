@@ -35,15 +35,7 @@ $( "#submit" ).click(function() {
         }else  if (!$('#surname').val()){
             alert("Please Enter FirstName.");
             return false;
-        }
-
-
-
-
-
-
-
-        else{
+        } else{
             $("#idform").find(':submit').click()
         }
     }

@@ -1,4 +1,3 @@
-
 <?php
 /**
  * Created by PhpStorm.
@@ -236,53 +235,46 @@ if(!isset($_SESSION['ad_email'])){
 <div class="clear"></div>
 
 <!-- start content-outer ........................................................................................................................START -->
-<div id="content-outer">
-    <!-- start content -->
-    <div class="container">
-        <table class="table table-striped">
-            <thead>
-            <tr>
-                <th>ID</th>
-                <th>User name</th>
-                <th>First name</th>
-                <th>Surname</th>
-            </tr>
-            </thead>
-            <?php
-            include("db_connection.php");
+<div class="container">
+    <p>List of submissions by <a href="view.php"><?php echo $_GET['vol_email'];?></a></p>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>Question</th>
+            <th>Total</th>
+            <th>Details</th>
+        </tr>
+        </thead>
+        <?php
+        include("db_connection.php");
 
-            if($db->connect_errno){
-                die('Connectfailed['.$db->connect_error.']');
-            }
+        if($db->connect_errno){
+            die('Connectfailed['.$db->connect_error.']');
+        }
 
-            $users = getAllRegisteredUsers();
+        $sql_happy = "select COUNT(answer_text_req) from answers, questions where `answers`.question_id=21 and answer_text_req like \"%happy%\" and `answers`.question_id=`questions`.question_id";
+        $sql_sad = "select COUNT(answer_text_req) from answers, questions where `answers`.question_id=21 and answer_text_req like \"%sad%\" and `answers`.question_id=`questions`.question_id";
+        $sql_normal = "select COUNT(answer_text_req) from answers, questions where `answers`.question_id=21 and answer_text_req like \"%normal%\" and `answers`.question_id=`questions`.question_id";
+        $sql_total = "select COUNT(answer_text_req) from answers, questions where `answers`.question_id=21 and `answers`.question_id=`questions`.question_id";
 
-            if(mysqli_num_rows($users)>0){
+        $result1 = $db->query($sql_happy);
+        $result2 = $db->query($sql_normal);
+        $result3 = $db->query($sql_sad);
+        $result4 = $db->query($sql_total);
 
-                $counter = 0;
-                while ($row= mysqli_fetch_array($users))
-                {
-                    $counter++;
-
-                    ?>
-                    <tbody>
-                    <tr>
-                        <td><?php echo $counter; ?></td>
-                        <td><a href="specific.php?vol_email=<?php echo $row['vol_email']; ?>"><?php echo $row['vol_email']; ?></a></td>
-                        <td><?php echo $row['vol_firstname']; ?></td>
-                        <td><?php echo $row['vol_surname']; ?></td>
-                    </tr>
-                    </tbody>
-                    <?php
-
-                }
-            }
-
-            ?>
-        </table>
-    </div>
-    <!--  end content -->
-    <div class="clear">&nbsp;</div>
+        ?>
+        <tbody>
+        <tr>
+            <td><?php echo $row['event_date']; ?></td>
+            <td><?php echo $result4; ?></td>
+            <td>Happy<?php echo $result1; ?><br>Indifferent<?php echo $result2; ?><br>Sad<?php echo $result3; ?></td>
+        </tr>
+        </tbody>
+        <?php
+        $db->close();
+        ?>
+        ?>
+    </table>
 </div>
 <!--  end content-outer........................................................END -->
 

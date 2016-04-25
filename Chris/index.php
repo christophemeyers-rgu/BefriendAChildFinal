@@ -40,19 +40,8 @@
 		//test to discover if the user is already in the DB
 		//to do that, we can find out if the email address already exists in any row
 
-		/*include("db_connection.php");
-		*/
+		include("db_connection.php");
 
-		$db = new MySQLi(
-			'ap-cdbr-azure-east-c.cloudapp.net', //server or host address
-			'b35e94884f471c', //username for connecting to database
-			'90efdea3', //user's password
-			'befriendachildtestDB' //database being connected to
-		);
-
-		/*$server = "ap-cdbr-azure-east-c.cloudapp.net";
-		$options = array("Database"=>"befriendachildtestDB", "UID"=>"b35e94884f471c", "PWD"=>"90efdea3");
-		$conn = sqlsrv_connect($server, $options);*/
 
 		if($db->connect_errno){		//check if there was a connection error and respond accordingly
 			die('Connection failed:'.connect_error);
@@ -61,7 +50,6 @@
 
 
 
-			$params = array($_POST['u'], $_POST['p']);
 			//select all values from database using the entered values as filter
 			$query="SELECT ad_email, ad_password
 					FROM administrators
@@ -69,7 +57,6 @@
 			$stmt = $db->prepare($query);
 			$stmt->bind_param("ss",$_POST['u'],$_POST['p']);
 			$stmt->execute() or die("Error: ".$query."<br>".$db->error);
-			//$output=sqlsrv_query($conn,$query,$params) or die("Error: ".$query."<br>".$conn->error);	//send query or give error message
 
 
 
@@ -179,7 +166,7 @@ input:focus { box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgb
         <input type="password" name="p" placeholder="Password" required="required" />
         <button type="submit" class="btn btn-primary btn-block btn-large">Login</button>
     </form>
-		  <h3>Forgot Password ? <a href="resetpassword.php">Click Here </a> to recover</h3>
+		  <h3>Forgot Password ? <a href="resetadminpassword.php">Click Here </a> to recover</h3>
 	  </section>
 </div>
 

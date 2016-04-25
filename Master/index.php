@@ -40,22 +40,40 @@
 		//test to discover if the user is already in the DB
 		//to do that, we can find out if the email address already exists in any row
 
-		include("db_connection.php");
+		/*include("db_connection.php");
+		*/
 
+		$db = new MySQLi(
+			'ap-cdbr-azure-east-c.cloudapp.net', //server or host address
+			'b35e94884f471c', //username for connecting to database
+			'90efdea3', //user's password
+			'befriendachildtestDB' //database being connected to
+		);
+
+		/*$server = "ap-cdbr-azure-east-c.cloudapp.net";
+		$options = array("Database"=>"befriendachildtestDB", "UID"=>"b35e94884f471c", "PWD"=>"90efdea3");
+		$conn = sqlsrv_connect($server, $options);*/
 
 		if($db->connect_errno){		//check if there was a connection error and respond accordingly
 			die('Connection failed:'.connect_error);
 		}
 		else{
+
+
+
+			$params = array($_POST['u'], $_POST['p']);
 			//select all values from database using the entered values as filter
-			$query="SELECT `ad_email`, `ad_password`
-					FROM `administrators`
-					WHERE `ad_email` = '$email' AND `ad_password` = '$password' LIMIT 1";
-			$output=$db->query($query) or die("Selection Query Failed !!!");	//send query or give error message
+			$query="SELECT ad_email, ad_password
+					FROM administrators
+					WHERE ad_email = ? AND ad_password = ?";
+			$stmt = $db->prepare($query);
+			$stmt->bind_param("ss",$_POST['u'],$_POST['p']);
+			$stmt->execute() or die("Error: ".$query."<br>".$db->error);
+			//$output=sqlsrv_query($conn,$query,$params) or die("Error: ".$query."<br>".$conn->error);	//send query or give error message
 
 
 
-			if(mysqli_num_rows($output)){	//if the sql query returns a value
+			if(mysqli_stmt_fetch($stmt)){	//if the sql query returns a value
 				return TRUE; 	//indicate that a value was returned, and user exists in database
 			}
 			else{

@@ -86,8 +86,8 @@ function add_answers_to_database(){
 
 
         date_default_timezone_set('Europe/London'); //sets the timezone to the local one
-        $submission_date_sql="'date'".date("Y-m-d")."''";    //fills the current date and time in a format that works with our database
-        $event_date_sql = "'date'".$event_date."''"; //this variable will be useful for inserting into db via sql
+        $submission_date_sql="date'".date("Y-m-d")."'";    //fills the current date and time in a format that works with our database
+        $event_date_sql = "date'".$event_date."'"; //this variable will be useful for inserting into db via sql
 
         //Then we put all the survey answers into one array with the question_id, to get the event_description
         $answers= array(
@@ -106,7 +106,7 @@ function add_answers_to_database(){
         /*$submission_sql = "INSERT INTO submissions (vol_id, event_description, event_date, submission_date)
                            VALUES (:id,:eventdescription,:eventdate,:submissiondate)";*/
         $stmt = $db->prepare($submission_sql);
-        $stmt->bind_param("isss",$vol_id,$answers[0][1],$event_date_sql,$submission_date_sql);
+        $stmt->bind_param("isss",$vol_id,$answers[0][1],"date'".$event_date."'","date'".date("Y-m-d")."'");
         /*$stmt->bindParam(':id',$vol_id);
         $stmt->bindParam(':eventdescription',$answers[0][1]);
         $stmt->bindParam(':eventdate',$event_date_sql);

@@ -86,7 +86,7 @@ h5{
     flex-wrap: wrap;
 }
 
-span{
+#surveyquestions{
     display: flex;
     flex-direction: row;
     justify-content: center;

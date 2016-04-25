@@ -175,7 +175,7 @@ $( "#nextsurveysummary" ).click(function() {
         if ($('#question6')[0].checkValidity()) {
             $("#cont6").toggle("slide", 0);
             $("#surveysummaryandsubmission").toggle("fade", 2000);
-            $("div").show().prependTo("p"); // Sends all the questions summary to the summary page
+            $(".s").show().prependTo("p"); // Sends all the questions summary to the summary page
 
             $("#progressbar").progressbar({
                 value: 100

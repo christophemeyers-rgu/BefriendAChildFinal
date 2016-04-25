@@ -3,6 +3,7 @@ $('#yes').click(function () {
     if ($(this).is(':checked')) {
 
         $('.disabledelements').removeAttr('disabled'); //enable input
+        $("#childinfo").show();
     }
 });
 
@@ -16,35 +17,3 @@ $('#no').click(function () {
 
 
 
-$( "#submit" ).click(function() {
-//Checks if browser supports required attribute using Modernizr's feature detection JavaScript code
-    if (Modernizr.formvalidation) {
-        //Checks if field is filled using html5 form validation
-            $("#idform").find(':submit').click()
-    }else {
-        //If required attribute is not supported by browser then manually check if field is filled
-        if (!$('#firstname').val()){
-            alert("Please Enter FirstName.");
-            return false;
-        }else  if (!$('#firstname').val()){
-            alert("Please Enter FirstName.");
-            return false;
-        }else if (!$('#surname').val()){
-            alert("Please Enter FirstName.");
-            return false;
-        }else  if (!$('#surname').val()){
-            alert("Please Enter FirstName.");
-            return false;
-        }
-
-
-
-
-
-
-
-        else{
-            $("#idform").find(':submit').click()
-        }
-    }
-});

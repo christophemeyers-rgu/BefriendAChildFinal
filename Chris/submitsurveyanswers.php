@@ -102,12 +102,15 @@ function add_answers_to_database(){
 
         //Then throw it all together to create an instance of submission
         $submission_sql = "INSERT INTO submissions (vol_id, event_description, event_date, submission_date)
-                           VALUES (:id,:eventdescription,:eventdate,:submissiondate)";
+                           VALUES (?,?,?,?)";
+        /*$submission_sql = "INSERT INTO submissions (vol_id, event_description, event_date, submission_date)
+                           VALUES (:id,:eventdescription,:eventdate,:submissiondate)";*/
         $stmt = $db->prepare($submission_sql);
-        $stmt->bindParam(':id',$vol_id);
+        $stmt->bind_param("isss",$vol_id,$answers[0][1],"date'".$event_date."'","date'".date("Y-m-d")."'");
+        /*$stmt->bindParam(':id',$vol_id);
         $stmt->bindParam(':eventdescription',$answers[0][1]);
         $stmt->bindParam(':eventdate',$event_date_sql);
-        $stmt->bindParam(':submissiondate',$submission_date_sql);
+        $stmt->bindParam(':submissiondate',$submission_date_sql);*/
 
         $stmt->execute() or die("Error: ".$submission_sql."<br>".$db->error);
 
@@ -124,7 +127,7 @@ function add_answers_to_database(){
                                WHERE event_date=? AND vol_id=?";
 
         $stmt = $db->prepare($get_submission_sql);
-        $stmt->bind_param("ss",$event_date,$vol_id);
+        $stmt->bind_param("si",$event_date,$vol_id);
         $stmt->execute() or die("Error: ".$get_submission_sql."<br>".$db->error);
 
         echo "<SCRIPT>alert('Works 5!!!');</SCRIPT>";
@@ -142,16 +145,19 @@ function add_answers_to_database(){
 
         //Eventually, we are ready to link the submission_id and all the answers to the answer instance for each question
         $answer_sql = "INSERT INTO answers (question_id, submission_id, answer_text_req, answer_text_opt)
-                       VALUES(:questionid, :submissionid, :requiredtext, :optionaltext)"; //query
+                       VALUES(?, ?, ?, ?)"; //query
+        /*$answer_sql = "INSERT INTO answers (question_id, submission_id, answer_text_req, answer_text_opt)
+                       VALUES(:questionid, :submissionid, :requiredtext, :optionaltext)"; //query*/
         $stmt = $db->prepare($answer_sql);
 
 
         //for-loop that adds answer details for each of the 6 questions
         for ($i = 1; $i <6; $i++){
-            $stmt->bindParam(':questionid',$answers[$i][0]);
+            $stmt->bind_param("iiis",$answers[$i][0],$submission_id,$answers[$i][1],$answers[$i][2]);
+            /*$stmt->bindParam(':questionid',$answers[$i][0]);
             $stmt->bindParam(':submissionid',$submission_id);
             $stmt->bindParam(':requiredtext',$answers[$i][1]);
-            $stmt->bindParam(':optionaltext',$answers[$i][2]);
+            $stmt->bindParam(':optionaltext',$answers[$i][2]);*/
             $stmt->execute() or die("Error: ".$answer_sql."<br>".$db->error);
             //pushes current query to database
 

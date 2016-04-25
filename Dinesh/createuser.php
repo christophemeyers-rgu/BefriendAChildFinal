@@ -189,7 +189,7 @@
                 <td id="tbl-border-left"></td>
                 <td>
                     <!--  start content-table-inner -->
-                    <div id="content-table-inner">
+                    <tr id="content-table-inner">
 
                         <table border="0" width="100%" cellpadding="0" cellspacing="0">
                             <tr valign="top">
@@ -249,7 +249,8 @@
                                         <tr>
                                             <td>If yes, please answer the following two:</td>
                                         </tr>
-                                        <tr>
+
+                                        <tr> id="childinfo" style="display: none;">
                                             <th valign="top">Child's gender:</th>
                                             <td>
                                                 <input type="radio" name="child_gender" value="male" class="disabledelements" id="gender" required disabled >Male
@@ -264,6 +265,7 @@
                                             </td>
                                         </tr>
 
+                                        </tr>
 
                                         <tr>
                                             <th>&nbsp;</th>

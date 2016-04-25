@@ -111,6 +111,7 @@ function add_answers_to_database(){
 
         $stmt->execute() or die("Error: ".$submission_sql."<br>".$db->error);
 
+        echo "<SCRIPT>alert('Works 4!!!');</SCRIPT>";
 
 
         //Next, we need to retrieve the auto_incremented submission_id for insertion into the answers table
@@ -126,6 +127,9 @@ function add_answers_to_database(){
         $stmt->bind_param("ss",$event_date,$vol_id);
         $stmt->execute() or die("Error: ".$get_submission_sql."<br>".$db->error);
 
+        echo "<SCRIPT>alert('Works 5!!!');</SCRIPT>";
+
+
         $submission_id_result = $stmt->get_result();
 
 
@@ -133,6 +137,7 @@ function add_answers_to_database(){
 
         $submission_id = $submission_id_row['submission_id'];  //There we have it
 
+        echo "<SCRIPT>alert('Works 6!!!');</SCRIPT>";
 
 
         //Eventually, we are ready to link the submission_id and all the answers to the answer instance for each question
@@ -153,6 +158,7 @@ function add_answers_to_database(){
 
         }
 
+        echo "<SCRIPT>alert('Works 7!!!');</SCRIPT>";
 
         header("Location: volunteerhome.php?Success=Yes");   //link to thankssurvey page
     }

@@ -17,7 +17,7 @@ $('#no').click(function () {
 
 
 $( "#submit" ).click(function() {
-    $('##idform *').filter(':input').each(function () {
+    $('#idform *').filter(':input').each(function () {
 
         if (!$('input').val()) {
             alert("Please Enter the Date of Event.");

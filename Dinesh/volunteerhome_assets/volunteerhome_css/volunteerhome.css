@@ -97,6 +97,7 @@ span{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 h5{

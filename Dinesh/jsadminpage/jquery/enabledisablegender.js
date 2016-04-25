@@ -25,12 +25,16 @@ $( "#submit" ).click(function() {
         //If required attribute is not supported by browser then manually check if field is filled
         if (!$('#firstname').val()){
             alert("Please Enter FirstName.");
+            return false;
         }else  if (!$('#firstname').val()){
             alert("Please Enter FirstName.");
+            return false;
         }else if (!$('#surname').val()){
             alert("Please Enter FirstName.");
+            return false;
         }else  if (!$('#surname').val()){
             alert("Please Enter FirstName.");
+            return false;
         }
 
 

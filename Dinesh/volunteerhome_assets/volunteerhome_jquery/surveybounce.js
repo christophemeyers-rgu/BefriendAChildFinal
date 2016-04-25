@@ -176,7 +176,7 @@ $( "#nextsurveysummary" ).click(function() {
             $("#cont6").toggle("slide", 0);
             $("#surveysummaryandsubmission").toggle("fade", 2000);
             $(".s").show().prependTo("span"); // Sends all the questions summary to the summary page
-            $(".st").show().prependTo("p"); // Sends all the questions summary to the summary page
+            $(".st").show().prependTo("h6"); // Sends all the questions summary to the summary page
 
 
             $("#progressbar").progressbar({

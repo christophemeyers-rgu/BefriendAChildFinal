@@ -1,5 +1,6 @@
 <h1>Survey Questions Summary:</h1>
 <p id="summary">
+    <h6></h6>
     <span></span>
 </p>
 <!-- Submit Survey Button -->

@@ -178,7 +178,7 @@ $( "#nextsurveysummary" ).click(function() {
 
             // Sends all the questions summary to the summary page
             $(".s").show().prependTo("span");
-            $(".st").show().prependTo("h6");
+            $(".st").show().prependTo("h5");
 
 
             $("#progressbar").progressbar({
@@ -194,7 +194,10 @@ $( "#nextsurveysummary" ).click(function() {
         }else{
             $("#cont6").toggle("slide", 0);
             $("#surveysummaryandsubmission").toggle("fade", 2000);
-            $(".s").show().prependTo("p"); // Sends all the questions summary to the summary page
+
+            // Sends all the questions summary to the summary page
+            $(".s").show().prependTo("#surveyquestions");
+            $(".st").show().prependTo("h5");
 
             $("#progressbar").progressbar({
                 value: 100

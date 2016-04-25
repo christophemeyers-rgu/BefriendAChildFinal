@@ -18,6 +18,6 @@
     </h3>
 </fieldset>
 </section>
-<h5>
+<section class="surveynavbuttons">
     <input class="navbuttonnext" type="button" id="next2" name="next">
-</h5>
+</section>

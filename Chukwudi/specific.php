@@ -1,3 +1,4 @@
+
 <?php
 /**
  * Created by PhpStorm.
@@ -12,7 +13,7 @@ session_start();
 if(!isset($_SESSION['ad_email'])){
     header("Location: index.php");
 }
-/*
+
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
@@ -208,7 +209,7 @@ if(!isset($_SESSION['ad_email'])){
                         <div class="select_sub">
                             <ul class="sub">
                                 <li><a href="view.php">Full Report</a></li>
-                                <li><a href="view%20report.php">Survey Query</a></li>
+                                <li><a href="#nogo">Survey Query</a></li>
                                 <li><a href="#nogo">Delete Report</a></li>
 
                             </ul>
@@ -235,54 +236,53 @@ if(!isset($_SESSION['ad_email'])){
 <div class="clear"></div>
 
 <!-- start content-outer ........................................................................................................................START -->
-<div class="container">
-    <p>List of submissions by <a href="view.php"><?php echo $_GET['vol_email'];?></a></p>
-    <table class="table table-striped">
-        <thead>
-        <tr>
-            <th>ID</th>
-            <th>Event description</th>
-            <th>Event date</th>
-            <th>Submission date</th>
-        </tr>
-        </thead>
-        <?php
-        include("db_connection.php");
+<div id="content-outer">
+    <!-- start content -->
+    <div class="container">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>User name</th>
+                <th>First name</th>
+                <th>Surname</th>
+            </tr>
+            </thead>
+            <?php
+            include("db_connection.php");
 
-        if($db->connect_errno){
-            die('Connectfailed['.$db->connect_error.']');
-        }
-
-        $vol_email = $_GET['vol_email'];
-
-        $submissions = getUserSubmissions($vol_email);
-
-        if(mysqli_num_rows($submissions)>0){
-
-            $counter = 0;
-            while ($row= mysqli_fetch_array($submissions))
-            {
-                $counter++;
-
-                ?>
-                <tbody>
-                <tr>
-                    <td><?php echo $counter; ?></td>
-                    <td><a href="view3.php?event_date=<?php echo $row['event_date']; ?>&vol_email=<?php echo $vol_email; ?>"><?php echo $row['event_description']; ?></a></td>
-                    <td><?php echo $row['event_date']; ?></td>
-                    <td><?php echo $row['submission_date']; ?></td>
-                </tr>
-                </tbody>
-                <?php
-
+            if($db->connect_errno){
+                die('Connectfailed['.$db->connect_error.']');
             }
-        }
-        else{
-            echo "No submissions for this user";
-        }
 
-        ?>
-    </table>
+            $users = getAllRegisteredUsers();
+
+            if(mysqli_num_rows($users)>0){
+
+                $counter = 0;
+                while ($row= mysqli_fetch_array($users))
+                {
+                    $counter++;
+
+                    ?>
+                    <tbody>
+                    <tr>
+                        <td><?php echo $counter; ?></td>
+                        <td><a href="View2.php?vol_email=<?php echo $row['vol_email']; ?>"><?php echo $row['vol_email']; ?></a></td>
+                        <td><?php echo $row['vol_firstname']; ?></td>
+                        <td><?php echo $row['vol_surname']; ?></td>
+                    </tr>
+                    </tbody>
+                    <?php
+
+                }
+            }
+
+            ?>
+        </table>
+    </div>
+    <!--  end content -->
+    <div class="clear">&nbsp;</div>
 </div>
 <!--  end content-outer........................................................END -->
 
@@ -301,7 +301,3 @@ if(!isset($_SESSION['ad_email'])){
 
 </body>
 </html>
-
-<?php
-*/
-?>

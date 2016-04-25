@@ -254,7 +254,7 @@ if(!isset($_SESSION['ad_email'])){
         <tbody>
         <tr>
             <td><a href="report.php"><div class="general" id="general"> General</div></a></td>
-            <td><a href="allvolunteers.php"><div class="specific" id="specific">Specific</div></a></td>
+            <td><a href="specific.php"><div class="specific" id="specific">Specific</div></a></td>
         </tr>
         </tbody>
     </table>

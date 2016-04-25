@@ -364,7 +364,7 @@ if(!isset($_SESSION['ad_email'])){
 
         <tr>
             <td> When asked <?php  echo $question4[0]; ?></td>
-            <td> <?php echo $total2[0]; ?></td>
+            <td> Total responses were <?php echo $total2[0]; ?></td>
             <td> Number of kids who would do it again <?php echo $again[0]; ?> <br/> Number of kids who wouldn't do it again <?php echo $notagain[0]; ?> </td>
         </tr>
 

@@ -236,7 +236,6 @@ if(!isset($_SESSION['ad_email'])){
 
 <!-- start content-outer ........................................................................................................................START -->
 <div class="container">
-    <p>List of submissions by <a href="view.php"><?php echo $_GET['vol_email'];?></a></p>
     <table class="table table-striped">
         <thead>
         <tr>
@@ -271,7 +270,7 @@ if(!isset($_SESSION['ad_email'])){
         <tr>
             <td><?php  ?></td>
             <td><?php echo $total[0]; ?></td>
-            <td><?php echo $happy[0]; ?> Indifferent<?php echo $normal[0]; ?> Sad <?php echo $sad[0]; ?> </td>
+            <td>Happy <?php echo $happy[0]; ?> <br/> Indifferent <?php echo $normal[0]; ?> <br/> Sad <?php echo $sad[0]; ?> </td>
         </tr>
         </tbody>
         <?php

@@ -25,13 +25,11 @@ $( "#submit" ).click(function() {
 
     }else {
         //If required attribute is not supported by browser then manually check if field is filled
-        $('#new_user_form *').filter(':input').each(function(){
 
-            if(!$(this).val()){
+            if(!$("input").val()){
                 alert("Please Enter the Date of Event.");
             }else{
                 $("form").find(':submit').click()
             }
-        });
     }
 });

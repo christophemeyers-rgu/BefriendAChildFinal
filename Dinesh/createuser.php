@@ -211,19 +211,19 @@
                                     <table border="0" cellpadding="0" cellspacing="0"  id="id-form">
                                         <tr>
                                             <th valign="top">Firstname:</th>
-                                            <td><input type="text"  class="inp-form" name="firstname"/></td>
+                                            <td><input type="text"  class="inp-form" name="firstname" id="firstname" required/></td>
                                             <td></td>
 
                                         </tr>
                                         <tr>
                                             <th valign="top">Surname:</th>
-                                            <td><input type="text" class="inp-form" name="surname" /></td>
+                                            <td><input type="text" class="inp-form" name="surname" id="surname" required/></td>
                                             <td></td>
 
                                         </tr>
                                         <tr>
                                             <th valign="top">E-mail:</th>
-                                            <td><input type="email" class="inp-form" name="email" /></td>
+                                            <td><input type="email" class="inp-form" name="email" id="email" required/></td>
                                             <td></td>
 
                                         </tr>
@@ -232,7 +232,7 @@
                                             <th valign="top">Password:</th>
                                             <td>
                                                 <label for="pass"></label>
-                                                <input type="password" class="inp-form" name="password" id="pass" />
+                                                <input type="password" class="inp-form" name="password" id="pass" id="password" required/>
                                             </td>
                                             <td>
                                                 <button type="button" onclick="output()">Create Password</button>
@@ -242,8 +242,8 @@
                                         <tr>
                                             <th valign="top">Currently matched with a child?</th>
                                             <td>
-                                                <input type="radio" name="child_matched" value=true id="yes" >Yes
-                                                <input type="radio" name="child_matched" value=false id="no" >No
+                                                <input type="radio" name="child_matched" value=true id="yes" id="matched" required>Yes
+                                                <input type="radio" name="child_matched" value=false id="no" id="matched" required>No
                                             </td>
                                         </tr>
                                         <tr>
@@ -252,15 +252,15 @@
                                         <tr>
                                             <th valign="top">Child's gender:</th>
                                             <td>
-                                                <input type="radio" name="child_gender" value="male" class="disabledelements"  required disabled >Male
-                                                <input type="radio" name="child_gender" value="female" class="disabledelements"  required disabled>Female
-                                                <input type="radio" name="child_gender" value="other" class="disabledelements"  required disabled>Other
+                                                <input type="radio" name="child_gender" value="male" class="disabledelements" id="gender" required disabled >Male
+                                                <input type="radio" name="child_gender" value="female" class="disabledelements" id="gender" required disabled>Female
+                                                <input type="radio" name="child_gender" value="other" class="disabledelements" id="gender" required disabled>Other
                                             </td>
                                         </tr>
                                         <tr>
                                             <th valign="top">Child's date of birth: (dd/mm/yy)</th>
                                             <td>
-                                                <input  type="date" class="disabledelements" disabled name="date_of_birth" >
+                                                <input  type="date" class="disabledelements" disabled name="date_of_birth" id="dateofbirth" required >
                                             </td>
                                         </tr>
 

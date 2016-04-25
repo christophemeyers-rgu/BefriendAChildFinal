@@ -239,7 +239,7 @@ if(!isset($_SESSION['ad_email'])){
 <div class="container">
     <p>Survey details for <?php echo $_GET['event_date'];?>
         <br>
-        <a href="view2.php?vol_email=<?php echo $_GET['vol_email']; ?>"><img src="volunteerhome_assets/volunteerhome_images/arrowprevious.png"></a></p>
+        <a href="view2.php?vol_email=<?php echo $_GET['vol_email']; ?>"><img height="10px" width="10px" src="volunteerhome_assets/volunteerhome_images/arrowprevious.png"></a></p>
     <table class="table table-striped">
         <thead>
         <tr>

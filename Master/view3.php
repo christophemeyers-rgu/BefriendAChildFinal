@@ -237,9 +237,8 @@ if(!isset($_SESSION['ad_email'])){
 
 <!-- start content-outer ........................................................................................................................START -->
 <div class="container">
-    <p>Survey details for <?php echo $_GET['event_date'];?>
-        <br>
-        <a href="view2.php?vol_email=<?php echo $_GET['vol_email']; ?>"><img height="10px" width="10px" src="volunteerhome_assets/volunteerhome_images/arrowprevious.png"></a></p>
+    <p>Survey details for <?php echo $_GET['event_date'];?></p>
+
     <table class="table table-striped">
         <thead>
         <tr>
@@ -332,6 +331,8 @@ if(!isset($_SESSION['ad_email'])){
 
         ?>
     </table>
+    <p><a href="view2.php?vol_email=<?php echo $_GET['vol_email']; ?>"><img height="40px" width="40px" src="volunteerhome_assets/volunteerhome_images/arrowprevious.png"></a></p>
+
 </div>
 <!--  end content-outer........................................................END -->
 

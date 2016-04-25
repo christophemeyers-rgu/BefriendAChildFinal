@@ -13,3 +13,9 @@ $('#no').click(function () {
         $('.disabledelements').attr('disabled', true); //disable input
     }
 });
+
+$( "#matched" ).click(function() {
+
+            $("#childinfo").toggle("fade", 2000);
+});
+

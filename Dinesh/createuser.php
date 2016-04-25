@@ -249,7 +249,8 @@
                                         <tr>
                                             <td>If yes, please answer the following two:</td>
                                         </tr>
-                                        <tr>
+
+                                        <tr id="childinfo">
                                             <th valign="top">Child's gender:</th>
                                             <td>
                                                 <input type="radio" name="child_gender" value="male" class="disabledelements" id="gender" required disabled >Male

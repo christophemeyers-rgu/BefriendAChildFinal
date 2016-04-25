@@ -17,12 +17,14 @@ $('#no').click(function () {
 
 
 $( "#submit" ).click(function() {
+    $('#new_user_form *').filter(':input').each(function () {
 
-            if (!$('input').val()){
-                alert("Please Enter the Date of Event.");
-                return false;
-            }else{
-                $("#idform").find(':submit').click()
-            }
+        if (!$('input').val()) {
+            alert("Please Enter the Date of Event.");
+            return false;
+        } else {
+            $("#idform").find(':submit').click()
+        }
 
     });
+});

@@ -73,7 +73,14 @@ h2{
     background-color: aliceblue;
 }
 
-.summary{
+p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.s{
     display: flex;
     flex-direction: row;
     justify-content: center;

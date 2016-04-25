@@ -9,7 +9,7 @@ header{
     justify-content: space-around;
 }
 
-h2{
+.questiontitle{
     color: darkred;
 }
 
@@ -80,7 +80,7 @@ h2{
     flex-wrap: wrap;
 }
 
-h5{
+.surveynavbuttons{
     max-width: 600px;
     height: auto;
     left: 0;

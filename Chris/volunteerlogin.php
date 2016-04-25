@@ -66,7 +66,6 @@
 			$stmt = $db->prepare($query);
 			$stmt->bind_param("ss",$_POST['u'],$_POST['p']);
 			$stmt->execute() or die("Error: ".$query."<br>".$db->error);
-			$output=$db->query($query) or die("Selection Query Failed !!!");
 
 
 			//if the sql query returns a value

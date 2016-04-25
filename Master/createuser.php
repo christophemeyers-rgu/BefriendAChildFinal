@@ -323,9 +323,9 @@
                                         <tr>
                                             <th valign="top">Child's gender:</th>
                                             <td>
-                                                <input type="radio" name="child_gender" value="male" class="disabledelements" value="male" disabled >Male
-                                                <input type="radio" name="child_gender" value="female" class="disabledelements" value="female" disabled>Female
-                                                <input type="radio" name="child_gender" value="other" class="disabledelements" value="other" disabled>Other
+                                                <input type="radio" name="child_gender" value="male" class="disabledelements"  disabled >Male
+                                                <input type="radio" name="child_gender" value="female" class="disabledelements"  disabled>Female
+                                                <input type="radio" name="child_gender" value="other" class="disabledelements"  disabled>Other
                                             </td>
                                         </tr>
                                         <tr>

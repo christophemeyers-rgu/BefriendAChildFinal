@@ -236,7 +236,6 @@ if(!isset($_SESSION['ad_email'])){
 
 <!-- start content-outer ........................................................................................................................START -->
 <div class="container">
-    <p>List of submissions by <a href="view.php"><?php echo $_GET['vol_email'];?></a></p>
     <table class="table table-striped">
         <thead>
         <tr>

@@ -277,13 +277,13 @@ if(!isset($_SESSION['ad_email'])){
                         }
                         elseif($counter==2){
                             if($row['answer_text_req']==0){
-                                echo "Sad";
+                                echo "volunteerhome_assets/volunteerhome_images/surveyiconsad.png";
                             }
                             elseif($row['answer_text_req']==1){
-                                echo "Indifferent";
+                                echo "volunteerhome_assets/volunteerhome_images/surveyiconnomal.png";
                             }
                             elseif($row['answer_text_req']==2){
-                                echo "Happy";
+                                echo "volunteerhome_assets/volunteerhome_images/surveyiconsmile.png";
                             }
                         }
                         elseif($counter==3){

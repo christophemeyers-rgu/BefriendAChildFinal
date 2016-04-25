@@ -177,13 +177,13 @@ function add_answers_to_database(){
 
         /*$answer_sql = "INSERT INTO answers (question_id, submission_id, answer_text_req, answer_text_opt)
                        VALUES(:questionid, :submissionid, :requiredtext, :optionaltext)"; //query*/
-        $stmt = $db->prepare($answer_sql);
 
 
         //for-loop that adds answer details for each of the 6 questions
         for ($i = 1; $i <6; $i++){
             $answer_sql = "INSERT INTO answers (question_id, submission_id, answer_text_req, answer_text_opt)
                        VALUES('".$answers[$i][0]."', '".$submission_id."', '".$answers[$i][1]."',?)"; //query
+            $stmt = $db->prepare($answer_sql);
 
             $stmt->bind_param("s",$answers[$i][2]);
             /*$stmt->bindParam(':questionid',$answers[$i][0]);

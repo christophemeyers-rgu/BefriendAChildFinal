@@ -208,7 +208,7 @@ if(!isset($_SESSION['ad_email'])){
                         <div class="select_sub">
                             <ul class="sub">
                                 <li><a href="view.php">Full Report</a></li>
-                                <li><a href="view%20report.php">Survey Query</a></li>
+                                <li><a href="#nogo">Survey Query</a></li>
                                 <li><a href="#nogo">Delete Report</a></li>
 
                             </ul>
@@ -252,27 +252,29 @@ if(!isset($_SESSION['ad_email'])){
             die('Connectfailed['.$db->connect_error.']');
         }
 
-        $sql_happy = "select COUNT(answer_text_req) from answers, questions where `answers`.question_id=21 and answer_text_req like \"%happy%\" and `answers`.question_id=`questions`.question_id";
-        $sql_sad = "select COUNT(answer_text_req) from answers, questions where `answers`.question_id=21 and answer_text_req like \"%sad%\" and `answers`.question_id=`questions`.question_id";
-        $sql_normal = "select COUNT(answer_text_req) from answers, questions where `answers`.question_id=21 and answer_text_req like \"%normal%\" and `answers`.question_id=`questions`.question_id";
-        $sql_total = "select COUNT(answer_text_req) from answers, questions where `answers`.question_id=21 and `answers`.question_id=`questions`.question_id";
+        if(mysqli_num_rows($submissions)>0){
 
-        $result1 = $db->query($sql_happy);
-        $result2 = $db->query($sql_normal);
-        $result3 = $db->query($sql_sad);
-        $result4 = $db->query($sql_total);
+            $counter = 0;
+            while ($row= mysqli_fetch_array($submissions))
+            {
+                $counter++;
 
-        ?>
-        <tbody>
-        <tr>
-            <td><?php echo $row['event_date']; ?></td>
-            <td><?php echo $result4; ?></td>
-            <td>Happy<?php echo $result1; ?><br>Indifferent<?php echo $result2; ?><br>Sad<?php echo $result3; ?></td>
-        </tr>
-        </tbody>
-        <?php
-        $db->close();
-        ?>
+                ?>
+                <tbody>
+                <tr>
+                    <td><?php echo $row['event_date']; ?></td>
+                    <td><?php echo ""; ?></td>
+                    <td>Happy<?php echo ""; ?><br>Indifferent<?php echo ""; ?><br>Sad<?php echo ""; ?></td>
+                </tr>
+                </tbody>
+                <?php
+
+            }
+        }
+        else{
+            echo "No surveys have been submitted";
+        }
+
         ?>
     </table>
 </div>

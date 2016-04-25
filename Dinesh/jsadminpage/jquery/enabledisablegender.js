@@ -12,6 +12,7 @@ $('#no').click(function () {
     if ($(this).is(':checked')) {
 
         $('.disabledelements').attr('disabled', true); //disable input
+        $("#childinfo").hide();
     }
 });
 

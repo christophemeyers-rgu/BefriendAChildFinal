@@ -60,9 +60,12 @@ function add_answers_to_database(){
 
     $event_date_sql = "date'".$event_date."'";
 
-    $event_date_query = "SELECT * FROM submissions WHERE event_date = $event_date_sql AND vol_id = $vol_id";
+    $event_date_query = "SELECT * FROM submissions WHERE event_date = ? AND vol_id = ?";
 
-    $event_result = $db->query($event_date_query) or die ("Error: ".$event_date_query."<br>".$db->error);
+    $stmt = $db->prepare($event_date_query);
+    $stmt->bind_param("ss",$event_date_sql,$vol_id);
+    $stmt->execute() or die("Error: ".$event_date_query."<br>".$db->error);
+
 
     while($new_row = $event_result->fetch_assoc()){
         $event = $new_row['submission_id'];

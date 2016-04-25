@@ -17,19 +17,26 @@ $('#no').click(function () {
 
 
 $( "#submit" ).click(function() {
-
-    //Checks if browser supports required attribute using Modernizr's feature detection JavaScript code
+//Checks if browser supports required attribute using Modernizr's feature detection JavaScript code
     if (Modernizr.formvalidation) {
         //Checks if field is filled using html5 form validation
-            $("form").find(':submit').click()
-
+            $("#idform").find(':submit').click()
     }else {
         //If required attribute is not supported by browser then manually check if field is filled
+        if (!$('#firstname').val()){
+            alert("Please Enter FirstName.");
+        }else  if (!$('#firstname').val()){
+            alert("Please Enter FirstName.");
+        }
 
-            if(!$("form").find(':input').val()){
-                alert("Please Enter the Date of Event.");
-            }else{
-                $("form").find(':submit').click()
-            }
+
+
+
+
+
+
+        else{
+            $("#idform").find(':submit').click()
+        }
     }
 });

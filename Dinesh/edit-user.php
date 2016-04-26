@@ -20,13 +20,11 @@
         updateUser();
         header("location: delete-user.php");
     }
-    if(isset($_GET['vol_email']))
+    elseif(isset($_GET['vol_email']))
     {
         $user_login=$_GET['vol_email'];
         $result = getUser($user_login);
         $row = mysqli_fetch_array($result);
-    }else{
-        header("location: adminhome.php");
     }
 ?>
 

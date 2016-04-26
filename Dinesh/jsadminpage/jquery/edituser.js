@@ -1,17 +1,11 @@
-$('#yes').is(':checked')(function () {
-    //check if radio button is checked
-    if ($(this).is(':checked')) {
+ if ($('#yes').is(':checked')) {
 
         $('.disabledelements').removeAttr('disabled'); //enable input
         $("#childinfo").show();
-    }
-});
+    }else {
+        if ($(this).is(':checked')) {
 
-$('#no').click(function () {
-    //check if checkbox is checked
-    if ($(this).is(':checked')) {
-
-        $('.disabledelements').attr('disabled', true); //disable input
-        $("#childinfo").hide();
+            $("#childinfo").hide();
+        }
     }
-});
+

@@ -339,8 +339,8 @@ if(!isset($_SESSION['ad_email'])){
         $total2 = mysqli_fetch_array($result_total);
         $question4 = mysqli_fetch_array($result8);
 
-
         ?>
+
         <tbody>
         <tr>
             <td>When asked <?php  echo $question1[0]; ?></td>

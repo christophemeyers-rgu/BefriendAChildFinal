@@ -156,8 +156,6 @@
 		<div id="nav-right">
 		
 			<div class="nav-divider">&nbsp;</div>
-			<div class="showhide-account"><img src="imagesadminpage/shared/nav/nav_myaccount.gif" width="93" height="14" alt="" /></div>
-			<div class="nav-divider">&nbsp;</div>
 			<a href="logout.php" id="logout"><img src="imagesadminpage/shared/nav/nav_logout.gif" width="64" height="14" alt="" /></a>
 			<div class="clear">&nbsp;</div>
 
@@ -179,12 +177,12 @@
 		                    
 
 		
-		<ul class="select"><li><a href="#nogo"><b>User Login Setup</b></a>
+		<ul class="select"><li><a href="#nogo"><b>Volunteer Management</b></a>
 
 		<div class="select_sub">
 			<ul class="sub">
-				<li><a href="createlogin.php">Create User Login</a></li>
-				<li><a href="delete-user.php">Delete User Login</a></li>
+				<li><a href="createlogin.php">Create Volunteer Account</a></li>
+				<li><a href="delete-user.php">Edit Volunteers</a></li>
 			</ul>
 		</div>
 

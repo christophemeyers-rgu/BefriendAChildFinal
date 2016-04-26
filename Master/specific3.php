@@ -284,9 +284,9 @@ if(!isset($_SESSION['ad_email'])){
             $sad = mysqli_fetch_array($output_sad);
 
             //did you learn anything new?
-            $sql_learn_yes = "select answer_text_req from answers, questions where submission_id in (select submission_id from submissions where vol_id =$id) and `answers`.question_id = `questions`.question_id and `answers`.question_id=31 and answer_text_req=2";
-            $sql_learn_might = "select answer_text_req from answers, questions where submission_id in (select submission_id from submissions where vol_id =$id) and `answers`.question_id = `questions`.question_id and `answers`.question_id=31 and answer_text_req=1";
-            $sql_learn_no = "select answer_text_req from answers, questions where submission_id in (select submission_id from submissions where vol_id =$id) and `answers`.question_id = `questions`.question_id and `answers`.question_id=31 and answer_text_req=0";
+            $sql_learn_yes = "select count(answer_text_req) from answers, questions where submission_id in (select submission_id from submissions where vol_id =$id) and `answers`.question_id = `questions`.question_id and `answers`.question_id=31 and answer_text_req=2";
+            $sql_learn_might = "select count(answer_text_req) from answers, questions where submission_id in (select submission_id from submissions where vol_id =$id) and `answers`.question_id = `questions`.question_id and `answers`.question_id=31 and answer_text_req=1";
+            $sql_learn_no = "select count(answer_text_req) from answers, questions where submission_id in (select submission_id from submissions where vol_id =$id) and `answers`.question_id = `questions`.question_id and `answers`.question_id=31 and answer_text_req=0";
 
             $output_learn_yes = $db->query($sql_learn_yes);
             $output_learn_might = $db->query($sql_learn_might);
@@ -297,8 +297,8 @@ if(!isset($_SESSION['ad_email'])){
             $learn_no = mysqli_fetch_array($output_learn_no);
 
             //did you eat something healthy?
-            $sql_healthy_yes = "select answer_text_req from answers, questions where submission_id in (select submission_id from submissions where vol_id =$id) and `answers`.question_id = `questions`.question_id and `answers`.question_id=41 and answer_text_req=1";
-            $sql_healthy_no = "select answer_text_req from answers, questions where submission_id in (select submission_id from submissions where vol_id =$id) and `answers`.question_id = `questions`.question_id and `answers`.question_id=41 and answer_text_req=0";
+            $sql_healthy_yes = "select count(answer_text_req) from answers, questions where submission_id in (select submission_id from submissions where vol_id =$id) and `answers`.question_id = `questions`.question_id and `answers`.question_id=41 and answer_text_req=1";
+            $sql_healthy_no = "select count(answer_text_req) from answers, questions where submission_id in (select submission_id from submissions where vol_id =$id) and `answers`.question_id = `questions`.question_id and `answers`.question_id=41 and answer_text_req=0";
 
             $output_healthy_yes = $db->query($sql_healthy_yes);
             $output_healthy_no = $db->query($sql_healthy_no);
@@ -307,8 +307,8 @@ if(!isset($_SESSION['ad_email'])){
             $healthy_no = mysqli_fetch_array($output_healthy_no);
 
             //would you do it again?
-            $sql_again_yes = "select answer_text_req from answers, questions where submission_id in (select submission_id from submissions where vol_id =$id) and `answers`.question_id = `questions`.question_id and `answers`.question_id=51 and answer_text_req=1";
-            $sql_again_no = "select answer_text_req from answers, questions where submission_id in (select submission_id from submissions where vol_id =$id) and `answers`.question_id = `questions`.question_id and `answers`.question_id=51 and answer_text_req=0";
+            $sql_again_yes = "select count(answer_text_req) from answers, questions where submission_id in (select submission_id from submissions where vol_id =$id) and `answers`.question_id = `questions`.question_id and `answers`.question_id=51 and answer_text_req=1";
+            $sql_again_no = "select count(answer_text_req) from answers, questions where submission_id in (select submission_id from submissions where vol_id =$id) and `answers`.question_id = `questions`.question_id and `answers`.question_id=51 and answer_text_req=0";
 
             $output_again_yes = $db->query($sql_again_yes);
             $output_again_no = $db->query($sql_again_no);

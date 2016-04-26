@@ -9,6 +9,11 @@ header{
     justify-content: space-around;
 }
 
+main{
+    background: green;
+}
+
+
 h2{
     color: darkred;
 }
@@ -22,10 +27,6 @@ h2{
     margin-right: auto;
     background-color: aliceblue;
     position: absolute;
-}
-
-form{
-    background: #3e8e41;
 }
 
 .form{

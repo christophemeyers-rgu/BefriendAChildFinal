@@ -25,7 +25,3 @@
     </h3>
 </fieldset>
 </section>
-<section class="surveynavbuttons">
-    <input class="navbuttonprevious" type="button" id="previous5" name="previous">
-    <input class="navbuttonnext" type="button" id="nextsurveysummary" name="next">
-</section>

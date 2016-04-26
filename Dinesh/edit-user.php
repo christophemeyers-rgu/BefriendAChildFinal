@@ -252,7 +252,7 @@
                                     </table>
 
                                     </form>
-                                    <script src="jsadminpage/jquery/enabledisablegender.js" type="text/javascript"></script>
+                                    <script src="jsadminpage/jquery/edituser.js" type="text/javascript"></script>
 
 
                                     <div class="clear">&nbsp;</div>

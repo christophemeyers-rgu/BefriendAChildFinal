@@ -31,8 +31,8 @@
 ?>
 
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <title>Internet Dreams</title>
@@ -42,6 +42,9 @@
 
         <!--  jquery core -->
         <script src="jsadminpage/jquery/jquery-1.4.1.min.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+        <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 
         <!--  styled select box script version 2 -->
         <script src="jsadminpage/jquery/jquery.selectbox-0.5_style_2.js" type="text/javascript"></script>
@@ -71,78 +74,6 @@
                     width: 300
                 });
             });
-        </script>
-
-        <!--  date picker script -->
-        <link rel="stylesheet" href="cssadminpage/datePicker.css" type="text/css" />
-        <script src="jsadminpage/jquery/date.js" type="text/javascript"></script>
-        <script src="jsadminpage/jquery/jquery.datePicker.js" type="text/javascript"></script>
-        <script type="text/javascript" charset="utf-8">
-            $(function ()
-            {
-
-                // initialise the "Select date" link
-                $('#date-pick')
-                        .datePicker(
-                                // associate the link with a date picker
-                                        {
-                                            createButton: false,
-                                            startDate: '01/01/2005',
-                                            endDate: '31/12/2020'
-                                        }
-                                ).bind(
-                                        // when the link is clicked display the date picker
-                                        'click',
-                                        function ()
-                                        {
-                                            updateSelects($(this).dpGetSelected()[0]);
-                                            $(this).dpDisplay();
-                                            return false;
-                                        }
-                                ).bind(
-                                        // when a date is selected update the SELECTs
-                                        'dateSelected',
-                                        function (e, selectedDate, $td, state)
-                                        {
-                                            updateSelects(selectedDate);
-                                        }
-                                ).bind(
-                                        'dpClosed',
-                                        function (e, selected)
-                                        {
-                                            updateSelects(selected[0]);
-                                        }
-                                );
-
-                                var updateSelects = function (selectedDate)
-                                {
-                                    var selectedDate = new Date(selectedDate);
-                                    $('#d option[value=' + selectedDate.getDate() + ']').attr('selected', 'selected');
-                                    $('#m option[value=' + (selectedDate.getMonth() + 1) + ']').attr('selected', 'selected');
-                                    $('#y option[value=' + (selectedDate.getFullYear()) + ']').attr('selected', 'selected');
-                                }
-                                // listen for when the selects are changed and update the picker
-                                $('#d, #m, #y')
-                                        .bind(
-                                                'change',
-                                                function ()
-                                                {
-                                                    var d = new Date(
-                                                            $('#y').val(),
-                                                            $('#m').val() - 1,
-                                                            $('#d').val()
-                                                            );
-                                                    $('#date-pick').dpSetSelected(d.asString());
-                                                }
-                                        );
-
-                                // default the position of the selects to today
-                                var today = new Date();
-                                updateSelects(today.getTime());
-
-                                // and update the datePicker to reflect it...
-                                $('#d').trigger('change');
-                            });
         </script>
 
         <style>
@@ -220,7 +151,7 @@
                                                     </tr>
                                                     <tr>
                                                         <th valign="top">Password:</th>
-                                                        <td><input name="password" type="text" class="inp-form" value="<?php echo $row['vol_password']; ?>" /></td>
+                                                        <td><input name="password" type="password" class="inp-form" value="<?php echo $row['vol_password']; ?>" /></td>
                                                         <td></td>
 
                                                     </tr>
@@ -231,17 +162,37 @@
 
                                                             <!--This if-clause should maybe be javascript... I think-->
                                                             <?php
-                                                                if ($row['vol_child_matched']=0){
-                                                                    $yes="checked='checked'";
-                                                                    $no="";
-                                                                }
-                                                                else if ($row['vol_child_matched']=1){
-                                                                    $no="checked='checked'";
-                                                                    $yes="";
-                                                                }
+                                                            if ($row['vol_child_matched']==true){
+                                                                ?>
+                                                                <input type="radio" name="child_matched" value=true checked >Yes
+                                                                <input type="radio" name="child_matched" value=false>No
+                                                                <?php
+                                                            }
+                                                            else if ($row['vol_child_matched']==false){
+                                                                ?>
+
+                                                                <input type="radio" name="child_matched" value=true>Yes
+                                                                <input type="radio" name="child_matched" value=false checked >No
+                                                                <?php
+                                                            }
                                                             ?>
-                                                            <input type="radio" name="child_matched" value="1" <?php $yes ?> >Yes
-                                                            <input type="radio" name="child_matched" value="0" <?php $no ?>  >No
+
+                                                    <tr id="childinfo" style="display: none;">
+                                                        <th valign="top">Child's gender:</th>
+                                                        <th>
+                                                            <input type="radio" name="child_gender" value="male" class="disabledelements" id="gender" required disabled >Male
+                                                            <input type="radio" name="child_gender" value="female" class="disabledelements" id="gender" required disabled>Female
+                                                            <input type="radio" name="child_gender" value="other" class="disabledelements" id="gender" required disabled>Other
+                                                        </th>
+
+
+                                                        <th valign="top">Child's date of birth:</th>
+
+                                                        <th>
+                                                            <input  type="date" class="disabledelements" disabled name="date_of_birth" id="dateofbirth" required >
+                                                        </th>
+                                                    </tr>
+                                                    <script src="jsadminpage/jquery/enabledisablegender.js" type="text/javascript"></script>
                                                         </td>
                                                     </tr>
 

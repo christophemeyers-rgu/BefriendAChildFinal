@@ -278,8 +278,6 @@
                                     <script src="jsadminpage/jquery/modernizr-custom.js" type="text/javascript"></script>
                                     <!-- end id-form  -->
 
-                                    <img style="float:right; padding-right:10px;padding-bottom:10px;" src="imagesadminpage/shared/face-pink.png">
-
                                 </td>
 
                                 <td>

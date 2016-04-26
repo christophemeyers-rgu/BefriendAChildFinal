@@ -164,15 +164,15 @@
                                                             <?php
                                                             if ($row['vol_child_matched']==true){
                                                                 ?>
-                                                                <input type="radio" name="child_matched" value=true checked >Yes
-                                                                <input type="radio" name="child_matched" value=false>No
+                                                                <input type="radio" name="child_matched" value=true checked id="yes" >Yes
+                                                                <input type="radio" name="child_matched" value=false id="no" >No
                                                                 <?php
                                                             }
                                                             else if ($row['vol_child_matched']==false){
                                                                 ?>
 
-                                                                <input type="radio" name="child_matched" value=true>Yes
-                                                                <input type="radio" name="child_matched" value=false checked >No
+                                                                <input type="radio" name="child_matched" value=true id="yes">Yes
+                                                                <input type="radio" name="child_matched" value=false checked id="no">No
                                                                 <?php
                                                             }
                                                             ?>
@@ -180,19 +180,37 @@
                                                     <tr id="childinfo" style="display: none;">
                                                         <th valign="top">Child's gender:</th>
                                                         <th>
-                                                            <input type="radio" name="child_gender" value="male" class="disabledelements" id="gender" required disabled >Male
-                                                            <input type="radio" name="child_gender" value="female" class="disabledelements" id="gender" required disabled>Female
-                                                            <input type="radio" name="child_gender" value="other" class="disabledelements" id="gender" required disabled>Other
+                                                            <?php
+                                                            if ($row['vol_child_gender']=="male"){
+                                                                ?>
+                                                                <input type="radio" name="child_gender" value="male" class="disabledelements" id="gender" required disabled checked >Male
+                                                                <input type="radio" name="child_gender" value="female" class="disabledelements" id="gender" required disabled>Female
+                                                                <input type="radio" name="child_gender" value="other" class="disabledelements" id="gender" required disabled>Other
+                                                                <?php
+                                                            }else if ($row['vol_child_gender']=="female"){
+                                                            ?>
+                                                                <input type="radio" name="child_gender" value="male" class="disabledelements" id="gender" required disabled checked >Male
+                                                                <input type="radio" name="child_gender" value="female" class="disabledelements" id="gender" required disabled checked>Female
+                                                                <input type="radio" name="child_gender" value="other" class="disabledelements" id="gender" required disabled>Other
+                                                            <?php
+                                                            }else if ($row['vol_child_gender']=="other"){
+                                                            ?>
+                                                                <input type="radio" name="child_gender" value="male" class="disabledelements" id="gender" required disabled checked >Male
+                                                                <input type="radio" name="child_gender" value="female" class="disabledelements" id="gender" required disabled checked>Female
+                                                                <input type="radio" name="child_gender" value="other" class="disabledelements" id="gender" required disabled checked>Other
+                                                            <?php
+                                                            }
+                                                            ?>
                                                         </th>
 
 
                                                         <th valign="top">Child's date of birth:</th>
 
                                                         <th>
-                                                            <input  type="date" class="disabledelements" disabled name="date_of_birth" id="dateofbirth" required >
+                                                            <input  type="date" class="disabledelements" disabled name="date_of_birth" id="dateofbirth" value="<?php echo $row['vol_child_dob']; ?>"  required >
                                                         </th>
                                                     </tr>
-                                                    <script src="jsadminpage/jquery/enabledisablegender.js" type="text/javascript"></script>
+
                                                         </td>
                                                     </tr>
 
@@ -212,9 +230,6 @@
                                             </td>
 
                                             <td>
-
-
-
                                                 <tr>
                                                     <td><img src="imagesadminpage/shared/blank.gif" width="695" height="1" alt="blank" /></td>
                                                     <td></td>
@@ -237,6 +252,7 @@
                                     </table>
 
                                     </form>
+                                    <script src="jsadminpage/jquery/edituser.js" type="text/javascript"></script>
 
 
                                     <div class="clear">&nbsp;</div>

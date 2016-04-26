@@ -236,8 +236,7 @@ if(!isset($_SESSION['ad_email'])){
 
 <!-- start content-outer ........................................................................................................................START -->
 <div class="container">
-    <p>List of submissions by <?php echo $_GET['vol_email'];?></p>
-
+    <p>List of submissions by <a href="view.php"><?php echo $_GET['vol_email'];?></a></p>
     <table class="table table-striped">
         <thead>
         <tr>
@@ -284,7 +283,6 @@ if(!isset($_SESSION['ad_email'])){
 
         ?>
     </table>
-    <p><a href="view.php"><img height="40px" width="40px" src="volunteerhome_assets/volunteerhome_images/arrowprevious.png"></a></p>
 </div>
 <!--  end content-outer........................................................END -->
 

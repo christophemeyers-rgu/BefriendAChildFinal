@@ -205,7 +205,7 @@
                                                         <th valign="top">Child's date of birth:</th>
 
                                                         <th>
-                                                            <input  type="date" class="disabledelements" disabled name="date_of_birth" id="dateofbirth" value="<?php echo $row['vol_child_dob']; ?>"  required >
+                                                            <input  type="date" class="disabledelements" name="date_of_birth" id="dateofbirth" value="<?php echo $row['vol_child_dob']; ?>"  required>
                                                         </th>
                                                     </tr>
 

@@ -249,7 +249,7 @@ if(!isset($_SESSION['ad_email'])){
             <?php
             include("db_connection.php");
 
-            $id = $_GET['vol_id'];
+            $id = $_GET['question_id'];
 
 
             //number of submissions

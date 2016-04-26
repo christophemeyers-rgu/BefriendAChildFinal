@@ -14,7 +14,7 @@ h2{
 }
 
 #welcomepage{
-    max-width: 550px;
+    max-width: 500px;
     height: auto;
     left: 0;
     right: 0;
@@ -36,7 +36,7 @@ h2{
 }
 
 #cont1 {
-    max-width: 550px;
+    max-width: 500px;
     background: yellowgreen;
     border: 2px solid yellowgreen;
     border-radius: 30px;

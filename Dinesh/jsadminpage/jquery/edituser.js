@@ -1,6 +1,6 @@
 $('#yes').is(':checked')(function () {
     //check if radio button is checked
-    if ($(this).is(':checked')) {
+    if ($('#yes').is(':checked')) {
 
         $('.disabledelements').removeAttr('disabled'); //enable input
         $("#childinfo").show();
@@ -9,7 +9,7 @@ $('#yes').is(':checked')(function () {
 
 $('#no').click(function () {
     //check if checkbox is checked
-    if ($(this).is(':checked')) {
+    if ($('#no').is(':checked')) {
 
         $('.disabledelements').attr('disabled', true); //disable input
         $("#childinfo").hide();

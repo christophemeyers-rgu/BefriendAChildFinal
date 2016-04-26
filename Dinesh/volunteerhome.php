@@ -210,7 +210,10 @@ function get_volunteer_name($email){
             <section class="form" id="surveysummaryandsubmission">
                 <?php include("volunteerhome_assets/volunteerhome_htmlscripts/surveysummaryandsubmission.php"); ?>
             </section>
-
+                <section class="surveynavbuttons">
+                    <input class="navbuttonprevious"" type="button" id="previous1" name="previous">
+                    <input class="navbuttonnext" type="button" id="next3" name="next"></a>
+                </section>
         </form>
         <!-- (END OF SURVEY) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
 

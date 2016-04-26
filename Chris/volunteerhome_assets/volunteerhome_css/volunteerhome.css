@@ -75,12 +75,25 @@ h2{
 
 p{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#surveyeventdatesummary{
+    display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-h5{
+#surveyquestionssummary{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.surveynavbuttons{
     max-width: 600px;
     height: auto;
     left: 0;

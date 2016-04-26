@@ -175,7 +175,11 @@ $( "#nextsurveysummary" ).click(function() {
         if ($('#question6')[0].checkValidity()) {
             $("#cont6").toggle("slide", 0);
             $("#surveysummaryandsubmission").toggle("fade", 2000);
-            $("div").show().prependTo("p"); // Sends all the questions summary to the summary page
+
+            // Sends all the questions summary to the summary page
+            $(".surveyquestions").show().prependTo("#surveyquestionssummary");
+            $(".surveyeventdate").show().prependTo("#surveyeventdatesummary");
+
 
             $("#progressbar").progressbar({
                 value: 100
@@ -190,7 +194,10 @@ $( "#nextsurveysummary" ).click(function() {
         }else{
             $("#cont6").toggle("slide", 0);
             $("#surveysummaryandsubmission").toggle("fade", 2000);
-            $("div").show().prependTo("p"); // Sends all the questions summary to the summary page
+
+            // Sends all the questions summary to the summary page
+            $(".s").show().prependTo("#surveyquestionssummary");
+            $(".surveyeventdate").show().prependTo("#surveyeventdatesummary");
 
             $("#progressbar").progressbar({
                 value: 100

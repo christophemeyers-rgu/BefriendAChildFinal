@@ -26,6 +26,8 @@ h2{
     margin-right: auto;
     background-color: aliceblue;
     position: absolute;
+    border: 2px solid yellowgreen;
+    border-radius: 30px;
 }
 
 .form{
@@ -35,6 +37,8 @@ h2{
     right: 0;
     margin-left: auto;
     margin-right: auto;
+    border: 2px solid yellowgreen;
+    border-radius: 30px;
 }
 
 #cont1 {

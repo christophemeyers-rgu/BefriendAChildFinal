@@ -196,7 +196,7 @@ $( "#nextsurveysummary" ).click(function() {
             $("#surveysummaryandsubmission").toggle("fade", 2000);
 
             // Sends all the questions summary to the summary page
-            $(".s").show().prependTo("#surveyquestionssummary");
+            $(".surveyquestions").show().prependTo("#surveyquestionssummary");
             $(".surveyeventdate").show().prependTo("#surveyeventdatesummary");
 
             $("#progressbar").progressbar({

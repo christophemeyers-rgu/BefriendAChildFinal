@@ -216,33 +216,45 @@ function get_volunteer_name($email){
 
 
                 <section class="surveynavbuttons">
+                    <div id="question1buttons">
                     <input class="navbuttonprevious"" type="button" id="startsurvey" name="previous">
                     <input class="navbuttonnext" type="button" id="next2" name="next">
+                    </div>
                 </section>
 
                 <section class="surveynavbuttons">
+                    <div id="question2buttons">
                     <input class="navbuttonprevious"" type="button" id="previous1" name="previous">
                     <input class="navbuttonnext" type="button" id="next3" name="next"></a>
+                    </div>
                 </section>
 
                 <section class="surveynavbuttons">
+                    <div id="question3buttons">
                     <input class="navbuttonprevious"" type="button" id="previous2" name="previous">
                     <input class="navbuttonnext" type="button" id="next4" name="next">
+                    </div>
                 </section>
 
                 <section class="surveynavbuttons">
+                    <div id="question1buttons">
                     <input class="navbuttonprevious"" type="button" id="previous3" name="previous">
                     <input class="navbuttonnext" type="button" id="next5" name="next">
+                    </div>
                 </section>
 
                 <section class="surveynavbuttons">
+                    <div id="question4buttons">
                     <input class="navbuttonprevious"" type="button" id="previous4" name="previous">
                     <input class="navbuttonnext" type="button" id="next6" name="next">
+                    </div>
                 </section>
 
                 <section class="surveynavbuttons">
+                    <div id="question5buttons">
                     <input class="navbuttonprevious" type="button" id="previous5" name="previous">
                     <input class="navbuttonnext" type="button" id="nextsurveysummary" name="next">
+                    </div>
                 </section>
 
 

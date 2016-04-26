@@ -35,6 +35,10 @@ h2{
     margin-right: auto;
 }
 
+.surveynavbuttons{
+    display: none;
+}
+
 fieldset{
     max-width: 500px;
     left: 0;

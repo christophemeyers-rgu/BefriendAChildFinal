@@ -10,7 +10,8 @@ header{
 }
 
 main{
-    background: green;
+    max-width: 650px;
+    background-color: green;
 }
 
 
@@ -19,7 +20,7 @@ h2{
 }
 
 #welcomepage{
-    max-width: 600px;
+    max-width: 500px;
     height: auto;
     left: 0;
     right: 0;
@@ -40,32 +41,32 @@ h2{
 }
 
 #cont1 {
-    max-width: 600px;
+    max-width: 500px;
 
 }
 
 #cont2 {
-    max-width: 600px;
+    max-width: 500px;
 
 }
 
 #cont3 {
-    max-width: 600px;
+    max-width: 500px;
 
 }
 
 #cont4 {
-    max-width: 600px;
+    max-width: 500px;
 
 }
 
 #cont5 {
-    max-width: 600px;
+    max-width: 500px;
 
 }
 
 #cont6 {
-    max-width: 600px;
+    max-width: 500px;
 
 }
 

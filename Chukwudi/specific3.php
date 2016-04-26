@@ -315,19 +315,6 @@ if(!isset($_SESSION['ad_email'])){
             $again_yes = mysqli_fetch_array($output_again_yes);
             $again_no = mysqli_fetch_array($ouput_again_no);
 
-            if($db->connect_errno){
-                die('Connectfailed['.$db->connect_error.']');
-            }
-
-            $results = $db->query($sql);
-
-            if(mysqli_num_rows($results)>0){
-
-                $counter = 0;
-                while ($row= mysqli_fetch_array($results))
-                {
-                    $counter++;
-
                     ?>
                     <tbody>
                     <tr>
@@ -336,12 +323,7 @@ if(!isset($_SESSION['ad_email'])){
                         <td>The average spending was <?php echo $avg[0]; ?> <br/>The minimum amount spent was <?php echo $min?> <br/>The maximum amount spent was <?php echo $max?></td>
                     </tr>
                     </tbody>
-                    <?php
 
-                }
-            }
-
-            ?>
         </table>
     </div>
     <!--  end content -->

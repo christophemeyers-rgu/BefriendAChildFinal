@@ -155,8 +155,7 @@
 		<!-- start nav-right -->
 		<div id="nav-right">
 		
-			<div class="nav-divider">&nbsp;</div>
-			<div class="showhide-account"><img src="imagesadminpage/shared/nav/nav_myaccount.gif" width="93" height="14" alt="" /></div>
+
 			<div class="nav-divider">&nbsp;</div>
 			<a href="logout.php" id="logout"><img src="imagesadminpage/shared/nav/nav_logout.gif" width="64" height="14" alt="" /></a>
 			<div class="clear">&nbsp;</div>

@@ -62,7 +62,7 @@ $( "#next3" ).click(function() {
         //Checks if field is filled using html5 form validation
         if ($('#question2')[0].checkValidity()) {
             $("#cont2").toggle("size", 2000);
-            $("#cont3").toggle("fold", 2000);
+            $("#cont3").toggle("fade", 2000);
             $("#progressbar").progressbar({
                 value: 34
             });
@@ -75,7 +75,7 @@ $( "#next3" ).click(function() {
             alert("Please fill in required field.");
         }else{
             $("#cont2").toggle("size", 2000);
-            $("#cont3").toggle("fold", 2000);
+            $("#cont3").toggle("fade", 2000);
             $("#progressbar").progressbar({
                 value: 34
             });

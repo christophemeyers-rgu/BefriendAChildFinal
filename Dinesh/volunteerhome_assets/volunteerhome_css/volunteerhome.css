@@ -9,6 +9,11 @@ header{
     justify-content: space-around;
 }
 
+main{
+    background: green;
+}
+
+
 h2{
     color: darkred;
 }
@@ -31,36 +36,37 @@ h2{
     right: 0;
     margin-left: auto;
     margin-right: auto;
+    background: none;
 }
 
 #cont1 {
     max-width: 600px;
-    background: yellowgreen;
+
 }
 
 #cont2 {
     max-width: 600px;
-    background-color: palevioletred;
+
 }
 
 #cont3 {
     max-width: 600px;
-    background-color: lightsalmon;
+
 }
 
 #cont4 {
     max-width: 600px;
-    background-color: yellow;
+
 }
 
 #cont5 {
     max-width: 600px;
-    background-color: lightskyblue;
+
 }
 
 #cont6 {
     max-width: 600px;
-    background-color: palevioletred;
+
 }
 
 #surveysummaryandsubmission {

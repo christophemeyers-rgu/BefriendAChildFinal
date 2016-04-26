@@ -337,7 +337,7 @@ if(!isset($_SESSION['ad_email'])){
                     <tr>
                         <td><?php echo $counter; ?></td>
                         <td>Number of responses was <?php echo $output[0]; ?></td>
-                        <td>Number that learnt something new <?php echo $learn_yes[0]; ?> <br/>number that learnt something relatively new <?php echo $learn_might[0]?> <br/>Number that had done it before <?php echo $max?></td>
+                        <td>Number that learnt something new <?php echo $learn_yes[0]; ?> <br/>number that learnt something relatively new <?php echo $learn_might[0]?> <br/>Number that had done it before <?php echo $learn_no[0]?></td>
                     </tr>
 
                     <tr>

@@ -250,16 +250,17 @@
                                             <td>If yes, please answer the following two:</td>
                                         </tr>
                                         <tr id="childinfo" style="display: none;">
-                                            <th valign="top">Child's gender:
+                                            <th valign="top">Child's gender:</th>
+                                            <th>
                                                 <input type="radio" name="child_gender" value="male" class="disabledelements" id="gender" required disabled >Male
                                                 <input type="radio" name="child_gender" value="female" class="disabledelements" id="gender" required disabled>Female
                                                 <input type="radio" name="child_gender" value="other" class="disabledelements" id="gender" required disabled>Other
                                             </th>
-                                            <th></th>
 
 
-                                            <th valign="top">Child's date of birth: (dd/mm/yy)
+                                            <th valign="top">Child's date of birth: (dd/mm/yy)</th>
 
+                                            <th>
                                                 <input  type="date" class="disabledelements" disabled name="date_of_birth" id="dateofbirth" required >
                                             </th>
                                         </tr>

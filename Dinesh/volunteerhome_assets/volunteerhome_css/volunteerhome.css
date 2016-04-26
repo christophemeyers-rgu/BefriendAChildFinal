@@ -14,7 +14,7 @@ h2{
 }
 
 #welcomepage{
-    max-width: 500px;
+    max-width: 600px;
     height: auto;
     left: 0;
     right: 0;
@@ -36,7 +36,7 @@ h2{
 }
 
 #cont1 {
-    max-width: 500px;
+    max-width: 600px;
     background: yellowgreen;
     border: 2px solid yellowgreen;
     border-radius: 30px;
@@ -44,7 +44,7 @@ h2{
 }
 
 #cont2 {
-    max-width: 550px;
+    max-width: 600px;
     background-color: palevioletred;
     border: 2px solid yellowgreen;
     border-radius: 30px;

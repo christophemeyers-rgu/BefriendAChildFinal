@@ -87,7 +87,7 @@
 
 				$stmt = $db->prepare($insert);
 				$stmt->bind_param("s",$salt);
-				$stmt->execute() or die("Error: ".$submission_sql."<br>".$db->error);
+				$stmt->execute() or die("Error: ".$insert."<br>".$db->error);
 
 
 				//$outcome=$db->query($insert) or die("Error: ".$insert."<br>".$db->error);

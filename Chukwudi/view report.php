@@ -36,7 +36,7 @@ if(!isset($_SESSION['ad_email'])){
 
     <link rel="stylesheet" media="all" type="text/css" href="cssadminpage/pro_dropline_ie.css" />
 
-    <link href="report.css" rel="stylesheet" type="text/css">
+    <link href="../Master/report.css" rel="stylesheet" type="text/css">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -253,8 +253,8 @@ if(!isset($_SESSION['ad_email'])){
     <table width="200" border="0">
         <tbody>
         <tr>
-            <td><a href="report.php"><div class="general" id="general"> General</div></a></td>
-            <td><a href="specific.php"><div class="specific" id="specific">Specific</div></a></td>
+            <td><a href="../Master/report.php"><div class="general" id="general"> General</div></a></td>
+            <td><a href="../Master/specific.php"><div class="specific" id="specific">Specific</div></a></td>
         </tr>
         </tbody>
     </table>

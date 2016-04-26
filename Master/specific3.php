@@ -271,9 +271,9 @@ if(!isset($_SESSION['ad_email'])){
 
 
             //how much fun did you have today?
-            $sql_fun_happy = "select count(answer_text_req) from answers, questions where submission_id in (select submission_id from submissions where vol_id =$id) and `answers`.question_id = `questions`.question_id and `answers`.question_id=21 and answer_text_req=0";
+            $sql_fun_happy = "select count(answer_text_req) from answers, questions where submission_id in (select submission_id from submissions where vol_id =$id) and `answers`.question_id = `questions`.question_id and `answers`.question_id=21 and answer_text_req=2";
             $sql_fun_normal = "select count(answer_text_req) from answers, questions where submission_id in (select submission_id from submissions where vol_id =$id) and `answers`.question_id = `questions`.question_id and `answers`.question_id=21 and answer_text_req=1";
-            $sql_fun_sad = "select count(answer_text_req) from answers, questions where submission_id in (select submission_id from submissions where vol_id =$id) and `answers`.question_id = `questions`.question_id and `answers`.question_id=21 and answer_text_req=2";
+            $sql_fun_sad = "select count(answer_text_req) from answers, questions where submission_id in (select submission_id from submissions where vol_id =$id) and `answers`.question_id = `questions`.question_id and `answers`.question_id=21 and answer_text_req=0";
 
             $output_happy = $db->query($sql_fun_happy);
             $output_normal = $db->query($sql_fun_normal);

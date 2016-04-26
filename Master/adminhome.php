@@ -248,11 +248,10 @@
 			<!--  start table-content  -->
 			<div id="table-content">
 			<h2><span style="text-decoration: underline;"> Features: </span></h2>
-			<h3><a href="createlogin.php">Create User Login</a></h3>
-			<h3><a href="delete-user.php">Delete User Login</h3>
-			<h3><a href="view.php">Full Report</a></h3>
-			<h3>Survey Query</h3>
-			<h3>Delete Report</h3>
+			<h3><a href="createlogin.php">Create Volunteer Account</a></h3>
+			<h3><a href="delete-user.php">Edit Volunteers</h3>
+			<h3><a href="view.php">Surveys</a></h3>
+			<h3><a href="view%20report.php">Reports</a></h3>
 
 			
 			</div>

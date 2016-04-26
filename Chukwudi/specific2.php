@@ -243,7 +243,6 @@ if(!isset($_SESSION['ad_email'])){
             <tr>
                 <th>ID</th>
                 <th>Email address</th>
-                <th>Surname</th>
             </tr>
             </thead>
             <?php

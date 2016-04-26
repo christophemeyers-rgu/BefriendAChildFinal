@@ -251,7 +251,7 @@
                                         </tr>
                                         <tr id="childinfo" style="display: none;">
                                             <th valign="top">Child's gender:
-
+                                            <th></th>
                                                 <input type="radio" name="child_gender" value="male" class="disabledelements" id="gender" required disabled >Male
                                                 <input type="radio" name="child_gender" value="female" class="disabledelements" id="gender" required disabled>Female
                                                 <input type="radio" name="child_gender" value="other" class="disabledelements" id="gender" required disabled>Other

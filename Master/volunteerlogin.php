@@ -176,7 +176,7 @@
 			<input type="password" name="p" placeholder="Password" required="required" />
 			<button type="submit" class="btn btn-primary btn-block btn-large">Login</button>
 		</form>
-		<h3>Forgot Password ? <a href="resetvolunteerpassword.php">Click Here </a> to recover</h3>
+		<h3><a href="resetvolunteerpassword.php">Forgotten password?</a></h3>
 	</div>
 
 
@@ -187,5 +187,6 @@
 	print($htmlpage);
 }
 -->
+
 
 

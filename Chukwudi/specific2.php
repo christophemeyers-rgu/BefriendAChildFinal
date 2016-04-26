@@ -243,6 +243,7 @@ if(!isset($_SESSION['ad_email'])){
             <tr>
                 <th>ID</th>
                 <th>Email address</th>
+                <th>Surname</th>
             </tr>
             </thead>
             <?php
@@ -271,7 +272,7 @@ if(!isset($_SESSION['ad_email'])){
                     <tbody>
                     <tr>
                         <td><?php echo $counter; ?></td>
-                        <td><a href="specific3.php?vol_email=$email; ?>"><?php echo $row[$counter];; ?></a></td>
+                        <td><a href="specific3.php?vol_email=$email; ?>"><?php echo $row['question_text'];; ?></a></td>
                     </tr>
                     </tbody>
                     <?php

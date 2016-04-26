@@ -23,9 +23,17 @@
 		$email=$_POST['u'];
 		$password=$_POST['p'];
 		if(volunteer_registered($email,$password)){		//see function below
-			session_start();
-			$_SESSION["vol_email"]=$email;		//session linked to volunteer's email
-			header("Location: volunteerhome.php");
+
+			if(has_child($email)){
+				session_start();
+				$_SESSION["vol_email"]=$email;		//session linked to volunteer's email
+
+				header("Location: volunteerhome.php");
+			}
+			else{
+				echo "<script>alert('You are not currently matched with a child and hence have no surveys to fill out.');</script>";
+			}
+
 		}
 		else{
 /*			show_volunteer_login();*/ //This is no longer necessary
@@ -77,6 +85,28 @@
 			}
 			$db->close(); // Closing Connection
 		}
+
+	}
+
+	function has_child($email){
+		include("db_connection.php");   //connect to database
+
+		if($db->connect_errno){
+			die('Connectfailed['.$db->connect_error.']');   //if connection fails, return error
+		}
+
+		$namequery = "SELECT vol_child_matched FROM volunteers WHERE vol_email='$email'";  //query for getting name
+
+		$result = $db->query($namequery);
+
+		$row = $result->fetch_array();
+
+		$haschild = $row['vol_child_matched'];
+
+		$db->close();
+
+		return $haschild;
+
 
 	}
 

@@ -271,7 +271,7 @@ if(!isset($_SESSION['ad_email'])){
             $max = mysqli_fetch_array($output_max);
             $avg = mysqli_fetch_array($output_avg);
 
-            echo $avg[0];/*
+            echo $output_sum;/*
             //how much fun did you have today?
             $sql_fun_happy = "select count(answer_text_req) from answers, questions where submission_id in (select submission_id from submissions where vol_id =$id) and `answers`.question_id = `questions`.question_id and `answers`.question_id=21 and answer_text_req=0";
             $sql_fun_normal = "select count(answer_text_req) from answers, questions where submission_id in (select submission_id from submissions where vol_id =$id) and `answers`.question_id = `questions`.question_id and `answers`.question_id=21 and answer_text_req=1";

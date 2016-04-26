@@ -1,4 +1,3 @@
-
 <?php
 /**
  * Created by PhpStorm.
@@ -209,7 +208,7 @@ if(!isset($_SESSION['ad_email'])){
                         <div class="select_sub">
                             <ul class="sub">
                                 <li><a href="view.php">Full Report</a></li>
-                                <li><a href="view%20report.php">Survey Query</a></li>
+                                <li><a href="../Chukwudi/view%20report.php">Survey Query</a></li>
                                 <li><a href="#nogo">Delete Report</a></li>
 
                             </ul>
@@ -243,42 +242,117 @@ if(!isset($_SESSION['ad_email'])){
             <thead>
             <tr>
                 <th>ID</th>
-                <th>User name</th>
-                <th>First name</th>
-                <th>Surname</th>
+                <th>Total</th>
+                <th>Details</th>
             </tr>
             </thead>
             <?php
             include("db_connection.php");
 
-            if($db->connect_errno){
-                die('Connectfailed['.$db->connect_error.']');
-            }
+            $id = $_GET['vol_id'];
 
-            $users = getAllRegisteredUsers();
 
-            if(mysqli_num_rows($users)>0){
+            //number of submissions
+            $sql_submissions = "select count(submission_id) from submissions where vol_id =$id";
+            $sql_output = $db->query($sql_submissions) or die($db->connect_error);
+            $output = mysqli_fetch_array($sql_output);
 
-                $counter = 0;
-                while ($row= mysqli_fetch_array($users))
-                {
-                    $counter++;
+            //how much money did you spend?
+            $sql_money_sum = "select sum(answer_text_req), `answers`.question_id from answers, questions where submission_id in (select submission_id from submissions where vol_id =$id) and `answers`.question_id = `questions`.question_id and `answers`.question_id=11";
+            $sql_money_min = "select min(answer_text_req), `answers`.question_id from answers, questions where submission_id in (select submission_id from submissions where vol_id =$id) and `answers`.question_id = `questions`.question_id and `answers`.question_id=11";
+            $sql_money_max = "select max(answer_text_req), `answers`.question_id from answers, questions where submission_id in (select submission_id from submissions where vol_id =$id) and `answers`.question_id = `questions`.question_id and `answers`.question_id=11";
+            $sql_money_avg = "select avg(answer_text_req), `answers`.question_id from answers, questions where submission_id in (select submission_id from submissions where vol_id =$id) and `answers`.question_id = `questions`.question_id and `answers`.question_id=11";
+
+            $output_sum = $db->query($sql_money_sum) or die($db->connect_error);
+            $output_min = $db->query($sql_money_min) or die($db->connect_error);
+            $output_max = $db->query($sql_money_max) or die($db->connect_error);
+            $output_avg = $db->query($sql_money_avg) or die($db->connect_error);
+
+            $sum = mysqli_fetch_array($output_sum);
+            $min = mysqli_fetch_array($output_min);
+            $max = mysqli_fetch_array($output_max);
+            $avg = mysqli_fetch_array($output_avg);
+
+
+            //how much fun did you have today?
+            $sql_fun_happy = "select count(answer_text_req) from answers, questions where submission_id in (select submission_id from submissions where vol_id =$id) and `answers`.question_id = `questions`.question_id and `answers`.question_id=21 and answer_text_req=0";
+            $sql_fun_normal = "select count(answer_text_req) from answers, questions where submission_id in (select submission_id from submissions where vol_id =$id) and `answers`.question_id = `questions`.question_id and `answers`.question_id=21 and answer_text_req=1";
+            $sql_fun_sad = "select count(answer_text_req) from answers, questions where submission_id in (select submission_id from submissions where vol_id =$id) and `answers`.question_id = `questions`.question_id and `answers`.question_id=21 and answer_text_req=2";
+
+            $output_happy = $db->query($sql_fun_happy);
+            $output_normal = $db->query($sql_fun_normal);
+            $output_sad = $db->query($sql_fun_sad);
+
+            $happy = mysqli_fetch_array($output_happy);
+            $normal = mysqli_fetch_array($output_normal);
+            $sad = mysqli_fetch_array($output_sad);
+
+            //did you learn anything new?
+            $sql_learn_yes = "select answer_text_req from answers, questions where submission_id in (select submission_id from submissions where vol_id =$id) and `answers`.question_id = `questions`.question_id and `answers`.question_id=31 and answer_text_req=2";
+            $sql_learn_might = "select answer_text_req from answers, questions where submission_id in (select submission_id from submissions where vol_id =$id) and `answers`.question_id = `questions`.question_id and `answers`.question_id=31 and answer_text_req=1";
+            $sql_learn_no = "select answer_text_req from answers, questions where submission_id in (select submission_id from submissions where vol_id =$id) and `answers`.question_id = `questions`.question_id and `answers`.question_id=31 and answer_text_req=0";
+
+            $output_learn_yes = $db->query($sql_learn_yes);
+            $output_learn_might = $db->query($sql_learn_might);
+            $output_learn_no = $db->query($sql_learn_no);
+
+            $learn_yes = mysqli_fetch_array($output_learn_yes);
+            $learn_might = mysqli_fetch_array($output_learn_might);
+            $learn_no = mysqli_fetch_array($output_learn_no);
+
+            //did you eat something healthy?
+            $sql_healthy_yes = "select answer_text_req from answers, questions where submission_id in (select submission_id from submissions where vol_id =$id) and `answers`.question_id = `questions`.question_id and `answers`.question_id=41 and answer_text_req=1";
+            $sql_healthy_no = "select answer_text_req from answers, questions where submission_id in (select submission_id from submissions where vol_id =$id) and `answers`.question_id = `questions`.question_id and `answers`.question_id=41 and answer_text_req=0";
+
+            $output_healthy_yes = $db->query($sql_healthy_yes);
+            $output_healthy_no = $db->query($sql_healthy_no);
+
+            $healthy_yes = mysqli_fetch_array($output_healthy_yes);
+            $healthy_no = mysqli_fetch_array($output_healthy_no);
+
+            //would you do it again?
+            $sql_again_yes = "select answer_text_req from answers, questions where submission_id in (select submission_id from submissions where vol_id =$id) and `answers`.question_id = `questions`.question_id and `answers`.question_id=51 and answer_text_req=1";
+            $sql_again_no = "select answer_text_req from answers, questions where submission_id in (select submission_id from submissions where vol_id =$id) and `answers`.question_id = `questions`.question_id and `answers`.question_id=51 and answer_text_req=0";
+
+            $output_again_yes = $db->query($sql_again_yes);
+            $output_again_no = $db->query($sql_again_no);
+
+            $again_yes = mysqli_fetch_array($output_again_yes);
+            $again_no = mysqli_fetch_array($ouput_again_no);
 
                     ?>
                     <tbody>
                     <tr>
                         <td><?php echo $counter; ?></td>
-                        <td><a href="specific3.php?vol_id=<?php echo $row['vol_id']; ?>"><?php echo $row['vol_email']; ?></a></td>
-                        <td><?php echo $row['vol_firstname']; ?></td>
-                        <td><?php echo $row['vol_surname']; ?></td>
+                        <td>Total amount of money spent was <?php echo $sum[0]; ?></td>
+                        <td>The average spending was <?php echo $avg[0]; ?> <br/>The minimum amount spent was <?php echo $min[0]?> <br/>The maximum amount spent was <?php echo $max[0]?></td>
+                    </tr>
+
+                    <tr>
+                        <td><?php echo $counter; ?></td>
+                        <td>Total number of responses <?php echo $output[0]; ?></td>
+                        <td>Total number of happy kids <?php echo $happy[0]; ?> <br/>Number of indifferent kids <?php echo $normal[0]?> <br/>Number of sad kids <?php echo $sad[0]?></td>
+                    </tr>
+
+                    <tr>
+                        <td><?php echo $counter; ?></td>
+                        <td>Number of responses was <?php echo $output[0]; ?></td>
+                        <td>Number that learnt something new <?php echo $learn_yes[0]; ?> <br/>number that learnt something relatively new <?php echo $learn_might[0]?> <br/>Number that had done it before <?php echo $learn_no[0]?></td>
+                    </tr>
+
+                    <tr>
+                        <td><?php echo $counter; ?></td>
+                        <td>Total responses <?php echo $output[0]; ?></td>
+                        <td>Number who ate something healthy were <?php echo $healthy_yes[0]; ?> <br/>The number that ate something unhealthy were <?php echo $healthy_no[0]?> </td>
+                    </tr>
+
+                    <tr>
+                        <td><?php echo $counter; ?></td>
+                        <td>Total number of responses? <?php echo $output[0]; ?></td>
+                        <td>Total number that said they'd do it again were <?php echo $again_yes[0]; ?> <br/>Number that said they wouldnt take the activity again <?php echo $again_no[0]?></td>
                     </tr>
                     </tbody>
-                    <?php
 
-                }
-            }
-
-            ?>
         </table>
     </div>
     <!--  end content -->

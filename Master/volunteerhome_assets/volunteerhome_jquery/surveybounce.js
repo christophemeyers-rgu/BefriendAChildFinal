@@ -10,8 +10,8 @@ $( "#start" ).click(function() {
         //Checks if field is filled using html5 form validation
         if ($('#eventdate')[0].checkValidity()) {
             $("#welcomepage").toggle("fade", 2000);
-            $("#surveybar").toggle("fade", 2000);
-            $("#cont1").toggle("slide", 3000);
+            $("#surveybar").toggle("slide", 2000);
+            $("#cont1").toggle("slide", 2000);
         }else {
             $("#surveyform").find(':submit').click()
         }
@@ -21,8 +21,8 @@ $( "#start" ).click(function() {
             alert("Please Enter the Date of Event.");
         }else{
             $("#welcomepage").toggle("fade", 2000);
-            $("#surveybar").toggle("fade", 2000);
-            $("#cont1").toggle("slide", 3000);
+            $("#surveybar").toggle("slide", 2000);
+            $("#cont1").toggle("slide", 2000);
         }
     }
 });

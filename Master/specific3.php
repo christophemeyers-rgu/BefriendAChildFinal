@@ -322,8 +322,8 @@ if(!isset($_SESSION['ad_email'])){
                         <td><?php echo $counter; ?></td>
                         <td>Total amount of money spent was £<?php echo $sum[0]; ?></td>
                         <td>The average spending: £<?php echo $avg[0]; ?> <br/>
-                            The minimum amount spent: £<?php echo $min[0]?> <br/>
-                            The maximum amount spent: £<?php echo $max[0]?></td>
+                            The minimum amount spent: £<?php echo $min[0];?> <br/>
+                            The maximum amount spent: £<?php echo $max[0];?></td>
                     </tr>
 
                     <tr>

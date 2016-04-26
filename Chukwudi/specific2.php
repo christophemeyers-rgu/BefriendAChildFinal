@@ -271,7 +271,7 @@ if(!isset($_SESSION['ad_email'])){
                     <tbody>
                     <tr>
                         <td><?php echo $counter; ?></td>
-                        <td><a href="specific3.php?vol_email=<?php echo $row['question_id'];?>"><?php echo $row['question_text']; ?></a></td>
+                        <td><a href="specific3.php?vol_id=<?php echo $row['question_id'];?>"><?php echo $row['question_text']; ?></a></td>
                     </tr>
                     </tbody>
                     <?php

@@ -171,8 +171,8 @@
                                                             else if ($row['vol_child_matched']==false){
                                                                 ?>
 
-                                                                <input type="radio" name="child_matched" value=true>Yes
-                                                                <input type="radio" name="child_matched" value=false checked >No
+                                                                <input type="radio" name="child_matched" value=true id="yes">Yes
+                                                                <input type="radio" name="child_matched" value=false checked id="no">No
                                                                 <?php
                                                             }
                                                             ?>

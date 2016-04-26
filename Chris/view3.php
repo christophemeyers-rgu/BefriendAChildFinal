@@ -237,7 +237,8 @@ if(!isset($_SESSION['ad_email'])){
 
 <!-- start content-outer ........................................................................................................................START -->
 <div class="container">
-    <p>Survey details for <a href="view2.php?vol_email=<?php echo $_GET['vol_email']; ?>"><?php echo $_GET['event_date'];?></a></p>
+    <p>Survey details for <?php echo $_GET['event_date'];?></p>
+
     <table class="table table-striped">
         <thead>
         <tr>
@@ -271,7 +272,50 @@ if(!isset($_SESSION['ad_email'])){
                 <tr>
                     <td><?php echo $counter; ?></td>
                     <td><?php echo $row['question_text']; ?></td>
-                    <td><?php echo $row['answer_text_req']; ?></td>
+                    <td><?php
+                        if($counter==1){
+                            echo "£".$row['answer_text_req'];
+                        }
+                        elseif($counter==2){
+                            if($row['answer_text_req']==0){
+                                echo '<img height="30px" width="30px" src="volunteerhome_assets/volunteerhome_images/surveyiconsad.png" alt="Sad">';
+                            }
+                            elseif($row['answer_text_req']==1){
+                                echo '<img height="30px" width="30px" src="volunteerhome_assets/volunteerhome_images/surveyiconnomal.png" alt="Indifferent">';
+                            }
+                            elseif($row['answer_text_req']==2){
+                                echo '<img height="30px" width="30px" src="volunteerhome_assets/volunteerhome_images/surveyiconsmile.png" alt="Happy">';
+                            }
+                        }
+                        elseif($counter==3){
+                            if($row['answer_text_req']==0){
+                                echo "Nothing new";
+                            }
+                            elseif($row['answer_text_req']==1){
+                                echo "Done it before";
+                            }
+                            elseif($row['answer_text_req']==2){
+                                echo "Never done it before";
+                            }
+                        }
+                        elseif($counter==4){
+                            if($row['answer_text_req']==0){
+                                echo "No";
+                            }
+                            elseif($row['answer_text_req']==1){
+                                echo "Yes";
+                            }
+                        }
+                        elseif($counter==5){
+                            if($row['answer_text_req']==0){
+                                echo "No";
+                            }
+                            elseif($row['answer_text_req']==1){
+                                echo "Yes";
+                            }
+                        }
+
+                        ?></td>
                     <td><?php echo $row['answer_text_opt']; ?></td>
                 </tr>
                 </tbody>
@@ -287,6 +331,8 @@ if(!isset($_SESSION['ad_email'])){
 
         ?>
     </table>
+    <p><a href="view2.php?vol_email=<?php echo $_GET['vol_email']; ?>"><img height="40px" width="40px" src="volunteerhome_assets/volunteerhome_images/arrowprevious.png"></a></p>
+
 </div>
 <!--  end content-outer........................................................END -->
 

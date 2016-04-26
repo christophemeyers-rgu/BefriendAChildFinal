@@ -12,7 +12,6 @@ $( "#start" ).click(function() {
             $("#welcomepage").toggle("fade", 2000);
             $("#surveybar").toggle("fade", 2000);
             $("#cont1").toggle("explode", 2000);
-            $("#question1buttons").toggle("fade", 2000);
         }else {
             $("#surveyform").find(':submit').click()
         }
@@ -24,21 +23,18 @@ $( "#start" ).click(function() {
             $("#welcomepage").toggle("fade", 2000);
             $("#surveybar").toggle("fade", 2000);
             $("#cont1").toggle("explode", 2000);
-            $("#question1buttons").toggle("fade", 2000);
         }
     }
 });
 
-$( "#buttonnext" ).click(function() {
+$( "#next2" ).click(function() {
 
     //Checks if browser supports required attribute using Modernizr's feature detection JavaScript code
     if (Modernizr.formvalidation) {
         //Checks if field is filled using html5 form validation
         if ($('#question1')[0].checkValidity()) {
-            $("#question1buttons").toggle("fade", 2000);
             $("#cont1").toggle("explode", 2000);
             $("#cont2").toggle("size", 2000);
-            $("#question2buttons").toggle("fade", 3000);
             $("#progressbar").progressbar({
                 value: 17
             });
@@ -50,10 +46,8 @@ $( "#buttonnext" ).click(function() {
         if (!$('#question1').val()){
             alert("Please fill in required field.");
         }else{
-            $("#question1buttons").toggle("fade", 2000);
             $("#cont1").toggle("explode", 2000);
             $("#cont2").toggle("size", 2000);
-            $("#question2buttons").toggle("fade", 3000);
             $("#progressbar").progressbar({
                 value: 17
             });
@@ -61,16 +55,14 @@ $( "#buttonnext" ).click(function() {
     }
 });
 
-$( "#buttonnext" ).click(function() {
+$( "#next3" ).click(function() {
 
     //Checks if browser supports required attribute using Modernizr's feature detection JavaScript code
     if (Modernizr.formvalidation) {
         //Checks if field is filled using html5 form validation
         if ($('#question2')[0].checkValidity()) {
-            $("#question2buttons").toggle("fade", 2000);
             $("#cont2").toggle("size", 2000);
             $("#cont3").toggle("fold", 2000);
-            $("#question3buttons").toggle("fade", 3000);
             $("#progressbar").progressbar({
                 value: 34
             });
@@ -82,7 +74,6 @@ $( "#buttonnext" ).click(function() {
         if (!$('#question2').val()){
             alert("Please fill in required field.");
         }else{
-            $("#question3buttons").toggle("fade", 2000);
             $("#cont2").toggle("size", 2000);
             $("#cont3").toggle("fold", 2000);
             $("#progressbar").progressbar({
@@ -92,13 +83,12 @@ $( "#buttonnext" ).click(function() {
     }
 });
 
-$( "#buttonnext" ).click(function() {
+$( "#next4" ).click(function() {
 
     //Checks if browser supports required attribute using Modernizr's feature detection JavaScript code
     if (Modernizr.formvalidation) {
         //Checks if field is filled using html5 form validation
         if ($('#question3')[0].checkValidity()) {
-            $("#question4buttons").toggle("fade", 2000);
             $("#cont3").toggle("fold", 2000);
             $("#cont4").toggle("puff", 2000);
             $("#progressbar").progressbar({
@@ -121,7 +111,7 @@ $( "#buttonnext" ).click(function() {
     }
 });
 
-$( "#buttonnext" ).click(function() {
+$( "#next5" ).click(function() {
 
     //Checks if browser supports required attribute using Modernizr's feature detection JavaScript code
     if (Modernizr.formvalidation) {
@@ -149,7 +139,7 @@ $( "#buttonnext" ).click(function() {
     }
 });
 
-$( "#buttonnext" ).click(function() {
+$( "#next6" ).click(function() {
 
     //Checks if browser supports required attribute using Modernizr's feature detection JavaScript code
     if (Modernizr.formvalidation) {
@@ -177,7 +167,7 @@ $( "#buttonnext" ).click(function() {
     }
 });
 
-$( "#buttonnext" ).click(function() {
+$( "#nextsurveysummary" ).click(function() {
 
     //Checks if browser supports required attribute using Modernizr's feature detection JavaScript code
     if (Modernizr.formvalidation) {
@@ -219,12 +209,8 @@ $( "#buttonnext" ).click(function() {
 
 //============================================================ Previous buttons
 
-$( "#buttonprevious" ).click(function() {
-    $("#cont1").toggle("slide", 1000);
-    $("#welcomepage").toggle("slide", 1000);
-});
 
-$( "#buttonnext" ).click(function() {
+$( "#previous1" ).click(function() {
     $("#cont2").toggle("slide", 1000);
     $("#cont1").toggle("slide", 1000);
 
@@ -233,7 +219,7 @@ $( "#buttonnext" ).click(function() {
     });
 });
 
-$( "#buttonnext" ).click(function() {
+$( "#previous2" ).click(function() {
     $("#cont3").toggle("slide", 1000);
     $("#cont2").toggle("slide", 1000);
 
@@ -242,7 +228,7 @@ $( "#buttonnext" ).click(function() {
     });
 });
 
-$( "#buttonnext" ).click(function() {
+$( "#previous3" ).click(function() {
     $("#cont4").toggle("slide", 1000);
     $("#cont3").toggle("slide", 1000);
 
@@ -251,7 +237,7 @@ $( "#buttonnext" ).click(function() {
     });
 });
 
-$( "#buttonnext" ).click(function() {
+$( "#previous4" ).click(function() {
     $("#cont5").toggle("slide", 1000);
     $("#cont4").toggle("slide", 1000);
 
@@ -260,7 +246,7 @@ $( "#buttonnext" ).click(function() {
     });
 });
 
-$( "#buttonnext" ).click(function() {
+$( "#previous5" ).click(function() {
     $("#cont6").toggle( "slide", 1000 );
     $("#cont5").toggle("slide", 1000);
 

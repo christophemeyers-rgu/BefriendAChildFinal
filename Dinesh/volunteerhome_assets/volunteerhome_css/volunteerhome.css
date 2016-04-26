@@ -1,7 +1,3 @@
-main{
-    background-color: green;
-}
-
 header{
     max-width: 600px;
     height: auto;
@@ -37,38 +33,56 @@ h2{
     right: 0;
     margin-left: auto;
     margin-right: auto;
-    border: 2px solid yellowgreen;
-    border-radius: 30px;
+}
+
+fieldset{
+    max-width: 500px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #cont1 {
     max-width: 600px;
     background: yellowgreen;
+    border: 2px solid #6eb6de;
+    border-radius: 30px;
 }
 
 #cont2 {
     max-width: 600px;
     background-color: palevioletred;
+    border: 2px solid yellowgreen;
+    border-radius: 30px;
 }
 
 #cont3 {
     max-width: 600px;
     background-color: lightsalmon;
+    border: 2px solid #6eb6de;
+    border-radius: 30px;
 }
 
 #cont4 {
     max-width: 600px;
     background-color: yellow;
+    border: 2px solid #6eb6de;
+    border-radius: 30px;
 }
 
 #cont5 {
     max-width: 600px;
     background-color: lightskyblue;
+    border: 2px solid darkred;
+    border-radius: 30px;
 }
 
 #cont6 {
     max-width: 600px;
     background-color: palevioletred;
+    border: 2px solid black;
+    border-radius: 30px;
 }
 
 #surveysummaryandsubmission {
@@ -102,8 +116,9 @@ p{
 }
 
 .surveynavbuttons{
-    max-width: 600px;
+    max-width: 700px;
     height: auto;
+    top: 25%;
     left: 0;
     right: 0;
     margin-left: auto;
@@ -118,9 +133,6 @@ p{
     max-width: 650px;
     margin-right: auto;
     margin-left: auto;
-    border: 2px solid yellowgreen;
-    border-radius: 30px;
-
 }
 .progress-label {
     position: absolute;

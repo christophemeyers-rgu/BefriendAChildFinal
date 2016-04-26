@@ -12,6 +12,7 @@ $( "#start" ).click(function() {
             $("#welcomepage").toggle("fade", 2000);
             $("#surveybar").toggle("fade", 2000);
             $("#cont1").toggle("explode", 2000);
+            $("#question1buttons").toggle("fade", 2000);
         }else {
             $("#surveyform").find(':submit').click()
         }
@@ -23,6 +24,7 @@ $( "#start" ).click(function() {
             $("#welcomepage").toggle("fade", 2000);
             $("#surveybar").toggle("fade", 2000);
             $("#cont1").toggle("explode", 2000);
+            $("#question1buttons").toggle("fade", 2000);
         }
     }
 });
@@ -33,8 +35,10 @@ $( "#next2" ).click(function() {
     if (Modernizr.formvalidation) {
         //Checks if field is filled using html5 form validation
         if ($('#question1')[0].checkValidity()) {
+            $("#question1buttons").toggle("fade", 2000);
             $("#cont1").toggle("explode", 2000);
             $("#cont2").toggle("size", 2000);
+            $("#question2buttons").toggle("fade", 3000);
             $("#progressbar").progressbar({
                 value: 17
             });
@@ -46,8 +50,10 @@ $( "#next2" ).click(function() {
         if (!$('#question1').val()){
             alert("Please fill in required field.");
         }else{
+            $("#question1buttons").toggle("fade", 2000);
             $("#cont1").toggle("explode", 2000);
             $("#cont2").toggle("size", 2000);
+            $("#question2buttons").toggle("fade", 3000);
             $("#progressbar").progressbar({
                 value: 17
             });
@@ -61,8 +67,10 @@ $( "#next3" ).click(function() {
     if (Modernizr.formvalidation) {
         //Checks if field is filled using html5 form validation
         if ($('#question2')[0].checkValidity()) {
+            $("#question2buttons").toggle("fade", 2000);
             $("#cont2").toggle("size", 2000);
             $("#cont3").toggle("fold", 2000);
+            $("#question3buttons").toggle("fade", 3000);
             $("#progressbar").progressbar({
                 value: 34
             });
@@ -74,6 +82,7 @@ $( "#next3" ).click(function() {
         if (!$('#question2').val()){
             alert("Please fill in required field.");
         }else{
+            $("#question3buttons").toggle("fade", 2000);
             $("#cont2").toggle("size", 2000);
             $("#cont3").toggle("fold", 2000);
             $("#progressbar").progressbar({
@@ -89,6 +98,7 @@ $( "#next4" ).click(function() {
     if (Modernizr.formvalidation) {
         //Checks if field is filled using html5 form validation
         if ($('#question3')[0].checkValidity()) {
+            $("#question4buttons").toggle("fade", 2000);
             $("#cont3").toggle("fold", 2000);
             $("#cont4").toggle("puff", 2000);
             $("#progressbar").progressbar({
@@ -209,6 +219,10 @@ $( "#nextsurveysummary" ).click(function() {
 
 //============================================================ Previous buttons
 
+$( "#startsurvey" ).click(function() {
+    $("#cont1").toggle("slide", 1000);
+    $("#welcomepage").toggle("slide", 1000);
+});
 
 $( "#previous1" ).click(function() {
     $("#cont2").toggle("slide", 1000);

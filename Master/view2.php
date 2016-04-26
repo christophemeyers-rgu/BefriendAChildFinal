@@ -187,7 +187,7 @@ if(!isset($_SESSION['ad_email'])){
 
 
 
-                <ul class="select"><li><a href="#nogo"><b>Volunteer Management</b></a>
+                <ul class="select"><li><a href="createlogin.php"><b>Volunteer Management</b></a>
 
                         <div class="select_sub">
                             <ul class="sub">
@@ -201,14 +201,12 @@ if(!isset($_SESSION['ad_email'])){
 
                 <div class="nav-divider">&nbsp;</div>
 
-                <ul class="select"><li><a href="#nogo"><b>Report</b></a>
+                <ul class="select"><li><a href="view.php"><b>Data</b></a>
 
                         <div class="select_sub">
                             <ul class="sub">
-                                <li><a href="view.php">Full Report</a></li>
-                                <li><a href="#nogo">Survey Query</a></li>
-                                <li><a href="#nogo">Delete Report</a></li>
-
+                                <li><a href="view.php">Surveys</a></li>
+                                <li><a href="view%20report.php">Reports</a></li>
                             </ul>
                         </div>
 
@@ -234,7 +232,7 @@ if(!isset($_SESSION['ad_email'])){
 
 <!-- start content-outer ........................................................................................................................START -->
 <div class="container">
-    <p>List of submissions by <a href="view.php"><?php echo $_GET['vol_email'];?></a></p>
+    <p>List of submissions by <?php echo $_GET['vol_email'];?></p>
     <table class="table table-striped">
         <thead>
         <tr>
@@ -281,6 +279,9 @@ if(!isset($_SESSION['ad_email'])){
 
         ?>
     </table>
+
+    <p><a href="view.php"><img height="40px" width="40px" src="volunteerhome_assets/volunteerhome_images/arrowprevious.png"></a></p>
+
 </div>
 <!--  end content-outer........................................................END -->
 

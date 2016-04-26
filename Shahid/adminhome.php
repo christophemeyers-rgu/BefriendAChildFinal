@@ -9,55 +9,7 @@
 	}
 
 ?>
-<!--Below actually not needed-->
-	<!--if($_SERVER['REQUEST_METHOD']==='GET'){
-			session_exists();
-		}
 
-	function session_exists(){
-		
-		$db = new MySQLi(
-						'ap-cdbr-azure-east-c.cloudapp.net', //server or host address
-						'b35e94884f471c', //username for connecting to database
-						'90efdea3', //user's password 
-						'befriendachildtestDB' //database being connected to
-						);
-		
-		
-		// SQL Query To Fetch Complete Information Of User
-		//check if there was a connection error and respond accordingly
-				if($db->connect_errno){
-					die('Connection failed:'.connect_error);
-				}
-				else{
-					session_start();// Starting Session
-					// Establishing Connection with Server by passing server_name, user_id and password as a parameter
-					// Selecting Database
-					$user_check=$_SESSION['ad_email']; // Storing Session
-					
-					//select all values from database using the entered values as filter
-					$query="SELECT *
-					FROM `administrators`
-					WHERE `ad_email` = '$user_check' LIMIT 1";
-					$output=$db->query($query) or die("Selection Query Failed !!!");//query the database
-				}
-				$login_session=NULL;//initiate variable to hold session state
-				
-				//goo through the output from the sql query and initiate the login_session variable using returned email_
-				while($row = $output->fetch_assoc()) {
-					$login_session=$row["ad_email"];
-					}
-		if(isset($login_session)){//if a valid session exists?
-			show_admin_home();
-		}
-		else{
-			header("Location: index.php");
-		}
-	}
-	
-	function show_admin_home(){
-		
-		$htmlpage = <<< HTMLPAGE-->
 		<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -204,8 +156,6 @@
 		<div id="nav-right">
 		
 			<div class="nav-divider">&nbsp;</div>
-			<div class="showhide-account"><img src="imagesadminpage/shared/nav/nav_myaccount.gif" width="93" height="14" alt="" /></div>
-			<div class="nav-divider">&nbsp;</div>
 			<a href="logout.php" id="logout"><img src="imagesadminpage/shared/nav/nav_logout.gif" width="64" height="14" alt="" /></a>
 			<div class="clear">&nbsp;</div>
 
@@ -227,12 +177,12 @@
 		                    
 
 		
-		<ul class="select"><li><a href="#nogo"><b>User Login Setup</b></a>
+		<ul class="select"><li><a href="createlogin.php"><b>Volunteer Management</b></a>
 
 		<div class="select_sub">
 			<ul class="sub">
-				<li><a href="createlogin.php">Create User Login</a></li>
-				<li><a href="delete-user.php">Delete User Login</a></li>
+				<li><a href="createlogin.php">Create Volunteer Account</a></li>
+				<li><a href="delete-user.php">Edit Volunteers</a></li>
 			</ul>
 		</div>
 
@@ -241,14 +191,12 @@
 		
 		<div class="nav-divider">&nbsp;</div>
 		
-		<ul class="select"><li><a href="#nogo"><b>Report</b></a>
+		<ul class="select"><li><a href="view.php"><b>Data</b></a>
 
 		<div class="select_sub">
 			<ul class="sub">
-				<li><a href="#nogo">Full Report</a></li>
-				<li><a href="#nogo">Survey Query</a></li>
-				<li><a href="#nogo">Delete Report</a></li>
-			 
+				<li><a href="view.php">Surveys</a></li>
+				<li><a href="view%20report.php">Reports</a></li>
 			</ul>
 		</div>
 
@@ -300,11 +248,10 @@
 			<!--  start table-content  -->
 			<div id="table-content">
 			<h2><span style="text-decoration: underline;"> Features: </span></h2>
-			<h3><a href="createlogin.php">Create User Login</a></h3>
-			<h3><a href="delete-user.php">Delete User Login</h3>
-			<h3>Full Report</h3>
-			<h3>Survey Query</h3>
-			<h3>Delete Report</h3>
+			<h3><a href="createlogin.php">Create Volunteer Account</a></h3>
+			<h3><a href="delete-user.php">Edit Volunteers</h3>
+			<h3><a href="view.php">Surveys</a></h3>
+			<h3><a href="view%20report.php">Reports</a></h3>
 
 			
 			</div>
@@ -346,7 +293,4 @@
  
 </body>
 </html>
-<!--HTMLPAGE;
-		print $htmlpage;
-	}-->
 	

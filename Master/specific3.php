@@ -166,9 +166,7 @@ if(!isset($_SESSION['ad_email'])){
         <div id="nav-right">
 
             <div class="nav-divider">&nbsp;</div>
-            <div class="showhide-account"><img src="../Chukwudi/imagesadminpage/shared/nav/nav_myaccount.gif" width="93" height="14" alt="" /></div>
-            <div class="nav-divider">&nbsp;</div>
-            <a href="../Chukwudi/logout.php" id="logout"><img src="../Chukwudi/imagesadminpage/shared/nav/nav_logout.gif" width="64" height="14" alt="" /></a>
+            <a href="logout.php" id="logout"><img src="imagesadminpage/shared/nav/nav_logout.gif" width="64" height="14" alt="" /></a>
             <div class="clear">&nbsp;</div>
 
 
@@ -180,7 +178,7 @@ if(!isset($_SESSION['ad_email'])){
         <div class="nav">
             <div class="table">
 
-                <ul class="select"><li><a href="../Chukwudi/adminhome.php"><b>Home</b></a>
+                <ul class="select"><li><a href="adminhome.php"><b>Home</b></a>
 
                     </li>
                 </ul>
@@ -189,12 +187,12 @@ if(!isset($_SESSION['ad_email'])){
 
 
 
-                <ul class="select"><li><a href="#nogo"><b>User Login Setup</b></a>
+                <ul class="select"><li><a href="createlogin.php"><b>Volunteer Management</b></a>
 
                         <div class="select_sub">
                             <ul class="sub">
-                                <li><a href="../Chukwudi/createlogin.php">Create User Login</a></li>
-                                <li><a href="../Chukwudi/delete-user.php">Delete User Login</a></li>
+                                <li><a href="createlogin.php">Create Volunteer Account</a></li>
+                                <li><a href="delete-user.php">Edit Volunteers</a></li>
                             </ul>
                         </div>
 
@@ -203,14 +201,12 @@ if(!isset($_SESSION['ad_email'])){
 
                 <div class="nav-divider">&nbsp;</div>
 
-                <ul class="select"><li><a href="#nogo"><b>Report</b></a>
+                <ul class="select"><li><a href="view.php"><b>Data</b></a>
 
                         <div class="select_sub">
                             <ul class="sub">
-                                <li><a href="view.php">Full Report</a></li>
-                                <li><a href="../Chukwudi/view%20report.php">Survey Query</a></li>
-                                <li><a href="#nogo">Delete Report</a></li>
-
+                                <li><a href="view.php">Surveys</a></li>
+                                <li><a href="view%20report.php">Reports</a></li>
                             </ul>
                         </div>
 
@@ -324,32 +320,40 @@ if(!isset($_SESSION['ad_email'])){
                     <tbody>
                     <tr>
                         <td><?php echo $counter; ?></td>
-                        <td>Total amount of money spent was ¢<?php echo $sum[0]; ?></td>
-                        <td>The average spending was £<?php echo $avg[0]; ?> <br/>The minimum amount spent was £<?php echo $min[0]?> <br/>The maximum amount spent was £<?php echo $max[0]?></td>
+                        <td>Total amount of money spent was £<?php echo $sum[0]; ?></td>
+                        <td>The average spending: £<?php echo $avg[0]; ?> <br/>
+                            The minimum amount spent: £<?php echo $min[0]?> <br/>
+                            The maximum amount spent: £<?php echo $max[0]?></td>
                     </tr>
 
                     <tr>
                         <td><?php echo $counter; ?></td>
-                        <td>Total number of responses <?php echo $output[0]; ?></td>
-                        <td>Total number of happy kids <?php echo $happy[0]; ?> <br/>Number of indifferent kids <?php echo $normal[0]?> <br/>Number of sad kids <?php echo $sad[0]?></td>
+                        <td>Number of responses: <?php echo $output[0]; ?></td>
+                        <td>Number of happy kids: <?php echo $happy[0]; ?> <br/>
+                            Number of indifferent kids: <?php echo $normal[0]?> <br/>
+                            Number of sad kids: <?php echo $sad[0]?></td>
                     </tr>
 
                     <tr>
                         <td><?php echo $counter; ?></td>
-                        <td>Number of responses was <?php echo $output[0]; ?></td>
-                        <td>Number that learnt something new <?php echo $learn_yes[0]; ?> <br/>number that learnt something relatively new <?php echo $learn_might[0]?> <br/>Number that had done it before <?php echo $learn_no[0]?></td>
+                        <td>Number of responses: <?php echo $output[0]; ?></td>
+                        <td>Number that learnt something new <?php echo $learn_yes[0]; ?><br/>
+                            Number that learnt something relatively new <?php echo $learn_might[0]?> <br/>
+                            Number that had done it before <?php echo $learn_no[0]?></td>
                     </tr>
 
                     <tr>
                         <td><?php echo $counter; ?></td>
-                        <td>Total responses <?php echo $output[0]; ?></td>
-                        <td>Number who ate something healthy were <?php echo $healthy_yes[0]; ?> <br/>The number that ate something unhealthy were <?php echo $healthy_no[0]?> </td>
+                        <td>Number of responses: <?php echo $output[0]; ?></td>
+                        <td>Number that ate something healthy: <?php echo $healthy_yes[0]; ?> <br/>
+                            Number that ate nothing healthy: <?php echo $healthy_no[0]?> </td>
                     </tr>
 
                     <tr>
                         <td><?php echo $counter; ?></td>
-                        <td>Total number of responses? <?php echo $output[0]; ?></td>
-                        <td>Total number that said they'd do it again were <?php echo $again_yes[0]; ?> <br/>Number that said they wouldnt take the activity again <?php echo $again_no[0]?></td>
+                        <td>Number of responses: <?php echo $output[0]; ?></td>
+                        <td>Number that would repeat the activity: <?php echo $again_yes[0]; ?> <br/>
+                            Number that would not repeat the activity: <?php echo $again_no[0]?></td>
                     </tr>
                     </tbody>
 

@@ -187,7 +187,7 @@ if(!isset($_SESSION['ad_email'])){
 
 
 
-                <ul class="select"><li><a href="#nogo"><b>Volunteer Management</b></a>
+                <ul class="select"><li><a href="createlogin.php"><b>Volunteer Management</b></a>
 
                         <div class="select_sub">
                             <ul class="sub">
@@ -201,14 +201,12 @@ if(!isset($_SESSION['ad_email'])){
 
                 <div class="nav-divider">&nbsp;</div>
 
-                <ul class="select"><li><a href="#nogo"><b>Report</b></a>
+                <ul class="select"><li><a href="view.php"><b>Data</b></a>
 
                         <div class="select_sub">
                             <ul class="sub">
-                                <li><a href="view.php">Full Report</a></li>
-                                <li><a href="../Chukwudi/view%20report.php">Survey Query</a></li>
-                                <li><a href="#nogo">Delete Report</a></li>
-
+                                <li><a href="view.php">Surveys</a></li>
+                                <li><a href="view%20report.php">Reports</a></li>
                             </ul>
                         </div>
 
@@ -344,32 +342,40 @@ if(!isset($_SESSION['ad_email'])){
         <tbody>
         <tr>
             <td>When asked <?php  echo $question1[0]; ?></td>
-            <td>Total number of responses was <?php echo $total[0]; ?></td>
-            <td>Number of Happy Kids was <?php echo $happy[0]; ?> <br/> Number of Indifferent kids <?php echo $normal[0]; ?> <br/> Number of kids who didn't enjoy the experience <?php echo $sad[0]; ?> </td>
+            <td>Total number of responses: <?php echo $total[0]; ?></td>
+            <td>Number of happy kids: <?php echo $happy[0]; ?> <br/>
+                Number of indifferent kids: <?php echo $normal[0]; ?> <br/>
+                Number of sad kids: <?php echo $sad[0]; ?> </td>
         </tr>
 
         <tr>
             <td> When asked <?php  echo $question2[0]; ?></td>
-            <td>Total amount spent during outings was £<?php echo $sum[0]; ?></td>
-            <td>Average spending was £<?php echo $avg[0]; ?> <br/> Maximum spending was £<?php echo $max[0]; ?> <br/> Minimum spending was £<?php echo $min[0]; ?> </td>
+            <td>Total amount spent during outings: £<?php echo $sum[0]; ?></td>
+            <td>Average spending: £<?php echo $avg[0]; ?> <br/>
+                Maximum spending: £<?php echo $max[0]; ?> <br/>
+                Minimum spending: £<?php echo $min[0]; ?> </td>
         </tr>
 
         <tr>
             <td> When asked <?php  echo $question3[0]; ?></td>
-            <td> Total responses were <?php echo $total3[0]; ?></td>
-            <td> Kids who had healthy meals were <?php echo $healthy[0]; ?> <br/> Number of kids who had unhealthy meals were <?php echo $unhealthy[0]; ?> </td>
+            <td> Total number of responses: <?php echo $total3[0]; ?></td>
+            <td> Number of kids who ate something healthy: <?php echo $healthy[0]; ?> <br/>
+                 Number of kids who ate nothing healthy: <?php echo $unhealthy[0]; ?> </td>
         </tr>
 
         <tr>
             <td> When asked <?php  echo $question4[0]; ?></td>
-            <td> Total responses were <?php echo $total2[0]; ?></td>
-            <td> Number of kids who would do it again <?php echo $again[0]; ?> <br/> Number of kids who wouldn't do it again <?php echo $notagain[0]; ?> </td>
+            <td> Total number of responses: <?php echo $total2[0]; ?></td>
+            <td> Number of kids who would repeat the activity: <?php echo $again[0]; ?> <br/>
+                 Number of kids who wouldn't repeat the activity: <?php echo $notagain[0]; ?> </td>
         </tr>
 
         <tr>
             <td> When asked <?php  echo $question5[0]; ?></td>
-            <td> Total number of responses were <?php echo $total2[0]; ?></td>
-            <td> Number of kids who learnt something new were <?php echo $new[0]; ?> <br/> Number of kids who learnt nothing new were <?php echo $notnew[0]; ?> Kids who learnt a little bit of something new were <br/><?php echo $abitnew[0]; ?> </td>
+            <td> Total number of responses: <?php echo $total2[0]; ?></td>
+            <td> Number of kids who learnt something new: <?php echo $new[0]; ?> <br/>
+                Number of kids who learnt something relatively new: <br/><?php echo $abitnew[0]; ?> <br/>
+                Number of kids who learnt nothing new: <?php echo $notnew[0]; ?></td>
         </tr>
         </tbody>
         <?php

@@ -10,6 +10,7 @@ header{
 }
 
 #main{
+    max-width: 1000px;
     background-color: green;
 }
 

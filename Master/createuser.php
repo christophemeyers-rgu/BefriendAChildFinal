@@ -250,9 +250,9 @@
                                         <tr id="childinfo" style="display: none;">
                                             <th valign="top">Child's gender:</th>
                                             <th>
-                                                <input type="radio" name="child_gender" value="male" class="disabledelements" id="gender" required <!--disabled--> >Male
-                                                <input type="radio" name="child_gender" value="female" class="disabledelements" id="gender" required <!--disabled-->>Female
-                                                <input type="radio" name="child_gender" value="other" class="disabledelements" id="gender" required <!--disabled-->>Other
+                                                <input type="radio" name="child_gender" value="male" class="disabledelements" id="gender" required>Male
+                                                <input type="radio" name="child_gender" value="female" class="disabledelements" id="gender" required>Female
+                                                <input type="radio" name="child_gender" value="other" class="disabledelements" id="gender" required>Other
                                             </th>
 
 
@@ -278,7 +278,6 @@
                                     <script src="jsadminpage/jquery/modernizr-custom.js" type="text/javascript"></script>
                                     <!-- end id-form  -->
 
-                                    <img style="float:right; padding-right:10px;padding-bottom:10px;" src="imagesadminpage/shared/face-pink.png">
 
                                 </td>
 

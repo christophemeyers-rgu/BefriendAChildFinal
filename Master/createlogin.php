@@ -65,7 +65,7 @@
 				$password=$_POST['password'];
 				$child_matched=$_POST['child_matched'];
 
-				if($child_matched==1){
+				if($child_matched==true){
 					$child_gender=$_POST['child_gender'];
 					$child_date_of_birth = $_POST['date_of_birth'];
 					$dob="date'".$child_date_of_birth."'";

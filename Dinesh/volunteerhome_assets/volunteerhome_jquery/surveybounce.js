@@ -12,7 +12,7 @@ $( "#start" ).click(function() {
             $("#welcomepage").toggle("fade", 2000);
             $("#surveybar").toggle("fade", 2000);
             $("#cont1").toggle("explode", 2000);
-            $("#question1buttons").toggle("fade", 3000);
+            $("#question1buttons").toggle("fade", 2000);
         }else {
             $("#surveyform").find(':submit').click()
         }
@@ -24,7 +24,7 @@ $( "#start" ).click(function() {
             $("#welcomepage").toggle("fade", 2000);
             $("#surveybar").toggle("fade", 2000);
             $("#cont1").toggle("explode", 2000);
-            $("#question1buttons").toggle("fade", 3000);
+            $("#question1buttons").toggle("fade", 2000);
         }
     }
 });
@@ -38,10 +38,10 @@ $( "#next2" ).click(function() {
             $("#question1buttons").toggle("fade", 2000);
             $("#cont1").toggle("explode", 2000);
             $("#cont2").toggle("size", 2000);
+            $("#question2buttons").toggle("fade", 3000);
             $("#progressbar").progressbar({
                 value: 17
             });
-            $("#question2buttons").toggle("fade", 3000);
         } else {
             $("#surveyform").find(':submit').click()
         }
@@ -53,10 +53,10 @@ $( "#next2" ).click(function() {
             $("#question1buttons").toggle("fade", 2000);
             $("#cont1").toggle("explode", 2000);
             $("#cont2").toggle("size", 2000);
+            $("#question2buttons").toggle("fade", 3000);
             $("#progressbar").progressbar({
                 value: 17
             });
-            $("#question2buttons").toggle("fade", 3000);
         }
     }
 });
@@ -70,11 +70,10 @@ $( "#next3" ).click(function() {
             $("#question2buttons").toggle("fade", 2000);
             $("#cont2").toggle("size", 2000);
             $("#cont3").toggle("fold", 2000);
-
+            $("#question3buttons").toggle("fade", 3000);
             $("#progressbar").progressbar({
                 value: 34
             });
-            $("#question3buttons").toggle("fade", 3000);
         } else {
             $("#surveyform").find(':submit').click()
         }
@@ -83,14 +82,12 @@ $( "#next3" ).click(function() {
         if (!$('#question2').val()){
             alert("Please fill in required field.");
         }else{
-            $("#question2buttons").toggle("fade", 2000);
+            $("#question3buttons").toggle("fade", 2000);
             $("#cont2").toggle("size", 2000);
             $("#cont3").toggle("fold", 2000);
-
             $("#progressbar").progressbar({
                 value: 34
             });
-            $("#question3buttons").toggle("fade", 3000);
         }
     }
 });
@@ -101,13 +98,12 @@ $( "#next4" ).click(function() {
     if (Modernizr.formvalidation) {
         //Checks if field is filled using html5 form validation
         if ($('#question3')[0].checkValidity()) {
-            $("#question3buttons").toggle("fade", 2000);
+            $("#question4buttons").toggle("fade", 2000);
             $("#cont3").toggle("fold", 2000);
             $("#cont4").toggle("puff", 2000);
             $("#progressbar").progressbar({
                 value: 51
             });
-            $("#question4buttons").toggle("fade", 2000);
         } else {
             $("#surveyform").find(':submit').click()
         }
@@ -116,13 +112,11 @@ $( "#next4" ).click(function() {
         if (!$('#question3:checked').val()){
             alert("Please fill in required field.");
         }else{
-            $("#question3buttons").toggle("fade", 2000);
             $("#cont3").toggle("fold", 2000);
             $("#cont4").toggle("puff", 2000);
             $("#progressbar").progressbar({
                 value: 51
             });
-            $("#question4buttons").toggle("fade", 2000);
         }
     }
 });
@@ -133,13 +127,11 @@ $( "#next5" ).click(function() {
     if (Modernizr.formvalidation) {
         //Checks if field is filled using html5 form validation
         if ($('#question4')[0].checkValidity()) {
-            $("#question4buttons").toggle("fade", 2000);
             $("#cont4").toggle("puff", 2000);
             $("#cont5").toggle("clip", 2000);
             $("#progressbar").progressbar({
                 value: 68
             });
-            $("#question5buttons").toggle("fade", 2000);
         } else {
             $("#surveyform").find(':submit').click()
         }
@@ -148,13 +140,11 @@ $( "#next5" ).click(function() {
         if (!$('#question4:checked').val()){
             alert("Please fill in required field.");
         }else{
-            $("#question4buttons").toggle("fade", 2000);
             $("#cont4").toggle("puff", 2000);
             $("#cont5").toggle("clip", 2000);
             $("#progressbar").progressbar({
                 value: 68
-            })
-            $("#question5buttons").toggle("fade", 2000);
+            });
         }
     }
 });
@@ -165,13 +155,11 @@ $( "#next6" ).click(function() {
     if (Modernizr.formvalidation) {
         //Checks if field is filled using html5 form validation
         if ($('#question5')[0].checkValidity()) {
-            $("#question5buttons").toggle("fade", 2000);
             $("#cont5").toggle("clip", 2000);
             $("#cont6").toggle("puff", 2000);
             $("#progressbar").progressbar({
                 value: 85
             });
-            $("#question6buttons").toggle("fade", 2000);
         } else {
             $("#surveyform").find(':submit').click()
         }
@@ -180,13 +168,11 @@ $( "#next6" ).click(function() {
         if (!$('#question5:checked').val()){
             alert("Please fill in required field.");
         }else{
-            $("#question5buttons").toggle("fade", 2000);
             $("#cont5").toggle("clip", 2000);
             $("#cont6").toggle("puff", 2000);
             $("#progressbar").progressbar({
                 value: 85
             });
-            $("#question6buttons").toggle("fade", 2000);
         }
     }
 });
@@ -197,7 +183,6 @@ $( "#nextsurveysummary" ).click(function() {
     if (Modernizr.formvalidation) {
         //Checks if field is filled using html5 form validation
         if ($('#question6')[0].checkValidity()) {
-            $("#question6buttons").toggle("fade", 2000);
             $("#cont6").toggle("slide", 0);
             $("#surveysummaryandsubmission").toggle("fade", 2000);
 
@@ -217,7 +202,6 @@ $( "#nextsurveysummary" ).click(function() {
         if (!$('#question6:checked').val()){
             alert("Please fill in required field.");
         }else{
-            $("#question6buttons").toggle("fade", 2000);
             $("#cont6").toggle("slide", 0);
             $("#surveysummaryandsubmission").toggle("fade", 2000);
 
@@ -236,13 +220,11 @@ $( "#nextsurveysummary" ).click(function() {
 //============================================================ Previous buttons
 
 $( "#startsurvey" ).click(function() {
-    $("#question1buttons").toggle("fade", 2000);
     $("#cont1").toggle("slide", 1000);
     $("#welcomepage").toggle("slide", 1000);
 });
 
 $( "#previous1" ).click(function() {
-    $("#question2buttons").toggle("fade", 2000);
     $("#cont2").toggle("slide", 1000);
     $("#cont1").toggle("slide", 1000);
 
@@ -252,7 +234,6 @@ $( "#previous1" ).click(function() {
 });
 
 $( "#previous2" ).click(function() {
-    $("#question3buttons").toggle("fade", 2000);
     $("#cont3").toggle("slide", 1000);
     $("#cont2").toggle("slide", 1000);
 
@@ -262,7 +243,6 @@ $( "#previous2" ).click(function() {
 });
 
 $( "#previous3" ).click(function() {
-    $("#question4buttons").toggle("fade", 2000);
     $("#cont4").toggle("slide", 1000);
     $("#cont3").toggle("slide", 1000);
 
@@ -272,7 +252,6 @@ $( "#previous3" ).click(function() {
 });
 
 $( "#previous4" ).click(function() {
-    $("#question5buttons").toggle("fade", 2000);
     $("#cont5").toggle("slide", 1000);
     $("#cont4").toggle("slide", 1000);
 
@@ -282,7 +261,6 @@ $( "#previous4" ).click(function() {
 });
 
 $( "#previous5" ).click(function() {
-    $("#question6buttons").toggle("fade", 2000);
     $("#cont6").toggle( "slide", 1000 );
     $("#cont5").toggle("slide", 1000);
 

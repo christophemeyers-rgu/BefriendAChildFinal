@@ -321,31 +321,39 @@ if(!isset($_SESSION['ad_email'])){
                     <tr>
                         <td><?php echo $counter; ?></td>
                         <td>Total amount of money spent was £<?php echo $sum[0]; ?></td>
-                        <td>The average spending was £<?php echo $avg[0]; ?> <br/>The minimum amount spent was £<?php echo $min[0]?> <br/>The maximum amount spent was £<?php echo $max[0]?></td>
+                        <td>The average spending: £<?php echo $avg[0]; ?> <br/>
+                            The minimum amount spent: £<?php echo $min[0]?> <br/>
+                            The maximum amount spent: £<?php echo $max[0]?></td>
                     </tr>
 
                     <tr>
                         <td><?php echo $counter; ?></td>
-                        <td>Total number of responses <?php echo $output[0]; ?></td>
-                        <td>Total number of happy kids <?php echo $happy[0]; ?> <br/>Number of indifferent kids <?php echo $normal[0]?> <br/>Number of sad kids <?php echo $sad[0]?></td>
+                        <td>Number of responses: <?php echo $output[0]; ?></td>
+                        <td>Number of happy kids: <?php echo $happy[0]; ?> <br/>
+                            Number of indifferent kids: <?php echo $normal[0]?> <br/>
+                            Number of sad kids: <?php echo $sad[0]?></td>
                     </tr>
 
                     <tr>
                         <td><?php echo $counter; ?></td>
-                        <td>Number of responses was <?php echo $output[0]; ?></td>
-                        <td>Number that learnt something new <?php echo $learn_yes[0]; ?> <br/>number that learnt something relatively new <?php echo $learn_might[0]?> <br/>Number that had done it before <?php echo $learn_no[0]?></td>
+                        <td>Number of responses: <?php echo $output[0]; ?></td>
+                        <td>Number that learnt something new <?php echo $learn_yes[0]; ?><br/>
+                            Number that learnt something relatively new <?php echo $learn_might[0]?> <br/>
+                            Number that had done it before <?php echo $learn_no[0]?></td>
                     </tr>
 
                     <tr>
                         <td><?php echo $counter; ?></td>
-                        <td>Total responses <?php echo $output[0]; ?></td>
-                        <td>Number who ate something healthy were <?php echo $healthy_yes[0]; ?> <br/>The number that ate something unhealthy were <?php echo $healthy_no[0]?> </td>
+                        <td>Number of responses: <?php echo $output[0]; ?></td>
+                        <td>Number that ate something healthy: <?php echo $healthy_yes[0]; ?> <br/>
+                            Number that ate nothing healthy: <?php echo $healthy_no[0]?> </td>
                     </tr>
 
                     <tr>
                         <td><?php echo $counter; ?></td>
-                        <td>Total number of responses? <?php echo $output[0]; ?></td>
-                        <td>Total number that said they'd do it again were <?php echo $again_yes[0]; ?> <br/>Number that said they wouldnt take the activity again <?php echo $again_no[0]?></td>
+                        <td>Number of responses: <?php echo $output[0]; ?></td>
+                        <td>Number that would repeat the activity: <?php echo $again_yes[0]; ?> <br/>
+                            Number that would not repeat the activity: <?php echo $again_no[0]?></td>
                     </tr>
                     </tbody>
 

@@ -246,9 +246,7 @@
                                                 <input type="radio" name="child_matched" value=false id="no" id="matched" required>No
                                             </td>
                                         </tr>
-                                        <tr>
-                                            <td>If yes, please answer the following two:</td>
-                                        </tr>
+
                                         <tr id="childinfo" style="display: none;">
                                             <th valign="top">Child's gender:</th>
                                             <th>
@@ -258,7 +256,7 @@
                                             </th>
 
 
-                                            <th valign="top">Child's date of birth: (dd/mm/yy)</th>
+                                            <th valign="top">Child's date of birth:</th>
 
                                             <th>
                                                 <input  type="date" class="disabledelements" disabled name="date_of_birth" id="dateofbirth" required >
@@ -279,8 +277,6 @@
                                     <script src="jsadminpage/jquery/enabledisablegender.js" type="text/javascript"></script>
                                     <script src="jsadminpage/jquery/modernizr-custom.js" type="text/javascript"></script>
                                     <!-- end id-form  -->
-
-                                    <img style="float:right; padding-right:10px;padding-bottom:10px;" src="imagesadminpage/shared/face-pink.png">
 
                                 </td>
 

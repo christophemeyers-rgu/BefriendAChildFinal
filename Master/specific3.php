@@ -330,30 +330,30 @@ if(!isset($_SESSION['ad_email'])){
                         <td><?php echo $counter; ?></td>
                         <td>Number of responses: <?php echo $output[0]; ?></td>
                         <td>Number of happy kids: <?php echo $happy[0]; ?> <br/>
-                            Number of indifferent kids: <?php echo $normal[0]?> <br/>
-                            Number of sad kids: <?php echo $sad[0]?></td>
+                            Number of indifferent kids: <?php echo $normal[0];?> <br/>
+                            Number of sad kids: <?php echo $sad[0];?></td>
                     </tr>
 
                     <tr>
                         <td><?php echo $counter; ?></td>
                         <td>Number of responses: <?php echo $output[0]; ?></td>
                         <td>Number that learnt something new <?php echo $learn_yes[0]; ?><br/>
-                            Number that learnt something relatively new <?php echo $learn_might[0]?> <br/>
-                            Number that had done it before <?php echo $learn_no[0]?></td>
+                            Number that learnt something relatively new <?php echo $learn_might[0];?> <br/>
+                            Number that had done it before <?php echo $learn_no[0];?></td>
                     </tr>
 
                     <tr>
                         <td><?php echo $counter; ?></td>
                         <td>Number of responses: <?php echo $output[0]; ?></td>
                         <td>Number that ate something healthy: <?php echo $healthy_yes[0]; ?> <br/>
-                            Number that ate nothing healthy: <?php echo $healthy_no[0]?> </td>
+                            Number that ate nothing healthy: <?php echo $healthy_no[0];?> </td>
                     </tr>
 
                     <tr>
                         <td><?php echo $counter; ?></td>
                         <td>Number of responses: <?php echo $output[0]; ?></td>
                         <td>Number that would repeat the activity: <?php echo $again_yes[0]; ?> <br/>
-                            Number that would not repeat the activity: <?php echo $again_no[0]?></td>
+                            Number that would not repeat the activity: <?php echo $again_no[0];?></td>
                     </tr>
                     </tbody>
 

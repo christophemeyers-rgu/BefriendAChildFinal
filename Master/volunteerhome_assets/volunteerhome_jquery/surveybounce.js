@@ -10,8 +10,8 @@ $( "#start" ).click(function() {
         //Checks if field is filled using html5 form validation
         if ($('#eventdate')[0].checkValidity()) {
             $("#welcomepage").toggle("fade", 2000);
-            $("#surveybar").toggle("slide", 2000);
-            $("#cont1").toggle("slide", 2000);
+            $("#surveybar").toggle("fade", 2000);
+            $("#cont1").toggle("fade", 2000);
         }else {
             $("#surveyform").find(':submit').click()
         }
@@ -210,9 +210,9 @@ $( "#nextsurveysummary" ).click(function() {
 //============================================================ Previous buttons
 
 $( "#surveystart" ).click(function() {
-    $("#surveybar").toggle("slide", 2000);
-    $("#cont1").toggle("slide", 1000);
-    $("#welcomepage").toggle("slide", 1000);
+    $("#surveybar").toggle("fade", 2000);
+    $("#cont1").toggle("fade", 1000);
+    $("#welcomepage").toggle("fade", 1000);
 
     $( "#progressbar" ).progressbar({
         value: 0

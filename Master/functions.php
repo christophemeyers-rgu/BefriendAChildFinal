@@ -199,7 +199,7 @@ function updateUser() {
         unlink($imageurl_old);
     }
 
-    if($childMatched==1){
+    if($childMatched==true){
         $child_gender=$_POST['child_gender'];
         $child_date_of_birth = $_POST['date_of_birth'];
         $dob="date'".$child_date_of_birth."'";

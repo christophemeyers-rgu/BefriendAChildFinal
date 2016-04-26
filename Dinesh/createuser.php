@@ -249,7 +249,7 @@
                                         <tr>
                                             <td>If yes, please answer the following two:</td>
                                         </tr>
-                                        <div id="childinfo" style="display: none;">
+                                        <tr id="childinfo" style="display: none;">
                                             <th valign="top">Child's gender:</th>
 
                                                 <input type="radio" name="child_gender" value="male" class="disabledelements" id="gender" required disabled >Male
@@ -262,7 +262,7 @@
 
                                                 <input  type="date" class="disabledelements" disabled name="date_of_birth" id="dateofbirth" required >
 
-                                        </div>
+                                        </tr>
 
 
                                         <tr>

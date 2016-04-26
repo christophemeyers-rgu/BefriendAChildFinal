@@ -192,7 +192,7 @@
                                                             <input  type="date" class="disabledelements" disabled name="date_of_birth" id="dateofbirth" required >
                                                         </th>
                                                     </tr>
-                                                    <script src="jsadminpage/jquery/enabledisablegender.js" type="text/javascript"></script>
+
                                                         </td>
                                                     </tr>
 
@@ -207,6 +207,8 @@
                                                         </td>
                                                     </tr>
                                                 </table>
+                                                </form>
+                                                <script src="jsadminpage/jquery/enabledisablegender.js" type="text/javascript"></script>
                                                 <!-- end id-form  -->
 
                                             </td>
@@ -236,7 +238,7 @@
                                         </tr>
                                     </table>
 
-                                    </form>
+
 
 
                                     <div class="clear">&nbsp;</div>

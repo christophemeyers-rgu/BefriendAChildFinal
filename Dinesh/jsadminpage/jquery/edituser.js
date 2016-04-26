@@ -1,4 +1,4 @@
-$( document ).ready()(function () {
+$('#yes').is(':checked')(function () {
     //check if radio button is checked
     if ($(this).is(':checked')) {
 

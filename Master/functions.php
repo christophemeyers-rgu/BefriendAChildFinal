@@ -203,13 +203,8 @@ function updateUser() {
         $child_gender=$_POST['child_gender'];
         $child_date_of_birth = $_POST['date_of_birth'];
         $dob="date'".$child_date_of_birth."'";
-    }
-    else{
-        $child_gender="other";
-        $dob="date'1991-03-12'";
-    }
-    
-    $sql = "update volunteers
+
+        $sql = "update volunteers
             set vol_email='$login_name',
                 vol_password='$password',
                 vol_firstname='$firstName',
@@ -218,6 +213,25 @@ function updateUser() {
                 vol_child_gender='$child_gender',
                 vol_child_dob=".$dob."
             where vol_email='$login_name_prev'";
+
+    }
+    else{
+
+
+        $sql = "update volunteers
+            set vol_email='$login_name',
+                vol_password='$password',
+                vol_firstname='$firstName',
+                vol_surname='$surName',
+                vol_child_matched=".$childMatched.",
+                vol_child_gender=NULL,
+                vol_child_dob=NULL
+            where vol_email='$login_name_prev'";
+
+
+    }
+    
+
 
     $mysqli = new mysqli(host, user, password, database);
 

@@ -125,7 +125,7 @@ function is_admin() {
 //end function
 
 function getAllRegisteredUsers() {
-    $sql = "select * from volunteers";
+    $sql = "select * from volunteers ORDER BY vol_firstname";
 
     $mysqli = new mysqli(host, user, password, database);
     $result = $mysqli->query($sql);
@@ -136,6 +136,26 @@ function getAllRegisteredUsers() {
 }
 
 //end function
+
+function getUserSubmissions($vol_email){
+
+    $sql = "select * from submissions where vol_id= (select vol_id from volunteers where vol_email='$vol_email')";
+    $mysqli = new mysqli(host, user, password, database);
+    $result = $mysqli->query($sql);
+    $mysqli->close();
+
+    return $result;
+}
+
+function getEventDetails($event_date, $vol_email){
+
+    $sql = "select question_text, answer_text_req, answer_text_opt from answers, questions where submission_id =(select submission_id from submissions where event_date ='$event_date' and vol_id =(select vol_id from volunteers where vol_email='$vol_email')) and questions.question_id = answers.question_id group by answers.question_id";
+    $mysqli = new mysqli(host, user, password, database);
+    $result = $mysqli->query($sql);
+    $mysqli->close();
+
+    return $result;
+}
 
 function deleteUser($login_name) {
 
@@ -178,11 +198,48 @@ function updateUser() {
     } else {
         unlink($imageurl_old);
     }
-    
-    $sql = "update volunteers set vol_email='$login_name',vol_password='$password',vol_firstname='$firstName',vol_surname='$surName',child_matched='$childMatched' where vol_email='$login_name_prev'";
+
+    if($childMatched==true){
+        $child_gender=$_POST['child_gender'];
+        $child_date_of_birth = $_POST['date_of_birth'];
+        $dob="date'".$child_date_of_birth."'";
+
+        $sql = "update volunteers
+            set vol_email='$login_name',
+                vol_password='$password',
+                vol_firstname='$firstName',
+                vol_surname='$surName',
+                vol_child_matched=".$childMatched.",
+                vol_child_gender='$child_gender',
+                vol_child_dob=".$dob."
+            where vol_email='$login_name_prev'";
+
+    }
+    else{
+        /*$child_gender = "other";
+        $dob = "date'1991-03-12'";*/
+
+        $sql = "update volunteers
+            set vol_email='$login_name',
+                vol_password='$password',
+                vol_firstname='$firstName',
+                vol_surname='$surName',
+                vol_child_matched=".$childMatched.",
+                vol_child_gender=NULL,
+                vol_child_dob=NULL
+            where vol_email='$login_name_prev'";
+
+
+    }
+
+
+
 
     $mysqli = new mysqli(host, user, password, database);
-    $mysqli->query($sql);
+
+
+    $mysqli->query($sql) or die("Error: ".$sql."<br>".$mysqli->error);
+
     $mysqli->close();
     
     }

@@ -47,15 +47,20 @@
 			die('Connection failed:'.connect_error);
 		}
 		else{
+
+
+
 			//select all values from database using the entered values as filter
-			$query="SELECT `ad_email`, `ad_password`
-					FROM `administrators`
-					WHERE `ad_email` = '$email' AND `ad_password` = '$password' LIMIT 1";
-			$output=$db->query($query) or die("Selection Query Failed !!!");	//send query or give error message
+			$query="SELECT ad_email, ad_password
+					FROM administrators
+					WHERE ad_email = ? AND ad_password = ?";
+			$stmt = $db->prepare($query);
+			$stmt->bind_param("ss",$_POST['u'],$_POST['p']);
+			$stmt->execute() or die("Error: ".$query."<br>".$db->error);
 
 
 
-			if(mysqli_num_rows($output)){	//if the sql query returns a value
+			if(mysqli_stmt_fetch($stmt)){	//if the sql query returns a value
 				return TRUE; 	//indicate that a value was returned, and user exists in database
 			}
 			else{
@@ -161,7 +166,8 @@ input:focus { box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgb
         <input type="password" name="p" placeholder="Password" required="required" />
         <button type="submit" class="btn btn-primary btn-block btn-large">Login</button>
     </form>
-    </section>
+		  <h3><a href="resetadminpassword.php">Forgotten Password?</a></h3>
+	  </section>
 </div>
 
   </body>

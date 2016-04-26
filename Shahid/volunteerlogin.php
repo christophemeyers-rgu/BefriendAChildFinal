@@ -9,7 +9,7 @@
 		session_start();
 		if(isset($_SESSION["vol_email"]))
 		{
-			header("Location: volunteerhub.php");	//sending to volunteerhub.php
+			header("Location: volunteerhome.php");	//sending to volunteerhub.php
 		}
 		/*else{
 			show_volunteer_login();
@@ -23,9 +23,17 @@
 		$email=$_POST['u'];
 		$password=$_POST['p'];
 		if(volunteer_registered($email,$password)){		//see function below
-			session_start();
-			$_SESSION["vol_email"]=$email;		//session linked to volunteer's email
-			header("Location: volunteerhub.php");
+
+			if(has_child($email)){
+				session_start();
+				$_SESSION["vol_email"]=$email;		//session linked to volunteer's email
+
+				header("Location: volunteerhome.php");
+			}
+			else{
+				echo "<script>alert('You are not currently matched with a child and hence have no surveys to fill out.');</script>";
+			}
+
 		}
 		else{
 /*			show_volunteer_login();*/ //This is no longer necessary
@@ -55,15 +63,21 @@
 			die('Connection failed:'.connect_error);
 		}
 		else{
+
+			//Preventing sql injection by preparing the statment
+
 			//select all values from database using the entered values as filter
-			$query="SELECT `vol_email`, `vol_password`
-						FROM `volunteers`
-						WHERE `vol_email` = '$email' AND `vol_password` = '$password' LIMIT 1";
-			$output=$db->query($query) or die("Selection Query Failed !!!");
+			$query="SELECT vol_email, vol_password
+						FROM volunteers
+						WHERE vol_email = ? AND BINARY vol_password =BINARY ?";
+
+			$stmt = $db->prepare($query);
+			$stmt->bind_param("ss",$_POST['u'],$_POST['p']);
+			$stmt->execute() or die("Error: ".$query."<br>".$db->error);
 
 
 			//if the sql query returns a value
-			if(mysqli_num_rows($output)){
+			if(mysqli_stmt_fetch($stmt)){
 				return TRUE; //indicate that a value was returned, and user exists in database
 			}
 			else{
@@ -71,6 +85,28 @@
 			}
 			$db->close(); // Closing Connection
 		}
+
+	}
+
+	function has_child($email){
+		include("db_connection.php");   //connect to database
+
+		if($db->connect_errno){
+			die('Connectfailed['.$db->connect_error.']');   //if connection fails, return error
+		}
+
+		$namequery = "SELECT vol_child_matched FROM volunteers WHERE vol_email='$email'";  //query for getting name
+
+		$result = $db->query($namequery);
+
+		$row = $result->fetch_array();
+
+		$haschild = $row['vol_child_matched'];
+
+		$db->close();
+
+		return $haschild;
+
 
 	}
 
@@ -157,7 +193,6 @@
 	</style>
 
 
-	/**<script src=""></script>*/
 
 
 
@@ -171,6 +206,7 @@
 			<input type="password" name="p" placeholder="Password" required="required" />
 			<button type="submit" class="btn btn-primary btn-block btn-large">Login</button>
 		</form>
+		<h3><a href="resetvolunteerpassword.php">Forgotten password?</a></h3>
 	</div>
 
 
@@ -181,5 +217,6 @@
 	print($htmlpage);
 }
 -->
+
 
 

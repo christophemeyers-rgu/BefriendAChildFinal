@@ -191,7 +191,7 @@
 		
 		<div class="nav-divider">&nbsp;</div>
 		
-		<ul class="select"><li><b>Data</b>
+		<ul class="select"><li><a href="view.php"><b>Data</b></a>
 
 		<div class="select_sub">
 			<ul class="sub">

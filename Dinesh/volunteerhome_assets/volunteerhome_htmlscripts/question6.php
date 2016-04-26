@@ -1,5 +1,5 @@
 <section class="surveyquestions">
-    <h2>==========[Question 6]:==============</h2>
+    <h2>Question 6</h2>
     <br>
     <br>
 <fieldset>

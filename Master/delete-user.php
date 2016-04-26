@@ -290,15 +290,27 @@ if(isset($_GET['vol_email']))
                     <td><?php echo $row['vol_firstname']; ?></td>
                     <td><?php echo $row['vol_surname']; ?></td>
                     <td><?php
-                        if($row['vol_child_matched']==true){
+                        if($row['vol_child_matched']==1){
                             echo "Yes";
                         }
                         else{
                             echo "No";
                         }
                         ?></td>
-                    <td><?php echo $row['vol_child_gender']; ?></td>
-                    <td><?php echo $row['vol_child_dob']?></td>
+                    <td><?php
+                        if($row['vol_child_matched']==1){
+                            echo $row['vol_child_gender'];
+                        }
+                        else{
+                            echo "/";
+                        }?></td>
+                    <td><?php
+                        if($row['vol_child_matched']==1) {
+                            echo $row['vol_child_dob'];
+                        }
+                        else{
+                            echo "/";
+                        }?></td>
                     <td>
                         <a href="edit-user.php?vol_email=<?php echo $row['vol_email']; ?>" style="color:green;">Edit</a>
                         &nbsp;&nbsp;&nbsp;<a href="?vol_email=<?php echo $row['vol_email']; ?>" style="color:red;">Delete</a>

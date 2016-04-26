@@ -210,6 +210,7 @@ $( "#nextsurveysummary" ).click(function() {
 //============================================================ Previous buttons
 
 $( "#surveystart" ).click(function() {
+    $("#surveybar").toggle("slide", 2000);
     $("#cont1").toggle("slide", 1000);
     $("#welcomepage").toggle("slide", 1000);
 

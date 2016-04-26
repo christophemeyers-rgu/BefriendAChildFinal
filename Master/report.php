@@ -342,7 +342,7 @@ if(!isset($_SESSION['ad_email'])){
         <tbody>
         <tr>
             <td>When asked <?php  echo $question1[0]; ?></td>
-            <td>Total number of responses was <?php echo $total[0]; ?></td>
+            <td>Total number of responses: <?php echo $total[0]; ?></td>
             <td>Number of Happy Kids was <?php echo $happy[0]; ?> <br/> Number of Indifferent kids <?php echo $normal[0]; ?> <br/> Number of kids who didn't enjoy the experience <?php echo $sad[0]; ?> </td>
         </tr>
 
@@ -354,19 +354,19 @@ if(!isset($_SESSION['ad_email'])){
 
         <tr>
             <td> When asked <?php  echo $question3[0]; ?></td>
-            <td> Total responses were <?php echo $total3[0]; ?></td>
+            <td> Total number of responses: <?php echo $total3[0]; ?></td>
             <td> Kids who had healthy meals were <?php echo $healthy[0]; ?> <br/> Number of kids who had unhealthy meals were <?php echo $unhealthy[0]; ?> </td>
         </tr>
 
         <tr>
             <td> When asked <?php  echo $question4[0]; ?></td>
-            <td> Total responses were <?php echo $total2[0]; ?></td>
+            <td> Total number of responses: <?php echo $total2[0]; ?></td>
             <td> Number of kids who would do it again <?php echo $again[0]; ?> <br/> Number of kids who wouldn't do it again <?php echo $notagain[0]; ?> </td>
         </tr>
 
         <tr>
             <td> When asked <?php  echo $question5[0]; ?></td>
-            <td> Total number of responses were <?php echo $total2[0]; ?></td>
+            <td> Total number of responses: <?php echo $total2[0]; ?></td>
             <td> Number of kids who learnt something new were <?php echo $new[0]; ?> <br/> Number of kids who learnt nothing new were <?php echo $notnew[0]; ?> Kids who learnt a little bit of something new were <br/><?php echo $abitnew[0]; ?> </td>
         </tr>
         </tbody>

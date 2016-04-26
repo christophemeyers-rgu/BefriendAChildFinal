@@ -131,6 +131,86 @@ p{
     justify-content: space-between;
 }
 
+#question1buttons{
+    max-width: 700px;
+    height: auto;
+    top: 25%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#question2buttons{
+    max-width: 700px;
+    height: auto;
+    top: 25%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#question3buttons{
+    max-width: 700px;
+    height: auto;
+    top: 25%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#question4buttons{
+    max-width: 700px;
+    height: auto;
+    top: 25%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#question5buttons{
+    max-width: 700px;
+    height: auto;
+    top: 25%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#question6buttons{
+    max-width: 700px;
+    height: auto;
+    top: 25%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
 /* ==========================================================Survey progress Bar */
 .ui-progressbar {
     position: relative;

@@ -207,16 +207,11 @@
                                                         </td>
                                                     </tr>
                                                 </table>
-                                                </form>
-                                                <script src="jsadminpage/jquery/enabledisablegender.js" type="text/javascript"></script>
                                                 <!-- end id-form  -->
 
                                             </td>
 
                                             <td>
-
-
-
                                                 <tr>
                                                     <td><img src="imagesadminpage/shared/blank.gif" width="695" height="1" alt="blank" /></td>
                                                     <td></td>
@@ -238,7 +233,8 @@
                                         </tr>
                                     </table>
 
-
+                                    </form>
+                                    <script src="jsadminpage/jquery/enabledisablegender.js" type="text/javascript"></script>
 
 
                                     <div class="clear">&nbsp;</div>

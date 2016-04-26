@@ -251,9 +251,10 @@ if(!isset($_SESSION['ad_email'])){
 
             $id = $_GET['vol_id'];
 
+            echo $id;
             //number of submissions
             $sql_submissions = "select submission_id from submissions where vol_id =$id";
-
+/*
             //how much money did you spend?
             $sql_money_sum = "select sum(answer_text_req), `answers`.question_id from answers, questions where submission_id in (select submission_id from submissions where vol_id =$id) and `answers`.question_id = `questions`.question_id and `answers`.question_id=11";
             $sql_money_min = "select min(answer_text_req), `answers`.question_id from answers, questions where submission_id in (select submission_id from submissions where vol_id =$id) and `answers`.question_id = `questions`.question_id and `answers`.question_id=11";
@@ -338,7 +339,7 @@ if(!isset($_SESSION['ad_email'])){
 
                 }
             }
-
+*/
             ?>
         </table>
     </div>

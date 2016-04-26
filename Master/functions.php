@@ -208,8 +208,8 @@ function updateUser() {
 
     }
     else{
-        $child_gender = NULL;
-        $dob = NULL;
+        $child_gender = "other";
+        $dob = "date'1991-03-12'";
 
         /*$sql = "update volunteers
             set vol_email='$login_name',

@@ -340,14 +340,14 @@ if(!isset($_SESSION['ad_email'])){
 
                     <tr>
                         <td><?php echo $counter; ?></td>
-                        <td>Total amount of money spent was <?php echo $sum[0]; ?></td>
-                        <td>The average spending was <?php echo $avg[0]; ?> <br/>The minimum amount spent was <?php echo $min?> <br/>The maximum amount spent was <?php echo $max?></td>
+                        <td>Did you eat something healthy? <?php echo $sum[0]; ?></td>
+                        <td>Number who ate something healthy were <?php echo $healthy_yes[0]; ?> <br/>The number that ate something unhealthy were <?php echo $healthy_no?> </td>
                     </tr>
 
                     <tr>
                         <td><?php echo $counter; ?></td>
-                        <td>Total amount of money spent was <?php echo $sum[0]; ?></td>
-                        <td>The average spending was <?php echo $avg[0]; ?> <br/>The minimum amount spent was <?php echo $min?> <br/>The maximum amount spent was <?php echo $max?></td>
+                        <td>Would you do it again? <?php echo $sum[0]; ?></td>
+                        <td>Total number that said they'd do it again were <?php echo $again_yes[0]; ?> <br/>Number that said they wouldnt take the activity again <?php echo $again_no?></td>
                     </tr>
                     </tbody>
 

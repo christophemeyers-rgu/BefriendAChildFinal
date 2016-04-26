@@ -197,6 +197,12 @@
                                                                 <input type="radio" name="child_gender" value="female" class="disabledelements" id="gender" required>Female
                                                                 <input type="radio" name="child_gender" value="other" class="disabledelements" id="gender" required checked>Other
                                                             <?php
+                                                            }else {
+                                                                ?>
+                                                                <input type="radio" name="child_gender" value="male" class="disabledelements" id="gender" required>Male
+                                                                <input type="radio" name="child_gender" value="female" class="disabledelements" id="gender" required>Female
+                                                                <input type="radio" name="child_gender" value="other" class="disabledelements" id="gender" required>Other
+                                                                <?php
                                                             }
                                                             ?>
                                                         </th>

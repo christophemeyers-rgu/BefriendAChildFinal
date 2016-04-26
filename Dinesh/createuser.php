@@ -249,21 +249,21 @@
                                         <tr>
                                             <td>If yes, please answer the following two:</td>
                                         </tr>
-
-                                        <tr>
+                                        <div id="childinfo" style="display: none;">
                                             <th valign="top">Child's gender:</th>
-                                            <td class="childinfo">
+                                            <td>
                                                 <input type="radio" name="child_gender" value="male" class="disabledelements" id="gender" required disabled >Male
                                                 <input type="radio" name="child_gender" value="female" class="disabledelements" id="gender" required disabled>Female
                                                 <input type="radio" name="child_gender" value="other" class="disabledelements" id="gender" required disabled>Other
                                             </td>
-                                        </tr>
-                                        <tr>
-                                            <th valign="top">Child's date of birth:(dd/mm/yy)</th>
-                                            <td class="childinfo">
+
+
+                                            <th valign="top">Child's date of birth: (dd/mm/yy)</th>
+                                            <td>
                                                 <input  type="date" class="disabledelements" disabled name="date_of_birth" id="dateofbirth" required >
                                             </td>
-                                        </tr>
+                                        </div>
+
 
                                         <tr>
                                             <th>&nbsp;</th>

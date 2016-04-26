@@ -216,7 +216,7 @@ function updateUser() {
                 vol_surname='$surName',
                 vol_child_matched=".$childMatched.",
                 vol_child_gender='$child_gender',
-                vol_child_dob=".$dob.";
+                vol_child_dob=".$dob."
             where vol_email='$login_name_prev'";
 
     $mysqli = new mysqli(host, user, password, database);

@@ -11,7 +11,7 @@ $( "#start" ).click(function() {
         if ($('#eventdate')[0].checkValidity()) {
             $("#welcomepage").toggle("fade", 2000);
             $("#surveybar").toggle("fade", 2000);
-            $("#cont1").toggle("slide", 2000);
+            $("#cont1").toggle("slide", 3000);
         }else {
             $("#surveyform").find(':submit').click()
         }
@@ -22,7 +22,7 @@ $( "#start" ).click(function() {
         }else{
             $("#welcomepage").toggle("fade", 2000);
             $("#surveybar").toggle("fade", 2000);
-            $("#cont1").toggle("explode", 2000);
+            $("#cont1").toggle("slide", 3000);
         }
     }
 });

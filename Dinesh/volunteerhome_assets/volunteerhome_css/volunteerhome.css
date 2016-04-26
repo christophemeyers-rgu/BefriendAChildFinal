@@ -118,6 +118,9 @@ p{
     max-width: 650px;
     margin-right: auto;
     margin-left: auto;
+    border: 2px solid yellowgreen;
+    border-radius: 30px;
+
 }
 .progress-label {
     position: absolute;

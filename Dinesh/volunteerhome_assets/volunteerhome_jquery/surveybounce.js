@@ -3,7 +3,7 @@
 //============================================================ Next buttons
 
 
-$( "#buttonnext" ).click(function() {
+$( "#startsurvey" ).click(function() {
 
     //Checks if browser supports required attribute using Modernizr's feature detection JavaScript code
     if (Modernizr.formvalidation) {

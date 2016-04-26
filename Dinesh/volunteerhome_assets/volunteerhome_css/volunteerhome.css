@@ -13,8 +13,10 @@ h2{
     color: darkred;
     border: 2px solid black;
     max-width: 300px;
-    border-radius: 20px;
+    border-radius: 25px;
     box-shadow: 0 9px #999;
+    display: flex;
+    justify-content: center;
 }
 
 #welcomepage{

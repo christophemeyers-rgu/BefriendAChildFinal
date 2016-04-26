@@ -209,6 +209,14 @@ $( "#nextsurveysummary" ).click(function() {
 
 //============================================================ Previous buttons
 
+$( "#startsurvey" ).click(function() {
+    $("#cont1").toggle("slide", 1000);
+    $("#welcomepage").toggle("slide", 1000);
+
+    $( "#progressbar" ).progressbar({
+        value: 0
+    });
+});
 
 $( "#previous1" ).click(function() {
     $("#cont2").toggle("slide", 1000);

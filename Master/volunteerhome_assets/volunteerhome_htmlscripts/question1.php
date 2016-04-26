@@ -19,5 +19,6 @@
 </fieldset>
 </section>
 <section class="surveynavbuttons">
+    <input class="navbuttonprevious"" type="button" id="surveystart" name="previous">
     <input class="navbuttonnext" type="button" id="next2" name="next">
 </section>

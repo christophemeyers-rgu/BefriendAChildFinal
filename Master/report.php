@@ -350,8 +350,8 @@ if(!isset($_SESSION['ad_email'])){
 
         <tr>
             <td> When asked <?php  echo $question2[0]; ?></td>
-            <td>Total amount spent during outings was <?php echo $sum[0]; ?></td>
-            <td>Average spending was <?php echo $avg[0]; ?> <br/> Maximum spending was <?php echo $max[0]; ?> <br/> Minimum spending was <?php echo $min[0]; ?> </td>
+            <td>Total amount spent during outings was £<?php echo $sum[0]; ?></td>
+            <td>Average spending was £<?php echo $avg[0]; ?> <br/> Maximum spending was £<?php echo $max[0]; ?> <br/> Minimum spending was £<?php echo $min[0]; ?> </td>
         </tr>
 
         <tr>

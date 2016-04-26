@@ -20,13 +20,11 @@
         updateUser();
         header("location: delete-user.php");
     }
-    if(isset($_GET['vol_email']))
+    elseif(isset($_GET['vol_email']))
     {
         $user_login=$_GET['vol_email'];
         $result = getUser($user_login);
         $row = mysqli_fetch_array($result);
-    }else{
-        header("location: adminhome.php");
     }
 ?>
 
@@ -177,19 +175,37 @@
                                                             }
                                                             ?>
 
-                                                    <tr id="childinfo" style="display: none;">
+                                                    <tr id="childinfo">
                                                         <th valign="top">Child's gender:</th>
                                                         <th>
-                                                            <input type="radio" name="child_gender" value="male" class="disabledelements" id="gender" required disabled >Male
-                                                            <input type="radio" name="child_gender" value="female" class="disabledelements" id="gender" required disabled>Female
-                                                            <input type="radio" name="child_gender" value="other" class="disabledelements" id="gender" required disabled>Other
+                                                            <?php
+                                                            if ($row['vol_child_gender']=="male"){
+                                                                ?>
+                                                                <input type="radio" name="child_gender" value="male" class="disabledelements" id="gender" required checked >Male
+                                                                <input type="radio" name="child_gender" value="female" class="disabledelements" id="gender" required>Female
+                                                                <input type="radio" name="child_gender" value="other" class="disabledelements" id="gender" required>Other
+                                                                <?php
+                                                            }else if ($row['vol_child_gender']=="female"){
+                                                            ?>
+                                                                <input type="radio" name="child_gender" value="male" class="disabledelements" id="gender" required>Male
+                                                                <input type="radio" name="child_gender" value="female" class="disabledelements" id="gender" required checked>Female
+                                                                <input type="radio" name="child_gender" value="other" class="disabledelements" id="gender" required>Other
+                                                            <?php
+                                                            }else if ($row['vol_child_gender']=="other"){
+                                                            ?>
+                                                                <input type="radio" name="child_gender" value="male" class="disabledelements" id="gender" required>Male
+                                                                <input type="radio" name="child_gender" value="female" class="disabledelements" id="gender" required>Female
+                                                                <input type="radio" name="child_gender" value="other" class="disabledelements" id="gender" required checked>Other
+                                                            <?php
+                                                            }
+                                                            ?>
                                                         </th>
 
 
                                                         <th valign="top">Child's date of birth:</th>
 
                                                         <th>
-                                                            <input  type="date" class="disabledelements" disabled name="date_of_birth" id="dateofbirth" required >
+                                                            <input  type="date" class="disabledelements" disabled name="date_of_birth" id="dateofbirth" value="<?php echo $row['vol_child_dob']; ?>"  required >
                                                         </th>
                                                     </tr>
 
@@ -234,7 +250,7 @@
                                     </table>
 
                                     </form>
-                                    <script src="jsadminpage/jquery/enabledisablegender.js" type="text/javascript"></script>
+                                    <script src="jsadminpage/jquery/edituser.js" type="text/javascript"></script>
 
 
                                     <div class="clear">&nbsp;</div>

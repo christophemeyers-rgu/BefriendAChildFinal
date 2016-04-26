@@ -75,10 +75,22 @@
 					$dob="date'1991-03-12'";
 				}
 
-				$insert="INSERT INTO volunteers (vol_email, vol_password, vol_firstname,vol_surname,vol_child_matched,vol_child_gender,vol_child_dob)
-				VALUES('".$email."','".$password."','".$firstname."','".$surname."',".$child_matched.",'".$child_gender."',".$dob.")";
 
-				$outcome=$db->query($insert) or die("Error: ".$insert."<br>".$db->error);
+				$method="SHA256";
+				$salt=openssl_random_pseudo_bytes(8);                   //generate an 8 byte-long random salt
+				$digest=openssl_digest($salt.$password,$method);        //compure hash value of salt+password
+				$pwd = bin2hex($salt).$digest;   //hex encode salt before concatenanting with hash value
+
+
+				$insert="INSERT INTO volunteers (vol_email, vol_password, vol_firstname,vol_surname,vol_child_matched,vol_child_gender,vol_child_dob,vol_salt)
+				VALUES('".$email."','".$pwd."','".$firstname."','".$surname."',".$child_matched.",'".$child_gender."',".$dob.",?)";
+
+				$stmt = $db->prepare($insert);
+				$stmt->bind_param("s",$salt);
+				$stmt->execute() or die("Error: ".$insert."<br>".$db->error);
+
+
+				//$outcome=$db->query($insert) or die("Error: ".$insert."<br>".$db->error);
 
 				header("Location: createuser.php?Success=Yes");
 

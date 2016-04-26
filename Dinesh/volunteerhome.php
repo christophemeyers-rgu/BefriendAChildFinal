@@ -150,7 +150,7 @@ function get_volunteer_name($email){
 
 
     <!-- (START OF MAIN) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-    <main id="main">
+    <main>
 
 
         <!-- (START OF SURVEY) - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->

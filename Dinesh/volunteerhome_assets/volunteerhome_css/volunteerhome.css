@@ -1,3 +1,7 @@
+body{
+    background-color: green;
+}
+
 header{
     max-width: 600px;
     height: auto;
@@ -7,11 +11,6 @@ header{
     margin-right: auto;
     display: flex;
     justify-content: space-around;
-}
-
-#main{
-    max-width: 1000px;
-    background-color: green;
 }
 
 h2{

@@ -367,7 +367,7 @@ if(!isset($_SESSION['ad_email'])){
         <tr>
             <td> When asked <?php  echo $question5[0]; ?></td>
             <td> Total number of responses: <?php echo $total2[0]; ?></td>
-            <td> Number of kids who learnt something new were <?php echo $new[0]; ?> <br/> Number of kids who learnt nothing new were <?php echo $notnew[0]; ?> Kids who learnt a little bit of something new were <br/><?php echo $abitnew[0]; ?> </td>
+            <td> Number of kids who learnt something new were <?php echo $new[0]; ?> <br/> Number of kids who learnt nothing new were <?php echo $notnew[0]; ?><br> Kids who learnt a little bit of something new were <br/><?php echo $abitnew[0]; ?> </td>
         </tr>
         </tbody>
         <?php

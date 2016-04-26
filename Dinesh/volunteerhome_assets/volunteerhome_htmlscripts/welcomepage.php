@@ -14,7 +14,7 @@
 </h4>
 
 <section class="surveyeventdate">
-    <h2>======[To begin survey enter the date of outing]:======</h2>
+    <h2>To begin survey enter the date of outing</h2>
     <fieldset>
         <label for="eventdate">Enter date (dd/mm/yy)</label>
         <input required type="date" name="eventdate" id="eventdate">

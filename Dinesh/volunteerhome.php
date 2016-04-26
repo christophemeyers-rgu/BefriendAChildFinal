@@ -217,9 +217,6 @@ function get_volunteer_name($email){
 
                 <section class="surveynavbuttons">
                     <input class="navbuttonprevious"" type="button" id="startsurvey" name="previous">
-                </section>
-
-                <section class="surveynavbuttons">
                     <input class="navbuttonnext" type="button" id="next2" name="next">
                 </section>
 

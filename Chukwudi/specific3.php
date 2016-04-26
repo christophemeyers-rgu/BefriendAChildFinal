@@ -261,17 +261,17 @@ if(!isset($_SESSION['ad_email'])){
             $sql_money_max = "select max(answer_text_req), `answers`.question_id from answers, questions where submission_id in (select submission_id from submissions where vol_id =$id) and `answers`.question_id = `questions`.question_id and `answers`.question_id=11";
             $sql_money_avg = "select avg(answer_text_req), `answers`.question_id from answers, questions where submission_id in (select submission_id from submissions where vol_id =$id) and `answers`.question_id = `questions`.question_id and `answers`.question_id=11";
 
-            $output_sum = $db->query($sql_money_sum);
-            $output_min = $db->query($sql_money_min);
-            $output_max = $db->query($sql_money_max);
-            $output_avg = $db->query($sql_money_avg);
+            $output_sum = $db->query($sql_money_sum) or die($db->connect_error);
+            $output_min = $db->query($sql_money_min) or die($db->connect_error);
+            $output_max = $db->query($sql_money_max) or die($db->connect_error);
+            $output_avg = $db->query($sql_money_avg) or die($db->connect_error);
 
             $sum = mysqli_fetch_array($output_sum);
             $min = mysqli_fetch_array($output_min);
             $max = mysqli_fetch_array($output_max);
             $avg = mysqli_fetch_array($output_avg);
 
-            echo $output_sum;/*
+
             //how much fun did you have today?
             $sql_fun_happy = "select count(answer_text_req) from answers, questions where submission_id in (select submission_id from submissions where vol_id =$id) and `answers`.question_id = `questions`.question_id and `answers`.question_id=21 and answer_text_req=0";
             $sql_fun_normal = "select count(answer_text_req) from answers, questions where submission_id in (select submission_id from submissions where vol_id =$id) and `answers`.question_id = `questions`.question_id and `answers`.question_id=21 and answer_text_req=1";
@@ -315,19 +315,6 @@ if(!isset($_SESSION['ad_email'])){
             $again_yes = mysqli_fetch_array($output_again_yes);
             $again_no = mysqli_fetch_array($ouput_again_no);
 
-            if($db->connect_errno){
-                die('Connectfailed['.$db->connect_error.']');
-            }
-
-            $results = $db->query($sql);
-
-            if(mysqli_num_rows($results)>0){
-
-                $counter = 0;
-                while ($row= mysqli_fetch_array($results))
-                {
-                    $counter++;
-
                     ?>
                     <tbody>
                     <tr>
@@ -336,12 +323,7 @@ if(!isset($_SESSION['ad_email'])){
                         <td>The average spending was <?php echo $avg[0]; ?> <br/>The minimum amount spent was <?php echo $min?> <br/>The maximum amount spent was <?php echo $max?></td>
                     </tr>
                     </tbody>
-                    <?php
 
-                }
-            }
-*/
-            ?>
         </table>
     </div>
     <!--  end content -->

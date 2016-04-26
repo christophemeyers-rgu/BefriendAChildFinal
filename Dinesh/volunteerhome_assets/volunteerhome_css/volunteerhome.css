@@ -31,39 +31,54 @@ h2{
     right: 0;
     margin-left: auto;
     margin-right: auto;
-    border: 2px solid yellowgreen;
-    border-radius: 30px;
-    box-shadow: 0 9px #999;
 }
 
 #cont1 {
     max-width: 600px;
     background: yellowgreen;
+    border: 2px solid yellowgreen;
+    border-radius: 30px;
+    box-shadow: 0 9px #999;
 }
 
 #cont2 {
     max-width: 600px;
     background-color: palevioletred;
+    border: 2px solid yellowgreen;
+    border-radius: 30px;
+    box-shadow: 0 9px #999;
 }
 
 #cont3 {
     max-width: 600px;
     background-color: lightsalmon;
+    border: 2px solid yellowgreen;
+    border-radius: 30px;
+    box-shadow: 0 9px #999;
 }
 
 #cont4 {
     max-width: 600px;
     background-color: yellow;
+    border: 2px solid yellowgreen;
+    border-radius: 30px;
+    box-shadow: 0 9px #999;
 }
 
 #cont5 {
     max-width: 600px;
     background-color: lightskyblue;
+    border: 2px solid yellowgreen;
+    border-radius: 30px;
+    box-shadow: 0 9px #999;
 }
 
 #cont6 {
     max-width: 600px;
     background-color: palevioletred;
+    border: 2px solid yellowgreen;
+    border-radius: 30px;
+    box-shadow: 0 9px #999;
 }
 
 #surveysummaryandsubmission {
@@ -74,6 +89,9 @@ h2{
     margin-left: auto;
     margin-right: auto;
     background-color: aliceblue;
+    border: 2px solid yellowgreen;
+    border-radius: 30px;
+    box-shadow: 0 9px #999;
 }
 
 p{

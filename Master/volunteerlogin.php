@@ -55,15 +55,21 @@
 			die('Connection failed:'.connect_error);
 		}
 		else{
+
+			//Preventing sql injection by preparing the statment
+
 			//select all values from database using the entered values as filter
-			$query="SELECT `vol_email`, `vol_password`
-						FROM `volunteers`
-						WHERE `vol_email` = '$email' AND `vol_password` = '$password' LIMIT 1";
-			$output=$db->query($query) or die("Selection Query Failed !!!");
+			$query="SELECT vol_email, vol_password
+						FROM volunteers
+						WHERE vol_email = ? AND BINARY vol_password =BINARY ?";
+
+			$stmt = $db->prepare($query);
+			$stmt->bind_param("ss",$_POST['u'],$_POST['p']);
+			$stmt->execute() or die("Error: ".$query."<br>".$db->error);
 
 
 			//if the sql query returns a value
-			if(mysqli_num_rows($output)){
+			if(mysqli_stmt_fetch($stmt)){
 				return TRUE; //indicate that a value was returned, and user exists in database
 			}
 			else{
@@ -170,6 +176,7 @@
 			<input type="password" name="p" placeholder="Password" required="required" />
 			<button type="submit" class="btn btn-primary btn-block btn-large">Login</button>
 		</form>
+		<h3>Forgot Password ? <a href="resetvolunteerpassword.php">Click Here </a> to recover</h3>
 	</div>
 
 

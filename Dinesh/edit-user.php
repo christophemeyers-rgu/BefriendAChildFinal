@@ -187,14 +187,14 @@
                                                                 <?php
                                                             }else if ($row['vol_child_gender']=="female"){
                                                             ?>
-                                                                <input type="radio" name="child_gender" value="male" class="disabledelements" id="gender" required disabled checked >Male
+                                                                <input type="radio" name="child_gender" value="male" class="disabledelements" id="gender" required disabled>Male
                                                                 <input type="radio" name="child_gender" value="female" class="disabledelements" id="gender" required disabled checked>Female
                                                                 <input type="radio" name="child_gender" value="other" class="disabledelements" id="gender" required disabled>Other
                                                             <?php
                                                             }else if ($row['vol_child_gender']=="other"){
                                                             ?>
-                                                                <input type="radio" name="child_gender" value="male" class="disabledelements" id="gender" required disabled checked >Male
-                                                                <input type="radio" name="child_gender" value="female" class="disabledelements" id="gender" required disabled checked>Female
+                                                                <input type="radio" name="child_gender" value="male" class="disabledelements" id="gender" required disabled>Male
+                                                                <input type="radio" name="child_gender" value="female" class="disabledelements" id="gender" required disabled>Female
                                                                 <input type="radio" name="child_gender" value="other" class="disabledelements" id="gender" required disabled checked>Other
                                                             <?php
                                                             }

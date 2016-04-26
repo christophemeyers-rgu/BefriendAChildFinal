@@ -175,7 +175,7 @@
                                                             }
                                                             ?>
 
-                                                    <tr id="childinfo" style="display: none;">
+                                                    <tr id="childinfo">
                                                         <th valign="top">Child's gender:</th>
                                                         <th>
                                                             <?php

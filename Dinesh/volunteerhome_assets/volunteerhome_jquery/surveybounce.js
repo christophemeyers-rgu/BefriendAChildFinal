@@ -3,7 +3,7 @@
 //============================================================ Next buttons
 
 
-$( "#start" ).click(function() {
+$( "#buttonnext" ).click(function() {
 
     //Checks if browser supports required attribute using Modernizr's feature detection JavaScript code
     if (Modernizr.formvalidation) {
@@ -29,7 +29,7 @@ $( "#start" ).click(function() {
     }
 });
 
-$( "#next2" ).click(function() {
+$( "#buttonnext" ).click(function() {
 
     //Checks if browser supports required attribute using Modernizr's feature detection JavaScript code
     if (Modernizr.formvalidation) {
@@ -61,7 +61,7 @@ $( "#next2" ).click(function() {
     }
 });
 
-$( "#next3" ).click(function() {
+$( "#buttonnext" ).click(function() {
 
     //Checks if browser supports required attribute using Modernizr's feature detection JavaScript code
     if (Modernizr.formvalidation) {
@@ -92,7 +92,7 @@ $( "#next3" ).click(function() {
     }
 });
 
-$( "#next4" ).click(function() {
+$( "#buttonnext" ).click(function() {
 
     //Checks if browser supports required attribute using Modernizr's feature detection JavaScript code
     if (Modernizr.formvalidation) {
@@ -121,7 +121,7 @@ $( "#next4" ).click(function() {
     }
 });
 
-$( "#next5" ).click(function() {
+$( "#buttonnext" ).click(function() {
 
     //Checks if browser supports required attribute using Modernizr's feature detection JavaScript code
     if (Modernizr.formvalidation) {
@@ -149,7 +149,7 @@ $( "#next5" ).click(function() {
     }
 });
 
-$( "#next6" ).click(function() {
+$( "#buttonnext" ).click(function() {
 
     //Checks if browser supports required attribute using Modernizr's feature detection JavaScript code
     if (Modernizr.formvalidation) {
@@ -177,7 +177,7 @@ $( "#next6" ).click(function() {
     }
 });
 
-$( "#nextsurveysummary" ).click(function() {
+$( "#buttonnext" ).click(function() {
 
     //Checks if browser supports required attribute using Modernizr's feature detection JavaScript code
     if (Modernizr.formvalidation) {
@@ -219,12 +219,12 @@ $( "#nextsurveysummary" ).click(function() {
 
 //============================================================ Previous buttons
 
-$( "#startsurvey" ).click(function() {
+$( "#buttonprevious" ).click(function() {
     $("#cont1").toggle("slide", 1000);
     $("#welcomepage").toggle("slide", 1000);
 });
 
-$( "#previous1" ).click(function() {
+$( "#buttonnext" ).click(function() {
     $("#cont2").toggle("slide", 1000);
     $("#cont1").toggle("slide", 1000);
 
@@ -233,7 +233,7 @@ $( "#previous1" ).click(function() {
     });
 });
 
-$( "#previous2" ).click(function() {
+$( "#buttonnext" ).click(function() {
     $("#cont3").toggle("slide", 1000);
     $("#cont2").toggle("slide", 1000);
 
@@ -242,7 +242,7 @@ $( "#previous2" ).click(function() {
     });
 });
 
-$( "#previous3" ).click(function() {
+$( "#buttonnext" ).click(function() {
     $("#cont4").toggle("slide", 1000);
     $("#cont3").toggle("slide", 1000);
 
@@ -251,7 +251,7 @@ $( "#previous3" ).click(function() {
     });
 });
 
-$( "#previous4" ).click(function() {
+$( "#buttonnext" ).click(function() {
     $("#cont5").toggle("slide", 1000);
     $("#cont4").toggle("slide", 1000);
 
@@ -260,7 +260,7 @@ $( "#previous4" ).click(function() {
     });
 });
 
-$( "#previous5" ).click(function() {
+$( "#buttonnext" ).click(function() {
     $("#cont6").toggle( "slide", 1000 );
     $("#cont5").toggle("slide", 1000);
 

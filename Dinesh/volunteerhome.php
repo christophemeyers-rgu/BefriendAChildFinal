@@ -216,33 +216,8 @@ function get_volunteer_name($email){
 
 
                 <section class="surveynavbuttons">
-                    <input class="navbuttonprevious"" type="button" id="startsurvey" name="previous">
-                    <input class="navbuttonnext" type="button" id="next2" name="next">
-                </section>
-
-                <section class="surveynavbuttons">
-                    <input class="navbuttonprevious"" type="button" id="previous1" name="previous">
-                    <input class="navbuttonnext" type="button" id="next3" name="next"></a>
-                </section>
-
-                <section class="surveynavbuttons">
-                    <input class="navbuttonprevious"" type="button" id="previous2" name="previous">
-                    <input class="navbuttonnext" type="button" id="next4" name="next">
-                </section>
-
-                <section class="surveynavbuttons">
-                    <input class="navbuttonprevious"" type="button" id="previous3" name="previous">
-                    <input class="navbuttonnext" type="button" id="next5" name="next">
-                </section>
-
-                <section class="surveynavbuttons">
-                    <input class="navbuttonprevious"" type="button" id="previous4" name="previous">
-                    <input class="navbuttonnext" type="button" id="next6" name="next">
-                </section>
-
-                <section class="surveynavbuttons">
-                    <input class="navbuttonprevious" type="button" id="previous5" name="previous">
-                    <input class="navbuttonnext" type="button" id="nextsurveysummary" name="next">
+                    <input class="navbuttonprevious"" type="button" id="buttonprevious" name="previous">
+                    <input class="navbuttonnext" type="button" id="buttonnext" name="next">
                 </section>
 
 

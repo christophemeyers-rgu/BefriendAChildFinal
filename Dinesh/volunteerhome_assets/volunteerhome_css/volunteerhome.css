@@ -12,6 +12,7 @@ header{
 h2{
     color: darkred;
     border: 2px solid black;
+    max-width: 300px;
 }
 
 #welcomepage{

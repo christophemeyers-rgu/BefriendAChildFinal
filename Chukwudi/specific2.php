@@ -242,9 +242,7 @@ if(!isset($_SESSION['ad_email'])){
             <thead>
             <tr>
                 <th>ID</th>
-                <th>User name</th>
-                <th>First name</th>
-                <th>Surname</th>
+                <th>Email address</th>
             </tr>
             </thead>
             <?php

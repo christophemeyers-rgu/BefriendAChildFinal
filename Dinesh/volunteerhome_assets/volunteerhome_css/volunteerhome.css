@@ -127,8 +127,6 @@ p{
     right: 0;
     margin-left: auto;
     margin-right: auto;
-    display: flex;
-    justify-content: space-between;
 }
 
 #question1buttons{

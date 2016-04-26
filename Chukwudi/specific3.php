@@ -323,31 +323,31 @@ if(!isset($_SESSION['ad_email'])){
                     <tr>
                         <td><?php echo $counter; ?></td>
                         <td>Total amount of money spent was <?php echo $sum[0]; ?></td>
-                        <td>The average spending was <?php echo $avg[0]; ?> <br/>The minimum amount spent was <?php echo $min?> <br/>The maximum amount spent was <?php echo $max?></td>
+                        <td>The average spending was <?php echo $avg[0]; ?> <br/>The minimum amount spent was <?php echo $min[0]?> <br/>The maximum amount spent was <?php echo $max[0]?></td>
                     </tr>
 
                     <tr>
                         <td><?php echo $counter; ?></td>
                         <td>Total number of responses <?php echo $sum[0]; ?></td>
-                        <td>Total number of happy kids <?php echo $happy[0]; ?> <br/>Number of indifferent kids <?php echo $normal?> <br/>Number of sad kids <?php echo $sad?></td>
+                        <td>Total number of happy kids <?php echo $happy[0]; ?> <br/>Number of indifferent kids <?php echo $normal[0]?> <br/>Number of sad kids <?php echo $sad[0]?></td>
                     </tr>
 
                     <tr>
                         <td><?php echo $counter; ?></td>
                         <td>Did you learn something new? <?php echo $sum[0]; ?></td>
-                        <td>Number that learnt something new <?php echo $learn_yes[0]; ?> <br/>number that learnt something relatively new <?php echo $learn_might?> <br/>Number that had done it before <?php echo $max?></td>
+                        <td>Number that learnt something new <?php echo $learn_yes[0]; ?> <br/>number that learnt something relatively new <?php echo $learn_might[0]?> <br/>Number that had done it before <?php echo $max?></td>
                     </tr>
 
                     <tr>
                         <td><?php echo $counter; ?></td>
                         <td>Did you eat something healthy? <?php echo $sum[0]; ?></td>
-                        <td>Number who ate something healthy were <?php echo $healthy_yes[0]; ?> <br/>The number that ate something unhealthy were <?php echo $healthy_no?> </td>
+                        <td>Number who ate something healthy were <?php echo $healthy_yes[0]; ?> <br/>The number that ate something unhealthy were <?php echo $healthy_no[0]?> </td>
                     </tr>
 
                     <tr>
                         <td><?php echo $counter; ?></td>
                         <td>Would you do it again? <?php echo $sum[0]; ?></td>
-                        <td>Total number that said they'd do it again were <?php echo $again_yes[0]; ?> <br/>Number that said they wouldnt take the activity again <?php echo $again_no?></td>
+                        <td>Total number that said they'd do it again were <?php echo $again_yes[0]; ?> <br/>Number that said they wouldnt take the activity again <?php echo $again_no[0]?></td>
                     </tr>
                     </tbody>
 

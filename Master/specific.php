@@ -167,9 +167,7 @@ if(!isset($_SESSION['ad_email'])){
         <div id="nav-right">
 
             <div class="nav-divider">&nbsp;</div>
-            <div class="showhide-account"><img src="../Chukwudi/imagesadminpage/shared/nav/nav_myaccount.gif" width="93" height="14" alt="" /></div>
-            <div class="nav-divider">&nbsp;</div>
-            <a href="../Chukwudi/logout.php" id="logout"><img src="../Chukwudi/imagesadminpage/shared/nav/nav_logout.gif" width="64" height="14" alt="" /></a>
+            <a href="logout.php" id="logout"><img src="imagesadminpage/shared/nav/nav_logout.gif" width="64" height="14" alt="" /></a>
             <div class="clear">&nbsp;</div>
 
 
@@ -181,7 +179,7 @@ if(!isset($_SESSION['ad_email'])){
         <div class="nav">
             <div class="table">
 
-                <ul class="select"><li><a href="../Chukwudi/adminhome.php"><b>Home</b></a>
+                <ul class="select"><li><a href="adminhome.php"><b>Home</b></a>
 
                     </li>
                 </ul>
@@ -190,12 +188,12 @@ if(!isset($_SESSION['ad_email'])){
 
 
 
-                <ul class="select"><li><a href="#nogo"><b>User Login Setup</b></a>
+                <ul class="select"><li><a href="#nogo"><b>Volunteer Management</b></a>
 
                         <div class="select_sub">
                             <ul class="sub">
-                                <li><a href="../Chukwudi/createlogin.php">Create User Login</a></li>
-                                <li><a href="../Chukwudi/delete-user.php">Delete User Login</a></li>
+                                <li><a href="createlogin.php">Create Volunteer Account</a></li>
+                                <li><a href="delete-user.php">Edit Volunteers</a></li>
                             </ul>
                         </div>
 
@@ -204,14 +202,12 @@ if(!isset($_SESSION['ad_email'])){
 
                 <div class="nav-divider">&nbsp;</div>
 
-                <ul class="select"><li><a href="#nogo"><b>Report</b></a>
+                <ul class="select"><li><a href="#nogo"><b>Data</b></a>
 
                         <div class="select_sub">
                             <ul class="sub">
-                                <li><a href="view.php">Full Report</a></li>
-                                <li><a href="view%20report.php">Survey Query</a></li>
-                                <li><a href="#nogo">Delete Report</a></li>
-
+                                <li><a href="view.php">Surveys</a></li>
+                                <li><a href="view%20report.php">Reports</a></li>
                             </ul>
                         </div>
 

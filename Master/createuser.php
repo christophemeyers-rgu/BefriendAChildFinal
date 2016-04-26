@@ -130,23 +130,21 @@
                             </ul>
                         </div>
 
-                </li>
+                    </li>
                 </ul>
 
                 <div class="nav-divider">&nbsp;</div>
 
-                <ul class="select"><li><a href="#nogo"><b>Report</b></a>
+                <ul class="select"><li><a href="#nogo"><b>Data</b></a>
 
-                    <div class="select_sub">
-                        <ul class="sub">
-                            <li><a href="#nogo">Full Report</a></li>
-                            <li><a href="#nogo">Survey Query</a></li>
-                            <li><a href="#nogo">Delete Report</a></li>
+                        <div class="select_sub">
+                            <ul class="sub">
+                                <li><a href="view.php">Surveys</a></li>
+                                <li><a href="view%20report.php">Reports</a></li>
+                            </ul>
+                        </div>
 
-                        </ul>
-                    </div>
-
-                </li>
+                    </li>
                 </ul>
 
                 <div class="nav-divider">&nbsp;</div>

@@ -12,6 +12,7 @@ header{
 main{
     max-width: 650px;
     background-color: green;
+    position: absolute;
 }
 
 

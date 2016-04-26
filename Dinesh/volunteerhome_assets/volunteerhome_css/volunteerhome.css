@@ -22,8 +22,6 @@ h2{
     margin-right: auto;
     background-color: aliceblue;
     position: absolute;
-    border: 2px solid yellowgreen;
-    border-radius: 30px;
 }
 
 .form{
@@ -35,19 +33,12 @@ h2{
     margin-right: auto;
 }
 
-fieldset{
-    max-width: 500px;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 #cont1 {
     max-width: 600px;
     background: yellowgreen;
-    border: 2px solid #6eb6de;
+    border: 2px solid yellowgreen;
     border-radius: 30px;
+    box-shadow: 0 9px #999;
 }
 
 #cont2 {
@@ -55,34 +46,39 @@ fieldset{
     background-color: palevioletred;
     border: 2px solid yellowgreen;
     border-radius: 30px;
+    box-shadow: 0 9px #999;
 }
 
 #cont3 {
     max-width: 600px;
     background-color: lightsalmon;
-    border: 2px solid #6eb6de;
+    border: 2px solid yellowgreen;
     border-radius: 30px;
+    box-shadow: 0 9px #999;
 }
 
 #cont4 {
     max-width: 600px;
     background-color: yellow;
-    border: 2px solid #6eb6de;
+    border: 2px solid yellowgreen;
     border-radius: 30px;
+    box-shadow: 0 9px #999;
 }
 
 #cont5 {
     max-width: 600px;
     background-color: lightskyblue;
-    border: 2px solid darkred;
+    border: 2px solid yellowgreen;
     border-radius: 30px;
+    box-shadow: 0 9px #999;
 }
 
 #cont6 {
     max-width: 600px;
     background-color: palevioletred;
-    border: 2px solid black;
+    border: 2px solid yellowgreen;
     border-radius: 30px;
+    box-shadow: 0 9px #999;
 }
 
 #surveysummaryandsubmission {
@@ -93,6 +89,9 @@ fieldset{
     margin-left: auto;
     margin-right: auto;
     background-color: aliceblue;
+    border: 2px solid yellowgreen;
+    border-radius: 30px;
+    box-shadow: 0 9px #999;
 }
 
 p{
@@ -116,9 +115,8 @@ p{
 }
 
 .surveynavbuttons{
-    max-width: 700px;
+    max-width: 300px;
     height: auto;
-    top: 25%;
     left: 0;
     right: 0;
     margin-left: auto;

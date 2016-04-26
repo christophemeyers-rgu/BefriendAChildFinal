@@ -191,7 +191,7 @@
 		
 		<div class="nav-divider">&nbsp;</div>
 		
-		<ul class="select"><li><a href="#nogo"><b>Data</b></a>
+		<ul class="select"><li><b>Data</b>
 
 		<div class="select_sub">
 			<ul class="sub">

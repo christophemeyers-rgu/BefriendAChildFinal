@@ -209,7 +209,7 @@ $( "#nextsurveysummary" ).click(function() {
 
 //============================================================ Previous buttons
 
-$( "#startsurvey" ).click(function() {
+$( "#surveystart" ).click(function() {
     $("#cont1").toggle("slide", 1000);
     $("#welcomepage").toggle("slide", 1000);
 

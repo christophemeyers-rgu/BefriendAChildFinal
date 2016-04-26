@@ -83,9 +83,14 @@
 
 
 				$insert="INSERT INTO volunteers (vol_email, vol_password, vol_firstname,vol_surname,vol_child_matched,vol_child_gender,vol_child_dob,vol_salt)
-				VALUES('".$email."','".$pwd."','".$firstname."','".$surname."',".$child_matched.",'".$child_gender."',".$dob.",'".$salt."')";
+				VALUES('".$email."','".$pwd."','".$firstname."','".$surname."',".$child_matched.",'".$child_gender."',".$dob.",?)";
 
-				$outcome=$db->query($insert) or die("Error: ".$insert."<br>".$db->error);
+				$stmt = $db->prepare($insert);
+				$stmt->bind_param("s",$salt);
+				$stmt->execute() or die("Error: ".$insert."<br>".$db->error);
+
+
+				//$outcome=$db->query($insert) or die("Error: ".$insert."<br>".$db->error);
 
 				header("Location: createuser.php?Success=Yes");
 

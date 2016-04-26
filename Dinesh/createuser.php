@@ -246,9 +246,7 @@
                                                 <input type="radio" name="child_matched" value=false id="no" id="matched" required>No
                                             </td>
                                         </tr>
-                                        <tr>
-                                            <td>If yes, please answer the following two:</td>
-                                        </tr>
+
                                         <tr id="childinfo" style="display: none;">
                                             <th valign="top">Child's gender:</th>
                                             <th>

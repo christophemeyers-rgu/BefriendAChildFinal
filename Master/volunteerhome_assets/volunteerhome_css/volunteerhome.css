@@ -11,6 +11,10 @@ header{
 
 h2{
     color: darkred;
+    border: 2px solid black;
+    max-width: 300px;
+    border-radius: 25px;
+    box-shadow: 0 9px #999;
 }
 
 #welcomepage{
@@ -22,6 +26,8 @@ h2{
     margin-right: auto;
     background-color: aliceblue;
     position: absolute;
+    border: 2px solid yellowgreen;
+
 }
 
 .form{
@@ -36,31 +42,49 @@ h2{
 #cont1 {
     max-width: 600px;
     background: yellowgreen;
+    border: 2px solid yellowgreen;
+    border-radius: 30px;
+    box-shadow: 0 9px #999;
 }
 
 #cont2 {
     max-width: 600px;
     background-color: palevioletred;
+    border: 2px solid yellowgreen;
+    border-radius: 30px;
+    box-shadow: 0 9px #999;
 }
 
 #cont3 {
     max-width: 600px;
     background-color: lightsalmon;
+    border: 2px solid yellowgreen;
+    border-radius: 30px;
+    box-shadow: 0 9px #999;
 }
 
 #cont4 {
     max-width: 600px;
     background-color: yellow;
+    border: 2px solid yellowgreen;
+    border-radius: 30px;
+    box-shadow: 0 9px #999;
 }
 
 #cont5 {
     max-width: 600px;
     background-color: lightskyblue;
+    border: 2px solid yellowgreen;
+    border-radius: 30px;
+    box-shadow: 0 9px #999;
 }
 
 #cont6 {
     max-width: 600px;
     background-color: palevioletred;
+    border: 2px solid yellowgreen;
+    border-radius: 30px;
+    box-shadow: 0 9px #999;
 }
 
 #surveysummaryandsubmission {
@@ -71,6 +95,9 @@ h2{
     margin-left: auto;
     margin-right: auto;
     background-color: aliceblue;
+    border: 2px solid yellowgreen;
+    border-radius: 30px;
+    box-shadow: 0 9px #999;
 }
 
 p{
@@ -94,7 +121,7 @@ p{
 }
 
 .surveynavbuttons{
-    max-width: 600px;
+    max-width: 300px;
     height: auto;
     left: 0;
     right: 0;

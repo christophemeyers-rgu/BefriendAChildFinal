@@ -258,7 +258,7 @@
                                             </th>
 
 
-                                            <th valign="top">Child's date of birth: (dd/mm/yy)</th>
+                                            <th valign="top">Child's date of birth:</th>
 
                                             <th>
                                                 <input  type="date" class="disabledelements" disabled name="date_of_birth" id="dateofbirth" required >

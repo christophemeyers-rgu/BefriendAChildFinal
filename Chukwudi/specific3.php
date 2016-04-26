@@ -286,13 +286,16 @@ if(!isset($_SESSION['ad_email'])){
             $sad = mysqli_fetch_array($output_sad);
 
             //did you learn anything new?
-            $sql_learn_yes = "select answer_text_req from answers, questions where submission_id in (select submission_id from submissions where vol_id =$id) and `answers`.question_id = `questions`.question_id and `answers`.question_id=31 and answer_text_req=1";
+            $sql_learn_yes = "select answer_text_req from answers, questions where submission_id in (select submission_id from submissions where vol_id =$id) and `answers`.question_id = `questions`.question_id and `answers`.question_id=31 and answer_text_req=2";
+            $sql_learn_might = "select answer_text_req from answers, questions where submission_id in (select submission_id from submissions where vol_id =$id) and `answers`.question_id = `questions`.question_id and `answers`.question_id=31 and answer_text_req=1";
             $sql_learn_no = "select answer_text_req from answers, questions where submission_id in (select submission_id from submissions where vol_id =$id) and `answers`.question_id = `questions`.question_id and `answers`.question_id=31 and answer_text_req=0";
 
             $output_learn_yes = $db->query($sql_learn_yes);
+            $output_learn_might = $db->query($sql_learn_might);
             $output_learn_no = $db->query($sql_learn_no);
 
             $learn_yes = mysqli_fetch_array($output_learn_yes);
+            $learn_might = mysqli_fetch_array($output_learn_might);
             $learn_no = mysqli_fetch_array($output_learn_no);
 
             //did you eat something healthy?
@@ -317,6 +320,30 @@ if(!isset($_SESSION['ad_email'])){
 
                     ?>
                     <tbody>
+                    <tr>
+                        <td><?php echo $counter; ?></td>
+                        <td>Total amount of money spent was <?php echo $sum[0]; ?></td>
+                        <td>The average spending was <?php echo $avg[0]; ?> <br/>The minimum amount spent was <?php echo $min?> <br/>The maximum amount spent was <?php echo $max?></td>
+                    </tr>
+
+                    <tr>
+                        <td><?php echo $counter; ?></td>
+                        <td>Total number of responses <?php echo $sum[0]; ?></td>
+                        <td>Total number of happy kids <?php echo $happy[0]; ?> <br/>Number of indifferent kids <?php echo $normal?> <br/>Number of sad kids <?php echo $sad?></td>
+                    </tr>
+
+                    <tr>
+                        <td><?php echo $counter; ?></td>
+                        <td>Did you learn something new? <?php echo $sum[0]; ?></td>
+                        <td>Number that learnt something new <?php echo $learn_yes[0]; ?> <br/>number that learnt something relatively new <?php echo $learn_might?> <br/>Number that had done it before <?php echo $max?></td>
+                    </tr>
+
+                    <tr>
+                        <td><?php echo $counter; ?></td>
+                        <td>Total amount of money spent was <?php echo $sum[0]; ?></td>
+                        <td>The average spending was <?php echo $avg[0]; ?> <br/>The minimum amount spent was <?php echo $min?> <br/>The maximum amount spent was <?php echo $max?></td>
+                    </tr>
+
                     <tr>
                         <td><?php echo $counter; ?></td>
                         <td>Total amount of money spent was <?php echo $sum[0]; ?></td>

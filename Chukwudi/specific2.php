@@ -20,7 +20,7 @@ if(!isset($_SESSION['ad_email'])){
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>Administrator</title>
-    <link rel="stylesheet" href="../Chukwudi/cssadminpage/screen.css" type="text/css" media="screen" title="default" />
+    <link rel="stylesheet" href="cssadminpage/screen.css" type="text/css" media="screen" title="default" />
 
     <link rel="stylesheet" media="all" type="text/css" href="../Chukwudi/cssadminpage/pro_dropline_ie.css" />
 
@@ -30,10 +30,10 @@ if(!isset($_SESSION['ad_email'])){
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
     <!--  jquery core -->
-    <script src="../Chukwudi/jsadminpage/jquery/jquery-1.4.1.min.js" type="text/javascript"></script>
+    <script src="jsadminpage/jquery/jquery-1.4.1.min.js" type="text/javascript"></script>
 
     <!--  styled select box script version 2 -->
-    <script src="../Chukwudi/jsadminpage/jquery/jquery.selectbox-0.5_style_2.js" type="text/javascript"></script>
+    <script src="jsadminpage/jquery/jquery.selectbox-0.5_style_2.js" type="text/javascript"></script>
     <script type="text/javascript">
         $(document).ready(function() {
             $('.styledselect_form_1').selectbox({ inputClass: "styledselect_form_1" });
@@ -42,7 +42,7 @@ if(!isset($_SESSION['ad_email'])){
     </script>
 
     <!--  styled select box script version 3 -->
-    <script src="../Chukwudi/jsadminpage/jquery/jquery.selectbox-0.5_style_2.js" type="text/javascript"></script>
+    <script src="jsadminpage/jquery/jquery.selectbox-0.5_style_2.js" type="text/javascript"></script>
     <script>
         $(document).ready(function() {
             $('.styledselect_pages').selectbox({ inputClass: "styledselect_pages" });
@@ -50,7 +50,7 @@ if(!isset($_SESSION['ad_email'])){
     </script>
 
     <!--  styled file upload script -->
-    <script src="../Chukwudi/jsadminpage/jquery/jquery.filestyle.js" type="text/javascript"></script>
+    <script src="jsadminpage/jquery/jquery.filestyle.js" type="text/javascript"></script>
     <script type="text/javascript" charset="utf-8">
         $(function() {
             $("input.file_1").filestyle({
@@ -64,9 +64,9 @@ if(!isset($_SESSION['ad_email'])){
 
 
     <!--  date picker script -->
-    <link rel="stylesheet" href="../Chukwudi/cssadminpage/datePicker.css" type="text/css" />
-    <script src="../Chukwudi/jsadminpage/jquery/date.js" type="text/javascript"></script>
-    <script src="../Chukwudi/jsadminpage/jquery/jquery.datePicker.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="cssadminpage/datePicker.css" type="text/css" />
+    <script src="jsadminpage/jquery/date.js" type="text/javascript"></script>
+    <script src="jsadminpage/jquery/jquery.datePicker.js" type="text/javascript"></script>
     <script type="text/javascript" charset="utf-8">
         $(function()
         {
@@ -166,9 +166,9 @@ if(!isset($_SESSION['ad_email'])){
         <div id="nav-right">
 
             <div class="nav-divider">&nbsp;</div>
-            <div class="showhide-account"><img src="../Chukwudi/imagesadminpage/shared/nav/nav_myaccount.gif" width="93" height="14" alt="" /></div>
+            <div class="showhide-account"><img src="imagesadminpage/shared/nav/nav_myaccount.gif" width="93" height="14" alt="" /></div>
             <div class="nav-divider">&nbsp;</div>
-            <a href="../Chukwudi/logout.php" id="logout"><img src="../Chukwudi/imagesadminpage/shared/nav/nav_logout.gif" width="64" height="14" alt="" /></a>
+            <a href="../Chukwudi/logout.php" id="logout"><img src="imagesadminpage/shared/nav/nav_logout.gif" width="64" height="14" alt="" /></a>
             <div class="clear">&nbsp;</div>
 
 
@@ -180,7 +180,7 @@ if(!isset($_SESSION['ad_email'])){
         <div class="nav">
             <div class="table">
 
-                <ul class="select"><li><a href="../Chukwudi/adminhome.php"><b>Home</b></a>
+                <ul class="select"><li><a href="adminhome.php"><b>Home</b></a>
 
                     </li>
                 </ul>
@@ -193,8 +193,8 @@ if(!isset($_SESSION['ad_email'])){
 
                         <div class="select_sub">
                             <ul class="sub">
-                                <li><a href="../Chukwudi/createlogin.php">Create User Login</a></li>
-                                <li><a href="../Chukwudi/delete-user.php">Delete User Login</a></li>
+                                <li><a href="createlogin.php">Create User Login</a></li>
+                                <li><a href="delete-user.php">Delete User Login</a></li>
                             </ul>
                         </div>
 
@@ -208,7 +208,7 @@ if(!isset($_SESSION['ad_email'])){
                         <div class="select_sub">
                             <ul class="sub">
                                 <li><a href="view.php">Full Report</a></li>
-                                <li><a href="../Chukwudi/view%20report.php">Survey Query</a></li>
+                                <li><a href="view%20report.php">Survey Query</a></li>
                                 <li><a href="#nogo">Delete Report</a></li>
 
                             </ul>
@@ -271,7 +271,7 @@ if(!isset($_SESSION['ad_email'])){
                     <tbody>
                     <tr>
                         <td><?php echo $counter; ?></td>
-                        <td><a href="specific3.php?vol_id=<?php echo $row['question_id'];?>"><?php echo $row['question_text']; ?></a></td>
+                        <td><a href="specific3.php?question_id=<?php echo $row['question_id'];?>"><?php echo $row['question_text']; ?></a></td>
                     </tr>
                     </tbody>
                     <?php
